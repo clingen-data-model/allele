@@ -1,0 +1,11 @@
+---
+title: ClinGen data model
+---
+
+<div>
+  <ul>
+    <% sitemap.resources.select{|r| r.path =~ /^models/}.each do |r| %>
+    <li><%= link_to r.data.title, r.url %></li>
+    <% end %>
+  </ul>
+</div>
