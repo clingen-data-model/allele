@@ -15,8 +15,18 @@
   
   <body class="<%= page_classes %>">
     <div class="container">
-      <h1><%= current_page.data.title %></h1>
-      <%= yield %>
+      <div class="col-md-3">
+	<h3>allele model</h3>
+	<ul>
+	  <% sitemap.resources.select{|r| r.path =~ /^models/}.sort{|a,b| a.data.title <=> b.data.title}.each do |r| %>
+	  <li><%= link_to r.data.title, r.url %></li>
+	  <% end %>
+	</ul>
+      </div>
+      <div class="col-md-9">
+	<h1><%= current_page.data.title %></h1>
+	<%= yield %>
+      </div>
     </div>
   </body>
 </html>
