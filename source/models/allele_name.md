@@ -5,7 +5,7 @@ title: AlleleName
 Definition
 ----------
 
-A human readable, non-canonical name for a CanonicalAllele or SimpleAllele.
+A human readable, non-canonical name for a CanonicalAllele or SimpleAllele. Hello
 
 Scope and Usage
 ---------------
