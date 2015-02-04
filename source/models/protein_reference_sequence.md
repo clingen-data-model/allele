@@ -5,7 +5,7 @@ title: ProteinReferenceSequence
 Definition
 ----------
 
-A ReferenceSequence representing the sequence of amino acids making up a polypeptide (SO: 0000104).
+A ReferenceSequence representing the sequence of amino acids making up a polypeptide (SO:0000104).
 
 Scope and Usage
 ---------------

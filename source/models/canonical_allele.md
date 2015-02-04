@@ -18,7 +18,7 @@ Multiple representations of an allele are often produced when tandem repeats occ
 
 A CanonicalAllele represents an aggregation of the many representations of the Allele entity into a single object with a stable identifier.  One example of such a stable identifier would be a dbSNP ID, plus a choice of an allele at that locus.  Another would be an integer key created by an implementor.
 
-Providing a stable identifier allows CanonicalAllele to be the referencable version of genetic variation.    The CanonicalAllele is the entity about which statements are made by other entities such as population frequency information, assertions, observations, and so on.
+Providing a stable identifier allows CanonicalAllele to be the referenceable version of genetic variation.    The CanonicalAllele is the entity about which statements are made by other entities such as population frequency information, assertions, observations, and so on.
 
 Specific Allele representations will be grouped together under a CanonicalAllele if they represent identical entities.  In particular, Alleles based on DNA (genomic and transcript) can be grouped together under a CanonicalAllele, and Alleles based on proteins may be grouped together under a different CanonicalAllele, but DNA and Protein alleles may not be grouped together under a CanonicalAllele.  Consider a missense change to a protein that can be induced by two different genomic variations.  If a CanonicalAllele included both DNA and Protein Alleles, then the two different genomic variations would be considered identical through their identity with the same protein allele.  For this reason, CanonicalAllele does not aggregate protein with DNA Alleles.
 
