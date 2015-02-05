@@ -15,5 +15,5 @@ This version of the model allows one to describe simple sequence variants.  In o
 Exclusions and Limitations
 --------------------------
 
-Large-scale deletions and duplications (including copy number variation) are out of scope in this version of the model.
+Large-scale deletions and duplications (including copy number variation) are out of the scope in this version of the model.
 
