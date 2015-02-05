@@ -18,7 +18,7 @@
       <div class="col-md-4">
 	<h3><%= link_to "allele model", "/" %></h3>
 	<ul>
-	  <% sitemap.resources.select{|r| r.path =~ /^models/}.sort{|a,b| a.data.title <=> b.data.title}.each do |r| %>
+	  <% sitemap.resources.select{|r| r.path =~ /^allele/}.sort{|a,b| a.data.title <=> b.data.title}.each do |r| %>
 	  <li><%= link_to r.data.title, r.url %></li>
 	  <% end %>
 	</ul>
