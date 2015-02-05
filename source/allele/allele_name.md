@@ -10,9 +10,9 @@ A human readable, non-canonical name for a CanonicalAllele or SimpleAllele.
 Scope and Usage
 ---------------
 
-Canonicalization produces a stable identifier for an allele, but historically many identifiers have been used for alleles, such as dbSNP identifiers (with allele) or HGVS expressions.  AlleleName provides a way to attach these types of names to an allele.
+Canonicalization produces a stable identifier for an allele, but historically many identifiers have been used for alleles, such as dbSNP identifiers (with allele) or HGVS expressions. AlleleName provides a way to attach these types of names to an allele.
 
-For display purposes, one AlleleName may be designated as preferred by an implementing system.  The method chosen by a system is not required to fill any particular requirements.  Nor is it required that the preferred name, or algorithm for choosing the preferred name be stable; preferred names may change at the implementors discretion, for instance if a reference sequence is updated to a new version.
+For display purposes, one AlleleName may be designated as preferred by an implementing system. The method chosen by a system is not required to fill any particular requirements. Nor is it required that the preferred name, or algorithm for choosing the preferred name be stable; preferred names may change at the implementors discretion, for instance if a reference sequence is updated to a new version.
 
 
 Exclusions and Limitations
