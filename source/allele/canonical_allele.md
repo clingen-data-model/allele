@@ -5,7 +5,7 @@ title: CanonicalAllele
 Definition
 ----------
 
-A stable identifier for an allele, grouping together the different ways that allele might be described across different versions of different ReferenceSequences.
+A stable identifier for an allele, grouping together the different ways that the allele might be described across different versions of different ReferenceSequences.
 
 Scope and Usage
 ---------------
@@ -18,7 +18,7 @@ Multiple representations of an allele are often produced when tandem repeats occ
 
 A CanonicalAllele represents an aggregation of the many representations of the Allele entity into a single object with a stable identifier.  One example of such a stable identifier would be a dbSNP ID, plus a choice of an allele at that locus.  Another would be an integer key created by an implementor.
 
-Providing a stable identifier allows CanonicalAllele to be the referenceable version of genetic variation.    The CanonicalAllele is the entity about which statements are made by other entities such as population frequency information, assertions, observations, and so on.
+Providing a stable identifier allows CanonicalAllele to be the referencable version of genetic variation.    The CanonicalAllele is the entity about which statements are made by other entities such as population frequency information, assertions, observations, and so on.
 
 Specific Allele representations will be grouped together under a CanonicalAllele if they represent identical entities.  In particular, Alleles based on DNA (genomic and transcript) can be grouped together under a CanonicalAllele, and Alleles based on proteins may be grouped together under a different CanonicalAllele, but DNA and Protein alleles may not be grouped together under a CanonicalAllele.  Consider a missense change to a protein that can be induced by two different genomic variations.  If a CanonicalAllele included both DNA and Protein Alleles, then the two different genomic variations would be considered identical through their identity with the same protein allele.  For this reason, CanonicalAllele does not aggregate protein with DNA Alleles.
 
@@ -27,6 +27,10 @@ CanoncialAllele is an abstract class; no instances of CanonicalAllele itself may
 Implementors must choose a canonicalization method: a method for determining whether a given allele defined with respect to a particular ReferenceSequence can be aggregated into a previously known CanonicalAllele, and to provide a new CanonicalAlleleID when it cannot.   Because CanonicalAlleleID represents a potentially useful way to communicate about alleles with external systems, it would be beneficial to choose a canonicalization scheme that is externally implemented and can be used consistently by multiple parties.
 
 One such canonicalization scheme (for DNA Alleles) would be to use dbSNP ids and the alternate allele as the CanonicalAllele identifier.  To canonicalize an allele, the NCBI Variation Reporter API would be queried for that allele.  If the alleles is known, then the dbSNP id would be returned and could be used.    In the case where the allele is not returned, however, a submission to dbSNP would then need to be instituted.  Because rsids are not immediately awarded, a temporary identifier would have to be used by the implementing system, to be updated once an rsid was granted, which may take as long as one month.  Another limitation of such an approach is that dbSNP ids can not be used for CanonicalProteinAlleles, so a different canonicalization approach must be made for that case.
+
+CanonicalAllele contains both an id and the name of the system that created this id.  This allows for transmission of information about alleles between systems using different canonicalization schemes.  For instance, suppose that system A and system B each canoicalize alleles themselves, and system A wants to retrieve allele information from system B.  System B can send a message containing canonical alleles, as defined by system B.  Because the system namespace is different, there is no confusion that the id given to the allele will be the same id in the two systems.  Indeed, system A may choose to dissociate the different representations of the allele and re-canonicalize them using its own canonicalizer.  If system A wants to maintain system Bs id for the canonical allele, it can add a CanonicalAlleleIdentifier.
+
+If the two systems share a canonicalizer, then the id of the CanonicalAllele must be the same in each system, and can be used as a reference to the allele across multiple systems.
 
 Exclusions and Limitations
 --------------------------
