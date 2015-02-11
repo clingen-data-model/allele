@@ -15,24 +15,26 @@
   
   <body class="<%= page_classes %>">
     <div class="container">
-      <div class="col-md-4">
-	<ul>
-	  <% data.models.names.each do |model| %>
-	  <h4><%= link_to "#{model}", "/#{model}" %></h4>
-	  <h5>resource</h5>
-	  <% sitemap.resources.select{|r| r.path =~ /^#{model}\/resource/}.sort{|a,b| a.data.title <=> b.data.title}.each do |r| %>
-	  <li><%= link_to r.data.title, r.url %></li>
-	  <% end %>
-	  <h5>conceptual</h5>
-	  <% sitemap.resources.select{|r| r.path =~ /^#{model}\/conceptual/}.sort{|a,b| a.data.title <=> b.data.title}.each do |r| %>
-	  <li><%= link_to r.data.title, r.url %></li>
-	  <% end %>
-	  <% end %>
-	</ul>
-      </div>
-      <div class="col-md-8">
-	<h1><%= current_page.data.title %></h1>
-	<%= yield %>
+      <div class="row">
+	<div class="col-md-4">
+	    <% data.models.names.each do |model| %>
+	    <h4><%= link_to "#{model}", "/#{model}" %></h4>
+	    <dl>
+	    <dt>resource</dt>
+	    <% sitemap.resources.select{|r| r.path =~ /^#{model}\/resource/}.sort{|a,b| a.data.title <=> b.data.title}.each do |r| %>
+	    <dd><%= link_to r.data.title, r.url %></dd>
+	    <% end %>
+	    <dt>conceptual</dt>
+	    <% sitemap.resources.select{|r| r.path =~ /^#{model}\/conceptual/}.sort{|a,b| a.data.title <=> b.data.title}.each do |r| %>
+	    <dd><%= link_to r.data.title, r.url %></dd>
+	    <% end %>
+	    <% end %>
+	  </dl>
+	</div>
+	<div class="col-md-8">
+	  <h1><%= current_page.data.title %></h1>
+	  <%= yield %>
+	</div>
       </div>
     </div>
   </body>
