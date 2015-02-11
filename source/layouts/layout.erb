@@ -20,12 +20,12 @@
 	    <% data.models.names.each do |model| %>
 	    <h4><%= link_to "#{model}", "/#{model}" %></h4>
 	    <dl>
-	    <dt>resource</dt>
-	    <% sitemap.resources.select{|r| r.path =~ /^#{model}\/resource/}.sort{|a,b| a.data.title <=> b.data.title}.each do |r| %>
+	    <dt><%= link_to "resource", "/#{model}/resource" %></dt>
+	    <% sitemap.resources.select{|r| r.path =~ /^#{model}\/resource/ and not r.path =~ /index\.html/ }.each do |r| %>
 	    <dd><%= link_to r.data.title, r.url %></dd>
 	    <% end %>
-	    <dt>conceptual</dt>
-	    <% sitemap.resources.select{|r| r.path =~ /^#{model}\/conceptual/}.each do |r| %>
+	    <dt><%= link_to "conceptual", "/#{model}/conceptual" %></dt>
+	    <% sitemap.resources.select{|r| r.path =~ /^#{model}\/conceptual/ and not r.path =~ /index\.html/}.each do |r| %>
 	    <dd><%= link_to r.data.title, r.url %></dd>
 	    <% end %>
 	    <% end %>
