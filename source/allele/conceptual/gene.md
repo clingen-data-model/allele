@@ -21,3 +21,21 @@ Exclusions and Limitations
 --------------------------
 
 
+
+Attributes
+----------
+
+Attribute Name | Attribute Type
+-------------------------------
+identifier     | Identifier[]
+officialSymbol | String
+name           | String
+aliasSymbol    | String[]
+
+The identifier attribute contains an array of Identifier entities. Each Identifier is given for each name granted to the gene by a naming entity.  If a naming agency withdraws a name, the period attribute of the Identifier is given a end value of the date of withdrawl.  This signifies that the Identifier is not valid.
+
+officialSymbol: The human-readable symbol for the gene used in the implementing system.  Note that this symbol is not fixed; the implementing system may change the symbol of a particular gene.  Typically, the symbol for a gene will be one of the symbols granted by a naming agency.  The implementing system should be consistent, and chose a naming agency from which to pick symbols.  At any given time, an officialSymbol should be unique in the implemeting system.
+
+name: The human-readable name for a gene.  Note that the name is not fixed; the implementing system may change the name of a particular gene.  Typically, the name for a gene will be one of the names granted by a naming agency.  The implemeting system should be consistent, and chose a single naming agency from which to pick symbols.
+
+aliasSymbol: A list of Strings that contain other symbols that may or may have been used to refer to this gene.  A useful set of values would include symbols from identifiers other than the one chosen for officialSymbol, as well as any previous values of officialSymbol used in the implementing system.  There is no guarantee that an alias symbol will not be an aliasSymbol or officialSymbol of another gene.
