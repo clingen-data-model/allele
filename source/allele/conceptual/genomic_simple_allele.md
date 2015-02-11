@@ -1,10 +1,8 @@
 ---
 title: GenomicSimpleAllele
----
+description: A SimpleAlllele that uses a GenomeReferenceSequence as its ReferenceSequence.
 
-Definition
-----------
-A SimpleAlllele that uses a GenomeReferenceSequence as its ReferenceSequence.
+---
 
 Scope and Usage
 ---------------

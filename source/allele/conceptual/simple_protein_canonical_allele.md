@@ -1,11 +1,8 @@
 ---
 title: SimpleProteinCanonicalAllele
+description: A stable identifier for a simple protein allele, grouping together the different ways that the allele might be described across different versions of a particular ProteinReferenceSequence. 
+
 ---
-
-Definition
-----------
-
-A stable identifier for a simple protein allele, grouping together the different ways that the allele might be described across different versions of a particular ProteinReferenceSequence.
 
 Scope and Usage
 ---------------

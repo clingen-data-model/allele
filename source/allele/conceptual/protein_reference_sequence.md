@@ -1,11 +1,9 @@
 ---
 title: ProteinReferenceSequence
+description: A ReferenceSequence representing the sequence of amino acids making up a polypeptide.
+sequence_ontology: "SO:0000104"
+
 ---
-
-Definition
-----------
-
-A ReferenceSequence representing the sequence of amino acids making up a polypeptide (SO:0000104).
 
 Scope and Usage
 ---------------

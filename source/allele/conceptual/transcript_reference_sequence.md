@@ -1,10 +1,9 @@
 ---
 title: TranscriptReferenceSequence
----
+description: A ReferenceSequence for the cDNA of a transcript.
+sequence_ontology: "SO:0000673"
 
-Definition
-----------
-A ReferenceSequence for the cDNA of a transcript ( transcript: SO:0000673).
+---
 
 Scope and Usage
 ---------------

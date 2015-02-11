@@ -25,7 +25,7 @@
 	    <dd><%= link_to r.data.title, r.url %></dd>
 	    <% end %>
 	    <dt>conceptual</dt>
-	    <% sitemap.resources.select{|r| r.path =~ /^#{model}\/conceptual/}.sort{|a,b| a.data.title <=> b.data.title}.each do |r| %>
+	    <% sitemap.resources.select{|r| r.path =~ /^#{model}\/conceptual/}.each do |r| %>
 	    <dd><%= link_to r.data.title, r.url %></dd>
 	    <% end %>
 	    <% end %>
@@ -33,6 +33,11 @@
 	</div>
 	<div class="col-md-8">
 	  <h1><%= current_page.data.title %></h1>
+	  <% if current_page.data.description %>
+	  <p class="lead">
+	    <%= current_page.data.description %>
+	  </p>
+	  <% end %>
 	  <%= yield %>
 	</div>
       </div>

@@ -1,11 +1,8 @@
 ---
 title: ReferenceSequence
+description: A versioned sequence of nucleotide bases or amino acids.
+
 ---
-
-Definition
-----------
-
-A versioned sequence of nucleotide bases or amino acids.  
 
 Scope and Usage
 ---------------

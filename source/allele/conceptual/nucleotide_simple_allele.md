@@ -1,11 +1,8 @@
 ---
 title: NucleotideSimpleAllele
+description: A SimpleAllele that uses a DNA-based ReferenceSequence
+
 ---
-
-Definition
-----------
-
-A SimpleAllele that uses a DNA-based ReferenceSequence
 
 Scope and Usage
 ---------------

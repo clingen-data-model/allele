@@ -1,11 +1,8 @@
 ---
 title: ComplexProteinCanonicalAllele
+description: A stable identifier for a complex protein allele, based on an aggregation of SimpleProteinCanonicalAlleles.
+
 ---
-
-Definition
-----------
-
-A stable identifier for a complex protein allele, based on an aggregation of SimpleProteinCanonicalAlleles.
 
 Scope and Usage
 ---------------
