@@ -16,5 +16,5 @@ gem "tzinfo-data", platforms: [:mswin, :mingw]
 # do something with markdown files
 gem "redcarpet"
 
-# publish to github pages
-gem 'middleman-gh-pages'
+# publish to github pages -- removing for now, not useful for organization pages
+# gem 'middleman-gh-pages'
