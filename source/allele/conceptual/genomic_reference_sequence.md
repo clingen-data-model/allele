@@ -1,11 +1,8 @@
 ---
 title: GenomicReferenceSequence
+description: A ReferenceSequence describing chromosomal DNA.
+
 ---
-
-Definition
-----------
-
-A ReferenceSequence describing chromosomal DNA.
 
 Scope and Usage
 ---------------

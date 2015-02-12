@@ -1,11 +1,9 @@
 ---
 title: ComplexNucleotideCanonicalAllele
+description: A stable identifier for a complex nucleotide allele, based on an aggregation of SimpleNucleotideCanonicalAlleles.
+
 ---
 
-Definition
-----------
-
-A stable identifier for a complex nucleotide allele, based on an aggregation of SimpleNucleotideCanonicalAlleles.
 
 Scope and Usage
 ---------------

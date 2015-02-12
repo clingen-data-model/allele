@@ -1,13 +1,8 @@
 ---
 title: Gene
+description: A genomic region identified by a collection of alternately spliced ReferenceTranscriptSequences, given a name by one or more naming agencies.
+
 ---
-
-Definition
-----------
-
-A genomic region identified by a collection of alternately spliced ReferenceTranscriptSequences, given a name by one or more naming agencies.
-
-(Note, I like the SO ontology around genes, but I do not like the definition, which implys to me that the gene must be functional. - CB)
 
 Scope and Usage
 ---------------

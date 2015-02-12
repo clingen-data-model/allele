@@ -1,11 +1,8 @@
 ---
 title: GeneIdentifier
+description: A name for a gene granted by a recognized naming agency such as NCBI or HGNC
+
 ---
-
-Definition
-----------
-
-A name for a gene granted by a recognized naming agency such as NCBI or HGNC
 
 Scope and Usage
 ---------------

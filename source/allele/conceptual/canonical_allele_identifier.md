@@ -1,11 +1,8 @@
 ---
 title: CanonicalAlleleIdentifier
+description: The identifier given to a CanonicalAllele by a given Canonicalizer.
+
 ---
-
-Definition
-----------
-
-The identifier given to a CanonicalAllele by a given Canonicalizer.
 
 Scope and Usage
 ---------------

@@ -1,11 +1,8 @@
 ---
 title: TranscriptSimpleAllele
+description: A SimpleAlllele that uses a TranscriptReferenceSequence as its ReferenceSequence.
+
 ---
-
-Definition
-----------
-
-A SimpleAlllele that uses a TranscriptReferenceSequence as its ReferenceSequence.
 
 Scope and Usage
 ---------------

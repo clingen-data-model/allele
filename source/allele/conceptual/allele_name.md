@@ -1,11 +1,8 @@
 ---
 title: AlleleName
+description: A human readable, non-canonical name for a CanonicalAllele or SimpleAllele.
+
 ---
-
-Definition
-----------
-
-A human readable, non-canonical name for a CanonicalAllele or SimpleAllele.
 
 Scope and Usage
 ---------------

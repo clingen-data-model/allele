@@ -1,11 +1,8 @@
 ---
 title: CanonicalAllele
+description: A stable identifier for an allele, grouping together the different ways that the allele might be described across different versions of different ReferenceSequences.
+
 ---
-
-Definition
-----------
-
-A stable identifier for an allele, grouping together the different ways that the allele might be described across different versions of different ReferenceSequences.
 
 Scope and Usage
 ---------------

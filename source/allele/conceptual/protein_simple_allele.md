@@ -1,10 +1,8 @@
 ---
 title: ProteinSimpleAllele
----
+description: A SimpleAlllele that uses a ProteinReferenceSequence as its ReferenceSequence.
 
-Definition
-----------
-A SimpleAlllele that uses a ProteinReferenceSequence as its ReferenceSequence.
+---
 
 Scope and Usage
 ---------------

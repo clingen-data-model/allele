@@ -1,11 +1,8 @@
 ---
 title: LocusIdentifer
+description: A stable identifier for a contiguous region in a set of related ReferenceSequences.
+
 ---
-
-Defintion
----------
-
-A stable identifier for a contiguous region in a set of related ReferenceSequences.
 
 Scope and Usage
 ---------------
