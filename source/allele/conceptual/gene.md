@@ -13,10 +13,10 @@ Scope and Usage
 ---------------
 
 Included under this definition of gene are:
-..* Protein coding genes
-..* Pseudogenes
-..* Non-Coding RNA sequences
-..* Computationally Predicted Genes
+  * Protein coding genes
+  * Pseudogenes
+  * Non-Coding RNA sequences
+  * Computationally Predicted Genes
 
 There is no guarantee that a gene is ever transcribed, such as in some computationally predicted genes or pseudogenes.   Furthermore, many genes are untranslated.
 
@@ -30,12 +30,12 @@ Exclusions and Limitations
 Attributes
 ----------
 
-Attribute Name | Attribute Type
--------------------------------
-identifier     | Identifier[]
-officialSymbol | String
-name           | String
-aliasSymbol    | String[]
+|Attribute Name | Attribute Type|
+|-------------------------------|
+|identifier     | Identifier[] |
+|officialSymbol | String |
+|name           | String |
+|aliasSymbol    | String[] |
 
 The identifier attribute contains an array of Identifier entities. Each Identifier is given for each name granted to the gene by a naming entity.  If a naming agency withdraws a name, the period attribute of the Identifier is given a end value of the date of withdrawl.  This signifies that the Identifier is not valid.
 
