@@ -15,7 +15,7 @@ Included under this definition of gene are:
 
 There is no guarantee that a gene is ever transcribed, such as in some computationally predicted genes or pseudogenes.   Furthermore, many genes are untranslated.
 
-The grouping together of ReferenceTranscriptSequencing and the assignment of names must be performed by a recognized public group such as NCBI or HGNC.
+The assignment of names, and the association of [TranscriptReferenceSequences](transcript_reference_sequence.html) must be performed by a recognized public group such as NCBI or HGNC.  Note that different agencies may be responsible for names and for associations with sequences.
 
 Exclusions and Limitations
 --------------------------
@@ -26,7 +26,7 @@ Attributes
 ----------
 
 |Attribute Name | Attribute Type|
-|-------------------------------|
+|---------------|---------------|
 |identifier     | Identifier[] |
 |officialSymbol | String |
 |name           | String |
@@ -39,3 +39,12 @@ officialSymbol: The human-readable symbol for the gene used in the implementing 
 name: The human-readable name for a gene.  Note that the name is not fixed; the implementing system may change the name of a particular gene.  Typically, the name for a gene will be one of the names granted by a naming agency.  The implemeting system should be consistent, and chose a single naming agency from which to pick symbols.
 
 aliasSymbol: A list of Strings that contain other symbols that may or may have been used to refer to this gene.  A useful set of values would include symbols from identifiers other than the one chosen for officialSymbol, as well as any previous values of officialSymbol used in the implementing system.  There is no guarantee that an alias symbol will not be an aliasSymbol or officialSymbol of another gene.
+
+Related Entities
+----------------
+
+| Relation Name | Entity Type | Cardinality |
+|---------------|-------------|-------------|
+| hasTranscript | [TranscriptReferenceSequence] (transcript_reference_sequence.html) | 1..* |
+
+hasTranscript:   Each gene must have at least one transcript; it may have more than one because of alternate splicing or different transcripts being created by differing groups such as NCBI and Ensembl.
