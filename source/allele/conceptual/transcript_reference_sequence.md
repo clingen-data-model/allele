@@ -22,3 +22,12 @@ Attributes
 | codingRegionOffset | int        |
 
 codingRegionOffset: For transcripts that contain a coding region, codingRegionOffset specifies the index of the transcript sequence at which the coding region begins.  It therefore provides a way to transfer between coding coordinates and transcript coordinates.
+
+Related Entities
+----------------
+
+| Relation Name | Entity Type |
+|---------------|-------------|
+| translation   | [AminoAcidReferenceSequence](amino_acid_reference_sequence.html) |
+
+translation: For coding transcripts, the [AminoAcidReferenceSequence](amino_acid_reference_sequence.html) that results in translation of the coding region. 
