@@ -1,5 +1,10 @@
 ---
 title: CanonicalAllele
-description: A stable identifier for an allele.
-
+description: Resource
 ---
+
+# *identifier:*
+
+# *active:*
+
+

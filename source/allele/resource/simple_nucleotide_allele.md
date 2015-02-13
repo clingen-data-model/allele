@@ -1,12 +1,15 @@
 ---
-title: changeType
+title: SimpleNucleotideAllele
+description: Resources
 ---
 
 Definition
 --------------------
-*An attribute of SimpleNucleotideAllele.*
 
 A controlled vocabulary term used to describe observed nucleotide alteration, including the characterization of no_alteration.  These values can be experimentally discovered or derived with annotation tools such as [SnpEff](http://snpeff.sourceforge.net/) or [VAAST](http://www.yandell-lab.org/software/vaast.html).
+
+
+# *changeType:*
 
 Scope and Usage
 --------------------
