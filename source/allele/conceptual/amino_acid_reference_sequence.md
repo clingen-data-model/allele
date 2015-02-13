@@ -1,5 +1,5 @@
 ---
-title: ProteinReferenceSequence
+title: AminoAcidReferenceSequence
 description: A ReferenceSequence representing the sequence of amino acids making up a polypeptide.
 sequence_ontology: "SO:0000104"
 
@@ -8,7 +8,7 @@ sequence_ontology: "SO:0000104"
 Scope and Usage
 ---------------
 
-A ProteinReferenceSequence is used to denote the particular sequence of amino acids resulting from the translation of a TranscriptReferenceSequence.
+A AminoAcidReferenceSequence is used to denote the particular sequence of amino acids resulting from the translation of a TranscriptReferenceSequence.
 
 Exclusions and Limitations
 --------------------------
