@@ -29,13 +29,13 @@ Attributes
 |Attribute Name | Attribute Type|
 |---------------|---------------|
 |identifier     | Identifier[] |
-|officialSymbol | String |
+|symbol | String |
 |name           | String |
 |aliasSymbol    | String[] |
 
-The identifier attribute contains an array of Identifier entities. Each Identifier is given for each name granted to the gene by a naming entity.  If a naming agency withdraws a name, the period attribute of the Identifier is given a end value of the date of withdrawl.  This signifies that the Identifier is not valid.
+The identifier attribute contains an array of Identifier entities. Each Identifier is given for each symbol granted to the gene by a naming entity.  If a naming agency withdraws a name, the period attribute of the Identifier is given a end value of the date of withdrawl.  This signifies that the Identifier is not valid.
 
-officialSymbol: The human-readable symbol for the gene used in the implementing system.  Note that this symbol is not fixed; the implementing system may change the symbol of a particular gene.  Typically, the symbol for a gene will be one of the symbols granted by a naming agency.  The implementing system should be consistent, and chose a naming agency from which to pick symbols.  At any given time, an officialSymbol should be unique in the implemeting system.
+symbol: The human-readable symbol for the gene used in the implementing system.  Note that this symbol is not fixed; the implementing system may change the symbol of a particular gene.  Typically, the symbol for a gene will be one of the symbols granted by a naming agency.  The implementing system should be consistent, and chose a naming agency from which to pick symbols.  At any given time, an officialSymbol should be unique in the implemeting system.
 
 name: The human-readable name for a gene.  Note that the name is not fixed; the implementing system may change the name of a particular gene.  Typically, the name for a gene will be one of the names granted by a naming agency.  The implemeting system should be consistent, and chose a single naming agency from which to pick symbols.
 
@@ -47,5 +47,8 @@ Related Entities
 | Relation Name | Entity Type | Cardinality |
 |---------------|-------------|-------------|
 | hasTranscript | [TranscriptReferenceSequence] (transcript_reference_sequence.html) | 1..* |
+| hasGeneSequence | [GeneReferenceSequence] (gene_reference_sequence.html) | 0..* |
 
 hasTranscript:   Each gene must have at least one transcript; it may have more than one because of alternate splicing or different transcripts being created by differing groups such as NCBI and Ensembl.
+
+hasGeneSequence:  Each gene may have an associated gene sequence, such as those from LRG or RefSeqGene
