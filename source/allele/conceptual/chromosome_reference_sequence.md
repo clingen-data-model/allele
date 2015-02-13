@@ -10,7 +10,7 @@ Scope and Usage
 Each ChromosomeReferenceSequence contains the accession that can be used to look up the sequence for a chromosome.  This includes 
 
   - the autosome
-  - sex chromsomes
+  - sex chromosomes
   - the mitochondrial chromosome
 
 Note that as with all [ReferenceSequences](reference_sequence.html), the entity does not contain the sequence itself, only an accession that can be used to retreive the sequence as well as metadata about the sequence.
