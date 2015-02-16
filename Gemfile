@@ -14,7 +14,8 @@ gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
 gem "tzinfo-data", platforms: [:mswin, :mingw]
 
 # do something with markdown files
-gem "redcarpet"
+# gem "redcarpet"
+gem "kramdown"
 
 # publish to github pages -- removing for now, not useful for organization pages
 # gem 'middleman-gh-pages'

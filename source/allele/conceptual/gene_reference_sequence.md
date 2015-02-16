@@ -20,6 +20,7 @@ None, beyond those provided by [GenomicReferenceSequence](genomic_reference_sequ
 Related Entities
 ----------------
 
+{:.table}
 | Relation Name     | Entity Type                              | Cardinality |
 |-------------------|------------------------------------------|-------------|
 | sequenceOf | [Gene](gene.html) | 1        |

@@ -23,6 +23,7 @@ Only a subset of the relationships between different subclasses of ReferenceSequ
 Attributes
 ----------
 
+{:.table}
 | Attribute Name | Attribute Type |
 |----------------|----------------|
 | identifier     | Identifier     |

@@ -29,6 +29,7 @@ Genome Assembly
 Attributes
 ----------
 
+{:.table}
 | Attribute Name | Attribute Type |
 |----------------|----------------|
 | name           | String         |
@@ -42,6 +43,7 @@ identifier: ReferenceGenomes are compiled by agencies such as NCBI, and are assi
 RelatedEntities
 ---------------
 
+{:.table}
 | Relation Name | Entity Type | Cardinality |
 |---------------|-------------|-------------|
 | containsChromosome | [ChromosomeReferenceSequence](chromosome_reference_sequence.html) | 1..* |

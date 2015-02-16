@@ -17,6 +17,7 @@ TranscriptReferenceSequences may correspond to any transcribed sequence includin
 Attributes
 ----------
 
+{:.table}
 | Attribute Name | Attribute Type |
 |----------------|----------------|
 | codingRegionOffset | int        |
@@ -26,6 +27,7 @@ codingRegionOffset: For transcripts that contain a coding region, codingRegionOf
 Related Entities
 ----------------
 
+{:.table}
 | Relation Name | Entity Type |
 |---------------|-------------|
 | translation   | [AminoAcidReferenceSequence](amino_acid_reference_sequence.html) |

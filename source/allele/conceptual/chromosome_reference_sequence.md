@@ -23,6 +23,7 @@ In version 1.0, ChromosomeReferenceSequence must be primary assembly chromosome 
 Attributes
 ----------
 
+{:.table}
 | Attribute Name | Attribute Type |
 |----------------|----------------|
 | chr            | Code           |
@@ -34,6 +35,7 @@ chr: A short human-readable name for the chromosome.
 Related Entities
 ----------------
 
+{:.table}
 | Relation Name     | Entity Type                              | Cardinality |
 |-------------------|------------------------------------------|-------------|
 | inReferenceGenome | [ReferenceGenome](reference_genome.html) | 0..*        |

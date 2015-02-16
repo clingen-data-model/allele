@@ -26,12 +26,13 @@ Exclusions and Limitations
 Attributes
 ----------
 
-|Attribute Name | Attribute Type|
+{:.table}
+| Attribute Name | Attribute Type |
 |---------------|---------------|
-|identifier     | Identifier[] |
-|symbol | String |
-|name           | String |
-|aliasSymbol    | String[] |
+| identifier     | Identifier[] |
+| symbol | String |
+| name           | String |
+| aliasSymbol    | String[] |
 
 The identifier attribute contains an array of Identifier entities. Each Identifier is given for each symbol granted to the gene by a naming entity.  If a naming agency withdraws a name, the period attribute of the Identifier is given a end value of the date of withdrawl.  This signifies that the Identifier is not valid.
 
@@ -44,6 +45,7 @@ aliasSymbol: A list of Strings that contain other symbols that may or may have b
 Related Entities
 ----------------
 
+{:.table}
 | Relation Name | Entity Type | Cardinality |
 |---------------|-------------|-------------|
 | hasTranscript | [TranscriptReferenceSequence] (transcript_reference_sequence.html) | 1..* |
