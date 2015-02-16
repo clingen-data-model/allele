@@ -32,7 +32,12 @@
 	  </dl>
 	</div>
 	<div class="col-md-8">
-	  <h1><%= current_page.data.title %></h1>
+	  <h1>
+	    <%= current_page.data.title %>
+	    <small>
+	      <%= link_to current_page.data.sequence_ontology, "http://www.sequenceontology.org/browser/current_svn/term/#{current_page.data.sequence_ontology}"  %>
+	    </small>
+	  </h1>
 	  <% if current_page.data.description %>
 	  <p class="lead">
 	    <%= current_page.data.description %>
