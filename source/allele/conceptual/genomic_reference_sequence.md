@@ -1,6 +1,6 @@
 ---
 title: GenomicReferenceSequence
-description: A [ReferenceSequence](reference_sequence.html) describing full or partial chromosomal DNA.
+description: A <a href="/allele/conceptual/reference_sequence.html">ReferenceSequence</a> describing full or partial chromosomal DNA.
 
 ---
 

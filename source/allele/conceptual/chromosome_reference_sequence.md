@@ -1,6 +1,6 @@
 ---
 title: ChromosomeReferenceSequence
-description: A [GenomicReferenceSequence](genomic_reference_sequence.html) describing the sequence of a full chromosome.
+description: A <a href="/allele/conceptual/genomic_reference_sequence.html">GenomicReferenceSequence</a> describing the sequence of a full chromosome.
 
 ---
 
