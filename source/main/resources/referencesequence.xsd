@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://clingen.org/dm/allele/v1"
+	targetNamespace="http://clingen.org/dm/allele/v1" xmlns:f="http://hl7.org/fhir"
+	elementFormDefault="qualified" version="0.0.82">
+	
+	<xs:import namespace="http://hl7.org/fhir" schemaLocation="fhir-base.xsd" />
+
+	<xs:element name="ReferenceSequence" type="ReferenceSequence">
+		<xs:annotation>
+			<xs:documentation>Public, stable, identifiable Reference sequences.
+			</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+
+	<xs:complexType name="ReferenceSequence.ReferenceGenome">
+		<xs:complexContent>
+			<xs:extension base="f:BackboneElement">
+				<xs:sequence>
+					<xs:element name="identifier" type="f:Identifier"
+						minOccurs="0" />
+					<xs:element name="name" type="f:string" minOccurs="0" />
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:complexType name="ReferenceSequence">
+		<xs:complexContent>
+			<xs:extension base="f:Resource">
+				<xs:sequence>
+					<xs:element name="identifier" type="f:Identifier" />
+					<xs:element name="sequenceType" type="ReferenceSequenceType" />
+					<xs:element name="chromosome" type="ReferenceSequenceChromosome"
+						minOccurs="0" />
+					<xs:element name="genomicSubType" type="ReferenceSequenceGenomicSubType"
+						minOccurs="0" />
+					<xs:element name="codingRegionOffset" type="f:integer"
+						minOccurs="0" />
+					<xs:element name="gene" type="f:ResourceReference"
+						minOccurs="0" />
+					<xs:element name="referenceGenome" type="ReferenceSequence.ReferenceGenome"
+						minOccurs="0" />
+					<xs:element name="related" type="ReferenceSequence.Related"
+						nillable="true" minOccurs="0" maxOccurs="unbounded" />
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:complexType name="ReferenceSequenceType">
+		<xs:complexContent>
+			<xs:extension base="f:Element">
+				<xs:sequence />
+				<xs:attribute name="value" type="ReferenceSequenceType-list" />
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:complexType name="ReferenceSequenceChromosome">
+		<xs:complexContent>
+			<xs:extension base="f:Element">
+				<xs:sequence />
+				<xs:attribute name="value" type="ReferenceSequenceChromosome-list" />
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:complexType name="ReferenceSequenceGenomicSubType">
+		<xs:complexContent>
+			<xs:extension base="f:Element">
+				<xs:sequence />
+				<xs:attribute name="value"
+					type="ReferenceSequenceGenomicSubType-list" />
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:complexType name="ReferenceSequence.Related">
+		<xs:complexContent>
+			<xs:extension base="f:BackboneElement">
+				<xs:sequence>
+					<xs:element name="type" type="ReferenceSequenceRelationshipType"
+						minOccurs="0" />
+					<xs:element name="target" type="f:ResourceReference" />
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:complexType name="ReferenceSequenceRelationshipType">
+		<xs:complexContent>
+			<xs:extension base="f:Element">
+				<xs:sequence />
+				<xs:attribute name="value"
+					type="ReferenceSequenceRelationshipType-list" />
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:simpleType name="ReferenceSequenceGenomicSubType-list">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="chromsome" />
+			<xs:enumeration value="mitochondrial" />
+			<xs:enumeration value="gene" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="ReferenceSequenceType-list">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="genomic" />
+			<xs:enumeration value="transcript" />
+			<xs:enumeration value="amino acid" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="ReferenceSequenceChromosome-list">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="chr1" />
+			<xs:enumeration value="chr2" />
+			<xs:enumeration value="chr3" />
+			<xs:enumeration value="chr4" />
+			<xs:enumeration value="chr5" />
+			<xs:enumeration value="chr6" />
+			<xs:enumeration value="chr7" />
+			<xs:enumeration value="chr8" />
+			<xs:enumeration value="chr9" />
+			<xs:enumeration value="chr10" />
+			<xs:enumeration value="chr11" />
+			<xs:enumeration value="chr12" />
+			<xs:enumeration value="chr13" />
+			<xs:enumeration value="chr14" />
+			<xs:enumeration value="chr15" />
+			<xs:enumeration value="chr16" />
+			<xs:enumeration value="chr17" />
+			<xs:enumeration value="chr18" />
+			<xs:enumeration value="chr19" />
+			<xs:enumeration value="chr20" />
+			<xs:enumeration value="chr21" />
+			<xs:enumeration value="chr22" />
+			<xs:enumeration value="chrX" />
+			<xs:enumeration value="chrY" />
+			<xs:enumeration value="chrMT" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="ReferenceSequenceRelationshipType-list">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="amino-acid" />
+			<xs:enumeration value="transcript" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>
+
