@@ -45,9 +45,13 @@ Search Parameters
 -----------------
 
 {:.table}
-| name | type | description | paths |
+| name | type | description | related attribute |
 |------|------|-------------|-------|
-| _id  | integer | the numeric integer identifer for the ReferenceSequence|
+| _id  | token | the numeric integer identifer for the ReferenceSequence|
+| chr | token | the chromosome code | ReferenceSequence.chr |
+| referenceGenome-id | token | | |
+| referenceGenome-name | string | | |
+| gene | resource | | |
 
 
 Examples
@@ -113,6 +117,12 @@ terminology binding
 #### ReferenceSequence.chr
 
 {:.dl-horizontal}
+definition
+: chromosome to which ReferenceSequence is bound
+
+multiplicity
+: 0..1
+
 terminology binding
 : Codes identifying human chromosomes
 
@@ -126,10 +136,19 @@ terminology binding
 
 {:.dl-horizontal}
 definition
-: lorem ipsum
+: offset of start of sequence from start of coding region
+
+multiplicity
+: 1..1
 
 #### ReferenceSequence.gene
 
 {:.dl-horizontal}
+definition
+: gene, if sequence is reference for specific gene
+
+multiplicity
+: 0..1
+
 terminology binding
 : Codes describing human genes
