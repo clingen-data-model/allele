@@ -36,19 +36,6 @@ This resource is referenced by [SimpleAminoAcidAllele](simple_amino_acid_allele.
 		<gene></gene>
 	</ReferenceSequence>
 
-Terminology Bindings
---------------------
-
-{:.table}
-| path | definition | type | reference |
-|------|------------|------|-----------|
-| ReferenceSequence.identifier | One of a set of valid reference sequence acessions from a recognized authority |
-| ReferenceSequence.kind | Codes identifying kinds of reference sequences | 
-| ReferenceSequence.chr | Codes identifying human chromosomes | 
-| ReferenceSequence.genomicSequenceType | Codes identifying the types of genomic sequences | 
-| ReferenceSequence.gene | Codes describing human genes | 
-
-
 Notes
 -----
 
@@ -102,9 +89,47 @@ requirements
 definition
 : The versioned accession that can be used to uniquely identify the sequence in a public database, as well as the information about which entity assigned the accession, and the time period over which the identifier is considered valid.
 
-control
+multiplicity
 : 1..1
 
 requirements
 : For ReferenceSequence, an identifier is valid unless the accession is withdrawn. If a new version of a sequence is created, it will be given a different versioned accession, and therefore a different identifier. In this case, the previous identifier is still valid: it can still be used to retrieve the given sequence, even if that sequence is no longer the most recent sequence associated with a given entity.
 
+terminology binding
+: One of a set of valid reference sequence acessions from a recognized authority
+
+#### ReferenceSequence.kind
+
+{:.dl-horizontal}
+definition
+: The type of reference sequence.
+
+multiplicity
+: 1..1
+
+terminology binding
+: Codes identifying kinds of reference sequences
+
+#### ReferenceSequence.chr
+
+{:.dl-horizontal}
+terminology binding
+: Codes identifying human chromosomes
+
+#### ReferenceSequence.genomicSequenceType
+
+{:.dl-horizontal}
+terminology binding
+: Codes identifying the types of genomic sequences
+
+#### ReferenceSequence.codingRegionOffset
+
+{:.dl-horizontal}
+definition
+: lorem ipsum
+
+#### ReferenceSequence.gene
+
+{:.dl-horizontal}
+terminology binding
+: Codes describing human genes
