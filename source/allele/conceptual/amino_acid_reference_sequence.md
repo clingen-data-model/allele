@@ -8,7 +8,9 @@ sequence_ontology: "SO:0000104"
 Scope and Usage
 ---------------
 
-A AminoAcidReferenceSequence is used to denote the particular sequence of amino acids resulting from the translation of a TranscriptReferenceSequence.
+An AminoAcidReferenceSequence is used to denote the specific amino acid sequence resulting from the translation of a TranscriptReferenceSequence.
+
+For example, NP_001447.2 is the AminoAcidReferenceSequence resulting from translation of TranscriptReferenceSequence NM_001456.3. 
 
 Exclusions and Limitations
 --------------------------
