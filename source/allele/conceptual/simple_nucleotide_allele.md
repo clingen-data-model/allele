@@ -11,6 +11,10 @@ See also [SimpleAllele](simple_allele.html)
 
 A variant allele representation at a specific nucleotide.  This can represent an observation at a single SimpleGenomicAllele or a single SimpleTranscriptAllele.
 
+SimpleNucleotideAllele is an abstract class, so any SimpleNucleotideAllele must be either a SimpleGenomicAllele or a SimpleTranscriptAllele.
+
+The point of this class is to facilitate aggregation between SimpleGenomicAllele and SimpleTranscriptAllele at the CanonicalVariant level.
+
 Attributes
 --------------------
 
