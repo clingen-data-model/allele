@@ -14,6 +14,7 @@ Context
 
 Resource Content
 ----------------
+![Gene](/images/Gene.svg)
 
 Notes
 -----

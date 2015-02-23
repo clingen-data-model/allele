@@ -12,6 +12,8 @@ Context
 
 Resource Content
 ----------------
+![SimpleAllele diagram](/images/SimpleAllele.svg)
+
 
 Notes
 -----

@@ -26,7 +26,7 @@ The CanonicalAllele resource is described by the following attributes.
 Resource Content
 ----------------
 
-
+![CanonicalAllele resource diagram](/images/CanonicalAllele.svg)
 
 Notes
 -----
