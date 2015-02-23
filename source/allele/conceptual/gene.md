@@ -21,7 +21,7 @@ The assignment of names, and the association of [TranscriptReferenceSequences](t
 Exclusions and Limitations
 --------------------------
 
-
+The Identifiers in Gene are used to track the symbols granted by agencies such as HGNC.  However, the long-form name is not similarly tracked.  Instead a single name is chosen for the Gene, and that name is not guaranteed to either be fixed over time, or to be chosen from one of the names provided by an agency.
 
 Attributes
 ----------
