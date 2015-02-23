@@ -1,6 +1,7 @@
 ---
 title: ReferenceSequence
 description: A versioned sequence of nucleotide bases or amino acids.
+sequence_ontology: SO:0000994
 
 ---
 
