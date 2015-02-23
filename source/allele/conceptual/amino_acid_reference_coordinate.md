@@ -19,7 +19,7 @@ Related Entities
 
 {:.table}
 |  Relation Name | Entity Type | Cardinality |
-|----------------|-------------|=============|
+|----------------|-------------|-------------|
 | referenceSequence | [AminoAcidReferenceSequence](amino_acid_reference_sequence.html) | 1 |
 
 referenceSequence: points to the [AminoAcidReferenceSequence](amino_acid_reference_sequence.html)  on which this AminoAcidReferenceCoordinate is located.

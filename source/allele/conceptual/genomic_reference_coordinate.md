@@ -19,7 +19,7 @@ Related Entities
 
 {:.table}
 |  Relation Name | Entity Type | Cardinality |
-|----------------|-------------|=============|
+|----------------|-------------|-------------|
 | referenceSequence | [GenomicReferenceSequence](genomic_reference_sequence.html) | 1 |
 
 referenceSequence: points to the [GenomicReferenceSequence](genomic_reference_sequence.html)  on which this GenomicReferenceCoordinate is located.
