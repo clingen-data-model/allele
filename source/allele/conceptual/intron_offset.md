@@ -1,13 +1,13 @@
 ---
-title: IntronicOffset 
-description: IntronicOffset is used in conjunction with a <a href="transcript_reference_coordinate.html">TranscriptReferenceCoordinate</a> to refer to an intronic location based on a <a href="transcript_reference_sequence.html">TranscriptReferenceSequence</a>.  
+title: IntronOffset 
+description: IntronOffset is used in conjunction with a <a href="transcript_reference_coordinate.html">TranscriptReferenceCoordinate</a> to refer to an intronic location based on a <a href="transcript_reference_sequence.html">TranscriptReferenceSequence</a>.  
 
 ---
 
 Scope and Usage
 ---------------
 
-See [TranscriptReferenceCoordinate](transcript_reference_coordinate.html) for details on the Scope and Usage of IntronicOffset.
+See [TranscriptReferenceCoordinate](transcript_reference_coordinate.html) for details on the Scope and Usage of IntronOffset.
 
 
 Exclusions and Limitations
