@@ -52,9 +52,12 @@ A controlled vocabulary term used to describe an observed transcript feature.  T
 {:.table}
 | Attribute Name | Attribute Type | Cardinality |
 |----------------|----------------|-------------|
-|   regionType   |     String     |    0..1     |
+| regionTypes    |     Code[]     |    0..*     |
+| regionType     |     Code       |    1        |
 
-regionType: A controlled vocabulary term used to describe a single effected transcript feature. Currently constraint to be a child of [transcript_region](http://www.sequenceontology.org/browser/current_svn/term/SO:0000833) within the Sequence Ontology.  These values can be experimentally discovered or derived with annotation tools such as [SnpEff](http://snpeff.sourceforge.net/) or [VAAST](http://www.yandell-lab.org/software/vaast.html).
+regionTypes: A controlled vocabulary term used to describe the region types in which a coordinate lies. The region type must be a child of [transcript_region](http://www.sequenceontology.org/browser/current_svn/term/SO:0000833) within the Sequence Ontology.  These values can be experimentally discovered or derived with annotation tools such as [SnpEff](http://snpeff.sourceforge.net/) or [VAAST](http://www.yandell-lab.org/software/vaast.html).
+
+regionType: A further constrained term, that provides a single unique regionType for every transcript region coordinate.
 
 
 Related Entities 
