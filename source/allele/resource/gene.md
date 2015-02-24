@@ -25,6 +25,7 @@ Search Parameters
 {:.table}
 | name | type | description | related attribute |
 |------|------|-------------|-------|
+| _id  | token | search by the numeric internal identifier of the gene | 
 
 
 Examples
