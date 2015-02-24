@@ -25,17 +25,17 @@ The following table illustrates how exonic and intronic coordinates are represen
 ACTgcactaCA
 123      45
 
-In this example, uppercase bases represent exonic sequence, and lowercase sequences represent intronic bases.  In the table, lowercase and uppercase is used to aid in undestanding, but the actual data would not include this information. The numbering is transcript-based, which will therefore not include the intronic bases.    Start and End are defined using the alignment method discussed in [ReferenceCoordinate](reference_coordinate.html).
+In this example, uppercase bases represent exonic sequence, and lowercase sequences represent intronic bases.  In the table, lowercase and uppercase is used to aid in undestanding, but the actual data would not include this information. The numbering is transcript-based, which will therefore not include the intronic bases.    Start and End are defined using the interval method discussed in [ReferenceCoordinate](reference_coordinate.html).
 
 offsetStart and offsetEnd are understood to be attributes of a related IntronicCoordinate.  If both values are empty in the table, then no such related entity exists.
 
 | Example Type | start | end | ref | offsetStart | offsetEnd |
 |--------------|-------|-----|-----|-------------|-----------|
-| Exonic       |   2   |  2  |  C  |             |           |
-| Intronic Left |  3   |  3  |  c  |      2      |     2     |
-| Intronic Right |  4   |  4  |  t  |      -2      |     -2     |
-| Intronic Long |  3   |  3  |  cac  |      2      |     4     |
-| Spanning     |  2    |  3  |  CTgc |             |     2    |
+| Exonic       |   2   |  3  |  C  |             |           |
+| Intronic Left |  3   |  3  |  c  |      2      |     3     |
+| Intronic Right |  4   |  4  |  t  |      -2      |     -3     |
+| Intronic Long |  3   |  3  |  cac  |      2      |     5     |
+| Spanning     |  2    |  3  |  CTgc |             |     3    |
 
 Exclusions and Limitations
 --------------------------
