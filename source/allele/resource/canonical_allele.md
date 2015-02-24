@@ -28,8 +28,20 @@ Resource Content
 
 ![CanonicalAllele resource diagram](/images/CanonicalAllele.svg)
 
+    <CanonicalAllele>
+		<identifier></identifier>
+		<active></active>
+		<replacement></replacement>
+		<sequenceType></sequenceType>
+		<complexityType></complexityType>
+		<SimpleAllele>
+		</SimpleAllele>
+	</CanonicalAllele>
+
 Notes
 -----
+
+
 
 Search Parameters
 -----------------
@@ -37,10 +49,12 @@ Search Parameters
 {:.table}
 | name | type | description | related attribute |
 |------|------|-------------|-------|
-
+| _id | token | the integer identifier for the CanonicalAllele |
+| HGVS Expression | string | An HGVS expression identifying an allele |
 
 Examples
 --------
+
 
 Formal Definitions
 ------------------

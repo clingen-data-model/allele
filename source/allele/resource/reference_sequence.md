@@ -48,7 +48,7 @@ Search Parameters
 {:.table}
 | name | type | description | related attribute |
 |------|------|-------------|-------|
-| _id  | token | the numeric integer identifer for the ReferenceSequence|
+| _id  | token | the integer identifer for the ReferenceSequence|
 | chr | token | the chromosome code | ReferenceSequence.chr |
 | referenceGenome-id | token | | |
 | referenceGenome-name | string | | |
