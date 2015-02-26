@@ -19,9 +19,8 @@ When describing observations a concise and interoperable method is required to r
 {:.table}
 | Attribute Name | Attribute Type | Cardinality |
 |----------------|----------------|-------------|
-| aminoAcidChangeType |  String  |    0..1     |
+| [aminoAcidChangeType](amino_acid_change_type.html) |  String  |    0..1     |
 
-aminoAcidChangeType: A controlled vocabulary term used to describe an observed amino acid change.  Currently constraint to be a child of [gene_variant](http://www.sequenceontology.org/browser/current_svn/term/SO:0001564) within the Sequence Ontology.  These values can be experimentally discovered or derived with annotation tools such as [SnpEff](http://snpeff.sourceforge.net/) or [VAAST](http://www.yandell-lab.org/software/vaast.html).
 
 Exclusions and Limitations
 --------------------------

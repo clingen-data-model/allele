@@ -22,15 +22,17 @@ Examples
 
 The following table illustrates how exonic and intronic coordinates are represented based on the following sequence:
 
-ACTgcactaCA
-123      45
+{:.table}
+|ACT|gcacta|CA|
+|123|      |45|
 
 In this example, uppercase bases represent exonic sequence, and lowercase sequences represent intronic bases.  In the table, lowercase and uppercase is used to aid in undestanding, but the actual data would not include this information. The numbering is transcript-based, which will therefore not include the intronic bases.    Start and End are defined using the interval method discussed in [ReferenceCoordinate](reference_coordinate.html).
 
 offsetStart and offsetEnd are understood to be attributes of a related IntronicCoordinate.  If both values are empty in the table, then no such related entity exists.
 
+{:.table}
 | Example Type | start | end | ref | offsetStart | offsetEnd |
-|--------------|-------|-----|-----|-------------|-----------|
+|--------------|:-------:|:-----:|:-----:|:-------------:|:-----------:|
 | Exonic       |   2   |  3  |  C  |             |           |
 | Intronic Left |  3   |  3  |  c  |      2      |     3     |
 | Intronic Right |  4   |  4  |  t  |      -2      |     -3     |
@@ -47,18 +49,11 @@ Attributes
 
 When describing observations a concise and interoperable method is required to reduce ambiguity as well as clarify the semantics of nature language and biological meaning. The use of a formal, stable ontological structure allows highly detailed descriptions as well as a logically ordered interrelationship between concepts.
 
-A controlled vocabulary term used to describe an observed transcript feature.  These values can be experimentally discovered or derived with annotation tools such as [SnpEff](http://snpeff.sourceforge.net/) or [VAAST](http://www.yandell-lab.org/software/vaast.html).
-
 {:.table}
 | Attribute Name | Attribute Type | Cardinality |
 |----------------|----------------|-------------|
-| regionTypes    |     Code[]     |    0..*     |
-| regionType     |     Code       |    1        |
-
-regionTypes: A controlled vocabulary term used to describe the region types in which a coordinate lies. The region type must be a child of [transcript_region](http://www.sequenceontology.org/browser/current_svn/term/SO:0000833) within the Sequence Ontology.  These values can be experimentally discovered or derived with annotation tools such as [SnpEff](http://snpeff.sourceforge.net/) or [VAAST](http://www.yandell-lab.org/software/vaast.html).
-
-regionType: A further constrained term, that provides a single unique regionType for every transcript region coordinate.
-
+| [exclusiveRegionType](region_type.html) | Code | 1 |
+| [ancillaryRegionTypes](region_type.html) | Code[ ] | 0..* |
 
 Related Entities 
 ----------------
