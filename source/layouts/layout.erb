@@ -30,6 +30,12 @@
 	    <% sitemap.resources.select{|r| r.path =~ /^#{model}\/conceptual/ and not r.path =~ /index\.html/}.sort{|a,b| a.data.title <=> b.data.title }.each do |r| %>
 	    <li><%= link_to r.data.title, r.url %></li>
 	    <% end %>
+	  </ul>
+	  <h5><%= link_to "value sets", "/#{model}/value_sets" %></h5>
+	  <ul class="list-unstyled">
+	    <% sitemap.resources.select{|r| r.path =~ /^#{model}\/value_sets/ and not r.path =~ /index\.html/}.sort{|a,b| a.data.title <=> b.data.title }.each do |r| %>
+	    <li><%= link_to r.data.title, r.url %></li>
+	    <% end %>
 	    <% end %>
 	  </ul>
 	</div>
