@@ -43,7 +43,7 @@ exclusiveAminoAcidChangeType List
 | transcript_variant | [SO:0001576](http://www.sequenceontology.org/browser/current_svn/term/SO:0001576) |
 
 
-ancillaryAminoAcidChangeType List
+auxiliaryAminoAcidChangeType List
 ---------------------------------
 
 In cases where additional or clarifying terms are needed a child of [sequence_variant](http://www.sequenceontology.org/browser/current_svn/term/SO:0001060) may be used and if a term is need it can be submitted for review via the sequence ontology [request a term]( http://sourceforge.net/p/song/term-tracker/).
@@ -61,7 +61,7 @@ Example
 |----------------|----------------|
 | `exclusiveAminoAcidChangeType` | `stop_gained` | [SO:0001587](http://www.sequenceontology.org/browser/current_svn/term/SO:0001587) |
 
-**ancillaryAminoAcidChangeType:** (carnality of 0..*)
+**auxiliaryAminoAcidChangeType:** (carnality of 0..*)
 
 * This attribute allows for a couple of possibilities.  
 1. First to allow additional detail in describing the resulting effect a given variant has.
@@ -73,15 +73,15 @@ _The first possibility:_
 | Type | SO Name | Code[ID] | 
 |----------------|----------------|
 | `exclusiveRegionType` | `frameshift_variant` | [SO:0001589](http://www.sequenceontology.org/browser/current_svn/term/SO:0001589) |
-| `ancillaryRegionType` | `frameshift_elongation` | [SO:0000202](http://www.sequenceontology.org/browser/current_svn/term/SO:0000202) |
+| `auxiliaryRegionType` | `frameshift_elongation` | [SO:0000202](http://www.sequenceontology.org/browser/current_svn/term/SO:0000202) |
 
-This method offers two levels of annotated detail.  The exclusiveRegionType term enables higher-level grouping, and the ancillaryRegionType offers additional specifics on the nature of the variant. 
+This method offers two levels of annotated detail.  The exclusiveRegionType term enables higher-level grouping, and the auxiliaryRegionType offers additional specifics on the nature of the variant. 
 
 _The second possibility:_
 
 {:.table}
 | Type | SO Name | Code[ID] | 
 |----------------|----------------|
-| `ancillaryRegionType` | `non_coding_transcript_variant` | [SO:SO:0001619](http://www.sequenceontology.org/browser/current_svn/term/SO:0001619) |
+| `auxiliaryRegionType` | `non_coding_transcript_variant` | [SO:SO:0001619](http://www.sequenceontology.org/browser/current_svn/term/SO:0001619) |
 
 

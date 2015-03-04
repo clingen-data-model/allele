@@ -20,7 +20,7 @@ When describing observations a concise and interoperable method is required to r
 | Attribute Name | Attribute Type | Cardinality |
 |----------------|----------------|-------------|
 | [exclusiveAminoAcidChangeType](../value_sets/amino_acid_change_type.html) | Code | 0..1 |
-| [ancillaryAminoAcidChangeType](../value_sets/amino_acid_change_type.html) | Code | 0..* |
+| [auxiliaryAminoAcidChangeType](../value_sets/amino_acid_change_type.html) | Code | 0..* |
 
 
 

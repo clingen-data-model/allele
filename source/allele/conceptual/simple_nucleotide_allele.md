@@ -24,7 +24,7 @@ When describing observations a concise and interoperable method is required to r
 | Attribute Name | Attribute Type | Cardinality |
 |----------------|----------------|-------------|
 | [exclusiveNucleotideChangeType](../value_sets/nucleotide_change_type.html) | Code | 0..1 |
-| [ancillaryNucleotideChangeType](../value_sets/nucleotide_change_type.html) | Code | 0..* |
+| [auxiliaryNucleotideChangeType](../value_sets/nucleotide_change_type.html) | Code | 0..* |
 
 Exclusions and Limitations
 --------------------------

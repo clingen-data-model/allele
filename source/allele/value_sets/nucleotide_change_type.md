@@ -50,7 +50,7 @@ Examples
 | `exclusiveNucleotideChangeType` | `deletion` | [SO:0000159](http://www.sequenceontology.org/browser/current_svn/term/SO:0000159) |
 
 
-**ancillaryNucleotideChangeType:** (carnality of 0..*)
+**auxiliaryNucleotideChangeType:** (carnality of 0..*)
 
 * This attribute allows for a couple of possibilities.  
 1. First to allow additional detail in describing an observed sequence alteration.
@@ -64,7 +64,7 @@ _The first possibility:_
 | `exclusiveNucleotideChangeType` | `substitution` | [SO:1000002](http://www.sequenceontology.org/browser/current_svn/term/SO:1000002) |
 | `auxiliaryNucleotideChangeType` | `SNP` | [SO:0000694](http://www.sequenceontology.org/browser/current_svn/term/SO:0000694) |
 
-This method offers two levels of annotated detail.  The exclusiveNucleotideChangeType term enables higher-level grouping, and the ancillaryNucleotideChangeType offers additional specifics on the nature of the variant. 
+This method offers two levels of annotated detail.  The exclusiveNucleotideChangeType term enables higher-level grouping, and the auxiliaryNucleotideChangeType offers additional specifics on the nature of the variant. 
 
 _The second possibility:_
 

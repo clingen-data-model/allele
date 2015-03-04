@@ -30,7 +30,7 @@ exclusiveRegionType List
 | transcription_end_site | [SO:0000616](http://www.sequenceontology.org/browser/current_svn/term/SO:0000616) |
 
 
-ancillaryRegionType List
+auxiliaryRegionType List
 ------------------------
 
 In cases where additional or clarifying terms are needed a child of [transcript_region]( http://www.sequenceontology.org/browser/current_svn/term/SO:0000833) may be used and if a term is need it can be submitted for review via the sequence ontology [request a term]( http://sourceforge.net/p/song/term-tracker/).
@@ -49,7 +49,7 @@ Examples
 | `exclusiveRegionType` | `exon` | [SO:0000147](http://www.sequenceontology.org/browser/current_svn/term/SO:0000147) |
 
 
-**ancillaryRegionType:** (carnality of 0..*)
+**auxiliaryRegionType:** (carnality of 0..*)
 
 * This attribute allows for a couple of possibilities.  
 1. First to allow additional detail in describing the location of the feature related to the variant.
@@ -61,16 +61,16 @@ _The first possibility:_
 | Type | SO Name | Code[ID] | 
 |----------------|----------------|
 | `exclusiveRegionType` | `exon` | [SO:0000147](http://www.sequenceontology.org/browser/current_svn/term/SO:0000147) |
-| `ancillaryRegionType` | `three_prime_coding_exon` | [SO:0000202](http://www.sequenceontology.org/browser/current_svn/term/SO:0000202) |
+| `auxiliaryRegionType` | `three_prime_coding_exon` | [SO:0000202](http://www.sequenceontology.org/browser/current_svn/term/SO:0000202) |
 
-This method offers two levels of annotated detail.  The exclusiveRegionType term enables higher-level grouping, and the ancillaryRegionType offers additional specifics on the nature of the variant. 
+This method offers two levels of annotated detail.  The exclusiveRegionType term enables higher-level grouping, and the auxiliaryRegionType offers additional specifics on the nature of the variant. 
 
 _The second possibility:_
 
 {:.table}
 | Type | SO Name | Code[ID] | 
 |----------------|----------------|
-| `ancillaryRegionType` | `pseudogenic_exon` | [SO:0000507](http://www.sequenceontology.org/browser/current_svn/term/SO:0000507) |
+| `auxiliaryRegionType` | `pseudogenic_exon` | [SO:0000507](http://www.sequenceontology.org/browser/current_svn/term/SO:0000507) |
 
 
 

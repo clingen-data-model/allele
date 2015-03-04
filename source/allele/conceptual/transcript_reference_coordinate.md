@@ -53,7 +53,7 @@ When describing observations a concise and interoperable method is required to r
 | Attribute Name | Attribute Type | Cardinality |
 |----------------|----------------|-------------|
 | [exclusiveRegionType](../value_sets/region_type.html) | Code | 0..1 |
-| [ancillaryRegionTypes](../value_sets/region_type.html) | Code | 0..* |
+| [auxiliaryRegionTypes](../value_sets/region_type.html) | Code | 0..* |
 
 Related Entities 
 ----------------
