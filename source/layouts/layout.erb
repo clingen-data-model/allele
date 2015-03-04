@@ -21,23 +21,17 @@
 	  <h4><%= link_to "#{model}", "/#{model}" %></h4>
 	  <h5><%= link_to "resource", "/#{model}/resource" %></h5>
 	  <ul class="list-unstyled">
-	    <% sitemap.resources.select{|r| r.path =~ /^#{model}\/resource/ and not r.path =~ /index\.html/ }.sort{|a,b| a.data.title <=> b.data.title }.each do |r| %>
-	    <li><%= link_to r.data.title, r.url %></li>
-	    <% end %>
+	    <li><%= link_to "entities", "/#{model}/resource/entities" %></li>
+	    <li><%= link_to "value sets", "/#{model}/resource/value_sets" %></li>
+	    <li><%= link_to "schemas", "/#{model}/resource/schemas" %></li>
+	    <li><%= link_to "examples", "/#{model}/resource/examples" %>
 	  </ul>
 	  <h5><%= link_to "conceptual", "/#{model}/conceptual" %></h5>
 	  <ul class="list-unstyled">
-	    <% sitemap.resources.select{|r| r.path =~ /^#{model}\/conceptual/ and not r.path =~ /index\.html/}.sort{|a,b| a.data.title <=> b.data.title }.each do |r| %>
-	    <li><%= link_to r.data.title, r.url %></li>
-	    <% end %>
+	    <li><%= link_to "entities", "/#{model}/conceptual/entities" %></li>
+	    <li><%= link_to "value sets", "/#{model}/conceptual/value_sets" %></li>
 	  </ul>
-	  <h5><%= link_to "value sets", "/#{model}/value_sets" %></h5>
-	  <ul class="list-unstyled">
-	    <% sitemap.resources.select{|r| r.path =~ /^#{model}\/value_sets/ and not r.path =~ /index\.html/}.sort{|a,b| a.data.title <=> b.data.title }.each do |r| %>
-	    <li><%= link_to r.data.title, r.url %></li>
-	    <% end %>
-	    <% end %>
-	  </ul>
+	  <% end %>
 	</div>
 	<div class="col-md-8">
 	  <h1>
