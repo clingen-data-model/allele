@@ -23,9 +23,8 @@ When describing observations a concise and interoperable method is required to r
 {:.table}
 | Attribute Name | Attribute Type | Cardinality |
 |----------------|----------------|-------------|
-| nucleotideChangeType |  String  |    0..1     |
-
-nucleotideChangeType: A controlled vocabulary term used to describe observed nucleotide alteration, including the characterization of no_alteration.  Currently constraint to be a child of allele_postion within the Sequence Ontology.  These values can be experimentally discovered or derived with annotation tools such as [SnpEff](http://snpeff.sourceforge.net/) or [VAAST](http://www.yandell-lab.org/software/vaast.html).
+| [exclusiveNucleotideChangeType](../value_sets/nucleotide_change_type.html) | Code | 0..1 |
+| [ancillaryNucleotideChangeType](../value_sets/nucleotide_change_type.html) | Code | 0..* |
 
 Exclusions and Limitations
 --------------------------
