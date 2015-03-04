@@ -48,8 +48,8 @@ Related Entities
 {:.table}
 | Relation Name | Entity Type | Cardinality |
 |---------------|-------------|-------------|
-| hasTranscript | [TranscriptReferenceSequence] (transcript_reference_sequence.html) | 1..* |
-| hasGeneSequence | [GeneReferenceSequence] (gene_reference_sequence.html) | 0..* |
+| hasTranscript | [TranscriptReferenceSequence](transcript_reference_sequence.html) | 1..* |
+| hasGeneSequence | [GeneReferenceSequence](gene_reference_sequence.html) | 0..* |
 
 hasTranscript:   Each gene must have at least one transcript; it may have more than one because of alternate splicing or different transcripts being created by differing groups such as NCBI and Ensembl.
 
