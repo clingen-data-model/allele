@@ -10,13 +10,12 @@
     <title><%= current_page.data.title || "ClinGen Data Model" %></title>
     
     <%= stylesheet_link_tag "bootstrap", "bootstrap-theme" %>
-    <%= javascript_include_tag  "bootstrap" %>
   </head>
   
   <body class="<%= page_classes %>">
     <div class="container">
       <div class="row">
-	<div class="col-md-4">
+	<div class="col-md-2">
 	  <% data.models.names.each do |model| %>
 	  <h4><%= link_to "#{model}", "/#{model}" %></h4>
 	  <h5><%= link_to "resource", "/#{model}/resource" %></h5>
@@ -24,7 +23,7 @@
 	    <li><%= link_to "entities", "/#{model}/resource/entities" %></li>
 	    <li><%= link_to "value sets", "/#{model}/resource/value_sets" %></li>
 	    <li><%= link_to "schemas", "/#{model}/resource/schemas" %></li>
-	    <li><%= link_to "examples", "/#{model}/resource/examples" %>
+	    <li><%= link_to "examples", "/#{model}/resource/examples" %></li>
 	  </ul>
 	  <h5><%= link_to "conceptual", "/#{model}/conceptual" %></h5>
 	  <ul class="list-unstyled">
@@ -33,7 +32,7 @@
 	  </ul>
 	  <% end %>
 	</div>
-	<div class="col-md-8">
+	<div class="col-md-10">
 	  <h1>
 	    <%= current_page.data.title %>
 	    <small>
