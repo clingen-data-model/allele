@@ -46,11 +46,25 @@ helpers do
     output = sitemap.resources.select{|r| r.url.include?(current_page.url) and not r.path =~ /index\.html/}.reduce("<dl>\n") do |acc, r|
       acc + "<dt>#{link_to r.data.title, r.url}</dt>\n<dd>#{r.data.description}</dd>\n"
     end
-    return output + "<\dl>\n"
+    return output + "</dl>\n"
   end
-#   def some_helper
-#     "Helping"
-#   end
+
+  def brief_index(path)
+    output = sitemap.resources.select{|r| r.url.include?(path) and not r.path =~ /index\.html/}.reduce("<ul>\n") do |acc, r|
+      acc + "<li>#{link_to r.data.title, r.url}</li>\n"
+    end
+    return output + "</ul>\n"
+  end  
+
+  def link_with_local_index(text, path)
+    output = link_to(text, path)
+    if current_page.url.include?(path)
+      "<strong>#{output}</strong>#{brief_index(path)}"
+    else
+      output
+    end
+  end
+
 end
 
 set :css_dir, 'stylesheets'
