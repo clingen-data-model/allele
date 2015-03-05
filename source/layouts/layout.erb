@@ -15,7 +15,7 @@
   <body class="<%= page_classes %>">
     <div class="container">
       <div class="row">
-	<div class="col-md-4">
+	<div class="col-md-3">
 	  <% data.models.names.each do |model| %>
 	  <h4><%= link_to "#{model}", "/#{model}" %></h4>
 	  <h5><%= link_to "resource", "/#{model}/resource" %></h5>
@@ -35,7 +35,7 @@
 	  </ul>
 	  <% end %>
 	</div>
-	<div class="col-md-8">
+	<div class="col-md-9">
 	  <h1>
 	    <%= current_page.data.title %>
 	    <small>
