@@ -1,5 +1,5 @@
 ---
-title: Allele Model v1.0
+title: Allele Model 0.1beta
 ---
 
 Introduction
