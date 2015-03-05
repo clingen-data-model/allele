@@ -1,0 +1,9 @@
+---
+title: allele model (conceptual)
+---
+<dl>
+<% sitemap.resources.select{|r| r.path =~ /^allele\/conceptual\/entities/ and not r.path =~ /index\.html/}.each do |r| %>
+<dt><%= link_to r.data.title, r.url %></dt>
+<dd><%= r.data.description %></dt>
+<% end %>
+</dl>
