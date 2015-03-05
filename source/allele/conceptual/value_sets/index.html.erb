@@ -1,10 +1,6 @@
 ---
-title: allele model (value sets)
+title: allele model (conceptual value sets)
 ---
 
-<dl>
-<% sitemap.resources.select{|r| r.path =~ /^allele\/conceptual\/value_sets/ and not r.path =~ /index\.html/}.each do |r| %>
-<dt><%= link_to r.data.title, r.url %></dt>
-<dd><%= r.data.description %></dt>
-<% end %>
-</dl>
+<%= local_index %>
+

@@ -41,11 +41,17 @@ configure :development do
 end
 
 # Methods defined in the helpers block are available in templates
-# helpers do
+helpers do
+  def local_index
+    output = sitemap.resources.select{|r| r.url.include?(current_page.url) and not r.path =~ /index\.html/}.reduce("<dl>\n") do |acc, r|
+      acc + "<dt>#{link_to r.data.title, r.url}</dt>\n<dd>#{r.data.description}</dd>\n"
+    end
+    return output + "<\dl>\n"
+  end
 #   def some_helper
 #     "Helping"
 #   end
-# end
+end
 
 set :css_dir, 'stylesheets'
 

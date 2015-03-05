@@ -36,11 +36,6 @@ Physical models typically simplify the conceptual model to allow for more practi
 While multiple physical models are definable, we specify a particular document resource model, which is meant to be the particular model used in communication within the ClinGen project.  Implementers will therefore be most specifically interested in the resource model, but we advise that Implementers pay close attention to the conceptual model that underlies it.
 
 
-Resource Model Overview
------------------------
-
-TBD
-
 Relation to other Models
 ------------------------
 
