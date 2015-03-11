@@ -18,17 +18,17 @@ There is no guarantee that a gene is ever transcribed, such as in some computati
 
 The assignment of names, and the association of [TranscriptReferenceSequences](/allele/conceptual/reference_sequence/transcript_reference_sequence.html) must be performed by a recognized public group such as NCBI or HGNC.  Note that different agencies may be responsible for names and for associations with sequences.
 
-Conceptual Model
-----------------
-
-![Gene](/images/GeneConceptual.svg)
-
-Resource Model: [Gene](/allele/resource/gene/index.html#resource_model)
-
 Exclusions and Limitations
 --------------------------
 
 The Identifiers in Gene are used to track the symbols granted by agencies such as HGNC.  However, the long-form name is not similarly tracked.  Instead a single name is chosen for the Gene, and that name is not guaranteed to either be fixed over time, or to be chosen from one of the names provided by an agency.
+
+Conceptual Model
+----------------
+
+[![Gene Conceptual Diagram](/images/GeneConceptual.svg){: .img-responsive}](/images/GeneConceptual.svg)
+
+Resource Model: [Gene](/allele/resource/gene/index.html#resource_model)
 
 Attributes
 ----------

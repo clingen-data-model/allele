@@ -24,7 +24,7 @@ The Gene resource is described by the following attributes
 Resource Model
 ----------------
 
-![Gene](/images/GeneResource.svg)
+[![Gene Resource Diagram](/images/GeneResource.svg){: .img-responsive}](/images/GeneResource.svg)
 
 Conceptual Model: [Gene](/allele/conceptual/gene/index.html#conceptual_model)
 	

@@ -16,26 +16,20 @@ Context
 The ReferenceSequence resource is described by the following attributes
 
 * identifier (mandatory)
-* kind (mandatory)
-* genomicSequenceType (mandatory)
-* codingRegionOffset (optional)
+* sequenceClass (mandatory)
+* nucleotideSequenceClass (optional)
+* genomicSequenceClass (optional)
 * gene (optional)
+* referenceGenome (optional)
 
-Resource Content
+Resource Model
 ----------------
 
-![ReferenceSequence resource diagram](/images/ReferenceSequence.svg)
+[![ReferenceSequence Resource Diagram](/images/ReferenceSequenceResource.svg){: .img-responsive}](/images/ReferenceSequenceResource.svg)
 
-This resource is referenced by [SimpleAminoAcidAllele](simple_amino_acid_allele.html)
+Conceptual Model: [ReferenceSequence](/allele/conceptual/reference_sequence/index.html#conceptual_model)
 
-	<ReferenceSequence>
-		<identifier></identifier>
-		<kind></kind>
-		<chr></chr>
-		<genomicSequenceType></genomicSequenceType>
-		<codingRegionOffset></codingRegionOffset>
-		<gene></gene>
-	</ReferenceSequence>
+This resource is referenced by [SimpleAllele](/allele/resource/simple_allele) & [Gene](/allele/resource/gene)
 
 Notes
 -----
@@ -58,20 +52,14 @@ Search Parameters
 Examples
 --------
 
-Homo sapiens chromosome 1, GRCh38 Primary Assembly
-NCBI Reference Sequence: NC_000001.11
+{:.table}
+|Name                       |||
+|---------------------------|||
+|RS201-NM\_001014794.2-ILK|[XML](/allele/implementation/examples/RS201.html#xml)|[JSON](/allele/implementation/examples/RS201.html#json)|
+|RS202-NC\_000011.9-b37|[XML](/allele/implementation/examples/RS202.html#xml)|[JSON](/allele/implementation/examples/RS202.html#json)|
+|RS203-NC\_000011.10-b38|[XML](/allele/implementation/examples/RS203.html#xml)|[JSON](/allele/implementation/examples/RS203.html#json)|
+|RS210-NC\_000017.11-b38|[XML](/allele/implementation/examples/RS210.html#xml)|[JSON](/allele/implementation/examples/RS210.html#json)|
 
-	<ReferenceSequence>
-		<identifier>
-			<label>Homo sapiens chromosome 1, GRCh38 Primary Assembly.</label>
-			<system>refseq</system>
-			<value>NC_000001.11</value>
-		</identifier>
-		<kind>nucleotide</kind>
-		<chr>1</chr>
-		<genomicSequenceType>chr</genomicSequenceType>
-		<codingRegionOffset>0</codingRegionOffset>
-	</ReferenceSequence>
 
 Formal Definitions
 ------------------

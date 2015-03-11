@@ -23,30 +23,12 @@ The SimpleAllele resource is described by the following attributes.
 * ReferenceCoordinate: The coordinates of the allele relative to a ReferenceSequence
 * AlleleName: Identifiers giving the allele a unique name, possible HGVS expressions, etc.
 
-
-Resource Content
+Resource Model
 ----------------
 
-![SimpleAllele diagram](/images/SimpleAllele.svg)
+[![SimpleAllele Resource Diagram](/images/SimpleAlleleResource.svg){: .img-responsive}](/images/SimpleAlleleResource.svg)
 
-    <SimpleAllele>
-		<identifier></identifier>
-		<sequenceType></sequenceType>
-		<allele></allele>
-		<nucleotideChangeType></nucleotideChangeType>
-		<aminoAcidChangeType></aminoAcidChangeType>
-		<ReferenceCoordinate>
-			<identifier></identifier>
-			<referenceSequence></referenceSequence>
-			<start></start>
-			<end></end>
-			<refAllele></refAllele>
-			<regionTypeCode></regionTypeCode>
-			<intronicOffsetStart></intronicOffsetStart>
-		</ReferenceCoordinate>
-		<AlleleName>
-		</AlleleName>
-	</SimpleAllele>
+Conceptual Model: [SimpleAllele](/allele/conceptual/simple_allele/index.html#conceptual_model)
 
 
 Notes
