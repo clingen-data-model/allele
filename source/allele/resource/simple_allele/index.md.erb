@@ -1,5 +1,6 @@
 ---
 title: SimpleAllele
+alias: simple allele, allele, variant, sequence variant, snv, amino acid variant, dna change, aa change
 description: A representation of an allele relative to a reference sequence. A CanonicalAllele is a composition of these, with one SimpleAllele selected as a prefered representation.
 
 ---
@@ -23,30 +24,12 @@ The SimpleAllele resource is described by the following attributes.
 * ReferenceCoordinate: The coordinates of the allele relative to a ReferenceSequence
 * AlleleName: Identifiers giving the allele a unique name, possible HGVS expressions, etc.
 
-
-Resource Content
+Resource Model
 ----------------
 
-![SimpleAllele diagram](/images/SimpleAllele.svg)
+[![SimpleAllele Resource Diagram](/images/SimpleAlleleResource.svg){: .img-responsive}](/images/SimpleAlleleResource.svg)
 
-    <SimpleAllele>
-		<identifier></identifier>
-		<sequenceType></sequenceType>
-		<allele></allele>
-		<nucleotideChangeType></nucleotideChangeType>
-		<aminoAcidChangeType></aminoAcidChangeType>
-		<ReferenceCoordinate>
-			<identifier></identifier>
-			<referenceSequence></referenceSequence>
-			<start></start>
-			<end></end>
-			<refAllele></refAllele>
-			<regionTypeCode></regionTypeCode>
-			<intronicOffsetStart></intronicOffsetStart>
-		</ReferenceCoordinate>
-		<AlleleName>
-		</AlleleName>
-	</SimpleAllele>
+Conceptual Model: [SimpleAllele](/allele/conceptual/simple_allele/index.html#conceptual-model)
 
 
 Notes
@@ -63,6 +46,13 @@ Search Parameters
 
 Examples
 --------
+
+{:.table}
+|id|name                   |||
+|--|-----------------------|||
+<% sitemap.resources.select{|r| r.path =~ /^allele\/implementation\/examples\/SA./ and not r.path =~ /index\.html/}.each do |r| %>
+|<%= r.data.id %>|<%=link_to r.data.title, r.url %>|[XML](<%= r.url %>#xml)|[JSON](<%= r.url %>#json)|
+<% end %>
 
 Formal Definitions
 ------------------

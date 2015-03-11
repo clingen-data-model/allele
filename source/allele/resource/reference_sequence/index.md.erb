@@ -1,5 +1,6 @@
 ---
 title: ReferenceSequence
+alias: reference sequence, refseq, sequence, accession
 description: A versioned sequence of nucleotide bases or amino acids.
 sequence_ontology: SO:0000994
 
@@ -16,26 +17,20 @@ Context
 The ReferenceSequence resource is described by the following attributes
 
 * identifier (mandatory)
-* kind (mandatory)
-* genomicSequenceType (mandatory)
-* codingRegionOffset (optional)
+* sequenceClass (mandatory)
+* nucleotideSequenceClass (optional)
+* genomicSequenceClass (optional)
 * gene (optional)
+* referenceGenome (optional)
 
-Resource Content
+Resource Model
 ----------------
 
-![ReferenceSequence resource diagram](/images/ReferenceSequence.svg)
+[![ReferenceSequence Resource Diagram](/images/ReferenceSequenceResource.svg){: .img-responsive}](/images/ReferenceSequenceResource.svg)
 
-This resource is referenced by [SimpleAminoAcidAllele](simple_amino_acid_allele.html)
+Conceptual Model: [ReferenceSequence](/allele/conceptual/reference_sequence/index.html#conceptual-model)
 
-	<ReferenceSequence>
-		<identifier></identifier>
-		<kind></kind>
-		<chr></chr>
-		<genomicSequenceType></genomicSequenceType>
-		<codingRegionOffset></codingRegionOffset>
-		<gene></gene>
-	</ReferenceSequence>
+This resource is referenced by [SimpleAllele](/allele/resource/simple_allele) & [Gene](/allele/resource/gene)
 
 Notes
 -----
@@ -58,20 +53,12 @@ Search Parameters
 Examples
 --------
 
-Homo sapiens chromosome 1, GRCh38 Primary Assembly
-NCBI Reference Sequence: NC_000001.11
-
-	<ReferenceSequence>
-		<identifier>
-			<label>Homo sapiens chromosome 1, GRCh38 Primary Assembly.</label>
-			<system>refseq</system>
-			<value>NC_000001.11</value>
-		</identifier>
-		<kind>nucleotide</kind>
-		<chr>1</chr>
-		<genomicSequenceType>chr</genomicSequenceType>
-		<codingRegionOffset>0</codingRegionOffset>
-	</ReferenceSequence>
+{:.table}
+|id|name                   |||
+|--|-----------------------|||
+<% sitemap.resources.select{|r| r.path =~ /^allele\/implementation\/examples\/RS./ and not r.path =~ /index\.html/}.each do |r| %>
+|<%= r.data.id %>|<%=link_to r.data.title, r.url %>|[XML](<%= r.url %>#xml)|[JSON](<%= r.url %>#json)|
+<% end %>
 
 Formal Definitions
 ------------------

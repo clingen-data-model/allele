@@ -31,3 +31,10 @@ Exclusions and Limitations
 SimpleAllele as presently defined may be a poor choice for representing large insertions or deletions, as the reference and alternate alleles are stored in full.
 
 SimpleAllele is not capable of representing the uncertainty of starting or ending coordinates of a variant.
+
+Conceptual Model
+----------------
+
+[![SimpleAllele Conceptual Diagram](/images/SimpleAlleleConceptual.svg){: .img-responsive}](/images/SimpleAlleleConceptual.svg)
+
+Resource Model: [SimpleAllele](/allele/resource/simple_allele/index.html#resource-model)

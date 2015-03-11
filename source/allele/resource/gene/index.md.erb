@@ -1,5 +1,6 @@
 ---
 title: Gene
+alias: 
 description: A region (or regions) that includes all of the sequence elements necessary to encode a functional transcript. A gene may include regulatory regions, transcribed regions and/or other functional sequence regions.
 sequence_ontology: SO:0000704
 
@@ -24,9 +25,9 @@ The Gene resource is described by the following attributes
 Resource Model
 ----------------
 
-![Gene](/images/GeneResource.svg)
+[![Gene Resource Diagram](/images/GeneResource.svg){: .img-responsive}](/images/GeneResource.svg)
 
-Conceptual Model: [Gene](/allele/conceptual/gene/index.html#conceptual_model)
+Conceptual Model: [Gene](/allele/conceptual/gene/index.html#conceptual-model)
 	
 Notes
 -----
@@ -44,10 +45,11 @@ Examples
 --------
 
 {:.table}
-|Name                       |||
-|---------------------------|||
-|G101-ILK (minimal)|[XML](/allele/implementation/examples/G101.html#xml)|[JSON](/allele/implementation/examples/G101.html#json)|
-|G102-BRCA1 (w/ aliases)|[XML](/allele/implementation/examples/G102.html#xml)|[JSON](/allele/implementation/examples/G102.html#json)|
+|id|name                   |||
+|--|-----------------------|||
+<% sitemap.resources.select{|r| r.path =~ /^allele\/implementation\/examples\/G./ and not r.path =~ /index\.html/}.each do |r| %>
+|<%= r.data.id %>|<%=link_to r.data.title, r.url %>|[XML](<%= r.url %>#xml)|[JSON](<%= r.url %>#json)|
+<% end %>
 
 Formal Definitions
 ------------------

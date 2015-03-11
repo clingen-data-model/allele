@@ -1,6 +1,7 @@
 ---
 title: CanonicalAllele
-description: One of a set of coexisting sequence variants of a gene.
+alias: allele identity, measure set, normalized variant identity
+description: One of a set of coexisting sequence variants.
 sequence_ontology: SO:0001023
 
 ---
@@ -22,21 +23,12 @@ The CanonicalAllele resource is described by the following attributes.
 * complexityType: Is the CanonicalAllele represented by one SimpleAllele, or is it a composition of multiple CanonicalAlleles
 * RelatedSimpleAllele: The preferred SimpleAllele used to represent the CanonicalAllele.
 
-
-Resource Content
+Resource Model
 ----------------
 
-![CanonicalAllele resource diagram](/images/CanonicalAllele.svg)
+[![CanonicalAllele Resource Diagram](/images/CanonicalAlleleResource.svg){: .img-responsive}](/images/CanonicalAlleleResource.svg)
 
-    <CanonicalAllele>
-		<identifier></identifier>
-		<active></active>
-		<replacement></replacement>
-		<sequenceType></sequenceType>
-		<complexityType></complexityType>
-		<SimpleAllele>
-		</SimpleAllele>
-	</CanonicalAllele>
+Conceptual Model: [CanonicalAllele](/allele/conceptual/canonical_allele/index.html#conceptual-model)
 
 Notes
 -----

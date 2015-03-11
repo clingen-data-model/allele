@@ -20,6 +20,13 @@ Exclusions and Limitations
 
 Only a subset of the relationships between different subclasses of ReferenceSequence are modeled in version 1.0 of the Allele Model.   In particular, the relationship between [GenomicReferenceSequence](genomic_reference_sequence.html) and [TranscriptReferenceSequence](transcript_reference_sequence.html) is left unmodeled.  In actuality, the relationship between two sequences of these types would be created by aligning the [TranscriptReferenceSequence](transcript_reference_sequence.html) to the [GenomicReferenceSequence](genomic_reference_sequence.html)  (using a tool such as BLAT.) , and details of this mapping would be included in a class joining these two types of ReferenceSequence.
 
+Conceptual Model
+----------------
+
+[![ReferenceSequence Conceptual Diagram](/images/ReferenceSequenceConceptual.svg){: .img-responsive}](/images/ReferenceSequenceConceptual.svg)
+
+Resource Model: [ReferenceSequence](/allele/resource/reference_sequence/index.html#resource-model)
+
 Attributes
 ----------
 
