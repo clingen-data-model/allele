@@ -1,0 +1,32 @@
+{
+  "id": "G102",
+  "identifier": 
+  [
+    {
+      "use": "official",
+      "label": "BRCA1",
+      "system": "http://www.genenames.org/",
+      "value": "HGNC:1100"
+    },
+
+    {
+      "system": "http://www.ncbi.nlm.nih.gov/gene",
+      "value": "672"
+    }
+  ],
+
+  "symbol": "BRCA1",
+  "name": "breast cancer 1, early onset",
+  "aliasSymbol": 
+  [
+    "IRIS",
+    "PSCP",
+    "BRCAI",
+    "BRCC1",
+    "FANCS",
+    "PNCA4",
+    "RNF53",
+    "BROVCA1",
+    "PPP1R53"
+  ]
+}

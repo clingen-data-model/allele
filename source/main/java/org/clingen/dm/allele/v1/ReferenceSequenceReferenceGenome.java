@@ -69,7 +69,7 @@ public class ReferenceSequenceReferenceGenome extends BackboneElement
 	 * 
 	 * @return
 	 *     possible object is
-	 *     {@link string }
+	 *     {@link String }
 	 *     
 	 */
 	public String getName()
@@ -82,7 +82,7 @@ public class ReferenceSequenceReferenceGenome extends BackboneElement
 	 * 
 	 * @param value
 	 *     allowed object is
-	 *     {@link string }
+	 *     {@link String }
 	 *     
 	 */
 	public void setName(String value)

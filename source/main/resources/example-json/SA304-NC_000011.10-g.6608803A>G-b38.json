@@ -1,0 +1,57 @@
+{
+  "id": "SA304",
+  "identifier": 
+  [
+    {
+      "label": "NC_000011.10:g.6608803A>G",
+      "system": "http://clingen/alleleregistry",
+      "value": "SA304"
+    }
+  ],
+
+  "canonicalAllele": 
+  {
+    "reference": "/CanonicalAllele/CA401"
+  },
+
+  "sequenceClass": "nucleotide",
+  "nucleotideSequenceClass": "genomic",
+  "allele": "G",
+  "nucleotideChangeType": 
+  {
+    "coding": 
+    [
+      {
+        "system": "http://www.sequenceontology.org/",
+        "code": "SO:1000002",
+        "display": "substitution",
+        "primary": "true",
+        "valueSet": 
+        {
+          "reference": "/ValueSet/NucleotideChangeType"
+        }
+      }
+    ]
+  },
+
+  "alleleName": 
+  [
+    {
+      "type": "hgvs-genomic",
+      "name": "NC_000011.10:g.6608803A>G"
+    }
+  ],
+
+  "referenceCoordinate": 
+  {
+    "referenceSequence": 
+    {
+      "reference": "/ReferenceSequence/RS203",
+      "display": "NC_000011.10"
+    },
+
+    "start": "6608803",
+    "end": "6608804",
+    "refAllele": "A"
+  }
+}

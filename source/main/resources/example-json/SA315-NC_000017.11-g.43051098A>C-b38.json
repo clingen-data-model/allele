@@ -1,0 +1,56 @@
+{
+  "id": "SA315",
+  "identifier": 
+  [
+    {
+      "system": "http://www.ncbi.nlm.nih.gov/clinvar/variation",
+      "value": "37656"
+    }
+  ],
+
+  "canonicalAllele": 
+  {
+    "reference": "/CanonicalAllele/CA402"
+  },
+
+  "sequenceClass": "nucleotide",
+  "nucleotideSequenceClass": "genomic",
+  "allele": "C",
+  "nucleotideChangeType": 
+  {
+    "coding": 
+    [
+      {
+        "system": "http://www.sequenceontology.org/",
+        "code": "SO:1000002",
+        "display": "substitution",
+        "primary": "true",
+        "valueSet": 
+        {
+          "reference": "../ValueSet/NucleotideChangeType"
+        }
+      }
+    ]
+  },
+
+  "alleleName": 
+  [
+    {
+      "type": "hgvs-genomic",
+      "name": "NC_000017.11:g.43051098A>C"
+    }
+  ],
+
+  "referenceCoordinate": 
+  {
+    "referenceSequence": 
+    {
+      "reference": "/ReferenceSequence/RS210",
+      "display": "NC_000017.11"
+    },
+
+    "start": "43051098",
+    "end": "43051099",
+    "refAllele": "A"
+  }
+}

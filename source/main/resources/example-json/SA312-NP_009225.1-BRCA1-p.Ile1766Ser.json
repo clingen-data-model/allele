@@ -1,0 +1,80 @@
+{
+  "id": "SA312",
+  "identifier": 
+  [
+    {
+      "label": "NP_009225.1:p.Ile1766Ser",
+      "system": "http://clingen.org/alleleregistry",
+      "value": "SA312"
+    }
+  ],
+
+  "canonicalAllele": 
+  {
+    "reference": "/CanonicalAllele/CA403"
+  },
+
+  "sequenceClass": "amino acid",
+  "allele": "Ser",
+  "aminoAcidChangeType": 
+  {
+    "coding": 
+    [
+      {
+        "system": "http://www.sequenceontology.org/",
+        "code": "SO:0001583",
+        "display": "missense variant",
+        "valueSet": 
+        {
+          "reference": "/ValueSet/AminoAcidChangeType"
+        }
+      }
+    ]
+  },
+
+  "alleleName": 
+  [
+    {
+      "type": "hgvs-protein-3",
+      "name": "p.Ile1766Ser"
+    },
+
+    {
+      "type": "custom",
+      "name": "I1766S"
+    }
+  ],
+
+  "referenceCoordinate": 
+  {
+    "identifier": 
+    [
+      {
+        "system": "http://www.ncbi.nlm.nih.gov/snp",
+        "value": "80357463"
+      }
+    ],
+
+    "referenceSequence": 
+    {
+      "reference": "/ReferenceSequence/RS214",
+      "display": "NP_009225.1"
+    },
+
+    "start": "1766",
+    "end": "1767",
+    "refAllele": "Ile"
+  },
+
+  "related": 
+  [
+    {
+      "type": "cause",
+      "target": 
+      {
+        "reference": "/SimpleAllele/SA310",
+        "display": "NM_007294.3(BRCA1):c.5297T>G"
+      }
+    }
+  ]
+}

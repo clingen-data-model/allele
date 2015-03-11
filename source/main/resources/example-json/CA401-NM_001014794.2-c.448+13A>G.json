@@ -1,0 +1,48 @@
+{
+  "id": "CA401",
+  "identifier": [
+  {
+    "system": "http://clingen.org/alleleregistry",
+    "value": "CA401"
+  }],
+
+  "active": "true",
+  "sequenceClass": "nucleotide",
+  "complexityClass": "simple",
+  "relatedSimpleAllele": 
+  [
+    {
+      "simpleAllele": 
+      {
+        "reference": "/SimpleAllele/SA302",
+        "display": "NM_001014794.2(ILK):c.448+13A>G "
+      },
+
+      "preferred": "true"
+    },
+
+    {
+      "simpleAllele": 
+      {
+        "reference": "/SimpleAllele/SA301",
+        "display": "NM_001014794.2(ILK):c.448+14A>G "
+      }
+    },
+
+    {
+      "simpleAllele": 
+      {
+        "reference": "/SimpleAllele/SA303",
+        "display": "NC_000011.9:g.6630034A>G (GRCh37)"
+      }
+    },
+
+    {
+      "simpleAllele": 
+      {
+        "reference": "/SimpleAllele/SA304",
+        "display": "NC_000011.10:g.6608803A>G (GRCh38)"
+      }
+    }
+  ]
+}

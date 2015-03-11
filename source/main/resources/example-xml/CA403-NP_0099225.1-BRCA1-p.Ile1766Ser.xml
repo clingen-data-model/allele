@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CanonicalAllele xmlns="http://clingen.org/dm/allele/v1"
+	xmlns:f="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://clingen.org/dm/allele/v1 ../clingen-xsd/canonicalallele.xsd "
+	id="CA403">
+	<identifier>
+		<f:system value="http://clingen.org/alleleregistry"></f:system>
+		<f:value value="CA403"></f:value>
+	</identifier>
+	<active value="true"></active>
+	<sequenceClass value="amino acid"></sequenceClass>
+	<complexityClass value="simple" />
+	<relatedSimpleAllele>
+		<simpleAllele>
+			<f:reference value="/SimpleAllele/SA312"></f:reference>
+			<f:display value="NP_009225.1(BRCA1):p.Ile1766Ser"></f:display>
+		</simpleAllele>
+		<preferred value="true"></preferred>
+	</relatedSimpleAllele>
+	<relatedSimpleAllele>
+		<simpleAllele>
+			<f:reference value="/SimpleAllele/SA319"></f:reference>
+			<f:display value="LRG_292p1(BRCA1):p.Ile1766Ser "></f:display>
+		</simpleAllele>
+	</relatedSimpleAllele>
+</CanonicalAllele>

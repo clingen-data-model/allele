@@ -1,0 +1,34 @@
+{
+  "id": "CA403",
+  "identifier": 
+  [
+    {
+      "system": "http://clingen.org/alleleregistry",
+      "value": "CA403"
+    }
+  ],
+
+  "active": "true",
+  "sequenceClass": "amino acid",
+  "complexityClass": "simple",
+  "relatedSimpleAllele": 
+  [
+    {
+      "simpleAllele": 
+      {
+        "reference": "/SimpleAllele/SA312",
+        "display": "NP_009225.1(BRCA1):p.Ile1766Ser"
+      },
+
+      "preferred": "true"
+    },
+
+    {
+      "simpleAllele": 
+      {
+        "reference": "/SimpleAllele/SA319",
+        "display": "LRG_292p1(BRCA1):p.Ile1766Ser "
+      }
+    }
+  ]
+}

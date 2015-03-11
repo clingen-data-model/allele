@@ -18,7 +18,7 @@ import org.hl7.fhir.Element;
  * &lt;complexType name="ReferenceSequenceRelationshipType">
  *   &lt;complexContent>
  *     &lt;extension base="{http://hl7.org/fhir}Element">
- *       &lt;attribute name="value" type="{http://hl7.org/fhir}ReferenceSequenceRelationshipType-list" />
+ *       &lt;attribute name="value" type="{http://org.clingen.dm.allele.v1}ReferenceSequenceRelationshipType-list" />
  *     &lt;/extension>
  *   &lt;/complexContent>
  * &lt;/complexType>

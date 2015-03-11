@@ -1,0 +1,20 @@
+{
+  "id": "G101",
+  "identifier": 
+  [
+    {
+      "use": "official",
+      "label": "ILK",
+      "system": "http://www.genenames.org/",
+      "value": "HGNC:6040"
+    },
+
+    {
+      "system": "http://www.ncbi.nlm.nih.gov/gene",
+      "value": "3611"
+    }
+  ],
+
+  "symbol": "ILK",
+  "name": "integrin-linked kinase"
+}

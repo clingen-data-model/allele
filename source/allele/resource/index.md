@@ -1,4 +1,21 @@
 ---
-title: Allele (resource overview)
+title: Resource Index
 
 ---
+
+The Resource definitions provided in this Allele model v0.1(beta) are an extension of the FHIR Resource and all the associated capabilities that they include. It is strongly recommended that users of this information have a sound understanding of the FHIR Resource specification before using these Resources.
+
+The [HL7 FHIR Specification](http://hl7-fhir.github.io/) defines the base Resource concept in great detail [here](http://hl7-fhir.github.io/resource.html). 
+
+Allele
+---
+Resources that provide core Allele record keeping - focused on the registration and canonicalization to support Allele indexing.
+
+{:.table}
+|Name|Aliases|Description|
+|----|-------|-----------|
+|Gene| ||
+|one|two|three|
+
+
+

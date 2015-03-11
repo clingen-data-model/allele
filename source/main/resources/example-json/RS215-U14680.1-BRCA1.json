@@ -1,0 +1,18 @@
+{
+  "id": "RS215",
+  "identifier": 
+  {
+    "label": "Homo sapiens breast and ovarian cancer susceptibility (BRCA1) mRNA, complete cds",
+    "system": "http://www.ncbi.nlm.nih.gov/nuccore",
+    "value": "U14680.1"
+  },
+
+  "sequenceClass": "nucleotide",
+  "nucleotideSequenceClass": "transcript",
+  "cdsStart": "120",
+  "cdsEnd": "5711",
+  "gene": 
+  {
+    "reference": "/Gene/G102"
+  }
+}

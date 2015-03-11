@@ -20,14 +20,14 @@ import org.hl7.fhir.String;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="Device">
+ * &lt;complexType name="Gene">
  *   &lt;complexContent>
  *     &lt;extension base="{http://hl7.org/fhir}Resource">
  *       &lt;sequence>
  *         &lt;element name="identifier" type="{http://hl7.org/fhir}Identifier" maxOccurs="unbounded" minOccurs="0"/>
  *         &lt;element name="symbol" type="{http://hl7.org/fhir}string" minOccurs="0"/>
  *         &lt;element name="name" type="{http://hl7.org/fhir}string" minOccurs="0"/>
- *         &lt;element name="alias" type="{http://hl7.org/fhir}string" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element name="aliasSymbol" type="{http://hl7.org/fhir}string" maxOccurs="unbounded" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>
@@ -37,7 +37,7 @@ import org.hl7.fhir.String;
  * 
  */
 @XmlAccessorType (XmlAccessType.FIELD)
-@XmlType (name = "Gene", propOrder = {"identifier", "symbol", "name", "alias", "relatedReferenceSequence"})
+@XmlType (name = "Gene", propOrder = {"identifier", "symbol", "name", "aliasSymbol"})
 public class Gene extends Resource
 {
 
@@ -45,8 +45,7 @@ public class Gene extends Resource
 	protected List<Identifier> identifier;
 	protected String symbol;
 	protected String name;
-	protected List<String> alias;
-	protected List<GeneRelatedReferenceSequence> relatedReferenceSequence;
+	protected List<String> aliasSymbol;
 
 	/**
 	 * Gets the value of the identifier property.
@@ -132,41 +131,30 @@ public class Gene extends Resource
 	}
 
 	/**
-	 * Gets the value of the alias property.
-	 * 
-	 * @return
-	 *     possible object is
-	 *     {@link String }
-	 *     
-	 */
-	public List<String> getAlias()
-	{
-		return alias;
-	}
-
-	/**
-	 * Gets the value of the relatedReferenceSequence property.
+	 * Gets the value of the aliasSymbol property.
 	 * 
 	 * <p>
 	 * This accessor method returns a reference to the live list,
 	 * not a snapshot. Therefore any modification you make to the
 	 * returned list will be present inside the JAXB object.
-	 * This is why there is not a <CODE>set</CODE> method for the relatedReferenceSequence property.
+	 * This is why there is not a <CODE>set</CODE> method for the aliasSymbol property.
 	 * 
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * <pre>
-	 *    getRelatedReferenceSequence().add(newItem);
+	 *    getAliasSymbol().add(newItem);
 	 * </pre>
 	 * 
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list
-	 * {@link GeneRelatedReferenceSequence }
+	 * {@link String }
+	 * 
+	 * 
 	 */
-	public List<GeneRelatedReferenceSequence> getRelatedReferenceSequence()
+	public List<String> getAliasSymbol()
 	{
-		return relatedReferenceSequence;
+		return aliasSymbol;
 	}
 
 }

@@ -1,5 +1,5 @@
 ---
-title: Allele Model 0.1beta
+title: Allele Model v0.1(beta)
 ---
 
 Introduction
@@ -52,15 +52,15 @@ TBD if we add provenance to canonical alleles
 Exclusions and Limitations
 --------------------------
 
-Allele Model v 1.0 does not model structural variants such as large duplications, translocations or copy number variation.
+Allele Model v0.1(beta) does not model structural variants such as large duplications, translocations or copy number variation.
 
 
-The Allele Model v 1.0 is dependent on the existence of one or more canonicalization methods that 
+The Allele Model v0.1(beta) is dependent on the existence of one or more canonicalization methods that 
 
   1. Aggregate simple alleles and 
   2. Can recognize that a new simple allele should be aggregated into a known canonical allele.
 
 However, the allele model does not specify the algorithm used to perform this canonicalization.
 
-The resource model given is one possible physical implementation derived from the conceptual model.  While other models, such as a relational model may also be derived, they are not provided within the allele model version 1.0.
+The resource model given is one possible physical implementation derived from the conceptual model.  While other models, such as a relational model may also be derived, they are not provided within the allele model v0.1(beta).
 

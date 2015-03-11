@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReferenceSequence id="RS202"
+	xmlns="http://clingen.org/dm/allele/v1" xmlns:f="http://hl7.org/fhir"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://clingen.org/dm/allele/v1 ../clingen-xsd/referencesequence.xsd ">
+	<identifier>
+		<f:label value="Homo sapiens chromosome 11, GRCh37 Primary Assembly" />
+		<f:system value="http://www.ncbi.nlm.nih.gov/nuccore" />
+		<f:value value="NC_000011.9" />
+	</identifier>
+	<sequenceClass value="nucleotide"></sequenceClass>
+	<nucleotideSequenceClass value="genomic"></nucleotideSequenceClass>
+	<genomicSequenceClass value="chromsome"></genomicSequenceClass>
+	<chromosome value="11"></chromosome>
+	<referenceGenome>
+		<f:coding>
+			<f:system value="http://www.ncbi.nlm.nih.gov/assembly/"></f:system>
+			<f:code value="2758"></f:code>
+		</f:coding>
+		<f:text value="GRCh37"></f:text>
+	</referenceGenome>
+</ReferenceSequence>

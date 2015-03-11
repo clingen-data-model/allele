@@ -7,6 +7,7 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+import org.hl7.fhir.CodeableConcept;
 import org.hl7.fhir.Identifier;
 import org.hl7.fhir.Integer;
 import org.hl7.fhir.Resource;
@@ -20,18 +21,20 @@ import org.hl7.fhir.ResourceReference;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="Device">
+ * &lt;complexType name="ReferenceSequence">
  *   &lt;complexContent>
  *     &lt;extension base="{http://hl7.org/fhir}Resource">
  *       &lt;sequence>
  *         &lt;element name="identifier" type="{http://hl7.org/fhir}Identifier"/>
- *         &lt;element name="sequenceType" type="{http://hl7.org/fhir}ReferenceSequenceType"/>
- *         &lt;element name="chromosome" type="{http://hl7.org/fhir}ReferenceSequenceChromosome" minOccurs="0"/>
- *         &lt;element name="genomicSubType" type="{http://hl7.org/fhir}ReferenceSequenceGenomicSubType" minOccurs="0"/>
- *         &lt;element name="codingRegionOffset" type="{http://hl7.org/fhir}int minOccurs="0""/>
+ *         &lt;element name="sequenceClass" type="{http://org.clingen.dm.allele.v1}ReferenceSequenceClass"/>
+ *         &lt;element name="nucleotideSequenceClass" type="{http://org.clingen.dm.allele.v1}ReferenceSequenceNucleotideClass"/>
+ *         &lt;element name="genomicSequenceClass" type="{http://org.clingen.dm.allele.v1}ReferenceSequenceGenomicClass" minOccurs="0"/>
+ *         &lt;element name="chromosome" type="{http://org.clingen.dm.allele.v1}Chromosome" minOccurs="0"/>
+ *         &lt;element name="cdsStart" type="{http://hl7.org/fhir}int" minOccurs="0"/>
+ *         &lt;element name="cdsEnd" type="{http://hl7.org/fhir}int" minOccurs="0"/>
  *         &lt;element name="gene" type="{http://hl7.org/fhir}ResourceReference" maxOccurs="1" minOccurs="0"/>
- *         &lt;element name="referenceGenome" type="{http://hl7.org/fhir}ReferenceSequence.ReferenceGenome" maxOccurs="1" minOccurs="0"/>
- *         &lt;element name="related" type="{http://hl7.org/fhir}ReferenceSequence.Related" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element name="referenceGenome" type="{http://hl7.org/fhir}CodeableConcept" maxOccurs="1" minOccurs="0"/>
+ *         &lt;element name="related" type="{http://org.clingen.dm.allele.v1}ReferenceSequence.Related" maxOccurs="unbounded" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>
@@ -41,21 +44,24 @@ import org.hl7.fhir.ResourceReference;
  * 
  */
 @XmlAccessorType (XmlAccessType.FIELD)
-@XmlType (name = "ReferenceSequence", propOrder = {"identifier", "sequenceType", "chromosome", "genomicSubType",
-													"codingRegionOffset", "gene", "referenceGenome", "related"})
+@XmlType (name = "ReferenceSequence", propOrder = {"identifier", "sequenceClass", "nucleotideSequenceClass",
+													"genomicSequenceClass", "chromosome", "cdsStart", "cdsEnd", "gene",
+													"referenceGenome", "related"})
 public class ReferenceSequence extends Resource
 {
 
 	@XmlElement (required = true)
 	protected Identifier identifier;
 	@XmlElement (required = true)
-	protected ReferenceSequenceType sequenceType;
-	protected ReferenceSequenceChromosome chromosome;
-	protected ReferenceSequenceGenomicSubType genomicSubType;
-	protected Integer codingRegionOffset;
+	protected ReferenceSequenceClass sequenceClass;
+	protected ReferenceSequenceNucleotideClass nucleotideSequenceClass;
+	protected ReferenceSequenceGenomicClass genomicSequenceClass;
+	protected Chromosome chromosome;
+	protected Integer cdsStart;
+	protected Integer cdsEnd;
 	protected ResourceReference gene;
+	protected CodeableConcept referenceGenome;
 	protected List<ReferenceSequenceRelated> related;
-	protected ReferenceSequenceReferenceGenome referenceGenome;
 
 	/**
 	 * Gets the value of the identifier property.
@@ -85,29 +91,81 @@ public class ReferenceSequence extends Resource
 	}
 
 	/**
-	 * Gets the value of the sequenceType property.
+	 * Gets the value of the sequenceClass property.
 	 * 
 	 * @return
 	 *     possible object is
-	 *     {@link ReferenceSequenceType }
+	 *     {@link ReferenceSequenceClass }
 	 *     
 	 */
-	public ReferenceSequenceType getSequenceType()
+	public ReferenceSequenceClass getSequenceClass()
 	{
-		return sequenceType;
+		return sequenceClass;
 	}
 
 	/**
-	 * Sets the value of the sequenceType property.
+	 * Sets the value of the sequenceClass property.
 	 * 
 	 * @param value
 	 *     allowed object is
-	 *     {@link ReferenceSequenceType }
+	 *     {@link ReferenceSequenceClass }
 	 *     
 	 */
-	public void setSequenceType(ReferenceSequenceType value)
+	public void setSequenceClass(ReferenceSequenceClass value)
 	{
-		this.sequenceType = value;
+		this.sequenceClass = value;
+	}
+
+	/**
+	 * Gets the value of the nucleotideSequenceClass property.
+	 * 
+	 * @return
+	 *     possible object is
+	 *     {@link ReferenceSequenceNucleotideClass }
+	 *     
+	 */
+	public ReferenceSequenceNucleotideClass getNucleotideSequenceClass()
+	{
+		return nucleotideSequenceClass;
+	}
+
+	/**
+	 * Sets the value of the nucleotideSequenceClass property.
+	 * 
+	 * @param value
+	 *     allowed object is
+	 *     {@link ReferenceSequenceNucleotideClass }
+	 *     
+	 */
+	public void setNucleotideSequenceClass(ReferenceSequenceNucleotideClass value)
+	{
+		this.nucleotideSequenceClass = value;
+	}
+
+	/**
+	 * Gets the value of the genomicSequenceClass property.
+	 * 
+	 * @return
+	 *     possible object is
+	 *     {@link ReferenceSequenceGenomicClass }
+	 *     
+	 */
+	public ReferenceSequenceGenomicClass getGenomicSequenceClass()
+	{
+		return genomicSequenceClass;
+	}
+
+	/**
+	 * Sets the value of the genomicSequenceClass property.
+	 * 
+	 * @param value
+	 *     allowed object is
+	 *     {@link ReferenceSequenceGenomicClass }
+	 *     
+	 */
+	public void setGenomicSequenceClass(ReferenceSequenceGenomicClass value)
+	{
+		this.genomicSequenceClass = value;
 	}
 
 	/**
@@ -115,10 +173,10 @@ public class ReferenceSequence extends Resource
 	 * 
 	 * @return
 	 *     possible object is
-	 *     {@link ReferenceSequenceChromosome }
+	 *     {@link Chromosome }
 	 *     
 	 */
-	public ReferenceSequenceChromosome getChromosome()
+	public Chromosome getChromosome()
 	{
 		return chromosome;
 	}
@@ -128,64 +186,64 @@ public class ReferenceSequence extends Resource
 	 * 
 	 * @param value
 	 *     allowed object is
-	 *     {@link ReferenceSequenceChromosome }
+	 *     {@link Chromosome }
 	 *     
 	 */
-	public void setChromosome(ReferenceSequenceChromosome value)
+	public void setChromosome(Chromosome value)
 	{
 		this.chromosome = value;
 	}
 
 	/**
-	 * Gets the value of the genomicSubType property.
+	 * Gets the value of the CDS start property.
 	 * 
 	 * @return
 	 *     possible object is
-	 *     {@link ReferenceSequenceGenomicSubType }
+	 *     {@link Integer }
 	 *     
 	 */
-	public ReferenceSequenceGenomicSubType getGenomicSubType()
+	public Integer getCdsStart()
 	{
-		return genomicSubType;
+		return cdsStart;
 	}
 
 	/**
-	 * Sets the value of the genomicSubType property.
+	 * Sets the value of the CDS start property.
 	 * 
 	 * @param value
 	 *     allowed object is
-	 *     {@link ReferenceSequenceGenomicSubType }
+	 *     {@link Integer }
 	 *     
 	 */
-	public void setGenomicSubType(ReferenceSequenceGenomicSubType value)
+	public void setCdsStart(Integer value)
 	{
-		this.genomicSubType = value;
+		this.cdsStart = value;
 	}
 
 	/**
-	 * Gets the value of the codingRegionOffset property.
+	 * Gets the value of the CDS end property.
 	 * 
 	 * @return
 	 *     possible object is
-	 *     {@link int }
+	 *     {@link Integer }
 	 *     
 	 */
-	public Integer getCodingRegionOffset()
+	public Integer getCdsEnd()
 	{
-		return codingRegionOffset;
+		return cdsEnd;
 	}
 
 	/**
-	 * Sets the value of the codingRegionOffset property.
+	 * Sets the value of the CDS end property.
 	 * 
 	 * @param value
 	 *     allowed object is
-	 *     {@link int }
+	 *     {@link Integer }
 	 *     
 	 */
-	public void setCodingRegionOffset(Integer value)
+	public void setCdsEnd(Integer value)
 	{
-		this.codingRegionOffset = value;
+		this.cdsEnd = value;
 	}
 
 	/**
@@ -212,6 +270,32 @@ public class ReferenceSequence extends Resource
 	public void setGene(ResourceReference value)
 	{
 		this.gene = value;
+	}
+
+	/**
+	 * Gets the value of the referenceGenome property.
+	 * 
+	 * @return
+	 *     possible object is
+	 *     {@link CodeableConcept }
+	 *     
+	 */
+	public CodeableConcept getReferenceGenome()
+	{
+		return referenceGenome;
+	}
+
+	/**
+	 * Sets the value of the referenceGenome property.
+	 * 
+	 * @param value
+	 *     allowed object is
+	 *     {@link CodeableConcept }
+	 *     
+	 */
+	public void setReferenceGenome(CodeableConcept value)
+	{
+		this.referenceGenome = value;
 	}
 
 	/**

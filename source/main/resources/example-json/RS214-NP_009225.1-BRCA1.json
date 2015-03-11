@@ -1,0 +1,24 @@
+{
+  "id": "RS214",
+  "identifier": 
+  {
+    "label": 
+    {
+      "-value": "breast cancer type 1 susceptibility protein isoform 1 [Homo sapiens]"
+    },
+
+    "system": "http://www.ncbi.nlm.nih.gov/protein",
+    "value": "NP_009225.1"
+  },
+
+  "sequenceClass": "amino acid",
+  "related": 
+  {
+    "type": "translates-from",
+    "target": 
+    {
+      "reference": "/ReferenceSequence/RS213",
+      "display": "NM_007294.3 (BRCA1 transcript variant 1)"
+    }
+  }
+}

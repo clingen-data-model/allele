@@ -1,0 +1,30 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://clingen.org/dm/allele/v1"
+	targetNamespace="http://clingen.org/dm/allele/v1" xmlns:f="http://hl7.org/fhir"
+	elementFormDefault="qualified" version="0.0.1">
+
+	<xs:import namespace="http://hl7.org/fhir" schemaLocation="../fhir-xsd/fhir-base.xsd" />
+
+	<xs:element name="Gene" type="Gene">
+		<xs:annotation>
+			<xs:documentation>The concept of a specific Gene. Should be
+				identified with an HGNC identifier.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+
+	<xs:complexType name="Gene">
+		<xs:complexContent>
+			<xs:extension base="f:Resource">
+				<xs:sequence>
+					<xs:element name="identifier" type="f:Identifier"
+						maxOccurs="unbounded" />
+					<xs:element name="symbol" type="f:string" minOccurs="0" />
+					<xs:element name="name" type="f:string" minOccurs="0" />
+					<xs:element name="aliasSymbol" type="f:string" 
+						minOccurs="0" maxOccurs="unbounded" />
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+</xs:schema>
+

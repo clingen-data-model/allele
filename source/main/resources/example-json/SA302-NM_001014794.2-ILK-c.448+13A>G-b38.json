@@ -1,0 +1,87 @@
+{
+  "id": "SA302",
+  "identifier": 
+  [
+    {
+      "system": "http://clingen/alleleregistry",
+      "value": "SA302"
+    }
+  ],
+
+  "canonicalAllele": 
+  {
+    "reference": "/CanonicalAllele/CA401"
+  },
+
+  "sequenceClass": "nucleotide",
+  "nucleotideSequenceClass": "transcript",
+  "allele": "G",
+  "nucleotideChangeType": 
+  {
+    "coding": 
+    [
+      {
+        "system": "http://www.sequenceontology.org/",
+        "code": "SO:1000002",
+        "display": "substitution",
+        "primary": "true",
+        "valueSet": 
+        {
+          "reference": "/ValueSet/NucleotideChangeType"
+        }
+      }
+    ]
+  },
+
+  "alleleName": 
+  [
+    {
+      "type": "hgvs-cdna",
+      "name": "NM_001014794.2:c.448+13A>G",
+      "preferred": "true"
+    }
+  ],
+
+  "referenceCoordinate": 
+  {
+    "referenceSequence": 
+    {
+      "reference": "/ReferenceSequence/RS201",
+      "display": "NM_001014794.2"
+    },
+
+    "start": "609",
+    "end": "609",
+    "refAllele": "A",
+    "primaryRegionType": 
+    {
+      "coding": 
+      [
+        {
+          "system": "http://www.sequenceontology.org/",
+          "code": "SO:0000188",
+          "display": "intron",
+          "valueSet": 
+          {
+            "reference": "/ValueSet/RegionType"
+          }
+        }
+      ]
+    },
+
+    "intronOffsetStart": "13",
+    "intronOffsetEnd": "14",
+    "intronOffsetGenomicCoordinate": 
+    {
+      "referenceSequence": 
+      {
+        "reference": "/ReferenceSequence/RS203",
+        "display": "NC_000011.10"
+      },
+
+      "start": "6608803",
+      "end": "6608804",
+      "refAllele": "A"
+    }
+  }
+}

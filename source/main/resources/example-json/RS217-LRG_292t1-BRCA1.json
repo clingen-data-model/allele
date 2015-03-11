@@ -1,0 +1,27 @@
+{
+  "id": "RS217",
+  "identifier": 
+  {
+    "system": "http://ftp.ebi.ac.uk/pub/databases/lrgex",
+    "value": "LRG_292t1"
+  },
+
+  "sequenceClass": "nucleotide",
+  "nucleotideSequenceClass": "transcript",
+  "cdsStart": "233",
+  "cdsEnd": "5824",
+  "gene": 
+  {
+    "reference": "/Gene/G102"
+  },
+
+  "related": 
+  {
+    "type": "translates-to",
+    "target": 
+    {
+      "reference": "/ReferenceSequence/RS216",
+      "display": "LRG_292p1"
+    }
+  }
+}

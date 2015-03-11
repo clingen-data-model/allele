@@ -1,0 +1,16 @@
+{
+  "id": "RS218",
+  "identifier": 
+  {
+    "f:system": "http://ftp.ebi.ac.uk/pub/databases/lrgex",
+    "f:value": "LRG_292"
+  },
+
+  "sequenceClass": "nucleotide",
+  "nucleotideSequenceClass": "genomic",
+  "genomicSequenceClass": "gene",
+  "gene": 
+  {
+    "f:reference": "/Gene/G102"
+  }
+}

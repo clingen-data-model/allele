@@ -1,0 +1,60 @@
+{
+  "id": "SA317",
+  "identifier": 
+  [
+    {
+      "system": "http://www.ncbi.nlm.nih.gov/clinvar/variation",
+      "value": "37656"
+    }
+  ],
+
+  "canonicalAllele": 
+  {
+    "reference": "/CanonicalAllele/CA402"
+  },
+
+  "sequenceClass": "nucleotide",
+  "nucleotideSequenceClass": "genomic",
+  "allele": "G",
+  "nucleotideChangeType": 
+  {
+    "coding": 
+    [
+      {
+        "system": "http://www.sequenceontology.org/",
+        "code": "SO:1000002",
+        "display": "substitution",
+        "primary": "true"
+      }
+    ]
+  },
+
+  "alleleName": 
+  [
+    {
+      "type": "hgvs-genomic",
+      "name": "g.166886T>G"
+    }
+  ],
+
+  "referenceCoordinate": 
+  {
+    "identifier": 
+    [
+      {
+        "system": "http://www.ncbi.nlm.nih.gov/snp",
+        "value": "80357463"
+      }
+    ],
+
+    "referenceSequence": 
+    {
+      "reference": "/ReferenceSequence/RS218",
+      "display": "LRG_292"
+    },
+
+    "start": "166886",
+    "end": "166887",
+    "refAllele": "Ile"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "RS210",
+  "identifier": 
+  {
+    "label": "Homo sapiens chromosome 17, GRCh38 Primary Assembly",
+    "system": "http://www.ncbi.nlm.nih.gov/nuccore",
+    "value": "NC_000017.11"
+  },
+
+  "sequenceClass": "nucleotide",
+  "nucleotideSequenceClass": "genomic",
+  "genomicSequenceClass": "chromsome",
+  "chromosome": "17",
+  "referenceGenome": 
+  {
+    "coding": 
+    [
+      {
+        "system": "http://www.ncbi.nlm.nih.gov/assembly/",
+        "code": "88331"
+      }
+    ],
+
+    "text": "GRCh38"
+  }
+}

@@ -1,0 +1,24 @@
+---
+title: Examples 
+---
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Resource</th>
+      <th>Id</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+<% sitemap.resources.select{|r| r.path =~ /^allele\/implementation\/examples/ and not r.path =~ /index\.html/}.each do |r| %>
+<tr>
+<td><%= link_to r.data.title, r.url %></td>
+<td><%= r.data.resource %></td>
+<td><%= link_to r.data.id, r.url %></td>
+<td><%= r.data.description %></td>
+</tr>
+<% end %>
+  </tbody>
+</table>

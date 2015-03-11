@@ -12,8 +12,8 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;simpleType name="ReferenceSequenceRelationshipType-list">
  *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="amino-acid"/>
- *     &lt;enumeration value="transcript"/>
+ *     &lt;enumeration value="translates-to"/>
+ *     &lt;enumeration value="translates-from"/>
  *   &lt;/restriction>
  * &lt;/simpleType>
  * </pre>
@@ -28,15 +28,15 @@ public enum ReferenceSequenceRelationshipTypeList
 	 * The target ReferenceSequence is amino acid of this ReferenceSequence (e.g. NP_xxxx.x for NM_xxxxx.x).
 	 * 
 	 */
-	@XmlEnumValue ("amino-acid")
-	AMINO_ACID("amino-acid"),
+	@XmlEnumValue ("translates-to")
+	TRANSLATES_TO("translates-to"),
 
 	/**
 	 * The target ReferenceSequence is the transcript from which this amino-acid ReferenceSequence value is associated (e.g. NM_xxxxx.x for NP_xxxxx.x).
 	 * 
 	 */
-	@XmlEnumValue ("transcript")
-	DERIVED_FROM("transcript");
+	@XmlEnumValue ("translates-from")
+	TRANSLATES_FROM("translates-from");
 	private final java.lang.String value;
 
 	ReferenceSequenceRelationshipTypeList(java.lang.String v)

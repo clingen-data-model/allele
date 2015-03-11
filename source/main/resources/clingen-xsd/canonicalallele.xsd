@@ -1,0 +1,95 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://clingen.org/dm/allele/v1"
+	targetNamespace="http://clingen.org/dm/allele/v1" xmlns:f="http://hl7.org/fhir"
+	elementFormDefault="qualified" version="0.0.1">
+
+	<xs:include schemaLocation="referencesequence.xsd" />
+	<xs:import namespace="http://hl7.org/fhir" schemaLocation="../fhir-xsd/fhir-base.xsd" />
+
+	<xs:element name="CanonicalAllele" type="CanonicalAllele">
+		<xs:annotation>
+			<xs:documentation>The canonical representation of equivalent alleles.
+			</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+
+	<xs:complexType name="CanonicalAllele">
+		<xs:complexContent>
+			<xs:extension base="f:Resource">
+				<xs:sequence>
+					<xs:element name="identifier" type="f:Identifier"
+						nillable="true" minOccurs="0" maxOccurs="unbounded" />
+					<xs:element name="active" type="f:boolean" minOccurs="0" />
+					<xs:element name="sequenceClass" type="ReferenceSequenceClass" />
+					<xs:element name="complexityClass" type="CanonicalAlleleComplexityClass" />
+					<xs:element name="replacement" type="CanonicalAllele.Replacement"
+						minOccurs="0" maxOccurs="unbounded" />
+					<xs:element name="relatedSimpleAllele" type="CanonicalAllele.RelatedSimpleAllele"
+						minOccurs="0" maxOccurs="unbounded" />
+					<xs:element name="nested" type="f:ResourceReference"
+						minOccurs="0" maxOccurs="unbounded" />
+					<xs:element name="composite" type="f:ResourceReference"
+						minOccurs="0" maxOccurs="1" />
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:complexType name="CanonicalAlleleComplexityClass">
+		<xs:complexContent>
+			<xs:extension base="f:Element">
+				<xs:sequence />
+				<xs:attribute name="value"
+					type="CanonicalAlleleComplexityClass-list" />
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:simpleType name="CanonicalAlleleComplexityClass-list">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="simple" />
+			<xs:enumeration value="complex" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:complexType name="CanonicalAllele.Replacement">
+		<xs:complexContent>
+			<xs:extension base="f:BackboneElement">
+				<xs:sequence>
+					<xs:element name="type" type="CanonicalAlleleReplacementType" />
+					<xs:element name="split" type="f:boolean" minOccurs="0" />
+					<xs:element name="target" type="f:ResourceReference" />
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:complexType name="CanonicalAlleleReplacementType">
+		<xs:complexContent>
+			<xs:extension base="f:Element">
+				<xs:sequence />
+				<xs:attribute name="value"
+					type="CanonicalAlleleReplacementType-list" />
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:simpleType name="CanonicalAlleleReplacementType-list">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="replaced-by" />
+			<xs:enumeration value="replaced-with" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:complexType name="CanonicalAllele.RelatedSimpleAllele">
+		<xs:complexContent>
+			<xs:extension base="f:BackboneElement">
+				<xs:sequence>
+					<xs:element name="simpleAllele" type="f:ResourceReference" />
+					<xs:element name="preferred" type="f:boolean" minOccurs="0" />
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+</xs:schema>
+
