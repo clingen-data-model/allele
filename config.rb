@@ -28,6 +28,8 @@
 # proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {
 #  :which_fake_page => "Rendering a fake page with a local variable" }
 
+
+
 ###
 # Helpers
 ###
@@ -94,3 +96,15 @@ end
 
 ### Additonal custom configuration
 # set :relative_links, true
+puts 'printing sitemap resources'
+current_dir = Dir.pwd
+# sitemap.resources.select { |r| r.url.include?('/main/resources/example-json/ ') }
+Dir.chdir("source/main/resources/example-json/")
+Dir.glob("*.json").each do |file|
+  puts file
+  proxy("/allele/implementation/examples/#{file}.html",
+        "/allele/implementation/examples/template.html",
+        locals: { json_file: file },
+        page: { title: file },
+        ignore: true, )
+end
