@@ -1,17 +1,17 @@
 ---
 title: TranscriptReferenceCoordinate 
-description: TranscriptReferenceCoordinate defines a location with respect to a <a href="transcript_reference_sequence.html">TranscriptReferenceSequence</a>.  A TranscriptReferenceCoordinate can be defined for both exonic positions, which are part of the transcript, and intronic positions, which are not.
+description: TranscriptReferenceCoordinate defines a location with respect to a <a href="../reference_sequence/transcript_reference_sequence.html">TranscriptReferenceSequence</a>.  A TranscriptReferenceCoordinate can be defined for both exonic positions, which are part of the transcript, and intronic positions, which are not.
 
 ---
 
 Scope and Usage
 ---------------
 
-[ReferenceCoordinate](reference_coordinate.html) representts a particular continguous location at which different alleles may be defined with [SimpleAllele](simple_allele.html).  TranscriptReferenceCoordinate is a [ReferenceCoordinate](reference_coordinate.html) where the underlying reference sequence is a [TranscriptReferenceSequence](transcript_reference_sequence.html).
+[ReferenceCoordinate](reference_coordinate.html) representts a particular continguous location at which different alleles may be defined with [SimpleAllele](simple_allele.html).  TranscriptReferenceCoordinate is a [ReferenceCoordinate](reference_coordinate.html) where the underlying reference sequence is a [TranscriptReferenceSequence](../reference_sequence/transcript_reference_sequence.html).
 
-TranscriptReferenceCoordinates may refer to either exonic or intronic locations. Because exonic locations are in the [TranscriptReferenceSequence](transcript_reference_sequence.html), the coordinate may be defined as described in [ReferenceCoordinate](reference_coordinate.html).
+TranscriptReferenceCoordinates may refer to either exonic or intronic locations. Because exonic locations are in the [TranscriptReferenceSequence](../reference_sequence/transcript_reference_sequence.html), the coordinate may be defined as described in [ReferenceCoordinate](reference_coordinate.html).
 
-However, intronic locations are not part of the [TranscriptReferenceSequence](transcript_reference_sequence.html), and cannot be simply described using a start and end.  In HGVS, intronic variants are described in a transcript by using two integers.  The first is a location in the transcript, which is supposed to be the first or last base in an exon.  The second number is a coordinate into the intron from that location.  This assumes an alignment of this transcript to a particular [GenomicReferenceSequence](genomic_reference_sequence.html).  There may be multiple such alignments to multiple [GenomicReferenceSequences](genomic_reference_sequence.html), though this is not modeled in HGVS expressions.
+However, intronic locations are not part of the [TranscriptReferenceSequence](../reference_sequence/transcript_reference_sequence.html), and cannot be simply described using a start and end.  In HGVS, intronic variants are described in a transcript by using two integers.  The first is a location in the transcript, which is supposed to be the first or last base in an exon.  The second number is a coordinate into the intron from that location.  This assumes an alignment of this transcript to a particular [GenomicReferenceSequence](genomic_reference_sequence.html).  There may be multiple such alignments to multiple [GenomicReferenceSequences](genomic_reference_sequence.html), though this is not modeled in HGVS expressions.
 
 TranscriptReferenceCoordinate uses a similar system to refer to intronic positions.  Each TranscriptReferenceCoordinate may have one references to an [intronOffset](intron_offset.html) entity.  The intronOffset entity contains two integer attributes, which are the intronic offsets that are added to the start and end coordinates of the TranscriptReferenceCoordinate.   In addition, the IntronicCoordinate contains a reference to the particular [GenomicReferenceSequence](genomic_reference_sequence.html) where the transcript was mapped.
 
@@ -52,8 +52,8 @@ When describing observations a concise and interoperable method is required to r
 {:.table}
 | Attribute Name | Attribute Type | Cardinality |
 |----------------|----------------|-------------|
-| [exclusiveRegionType](../value_sets/region_type.html) | Code | 0..1 |
-| [auxiliaryRegionTypes](../value_sets/region_type.html) | Code | 0..* |
+| [primaryRegionType](/allele/value_set_list/primary_transcript_region_type.html) | Code | 0..1 |
+| [ancillaryRegionType](/allele/value_set_list/ancillary_transcript_region_type.html) | Code | 0..* |
 
 Related Entities 
 ----------------
@@ -61,6 +61,6 @@ Related Entities
 {:.table}
 | Relationship Name | Entity Type | Cardinality |
 |-------------------|-------------|-------------|
-| intronicCoordinate | [IntronicCoordinate](intronic_coordinate.html) | 0..* |
+| intronOffset | [IntronOffset](intron_offset.html) | 0..* |
 
-intronicCoordinate: These entities are used to represent coordinates that occur in intronic sequences.   See above for details.  Fully exonic coordinates will not have any intronicCoordinate relationships.  An intronic coordinate will have at least one, and may have more than one, representing mappings of the transcript to different [GenomicReferenceSequences](genomic_reference_sequence.html).
+intronOffset: These entities are used to represent coordinates that occur in intronic sequences.   See above for details.  Fully exonic coordinates will not have any intronOffset relationships.  An intron offset will have at least one, and may have more than one, representing mappings of the transcript to different [GenomicReferenceSequences](../reference_sequence/genomic_reference_sequence.html).

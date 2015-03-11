@@ -1,6 +1,6 @@
 ---
 title: ChromosomeReferenceSequence
-description: A <a href="/allele/conceptual/genomic_reference_sequence.html">GenomicReferenceSequence</a> describing the sequence of a full chromosome.
+description: A <a href="genomic_reference_sequence.html">GenomicReferenceSequence</a> describing the sequence of a full chromosome.
 
 ---
 
@@ -13,12 +13,12 @@ Each ChromosomeReferenceSequence contains the accession that can be used to look
   - sex chromosomes
   - the mitochondrial chromosome
 
-Note that as with all [ReferenceSequences](reference_sequence.html), the entity does not contain the sequence itself, only an accession that can be used to retreive the sequence as well as metadata about the sequence.
+Note that as with all [ReferenceSequences](index.html), the entity does not contain the sequence itself, only an accession that can be used to retreive the sequence as well as metadata about the sequence.
 
 Exclusions and Limitations
 --------------------------
 
-In version 1.0, ChromosomeReferenceSequence must be primary assembly chromosome sequence.  Patches, unplaced sequences, and other sequences of genomic DNA are unsupported in 1.0.
+In version v0.1, ChromosomeReferenceSequence must be primary assembly chromosome sequence.  Patches, unplaced sequences, and other sequences of genomic DNA are unsupported in v0.1.
 
 Attributes
 ----------

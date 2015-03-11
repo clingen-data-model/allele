@@ -19,14 +19,13 @@ When describing observations a concise and interoperable method is required to r
 {:.table}
 | Attribute Name | Attribute Type | Cardinality |
 |----------------|----------------|-------------|
-| [exclusiveAminoAcidChangeType](../value_sets/amino_acid_change_type.html) | Code | 0..1 |
-| [auxiliaryAminoAcidChangeType](../value_sets/amino_acid_change_type.html) | Code | 0..* |
+| [aminoAcidChangeType](/allele/value_set_list/amino_acid_change_type.html) | Code | 0..1 |
 
 
 
 Exclusions and Limitations
 --------------------------
 
-Version 1.0 of the Data Model does not offer a direct relationship between records or annotations described at the SimpleNucleotideAllele level to SimpleAminoAcidAllele, however given correct reference, sequence and transcript information this can be computationally derived.
+Version 0.1 of the Data Model does not offer a direct relationship between records or annotations described at the SimpleNucleotideAllele level to SimpleAminoAcidAllele, however given correct reference, sequence and transcript information this can be computationally derived.
 
 

@@ -39,6 +39,6 @@ Related Entities
 | startingTranscriptCoordinate | [TranscriptReferenceCoordinate](transcript_reference_coordinate.html) | 1 |
 | intronicGenomicCoordinate | [GenomicReferenceCoordinate](genomic_reference_coordinate.html) | 1 |
 
-startingTranscriptCoordinate: These entities are used to represent coordinates that occur in intronic sequences.   See above for details.  Fully exonic coordinates will not have any intronicCoordinate relationships.  An intronic coordinate will have at least one, and may have more than one, representing mappings of the transcript to different [GenomicReferenceSequences](genomic_reference_sequence.html).
+startingTranscriptCoordinate: These entities are used to represent coordinates that occur in intronic sequences.   See above for details.  Fully exonic coordinates will not have any intronicCoordinate relationships.  An intronic coordinate will have at least one, and may have more than one, representing mappings of the transcript to different [GenomicReferenceSequences](../reference_sequence/genomic_reference_sequence.html).
 
-intronicGenomicCoordinate: Intronic coordinates are actually genomic coordinates that are being defined with respect to a transcript for interpretive purposes.  intronicGenomicCoordinate is the IntronicCoordinate mapped to a particular [GenomicReferenceSequence](genomic_reference_sequence.html).
+intronicGenomicCoordinate: Intronic coordinates are actually genomic coordinates that are being defined with respect to a transcript for interpretive purposes.  intronicGenomicCoordinate is the IntronicCoordinate mapped to a particular [GenomicReferenceSequence](../reference_sequence/genomic_reference_sequence.html).

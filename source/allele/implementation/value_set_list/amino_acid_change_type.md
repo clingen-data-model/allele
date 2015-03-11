@@ -1,6 +1,9 @@
 ---
-title: aminoAcidChangeType
-description: ValueSets for SimpleAminoAcidAllele 
+title: amino-acid-change-type
+description: This value set includes only the types associated with simple amino acid alleles.
+source: Sequence Ontology
+id: TBD
+usage: core
 ---
 
 Scope and Usage
@@ -8,14 +11,10 @@ Scope and Usage
 
 A controlled vocabulary term used to describe the resulting effect a nucleotideChangeType can have at the amino acid level.  Currently constraint to be a child of [sequence_variant](http://www.sequenceontology.org/browser/current_svn/term/SO:0001060) within the Sequence Ontology.  These values can be experimentally discovered or derived with annotation tools such as [VAT](http://www.yandell-lab.org/software/vaast.html), [SnpEff](http://snpeff.sourceforge.net/) or [ANNOVAR](http://www.openbioinformatics.org/annovar/)
 
-We have curated a list of exclusive Sequence Ontology terms to be used when annotating aminoAcidChangeType.  Use of this list allow grouping of change types at a higher level, enriching the ability to preform logic and algorithm based operation across larger groups of amino acid change types.
-
-Additionally, we allow the use of an auxiliary type that can be used to clarify the exclusive type observed.  This type also allows a single annotation using a term not included in the exclusive list.
-
-Each of the ValueSets dealing with [CodeableConcepts](http://www.hl7.org/implement/standards/fhir/datatypes.html#CodeableConcept) are separated into two sections that focus on different levels of detail, demonstrated in the below examples.
+We have curated a list of Sequence Ontology terms to be used when annotating SimpleAllele aminoAcidChangeType.  Use of this list allow grouping of change types at a higher level, enriching the ability to preform logic and algorithm based operation across larger groups of amino acid change types.
 
 
-exclusiveAminoAcidChangeType List
+amino-acid-change-type
 ----------------------------------
 
 {:.table}
@@ -43,45 +42,16 @@ exclusiveAminoAcidChangeType List
 | transcript_variant | [SO:0001576](http://www.sequenceontology.org/browser/current_svn/term/SO:0001576) |
 
 
-auxiliaryAminoAcidChangeType List
----------------------------------
-
-In cases where additional or clarifying terms are needed a child of [sequence_variant](http://www.sequenceontology.org/browser/current_svn/term/SO:0001060) may be used and if a term is need it can be submitted for review via the sequence ontology [request a term]( http://sourceforge.net/p/song/term-tracker/).
-
-
 Example
 -------
 
-**exclusiveAminoAcidChangeType:** (cardinality of 1)
+**AminoAcidChangeType:** (cardinality of 1)
 
-* Annotations done using the exclusiveAminoAcidChangeType attribute are restricted to one of the following terms provided.  Any term used outside this list would be considered invalid for this attribute.
-
-{:.table}
-| Type | SO Name | Code[ID] | 
-|----------------|----------------|
-| `exclusiveAminoAcidChangeType` | `stop_gained` | [SO:0001587](http://www.sequenceontology.org/browser/current_svn/term/SO:0001587) |
-
-**auxiliaryAminoAcidChangeType:** (cardinality of 0..*)
-
-* This attribute allows for a couple of possibilities.  
-1. First to allow additional detail in describing the resulting effect a given variant has.
-2. Second, it allows the uses of terms that may better describe the feature of intrest, not offered in the exclusive list.
-
-_The first possibility:_
+* Annotations done using the aminoAcidChangeType attribute are restricted to one of the following terms provided.  Any term used outside this list would be considered invalid for this attribute.
 
 {:.table}
 | Type | SO Name | Code[ID] | 
 |----------------|----------------|
-| `exclusiveRegionType` | `frameshift_variant` | [SO:0001589](http://www.sequenceontology.org/browser/current_svn/term/SO:0001589) |
-| `auxiliaryRegionType` | `frameshift_elongation` | [SO:0000202](http://www.sequenceontology.org/browser/current_svn/term/SO:0000202) |
-
-This method offers two levels of annotated detail.  The exclusiveRegionType term enables higher-level grouping, and the auxiliaryRegionType offers additional specifics on the nature of the variant. 
-
-_The second possibility:_
-
-{:.table}
-| Type | SO Name | Code[ID] | 
-|----------------|----------------|
-| `auxiliaryRegionType` | `non_coding_transcript_variant` | [SO:SO:0001619](http://www.sequenceontology.org/browser/current_svn/term/SO:0001619) |
+| `aminoAcidChangeType` | `stop_gained` | [SO:0001587](http://www.sequenceontology.org/browser/current_svn/term/SO:0001587) |
 
 
