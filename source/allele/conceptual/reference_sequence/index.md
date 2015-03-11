@@ -25,7 +25,7 @@ Conceptual Model
 
 [![ReferenceSequence Conceptual Diagram](/images/ReferenceSequenceConceptual.svg){: .img-responsive}](/images/ReferenceSequenceConceptual.svg)
 
-Resource Model: [ReferenceSequence](/allele/resource/reference_sequence/index.html#resource_model)
+Resource Model: [ReferenceSequence](/allele/resource/reference_sequence/index.html#resource-model)
 
 Attributes
 ----------

@@ -41,7 +41,7 @@ Conceptual Model
 
 [![CanonicalAllele Conceptual Diagram](/images/CanonicalAlleleConceptual.svg){: .img-responsive}](/images/CanonicalAlleleConceptual.svg)
 
-Resource Model: [CanonicalAllele](/allele/resource/simple_allele/index.html#resource_model)
+Resource Model: [CanonicalAllele](/allele/resource/canonical_allele/index.html#resource-model)
 
 Attributes
 ----------

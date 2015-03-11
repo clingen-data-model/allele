@@ -1,5 +1,6 @@
 ---
 title: ReferenceSequence
+alias: reference sequence, refseq, sequence, accession
 description: A versioned sequence of nucleotide bases or amino acids.
 sequence_ontology: SO:0000994
 
@@ -27,7 +28,7 @@ Resource Model
 
 [![ReferenceSequence Resource Diagram](/images/ReferenceSequenceResource.svg){: .img-responsive}](/images/ReferenceSequenceResource.svg)
 
-Conceptual Model: [ReferenceSequence](/allele/conceptual/reference_sequence/index.html#conceptual_model)
+Conceptual Model: [ReferenceSequence](/allele/conceptual/reference_sequence/index.html#conceptual-model)
 
 This resource is referenced by [SimpleAllele](/allele/resource/simple_allele) & [Gene](/allele/resource/gene)
 
@@ -53,13 +54,11 @@ Examples
 --------
 
 {:.table}
-|Name                       |||
-|---------------------------|||
-|RS201-NM\_001014794.2-ILK|[XML](/allele/implementation/examples/RS201.html#xml)|[JSON](/allele/implementation/examples/RS201.html#json)|
-|RS202-NC\_000011.9-b37|[XML](/allele/implementation/examples/RS202.html#xml)|[JSON](/allele/implementation/examples/RS202.html#json)|
-|RS203-NC\_000011.10-b38|[XML](/allele/implementation/examples/RS203.html#xml)|[JSON](/allele/implementation/examples/RS203.html#json)|
-|RS210-NC\_000017.11-b38|[XML](/allele/implementation/examples/RS210.html#xml)|[JSON](/allele/implementation/examples/RS210.html#json)|
-
+|id|name                   |||
+|--|-----------------------|||
+<% sitemap.resources.select{|r| r.path =~ /^allele\/implementation\/examples\/RS./ and not r.path =~ /index\.html/}.each do |r| %>
+|<%= r.data.id %>|<%=link_to r.data.title, r.url %>|[XML](<%= r.url %>#xml)|[JSON](<%= r.url %>#json)|
+<% end %>
 
 Formal Definitions
 ------------------

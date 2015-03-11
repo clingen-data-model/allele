@@ -37,4 +37,4 @@ Conceptual Model
 
 [![SimpleAllele Conceptual Diagram](/images/SimpleAlleleConceptual.svg){: .img-responsive}](/images/SimpleAlleleConceptual.svg)
 
-Resource Model: [SimpleAllele](/allele/resource/simple_allele/index.html#resource_model)
+Resource Model: [SimpleAllele](/allele/resource/simple_allele/index.html#resource-model)

@@ -28,7 +28,7 @@ Conceptual Model
 
 [![Gene Conceptual Diagram](/images/GeneConceptual.svg){: .img-responsive}](/images/GeneConceptual.svg)
 
-Resource Model: [Gene](/allele/resource/gene/index.html#resource_model)
+Resource Model: [Gene](/allele/resource/gene/index.html#resource-model)
 
 Attributes
 ----------
