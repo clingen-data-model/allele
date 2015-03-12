@@ -1,6 +1,6 @@
 ---
 title: ReferenceCoordinate
-description: ReferenceCoordinate defines a location with respect to a <a href="reference_sequence.html">ReferenceSequence</a>.  
+description: ReferenceCoordinate defines a location with respect to a <a href="../reference_sequence/index.html">ReferenceSequence</a>.  
 
 ---
 
@@ -11,7 +11,7 @@ Locus
 Scope and Usage
 ---------------
 
-A contiguous genetic change between individuals may be described as a difference in alleles at a given location.  That location, here called an ReferenceCoordinate, is described in relation to a particular [ReferenceSequence](reference_sequence.html), which provides the coordinate frame for determining position.
+A contiguous genetic change between individuals may be described as a difference in alleles at a given location.  That location, here called an ReferenceCoordinate, is described in relation to a particular [ReferenceSequence](index.html), which provides the coordinate frame for determining position.
 
 A [SimpleAllele](simple_allele.html) is defined with respect to an ReferenceCoordinate by further specifying the allele that occurs at this coordinate, where the allele may be the same as or different than the allele that occurs in the reference sequence.
 
@@ -35,16 +35,28 @@ In the Interval Method, positions denote the intervals between bases, rather tha
 
 The table below shows the differences in representation for reference coordinates in the methods described above.  Although Alt is not part of the coordinate, it is included here to illustrate the manner in which alleles would make use of the reference coordinates in different circumstances.
 
-{:.table}
-| Alignment | |     |     | Variant |   |     |     | Interval |  |     |     |
-| Start | End | Ref | Alt | Start | End | Ref | Alt | Start | End | Ref | Alt |
-|-------|-----|-----|-----|-------|-----|-----|-----|-------|-----|-----|-----|
-| 100   | 100 | A   |  T  | 100   | 100 | A   | T   | 100   | 101 | A   | T   |
-| 101   | 101 | T   |  C  | 101   | 101 | T   | C   | 101   | 102 | T   | C   |
-| 100   | 101 | AT  |  A  | 101   | 101 | T   |     | 101   | 102 | T   |     |
-| 100   | 102 | ATC |  A  | 101   | 102 | TC  |     | 101   | 103 | TC  |     |
-| 100   | 100 | A   |  AT | 100   | 101 |     | T   | 101   | 101 |     | T   |
-| 100   | 101 | AT  |  GC | 100   | 101 | AT  | GC  | 100   | 102 | AT  | GC  |
+[![Variant Numbering Diagram](/images/variant_numbering_examples.png){: .img-responsive}](/images/variant_numbering_examples.png)
+
+
+{:.table .table-condensed .small}
+|    |HGVS    |>>>>|Alignment|-Method|<<<<<<<<|>>>>|Variant|-Method|<<<<|>>>>|Interval|-Method|<<<<|
+|    |        | Start | End | Ref | Alt| Start | End | Ref|Alt|Start|End|Ref|Alt|
+|:---|--------|-------|-----|-----|-----|---|---|---|---|---|---|---|---|
+|1   |g.100A>T| 100 | 100 | A | T |100|100|A|T|100|101|A|T|
+|2 |g.101delT|100|101|AT|A|101|101|T|-|101|102|T|-|
+|3|g.103_104delTC|102|104|GTC|G|103|104|TC|-|103|105|TC|-|
+|4|g.107_108delTC|105|108|GTTC|GT|107|108|TC|-|107|109|TC|-|
+|5|g.109_110insT|109|109|A|AT|109|110|-|T|110|110|-|T|
+|6|g.111_112insTAA|111|111|G|GTAA|111|112|-|TAA|112|112|-|TAA|
+|7|g.114_115insATT|112|114|GTC|GTCATT|114|115|-|ATT|115|115|-|ATT|
+|8a|g.117_118delCA<br>or g.117_118[2]|116|118|TCA|T|117|118|CA|-|117|119|CA|-|
+|8b|g.119_120delCA<br>or g.119_120[2]|116|120|TCACA|TCA|119|120|CA|-|119|121|CA|-|
+|8c|g.121_122delCA<br>or g.120_121[2]*|116|122|TCACACA|TCACA|121|122|CA|-|121|123|CA|-|
+|9|g.123G=|123|123|G|G|123|123|G|G|123|124|G|G|
+|10a|g.124_125insC<br>or g.125dupC|124|124|A|AC|124|125|-|C|125|125|-|C|
+|10b|g.125_126insC<br>or g.126dupC|125|126|C|CC|125|126|-|C|126|126|-|C|
+|10c|g.126_127insC<br>or g.127dupC|126|126|C|CC|126|127|-|C|127|127|-|C|
+|10d|g.126[3]*<br>or g.125[3] or g.124[3]|126|126|C|CC|126|127|-|C|127|127|-|C|
 
 
 Exclusions and Limitations
@@ -72,4 +84,4 @@ refAllele: The subsequence of the ReferenceSequence that goes from coordinates s
 Related Entities
 ----------------
 
-Particular subclasses will have a relationship with a given subclass of [ReferenceSequence](reference_sequence.html). See the subclasses for further information.
+Particular subclasses will have a relationship with a given subclass of [ReferenceSequence](../reference_sequence/index.html). See the subclasses for further information.

@@ -1,6 +1,9 @@
 ---
-title: nucleotideChangeType
-description: ValueSets for attributes primaryNucleotideChangeType & ancillaryNucleotideChangeType on the SimpleAllele(Resource) and SimpleNucleotideAllele(Conceptual)
+title: nucleotide-change-type
+description: This value set includes only the types associated with simple nucleotide alleles.
+source: Sequence Ontology
+id: TBD
+usage: core
 ---
 
 Scope and Usage
@@ -10,12 +13,10 @@ A controlled vocabulary term used to describe observed nucleotide alteration, in
 
 We have curated a list of primary Sequence Ontology terms to be used when annotating nucleotideChangeType.  Use of this list allow grouping of sequence alterations at a higher level, enriching the ability to preform logic and algorithm based operation across larger groups of sequence types.
 
-Additionally, we allow the use of an ancillary type that can be used to clarify the primary type observed.  This type also allows a single annotation using a term not included in the primary list.
-
 Each of the ValueSets dealing with [CodeableConcepts](http://www.hl7.org/implement/standards/fhir/datatypes.html#CodeableConcept) are separated into two sections that focus on different levels of detail, demonstrated in the below examples.
 
 
-primaryNucleotideChangeType List
+primary-nucleotide-change-type list
 --------------
 
 {:.table}
@@ -32,11 +33,6 @@ primaryNucleotideChangeType List
 | no_sequence_alteration | [SO:000000]() |
 
 
-ancillaryNucleotideChangeType List
-------------------
-
-In cases where additional or clarifying terms are needed a child of [sequence_postion]() may be used and if a term is need it can be submitted for review via the sequence ontology [request a term]( http://sourceforge.net/p/song/term-tracker/).
-
 Examples
 --------
 
@@ -48,30 +44,6 @@ Examples
 | Type | SO Name | Code[ID] | 
 |----------------|----------------|
 | `primaryNucleotideChangeType` | `deletion` | [SO:0000159](http://www.sequenceontology.org/browser/current_svn/term/SO:0000159) |
-
-
-**ancillaryNucleotideChangeType:** (cardinality of 0..*)
-
-* This attribute allows for a couple of possibilities.  
-1. First to allow additional detail in describing an observed sequence alteration.
-2. Second, it allows the uses of terms that may better describe the alteration of intrest, not offered in the primary list.
-
-_The first possibility:_
-
-{:.table}
-| Type | SO Name | Code[ID] | 
-|----------------|----------------|
-| `primaryNucleotideChangeType` | `substitution` | [SO:1000002](http://www.sequenceontology.org/browser/current_svn/term/SO:1000002) |
-| `ancillaryNucleotideChangeType` | `SNP` | [SO:0000694](http://www.sequenceontology.org/browser/current_svn/term/SO:0000694) |
-
-This method offers two levels of annotated detail.  The primaryNucleotideChangeType term enables higher-level grouping, and the ancillaryNucleotideChangeType offers additional specifics on the nature of the variant. 
-
-_The second possibility:_
-
-{:.table}
-| Type | SO Name | Code[ID] | 
-|----------------|----------------|
-| `ancillaryNucleotideChangeType` | `complex_structural_alteration` | [SO:0001784](http://www.sequenceontology.org/browser/current_svn/term/SO:0001784) |
 
 
 
