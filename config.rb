@@ -1,4 +1,12 @@
 ###
+# Tilt
+###
+
+# Register xml files as plain strings so that they render correctly
+Tilt.register Tilt::NokogiriTemplate, '.xml'
+# Tilt.register Tilt::StringTemplate, '.json'
+
+###
 # Compass
 ###
 
@@ -38,9 +46,9 @@
 # activate :automatic_image_sizes
 
 # Reload the browser automatically whenever files change
-configure :development do
-  activate :livereload
-end
+# configure :development do
+#   activate :livereload
+# end
 
 # Methods defined in the helpers block are available in templates
 helpers do
@@ -62,6 +70,23 @@ helpers do
     output = link_to(text, path)
     if current_page.url.include?(path)
       "<strong>#{output}</strong>#{brief_index(path)}"
+    else
+      output
+    end
+  end
+
+  def examples_index
+    output = data.examples.reduce("<ul>\n") do |acc, e|
+      acc + "<li>" + link_to(e['title'],
+                             "/allele/implementation/examples/#{e['id']}.html")
+    end
+    return output + "</ul>"
+  end
+                                                                                           
+  def link_with_examples_index(text, path)
+    output = link_to(text, path)
+    if current_page.url.include?(path)
+      "<strong>#{output}</strong>#{examples_index}"
     else
       output
     end
@@ -96,15 +121,23 @@ end
 
 ### Additonal custom configuration
 # set :relative_links, true
-puts 'printing sitemap resources'
-current_dir = Dir.pwd
-# sitemap.resources.select { |r| r.url.include?('/main/resources/example-json/ ') }
-Dir.chdir("source/main/resources/example-json/")
-Dir.glob("*.json").each do |file|
-  puts file
-  proxy("/allele/implementation/examples/#{file}.html",
-        "/allele/implementation/examples/template.html",
-        locals: { json_file: file },
-        page: { title: file },
-        ignore: true, )
+# current_dir = Dir.pwd
+# # sitemap.resources.select { |r| r.url.include?('/main/resources/example-json/ ') }
+# Dir.chdir("source/main/resources/example-json/")
+# Dir.glob("*.json").each do |file|
+#   puts file
+#   proxy("/allele/implementation/examples/#{file}.html",
+#         "/allele/implementation/examples/template.html",
+#         locals: { json_file: file },
+#         data: { title: file },
+#         ignore: true,
+#         title: file
+#        )
+# end
+# Dir.chdir(current_dir)
+data.examples.each do |e|
+  proxy("/allele/implementation/examples/#{e['id']}.html",
+       "/allele/implementation/examples/template.html",
+       locals: e,
+       ignore: true)
 end

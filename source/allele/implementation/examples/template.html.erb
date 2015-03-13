@@ -1,9 +1,12 @@
 ---
-
-
 ---
-<h1>example</h1>
-<p><%= locals[:json_file] %></p>
+<h1><%= locals['title'] %></h1>
+<p class="lead"><%= locals['description'] %></p>
+<h2>XML</h2>
+<code>
+  <%= File.open("source/#{locals['xml']}") {|f| escape_html(f.read)} %>
+</code>
+
 
 
 
