@@ -1,0 +1,5 @@
+<% wrap_layout :layout do %>
+   <%= yield %>
+   <h2>Examples</h2>
+   <%= examples_table(current_page.data.title) %>
+<% end %>

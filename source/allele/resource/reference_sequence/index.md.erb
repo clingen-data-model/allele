@@ -1,5 +1,6 @@
 ---
 title: ReferenceSequence
+layout: resource
 alias: reference sequence, refseq, sequence, accession
 description: A versioned sequence of nucleotide bases or amino acids.
 sequence_ontology: SO:0000994
@@ -49,16 +50,6 @@ Search Parameters
 | referenceGenome-name | string | | |
 | gene | resource | | |
 
-
-Examples
---------
-
-{:.table}
-|id|name                   |||
-|--|-----------------------|||
-<% sitemap.resources.select{|r| r.path =~ /^allele\/implementation\/examples\/RS./ and not r.path =~ /index\.html/}.each do |r| %>
-|<%= r.data.id %>|<%=link_to r.data.title, r.url %>|[XML](<%= r.url %>#xml)|[JSON](<%= r.url %>#json)|
-<% end %>
 
 Formal Definitions
 ------------------

@@ -1,5 +1,6 @@
 ---
 title: SimpleAllele
+layout: resource
 alias: simple allele, allele, variant, sequence variant, snv, amino acid variant, dna change, aa change
 description: A representation of an allele relative to a reference sequence. A CanonicalAllele is a composition of these, with one SimpleAllele selected as a prefered representation.
 
@@ -43,16 +44,6 @@ Search Parameters
 |------|------|-------------|-------------------|
 | _id  | token | the integer identifier of the simple allele | |
 
-
-Examples
---------
-
-{:.table}
-|id|name                   |||
-|--|-----------------------|||
-<% sitemap.resources.select{|r| r.path =~ /^allele\/implementation\/examples\/SA./ and not r.path =~ /index\.html/}.each do |r| %>
-|<%= r.data.id %>|<%=link_to r.data.title, r.url %>|[XML](<%= r.url %>#xml)|[JSON](<%= r.url %>#json)|
-<% end %>
 
 Formal Definitions
 ------------------
