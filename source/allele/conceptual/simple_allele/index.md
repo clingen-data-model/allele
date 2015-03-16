@@ -1,6 +1,6 @@
 ---
 title: SimpleAllele
-description: A particular choice of the multiple variant sequences at a contiguous region in a particular <a href="/allele/conceptual/reference_sequence/reference_sequence.html">ReferenceSequence</a>.
+description: A particular choice of the multiple variant sequences at a contiguous region in a particular <a href="/allele/conceptual/reference_sequence/index.html">ReferenceSequence</a>.
 
 ---
 
