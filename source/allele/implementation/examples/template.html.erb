@@ -3,9 +3,16 @@
 <h1><%= locals['title'] %></h1>
 <p class="lead"><%= locals['description'] %></p>
 <h2>XML</h2>
-<code>
-  <%= File.open("source/#{locals['xml']}") {|f| escape_html(f.read)} %>
-</code>
+<pre><code>
+<%= File.open("source/#{locals['xml']}") {|f| escape_html(f.read)} %>
+</code></pre>
+<p>example: <%= link_to "#{locals['title']}.xml", locals['xml'] %></p>
+<p>schema: <%= link_to "#{locals['resource']}.xsd", locals['schema'] %></p>
+<h2>JSON</h2>
+<pre><code>
+<%= File.open("source/#{locals['json']}") {|f| escape_html(f.read)} %>
+</code></pre>
+<p>example: <%= link_to "#{locals['title']}.json", locals['json'] %></p>
 
 
 
