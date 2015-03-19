@@ -1,5 +1,5 @@
 ---
-title: amino-acid-change-type
+title: primary-amino-acid-change-type
 description: This value set includes only the types associated with simple amino acid alleles.
 source: Sequence Ontology
 id: TBD
@@ -9,12 +9,13 @@ usage: core
 Scope and Usage
 ---------------
 
-A controlled vocabulary term used to describe the resulting effect a nucleotideChangeType can have at the amino acid level.  Currently constraint to be a child of [sequence_variant](http://www.sequenceontology.org/browser/current_svn/term/SO:0001060) within the Sequence Ontology.  These values can be experimentally discovered or derived with annotation tools such as [VAT](http://www.yandell-lab.org/software/vaast.html), [SnpEff](http://snpeff.sourceforge.net/) or [ANNOVAR](http://www.openbioinformatics.org/annovar/)
+A controlled vocabulary term used to describe the resulting effect a nucleotideChangeType can have at the amino acid level.  Currently constraint to be a child of [sequence_variant](http://www.sequenceontology.org/browser/current_svn/term/SO:0001060) within the Sequence Ontology.  These values can be experimentally discovered or derived with annotation tools such as [VAT](http://www.yandell-lab.org/software/vaast.html), [SnpEff](http://snpeff.sourceforge.net/) or [ANNOVAR](http://www.openbioinformatics.org/annovar/).
 
-We have curated a list of Sequence Ontology terms to be used when annotating SimpleAllele aminoAcidChangeType.  Use of this list allow grouping of change types at a higher level, enriching the ability to preform logic and algorithm based operation across larger groups of amino acid change types.
+We have curated a list of Sequence Ontology terms to be used when annotating SimpleAllele aminoAcidChangeType.  Use of this list allows grouping of change types at a higher level, enriching the ability to preform logic and algorithm based operation across larger groups of amino acid change types.
 
+This value set can be used in conjunction with the [ancillary-amino-acid-change-type](ancillary_amino_acid_change_type.html), which can provide optional detail associated to the primary-amino-acid-change-type.
 
-amino-acid-change-type
+primary-amino-acid-change-type
 ----------------------------------
 
 {:.table}
@@ -40,6 +41,8 @@ amino-acid-change-type
 | splice_acceptor_variant | [SO:0001574](http://www.sequenceontology.org/browser/current_svn/term/SO:0001574) |
 | splice_donor_variant | [SO:0001575](http://www.sequenceontology.org/browser/current_svn/term/SO:0001575) |
 | transcript_variant | [SO:0001576](http://www.sequenceontology.org/browser/current_svn/term/SO:0001576) |
+| regulatory_region_variant | [SO:0001566](http://www.sequenceontology.org/browser/current_svn/term/SO:0001566) |
+| amino_acid_substitution | [SO:0001606](http://www.sequenceontology.org/browser/current_svn/term/SO:0001606) |
 
 
 Example
@@ -52,6 +55,6 @@ Example
 {:.table}
 | Type | SO Name | Code[ID] | 
 |----------------|----------------|
-| `aminoAcidChangeType` | `stop_gained` | [SO:0001587](http://www.sequenceontology.org/browser/current_svn/term/SO:0001587) |
+| `primaryAminoAcidChangeType` | `stop_gained` | [SO:0001587](http://www.sequenceontology.org/browser/current_svn/term/SO:0001587) |
 
 
