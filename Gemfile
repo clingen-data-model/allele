@@ -20,3 +20,7 @@ gem "yajl-ruby" # json
 
 # publish to github pages -- removing for now, not useful for organization pages
 # gem 'middleman-gh-pages'
+
+# Generate UML on the fly!
+gem 'middleman-plantuml', path: "../middleman-plantuml"
+

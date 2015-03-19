@@ -1,3 +1,9 @@
+PATH
+  remote: ../middleman-plantuml
+  specs:
+    middleman-plantuml (0.0.1)
+      middleman-core (>= 3.3.10)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -117,6 +123,7 @@ PLATFORMS
 DEPENDENCIES
   kramdown
   middleman (~> 3.3.10)
+  middleman-plantuml!
   nokogiri
   tzinfo-data
   wdm (~> 0.1.0)

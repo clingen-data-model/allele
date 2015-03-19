@@ -1,0 +1,17 @@
+---
+attributes:
+  - name: identifier
+    type: Identifier[]
+    definition: The set of associated internal and external identifiers for the gene.
+  - name: symbol
+    type: string
+    definition: The commonly accepted short-form symbol representing the gene (i.e.) HGNC symbol.
+  - name: name
+    type: string
+    definition: The long-form gene name.
+  - name: aliasSymbol
+    type: string[]
+    definition: The set of alternative symbols used to identify the gene.
+
+  
+  
