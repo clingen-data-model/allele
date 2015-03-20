@@ -6,6 +6,19 @@ description: A region (or regions) that includes all of the sequence elements ne
 sequence_ontology: SO:0000704
 model: allele
 resource: gene
+attributes:
+  - name: identifier
+    type: Identifier[]
+    definition: The set of associated internal and external identifiers for the gene.
+  - name: symbol
+    type: string
+    definition: The commonly accepted short-form symbol representing the gene (i.e.) HGNC symbol.
+  - name: name
+    type: string
+    definition: The long-form gene name.
+  - name: aliasSymbol
+    type: string[]
+    definition: The set of alternative symbols used to identify the gene.
 
 ---
 
@@ -25,24 +38,6 @@ The Gene resource is described by the following attributes
 * name: the human readable name for a gene.
 * aliasSymbol: a list of alternative symbols used to identify the gene.
 
-Resource Model
-----------------
-
-[![Gene Resource Diagram](/images/GeneResource.svg){: .img-responsive}](/images/GeneResource.svg)
-
-Conceptual Model: [Gene](/allele/conceptual/gene/index.html#conceptual-model)
-	
 Notes
 -----
 
-Search Parameters
------------------
-
-{:.table}
-| name | type | description | related attribute |
-|------|------|-------------|-------|
-| _id  | token | search by the numeric internal identifier of the gene | 
-
-
-Formal Definitions
-------------------

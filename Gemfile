@@ -21,6 +21,6 @@ gem "yajl-ruby" # json
 # publish to github pages -- removing for now, not useful for organization pages
 # gem 'middleman-gh-pages'
 
-# Generate UML on the fly!
-gem 'middleman-plantuml', path: "../middleman-plantuml"
+# Extension for actually doing the hard work of building a data model
+gem 'middleman-data-model', path: "../middleman-data-model"
 

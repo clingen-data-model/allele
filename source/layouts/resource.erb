@@ -3,15 +3,7 @@
 <h2>Resource Model</h2>
 <%= uml_svg current_page.data %>
 <h2>Definitions</h2>
-<% data[current_page.data.model]['resource'][current_page.data.title.downcase]['attributes'].each do |a|  %> 
-<h4><%= a['name'] %></h4>
-<dl>
-  <dt>definition</dt>
-  <dd><%= a['definition'] %></dd>
-  <dt>type</dt>
-  <dd><%= a['type'] %></dd>
-</dl>
-<% end %>
+<%= model_attribute_list %>
 <h2>Examples</h2>
 <%= examples_table(current_page.data.title) %>
 <% end %>
