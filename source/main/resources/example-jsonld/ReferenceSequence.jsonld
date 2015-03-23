@@ -1,16 +1,17 @@
 {
     "@context":
     {
-        "fhir":"http://hl7.org/fhir/resources/"
-        "clingen":"http://clingen.org/model/allele/"
+        "fhir":"http://hl7.org/fhir/resources/",
+        "clingen":"http://clingen.org/model/allele/",
+        "xsd":"http://www.w3.org/2001/XMLSchema#",
 
-        "Gene":"clingen:Gene",
+        "ReferenceSequence":"clingen:ReferenceSequence",
         "Identifier":"fhir:Identifier",
         "identifier":
         {
             "@id":"fhir:identifier",
             "@container":"@set"
-        }
+        },
         "use":"fhir:use",
         "label":"fhir:label",
         "system":
@@ -22,7 +23,27 @@
         {
             "@id":"clingen:xref",
             "@type":"@id"
-        }
+        },
+        "sequenceClass":
+        {
+            "@id":"clingen:sequenceclass",
+            "@type":"clingen:SequenceClass"
+        },
+        "nucleotideSequenceClass":
+        {
+            "@id":"clingen:nucleotidesequenceclass",
+            "@type":"clingen:NucleotideSequenceClass"
+        },
+        "cdsStart":
+        {
+            @id:"clingen:cdsStart",
+            @type:"xsd:integer"
+        },
+        "cdsEnd":
+        {
+            @id:"clingen:cdsStart",
+            @type:"xsd:integer"
+        },
         "gene":
         {
             "@id":"clingen:gene",

@@ -1,6 +1,6 @@
 {
-  "@context":"http://clingen.org/models/allele.jsonld",
-  "@id": "http://clingendb.clingen.org/gene/G102",
+  "@context":"http://clingen.org/models/Gene.jsonld",
+  "@id": "http://clingendb.clingen.org/Gene/G102",
   "@type": "clingen:Gene",
   "identifier": 
   [
