@@ -1,0 +1,34 @@
+{
+
+    "@context":
+    {
+
+        "fhir":"http://hl7.org/fhir/resources/"
+        "clingen":"http://clingen.org/model/allele/"
+
+        "gene":"clingen:gene",
+        "Identifier":"fhir:identifier",
+        "identifier":
+        {
+            "@id":"fhir:identifier",
+            "@container","@set"
+        }
+
+        "use":"fhir:use",
+        "label":"fhir:label",
+        "system":
+        {
+            "@id":"fhir:system",
+            "@type":"@id"
+        },
+        "value":"fhir:value"
+
+        "symbol":"clingen:symbol",
+        "name":"http://schema.org/name",
+        "xref":
+        {
+            "@id":"clingen:xref",
+            "@type":"@id"
+        }
+    }
+}
