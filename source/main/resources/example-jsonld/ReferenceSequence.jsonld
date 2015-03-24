@@ -34,6 +34,16 @@
             "@id":"clingen:nucleotidesequenceclass",
             "@type":"clingen:NucleotideSequenceClass"
         },
+        "genomicSequenceClass":
+        {
+            "@id":"clingen:genomicsequenceclass",
+            "@type":"clingen:GenomicSequenceClass"
+        },
+        "chromosome":
+        {
+            "@id":"clingen:chromosome",
+            "@type":"xsd:integer"
+        },
         "cdsStart":
         {
             @id:"clingen:cdsStart",
