@@ -46,7 +46,10 @@
             "@type":"clingen:AminoAcidChangeType"
         },
         "referenceCoordinate": "clingen:referencecoordinate",
-        "referenceSequence": "clingen:referencesequence",
+        "referenceSequence": {
+            "@id":"clingen:referencesequence" ,
+            "@type":"@id"
+        }
         "start":
         {
             @id:"clingen:start",
@@ -88,8 +91,12 @@
         {
             "@id":"clingen:allelename",
             "@container":"@set",
-            "@type":"clingen:AlleleNameType"
         },
+        "nametype":
+        {
+            "@id":"clingen:allelenametype"
+            "@type":"clingen:AlleleNameType"
+        }
         "legacy":
         {
             "@id":"clingen:legacy",
