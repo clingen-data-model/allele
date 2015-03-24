@@ -67,21 +67,21 @@
           }
         }
       ]
-    }
-  },
-
-  "intronOffsetStart": "14",
-  "intronOffsetEnd": "15",
-  "intronOffsetGenomicCoordinate": 
-  {
-    "referenceSequence": 
-    {
-      "reference": "/ReferenceSequence/RS202",
-      "display": "NC_000011.9"
     },
 
-    "start": "6630034",
-    "end": "6630035",
-    "refAllele": "A"
+    "intronOffsetStart": "14",
+    "intronOffsetEnd": "15",
+    "intronOffsetGenomicCoordinate": 
+    {
+      "referenceSequence": 
+      {
+        "reference": "/ReferenceSequence/RS202",
+        "display": "NC_000011.9"
+      },
+
+      "start": "6630034",
+      "end": "6630035",
+      "refAllele": "A"
+    }
   }
 }
