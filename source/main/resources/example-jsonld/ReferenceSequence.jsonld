@@ -51,7 +51,7 @@
         },
         "cdsEnd":
         {
-            @id:"clingen:cdsStart",
+            @id:"clingen:cdsEnd",
             @type:"xsd:integer"
         },
         "gene":
