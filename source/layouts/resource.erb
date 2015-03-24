@@ -1,9 +1,9 @@
 <% wrap_layout :layout do %>
 <%= yield %>
 <h2>Resource Model</h2>
-<%= uml_svg current_page.data %>
+<%= model_uml current_page.data %>
 <h2>Definitions</h2>
 <%= model_attribute_list %>
 <h2>Examples</h2>
-<%= examples_table(current_page.data.title) %>
+<%= model_example_list %>
 <% end %>

@@ -19,6 +19,19 @@ attributes:
   - name: aliasSymbol
     type: string[]
     definition: The set of alternative symbols used to identify the gene.
+examples:
+  - id: G101
+    title: G101-ILK
+    description: 'A minimal Gene resource example.'
+    xml: "/main/resources/example-xml/G101-ILK.xml"
+    schema: "/main/resources/clingen-xsd/gene.xsd"
+    json: "/main/resources/example-json/G101-ILK.json"
+  - id: G102
+    title: G102-BRCA1
+    description: Gene example with aliases.
+    xml: "/main/resources/example-xml/G102-BRCA1.xml"
+    schema: "/main/resources/clingen-xsd/gene.xsd"
+    json: "/main/resources/example-json/G102-BRCA1.json"
 
 ---
 
