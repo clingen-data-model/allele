@@ -138,10 +138,10 @@ end
 ### Additonal custom configuration
 # set :relative_links, true
 
-data.examples.each do |e|
-  proxy("/allele/implementation/examples/#{e['id']}.html",
-       "/allele/implementation/examples/template.html",
-       locals: e,
-       ignore: true)
-end
+# data.examples.each do |e|
+#   proxy("/allele/implementation/examples/#{e['id']}.html",
+#        "/allele/implementation/examples/template.html",
+#        locals: e,
+#        ignore: true)
+# end
 

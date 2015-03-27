@@ -3,6 +3,40 @@ title: SimpleAllele
 layout: resource
 alias: simple allele, allele, variant, sequence variant, snv, amino acid variant, dna change, aa change
 description: A representation of an allele relative to a reference sequence. A CanonicalAllele is a composition of these, with one SimpleAllele selected as a prefered representation.
+model: allele
+resource: SimpleAllele
+composed_of:
+  - name: alleleName
+    type: AlleleName
+    multiplicity: 0..*
+  - name: related
+    type: RelatedSimpleAllele
+    multiplicity: 0..*
+  - name: referenceCoordinate
+    type: ReferenceCoordinate
+    multiplicity: 1
+attributes:
+  - name: identifier
+    type: Identifier[]
+    definition: set of identifiers uniquely identifying this SimpleAllele in this (and other) data stores
+  - name: canonicalAllele
+    type: CanonicalAllele
+    definition: associated CanonicalAllele
+  - name: sequenceClass
+    type: code
+    definition: associated class of sequence
+  - name: nucleotideSequenceClass
+    type: code
+    definition: associated class of nucleotide sequence
+  - name: allele
+    type: string
+    definition: simple string description of allele
+  - name: nucleotideChangeType
+    type: CodeableConcept
+    definition: Change described by SimpleAllele
+  - name: aminoAcidChangeType
+    type: CodeableConcept
+    definition: amino acid change described by SimpleAllele
 
 ---
 

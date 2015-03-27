@@ -4,6 +4,12 @@ layout: resource
 alias: reference sequence, refseq, sequence, accession
 description: A versioned sequence of nucleotide bases or amino acids.
 sequence_ontology: SO:0001411
+model: allele
+resource: ReferenceSequence
+composed_of:
+  - name: related
+    type: RelatedReferenceSequence
+    multiplicity: 0..*
 attributes:
   - name: identifier
     type: Identifier
@@ -28,6 +34,7 @@ attributes:
     multiplicity: 0..1
     terminology binding: Codes identifying human chromosomes
   - name: codingRegionOffset
+    type: integer
     definition: offset of start of sequence from start of coding region
     multiplicity: 1..1
   - name: referenceGenome
@@ -143,20 +150,6 @@ The ReferenceSequence resource is described by the following attributes
 * gene (optional)
 * referenceGenome (optional)
 
-Resource Model
-----------------
-
-[![ReferenceSequence Resource Diagram](/images/ReferenceSequenceResource.svg){: .img-responsive}](/images/ReferenceSequenceResource.svg)
-
-Conceptual Model: [ReferenceSequence](/allele/conceptual/reference_sequence/index.html#conceptual-model)
-
-This resource is referenced by [SimpleAllele](/allele/resource/simple_allele) & [Gene](/allele/resource/gene)
-
-Notes
------
-
-The preferred ReferenceSequence to bind an allele to will be the NC_* reference assembly, as defined by RefSeq.
-
 Search Parameters
 -----------------
 
@@ -169,84 +162,3 @@ Search Parameters
 | referenceGenome-name | string | | |
 | gene | resource | | |
 
-
-Formal Definitions
-------------------
-
-#### ReferenceSequence
-
-{:.dl-horizontal}
-definition
-: Consensus sequence of a portion of the genome against which alleles are aligned and described.
-
-control
-: 1..1
-
-requirements
-: For every allele there must be a corresponding reference sequence.
-
-#### ReferenceSequence.identifier
-
-{:.dl-horizontal}
-definition
-: The versioned accession that can be used to uniquely identify the sequence in a public database, as well as the information about which entity assigned the accession, and the time period over which the identifier is considered valid.
-
-multiplicity
-: 1..1
-
-requirements
-: For ReferenceSequence, an identifier is valid unless the accession is withdrawn. If a new version of a sequence is created, it will be given a different versioned accession, and therefore a different identifier. In this case, the previous identifier is still valid: it can still be used to retrieve the given sequence, even if that sequence is no longer the most recent sequence associated with a given entity.
-
-terminology binding
-: One of a set of valid reference sequence acessions from a recognized authority
-
-#### ReferenceSequence.kind
-
-{:.dl-horizontal}
-definition
-: The type of reference sequence.
-
-multiplicity
-: 1..1
-
-terminology binding
-: Codes identifying kinds of reference sequences
-
-#### ReferenceSequence.chr
-
-{:.dl-horizontal}
-definition
-: chromosome to which ReferenceSequence is bound
-
-multiplicity
-: 0..1
-
-terminology binding
-: Codes identifying human chromosomes
-
-#### ReferenceSequence.genomicSequenceType
-
-{:.dl-horizontal}
-terminology binding
-: Codes identifying the types of genomic sequences
-
-#### ReferenceSequence.codingRegionOffset
-
-{:.dl-horizontal}
-definition
-: offset of start of sequence from start of coding region
-
-multiplicity
-: 1..1
-
-#### ReferenceSequence.gene
-
-{:.dl-horizontal}
-definition
-: gene, if sequence is reference for specific gene
-
-multiplicity
-: 0..1
-
-terminology binding
-: Codes describing human genes
