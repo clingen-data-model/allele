@@ -48,6 +48,11 @@
 	      <%= link_to current_page.data.sequence_ontology, "http://www.sequenceontology.org/browser/current_svn/term/#{current_page.data.sequence_ontology}"  %>
 	    </small>
 	  </h1>
+          <% if current_page.data.related_page %>
+          <p>
+            related: <%= link_to current_page.data.title, current_page.data.related_page %>
+          </p>
+          <% end %>
 	  <% if current_page.data.description %>
 	  <p class="lead">
 	    <%= current_page.data.description %>
