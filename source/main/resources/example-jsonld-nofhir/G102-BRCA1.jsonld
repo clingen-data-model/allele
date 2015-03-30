@@ -1,0 +1,24 @@
+{
+  "@context":"http://clingen.org/models/Gene.jsonld",
+  "@id": "http://clingendb.clingen.org/Gene/G102",
+  "@type": "clingen:Gene",
+  "xref": 
+  [
+     "http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=HGNC:1100",
+     "http://www.ncbi.nlm.nih.gov/gene/672"
+  ],
+  "symbol": "BRCA1",
+  "name": "breast cancer 1, early onset",
+  "aliasSymbol": 
+  [
+    "IRIS",
+    "PSCP",
+    "BRCAI",
+    "BRCC1",
+    "FANCS",
+    "PNCA4",
+    "RNF53",
+    "BROVCA1",
+    "PPP1R53"
+  ]
+}

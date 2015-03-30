@@ -1,0 +1,22 @@
+{
+    "@context":
+    {
+        "clingen":"http://clingen.org/model/allele/"
+
+        "name":"http://schema.org/name",
+
+        "Gene":"clingen:Gene",
+        "symbol":"clingen:symbol",
+        "aliasSymbol":
+        {
+            "@id":"clingen:aliasSymbol",
+            "@container":"@set"
+        }
+        "xref":
+        {
+            "@id":"clingen:xref",
+            "@type":"@id",
+            "@container":"@set"
+        }
+    }
+}

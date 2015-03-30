@@ -1,0 +1,41 @@
+{
+    "@context":
+    {
+        "clingen":"http://clingen.org/model/allele/",
+        "xsd":"http://www.w3.org/2001/XMLSchema#",
+
+        "CanonicalAllele":"clingen:CanonicalAllele",
+        "RelatedSimpleAllele":"clingen:RelatedSimpleAllele",
+
+        "simpleAllele":
+        {
+            "@id":"clingen:simpleallele",
+            "@type":"@id"
+        },
+        "active":
+        {
+            "@id":"clingen:active",
+            "@type":"xsd:boolean"
+        },
+        "sequenceClass":
+        {
+            "@id":"clingen:sequenceclass",
+            "@type":"clingen:SequenceClass"
+        },
+        "complexityClass":
+        {
+            "@id":"clingen:complexityclass",
+            "@type":"clingen:ComplexityClass"
+        },
+        "relatedSimpleAllele":
+        {
+            "@id":"clingen:relatedsimpleallele",
+            "@container":"@set"
+        },
+        "preferred":
+        {
+            "@id":"clingen:preferred",
+            "@type":"xsd:boolean"
+        }
+    }
+}

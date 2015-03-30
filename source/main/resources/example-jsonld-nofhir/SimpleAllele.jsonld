@@ -53,11 +53,14 @@
         "referenceCoordinate": "clingen:referencecoordinate",
         "refAllele":"clingen:refAllele",
         "intronOffsetGenomicCoordinate":"clingen:intronoffsetgenomiccoordinate",
-        "canonicalAllele":"clingen:canonicalallele",
         "nucleotideChangeType":"clingen:nucleotidechangetype",
         "primaryRegionType":"clingen:primaryregiontype",
-        "referenceSequence": "clingen:referencesequence" ,
 
+        "canonicalAllele":
+        {
+            "@id":"clingen:canonicalallele",
+            "@type":"@id"
+        }
         "sequenceClass":
         {
             "@id":"clingen:sequenceclass",
@@ -73,6 +76,10 @@
             "@id":"clingen:aminoacidchangetype",
             "@type":"clingen:AminoAcidChangeType"
         },
+        "referenceSequence": {
+            "@id":"clingen:referencesequence" ,
+            "@type":"@id"
+        }
         "start":
         {
             @id:"clingen:start",

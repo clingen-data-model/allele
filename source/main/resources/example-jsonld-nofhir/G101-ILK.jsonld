@@ -1,0 +1,13 @@
+{
+    "@context":"http://clingen.org/models/Gene.jsonld"
+    "@id":"http://clingendb.clingen.org/Gene/G101",
+    "@type":"Gene",
+    "symbol": "ILK",
+    "name": "integrin-linked kinase",
+    "xref":
+    [
+        "http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=HGNC:6040",
+        "http://www.ncbi.nlm.nih.gov/gene/3661"
+    ]
+}
+
