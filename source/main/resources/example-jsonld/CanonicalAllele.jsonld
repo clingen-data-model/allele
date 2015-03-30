@@ -1,0 +1,61 @@
+{
+    "@context":
+    {
+        "fhir":"http://hl7.org/fhir/resources/",
+        "clingen":"http://clingen.org/model/allele/",
+        "xsd":"http://www.w3.org/2001/XMLSchema#",
+
+        "Identifier":"fhir:Identifier",
+        "Reference":"fhir:Reference",
+
+        "identifier":
+        {
+            "@id":"fhir:identifier",
+            "@container":"@set"
+        },
+        "use":"fhir:use",
+        "label":"fhir:label",
+        "system":
+        {
+            "@id":"fhir:system",
+            "@type":"@id"
+        },
+        "reference":
+        {
+            "@id":"fhir:reference",
+            "@type":"@id"
+        },
+        "display":"fhir:display",
+        
+        "CanonicalAllele":"clingen:CanonicalAllele",
+        "RelatedSimpleAllele":"clingen:RelatedSimpleAllele",
+
+        "simpleAllele":"clingen:simpleallele",
+
+        "active":
+        {
+            "@id":"clingen:active",
+            "@type":"xsd:boolean"
+        },
+        "sequenceClass":
+        {
+            "@id":"clingen:sequenceclass",
+            "@type":"clingen:SequenceClass"
+        },
+        "complexityClass":
+        {
+            "@id":"clingen:complexityclass",
+            "@type":"clingen:ComplexityClass"
+        },
+        "relatedSimpleAllele":
+        {
+            "@id":"clingen:relatedsimpleallele",
+            "@container":"@set"
+        },
+        "preferred":
+        {
+            "@id":"clingen:preferred",
+            "@type":"xsd:boolean"
+        }
+    }
+}
