@@ -5,8 +5,13 @@
         "clingen":"http://clingen.org/model/allele/",
         "xsd":"http://www.w3.org/2001/XMLSchema#",
 
-        "ReferenceSequence":"clingen:ReferenceSequence",
+        "name":"http://schema.org/name",
+
         "Identifier":"fhir:Identifier",
+        "Coding":"fhir:Coding",
+        "Code":"fhir:Code",
+        "Reference":"fhir:Reference",
+
         "identifier":
         {
             "@id":"fhir:identifier",
@@ -19,11 +24,24 @@
             "@id":"fhir:system",
             "@type":"@id"
         },
-        "xref":
+        "coding":
         {
-            "@id":"clingen:xref",
+            "@id":"fhir:coding",
+            "@collection":"@set"
+        }
+        "code":"fhir:code",
+        "reference":
+        {
+            "@id":"fhir:reference",
             "@type":"@id"
-        },
+        }
+
+
+        "ReferenceSequence":"clingen:ReferenceSequence",
+        "ReferenceGenome":"clingen:ReferenceGenome",
+
+        "gene":"clingen:gene",
+        "referenceGenome":"clingen:referencegenome",
         "sequenceClass":
         {
             "@id":"clingen:sequenceclass",
@@ -53,11 +71,6 @@
         {
             @id:"clingen:cdsEnd",
             @type:"xsd:integer"
-        },
-        "gene":
-        {
-            "@id":"clingen:gene",
-            "@type":"@id"
         }
     }
 }

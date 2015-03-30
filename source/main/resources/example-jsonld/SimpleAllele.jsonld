@@ -5,8 +5,12 @@
         "clingen":"http://clingen.org/model/allele/",
         "xsd":"http://www.w3.org/2001/XMLSchema#",
 
-        "ReferenceSequence":"clingen:ReferenceSequence",
+        "name":"http://schema.org/name",
+
         "Identifier":"fhir:Identifier",
+        "Reference":"fhir:Reference",
+        "Code":"fhir:Code",
+
         "identifier":
         {
             "@id":"fhir:identifier",
@@ -19,11 +23,40 @@
             "@id":"fhir:system",
             "@type":"@id"
         },
-        "xref":
+        "reference":
         {
-            "@id":"clingen:xref",
+            "@id":"fhir:reference",
             "@type":"@id"
         },
+         "coding":
+        {
+            "@id":"fhir:coding",
+            "@collection":"@set"
+        },
+        "code":"fhir:code",
+        "display":"fhir:display",
+        "primary":
+        {
+            "@id":"fhir:primary",
+            "@type":"xsd:boolean"
+        },
+        "valueSet": "fhir:valueSet",
+        
+        "SimpleAllele":"clingen:SimpleAllele",
+        "ReferenceCoordinate": "clingen:ReferenceCoordinate",
+        "IntronOffsetGenomicCoordinate":"clingen:IntronOffsetGenomicCoordinate",
+        "AlleleName":"clingen:AlleleName",
+        "NucleotideChangeType":"clingen:NucleotideChangeType"
+        "PrimaryRegionType":"clingen:PrimaryRegionType"
+
+        "allele":"clingen:allele",
+        "referenceCoordinate": "clingen:referencecoordinate",
+        "refAllele":"clingen:refAllele",
+        "intronOffsetGenomicCoordinate":"clingen:intronoffsetgenomiccoordinate",
+        "canonicalAllele":"clingen:canonicalallele",
+        "nucleotideChangeType":"clingen:nucleotidechangetype",
+        "primaryRegionType":"clingen:primaryregiontype",
+
         "sequenceClass":
         {
             "@id":"clingen:sequenceclass",
@@ -34,18 +67,11 @@
             "@id":"clingen:nucleotidesequenceclass",
             "@type":"clingen:NucleotideSequenceClass"
         },
-        "allele":"clingen:allele",
-        "nucleotideChangeType":
-        {
-            "@id":"clingen:nucleotidechangetype",
-            "@type":"clingen:NucleotideChangeType"
-        },
         "aminoAcidChangeType":
         {
             "@id":"clingen:aminoacidchangetype",
             "@type":"clingen:AminoAcidChangeType"
         },
-        "referenceCoordinate": "clingen:referencecoordinate",
         "referenceSequence": {
             "@id":"clingen:referencesequence" ,
             "@type":"@id"
@@ -60,7 +86,6 @@
             @id:"clingen:end",
             @type:"xsd:integer"
         },
-        "refAllele":"clingen:refAllele",
         "primaryTranscriptRegionType":
         {
             "@id":"clingen:primarytranscriptregiontype",

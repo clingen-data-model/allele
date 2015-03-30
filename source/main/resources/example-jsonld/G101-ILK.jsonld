@@ -18,11 +18,6 @@
             "system":"http://www.ncbi.nlm.nih.gov/gene",
             "value": "3661"
         }
-    ],
-    "xref":
-    [ 
-        "http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=HGNC:6040",
-        "http://www.ncbi.nlm.nih.gov/gene/3611" 
     ]
 }
 

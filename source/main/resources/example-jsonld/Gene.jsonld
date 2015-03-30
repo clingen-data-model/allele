@@ -4,7 +4,9 @@
         "fhir":"http://hl7.org/fhir/resources/"
         "clingen":"http://clingen.org/model/allele/"
 
-        "Gene":"clingen:Gene",
+        "name":"http://schema.org/name",
+
+
         "Identifier":"fhir:Identifier",
         "identifier":
         {
@@ -19,13 +21,9 @@
             "@type":"@id"
         },
         "value":"fhir:value"
+
+        "Gene":"clingen:Gene",
         "symbol":"clingen:symbol",
-        "name":"http://schema.org/name",
-        "xref":
-        {
-            "@id":"clingen:xref",
-            "@type":"@id"
-        }
         "aliasSymbol":
         {
             "@id":"clingen:aliasSymbol",

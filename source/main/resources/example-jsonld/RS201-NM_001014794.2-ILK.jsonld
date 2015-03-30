@@ -16,5 +16,10 @@
   "nucleotideSequenceClass": "transcript",
   "cdsStart": "162",
   "cdsEnd": "1520",
-  "gene": "../../Gene/G101"
+  "gene": 
+  {
+      "@type":"Reference",
+      "reference":"../../Gene/G101"
+  }
+        
 }

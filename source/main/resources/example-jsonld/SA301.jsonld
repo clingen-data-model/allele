@@ -1,26 +1,49 @@
 {
   "@context":"http://clingen.org/models/SimpleAllele.jsonld",
   "@id": "http://clingendb.clingen.org/SimpleAllele/SA301",
+  "@type": "SimpleAllele",
   "identifier": 
   [
     {
+      "@type":"Identifier"
       "system": "http://clingen/alleleregistry",
       "value": "SA301"
     }
   ],
 
+
   "canonicalAllele": 
   {
-    "reference": "/CanonicalAllele/CA401"
+    "@type":"Reference",
+    "reference":"../../CanonicalAllele/CA401"
   },
 
   "sequenceClass": "nucleotide",
   "nucleotideSequenceClass": "transcript",
   "allele": "G",
-  "nucleotideChangeType": "http://www.sequenceontology.org/SO:10000002",
+  "nucleotideChangeType": 
+  {
+    "@type":"NucleotideChangeType",
+    "coding":
+    [
+        {
+            "@type":"Code",
+            "system":""http://www.sequenceontology.org/",
+            "code": "SO:1000002",
+            "display": "substitution",
+            "primary": "true",
+            "valueSet": 
+            {
+                "@type":"Reference",
+                "reference": "../../ValueSet/NucleotideChangeType"
+            }
+        }
+    ]
+  }
   "alleleName": 
   [
     {
+      "@type":"AlleleName",
       "nametype": "hgvs-cdna",
       "name": "NM_001014794.2:c.448+14A>G",
       "preferred": "true"
@@ -29,16 +52,45 @@
 
   "referenceCoordinate": 
   {
-    "referenceSequence": "../../ReferenceSequence/RS201",
+    "@type":"ReferenceCoordinate",
+    "referenceSequence": 
+    {
+        "@type":"Reference",
+        "reference": "../../ReferenceSequence/RS201",
+    }
     "start": "609",
     "end": "609",
     "refAllele": "A",
-    "primaryRegionType": "http://www.sequenceontology.org/SO:0000188",
+
+    "primaryRegionType": 
+    {
+        "@type":"PrimaryRegionType",
+        "coding":
+        [
+            {
+                "@type":"Code",
+                "system":"http://www.sequenceontology.org/",
+                "code":"SO:0000188",
+                "display":"intron",
+                "valueSet":
+                {
+                    "@type":"Reference",
+                    "reference": "../../ValueSet/RegionType"
+                }
+            }
+        ]
+    }
+
     "intronOffsetStart": "14",
     "intronOffsetEnd": "15",
     "intronOffsetGenomicCoordinate": 
     {
-        "referenceSequence": "../../ReferenceSequence/RS202",
+        "@type":"IntronOffsetGenomicCoordinate",
+        "referenceSequence": 
+        {
+            "@type":"Reference",
+            "reference","../../ReferenceSequence/RS202"
+        }
         "start": "6630034",
         "end": "6630035",
         "refAllele": "A"
