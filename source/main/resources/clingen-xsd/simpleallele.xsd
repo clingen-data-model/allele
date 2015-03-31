@@ -24,10 +24,14 @@
 					<xs:element name="nucleotideSequenceClass" type="ReferenceSequenceNucleotideClass"
 						minOccurs="0" />
 					<xs:element name="allele" type="f:string" minOccurs="0" />
-					<xs:element name="nucleotideChangeType" type="f:CodeableConcept"
+					<xs:element name="primaryNucleotideChangeType" type="f:CodeableConcept"
 						minOccurs="0" />
-					<xs:element name="aminoAcidChangeType" type="f:CodeableConcept"
+					<xs:element name="ancillaryNucleotideChangeType" type="f:CodeableConcept"
+						minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="primaryAminoAcidChangeType" type="f:CodeableConcept"
 						minOccurs="0" />
+					<xs:element name="ancillaryAminoAcidChangeType" type="f:CodeableConcept"
+						minOccurs="0" maxOccurs="unbounded"/>
 					<xs:element name="alleleName" type="SimpleAllele.AlleleName"
 						minOccurs="0" maxOccurs="unbounded" />
 					<xs:element name="referenceCoordinate" type="SimpleAllele.ReferenceCoordinate"
@@ -106,9 +110,20 @@
 						minOccurs="0" />
 					<xs:element name="intronOffsetEnd" type="f:integer"
 						minOccurs="0" />
+					<xs:element name="intronOffsetDirection" type="IntronOffsetDirection"
+						minOccurs="0" />
 					<xs:element name="intronOffsetGenomicCoordinate" type="SimpleAllele.ReferenceCoordinate"
 						minOccurs="0" />
 				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:complexType name="IntronOffsetDirection">
+		<xs:complexContent>
+			<xs:extension base="f:Element">
+				<xs:sequence />
+				<xs:attribute name="value" type="IntronOffsetDirection-list" />
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
@@ -131,6 +146,13 @@
 			<xs:enumeration value="hgvs-ncrna" />
 			<xs:enumeration value="ivs" />
 			<xs:enumeration value="custom" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="IntronOffsetDirection-list">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="plus" />
+			<xs:enumeration value="minus" />
 		</xs:restriction>
 	</xs:simpleType>
 

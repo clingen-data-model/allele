@@ -17,7 +17,7 @@
   "sequenceClass": "nucleotide",
   "nucleotideSequenceClass": "transcript",
   "allele": "G",
-  "nucleotideChangeType": 
+  "primaryNucleotideChangeType": 
   {
     "coding": 
     [
@@ -28,7 +28,7 @@
         "primary": "true",
         "valueSet": 
         {
-          "reference": "/ValueSet/NucleotideChangeType"
+          "reference": "/ValueSet/PrimaryNucleotideChangeType"
         }
       }
     ]
@@ -58,10 +58,10 @@
       "display": "U14680.1"
     },
 
-    "start": "5416",
-    "end": "5417",
+    "start": "5415",
+    "end": "5416",
     "refAllele": "T",
-    "primaryRegionType": 
+    "primaryTranscriptRegionType": 
     {
       "coding": 
       [
@@ -71,7 +71,7 @@
           "display": "exon",
           "valueSet": 
           {
-            "reference": "/ValueSet/RegionType"
+            "reference": "/ValueSet/PrimaryTranscriptRegionType"
           }
         }
       ]
