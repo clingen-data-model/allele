@@ -10,15 +10,14 @@ usage: core
 Scope and Usage
 ---------------
 
-A controlled vocabulary term used to describe the resulting effect a nucleotideChangeType can have at the amino acid level.  Currently constraint to be a child of [sequence_variant](http://www.sequenceontology.org/browser/current_svn/term/SO:0001060) within the Sequence Ontology.  These values can be experimentally discovered or derived with annotation tools such as [VAT](http://www.yandell-lab.org/software/vaast.html), [SnpEff](http://snpeff.sourceforge.net/) or [ANNOVAR](http://www.openbioinformatics.org/annovar/).
+ancillaryAminoAcidChangeType allows for the use of additional amino acid types which can be used to clarify and add depth to the [primary-amino-acid-change-type](primary-amino-acid-change-type.html).  Additionally, this type allows a single annotation using a term not included in the primary list.
 
-We have curated a list of Sequence Ontology terms to be used when annotating SimpleAllele aminoAcidChangeType.  Use of this list allows grouping of change types at a higher level, enriching the ability to preform logic and algorithm based operation across larger groups of amino acid change types.
-
+Additionally ancillaryAminoAcidChangeType can be used to annotate types experimentally discovered or derived with annotation tools such as [VAT](http://www.yandell-lab.org/software/vaast.html), [SnpEff](http://snpeff.sourceforge.net/) or [ANNOVAR](http://www.openbioinformatics.org/annovar/).
 
 ancillaryAminoAcidChangeType List
 ----------------------------------
 
-In cases where additional or clarifying terms are needed a child of sequence_variant may be used and if a term is need it can be submitted for review via the sequence ontology request a term.
+Currently constraint to be a child of [sequence_variant](http://www.sequenceontology.org/browser/current_svn/term/SO:0001060) within the Sequence Ontology.
 
 
 Examples:
@@ -62,6 +61,19 @@ This method offers two levels of annotated detail. The primaryAminoAcidChangeTyp
 | `ancillaryAminoAcidChangeType` | `rare_amino_acid_variant` | [SO:0002008](http://www.sequenceontology.org/browser/current_svn/term/SO:0002008) |
 
 
+##_Annotation tools examples:_
 
+{:.table} 
+| Type | SO Name | Tool | Code[SO] | 
+|------|----------|-----|----------|
+| `ancillaryAminoAcidChangeType` | `conserved_intergenic_variant` | [SnpEff](http://snpeff.sourceforge.net/) | [SO:0002017](http://www.sequenceontology.org/browser/current_svn/term/SO:0002017) |
+| `ancillaryAminoAcidChangeType` | `stop_retained_variant` | [VAT](http://www.yandell-lab.org/software/vaast.html) | [SO:0001567](http://www.sequenceontology.org/browser/current_svn/term/SO:0001567) |
+| `ancillaryAminoAcidChangeType` | `upstream_gene_variant` | [ANNOVAR](http://www.openbioinformatics.org/annovar/) | [SO:0001631](http://www.sequenceontology.org/browser/current_svn/term/SO:0001631) |
+
+
+Exclusions and Limitations
+--------------------------
+
+Additional terms can be submitted for review via the sequence ontology [request a term]( http://sourceforge.net/p/song/term-tracker/)
 
 

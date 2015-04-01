@@ -1,33 +1,32 @@
 ---
 title: primary-transcript-region-type
-description: This value set includes only the transcript associated regions that is associated with a transcript simple allele reference coordinate.
+description: This value set includes only the transcript associated regions that is associated with a transcript simple allele reference coordinate. 
 source: Sequence Ontology
 id: TBD
 usage: core
 ---
 
-A controlled vocabulary term used to describe a single effected transcript feature. Currently constraint to be a child of [transcript_region](http://www.sequenceontology.org/browser/current_svn/term/SO:0000833) within the Sequence Ontology.  These values can be experimentally discovered or derived with annotation tools such as [VAT](http://www.yandell-lab.org/software/vaast.html) or [SnpEff](http://snpeff.sourceforge.net/) as well as tools which operate on [GFF3 files](http://www.sequenceontology.org/resources/gff3.html)
-
 Scope and Usage
 ---------------
 
-A constrained Sequence Ontology (SO) terms to be used when annotating the *SimpleAllele.ReferenceCoordinate.primaryRegionType* for a transcript simple allele.  This list is explicitly developed to define the top level of terms from SO region types, enriching the ability to preform logic and algorithm based operations across larger groups of region types.
+We have curated a list of primary Sequence Ontology terms to be used when annotating primaryTranscriptRegionType.  This list is specifically developed to describe transcript region types associated with SimpleAllele observations.  Use of this list allow grouping of transcript regions at a higher level, enriching the ability to preform logic and algorithm based operation across larger groups of region types.
 
-This value set can be used in conjunction with the [ancillary-transcript-region-type](ancillary_transcript_region_type.html), which can provide optional detail associated to the primary-transcript-region-type.
+This value set can be used in conjunction with the [ancillary-transcript-region-type](ancillary_transcript_region_type.html), which provides additional detail to the primaryTranscriptRegionType.  
 
+primaryTranscriptRegionType:
+---------------------------------
+
+Annotations done using the primaryRegionType attribute are restricted to one of the following terms provided.  Any term used outside this list would be considered invalid for this attribute.
 
 {:.table}
 | SO Name | Code[SO] | 
-|----------------|----------------|
+|--------|----------|
 | CDS | [SO:0000316](http://www.sequenceontology.org/browser/current_svn/term/SO:0000316) |
-| exon | [SO:0000147](http://www.sequenceontology.org/browser/current_svn/term/SO:0000147) |
-| intron | [SO:0000188](http://www.sequenceontology.org/browser/current_svn/term/SO:0000188) |
-| noncoding_exon | [SO:0000198](http://www.sequenceontology.org/browser/current_svn/term/SO:0000198) |
+| interior_intron | [SO:0000191](http://www.sequenceontology.org/browser/current_svn/term/SO:0000191)|
 | pseudogenic_exon | [SO:0000507](http://www.sequenceontology.org/browser/current_svn/term/SO:0000507) |
 | splice_site | [SO:0000162](http://www.sequenceontology.org/browser/current_svn/term/SO:0000162) |
 | five_prime_UTR | [SO:0000204](http://www.sequenceontology.org/browser/current_svn/term/SO:0000204) |
 | three_prime_UTR | [SO:0000205](http://www.sequenceontology.org/miso/current_svn/term/SO:0000205) |
-
 
 This value set is used in the following places:
 
@@ -37,9 +36,7 @@ This value set is used in the following places:
 Examples:
 ---------
 
-**primaryRegionType:** (cardinality of 1)
-
-* Annotations done using the primaryRegionType attribute are restricted to one of the following terms provided.  Any term used outside this list would be considered invalid for this attribute.
+**primaryRegionType:** (cardinality of 1..*)
 
 {:.table}
 | Type | SO Name | Code[SO] | 
@@ -50,5 +47,16 @@ Examples:
 | Type | SO Name | Code[SO] | 
 |----------------|----------------|
 | `primaryRegionType` | `splice_site` | [SO:0000162](http://www.sequenceontology.org/browser/current_svn/term/SO:0000162) |
+
+
+{:.table}
+| Type | SO Name | Code[SO] | 
+|----------------|----------------|
+| `primaryRegionType` | `CDS` | [SO:0000316](http://www.sequenceontology.org/browser/current_svn/term/SO:0000316) |
+| `primaryRegionType` | `interior_intron` | [SO:0000191](http://www.sequenceontology.org/browser/current_svn/term/SO:0000191) |
+| `primaryRegionType` | `splice_site` | [SO:0000162](http://www.sequenceontology.org/browser/current_svn/term/SO:0000162) |
+
+
+
 
 

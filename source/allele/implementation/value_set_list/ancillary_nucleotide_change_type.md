@@ -6,26 +6,22 @@ id: TBD
 usage: core
 ---
 
-Currently constraint to be a child of [sequence_alteration](http://www.sequenceontology.org/browser/current_svn/term/SO:0001059) within the Sequence Ontology.  These values can be experimentally discovered or derived with annotation tools as [VAT](http://www.yandell-lab.org/software/vaast.html), [SnpEff](http://snpeff.sourceforge.net/) or [ANNOVAR](http://www.openbioinformatics.org/annovar/).
-
-
 Scope and Usage
 ---------------
 
-We have curated a list of [primary](primary_nucleotide_change_type.html) Sequence Ontology terms to be used when annotating nucleotides changes.  Use of this list allow grouping of types at a higher level, enriching the ability to preform logic and algorithm based operation across larger collections.
+ancillaryNucleotideChangeType allows the use of an ancillary type which can be used to clarify and add depth to the [primary](primary_nucleotide_change_type.html) type observed.  This type also allows a single annotation using a term not included in the primary list.
 
-Additionally, we allow the use of an ancillary type which can be used to clarify and add depth to the primary type observed.  This type also allows a single annotation using a term not included in the primary list.
 
-ancillaryNucleotideChangeType List
+ancillaryNucleotideChangeType:
 ------------------------
 
-In cases where additional or clarifying terms are needed a child of sequence_alteration may be used and if a term is need it can be submitted for review via the sequence ontology [request a term]( http://sourceforge.net/p/song/term-tracker/).
+Currently constraint to be a child of [sequence_alteration](http://www.sequenceontology.org/browser/current_svn/term/SO:0001059) within the Sequence Ontology.  Accurate annotation of ancillary-nucleotide-change-type will not contain terms found in primary-nucleotide-change-type.
 
 
 Examples:
 ---------
 
-**ancillaryNucleotideChangeType:** (carnality of 1)
+**ancillaryNucleotideChangeType:** (carnality of 0..*)
 
 * This attribute allows for a couple of possibilities.  
 1. First to allow additional detail in describing the location of the feature related to the variant.
@@ -53,3 +49,9 @@ This method offers two levels of annotated detail. The primaryNucleotideChangeTy
 | Type | SO Name | Code[ID] | 
 |----------------|----------------| 
 | `ancillaryNucleotideChangeType` | `deficient_intrachromosomal_transposition` | [SO:0000062](http://www.sequenceontology.org/browser/current_svn/term/SO:0000062) |
+
+
+Exclusions and Limitations
+--------------------------
+
+Additional terms can be submitted for review via the sequence ontology [request a term]( http://sourceforge.net/p/song/term-tracker/)

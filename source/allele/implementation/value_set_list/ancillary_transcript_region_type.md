@@ -6,20 +6,15 @@ id: TBD
 usage: core
 ---
 
-Controlled vocabulary terms used to describe a single effected transcript feature. Currently constraint to be a child of [transcript_region](http://www.sequenceontology.org/browser/current_svn/term/SO:0000833) within the Sequence Ontology.  These values can be experimentally discovered or derived with annotation tools such as [VAT](http://www.yandell-lab.org/software/vaast.html) or [SnpEff](http://snpeff.sourceforge.net/) as well as tools which operate on [GFF3 files](http://www.sequenceontology.org/resources/gff3.html)
-
 Scope and Usage
 ---------------
 
-We have curated a list of [primary](primary_transcript_region_type.html) Sequence Ontology terms to be used when annotating regionType.  Use of this list allow grouping of regions at a higher level, enriching the ability to preform logic and algorithm based operation across larger groups of region types.
+ancillaryRegionType allows for the use of additional region types which can be used to clarify and add depth to the [primary-transcript-region-type](primary-transcript-region-type.html).  Additionally, this type allows a single annotation using a term not included in the primary list.
 
-Additionally, we allow the use of an ancillary type which can be used to clarify and add depth to the primary type observed.  This type also allows a single annotation using a term not included in the primary list.
-
-ancillaryRegionType List
+ancillaryRegionType:
 ------------------------
 
-In cases where additional, clarifying or terms not found in the [primary-transcript-region-type](primary_transcript_region_type.html) are needed a child of [transcript_region]( http://www.sequenceontology.org/browser/current_svn/term/SO:0000833) may be used.  Additionally, terms can be submitted for review via the sequence ontology [request a term]( http://sourceforge.net/p/song/term-tracker/).
-
+This type is currently constraint to be a child of [transcript_region](http://www.sequenceontology.org/browser/current_svn/term/SO:0000833) within the Sequence Ontology.  Accurate annotation of ancillary-transcript-region-type will not contain terms found in primary-transcript-region-type.
 
 Examples:
 --------
@@ -51,9 +46,8 @@ _More examples:_
 {:.table}
 | Type | SO Name | Code[SO] | 
 |----------------|----------------|
-| `primaryRegionType` | `exon` | [SO:0000147](http://www.sequenceontology.org/browser/current_svn/term/SO:0000147) |
-| `ancillaryRegionType` | `interior_exon` | [SO:0000201](http://www.sequenceontology.org/browser/current_svn/term/SO:0000201) |
-
+| `primaryRegionType` | `five_prime_UTR` | [SO:0000204](http://www.sequenceontology.org/browser/current_svn/term/SO:0000204) |
+| `ancillaryRegionType` | `upstream_AUG_codon` | [SO:000063](http://www.sequenceontology.org/browser/current_svn/term/SO:0000630) |
 
 These methods offers two levels of annotated detail.  The primaryRegionType term enables higher-level grouping, and the ancillaryRegionType offers additional specifics on the nature and location of the variant.
 
@@ -70,6 +64,9 @@ These methods offers two levels of annotated detail.  The primaryRegionType term
 |----------------|----------------|
 | `ancillaryRegionType` | `cryptic_splice_site` | [SO:0001533](http://www.sequenceontology.org/browser/current_svn/term/SO:0001533) |
 
+Exclusions and Limitations
+--------------------------
 
+Additional terms can be submitted for review via the sequence ontology [request a term]( http://sourceforge.net/p/song/term-tracker/)
 
 
