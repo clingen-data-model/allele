@@ -1,10 +1,10 @@
 {
   "@context":"http://clingen.org/models/ReferenceSequence.jsonld",
-  "@id": "http://clingendb.clingen.org/ReferenceSequence/RS202",
-  "@type:":"ReferenceSequence",
+  "@id": "http://clingendb.clingen.org/ReferenceSequence/RS203",
+  "@type":"ReferenceSequence",
   "xref": 
-  [ 
-      "http://www.ncbi.nlm.nih.gov/nuccore/NC_000011.9"
+  [
+    "http://www.ncbi.nlm.nih.gov/nuccore/NC_000011.10"
   ],
 
   "sequenceClass": "nucleotide",
@@ -14,7 +14,7 @@
   "referenceGenome": 
   {
     "@type":"ReferenceGenome",
-    "@id":"http://www.ncbi.nlm.nih.gov/assembly/2758",
-    "name": "GRCh37"
+    "@id": "http://www.ncbi.nlm.nih.gov/assembly/88331",
+    "name": "GRCh38"
   }
 }

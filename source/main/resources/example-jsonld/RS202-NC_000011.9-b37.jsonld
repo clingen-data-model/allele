@@ -14,7 +14,7 @@
 
   "sequenceClass": "nucleotide",
   "nucleotideSequenceClass": "genomic",
-  "genomicSequenceClass": "chromsome",
+  "genomicSequenceClass": "chromosome",
   "chromosome": "11",
   "referenceGenome": 
   {
