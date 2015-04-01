@@ -20,9 +20,9 @@
   "sequenceClass": "nucleotide",
   "nucleotideSequenceClass": "transcript",
   "allele": "G",
-  "nucleotideChangeType": 
+  "primaryNucleotideChangeType": 
   {
-    "@type":"NucleotideChangeType",
+    "@type":"PrimaryNucleotideChangeType",
     "coding": 
     [
       {
@@ -34,7 +34,7 @@
         "valueSet": 
         {
           "@type":"Reference",
-          "reference": "/ValueSet/NucleotideChangeType"
+          "reference": "/ValueSet/PrimaryNucleotideChangeType"
         }
       }
     ]
@@ -59,12 +59,12 @@
         "reference":"../../ReferenceSequence/RS201",
         "display":"NM_001014794.2"
     }
-    "start": "609",
-    "end": "609",
+    "start": "608",
+    "end": "608",
     "refAllele": "A",
-    "primaryRegionType": 
+    "primaryTranscriptRegionType": 
     {
-      "@type":"PrimaryRegionType",
+      "@type":"PrimaryTranscriptRegionType",
       "coding": 
       [
         {
@@ -74,14 +74,15 @@
           "display": "intron",
           "valueSet": 
           {
-            "reference": "../../ValueSet/RegionType"
+            "reference": "../../ValueSet/PrimaryTranscriptRegionType"
           }
         }
       ]
     },
 
-    "intronOffsetStart": "13",
-    "intronOffsetEnd": "14",
+    "intronOffsetStart": "12",
+    "intronOffsetEnd": "13",
+    "intronOffsetDirection": "plus",
     "intronOffsetGenomicCoordinate": 
     {
       "@type":"IntronOffsetGenomicCoordinate",
@@ -91,8 +92,8 @@
         "reference":"../../ReferenceSequence/RS203",
         "display":"NC_000011.10"
       }
-      "start": "6608803",
-      "end": "6608804",
+      "start": "6608802",
+      "end": "6608803",
       "refAllele": "A"
     }
   }

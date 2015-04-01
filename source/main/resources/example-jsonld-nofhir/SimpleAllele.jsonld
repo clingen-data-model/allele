@@ -46,15 +46,15 @@
         "ReferenceCoordinate": "clingen:ReferenceCoordinate",
         "IntronOffsetGenomicCoordinate":"clingen:IntronOffsetGenomicCoordinate",
         "AlleleName":"clingen:AlleleName",
-        "NucleotideChangeType":"clingen:NucleotideChangeType"
-        "PrimaryRegionType":"clingen:PrimaryRegionType"
+        "PrimaryNucleotideChangeType":"clingen:PrimaryNucleotideChangeType"
+        "PrimaryTranscriptRegionType":"clingen:PrimaryTranscriptRegionType"
 
         "allele":"clingen:allele",
         "referenceCoordinate": "clingen:referencecoordinate",
         "refAllele":"clingen:refAllele",
         "intronOffsetGenomicCoordinate":"clingen:intronoffsetgenomiccoordinate",
-        "nucleotideChangeType":"clingen:nucleotidechangetype",
-        "primaryRegionType":"clingen:primaryregiontype",
+        "primaryNucleotideChangeType":"clingen:primarynucleotidechangetype",
+        "primaryTranscriptRegionType":"clingen:primarytranscriptregiontype",
 
         "canonicalAllele":
         {
@@ -71,10 +71,16 @@
             "@id":"clingen:nucleotidesequenceclass",
             "@type":"clingen:NucleotideSequenceClass"
         },
-        "aminoAcidChangeType":
+        "primaryAminoAcidChangeType":
         {
-            "@id":"clingen:aminoacidchangetype",
-            "@type":"clingen:AminoAcidChangeType"
+            "@id":"clingen:primaryaminoacidchangetype",
+            "@type":"clingen:PrimaryAminoAcidChangeType"
+        },
+        "ancillaryAminoAcidChangeType":
+        {
+            "@id":"clingen:ancillaryaminoacidchangetype",
+            "@type":"clingen:AncillaryAminoAcidChangeType",
+            "@container":"@set"
         },
         "referenceSequence": {
             "@id":"clingen:referencesequence" ,
@@ -98,7 +104,7 @@
         "ancillaryTranscriptRegionType":
         {
             "@id":"clingen:ancillarytranscriptregiontype",
-            "@type":"clingen:PrimaryTranscriptRegionType",
+            "@type":"clingen:AncillaryTranscriptRegionType",
             "@container":"@set"
         },
         "intronOffsetStart":
@@ -110,6 +116,11 @@
         {
             "@id":"clingen:intronoffsetend",
             "@type":"xsd:integer"
+        },
+        "intronOffsetDirection":
+        {
+            "@id":"clingen:intronoffsetdirection",
+            "@type":"clingen:IntronOffsetDirection"
         },
         "related":
         {

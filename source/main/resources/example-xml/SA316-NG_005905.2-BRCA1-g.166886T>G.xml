@@ -13,17 +13,17 @@
 	<sequenceClass value="nucleotide"></sequenceClass>
 	<nucleotideSequenceClass value="genomic"></nucleotideSequenceClass>
 	<allele value="G"></allele>
-	<nucleotideChangeType>
+	<primaryNucleotideChangeType>
 		<f:coding>
 			<f:system value="http://www.sequenceontology.org/"></f:system>
 			<f:code value="SO:1000002"></f:code>
 			<f:display value="substitution"></f:display>
 			<f:primary value="true"></f:primary>
 			<f:valueSet>
-				<f:reference value="../ValueSet/NucleotideChangeType"></f:reference>
+				<f:reference value="../ValueSet/PriumaryNucleotideChangeType"></f:reference>
 			</f:valueSet>
 		</f:coding>
-	</nucleotideChangeType>
+	</primaryNucleotideChangeType>
 	<alleleName>
 		<type value="hgvs-genomic"></type>
 		<name value="NG_005905.2:g.166886T&gt;G"></name>
@@ -33,8 +33,8 @@
 			<f:reference id="/ReferenceSequence/RS212"></f:reference>
 			<f:display value="NG_005905.2"></f:display>
 		</referenceSequence>
-		<start value="166886"></start>
-		<end value="166887"></end>
+		<start value="166885"></start>
+		<end value="166886"></end>
 		<refAllele value="T"></refAllele>
 	</referenceCoordinate>
 

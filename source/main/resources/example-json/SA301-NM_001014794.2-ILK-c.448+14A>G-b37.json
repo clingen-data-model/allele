@@ -71,7 +71,7 @@
 
     "intronOffsetStart": "13",
     "intronOffsetEnd": "14",
-    "intronOffsetDirection":"plus"
+    "intronOffsetDirection":"plus",
     "intronOffsetGenomicCoordinate": 
     {
       "referenceSequence": 

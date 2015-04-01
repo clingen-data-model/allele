@@ -12,9 +12,9 @@
   "sequenceClass": "nucleotide",
   "nucleotideSequenceClass": "transcript",
   "allele": "G",
-  "nucleotideChangeType": 
+  "primaryNucleotideChangeType": 
   {
-    "@type":"NucleotideChangeType",
+    "@type":"PrimaryNucleotideChangeType",
     "@id": "http://www.sequenceontology.org/SO:1000002",
     "display": "substitution",
     "primary": "true"
@@ -34,25 +34,26 @@
   {
     "@type":"ReferenceCoordinate",
     "referenceSequence": :"../../ReferenceSequence/RS201",
-    "start": "609",
-    "end": "609",
+    "start": "608",
+    "end": "608",
     "refAllele": "A",
-    "primaryRegionType": 
+    "primaryTranscriptRegionType": 
     {
-      "@type":"PrimaryRegionType",
+      "@type":"PrimaryTranscriptRegionType",
       "coding": 
       "@id": "http://www.sequenceontology.org/SO:0000188",
       "display": "intron",
     },
 
-    "intronOffsetStart": "13",
-    "intronOffsetEnd": "14",
+    "intronOffsetStart": "12",
+    "intronOffsetEnd": "13",
+    "intronOffsetDirection": "plus",
     "intronOffsetGenomicCoordinate": 
     {
       "@type":"IntronOffsetGenomicCoordinate",
       "referenceSequence":"../../ReferenceSequence/RS203",
-      "start": "6608803",
-      "end": "6608804",
+      "start": "6608802",
+      "end": "6608803",
       "refAllele": "A"
     }
   }
