@@ -16,7 +16,7 @@ This value set can be used in conjunction with the [ancillary-transcript-region-
 primaryTranscriptRegionType:
 ---------------------------------
 
-Annotations done using the primaryRegionType attribute are restricted to one of the following terms provided.  Any term used outside this list would be considered invalid for this attribute.
+Annotations done using the primaryTranscriptRegionType attribute are restricted to one of the following terms provided.  Any term used outside this list would be considered invalid for this attribute.
 
 {:.table}
 | SO Name | Code[SO] | 
@@ -31,30 +31,30 @@ Annotations done using the primaryRegionType attribute are restricted to one of 
 This value set is used in the following places:
 
 * [SimpleAllele.ReferenceCoordinate.primaryTranscriptRegionType (Resource)](/allele/resource/simple_allele)
-* [TranscriptReferenceCoordinate.primaryRegionType (Conceptual)](/allele/conceptual/simple_allele/transcript_reference_coordinate.html)
+* [TranscriptReferenceCoordinate.primaryTranscriptRegionType (Conceptual)](/allele/conceptual/simple_allele/transcript_reference_coordinate.html)
 
 Examples:
 ---------
 
-**primaryRegionType:** (cardinality of 1..*)
+**primaryTranscriptRegionType:** (cardinality of 1..*)
 
 {:.table}
 | Type | SO Name | Code[SO] | 
 |----------------|----------------|
-| `primaryRegionType` | `CDS` | [SO:0000316](http://www.sequenceontology.org/browser/current_svn/term/SO:0000316) |
+| `primaryTranscriptRegionType` | `CDS` | [SO:0000316](http://www.sequenceontology.org/browser/current_svn/term/SO:0000316) |
 
 {:.table}
 | Type | SO Name | Code[SO] | 
 |----------------|----------------|
-| `primaryRegionType` | `splice_site` | [SO:0000162](http://www.sequenceontology.org/browser/current_svn/term/SO:0000162) |
+| `primaryTranscriptRegionType` | `splice_site` | [SO:0000162](http://www.sequenceontology.org/browser/current_svn/term/SO:0000162) |
 
 
 {:.table}
 | Type | SO Name | Code[SO] | 
 |----------------|----------------|
-| `primaryRegionType` | `CDS` | [SO:0000316](http://www.sequenceontology.org/browser/current_svn/term/SO:0000316) |
-| `primaryRegionType` | `interior_intron` | [SO:0000191](http://www.sequenceontology.org/browser/current_svn/term/SO:0000191) |
-| `primaryRegionType` | `splice_site` | [SO:0000162](http://www.sequenceontology.org/browser/current_svn/term/SO:0000162) |
+| `primaryTranscriptRegionType` | `CDS` | [SO:0000316](http://www.sequenceontology.org/browser/current_svn/term/SO:0000316) |
+| `primaryTranscriptRegionType` | `interior_intron` | [SO:0000191](http://www.sequenceontology.org/browser/current_svn/term/SO:0000191) |
+| `primaryTranscriptRegionType` | `splice_site` | [SO:0000162](http://www.sequenceontology.org/browser/current_svn/term/SO:0000162) |
 
 
 

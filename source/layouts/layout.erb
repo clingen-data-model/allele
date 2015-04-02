@@ -24,6 +24,7 @@
 	    <li><%= link_with_local_index "ReferenceSequence", "/#{model}/resource/reference_sequence" %></li>
 	    <li><%= link_with_local_index "SimpleAllele", "/#{model}/resource/simple_allele" %></li>
 	    <li><%= link_with_local_index "CanonicalAllele", "/#{model}/resource/canonical_allele" %></li>
+	    <li><%= link_with_local_index "Provenance", "/#{model}/resource/provenance" %></li>
 	  </ul>
 	  <h5><%= link_to "Conceptual", "/#{model}/conceptual" %></h5>
 	  <ul class="list-unstyled">
@@ -31,11 +32,13 @@
 	    <li><%= link_with_local_index "ReferenceSequence", "/#{model}/conceptual/reference_sequence" %></li>
 	    <li><%= link_with_local_index "SimpleAllele", "/#{model}/conceptual/simple_allele" %></li>
 	    <li><%= link_with_local_index "CanonicalAllele", "/#{model}/conceptual/canonical_allele" %></li>
+	    <li><%= link_with_local_index "Provenance", "/#{model}/conceptual/provenance" %></li>
 	  </ul>
 	  <h5><%= link_to "Implementation", "/#{model}/implementation" %></h5>
 	  <ul class="list-unstyled">
 	    <li><%= link_with_local_index "FHIR Specification", "/#{model}/implementation/fhir_specification" %></li>
 	    <li><%= link_with_local_index "Value Set List", "/#{model}/implementation/value_set_list" %></li>
+	    <li><%= link_with_local_index "Integrated Examples", "/#{model}/implementation/integrated_examples" %></li>
 	    <li><%= link_with_examples_index "Examples", "/#{model}/implementation/examples" %></li>
 	    <li><%= link_with_local_index "Schemas", "/#{model}/implementation/schemas" %></li>
 	  </ul>

@@ -55,8 +55,8 @@ When describing observations a concise and interoperable method is required to r
 {:.table}
 | Attribute Name | Attribute Type | Cardinality |
 |----------------|----------------|-------------|
-| [primaryRegionType](/allele/value_set_list/primary_transcript_region_type.html) | Code | 0..1 |
-| [ancillaryRegionType](/allele/value_set_list/ancillary_transcript_region_type.html) | Code | 0..* |
+| [primaryTranscriptRegionType](/allele/value_set_list/primary_transcript_region_type.html) | Code | 0..1 |
+| [ancillaryTranscriptRegionType](/allele/value_set_list/ancillary_transcript_region_type.html) | Code | 0..* |
 
 Related Entities 
 ----------------
