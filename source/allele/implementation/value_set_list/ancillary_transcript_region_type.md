@@ -9,9 +9,9 @@ usage: core
 Scope and Usage
 ---------------
 
-ancillaryRegionType allows for the use of additional region types which can be used to clarify and add depth to the [primary-transcript-region-type](primary-transcript-region-type.html).  Additionally, this type allows a single annotation using a term not included in the primary list.
+ancillaryTranscriptRegionType allows for the use of additional region types which can be used to clarify and add depth to the [primary-transcript-region-type](primary-transcript-region-type.html).  Additionally, this type allows a single annotation using a term not included in the primary list.
 
-ancillaryRegionType:
+ancillaryTranscriptRegionType:
 ------------------------
 
 This type is currently constraint to be a child of [transcript_region](http://www.sequenceontology.org/browser/current_svn/term/SO:0000833) within the Sequence Ontology.  Accurate annotation of ancillary-transcript-region-type will not contain terms found in primary-transcript-region-type.
@@ -19,7 +19,7 @@ This type is currently constraint to be a child of [transcript_region](http://ww
 Examples:
 --------
 
-**ancillaryRegionType:** (cardinality of 0..*)
+**ancillaryTranscriptRegionType:** (cardinality of 0..*)
 
 * This attribute allows for a couple of possibilities.  
 1. First to allow additional detail in describing the location of the feature related to the variant.
@@ -31,8 +31,8 @@ Examples:
 {:.table}
 | Type | SO Name | Code[SO] | 
 |----------------|----------------|
-| `primaryRegionType` | `CDS` | [SO:0000316](http://www.sequenceontology.org/browser/current_svn/term/SO:0000316) |
-| `ancillaryRegionType` | `transcription_start_site` | [SO:0000315](http://www.sequenceontology.org/browser/current_svn/term/SO:0000315) |
+| `primaryTranscriptRegionType` | `CDS` | [SO:0000316](http://www.sequenceontology.org/browser/current_svn/term/SO:0000316) |
+| `ancillaryTranscriptRegionType` | `transcription_start_site` | [SO:0000315](http://www.sequenceontology.org/browser/current_svn/term/SO:0000315) |
 
 
 _More examples:_
@@ -40,16 +40,16 @@ _More examples:_
 {:.table}
 | Type | SO Name | Code[SO] | 
 |----------------|----------------|
-| `primaryRegionType` | `splice_site` | [SO:0000162](http://www.sequenceontology.org/browser/current_svn/term/SO:0000162) |
-| `ancillaryRegionType` | `three_prime_cis_splice_site` | [SO:0000164](http://www.sequenceontology.org/browser/current_svn/term/SO:0000164) |
+| `primaryTranscriptRegionType` | `splice_site` | [SO:0000162](http://www.sequenceontology.org/browser/current_svn/term/SO:0000162) |
+| `ancillaryTranscriptRegionType` | `three_prime_cis_splice_site` | [SO:0000164](http://www.sequenceontology.org/browser/current_svn/term/SO:0000164) |
 
 {:.table}
 | Type | SO Name | Code[SO] | 
 |----------------|----------------|
-| `primaryRegionType` | `five_prime_UTR` | [SO:0000204](http://www.sequenceontology.org/browser/current_svn/term/SO:0000204) |
-| `ancillaryRegionType` | `upstream_AUG_codon` | [SO:000063](http://www.sequenceontology.org/browser/current_svn/term/SO:0000630) |
+| `primaryTranscriptRegionType` | `five_prime_UTR` | [SO:0000204](http://www.sequenceontology.org/browser/current_svn/term/SO:0000204) |
+| `ancillaryTranscriptRegionType` | `upstream_AUG_codon` | [SO:000063](http://www.sequenceontology.org/browser/current_svn/term/SO:0000630) |
 
-These methods offers two levels of annotated detail.  The primaryRegionType term enables higher-level grouping, and the ancillaryRegionType offers additional specifics on the nature and location of the variant.
+These methods offers two levels of annotated detail.  The primaryTranscriptRegionType term enables higher-level grouping, and the ancillaryTranscriptRegionType offers additional specifics on the nature and location of the variant.
 
 
 ###_The second case:_
@@ -57,12 +57,12 @@ These methods offers two levels of annotated detail.  The primaryRegionType term
 {:.table}
 | Type | SO Name | Code[ID] | 
 |----------------|----------------|
-| `ancillaryRegionType` | `promoter` | [SO:0000167](http://www.sequenceontology.org/browser/current_svn/term/SO:0000167) |
+| `ancillaryTranscriptRegionType` | `promoter` | [SO:0000167](http://www.sequenceontology.org/browser/current_svn/term/SO:0000167) |
 
 {:.table}
 | Type | SO Name | Code[ID] | 
 |----------------|----------------|
-| `ancillaryRegionType` | `cryptic_splice_site` | [SO:0001533](http://www.sequenceontology.org/browser/current_svn/term/SO:0001533) |
+| `ancillaryTranscriptRegionType` | `cryptic_splice_site` | [SO:0001533](http://www.sequenceontology.org/browser/current_svn/term/SO:0001533) |
 
 Exclusions and Limitations
 --------------------------

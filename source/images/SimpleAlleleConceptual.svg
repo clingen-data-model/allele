@@ -372,22 +372,22 @@
       ><path d="M-77.5 -12.5 L152.5 -12.5 L152.5 22.5 L-77.5 22.5 L-77.5 -12.5 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath123"
-      ><path d="M-7.6 -7.6 L39.4 -7.6 L39.4 19.4 L-7.6 19.4 L-7.6 -7.6 Z"
-      /></clipPath
-      ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath124"
       ><path d="M-58 -14 L114 -14 L114 26 L-58 26 L-58 -14 Z"
       /></clipPath
-      ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath125"
+      ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath124"
       ><path d="M-72.5 -17.5 L142.5 -17.5 L142.5 32.5 L-72.5 32.5 L-72.5 -17.5 Z"
       /></clipPath
-      ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath126"
+      ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath125"
       ><path d="M-7.6 -7.6 L40.4 -7.6 L40.4 18.4 L-7.6 18.4 L-7.6 -7.6 Z"
       /></clipPath
-      ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath127"
+      ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath126"
       ><path d="M0 -0 L33 -0 L33 11 L0 11 L0 -0 Z"
       /></clipPath
-      ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath128"
+      ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath127"
       ><path d="M0 -0 L41.25 -0 L41.25 13.75 L0 13.75 L0 -0 Z"
+      /></clipPath
+      ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath128"
+      ><path d="M-7.6 -7.6 L39.4 -7.6 L39.4 19.4 L-7.6 19.4 L-7.6 -7.6 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath129"
       ><path d="M-2 -2 L82 -2 L82 111 L-2 111 L-2 -2 Z"
@@ -775,11 +775,11 @@
     /></g
     ><g font-size="11" transform="matrix(0.8,0,0,0.8,489.6,518.6)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" font-family="sans-serif" stroke="black" stroke-opacity="1"
     ><text x="2" xml:space="preserve" y="13" clip-path="url(#clipPath79)" stroke="none"
-      >-primaryRegionType : code</text
+      >-primaryTranscriptRegionType : code</text
     ></g
     ><g font-size="11" transform="matrix(0.8,0,0,0.8,489.6,518.6)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" font-family="sans-serif" stroke="black" stroke-opacity="1"
     ><text x="2" xml:space="preserve" y="27" clip-path="url(#clipPath79)" stroke="none"
-      >-ancillaryRegionType : code[]</text
+      >-ancillaryTranscriptRegionType : code[]</text
     ></g
     ><g font-size="11" transform="translate(489.6,507.6) scale(0.8,0.8)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" font-family="sans-serif" stroke="black" font-weight="bold" stroke-opacity="1"
     ><text x="26" xml:space="preserve" y="11" clip-path="url(#clipPath81)" stroke="none"
@@ -881,19 +881,19 @@
     ><text x="11" xml:space="preserve" y="11" clip-path="url(#clipPath113)" stroke="none"
       >1..*</text
     ></g
-    ><g font-size="11" transform="translate(285.6,590.6) scale(0.8,0.8)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" font-family="sans-serif" stroke="black" stroke-opacity="1"
-    ><text x="10" xml:space="preserve" y="11" clip-path="url(#clipPath113)" stroke="none"
-      >0..1</text
-    ></g
     ><g font-size="11" stroke-linecap="butt" transform="translate(234,-1)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" font-family="sans-serif" stroke-linejoin="round" stroke="black" stroke-width="0.8" stroke-opacity="1" stroke-miterlimit="6.4"
     ><line y2="80" fill="none" x1="80" clip-path="url(#clipPath120)" x2="80" y1="133"
     /></g
     ><g font-size="11" transform="translate(290,103) scale(0.8,0.8)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" font-family="sans-serif" stroke="black" stroke-opacity="1"
-    ><text x="10" xml:space="preserve" y="11" clip-path="url(#clipPath125)" stroke="none"
+    ><text x="10" xml:space="preserve" y="11" clip-path="url(#clipPath124)" stroke="none"
       >preferred</text
     ></g
     ><g font-size="11" transform="translate(310.6,115.6) scale(0.8,0.8)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" font-family="sans-serif" stroke="black" stroke-opacity="1"
-    ><text x="10" xml:space="preserve" y="11" clip-path="url(#clipPath128)" stroke="none"
+    ><text x="10" xml:space="preserve" y="11" clip-path="url(#clipPath127)" stroke="none"
+      >0..1</text
+    ></g
+    ><g font-size="11" transform="translate(285.6,590.6) scale(0.8,0.8)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" font-family="sans-serif" stroke="black" stroke-opacity="1"
+    ><text x="10" xml:space="preserve" y="11" clip-path="url(#clipPath113)" stroke="none"
       >0..1</text
     ></g
     ><g font-size="11" stroke-linecap="butt" transform="translate(338,167)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" font-family="sans-serif" stroke-linejoin="round" stroke="black" stroke-width="0.8" stroke-opacity="1" stroke-miterlimit="6.4"
@@ -986,7 +986,7 @@
       /><polygon fill="none" points=" 40 40 48 44 59 40 48 35" clip-path="url(#clipPath152)"
     /></g
     ><g font-size="11" transform="translate(310.6,115.6) scale(0.8,0.8)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" font-family="sans-serif" stroke="black" stroke-opacity="1"
-    ><text x="10" xml:space="preserve" y="11" clip-path="url(#clipPath128)" stroke="none"
+    ><text x="10" xml:space="preserve" y="11" clip-path="url(#clipPath127)" stroke="none"
       >0..1</text
     ></g
     ><g font-size="11" stroke-linecap="butt" transform="translate(522,115)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" font-family="sans-serif" stroke-linejoin="round" stroke="black" stroke-width="0.8" stroke-opacity="1" stroke-miterlimit="6.4"

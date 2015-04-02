@@ -23,7 +23,8 @@ When describing observations a concise and interoperable method is required to r
 {:.table}
 | Attribute Name | Attribute Type | Cardinality |
 |----------------|----------------|-------------|
-| [nucleotideChangeType](/allele/value_set_list/nucleotide_change_type.html) | Code | 0..1 |
+| [primaryNucleotideChangeType](/allele/value_set_list/primary_nucleotide_change_type.html) | Code | 0..1 |
+| [ancillaryNucleotideChangeType](/allele/value_set_list/ancillary_nucleotide_change_type.html) | Code | 0..* |
 
 Exclusions and Limitations
 --------------------------
