@@ -16,7 +16,7 @@
 
   "sequenceClass": "amino acid",
   "allele": "Ser",
-  "aminoAcidChangeType": 
+  "primaryAminoAcidChangeType": 
   {
     "coding": 
     [
@@ -26,7 +26,7 @@
         "display": "missense variant",
         "valueSet": 
         {
-          "reference": "/ValueSet/AminoAcidChangeType"
+          "reference": "/ValueSet/PrimaryAminoAcidChangeType"
         }
       }
     ]
@@ -61,8 +61,8 @@
       "display": "NP_009225.1"
     },
 
-    "start": "1766",
-    "end": "1767",
+    "start": "1765",
+    "end": "1766",
     "refAllele": "Ile"
   },
 

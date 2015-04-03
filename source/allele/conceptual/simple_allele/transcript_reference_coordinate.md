@@ -23,10 +23,13 @@ Examples
 The following table illustrates how exonic and intronic coordinates are represented based on the following sequence:
 
 {:.table}
-|ACT|gcacta|CA|
-|123|      |45|
+| Sequence                                 |   | A |   | C |   | T |   | g |   | c |   | a |   | c |   | t |   | a |   | C |   | A |   |
+|------------------------------------------|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| Transcript Numbering                     | 1 |   | 2 |   | 3 |   |   |   |   |   |   |   |   |   |   |   |   |   | 4 |   | 5 |   | 6 |
+| Intronic Left (relative to 3,3)          |   |   |   |   |   |   | 1 |   | 2 |   | 3 |   | 4 |   | 5 |   | 6 |   |   |   |   |   |   |
+| Intronic Right (relative to 4,4)         |   |   |   |   |   |   |-7 |   |-6 |   |-5 |   |-4 |   |-3 |   |-2 |   |-1 |   |   |   |   |
 
-In this example, uppercase bases represent exonic sequence, and lowercase sequences represent intronic bases.  In the table, lowercase and uppercase is used to aid in undestanding, but the actual data would not include this information. The numbering is transcript-based, which will therefore not include the intronic bases.    Start and End are defined using the interval method discussed in [ReferenceCoordinate](reference_coordinate.html).
+In this example, uppercase bases represent exonic sequence, and lowercase sequences represent intronic bases.  In the table, lowercase and uppercase is used to aid in undestanding, but the actual data would not include this information. The itranscript numbering does not include the intronic bases.    Start and End are defined using the interval method discussed in [ReferenceCoordinate](reference_coordinate.html).
 
 offsetStart and offsetEnd are understood to be attributes of a related IntronicCoordinate.  If both values are empty in the table, then no such related entity exists.
 
@@ -52,8 +55,8 @@ When describing observations a concise and interoperable method is required to r
 {:.table}
 | Attribute Name | Attribute Type | Cardinality |
 |----------------|----------------|-------------|
-| [primaryRegionType](/allele/value_set_list/primary_transcript_region_type.html) | Code | 0..1 |
-| [ancillaryRegionType](/allele/value_set_list/ancillary_transcript_region_type.html) | Code | 0..* |
+| [primaryTranscriptRegionType](/allele/value_set_list/primary_transcript_region_type.html) | Code | 0..1 |
+| [ancillaryTranscriptRegionType](/allele/value_set_list/ancillary_transcript_region_type.html) | Code | 0..* |
 
 Related Entities 
 ----------------

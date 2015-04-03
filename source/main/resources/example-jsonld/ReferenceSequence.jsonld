@@ -1,0 +1,76 @@
+{
+    "@context":
+    {
+        "fhir":"http://hl7.org/fhir/resources/",
+        "clingen":"http://clingen.org/model/allele/",
+        "xsd":"http://www.w3.org/2001/XMLSchema#",
+
+        "name":"http://schema.org/name",
+
+        "Identifier":"fhir:Identifier",
+        "Coding":"fhir:Coding",
+        "Code":"fhir:Code",
+        "Reference":"fhir:Reference",
+
+        "identifier":
+        {
+            "@id":"fhir:identifier",
+            "@container":"@set"
+        },
+        "use":"fhir:use",
+        "label":"fhir:label",
+        "system":
+        {
+            "@id":"fhir:system",
+            "@type":"@id"
+        },
+        "coding":
+        {
+            "@id":"fhir:coding",
+            "@collection":"@set"
+        }
+        "code":"fhir:code",
+        "reference":
+        {
+            "@id":"fhir:reference",
+            "@type":"@id"
+        }
+
+
+        "ReferenceSequence":"clingen:ReferenceSequence",
+        "ReferenceGenome":"clingen:ReferenceGenome",
+
+        "gene":"clingen:gene",
+        "referenceGenome":"clingen:referencegenome",
+        "sequenceClass":
+        {
+            "@id":"clingen:sequenceclass",
+            "@type":"clingen:SequenceClass"
+        },
+        "nucleotideSequenceClass":
+        {
+            "@id":"clingen:nucleotidesequenceclass",
+            "@type":"clingen:NucleotideSequenceClass"
+        },
+        "genomicSequenceClass":
+        {
+            "@id":"clingen:genomicsequenceclass",
+            "@type":"clingen:GenomicSequenceClass"
+        },
+        "chromosome":
+        {
+            "@id":"clingen:chromosome",
+            "@type":"xsd:integer"
+        },
+        "cdsStart":
+        {
+            @id:"clingen:cdsStart",
+            @type:"xsd:integer"
+        },
+        "cdsEnd":
+        {
+            @id:"clingen:cdsEnd",
+            @type:"xsd:integer"
+        }
+    }
+}

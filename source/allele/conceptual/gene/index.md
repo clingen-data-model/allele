@@ -1,6 +1,7 @@
 ---
 title: Gene
 description: A genomic region identified by a collection of alternately spliced ReferenceTranscriptSequences, given a name by one or more naming agencies.
+related_page: /allele/resource/gene
 
 ---
 

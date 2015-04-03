@@ -16,7 +16,7 @@
   "sequenceClass": "nucleotide",
   "nucleotideSequenceClass": "genomic",
   "allele": "C",
-  "nucleotideChangeType": 
+  "primaryNucleotideChangeType": 
   {
     "coding": 
     [
@@ -27,7 +27,7 @@
         "primary": "true",
         "valueSet": 
         {
-          "reference": "../ValueSet/NucleotideChangeType"
+          "reference": "../ValueSet/PrimaryNucleotideChangeType"
         }
       }
     ]
@@ -49,8 +49,8 @@
       "display": "NC_000017.10"
     },
 
-    "start": "41203115",
-    "end": "41203116",
+    "start": "41203114",
+    "end": "41203115",
     "refAllele": "A"
   }
 }

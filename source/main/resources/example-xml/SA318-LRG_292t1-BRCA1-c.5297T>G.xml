@@ -13,17 +13,17 @@
 	<sequenceClass value="nucleotide"></sequenceClass>
 	<nucleotideSequenceClass value="transcript"></nucleotideSequenceClass>
 	<allele value="G"></allele>
-	<nucleotideChangeType>
+	<primaryNucleotideChangeType>
 		<f:coding>
 			<f:system value="http://www.sequenceontology.org/"></f:system>
 			<f:code value="SO:1000002"></f:code>
 			<f:display value="substitution"></f:display>
 			<f:primary value="true"></f:primary>
 			<f:valueSet>
-				<f:reference value="/ValueSet/NucleotideChangeType"></f:reference>
+				<f:reference value="/ValueSet/PrimaryNucleotideChangeType"></f:reference>
 			</f:valueSet>
 		</f:coding>
-	</nucleotideChangeType>
+	</primaryNucleotideChangeType>
 	<alleleName>
 		<type value="hgvs-cdna" />
 		<name value="LRG_292t1:c.5297T&gt;G" />
@@ -38,19 +38,19 @@
 			<f:reference value="/ReferenceSequence/RS217"></f:reference>
 			<f:display value="LRG_292t1"></f:display>
 		</referenceSequence>
-		<start value="5297"></start>
-		<end value="5298"></end>
+		<start value="5296"></start>
+		<end value="5297"></end>
 		<refAllele value="T"></refAllele>
-		<primaryRegionType>
+		<primaryTranscriptRegionType>
 			<f:coding>
 				<f:system value="http://www.sequenceontology.org/"></f:system>
 				<f:code value="SO:0000147"></f:code>
 				<f:display value="exon"></f:display>
 				<f:valueSet>
-					<f:reference value="/ValueSet/RegionType" />
+					<f:reference value="/ValueSet/PrimaryTranscriptRegionType" />
 				</f:valueSet>
 			</f:coding>
-		</primaryRegionType>
+		</primaryTranscriptRegionType>
 	</referenceCoordinate>
 
 </SimpleAllele>

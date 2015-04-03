@@ -6,6 +6,7 @@ description: A region (or regions) that includes all of the sequence elements ne
 sequence_ontology: SO:0000704
 model: allele
 resource: gene
+related_page: /allele/conceptual/gene
 attributes:
   - name: identifier
     type: Identifier[]

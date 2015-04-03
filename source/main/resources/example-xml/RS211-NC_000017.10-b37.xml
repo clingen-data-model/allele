@@ -10,7 +10,7 @@
 	</identifier>
 	<sequenceClass value="nucleotide"></sequenceClass>
 	<nucleotideSequenceClass value="genomic"></nucleotideSequenceClass>
-	<genomicSequenceClass value="chromsome"></genomicSequenceClass>
+	<genomicSequenceClass value="chromosome"></genomicSequenceClass>
 	<chromosome value="17"></chromosome>
 	<referenceGenome>
 		<f:coding>

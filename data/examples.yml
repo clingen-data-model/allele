@@ -5,6 +5,7 @@
   xml: "/main/resources/example-xml/CA401-NM_001014794.2-c.448+13A>G.xml"
   schema: "/main/resources/clingen-xsd/canonicalallele.xsd"
   json: "/main/resources/example-json/CA401-NM_001014794.2-c.448+13A>G.json"
+  jsonld: "/main/resources/example-jsonld-nofhir/CA401-NM_001014794.2-c.448+13A>G.jsonld"
   resource: CanonicalAllele
 - id: CA402
   title: CA402-NM_007294.3-BRCA1-c.5297T>G
@@ -12,6 +13,7 @@
   xml: "/main/resources/example-xml/CA402-NM_007294.3-BRCA1-c.5297T>G.xml"
   schema: "/main/resources/clingen-xsd/canonicalallele.xsd"
   json: "/main/resources/example-json/CA402-NM_007294.3-BRCA1-c.5297T>G.json"
+  jsonld: "/main/resources/example-jsonld-nofhir/CA402-NM_007294.3-BRCA1-c.5297T>G.jsonld"
   resource: CanonicalAllele
 - id: CA403
   title: CA403-NP_0099225.1-BRCA1-p.Ile1766Ser
@@ -19,6 +21,7 @@
   xml: "/main/resources/example-xml/CA403-NP_0099225.1-BRCA1-p.Ile1766Ser.xml"
   schema: "/main/resources/clingen-xsd/canonicalallele.xsd"
   json: "/main/resources/example-json/CA403-NP_0099225.1-BRCA1-p.Ile1766Ser.json"
+  jsonld: "/main/resources/example-jsonld-nofhir/CA403-NP_0099225.1-BRCA1-p.Ile1766Ser.jsonld"
   resource: CanonicalAllele
 - id: G101
   title: G101-ILK
@@ -26,6 +29,7 @@
   xml: "/main/resources/example-xml/G101-ILK.xml"
   schema: "/main/resources/clingen-xsd/gene.xsd"
   json: "/main/resources/example-json/G101-ILK.json"
+  jsonld: "/main/resources/example-jsonld-nofhir/G101-ILK.jsonld"
   resource: Gene
 - id: G102
   title: G102-BRCA1
@@ -33,6 +37,7 @@
   xml: "/main/resources/example-xml/G102-BRCA1.xml"
   schema: "/main/resources/clingen-xsd/gene.xsd"
   json: "/main/resources/example-json/G102-BRCA1.json"
+  jsonld: "/main/resources/example-jsonld-nofhir/G102-BRCA1.jsonld"
   resource: Gene
 - id: RS201
   title: RS201-NM_001014794.2-ILK
@@ -40,6 +45,7 @@
   xml: "/main/resources/example-xml/RS201-NM_001014794.2-ILK.xml"
   schema: /main/resources/clingen-xsd/referencesequence.xsd
   json: "/main/resources/example-json/RS201-NM_001014794.2-ILK.json"
+  jsonld: "/main/resources/example-jsonld-nofhir/RS201-NM_001014794.2-ILK.jsonld"
   resource: ReferenceSequence
 - id: RS202
   title: RS202-NC_000011.9-b37
@@ -47,6 +53,7 @@
   xml: "/main/resources/example-xml/RS202-NC_000011.9-b37.xml"
   schema: /main/resources/clingen-xsd/referencesequence.xsd
   json: "/main/resources/example-json/RS202-NC_000011.9-b37.json"
+  jsonld: "/main/resources/example-jsonld-nofhir/RS202-NC_000011.9-b37.jsonld"
   resource: ReferenceSequence
 - id: RS203
   title: RS203-NC_000011.10-b38
@@ -54,6 +61,7 @@
   xml: "/main/resources/example-xml/RS203-NC_000011.10-b38.xml"
   schema: /main/resources/clingen-xsd/referencesequence.xsd
   json: "/main/resources/example-json/RS203-NC_000011.10-b38.json"
+  jsonld: "/main/resources/example-jsonld-nofhir/RS202-NC_000011.9-b37.jsonld"
   resource: ReferenceSequence
 - id: RS210
   title: RS210-NC_000017.11-b38
@@ -124,6 +132,7 @@
   xml: "/main/resources/example-xml/SA301-NM_001014794.2-ILK-c.448+14A>G-b37.xml"
   schema: /main/resources/clingen-xsd/simpleallele.xsd
   json: "/main/resources/example-json/SA301-NM_001014794.2-ILK-c.448+14A>G-b37.json"
+  jsonld: "/main/resources/example-jsonld-nofhir/SA301.jsonld"
   resource: SimpleAllele
 - id: SA302
   title: SA302-NM_001014794.2-ILK-c.448+13A>G-b38
@@ -131,6 +140,7 @@
   xml: "/main/resources/example-xml/SA302-NM_001014794.2-ILK-c.448+13A>G-b38.xml"
   schema: /main/resources/clingen-xsd/simpleallele.xsd
   json: "/main/resources/example-json/SA302-NM_001014794.2-ILK-c.448+13A>G-b38.json"
+  jsonld: "/main/resources/example-jsonld-nofhir/SA302-NM_001014794.2-ILK-c.448+13A>G-b38.jsonld"
   resource: SimpleAllele
 - id: SA303
   title: SA303-NC_000011.9-g.6630034A>G-b37

@@ -14,17 +14,17 @@
 	<sequenceClass value="nucleotide"></sequenceClass>
 	<nucleotideSequenceClass value="transcript"></nucleotideSequenceClass>
 	<allele value="G"></allele>
-	<nucleotideChangeType>
+	<primaryNucleotideChangeType>
 		<f:coding>
 			<f:system value="http://www.sequenceontology.org/" />
 			<f:code value="SO:1000002" />
 			<f:display value="substitution" />
 			<f:primary value="true" />
 			<f:valueSet>
-				<f:reference value="/ValueSet/NucleotideChangeType" />
+				<f:reference value="/ValueSet/PrimaryNucleotideChangeType" />
 			</f:valueSet>
 		</f:coding>
-	</nucleotideChangeType>
+	</primaryNucleotideChangeType>
 	<alleleName>
 		<type value="hgvs-rna" />
 		<name value="U14680.1:n.5416T&gt;G" />
@@ -38,19 +38,19 @@
 			<f:reference value="/ReferenceSequence/RS215" />
 			<f:display value="U14680.1" />
 		</referenceSequence>
-		<start value="5416" />
-		<end value="5417" />
+		<start value="5415" />
+		<end value="5416" />
 		<refAllele value="T" />
-		<primaryRegionType>
+		<primaryTranscriptRegionType>
 			<f:coding>
 				<f:system value="http://www.sequenceontology.org/"></f:system>
 				<f:code value="SO:0000147"></f:code>
 				<f:display value="exon"></f:display>
 				<f:valueSet>
-					<f:reference value="/ValueSet/RegionType" />
+					<f:reference value="/ValueSet/PrimaryTranscriptRegionType" />
 				</f:valueSet>
 			</f:coding>
-		</primaryRegionType>
+		</primaryTranscriptRegionType>
 	</referenceCoordinate>
 
 

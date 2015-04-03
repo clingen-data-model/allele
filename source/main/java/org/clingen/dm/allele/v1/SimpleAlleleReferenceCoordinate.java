@@ -9,6 +9,7 @@ import javax.xml.bind.annotation.XmlType;
 
 import org.hl7.fhir.BackboneElement;
 import org.hl7.fhir.CodeableConcept;
+import org.hl7.fhir.Code;
 import org.hl7.fhir.Identifier;
 import org.hl7.fhir.Integer;
 import org.hl7.fhir.ResourceReference;
@@ -31,10 +32,11 @@ import org.hl7.fhir.String;
  *         &lt;element name="start" type="{http://hl7.org/fhir}int"/>
  *         &lt;element name="end" type="{http://hl7.org/fhir}int"/>
  *         &lt;element name="refAllele" type="{http://hl7.org/fhir}string"/>
- *         &lt;element name="primaryRegionType" type="{http://hl7.org/fhir}CodeableConcept" minOccurs="0"/>
- *         &lt;element name="ancillaryRegionType" type="{http://hl7.org/fhir}CodeableConcept" minOccurs="0" maxOccurs="unbounded"/>
+ *         &lt;element name="primaryTranscriptRegionType" type="{http://hl7.org/fhir}CodeableConcept" minOccurs="0"/>
+ *         &lt;element name="ancillaryTranscriptRegionType" type="{http://hl7.org/fhir}CodeableConcept" minOccurs="0" maxOccurs="unbounded"/>
  *         &lt;element name="intronOffsetStart" type="{http://hl7.org/fhir}int"/>
  *         &lt;element name="intronOffsetEnd" type="{http://hl7.org/fhir}int"/>
+ *	   &lt;element name="intronOffsetDirection" type="{http://hl7.org/fhir}code"/>
  *         &lt;element name="intronOffsetGenomicCoordinate" type="{http://org.clingen.dm.allele.v1}SimpleAllele.ReferenceCoordinate"/>
  *       &lt;/sequence>
  *     &lt;/extension>
@@ -46,8 +48,8 @@ import org.hl7.fhir.String;
  */
 @XmlAccessorType (XmlAccessType.FIELD)
 @XmlType (name = "SimpleAllele.ReferenceCoordinate", propOrder = {"identifier", "referenceSequence", "start", "end",
-																	"refAllele", "primaryRegionType",
-																	"ancillaryRegionType", "intronOffsetStart",
+																	"refAllele", "primaryTranscriptRegionType",
+																	"ancillaryTranscriptRegionType", "intronOffsetStart",
 																	"intronOffsetEnd", "intronOffsetGenomicCoordinate"})
 public class SimpleAlleleReferenceCoordinate extends BackboneElement
 {
@@ -58,10 +60,11 @@ public class SimpleAlleleReferenceCoordinate extends BackboneElement
 	protected Integer start;
 	protected Integer end;
 	protected String refAllele;
-	protected CodeableConcept primaryRegionType;
-	protected List<CodeableConcept> ancillaryRegionType;
+	protected CodeableConcept primaryTranscriptRegionType;
+	protected List<CodeableConcept> ancillaryTranscriptRegionType;
 	protected Integer intronOffsetStart;
 	protected Integer intronOffsetEnd;
+	protected Code intronOffsetDirection;
 	protected SimpleAlleleReferenceCoordinate intronOffsetGenomicCoordinate;
 
 	/**
@@ -193,53 +196,53 @@ public class SimpleAlleleReferenceCoordinate extends BackboneElement
 	}
 
 	/**
-	 * Gets the value of the primaryRegionType property.
+	 * Gets the value of the primaryTranscriptRegionType property.
 	 * 
 	 * @return
 	 *     possible object is
 	 *     {@link CodeableConcept }
 	 *     
 	 */
-	public CodeableConcept getPrimaryRegionType()
+	public CodeableConcept getPrimaryTranscriptRegionType()
 	{
-		return primaryRegionType;
+		return primaryTranscriptRegionType;
 	}
 
 	/**
-	 * Sets the value of the primaryRegionType property.
+	 * Sets the value of the primaryTranscriptRegionType property.
 	 * 
 	 * @param value
 	 *     allowed object is
 	 *     {@link CodeableConcept }
 	 *     
 	 */
-	public void setPrimaryRegionType(CodeableConcept value)
+	public void setPrimaryTranscriptRegionType(CodeableConcept value)
 	{
-		this.primaryRegionType = value;
+		this.primaryTranscriptRegionType = value;
 	}
 
 	/**
-	 * Gets the value of the ancillaryRegionType property.
+	 * Gets the value of the ancillaryTranscriptRegionType property.
 	 * 
 	 * <p>
 	 * This accessor method returns a reference to the live list,
 	 * not a snapshot. Therefore any modification you make to the
 	 * returned list will be present inside the JAXB object.
-	 * This is why there is not a <CODE>set</CODE> method for the ancillaryRegionType property.
+	 * This is why there is not a <CODE>set</CODE> method for the ancillaryTranscriptRegionType property.
 	 * 
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * <pre>
-	 *    getAncillaryRegionType().add(newItem);
+	 *    getAncillaryTranscriptRegionType().add(newItem);
 	 * </pre>
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list
 	 * {@link CodeableConcept }
 	 */
-	public List<CodeableConcept> getAncillaryRegionType()
+	public List<CodeableConcept> getAncillaryTranscriptRegionType()
 	{
-		return ancillaryRegionType;
+		return ancillaryTranscriptRegionType;
 	}
 
 	/**
@@ -292,6 +295,32 @@ public class SimpleAlleleReferenceCoordinate extends BackboneElement
 	public void setIntronOffsetEnd(Integer value)
 	{
 		this.intronOffsetEnd = value;
+	}
+
+	/**
+         * Gets the value of the intronOffsetDirection property.
+         *
+         * @return
+         *     possible object is 
+         *     {@link Code}
+         *
+         */
+        public Code getIntronOffsetDirection
+	{
+		return intronOffsetDirection;
+ 	}
+
+	/**
+	 * Sets the value of the intronOffsetDiretion property.
+	 *
+	 * @param value
+	 * 	allowed object is
+	 *	{@link Code }
+	 *
+	 */
+	public void setIntronOffsetDirection(Code value)
+	{
+		this.intronOffsetDirection = value;
 	}
 
 	/**

@@ -1,0 +1,56 @@
+{
+    "@context":
+    {
+        "clingen":"http://clingen.org/model/allele/",
+        "xsd":"http://www.w3.org/2001/XMLSchema#",
+
+        "name":"http://schema.org/name",
+
+
+        "ReferenceSequence":"clingen:ReferenceSequence",
+        "ReferenceGenome":"clingen:ReferenceGenome",
+
+        "gene":
+        {
+            "@id":"clingen:gene",
+            "@type":"@id"
+        },
+        "referenceGenome": "clingen:referencegenome",
+        "sequenceClass":
+        {
+            "@id":"clingen:sequenceclass",
+            "@type":"clingen:SequenceClass"
+        },
+        "nucleotideSequenceClass":
+        {
+            "@id":"clingen:nucleotidesequenceclass",
+            "@type":"clingen:NucleotideSequenceClass"
+        },
+        "genomicSequenceClass":
+        {
+            "@id":"clingen:genomicsequenceclass",
+            "@type":"clingen:GenomicSequenceClass"
+        },
+        "chromosome":
+        {
+            "@id":"clingen:chromosome",
+            "@type":"xsd:integer"
+        },
+        "cdsStart":
+        {
+            @id:"clingen:cdsStart",
+            @type:"xsd:integer"
+        },
+        "cdsEnd":
+        {
+            @id:"clingen:cdsEnd",
+            @type:"xsd:integer"
+        },
+        "xref":
+        {
+            "@id":"clingen:xref",
+            "@type":"@id",
+            "@container":"@set"
+        }
+    }
+}

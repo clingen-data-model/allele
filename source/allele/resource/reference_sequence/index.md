@@ -6,6 +6,7 @@ description: A versioned sequence of nucleotide bases or amino acids.
 sequence_ontology: SO:0001411
 model: allele
 resource: ReferenceSequence
+related_page: /allele/conceptual/reference_sequence
 composed_of:
   - name: related
     type: RelatedReferenceSequence

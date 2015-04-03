@@ -13,13 +13,13 @@
 	</canonicalAllele>
 	<sequenceClass value="amino acid"></sequenceClass>
 	<allele value="Ser"></allele>
-	<aminoAcidChangeType>
+	<primaryAminoAcidChangeType>
 		<f:coding>
 			<f:system value="http://www.sequenceontology.org/"></f:system>
 			<f:code value="SO:0001583"></f:code>
 			<f:display value="missense variant"></f:display>
 		</f:coding>
-	</aminoAcidChangeType>
+	</primaryAminoAcidChangeType>
 	<alleleName>
 		<type value="hgvs-protein-3"></type>
 		<name value="p.Ile1766Ser"></name>
@@ -37,8 +37,8 @@
 			<f:reference value="/ReferenceSequence/RS216"></f:reference>
 			<f:display value="LRG_292p1"></f:display>
 		</referenceSequence>
-		<start value="1766"></start>
-		<end value="1767"></end>
+		<start value="1765"></start>
+		<end value="1766"></end>
 		<refAllele value="Ile"></refAllele>
 	</referenceCoordinate>
 	<related>

@@ -16,7 +16,7 @@
   "sequenceClass": "nucleotide",
   "nucleotideSequenceClass": "genomic",
   "allele": "G",
-  "nucleotideChangeType": 
+  "primaryNucleotideChangeType": 
   {
     "coding": 
     [
@@ -53,8 +53,8 @@
       "display": "LRG_292"
     },
 
-    "start": "166886",
-    "end": "166887",
+    "start": "166885",
+    "end": "166886",
     "refAllele": "Ile"
   }
 }

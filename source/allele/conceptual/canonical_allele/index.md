@@ -1,6 +1,7 @@
 ---
 title: CanonicalAllele
 description: A stable identifier for an allele, grouping together the different ways that the allele might be described across different versions of different ReferenceSequences.
+related_page: /allele/resource/canonical_allele
 
 ---
 
@@ -41,7 +42,7 @@ Conceptual Model
 
 [![CanonicalAllele Conceptual Diagram](/images/CanonicalAlleleConceptual.svg){: .img-responsive}](/images/CanonicalAlleleConceptual.svg)
 
-Resource Model: [CanonicalAllele](/allele/resource/canonical_allele/index.html#resource-model)
+Related Resources: [CanonicalAllele](/allele/resource/canonical_allele/index.html), [SimpleAllele](/allele/resource/simple_allele/index.html), [Provenance](/allele/resource/provenance/index.html)
 
 Attributes
 ----------

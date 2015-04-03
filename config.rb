@@ -102,6 +102,9 @@ helpers do
       acc << '<tr>'
       acc << "<td>#{example['id']}</td>"
       acc << "<td>#{link_to example['title'], example_path(example['id']) }</td>"
+      if example['jsonld']
+        acc << "<td>#{link_to 'json-ld', example['jsonld']}</td>" 
+      end
       acc << "<td>#{link_to 'xml', example['xml']}</td>"
       acc << "<td>#{link_to 'json', example['json']}</td>"
     end

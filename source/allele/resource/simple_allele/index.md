@@ -37,6 +37,7 @@ attributes:
   - name: aminoAcidChangeType
     type: CodeableConcept
     definition: amino acid change described by SimpleAllele
+related_page: /allele/conceptual/simple_allele
 
 ---
 
@@ -54,8 +55,10 @@ The SimpleAllele resource is described by the following attributes.
 * canonicalAllele: The CanonicalAllele associated with the SimpleAllele
 * sequenceType: The type of sequence referred to by the SimpleAllele (nucleotide/amino acid, etc)
 * allele: HGVS expression representing the SimpleAllele
-* nucleotideChangeType: type of change if SimpleAllele represents a nucleotide change (insertion, deletion, etc.)
-* aminoAcidChangeType: type of change if SimpleAllele represents an amino acid change (frameshift, etc)
+* primaryNucleotideChangeType: type of change if SimpleAllele represents a nucleotide change (insertion, deletion, etc.)
+* ancillaryNucleotideChangeType[]: additional change types for nucleotide simple alleles for finer classification when desired.
+* primaryAminoAcidChangeType: type of change if SimpleAllele represents an amino acid change (frameshift, etc)
+* ancillaryAminoAcidChangeType[]: additional change types for amino acid simple alleles for finer classifcation when desired.
 * ReferenceCoordinate: The coordinates of the allele relative to a ReferenceSequence
 * AlleleName: Identifiers giving the allele a unique name, possible HGVS expressions, etc.
 

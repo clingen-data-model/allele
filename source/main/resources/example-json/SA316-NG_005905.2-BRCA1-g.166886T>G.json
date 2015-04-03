@@ -16,7 +16,7 @@
   "sequenceClass": "nucleotide",
   "nucleotideSequenceClass": "genomic",
   "allele": "G",
-  "nucleotideChangeType": 
+  "primaryNucleotideChangeType": 
   {
     "coding": 
     [
@@ -27,7 +27,7 @@
         "primary": "true",
         "valueSet": 
         {
-          "reference": "../ValueSet/NucleotideChangeType"
+          "reference": "../ValueSet/PrimaryNucleotideChangeType"
         }
       }
     ]
@@ -49,8 +49,8 @@
       "display": "NG_005905.2"
     },
 
-    "start": "166886",
-    "end": "166887",
+    "start": "166885",
+    "end": "166886",
     "refAllele": "T"
   }
 }
