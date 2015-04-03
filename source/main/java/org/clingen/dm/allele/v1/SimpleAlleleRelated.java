@@ -20,7 +20,7 @@ import org.hl7.fhir.ResourceReference;
  *   &lt;complexContent>
  *     &lt;extension base="{http://hl7.org/fhir}BackboneElement">
  *       &lt;sequence>
- *         &lt;element name="type" type="{http://org.clingen.dm.allele.v1}SimpleAlleleRelationshipType" minOccurs="0"/>
+ *         &lt;element name="relatedType" type="{http://org.clingen.dm.allele.v1}SimpleAlleleRelationshipType" minOccurs="0"/>
  *         &lt;element name="target" type="{http://hl7.org/fhir}ResourceReference"/>
  *       &lt;/sequence>
  *     &lt;/extension>
@@ -31,38 +31,38 @@ import org.hl7.fhir.ResourceReference;
  * 
  */
 @XmlAccessorType (XmlAccessType.FIELD)
-@XmlType (name = "SimpleAllele.Related", propOrder = {"type", "target"})
+@XmlType (name = "SimpleAllele.Related", propOrder = {"relatedType", "target"})
 public class SimpleAlleleRelated extends BackboneElement
 {
 
-	protected SimpleAlleleRelationshipType type;
+	protected SimpleAlleleRelationshipType relatedType;
 	@XmlElement (required = true)
 	protected ResourceReference target;
 
 	/**
-	 * Gets the value of the type property.
+	 * Gets the value of the relatedType property.
 	 * 
 	 * @return
 	 *     possible object is
 	 *     {@link SimpleAlleleRelationshipType }
 	 *     
 	 */
-	public SimpleAlleleRelationshipType getType()
+	public SimpleAlleleRelationshipType getRelatedType()
 	{
-		return type;
+		return relatedType;
 	}
 
 	/**
-	 * Sets the value of the type property.
+	 * Sets the value of the relatedType property.
 	 * 
 	 * @param value
 	 *     allowed object is
 	 *     {@link SimpleAlleleRelationshipType }
 	 *     
 	 */
-	public void setType(SimpleAlleleRelationshipType value)
+	public void setRelatedType(SimpleAlleleRelationshipType value)
 	{
-		this.type = value;
+		this.relatedType = value;
 	}
 
 	/**

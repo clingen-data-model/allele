@@ -13,8 +13,7 @@
     "reference": "/CanonicalAllele/CA402"
   },
 
-  "sequenceClass": "nucleotide",
-  "nucleotideSequenceClass": "genomic",
+  "simpleAlleleType": "genomic",
   "allele": "G",
   "primaryNucleotideChangeType": 
   {
@@ -32,7 +31,7 @@
   "alleleName": 
   [
     {
-      "type": "hgvs-genomic",
+      "nameType": "hgvs-genomic",
       "name": "g.166886T>G"
     }
   ],
@@ -53,6 +52,7 @@
       "display": "LRG_292"
     },
 
+    "coordinateConvention":"zero-based",
     "start": "166885",
     "end": "166886",
     "refAllele": "Ile"

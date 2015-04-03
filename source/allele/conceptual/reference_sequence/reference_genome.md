@@ -36,7 +36,7 @@ Attributes
 | identifier     | Identifier[]   |
 
 
-name: A human readable string assigned by the implemeting system to describe the ReferenceGenome.  It should be taken from the label of one of the associated Identifiers.
+name: A human readable string assigned by the implementing system to describe the ReferenceGenome.  It should be taken from the label of one of the associated Identifiers.
 
 identifier: ReferenceGenomes are compiled by agencies such as NCBI, and are assigned labels by those agencies (such as GRCh37.1).  The identifiers collect these names along with the agency that granted them.  Note that each ReferenceGenome may be assigned different names by different agencies (e.g. GRCh37.1 and hg19).
 

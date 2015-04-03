@@ -7,8 +7,7 @@
       "http://www.ncbi.nlm.nih.gov/nuccore/NM_001014794.2"
   ],
 
-  "sequenceClass": "nucleotide",
-  "nucleotideSequenceClass": "transcript",
+  "referenceSequenceType": "transcript",
   "cdsStart": "162",
   "cdsEnd": "1520",
   "gene": "../../Gene/G101"

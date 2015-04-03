@@ -12,8 +12,8 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;simpleType name="SimpleAlleleRelationshipType-list">
  *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="effect"/>
- *     &lt;enumeration value="cause"/>
+ *     &lt;enumeration value="amino-acid-effect"/>
+ *     &lt;enumeration value="transcript-allele-cause"/>
  *   &lt;/restriction>
  * &lt;/simpleType>
  * </pre>
@@ -28,15 +28,15 @@ public enum SimpleAlleleRelationshipTypeList
 	 * The target SimpleAllele is the effect of this SimpleAllele (e.g. the target amino-acid allele is the effect of a given transcript allele).
 	 * 
 	 */
-	@XmlEnumValue ("effect")
-	EFFECT("effect"),
+	@XmlEnumValue ("amino-acid-effect")
+	AMINO_ACID_EFFECT("amino acid effect"),
 
 	/**
 	 * The target SimpleAllele is the cause of this SimpleAllele (e.g. the transcript allele is the cause of a given amino-acid allele).
 	 * 
 	 */
-	@XmlEnumValue ("cause")
-	CAUSE("cause");
+	@XmlEnumValue ("transcript-allele-cause")
+	TRANSCRIPT_ALLELE_CAUSE("transcript allele cause");
 	private final java.lang.String value;
 
 	SimpleAlleleRelationshipTypeList(java.lang.String v)

@@ -1,0 +1,41 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="canonical-allele-type"/>
+  <meta>
+    <lastUpdated value="2015-04-03T03:26:54.815+00:00"/>
+  </meta>
+  <url value="http://clingen.org/model/allele/vs/canonical-allele-type"/>
+  <version value="0.1.0"/>
+  <name value="CanonicalAlleleType"/>
+  <publisher value="ClinGen (Data Modeling Allele Project)"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://clingen.org/model/allele"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="???"/>
+    </telecom>
+  </contact>
+  <description value="Codes providing the type of a canonical allele"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2015-04-03T03:26:54+00:00"/>
+  <define>
+    <system value="http://clingen.org/model/allele/canonical-allele-type"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="nucleotide"/>
+      <display value="Nucleotide"/>
+      <definition value="The type of the canonical allele is nucleotide. All associated simple/canonical alleles are genomic or transcript based."/>
+    </concept>
+    <concept>
+      <code value="amino-acid"/>
+      <display value="Amino Acid"/>
+      <definition value="The type of the canonical allele is amino acid. All associated simple/canonical alleles are amino acid based."/>
+    </concept>
+  </define>
+</ValueSet>

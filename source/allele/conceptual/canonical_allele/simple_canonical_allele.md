@@ -7,7 +7,7 @@ description: A stable identifier for a SimpleAllele, grouping together the diffe
 Scope and Usage
 ---------------
 
-See also: SimpleAllele, CanonicalAllele
+See also: [SimpleAllele](../simple_allele/index.html), [CanonicalAllele](index.html)
 
 SimpleCanonicalAllele is a CanonicalAllele that is derived from the aggregation of multiple SimpleAllele instances, which each record a particular choice of a variant sequence at a particular contiguous region in a particular ReferenceSequence.
 

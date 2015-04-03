@@ -12,8 +12,7 @@
     }
   ],
 
-  "sequenceClass": "nucleotide",
-  "nucleotideSequenceClass": "transcript",
+  "referenceSequenceType": "transcript",
   "cdsStart": "162",
   "cdsEnd": "1520",
   "gene": 

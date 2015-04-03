@@ -14,8 +14,7 @@
     "reference": "/CanonicalAllele/CA402"
   },
 
-  "sequenceClass": "nucleotide",
-  "nucleotideSequenceClass": "transcript",
+  "simpleAlleleType": "transcript",
   "allele": "G",
   "primaryNucleotideChangeType": 
   {
@@ -28,7 +27,7 @@
         "primary": "true",
         "valueSet": 
         {
-          "reference": "/ValueSet/PrimaryNucleotideChangeType"
+          "reference": "/ValueSet/NucleotideChangeType"
         }
       }
     ]
@@ -37,7 +36,7 @@
   "alleleName": 
   [
     {
-      "type": "hgvs-ncrna",
+      "nameType": "hgvs-ncrna",
       "name": "NR_027676.1(BRCA1):n.5433T>G"
     }
   ],
@@ -58,6 +57,7 @@
       "display": "NM_001014794.2"
     },
 
+    "coordinateConvention":"zero-based",
     "start": "5432",
     "end": "5433",
     "refAllele": "T",

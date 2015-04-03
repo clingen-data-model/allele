@@ -2,7 +2,7 @@
 title: ancillary-amino-acid-change-type
 description: This value set includes only the types associated with simple amino acid alleles.
 source: Sequence Ontology
-id: TBD
+id: 25
 usage: core
 ---
 

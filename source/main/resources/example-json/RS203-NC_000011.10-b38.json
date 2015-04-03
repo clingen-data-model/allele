@@ -7,9 +7,7 @@
     "value": "NC_000011.10"
   },
 
-  "sequenceClass": "nucleotide",
-  "nucleotideSequenceClass": "genomic",
-  "genomicSequenceClass": "chromosome",
+  "referenceSequenceType": "chromsome",
   "chromosome": "11",
   "referenceGenome": 
   {

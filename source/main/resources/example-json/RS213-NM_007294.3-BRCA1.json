@@ -7,8 +7,7 @@
     "value": "NM_007294.3"
   },
 
-  "sequenceClass": "nucleotide",
-  "nucleotideSequenceClass": "transcript",
+  "referenceSequenceType": "transcript",
   "cdsStart": "233",
   "cdsEnd": "5824",
   "gene": 
@@ -18,7 +17,7 @@
 
   "related": 
   {
-    "type": "translates-to",
+    "relatedType": "translates-to",
     "target": 
     {
       "reference": "/ReferenceSequence/RS214",

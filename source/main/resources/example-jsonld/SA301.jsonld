@@ -18,8 +18,7 @@
     "reference":"../../CanonicalAllele/CA401"
   },
 
-  "sequenceClass": "nucleotide",
-  "nucleotideSequenceClass": "transcript",
+  "simpleAlleleType": "transcript",
   "allele": "G",
   "primaryNucleotideChangeType": 
   {
@@ -58,6 +57,7 @@
         "@type":"Reference",
         "reference": "../../ReferenceSequence/RS201",
     }
+    "coordinateConvention": "zero based",
     "start": "608",
     "end": "608",
     "refAllele": "A",
@@ -83,7 +83,7 @@
 
     "intronOffsetStart": "13",
     "intronOffsetEnd": "14",
-    "intronOffsetDirection": "plus",
+    "intronOffsetDirection": "+",
     "intronOffsetGenomicCoordinate": 
     {
         "@type":"IntronOffsetGenomicCoordinate",
@@ -92,6 +92,7 @@
             "@type":"Reference",
             "reference","../../ReferenceSequence/RS202"
         }
+        "coordinateConvention": "zero based",
         "start": "6630033",
         "end": "6630034",
         "refAllele": "A"

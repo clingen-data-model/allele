@@ -6,10 +6,10 @@
     "value": "LRG_292p1"
   },
 
-  "sequenceClass": "amino acid",
+  "referenceSequenceType": "amino-acid",
   "related": 
   {
-    "type": "translates-from",
+    "relatedType": "translates-from",
     "target": 
     {
       "reference": "/ReferenceSequence/RS217",

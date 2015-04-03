@@ -61,15 +61,10 @@
             "@id":"clingen:canonicalallele",
             "@type":"@id"
         }
-        "sequenceClass":
+        "simpleAlleleType":
         {
-            "@id":"clingen:sequenceclass",
-            "@type":"clingen:SequenceClass"
-        },
-        "nucleotideSequenceClass":
-        {
-            "@id":"clingen:nucleotidesequenceclass",
-            "@type":"clingen:NucleotideSequenceClass"
+            "@id":"clingen:simpleAlleleType",
+            "@type":"clingen:SimpleAlleleType"
         },
         "primaryAminoAcidChangeType":
         {
@@ -85,7 +80,12 @@
         "referenceSequence": {
             "@id":"clingen:referencesequence" ,
             "@type":"@id"
-        }
+        },
+        "coordinateConvention":
+        {
+            "@id":"clingen:coordinateConvention",
+            "@type":"clingen:SimpleAlleleCoordinateConvention"
+        },
         "start":
         {
             @id:"clingen:start",
@@ -120,7 +120,7 @@
         "intronOffsetDirection":
         {
             "@id":"clingen:intronoffsetdirection",
-            "@type":"clingen:IntronOffsetDirection"
+            "@type":"clingen:SimpleAlleleIntronOffsetDirection"
         },
         "related":
         {
@@ -135,7 +135,7 @@
         "nametype":
         {
             "@id":"clingen:allelenametype"
-            "@type":"clingen:AlleleNameType"
+            "@type":"clingen:SimpleAlleleNameType"
         }
         "legacy":
         {

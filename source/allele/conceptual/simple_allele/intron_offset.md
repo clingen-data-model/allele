@@ -23,10 +23,13 @@ Attributes
 |----------------|----------------|-------------|
 |   offsetStart  |     int        |    0..1     |
 |   offsetEnd    |     int        |    0..1     |
+|   offsetDirection |     Code        |    0..1     |
 
 offsetStart: intronic offset of the start of the coordinate.  Used in coordnation with the start attribute of the [TranscriptReferenceCoordinate](transcript_reference_coordinate.html) to locate the beginning of the locus.  If the start of the locus is exonic, this attribute does not exist.
 
 offsetEnd: intronic offset of the end of the coordinate.  Used in coordnation with the end attribute of the [TranscriptReferenceCoordinate](transcript_reference_coordinate.html) to locate the end of the locus.  If the end of the locus is exonic, this attribute does not exist.
+
+offsetDirection: ___TBD___
 
 Note that at least one of offsetStart and offsetEnd must exist.
 

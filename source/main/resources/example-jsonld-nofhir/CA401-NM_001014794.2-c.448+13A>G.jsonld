@@ -8,8 +8,8 @@
   }],
 
   "active": "true",
-  "sequenceClass": "nucleotide",
-  "complexityClass": "simple",
+  "canonicalAlleleType": "nucleotide",
+  "complexity": "simple",
   "relatedSimpleAllele": 
   [
     {

@@ -14,8 +14,7 @@
     "reference": "/CanonicalAllele/CA402"
   },
 
-  "sequenceClass": "nucleotide",
-  "nucleotideSequenceClass": "transcript",
+  "simpleAlleleType": "transcript",
   "allele": "G",
   "primaryNucleotideChangeType": 
   {
@@ -37,7 +36,7 @@
   "alleleName": 
   [
     {
-      "type": "hgvs-cdna",
+      "nameType": "hgvs-cdna",
       "name": "NM_007294.3(BRCA1):c.5297T>G",
       "preferred": "true"
     },
@@ -64,6 +63,7 @@
       "display": "NM_001014794.2"
     },
 
+    "coordinateConvention":"zero-based",
     "start": "5296",
     "end": "5297",
     "refAllele": "T",
@@ -87,7 +87,7 @@
   "related": 
   [
     {
-      "type": "effect",
+      "relatedType": "amino-acid-effect",
       "target": 
       {
         "reference": "/SimpleAllele/SA312",

@@ -14,8 +14,7 @@
     "reference": "/CanonicalAllele/CA402"
   },
 
-  "sequenceClass": "nucleotide",
-  "nucleotideSequenceClass": "transcript",
+  "simpleAlleleType": "transcript",
   "allele": "G",
   "primaryNucleotideChangeType": 
   {
@@ -28,7 +27,7 @@
         "primary": "true",
         "valueSet": 
         {
-          "reference": "/ValueSet/PrimaryNucleotideChangeType"
+          "reference": "/ValueSet/NucleotideChangeType"
         }
       }
     ]
@@ -37,7 +36,7 @@
   "alleleName": 
   [
     {
-      "type": "hgvs-rna",
+      "nameType": "hgvs-rna",
       "name": "U14680.1:n.5416T>G"
     }
   ],
@@ -58,6 +57,7 @@
       "display": "U14680.1"
     },
 
+    "coordinateConvention":"zero-based",
     "start": "5415",
     "end": "5416",
     "refAllele": "T",

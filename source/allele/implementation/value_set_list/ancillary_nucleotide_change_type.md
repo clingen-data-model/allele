@@ -2,7 +2,7 @@
 title: ancillary-nucleotide-change-type
 description: This value set includes only the types associated with simple nucleotide alleles.
 source: Sequence Ontology
-id: TBD
+id: 23
 usage: core
 ---
 

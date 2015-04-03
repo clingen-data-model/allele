@@ -17,15 +17,15 @@
             "@id":"clingen:active",
             "@type":"xsd:boolean"
         },
-        "sequenceClass":
+        "canonicalAlleleType":
         {
-            "@id":"clingen:sequenceclass",
-            "@type":"clingen:SequenceClass"
+            "@id":"clingen:canonicalAlleleType",
+            "@type":"clingen:CanonicalAlleleType"
         },
-        "complexityClass":
+        "complexity":
         {
-            "@id":"clingen:complexityclass",
-            "@type":"clingen:ComplexityClass"
+            "@id":"clingen:complexity",
+            "@type":"clingen:SimpleAlleleComplexity"
         },
         "relatedSimpleAllele":
         {

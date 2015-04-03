@@ -21,7 +21,7 @@ import org.hl7.fhir.ResourceReference;
  *   &lt;complexContent>
  *     &lt;extension base="{http://hl7.org/fhir}BackboneElement">
  *       &lt;sequence>
- *         &lt;element name="type" type="{http://org.clingen.dm.allele.v1}CanonicalAlleleReplacementType" minOccurs="0"/>
+ *         &lt;element name="replacementType" type="{http://org.clingen.dm.allele.v1}CanonicalAlleleReplacementType" minOccurs="0"/>
  *         &lt;element name="split" type="{http://hl7.org/fhir}boolean"/>
  *         &lt;element name="target" type="{http://org.clingen.dm.allele.v1}ResourceReference"/>
  *       &lt;/sequence>
@@ -33,39 +33,39 @@ import org.hl7.fhir.ResourceReference;
  * s
  */
 @XmlAccessorType (XmlAccessType.FIELD)
-@XmlType (name = "CanonicalAllele.Replacement", propOrder = {"type", "split", "target"})
+@XmlType (name = "CanonicalAllele.Replacement", propOrder = {"replacementType", "split", "target"})
 public class CanonicalAlleleReplacement extends BackboneElement
 {
 
-	protected CanonicalAlleleReplacementType type;
+	protected CanonicalAlleleReplacementType replacementType;
 	@XmlElement (required = true)
 	protected Boolean split;
 	protected ResourceReference target;
 
 	/**
-	 * Gets the value of the type property.
+	 * Gets the value of the replacementType property.
 	 * 
 	 * @return
 	 *     possible object is
 	 *     {@link CanonicalAlleleReplacementType }
 	 *     
 	 */
-	public CanonicalAlleleReplacementType getType()
+	public CanonicalAlleleReplacementType getReplacementType()
 	{
-		return type;
+		return replacementType;
 	}
 
 	/**
-	 * Sets the value of the type property.
+	 * Sets the value of the replacementType property.
 	 * 
 	 * @param value
 	 *     allowed object is
 	 *     {@link CanonicalAlleleReplacementType }
 	 *     
 	 */
-	public void setType(CanonicalAlleleReplacementType value)
+	public void setReplacementType(CanonicalAlleleReplacementType value)
 	{
-		this.type = value;
+		this.replacementType = value;
 	}
 
 	/**

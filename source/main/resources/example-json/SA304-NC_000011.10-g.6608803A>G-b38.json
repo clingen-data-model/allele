@@ -14,8 +14,7 @@
     "reference": "/CanonicalAllele/CA401"
   },
 
-  "sequenceClass": "nucleotide",
-  "nucleotideSequenceClass": "genomic",
+  "simpleAlleleType": "genomic",
   "allele": "G",
   "primaryNucleotideChangeType": 
   {
@@ -37,7 +36,7 @@
   "alleleName": 
   [
     {
-      "type": "hgvs-genomic",
+      "nameType": "hgvs-genomic",
       "name": "NC_000011.10:g.6608803A>G"
     }
   ],
@@ -50,6 +49,7 @@
       "display": "NC_000011.10"
     },
 
+    "coordinateConvention":"zero-based",
     "start": "6608802",
     "end": "6608803",
     "refAllele": "A"

@@ -20,7 +20,7 @@ import org.hl7.fhir.ResourceReference;
  *   &lt;complexContent>
  *     &lt;extension base="{http://hl7.org/fhir}BackboneElement">
  *       &lt;sequence>
- *         &lt;element name="type" type="{http://org.clingen.dm.allele.v1}ReferenceSequenceRelationshipType" minOccurs="0"/>
+ *         &lt;element name="relatedType" type="{http://org.clingen.dm.allele.v1}ReferenceSequenceRelationshipType" minOccurs="0"/>
  *         &lt;element name="target" type="{http://hl7.org/fhir}ResourceReference"/>
  *       &lt;/sequence>
  *     &lt;/extension>
@@ -31,38 +31,38 @@ import org.hl7.fhir.ResourceReference;
  * 
  */
 @XmlAccessorType (XmlAccessType.FIELD)
-@XmlType (name = "ReferenceSequence.Related", propOrder = {"type", "target"})
+@XmlType (name = "ReferenceSequence.Related", propOrder = {"relatedType", "target"})
 public class ReferenceSequenceRelated extends BackboneElement
 {
 
-	protected ReferenceSequenceRelationshipType type;
+	protected ReferenceSequenceRelationshipType relatedType;
 	@XmlElement (required = true)
 	protected ResourceReference target;
 
 	/**
-	 * Gets the value of the type property.
+	 * Gets the value of the relatedType property.
 	 * 
 	 * @return
 	 *     possible object is
 	 *     {@link ReferenceSequenceRelationshipType }
 	 *     
 	 */
-	public ReferenceSequenceRelationshipType getType()
+	public ReferenceSequenceRelationshipType getRelatedType()
 	{
-		return type;
+		return relatedType;
 	}
 
 	/**
-	 * Sets the value of the type property.
+	 * Sets the value of the relatedType property.
 	 * 
 	 * @param value
 	 *     allowed object is
 	 *     {@link ReferenceSequenceRelationshipType }
 	 *     
 	 */
-	public void setType(ReferenceSequenceRelationshipType value)
+	public void setRelatedType(ReferenceSequenceRelationshipType value)
 	{
-		this.type = value;
+		this.relatedType = value;
 	}
 
 	/**

@@ -21,7 +21,7 @@ import org.hl7.fhir.String;
  *   &lt;complexContent>
  *     &lt;extension base="{http://hl7.org/fhir}BackboneElement">
  *       &lt;sequence>
- *         &lt;element name="type" type="{http://org.clingen.dm.allele.v1}SimpleAlleleNameType" minOccurs="0"/>
+ *         &lt;element name="nameType" type="{http://org.clingen.dm.allele.v1}SimpleAlleleNameType" minOccurs="0"/>
  *         &lt;element name="name" type="{http://hl7.org/fhir}string"/>
  *         &lt;element name="legacy" type="{http://hl7.org/fhir}boolean"/>
  *         &lt;element name="preferred" type="{http://hl7.org/fhir}boolean"/>
@@ -34,40 +34,40 @@ import org.hl7.fhir.String;
  * 
  */
 @XmlAccessorType (XmlAccessType.FIELD)
-@XmlType (name = "SimpleAllele.AlleleName", propOrder = {"type", "name", "legacy", "preferred"})
+@XmlType (name = "SimpleAllele.AlleleName", propOrder = {"nameType", "name", "legacy", "preferred"})
 public class SimpleAlleleName extends BackboneElement
 {
 
-	protected SimpleAlleleNameType type;
+	protected SimpleAlleleNameType nameType;
 	@XmlElement (required = true)
 	protected String name;
 	protected Boolean legacy;
 	protected Boolean preferred;
 
 	/**
-	 * Gets the value of the type property.
+	 * Gets the value of the nameType property.
 	 * 
 	 * @return
 	 *     possible object is
 	 *     {@link SimpleAlleleNameType }
 	 *     
 	 */
-	public SimpleAlleleNameType getType()
+	public SimpleAlleleNameType getNameType()
 	{
-		return type;
+		return nameType;
 	}
 
 	/**
-	 * Sets the value of the type property.
+	 * Sets the value of the nameType property.
 	 * 
 	 * @param value
 	 *     allowed object is
 	 *     {@link SimpleAlleleNameType }
 	 *     
 	 */
-	public void setType(SimpleAlleleNameType value)
+	public void setNameType(SimpleAlleleNameType value)
 	{
-		this.type = value;
+		this.nameType = value;
 	}
 
 	/**

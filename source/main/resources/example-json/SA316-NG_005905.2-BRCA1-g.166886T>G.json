@@ -13,8 +13,7 @@
     "reference": "/CanonicalAllele/CA402"
   },
 
-  "sequenceClass": "nucleotide",
-  "nucleotideSequenceClass": "genomic",
+  "simpleAlleleType": "genomic",
   "allele": "G",
   "primaryNucleotideChangeType": 
   {
@@ -36,7 +35,7 @@
   "alleleName": 
   [
     {
-      "type": "hgvs-genomic",
+      "nameType": "hgvs-genomic",
       "name": "NG_005905.2:g.166886T>G"
     }
   ],
@@ -49,6 +48,7 @@
       "display": "NG_005905.2"
     },
 
+    "coordinateConvention":"zero-based",
     "start": "166885",
     "end": "166886",
     "refAllele": "T"

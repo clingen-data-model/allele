@@ -6,9 +6,10 @@
 
 	<xs:element name="ReferenceSequence" type="ReferenceSequence">
 		<xs:annotation>
-			<xs:documentation>A public, immutable, and identifiable sequence of
-				nucleotide or amino acids.
-				Used as a basis for allele/variant
+			<xs:documentation>
+				A public, immutable, and identifiable sequence of
+				nucleotide or amino
+				acids. Used as a basis for allele/variant
 				representation
 			</xs:documentation>
 		</xs:annotation>
@@ -19,12 +20,9 @@
 			<xs:extension base="f:Resource">
 				<xs:sequence>
 					<xs:element name="identifier" type="f:Identifier" />
-					<xs:element name="sequenceClass" type="ReferenceSequenceClass" />
-					<xs:element name="nucleotideSequenceClass" type="ReferenceSequenceNucleotideClass"
+					<xs:element name="referenceSequenceType" type="ReferenceSequenceType"
 						minOccurs="0" />
-					<xs:element name="genomicSequenceClass" type="ReferenceSequenceGenomicClass"
-						minOccurs="0"/>
-					<xs:element name="chromosome" type="Chromosome"
+					<xs:element name="chromosome" type="ReferenceSequenceChromosome"
 						minOccurs="0" />
 					<xs:element name="cdsStart" type="f:integer" minOccurs="0" />
 					<xs:element name="cdsEnd" type="f:integer" minOccurs="0" />
@@ -39,39 +37,20 @@
 		</xs:complexContent>
 	</xs:complexType>
 
-	<xs:complexType name="ReferenceSequenceClass">
+	<xs:complexType name="ReferenceSequenceType">
 		<xs:complexContent>
 			<xs:extension base="f:Element">
 				<xs:sequence />
-				<xs:attribute name="value" type="ReferenceSequenceClass-list" />
+				<xs:attribute name="value" type="ReferenceSequenceType-list" />
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
 
-	<xs:complexType name="ReferenceSequenceNucleotideClass">
+	<xs:complexType name="ReferenceSequenceChromosome">
 		<xs:complexContent>
 			<xs:extension base="f:Element">
 				<xs:sequence />
-				<xs:attribute name="value"
-					type="ReferenceSequenceNucleotideClass-list" />
-			</xs:extension>
-		</xs:complexContent>
-	</xs:complexType>
-
-	<xs:complexType name="ReferenceSequenceGenomicClass">
-		<xs:complexContent>
-			<xs:extension base="f:Element">
-				<xs:sequence />
-				<xs:attribute name="value" type="ReferenceSequenceGenomicClass-list" />
-			</xs:extension>
-		</xs:complexContent>
-	</xs:complexType>
-
-	<xs:complexType name="Chromosome">
-		<xs:complexContent>
-			<xs:extension base="f:Element">
-				<xs:sequence />
-				<xs:attribute name="value" type="Chromosome-list" />
+				<xs:attribute name="value" type="ReferenceSequenceChromosome-list" />
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
@@ -80,7 +59,7 @@
 		<xs:complexContent>
 			<xs:extension base="f:BackboneElement">
 				<xs:sequence>
-					<xs:element name="type" type="ReferenceSequenceRelationshipType"
+					<xs:element name="relatedType" type="ReferenceSequenceRelationshipType"
 						minOccurs="0" />
 					<xs:element name="target" type="f:ResourceReference" />
 				</xs:sequence>
@@ -98,28 +77,16 @@
 		</xs:complexContent>
 	</xs:complexType>
 
-	<xs:simpleType name="ReferenceSequenceClass-list">
+	<xs:simpleType name="ReferenceSequenceType-list">
 		<xs:restriction base="xs:string">
-			<xs:enumeration value="nucleotide" />
-			<xs:enumeration value="amino acid" />
-		</xs:restriction>
-	</xs:simpleType>
-
-	<xs:simpleType name="ReferenceSequenceNucleotideClass-list">
-		<xs:restriction base="xs:string">
-			<xs:enumeration value="genomic" />
-			<xs:enumeration value="transcript" />
-		</xs:restriction>
-	</xs:simpleType>
-
-	<xs:simpleType name="ReferenceSequenceGenomicClass-list">
-		<xs:restriction base="xs:string">
-			<xs:enumeration value="chromosome" />
+			<xs:enumeration value="chromsome" />
 			<xs:enumeration value="gene" />
+			<xs:enumeration value="transcript" />
+			<xs:enumeration value="amino-acid" />
 		</xs:restriction>
 	</xs:simpleType>
 
-	<xs:simpleType name="Chromosome-list">
+	<xs:simpleType name="ReferenceSequenceChromosome-list">
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="1" />
 			<xs:enumeration value="2" />

@@ -7,9 +7,7 @@
       "http://www.ncbi.nlm.nih.gov/nuccore/NC_000011.9"
   ],
 
-  "sequenceClass": "nucleotide",
-  "nucleotideSequenceClass": "genomic",
-  "genomicSequenceClass": "chromosome",
+  "referenceSequenceType": "chromosome",
   "chromosome": "11",
   "referenceGenome": 
   {

@@ -9,8 +9,8 @@
   ],
 
   "active": "true",
-  "sequenceClass": "amino acid",
-  "complexityClass": "simple",
+  "canonicalAlleleType": "amino-acid",
+  "complexity": "simple",
   "relatedSimpleAllele": 
   [
     {

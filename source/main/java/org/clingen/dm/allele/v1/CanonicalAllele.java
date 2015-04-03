@@ -26,8 +26,8 @@ import org.hl7.fhir.ResourceReference;
  *       &lt;sequence>
  *         &lt;element name="identifier" type="{http://hl7.org/fhir}Identifier" maxOccurs="unbounded" minOccurs="0"/>
  *         &lt;element name="active" type="{http://hl7.org/fhir}boolean" minOccurs="0"/>
- *         &lt;element name="sequenceClass" type="{http://org.clingen.dm.allele.v1}ReferenceSequenceClass"/>
- *         &lt;element name="complexityClass" type="{http://org.clingen.dm.allele.v1}CanonicalAlleleComplexityClass"/>
+ *         &lt;element name="canonicalAlleleType" type="{http://org.clingen.dm.allele.v1}CanonicalAlleleType"/>
+ *         &lt;element name="complexity" type="{http://org.clingen.dm.allele.v1}CanonicalAlleleComplexity"/>
  *         &lt;element name="replacement" type="{http://org.clingen.dm.allele.v1}CanonicalAllele.Replacement" maxOccurs="unbounded" minOccurs="0"/>
  *         &lt;element name="relatedSimpleAllele" type="{http://org.clingen.dm.allele.v1}CanonicalAllele.RelatedSimpleAllele" maxOccurs="unbounded" minOccurs="1"/>
  *         &lt;element name="nested" type="{http://hl7.org/fhir}ResourceReference" maxOccurs="unbounded" minOccurs="0"/>
@@ -41,7 +41,7 @@ import org.hl7.fhir.ResourceReference;
  * 
  */
 @XmlAccessorType (XmlAccessType.FIELD)
-@XmlType (name = "CanonicalAllele", propOrder = {"identifier", "active", "sequenceClass", "complexityClass",
+@XmlType (name = "CanonicalAllele", propOrder = {"identifier", "active", "canonicalAlleleType", "complexity",
 													"replacement", "relatedSimpleAllele", "nested", "composite"})
 public class CanonicalAllele extends Resource
 {
@@ -49,8 +49,8 @@ public class CanonicalAllele extends Resource
 	protected List<Identifier> identifier;
 	protected Boolean active;
 	@XmlElement (required = true)
-	protected ReferenceSequenceClass sequenceClass;
-	protected CanonicalAlleleComplexityClass complexityClass;
+	protected CanonicalAlleleType canonicalAlleleType;
+	protected CanonicalAlleleComplexity complexity;
 	protected List<CanonicalAlleleReplacement> replacement;
 	protected List<CanonicalAlleleRelatedSimpleAllele> relatedSimpleAllele;
 	protected List<ResourceReference> nested;
@@ -107,55 +107,55 @@ public class CanonicalAllele extends Resource
 	}
 
 	/**
-	 * Gets the value of the sequenceClass property.
+	 * Gets the value of the canonicalAlleleType property.
 	 * 
 	 * @return
 	 *     possible object is
-	 *     {@link ReferenceSequenceClass }
+	 *     {@link CanonicalAlleleType }
 	 *     
 	 */
-	public ReferenceSequenceClass getSequenceClass()
+	public CanonicalAlleleType getCanonicalAlleleType()
 	{
-		return sequenceClass;
+		return canonicalAlleleType;
 	}
 
 	/**
-	 * Sets the value of the sequenceClass property.
+	 * Sets the value of the canonicalAlleleType property.
 	 * 
 	 * @param value
 	 *     allowed object is
-	 *     {@link ReferenceSequenceClass }
+	 *     {@link CanonicalAlleleType }
 	 *     
 	 */
-	public void setSequenceClass(ReferenceSequenceClass value)
+	public void setCanonicalAlleleType(CanonicalAlleleType value)
 	{
-		this.sequenceClass = value;
+		this.canonicalAlleleType = value;
 	}
 
 	/**
-	 * Gets the value of the complexityClass property.
+	 * Gets the value of the complexity property.
 	 * 
 	 * @return
 	 *     possible object is
-	 *     {@link CanonicalAlleleComplexityClass }
+	 *     {@link CanonicalAlleleComplexity }
 	 *     
 	 */
-	public CanonicalAlleleComplexityClass getComplexityClass()
+	public CanonicalAlleleComplexity getComplexity()
 	{
-		return complexityClass;
+		return complexity;
 	}
 
 	/**
-	 * Sets the value of the complexityClass property.
+	 * Sets the value of the complexity property.
 	 * 
 	 * @param value
 	 *     allowed object is
-	 *     {@link CanonicalAlleleComplexityClass }
+	 *     {@link CanonicalAlleleComplexity }
 	 *     
 	 */
-	public void setComplexityClasss(CanonicalAlleleComplexityClass value)
+	public void setComplexity(CanonicalAlleleComplexity value)
 	{
-		this.complexityClass = value;
+		this.complexity = value;
 	}
 
 	/**

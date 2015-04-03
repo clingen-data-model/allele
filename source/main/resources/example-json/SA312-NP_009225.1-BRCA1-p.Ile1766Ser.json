@@ -14,7 +14,7 @@
     "reference": "/CanonicalAllele/CA403"
   },
 
-  "sequenceClass": "amino acid",
+  "simpleAlleleType": "amino-acid",
   "allele": "Ser",
   "primaryAminoAcidChangeType": 
   {
@@ -35,12 +35,12 @@
   "alleleName": 
   [
     {
-      "type": "hgvs-protein-3",
+      "nameType": "hgvs-protein-3",
       "name": "p.Ile1766Ser"
     },
 
     {
-      "type": "custom",
+      "nameType": "custom",
       "name": "I1766S"
     }
   ],
@@ -61,6 +61,7 @@
       "display": "NP_009225.1"
     },
 
+    "coordinateConvention":"zero-based",
     "start": "1765",
     "end": "1766",
     "refAllele": "Ile"
@@ -69,7 +70,7 @@
   "related": 
   [
     {
-      "type": "cause",
+      "relatedType": "transcript-allele-cause",
       "target": 
       {
         "reference": "/SimpleAllele/SA310",

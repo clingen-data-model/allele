@@ -9,7 +9,6 @@ import javax.xml.bind.annotation.XmlType;
 
 import org.hl7.fhir.BackboneElement;
 import org.hl7.fhir.CodeableConcept;
-import org.hl7.fhir.Code;
 import org.hl7.fhir.Identifier;
 import org.hl7.fhir.Integer;
 import org.hl7.fhir.ResourceReference;
@@ -28,6 +27,7 @@ import org.hl7.fhir.String;
  *     &lt;extension base="{http://hl7.org/fhir}BackboneElement">
  *       &lt;sequence>
  *         &lt;element name="identifier" type="{http://hl7.org/fhir}Identifier" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element name="coordinateConvention" type="{http://hl7.org/fhir}SimpleAlleleCoordinateConvention"/>
  *         &lt;element name="referenceSequence" type="{http://hl7.org/fhir}ResourceReference"/>
  *         &lt;element name="start" type="{http://hl7.org/fhir}int"/>
  *         &lt;element name="end" type="{http://hl7.org/fhir}int"/>
@@ -36,7 +36,7 @@ import org.hl7.fhir.String;
  *         &lt;element name="ancillaryTranscriptRegionType" type="{http://hl7.org/fhir}CodeableConcept" minOccurs="0" maxOccurs="unbounded"/>
  *         &lt;element name="intronOffsetStart" type="{http://hl7.org/fhir}int"/>
  *         &lt;element name="intronOffsetEnd" type="{http://hl7.org/fhir}int"/>
- *	   &lt;element name="intronOffsetDirection" type="{http://hl7.org/fhir}code"/>
+ *         &lt;element name="intronOffsetDirection" type="{http://org.clingen.dm.allele.v1}SimpleAlleleIntronOffsetDirection"/>
  *         &lt;element name="intronOffsetGenomicCoordinate" type="{http://org.clingen.dm.allele.v1}SimpleAllele.ReferenceCoordinate"/>
  *       &lt;/sequence>
  *     &lt;/extension>
@@ -47,14 +47,19 @@ import org.hl7.fhir.String;
  * 
  */
 @XmlAccessorType (XmlAccessType.FIELD)
-@XmlType (name = "SimpleAllele.ReferenceCoordinate", propOrder = {"identifier", "referenceSequence", "start", "end",
-																	"refAllele", "primaryTranscriptRegionType",
-																	"ancillaryTranscriptRegionType", "intronOffsetStart",
-																	"intronOffsetEnd", "intronOffsetGenomicCoordinate"})
+@XmlType (name = "SimpleAllele.ReferenceCoordinate", propOrder = {"identifier", "coordinateConvention",
+																	"referenceSequence", "start", "end", "refAllele",
+																	"primaryTranscriptRegionType",
+																	"ancillaryTranscriptRegionType",
+																	"intronOffsetStart", "intronOffsetEnd",
+																	"intronOffsetDirection",
+																	"intronOffsetGenomicCoordinate"})
 public class SimpleAlleleReferenceCoordinate extends BackboneElement
 {
 
 	protected List<Identifier> identifier;
+	@XmlElement (required = true)
+	protected SimpleAlleleCoordinateConvention coordinateConvention;
 	@XmlElement (required = true)
 	protected ResourceReference referenceSequence;
 	protected Integer start;
@@ -64,7 +69,7 @@ public class SimpleAlleleReferenceCoordinate extends BackboneElement
 	protected List<CodeableConcept> ancillaryTranscriptRegionType;
 	protected Integer intronOffsetStart;
 	protected Integer intronOffsetEnd;
-	protected Code intronOffsetDirection;
+	protected SimpleAlleleIntronOffsetDirection intronOffsetDirection;
 	protected SimpleAlleleReferenceCoordinate intronOffsetGenomicCoordinate;
 
 	/**
@@ -228,7 +233,7 @@ public class SimpleAlleleReferenceCoordinate extends BackboneElement
 	 * This accessor method returns a reference to the live list,
 	 * not a snapshot. Therefore any modification you make to the
 	 * returned list will be present inside the JAXB object.
-	 * This is why there is not a <CODE>set</CODE> method for the ancillaryTranscriptRegionType property.
+	 * This is why there is not a <CODE>set</CODE> method for the ancillaryRegionType property.
 	 * 
 	 * <p>
 	 * For example, to add a new item, do as follows:
@@ -298,27 +303,27 @@ public class SimpleAlleleReferenceCoordinate extends BackboneElement
 	}
 
 	/**
-         * Gets the value of the intronOffsetDirection property.
-         *
-         * @return
-         *     possible object is 
-         *     {@link Code}
-         *
-         */
-        public Code getIntronOffsetDirection
+	 * Gets the value of the intronOffsetDirection property.
+	 * 
+	 * @return
+	 *     possible object is
+	 *     {@link SimpleAlleleIntronOffsetDirection }
+	 *     
+	 */
+	public SimpleAlleleIntronOffsetDirection getIntronOffsetDirection()
 	{
 		return intronOffsetDirection;
- 	}
+	}
 
 	/**
-	 * Sets the value of the intronOffsetDiretion property.
-	 *
+	 * Sets the value of the intronOffsetDirection property.
+	 * 
 	 * @param value
-	 * 	allowed object is
-	 *	{@link Code }
-	 *
+	 *     allowed object is
+	 *     {@link SimpleAlleleIntronOffsetDirection }
+	 *     
 	 */
-	public void setIntronOffsetDirection(Code value)
+	public void setIntronOffsetDirection(SimpleAlleleIntronOffsetDirection value)
 	{
 		this.intronOffsetDirection = value;
 	}

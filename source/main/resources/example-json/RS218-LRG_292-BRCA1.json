@@ -6,9 +6,7 @@
     "f:value": "LRG_292"
   },
 
-  "sequenceClass": "nucleotide",
-  "nucleotideSequenceClass": "genomic",
-  "genomicSequenceClass": "gene",
+  "referenceSequenceType": "gene",
   "gene": 
   {
     "f:reference": "/Gene/G102"

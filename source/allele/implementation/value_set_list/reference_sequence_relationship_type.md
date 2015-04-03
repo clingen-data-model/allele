@@ -2,7 +2,7 @@
 title: reference-sequence-relationship-type
 description: TBD
 source: Internal
-id: TBD
+id: 6
 usage: core
 ---
 

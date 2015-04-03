@@ -7,7 +7,7 @@ description: A stable identifier for a simple  allele, grouping together the dif
 Scope and Usage
 ---------------
 
-See also: SimpleCanonicalAllele, SimpleAminoAcidAllele
+See also: [SimpleCanonicalAllele](simple_canonical_allele.html), [SimpleAminoAcidAllele](simple_amino_acid_allele.html)
 
 SimpleAminoAcidCanonicalAlleles aggregate different SimpleAminoAcidAlleles that are different representations of the same amino acid variation.   SimpleAminoAcidAlleles may be aggregated when they are:  
 ..* in different versions of the same AminoAcidReferenceSequence.  

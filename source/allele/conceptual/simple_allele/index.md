@@ -8,7 +8,7 @@ related_page: /allele/resource/simple_allele
 Scope and Usage
 ---------------
 
-Genetic variation, say in a population, is usually represented with respect to an explicit reference sequence.  At a locus where variation exists in the population, there are multiple alleles (subseqeunces), which may include both the allele that occurs in the reference, as well as one or more alternate alleles.  Each one of these alleles (including the reference) would correspond to a single instance of a SimpleAllele.
+Genetic variation, say in a population, is usually represented with respect to an explicit reference sequence.  At a locus where variation exists in the population, there are multiple alleles (subsequences), which may include both the allele that occurs in the reference, as well as one or more alternate alleles.  Each one of these alleles (including the reference) would correspond to a single instance of a SimpleAllele.
 
 SimpleAllele as here defined is similar to the SO term [sequence_variant](http://www.sequenceontology.org/browser/current_svn/term/SO:0001060), but where that definition describes a difference with respect to a sequence, SimpleAllele explicitly allows the reference allele, so that there would not be a difference with respect to the reference sequence; note that the reference allele is not guaranteed to be the minor allele in any population.
 

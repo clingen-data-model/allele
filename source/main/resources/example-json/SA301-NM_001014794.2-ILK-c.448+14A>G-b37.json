@@ -13,8 +13,7 @@
     "reference": "/CanonicalAllele/CA401"
   },
 
-  "sequenceClass": "nucleotide",
-  "nucleotideSequenceClass": "transcript",
+  "simpleAlleleType": "transcript",
   "allele": "G",
   "primaryNucleotideChangeType": 
   {
@@ -36,7 +35,7 @@
   "alleleName": 
   [
     {
-      "type": "hgvs-cdna",
+      "nameType": "hgvs-cdna",
       "name": "NM_001014794.2:c.448+14A>G",
       "preferred": "true"
     }
@@ -50,6 +49,7 @@
       "display": "NM_001014794.2"
     },
 
+    "coordinateConvention":"zero-based",
     "start": "608",
     "end": "608",
     "refAllele": "A",
@@ -67,22 +67,23 @@
           }
         }
       ]
+    }
+  },
+
+  "intronOffsetStart": "13",
+  "intronOffsetEnd": "14",
+  "intronOffsetDirection" : "+",
+  "intronOffsetGenomicCoordinate": 
+  {
+    "referenceSequence": 
+    {
+      "reference": "/ReferenceSequence/RS202",
+      "display": "NC_000011.9"
     },
 
-    "intronOffsetStart": "13",
-    "intronOffsetEnd": "14",
-    "intronOffsetDirection":"plus",
-    "intronOffsetGenomicCoordinate": 
-    {
-      "referenceSequence": 
-      {
-        "reference": "/ReferenceSequence/RS202",
-        "display": "NC_000011.9"
-      },
-
-      "start": "6630033",
-      "end": "6630034",
-      "refAllele": "A"
-    }
+    "coordinateConvention":"zero-based",
+    "start": "6630033",
+    "end": "6630034",
+    "refAllele": "A"
   }
 }

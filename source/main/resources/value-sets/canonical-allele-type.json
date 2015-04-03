@@ -1,0 +1,54 @@
+{
+  "resourceType": "ValueSet",
+  "id": "canonical-allele-type",
+  "meta": 
+  {
+    "lastUpdated": "2015-04-03T03:26:54.815+00:00"
+  },
+
+  "url": "http://clingen.org/model/allele/vs/canonical-allele-type",
+  "version": "0.1.0",
+  "name": "CanonicalAlleleType",
+  "publisher": "ClinGen (Data Modeling Allele Project)",
+  "contact": 
+  [
+    {
+      "telecom": 
+      [
+        {
+          "system": "url",
+          "value": "http://clingen.org/model/allele"
+        },
+
+        {
+          "system": "email",
+          "value": "???"
+        }
+      ]
+    }
+  ],
+
+  "description": "Codes providing the type of a canonical allele",
+  "status": "draft",
+  "experimental": false,
+  "date": "2015-04-03T03:26:54+00:00",
+  "define": 
+  {
+    "system": "http://clingen.org/model/allele/canonical-allele-type",
+    "caseSensitive": true,
+    "concept": 
+    [
+      {
+        "code": "nucleotide",
+        "display": "Nucleotide",
+        "definition": "The type of the canonical allele is nucleotide. All associated simple/canonical alleles are genomic or transcript based."
+      },
+
+      {
+        "code": "amino-acid",
+        "display": "Amino Acid",
+        "definition": "The type of the canonical allele is amino acid. All associated simple/canonical alleles are amino acid based."
+      }
+    ]
+  }
+}

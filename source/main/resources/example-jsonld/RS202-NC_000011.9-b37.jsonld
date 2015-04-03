@@ -12,9 +12,7 @@
     }
   ],
 
-  "sequenceClass": "nucleotide",
-  "nucleotideSequenceClass": "genomic",
-  "genomicSequenceClass": "chromosome",
+  "referenceSequenceType": "chromosome",
   "chromosome": "11",
   "referenceGenome": 
   {

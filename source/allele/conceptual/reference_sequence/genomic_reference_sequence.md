@@ -17,7 +17,7 @@ The purpose of this abstract class is to provide a target for [GenomicAlleleRefe
 Exclusions and Limitations
 --------------------------
 
-In version 1.0, GenomicReferenceSequence must be primary assembly chromosome sequence.  Patches, unplaced sequences, and other sequences of genomic DNA are unsupported in 1.0.
+In version 0.1, GenomicReferenceSequence must be primary assembly chromosome sequence.  Patches, unplaced sequences, and other sequences of genomic DNA are unsupported in 1.0.
 
 Attributes
 ----------

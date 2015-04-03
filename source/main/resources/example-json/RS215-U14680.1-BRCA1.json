@@ -7,8 +7,7 @@
     "value": "U14680.1"
   },
 
-  "sequenceClass": "nucleotide",
-  "nucleotideSequenceClass": "transcript",
+  "referenceSequenceType": "transcript",
   "cdsStart": "120",
   "cdsEnd": "5711",
   "gene": 

@@ -2,7 +2,7 @@
 title: primary-transcript-region-type
 description: This value set includes only the transcript associated regions that is associated with a transcript simple allele reference coordinate. 
 source: Sequence Ontology
-id: TBD
+id: 20
 usage: core
 ---
 

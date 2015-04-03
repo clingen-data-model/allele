@@ -8,7 +8,7 @@ description: A stable identifier for a complex nucleotide allele, based on an ag
 Scope and Usage
 ---------------
 
-See also: ComplexCanonicalAllele, SimpleNucleotideCanonicalAllele
+See also: [ComplexCanonicalAllele](complex_canonical_allele.html), [SimpleNucleotideCanonicalAllele](simple_nucleotide_canonical_allele.html)
 
 ComplexNucleotideCanonicalAllele is a nucleotide-specific subclass of ComplexCanonicalAllele.  It represents a particular set of SimpleNucleotideCanonicalAlleles that occur in cis.
 

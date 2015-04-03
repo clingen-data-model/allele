@@ -24,21 +24,12 @@ Attributes
 ----------
 
 {:.table}
-| Attribute Name | Attribute Type |
-|----------------|----------------|
-| chr            | Code           |
+| Attribute Name  | Attribute Type |
+|-----------------|----------------|
+| chr             | Code           |
+| referenceGenome | Code[]         |
 
 
 chr: A short human-readable name for the chromosome.
+referenceGenome: Particular versions of chromosomal sequences are often aggregated together and released as a version of the full Reference Genome, for example [the GRCh38 primary assembly](http://www.ncbi.nlm.nih.gov/projects/genome/assembly/grc/human/data/).  A particular ChromosomeReferenceSequence may be part of zero or more of these coded public genome assemblies.
 
-
-Related Entities
-----------------
-
-{:.table}
-| Relation Name     | Entity Type                              | Cardinality |
-|-------------------|------------------------------------------|-------------|
-| inReferenceGenome | [ReferenceGenome](reference_genome.html) | 0..*        |
-
-
-inReferenceGenome: Particular versions of chromosomal sequences are often aggregated together and released as a version of the full [ReferenceGenome](reference_genome.html).  A particular ChromosomeReferenceSequence may be part of zero or more of these collections.

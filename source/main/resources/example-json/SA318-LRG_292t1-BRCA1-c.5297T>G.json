@@ -13,8 +13,7 @@
     "reference": "/CanonicalAllele/CA402"
   },
 
-  "sequenceClass": "nucleotide",
-  "nucleotideSequenceClass": "transcript",
+  "simpleAlleleType": "transcript",
   "allele": "G",
   "primaryNucleotideChangeType": 
   {
@@ -36,7 +35,7 @@
   "alleleName": 
   [
     {
-      "type": "hgvs-cdna",
+      "nameType": "hgvs-cdna",
       "name": "LRG_292t1:c.5297T>G",
       "preferred": "true"
     }
@@ -58,6 +57,7 @@
       "display": "LRG_292t1"
     },
 
+    "coordinateConvention":"zero-based",
     "start": "5296",
     "end": "5297",
     "refAllele": "T",

@@ -42,25 +42,15 @@
 
         "gene":"clingen:gene",
         "referenceGenome":"clingen:referencegenome",
-        "sequenceClass":
+        "referenceSequenceType":
         {
-            "@id":"clingen:sequenceclass",
-            "@type":"clingen:SequenceClass"
-        },
-        "nucleotideSequenceClass":
-        {
-            "@id":"clingen:nucleotidesequenceclass",
-            "@type":"clingen:NucleotideSequenceClass"
-        },
-        "genomicSequenceClass":
-        {
-            "@id":"clingen:genomicsequenceclass",
-            "@type":"clingen:GenomicSequenceClass"
+            "@id":"clingen:referenceSequenceType",
+            "@type":"clingen:ReferenceSequenceType"
         },
         "chromosome":
         {
             "@id":"clingen:chromosome",
-            "@type":"xsd:integer"
+            "@type":"clingen:ReferenceSequenceChromosome"
         },
         "cdsStart":
         {

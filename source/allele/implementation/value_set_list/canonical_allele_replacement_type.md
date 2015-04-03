@@ -2,7 +2,7 @@
 title: canonical-allele-replacement-type
 description: TBD
 source: Internal
-id: TBD
+id: 7
 usage: core
 ---
 

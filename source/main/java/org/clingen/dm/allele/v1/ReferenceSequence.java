@@ -26,10 +26,8 @@ import org.hl7.fhir.ResourceReference;
  *     &lt;extension base="{http://hl7.org/fhir}Resource">
  *       &lt;sequence>
  *         &lt;element name="identifier" type="{http://hl7.org/fhir}Identifier"/>
- *         &lt;element name="sequenceClass" type="{http://org.clingen.dm.allele.v1}ReferenceSequenceClass"/>
- *         &lt;element name="nucleotideSequenceClass" type="{http://org.clingen.dm.allele.v1}ReferenceSequenceNucleotideClass"/>
- *         &lt;element name="genomicSequenceClass" type="{http://org.clingen.dm.allele.v1}ReferenceSequenceGenomicClass" minOccurs="0"/>
- *         &lt;element name="chromosome" type="{http://org.clingen.dm.allele.v1}Chromosome" minOccurs="0"/>
+ *         &lt;element name="referenceSequenceType" type="{http://org.clingen.dm.allele.v1}ReferenceSequenceType" minOccurs="0"/>
+ *         &lt;element name="chromosome" type="{http://org.clingen.dm.allele.v1}ReferenceSequenceChromosome" minOccurs="0"/>
  *         &lt;element name="cdsStart" type="{http://hl7.org/fhir}int" minOccurs="0"/>
  *         &lt;element name="cdsEnd" type="{http://hl7.org/fhir}int" minOccurs="0"/>
  *         &lt;element name="gene" type="{http://hl7.org/fhir}ResourceReference" maxOccurs="1" minOccurs="0"/>
@@ -44,19 +42,16 @@ import org.hl7.fhir.ResourceReference;
  * 
  */
 @XmlAccessorType (XmlAccessType.FIELD)
-@XmlType (name = "ReferenceSequence", propOrder = {"identifier", "sequenceClass", "nucleotideSequenceClass",
-													"genomicSequenceClass", "chromosome", "cdsStart", "cdsEnd", "gene",
-													"referenceGenome", "related"})
+@XmlType (name = "ReferenceSequence", propOrder = {"identifier", "referenceSequenceType", "chromosome", "cdsStart",
+													"cdsEnd", "gene", "referenceGenome", "related"})
 public class ReferenceSequence extends Resource
 {
 
 	@XmlElement (required = true)
 	protected Identifier identifier;
 	@XmlElement (required = true)
-	protected ReferenceSequenceClass sequenceClass;
-	protected ReferenceSequenceNucleotideClass nucleotideSequenceClass;
-	protected ReferenceSequenceGenomicClass genomicSequenceClass;
-	protected Chromosome chromosome;
+	protected ReferenceSequenceType referenceSequenceType;
+	protected ReferenceSequenceChromosome chromosome;
 	protected Integer cdsStart;
 	protected Integer cdsEnd;
 	protected ResourceReference gene;
@@ -91,81 +86,29 @@ public class ReferenceSequence extends Resource
 	}
 
 	/**
-	 * Gets the value of the sequenceClass property.
+	 * Gets the value of the referenceSequenceType property.
 	 * 
 	 * @return
 	 *     possible object is
-	 *     {@link ReferenceSequenceClass }
+	 *     {@link ReferenceSequenceType }
 	 *     
 	 */
-	public ReferenceSequenceClass getSequenceClass()
+	public ReferenceSequenceType getGenomicSequenceClass()
 	{
-		return sequenceClass;
+		return referenceSequenceType;
 	}
 
 	/**
-	 * Sets the value of the sequenceClass property.
+	 * Sets the value of the referenceSequenceType property.
 	 * 
 	 * @param value
 	 *     allowed object is
-	 *     {@link ReferenceSequenceClass }
+	 *     {@link ReferenceSequenceType }
 	 *     
 	 */
-	public void setSequenceClass(ReferenceSequenceClass value)
+	public void setReferenceSequenceType(ReferenceSequenceType value)
 	{
-		this.sequenceClass = value;
-	}
-
-	/**
-	 * Gets the value of the nucleotideSequenceClass property.
-	 * 
-	 * @return
-	 *     possible object is
-	 *     {@link ReferenceSequenceNucleotideClass }
-	 *     
-	 */
-	public ReferenceSequenceNucleotideClass getNucleotideSequenceClass()
-	{
-		return nucleotideSequenceClass;
-	}
-
-	/**
-	 * Sets the value of the nucleotideSequenceClass property.
-	 * 
-	 * @param value
-	 *     allowed object is
-	 *     {@link ReferenceSequenceNucleotideClass }
-	 *     
-	 */
-	public void setNucleotideSequenceClass(ReferenceSequenceNucleotideClass value)
-	{
-		this.nucleotideSequenceClass = value;
-	}
-
-	/**
-	 * Gets the value of the genomicSequenceClass property.
-	 * 
-	 * @return
-	 *     possible object is
-	 *     {@link ReferenceSequenceGenomicClass }
-	 *     
-	 */
-	public ReferenceSequenceGenomicClass getGenomicSequenceClass()
-	{
-		return genomicSequenceClass;
-	}
-
-	/**
-	 * Sets the value of the genomicSequenceClass property.
-	 * 
-	 * @param value
-	 *     allowed object is
-	 *     {@link ReferenceSequenceGenomicClass }
-	 *     
-	 */
-	public void setGenomicSequenceClass(ReferenceSequenceGenomicClass value)
-	{
-		this.genomicSequenceClass = value;
+		this.referenceSequenceType = value;
 	}
 
 	/**
@@ -173,10 +116,10 @@ public class ReferenceSequence extends Resource
 	 * 
 	 * @return
 	 *     possible object is
-	 *     {@link Chromosome }
+	 *     {@link ReferenceSequenceChromosome }
 	 *     
 	 */
-	public Chromosome getChromosome()
+	public ReferenceSequenceChromosome getChromosome()
 	{
 		return chromosome;
 	}
@@ -186,10 +129,10 @@ public class ReferenceSequence extends Resource
 	 * 
 	 * @param value
 	 *     allowed object is
-	 *     {@link Chromosome }
+	 *     {@link ReferenceSequenceChromosome }
 	 *     
 	 */
-	public void setChromosome(Chromosome value)
+	public void setChromosome(ReferenceSequenceChromosome value)
 	{
 		this.chromosome = value;
 	}

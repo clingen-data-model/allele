@@ -27,13 +27,12 @@ import org.hl7.fhir.String;
  *       &lt;sequence>
  *         &lt;element name="identifier" type="{http://hl7.org/fhir}Identifier" maxOccurs="unbounded" minOccurs="0"/>
  *         &lt;element name="canonicalAllele" type="{http://hl7.org/fhir}ResourceReference" maxOccurs="1" minOccurs="0"/>
- *         &lt;element name="sequenceClass" type="{http://org.clingen.dm.allele.v1}ReferenceSequenceClass"/>
- *         &lt;element name="nucleotideSequenceClass" type="{http://org.clingen.dm.allele.v1}ReferenceSequenceNucleotideClass"/>
+ *         &lt;element name="simpleAlleleType" type="{http://org.clingen.dm.allele.v1}SimpleAlleleType"/>
  *         &lt;element name="allele" type="{http://hl7.org/fhir}string" minOccurs="0"/>
  *         &lt;element name="primaryNucleotideChangeType" type="{http://hl7.org/fhir}CodeableConcept" minOccurs="0"/>
- *         &lt;element name="ancillaryNucleotideChangeType" type="{http://hl7.org/fhir}CodeableConcept" minOccurs="0" maxOccurs="unbounded"/>
+ *         &lt;element name="ancillaryNucleotideChangeType" type="{http://hl7.org/fhir}CodeableConcept" maxOccurs="unbounded" minOccurs="0"/>
  *         &lt;element name="primaryAminoAcidChangeType" type="{http://hl7.org/fhir}CodeableConcept" minOccurs="0"/>
- *         &lt;element name="ancillaryAminoAcidChangeType" type="{http://hl7.org/fhir}CodeableConcept" minOccurs="0" maxOccurs="unbounded"/>
+ *         &lt;element name="ancillaryAminoAcidChangeType" type="{http://hl7.org/fhir}CodeableConcept" maxOccurs="unbounded" minOccurs="0"/>
  *         &lt;element name="alleleName" type="{http://org.clingen.dm.allele.v1}SimpleAllele.AlleleName" maxOccurs="unbounded" minOccurs="0"/>
  *         &lt;element name="referenceCoordinate" type="{http://org.clingen.dm.allele.v1}SimpleAllele.ReferenceCoordinate" maxOccurs="1" minOccurs="0"/>
  *         &lt;element name="related" type="{http://org.clingen.dm.allele.v1}SimpleAllele.Related" maxOccurs="unbounded" minOccurs="0"/>
@@ -46,9 +45,9 @@ import org.hl7.fhir.String;
  * 
  */
 @XmlAccessorType (XmlAccessType.FIELD)
-@XmlType (name = "SimpleAllele", propOrder = {"identifier", "canonicalAllele", "sequenceClass",
-												"nucleotideSequenceClass", "allele", "primaryNucleotideChangeType",
-												"ancillaryNucleotideChangeType", "primaryAminoAcidChangeType", "ancillaryAminoAcidChangeType",
+@XmlType (name = "SimpleAllele", propOrder = {"identifier", "canonicalAllele", "simpleAlleleType", "allele",
+												"primaryNucleotideChangeType", "ancillaryNucleotideChangeType",
+												"primaryAminoAcidChangeType", "ancillaryAminoAcidChangeType",
 												"alleleName", "referenceCoordinate", "related"})
 public class SimpleAllele extends Resource
 {
@@ -56,12 +55,11 @@ public class SimpleAllele extends Resource
 	protected List<Identifier> identifier;
 	protected ResourceReference canonicalAllele;
 	@XmlElement (required = true)
-	protected ReferenceSequenceClass sequenceClass;
-	protected ReferenceSequenceNucleotideClass nucleotideSequenceClass;
+	protected SimpleAlleleType simpleAlleleType;
 	protected String allele;
 	protected CodeableConcept primaryNucleotideChangeType;
-        protected List<CodeableConcept> ancillaryNucleotideChangeType;
-        protected CodeableConcept primaryAminoAcidChangeType;
+	protected List<CodeableConcept> ancillaryNucleotideChangeType;
+	protected CodeableConcept primaryAminoAcidChangeType;
 	protected List<CodeableConcept> ancillaryAminoAcidChangeType;
 	protected List<SimpleAlleleName> alleleName;
 	protected SimpleAlleleReferenceCoordinate referenceCoordinate;
@@ -118,55 +116,29 @@ public class SimpleAllele extends Resource
 	}
 
 	/**
-	 * Gets the value of the sequenceClass property.
+	 * Gets the value of the simpleAlleleType property.
 	 * 
 	 * @return
 	 *     possible object is
-	 *     {@link ReferenceSequenceClass }
+	 *     {@link SimpleAlleleType }
 	 *     
 	 */
-	public ReferenceSequenceClass getSequenceClass()
+	public SimpleAlleleType getSimpleAlleleType()
 	{
-		return sequenceClass;
+		return simpleAlleleType;
 	}
 
 	/**
-	 * Sets the value of the sequenceClass property.
+	 * Sets the value of the simpleAlleleType property.
 	 * 
 	 * @param value
 	 *     allowed object is
-	 *     {@link ReferenceSequenceClass }
+	 *     {@link SimpleAlleleType }
 	 *     
 	 */
-	public void setSequenceClass(ReferenceSequenceClass value)
+	public void setSimpleAlleleType(SimpleAlleleType value)
 	{
-		this.sequenceClass = value;
-	}
-
-	/**
-	 * Gets the value of the nucleotideSequenceClass property.
-	 * 
-	 * @return
-	 *     possible object is
-	 *     {@link ReferenceSequenceNucleotideClass }
-	 *     
-	 */
-	public ReferenceSequenceNucleotideClass getNucleotideSequenceClass()
-	{
-		return nucleotideSequenceClass;
-	}
-
-	/**
-	 * Sets the value of the nucleotideSequenceClass property.
-	 * 
-	 * @param value
-	 *     allowed object is
-	 *     {@link ReferenceSequenceNucleotideClass }
-	 *     
-	 */
-	public void setNucleotideSequenceClass(ReferenceSequenceNucleotideClass value)
-	{
-		this.nucleotideSequenceClass = value;
+		this.simpleAlleleType = value;
 	}
 
 	/**
@@ -195,108 +167,109 @@ public class SimpleAllele extends Resource
 		this.allele = value;
 	}
 
-        /**
-         * Gets the value of the primaryNucleotideChangeType property.
-         *
-         * @return
-         *     possible object is
-         *     {@link CodeableConcept }
-         *
-         */
-        public CodeableConcept getPrimaryNucleotideChangeType()
-        {
-                return primaryNucleotideChangeType;
-        }
+	/**
+	 * Gets the value of the primaryNucleotideChangeType property.
+	 * 
+	 * @return
+	 *     possible object is
+	 *     {@link CodeableConcept }
+	 *     
+	 */
+	public CodeableConcept getPrimaryNucleotideChangeType()
+	{
+		return primaryNucleotideChangeType;
+	}
 
-        /**
-         * Sets the value of the primaryNucleotideChangeType property.
-         *
-         * @param value
-         *     allowed object is
-         *     {@link CodeableConcept }
-         *
-         */
-        public void setPrimaryNucleotideChangeType(CodeableConcept value)
-        {
-                this.primaryNucleotideChangeType = value;
-        }
+	/**
+	 * Sets the value of the primaryNucleotideChangeType property.
+	 * 
+	 * @param value
+	 *     allowed object is
+	 *     {@link CodeableConcept }
+	 *     
+	 */
+	public void setPrimaryNucleotideChangeType(CodeableConcept value)
+	{
+		this.primaryNucleotideChangeType = value;
+	}
 
-        /**
-         * Gets the value of the related property.
-         *
-         * <p>
-         * This accessor method returns a reference to the live list,
-         * not a snapshot. Therefore any modification you make to the
-         * returned list will be present inside the JAXB object.
-         * This is why there is not a <CODE>set</CODE> method for the alleleName property.
-         *
-         * <p>
-         * For example, to add a new item, do as follows:
-         * <pre>
-         *    getAncillaryNucleotideChangeType().add(newItem);
-         * </pre>
-         * s
-         *
-         * <p>
-         * Objects of the following type(s) are allowed in the list
-         * {@link CodeableConcept }
-         */
-        public List<CodeableConcept> getAncillaryNucleotideChangeType()
-        {
-                return ancillaryNucleotideChangeType;
-        }
+	/**
+	 * Gets the value of the ancillaryNucleotideChangeType property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list,
+	 * not a snapshot. Therefore any modification you make to the
+	 * returned list will be present inside the JAXB object.
+	 * This is why there is not a <CODE>set</CODE> method for the alleleName property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * <pre>
+	 *    getAncillaryNucleotideChangeType().add(newItem);
+	 * </pre>
+	 * s
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link CodeableConcept }
+	 */
+	public List<CodeableConcept> getAncillaryNucleotideChangeType()
+	{
+		return ancillaryNucleotideChangeType;
+	}
 
-        /**
-         * Gets the value of the primaryAminoAcidChangeType property.
-         *
-         * @return
-         *     possible object is
-         *     {@link CodeableConcept }
-         *
-         */
-        public CodeableConcept getPrimaryAminoAcidChangeType()
-        {
-                return primaryAminoAcidChangeType;
-        }
+	/**
+	 * Gets the value of the primaryAminoAcidChangeType property.
+	 * 
+	 * @return
+	 *     possible object is
+	 *     {@link CodeableConcept }
+	 *     
+	 */
+	public CodeableConcept getPrimaryAminoAcidChangeType()
+	{
+		return primaryAminoAcidChangeType;
+	}
 
-        /**
-         * Sets the value of the primaryAminoAcidChangeType property.
-         *
-         * @param value
-         *     allowed object is
-         *     {@link CodeableConcept }
-         *
-         */
-        public void setPrimaryAminoAcidChangeType(CodeableConcept value)
-        {
-                this.primaryAminoAcidChangeType = value;
-        }
+	/**
+	 * Sets the value of the primaryAminoAcidChangeType property.
+	 * 
+	 * @param value
+	 *     allowed object is
+	 *     {@link CodeableConcept }
+	 *     
+	 */
+	public void setPrimaryAminoAcidChangeType(CodeableConcept value)
+	{
+		this.primaryAminoAcidChangeType = value;
+	}
 
-        /**
-         * Gets the value of the related property.
-         *
-         * <p>
-         * This accessor method returns a reference to the live list,
-         * not a snapshot. Therefore any modification you make to the
-         * returned list will be present inside the JAXB object.
-         * This is why there is not a <CODE>set</CODE> method for the alleleName property.
-         *
-         * <p>
-         * For example, to add a new item, do as follows:
-         * <pre>
-         *    getAncillaryAminoAcidChangeType().add(newItem);
-         * </pre>
-         * s
-         *
-         * <p>
-         * Objects of the following type(s) are allowed in the list
-         * {@link CodeableConcept }
-         */
-        public List<CodeableConcept> getAncillaryAminoAcidChangeType()
-        {
-                return ancillaryAminoAcidChangeType;
-        }
+	/**
+	 * Gets the value of the ancillaryAminoAcidChangeType property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list,
+	 * not a snapshot. Therefore any modification you make to the
+	 * returned list will be present inside the JAXB object.
+	 * This is why there is not a <CODE>set</CODE> method for the alleleName property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * <pre>
+	 *    getAncillaryAminoAcidChangeType().add(newItem);
+	 * </pre>
+	 * s
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link CodeableConcept }
+	 */
+	public List<CodeableConcept> getAncillaryAminoAcidChangeType()
+	{
+		return ancillaryAminoAcidChangeType;
+	}
 
+	
 	/**
 	 * Gets the value of the allele name property.
 	 * 
