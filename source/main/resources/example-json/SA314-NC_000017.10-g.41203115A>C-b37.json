@@ -48,7 +48,6 @@
       "display": "NC_000017.10"
     },
 
-    "coordinateConvention":"zero-based",
     "start": "412031145",
     "end": "41203115",
     "refAllele": "A"

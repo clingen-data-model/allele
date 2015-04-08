@@ -8,8 +8,8 @@
 		<f:value value="CA403"></f:value>
 	</identifier>
 	<active value="true"></active>
-	<sequenceClass value="amino acid"></sequenceClass>
-	<complexityClass value="simple" />
+	<canonicalAlleleType value="amino acid"></canonicalAlleleType>
+	<complexity value="simple" />
 	<relatedSimpleAllele>
 		<simpleAllele>
 			<f:reference value="/SimpleAllele/SA312"></f:reference>

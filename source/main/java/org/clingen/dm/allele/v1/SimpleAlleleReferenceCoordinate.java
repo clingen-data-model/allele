@@ -27,7 +27,6 @@ import org.hl7.fhir.String;
  *     &lt;extension base="{http://hl7.org/fhir}BackboneElement">
  *       &lt;sequence>
  *         &lt;element name="identifier" type="{http://hl7.org/fhir}Identifier" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="coordinateConvention" type="{http://hl7.org/fhir}SimpleAlleleCoordinateConvention"/>
  *         &lt;element name="referenceSequence" type="{http://hl7.org/fhir}ResourceReference"/>
  *         &lt;element name="start" type="{http://hl7.org/fhir}int"/>
  *         &lt;element name="end" type="{http://hl7.org/fhir}int"/>
@@ -47,9 +46,8 @@ import org.hl7.fhir.String;
  * 
  */
 @XmlAccessorType (XmlAccessType.FIELD)
-@XmlType (name = "SimpleAllele.ReferenceCoordinate", propOrder = {"identifier", "coordinateConvention",
-																	"referenceSequence", "start", "end", "refAllele",
-																	"primaryTranscriptRegionType",
+@XmlType (name = "SimpleAllele.ReferenceCoordinate", propOrder = {"identifier", "referenceSequence", "start", "end",
+																	"refAllele", "primaryTranscriptRegionType",
 																	"ancillaryTranscriptRegionType",
 																	"intronOffsetStart", "intronOffsetEnd",
 																	"intronOffsetDirection",
@@ -58,8 +56,6 @@ public class SimpleAlleleReferenceCoordinate extends BackboneElement
 {
 
 	protected List<Identifier> identifier;
-	@XmlElement (required = true)
-	protected SimpleAlleleCoordinateConvention coordinateConvention;
 	@XmlElement (required = true)
 	protected ResourceReference referenceSequence;
 	protected Integer start;

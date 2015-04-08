@@ -9,7 +9,7 @@
 		<f:system value="http://www.ncbi.nlm.nih.gov/protein" />
 		<f:value value="NP_009225.1" />
 	</identifier>
-	<sequenceClass value="amino acid"></sequenceClass>
+	<referenceSequenceType value="amino acid"></referenceSequenceType>
 	<related>
 		<type value="translates-from"></type>
 		<target>

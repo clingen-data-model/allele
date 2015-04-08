@@ -7,7 +7,7 @@
 		<f:system value="http://ftp.ebi.ac.uk/pub/databases/lrgex" />
 		<f:value value="LRG_292p1" />
 	</identifier>
-	<sequenceClass value="amino acid"></sequenceClass>
+	<referenceSequenceType value="amino acid"></referenceSequenceType>
 	<related>
 		<type value="translates-from"></type>
 		<target>

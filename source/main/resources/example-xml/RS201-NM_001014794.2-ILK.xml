@@ -9,8 +9,7 @@
 		<f:system value="http://www.ncbi.nlm.nih.gov/nuccore" />
 		<f:value value="NM_001014794.2" />
 	</identifier>
-	<sequenceClass value="nucleotide"></sequenceClass>
-	<nucleotideSequenceClass value="transcript"></nucleotideSequenceClass>
+	<referenceSequenceType value="transcript"></referenceSequenceType>
 	<cdsStart value="162"></cdsStart>
 	<cdsEnd value="1520"></cdsEnd>
 	<gene>

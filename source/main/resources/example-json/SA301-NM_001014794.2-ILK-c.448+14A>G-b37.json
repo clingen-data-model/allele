@@ -49,7 +49,6 @@
       "display": "NM_001014794.2"
     },
 
-    "coordinateConvention":"zero-based",
     "start": "608",
     "end": "608",
     "refAllele": "A",
@@ -81,7 +80,6 @@
       "display": "NC_000011.9"
     },
 
-    "coordinateConvention":"zero-based",
     "start": "6630033",
     "end": "6630034",
     "refAllele": "A"

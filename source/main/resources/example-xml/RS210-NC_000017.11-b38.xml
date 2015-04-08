@@ -8,9 +8,7 @@
 		<f:system value="http://www.ncbi.nlm.nih.gov/nuccore" />
 		<f:value value="NC_000017.11" />
 	</identifier>
-	<sequenceClass value="nucleotide"></sequenceClass>
-	<nucleotideSequenceClass value="genomic"></nucleotideSequenceClass>
-	<genomicSequenceClass value="chromosome"></genomicSequenceClass>
+	<referenceSequenceType value="chromosome"></referenceSequenceType>
 	<chromosome value="17"></chromosome>
 	<referenceGenome>
 		<f:coding>

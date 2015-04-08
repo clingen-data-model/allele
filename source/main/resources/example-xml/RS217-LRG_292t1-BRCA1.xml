@@ -7,8 +7,7 @@
 		<f:system value="http://ftp.ebi.ac.uk/pub/databases/lrgex" />
 		<f:value value="LRG_292t1" />
 	</identifier>
-	<sequenceClass value="nucleotide"></sequenceClass>
-	<nucleotideSequenceClass value="transcript"></nucleotideSequenceClass>
+	<referenceSequenceType value="transcript"></referenceSequenceType>
 	<cdsStart value="233"></cdsStart>
 	<cdsEnd value="5824"></cdsEnd>
 	<gene>

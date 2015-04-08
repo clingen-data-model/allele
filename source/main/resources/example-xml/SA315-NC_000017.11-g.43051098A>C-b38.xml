@@ -10,8 +10,7 @@
 	<canonicalAllele>
 		<f:reference value="/CanonicalAllele/CA402"></f:reference>
 	</canonicalAllele>
-	<sequenceClass value="nucleotide"></sequenceClass>
-	<nucleotideSequenceClass value="genomic"></nucleotideSequenceClass>
+	<simpleAlleleType value="genomic"></simpleAlleleType>
 	<allele value="C"></allele>
 	<primaryNucleotideChangeType>
 		<f:coding>
@@ -25,7 +24,7 @@
 		</f:coding>
 	</primaryNucleotideChangeType>
 	<alleleName>
-		<type value="hgvs-genomic"></type>
+		<nameType value="hgvs-genomic"></nameType>
 		<name value="NC_000017.11:g.43051098A&gt;C"></name>
 	</alleleName>
 	<referenceCoordinate>

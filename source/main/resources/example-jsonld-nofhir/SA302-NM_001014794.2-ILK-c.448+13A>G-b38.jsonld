@@ -33,7 +33,6 @@
   {
     "@type":"ReferenceCoordinate",
     "referenceSequence": :"../../ReferenceSequence/RS201",
-    "coordinateConvention":"zero based",
     "start": "608",
     "end": "608",
     "refAllele": "A",

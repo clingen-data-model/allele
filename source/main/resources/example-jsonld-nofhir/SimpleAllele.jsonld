@@ -81,11 +81,6 @@
             "@id":"clingen:referencesequence" ,
             "@type":"@id"
         },
-        "coordinateConvention":
-        {
-            "@id":"clingen:coordinateConvention",
-            "@type":"clingen:SimpleAlleleCoordinateConvention"
-        },
         "start":
         {
             @id:"clingen:start",

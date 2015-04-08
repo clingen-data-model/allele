@@ -58,7 +58,6 @@
         "reference":"../../ReferenceSequence/RS201",
         "display":"NM_001014794.2"
     }
-    "coordinateConvention": "zero based",
     "start": "608",
     "end": "608",
     "refAllele": "A",
@@ -92,7 +91,6 @@
         "reference":"../../ReferenceSequence/RS203",
         "display":"NC_000011.10"
       }
-      "coordinateConvention": "zero based",
       "start": "6608802",
       "end": "6608803",
       "refAllele": "A"

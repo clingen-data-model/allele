@@ -11,8 +11,7 @@
 	<canonicalAllele>
 		<f:reference value="/CanonicalAllele/CA402"></f:reference>
 	</canonicalAllele>
-	<sequenceClass value="nucleotide"></sequenceClass>
-	<nucleotideSequenceClass value="transcript"></nucleotideSequenceClass>
+	<simpleAlleleType value="transcript"></simpleAlleleType>
 	<allele value="G"></allele>
 	<primaryNucleotideChangeType>
 		<f:coding>
@@ -26,12 +25,12 @@
 		</f:coding>
 	</primaryNucleotideChangeType>
 	<alleleName>
-		<type value="hgvs-cdna"></type>
+		<nameType value="hgvs-cdna"></nameType>
 		<name value="NM_007294.3(BRCA1):c.5297T&gt;G"></name>
 		<preferred value="true"></preferred>
 	</alleleName>
 	<alleleName>
-		<type value="custom"></type>
+		<nameType value="custom"></nameType>
 		<name value="5416T&gt;G"></name>
 	</alleleName>
 	<referenceCoordinate>
@@ -58,7 +57,7 @@
 		</primaryTranscriptRegionType>
 	</referenceCoordinate>
 	<related>
-		<type value="effect"></type>
+		<relatedType value="effect"></relatedType>
 		<target>
 			<f:reference value="/SimpleAllele/SA312"></f:reference>
 			<f:display value="NP_009225.1:p.Ile1766Ser"></f:display>

@@ -9,8 +9,8 @@
 		<f:value value="37656"></f:value>
 	</identifier>
 	<active value="true"></active>
-	<sequenceClass value="nucleotide"></sequenceClass>
-	<complexityClass value="simple" />
+	<canonicalAlleleType value="nucleotide"></canonicalAlleleType>
+	<complexity value="simple" />
 	<relatedSimpleAllele>
 		<simpleAllele>
 			<f:reference value="/SimpleAllele/SA310"></f:reference>

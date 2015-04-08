@@ -57,7 +57,6 @@
       "display": "NM_001014794.2"
     },
 
-    "coordinateConvention":"zero-based",
     "start": "5432",
     "end": "5433",
     "refAllele": "T",

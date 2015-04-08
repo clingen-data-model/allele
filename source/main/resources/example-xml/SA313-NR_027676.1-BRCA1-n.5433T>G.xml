@@ -11,8 +11,7 @@
 	<canonicalAllele>
 		<f:reference value="/CanonicalAllele/CA402"></f:reference>
 	</canonicalAllele>
-	<sequenceClass value="nucleotide"></sequenceClass>
-	<nucleotideSequenceClass value="transcript"></nucleotideSequenceClass>
+	<simpleAlleleType value="transcript"></simpleAlleleType>
 	<allele value="G"></allele>
 	<primaryNucleotideChangeType>
 		<f:coding>
@@ -26,7 +25,7 @@
 		</f:coding>
 	</primaryNucleotideChangeType>
 	<alleleName>
-		<type value="hgvs-ncrna"></type>
+		<nameType value="hgvs-ncrna"></nameType>
 		<name value="NR_027676.1(BRCA1):n.5433T&gt;G"></name>
 	</alleleName>
 	<referenceCoordinate>
