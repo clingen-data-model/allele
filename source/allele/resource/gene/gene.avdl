@@ -1,0 +1,29 @@
+@namespace("org.clinicalgenome.models")
+protocol Genes {
+
+  /**
+     A region (or regions) that includes all of the sequence elements
+     necessary to encode a functional transcript. A gene may include
+     regulatory regions, transcribed regions and/or other functional
+     sequence regions.
+   */  
+  record Gene {
+    /**
+       The ClinGen IRI for this gene
+     */
+    string id;
+    /**
+       The human-readable symbol for the gene.
+     */
+    string symbol;
+    /**
+       The human-readable name for a gene.
+     */
+    string name;
+    /**
+       An array of references to external gene naming authorities.
+     */
+    array<string> xref;
+  }
+  
+}
