@@ -19,3 +19,11 @@
 
 # Ignore Emacs tempfiles
 *~
+<<<<<<< Updated upstream
+bin
+=======
+/bin/
+>>>>>>> Stashed changes
+.classpath
+.settings
+.project
