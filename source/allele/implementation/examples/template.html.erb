@@ -9,6 +9,7 @@
 </code></pre>
 <p>example: <%= link_to "#{locals['title']}.json", locals['jsonld'] %></p>
 <% end %>
+<h2>XML</h2>
 <h2>JSON</h2>
 <pre><code>
 <%= File.open("source/#{locals['json']}") {|f| escape_html(f.read)} %>
