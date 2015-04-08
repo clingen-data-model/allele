@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReferenceSequence id="RS210"
+	xmlns="http://clingen.org/dm/allele/v1" xmlns:f="http://hl7.org/fhir"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://clingen.org/dm/allele/v1 ../clingen-xsd/referencesequence.xsd ">
+	<identifier>
+		<f:label value="Homo sapiens chromosome 17, GRCh38 Primary Assembly" />
+		<f:system value="http://www.ncbi.nlm.nih.gov/nuccore" />
+		<f:value value="NC_000017.11" />
+	</identifier>
+	<sequenceClass value="nucleotide"></sequenceClass>
+	<nucleotideSequenceClass value="genomic"></nucleotideSequenceClass>
+	<genomicSequenceClass value="chromosome"></genomicSequenceClass>
+	<chromosome value="17"></chromosome>
+	<referenceGenome>
+		<f:coding>
+			<f:system value="http://www.ncbi.nlm.nih.gov/assembly/"></f:system>
+			<f:code value="88331"></f:code>
+		</f:coding>
+		<f:text value="GRCh38"></f:text>
+	</referenceGenome>
+</ReferenceSequence>
