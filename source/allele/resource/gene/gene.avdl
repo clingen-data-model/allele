@@ -1,5 +1,5 @@
 @namespace("org.clinicalgenome.models")
-protocol Genes {
+protocol Gene {
 
   /**
      A region (or regions) that includes all of the sequence elements
@@ -24,6 +24,7 @@ protocol Genes {
        An array of references to external gene naming authorities.
      */
     array<string> xref;
+
   }
   
 }
