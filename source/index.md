@@ -21,8 +21,8 @@ The process by which the Data Model Working Group is approaching this set of goa
    * Use the conceptual model to define a resource model that can be used as the basis for a messaging serialization
    * Create documentation and examples explaining the use of the conceptual and resource models.
 
-The Data Model Working Group has released one such data model, which standardizes the concept of a genetic allele.  
+This site documents the models created by the Data Model Working Group.  Following the links for each model listed below will lead to the documentation for that model.
 
-[Allele Model](allele/)
+[Allele Model](allele/): Models the concepts of allele, reference and sequence.  
 
 
