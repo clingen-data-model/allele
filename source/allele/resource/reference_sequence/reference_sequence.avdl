@@ -1,0 +1,38 @@
+@namespace("org.clinicalgenome.models")
+protocol ReferenceSequence {
+
+  record ReferenceSequence {
+    /**
+       The ClinGen IRI for this ReferenceSequence
+     */
+    string id;
+    /**
+       The classification of this ReferenceSequence
+     */
+    string referenceSequenceType;
+    /**
+       Start coordinate of coding sequence
+     */
+    int cdsStart;
+    /**
+       End coordinate of coding sequence
+     */
+    int cdsEnd;
+    /**
+       The gene to which this coding sequence relates
+     */
+    string gene;
+  }
+
+  record RelatedReferenceSequence {
+    /**
+       The type of relationship to a given ReferenceSequence
+     */
+    string relatedType;
+    /**
+       The related reference sequence
+     */
+    ReferenceSequence target;
+  }
+
+}

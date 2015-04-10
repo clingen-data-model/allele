@@ -1,6 +1,7 @@
 <% wrap_layout :layout do %>
 <%= yield %>
 <h2>Resource Model</h2>
+<%= uml current_page.data.resource %>
 <h2>Definitions</h2>
 <%= attribute_list current_page.data.resource %>
 <h2>Examples</h2>
