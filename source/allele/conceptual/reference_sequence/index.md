@@ -11,7 +11,7 @@ Scope and Usage
 Reference sequences each have a versioned accession number: A short string key that can be used to look up the exact sequence, must be in a public database.  Any change to the sequence necessitates a change to the version. These accession numbers are stored in the identifier attribute of the ReferenceSequence.
 
 ReferenceSequence is abstract: actual instances must be either a [ChromosomeReferenceSequence](chromosome_reference_sequence.html), a [GeneReferenceSequence](gene_reference_sequence.html), a [TranscriptReferenceSequence](transcript_reference_sequence.html), or a
-[AminoAcidReferenceSequence] (amino_acid_reference_sequence.html).
+[AminoAcidReferenceSequence](amino_acid_reference_sequence.html).
 
 
 The main usage of ReferenceSequence is as a base against which variation can be described.
