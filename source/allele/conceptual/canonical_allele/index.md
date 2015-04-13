@@ -48,6 +48,7 @@ Attributes
 ----------
 
 identifier:
-CanonicalAlleleIdentifier can only be used for identifiers granted by a canonicalizing authority.  Historic names, HGVS expressions, and other non-canonical representations of an allele are not appropriate uses of CanonicalAlleleIdentifier.  For identifiers of this type, see AlleleName.
+CanonicalAlleleIdentifier can only be used for identifiers granted by a canonicalizing authority.  Historic names, HGVS expressions, and other non-canonical representations of an allele are not appropriate uses of CanonicalAlleleIdentifier.  For identifiers of this type, see `AlleleName`.
 
 active:
+Flag indicating whether the `CanonicalAllele` is the currently-canonical `CanonicalAllele`. If not, one or more subsequent `CanonicalAllele`s will be in the `replacement` relation.
