@@ -36,19 +36,6 @@ Physical models typically simplify the conceptual model to allow for more practi
 While multiple physical models are definable, we specify a particular document resource model, which is meant to be the particular model used in communication within the ClinGen project.  Implementers will therefore be most specifically interested in the resource model, but we advise that Implementers pay close attention to the conceptual model that underlies it.
 
 
-Relation to other Models
-------------------------
-
-The allele model draws as much as possible from the best practices of related data models. Two external data standards are used in particular:
-
-### FHIR
-
-[Fast Healthcare Interoperability Resources](http://wiki.hl7.org/index.php?title=FHIR) is an HL7 resource model representing clinical concepts.  The resource component of the allele model follows the general approach of FHIR resources, and incorporates several FHIR entities such as Identifier.
-
-### W3C Provenance
-
-TBD if we add provenance to canonical alleles
-
 Exclusions and Limitations
 --------------------------
 
@@ -63,4 +50,15 @@ The Allele Model v0.1(beta) is dependent on the existence of one or more canonic
 However, the allele model does not specify the algorithm used to perform this canonicalization.
 
 The resource model given is one possible physical implementation derived from the conceptual model.  While other models, such as a relational model may also be derived, they are not provided within the allele model v0.1(beta).
+
+
+Discussion Items
+----------------
+
+In the course of creating the Allele Model, the Data Model Working Group has made numerous choices, some of which are described in the following links:
+
++ [FHIR Integration](fhir.html)
++ [Coordinate Numbering](coordinates.html)
++ [Canonicalization](canonicalization.html)
+
 
