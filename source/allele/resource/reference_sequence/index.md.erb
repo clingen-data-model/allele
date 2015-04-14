@@ -12,19 +12,22 @@ schema: /main/resources/clingen-xsd/referencesequence.xsd
 Scope and Usage
 ---------------
 
-All alleles are described relative to a ReferenceSequence: the position of the allele is given as an offset relative to the beginning of a ReferenceSequence and the sequence described by an allele is given relative to the sequence at that position of the ReferenceSequence.
+All alleles are described relative to a ReferenceSequence by way of the SimpleAllele.ReferenceCoordinate [see SimpleAllele](../simple_allele/index.html). Both the SimpleAllele position (or coordinates) and sequence at that postion are relative to the ReferenceSequence.
+
 
 Context
 -------
 
-The ReferenceSequence resource is described by the following attributes
+The ReferenceSequence resource is described by the following aspects:
 
-* identifier (mandatory)
-* sequenceClass (mandatory)
-* nucleotideSequenceClass (optional)
-* genomicSequenceClass (optional)
-* gene (optional)
-* referenceGenome (optional)
+* identifier (mandatory) - all users of reference sequences SHALL be sure of the identity of the reference sequence.
+* referenceSequenceType (mandatory) - describes the kind of reference sequence.
+* chromosome - the code representing one of the chromosomes, should be provided when the sequence represents a 'chromosome' (see [value set](/allele/implementation/value_set_list/reference_sequence_chromosome.html)).
+* cdsStart - the start position of the coding sequence, when the reference sequence is a coding transcript. NOTE: Unlike reference coordinates, this is a 1-based index representing the position of the nucleotide.
+* cdsEnd - the end position of the coding sequence, when the reference sequence is a coding transcript. NOTE: Unlike reference coordinates, this is a 1-based index representing the position of the nucleotide.
+* gene - identifies the gene related to a 'gene' or 'transcript' reference sequence.
+* referenceGenome - describes the genome build in which the chromosomal reference sequence is referenced.
+* related reference sequences - other reference sequences that provide context about the primary reference sequence. See notes below for more info.
 
 Resource Model
 ----------------
@@ -35,10 +38,12 @@ Conceptual Model: [ReferenceSequence](/allele/conceptual/reference_sequence/inde
 
 This resource is referenced by [SimpleAllele](/allele/resource/simple_allele) & [Gene](/allele/resource/gene)
 
+
 Notes
 -----
 
-The preferred ReferenceSequence to bind an allele to will be the NC_* reference assembly, as defined by RefSeq.
+* This version of the ReferenceSequence resource only considers the related reference sequence associations between amino acid and transcript reference sequences. This has constrained the scope of codes in the [value set](/allele/implementation/value_set_list/reference_sequence_relationship_type.html) for the ReferenceSequence.Related.relatedType attribute. 
+
 
 Search Parameters
 -----------------
@@ -46,90 +51,158 @@ Search Parameters
 {:.table}
 | name | type | description | related attribute |
 |------|------|-------------|-------|
-| _id  | token | the integer identifer for the ReferenceSequence|
-| chr | token | the chromosome code | ReferenceSequence.chr |
-| referenceGenome-id | token | | |
-| referenceGenome-name | string | | |
-| gene | resource | | |
+| identifier  | token | the accession number for a particular ReferenceSequence| ReferenceSequence.identifier |
+| chromosome  | token | the chromosome code | ReferenceSequence.chromosome |
+| gene-identifier | token | the identifier for a gene with a ReferenceSequence association | ReferenceSequence.gene.identifier|
+| gene-symbol | token | the symbol for a gene with a ReferenceSequence association | ReferenceSequence.gene.symbol|
 
 
-Formal Definitions
+Details & Bindings
 ------------------
 
 #### ReferenceSequence
 
 {:.dl-horizontal}
-definition
+Definition
 : Consensus sequence of a portion of the genome against which alleles are aligned and described.
 
-control
+Control
 : 1..1
 
-requirements
-: For every allele there must be a corresponding reference sequence.
+Requirements
+: For every SimpleAllele.ReferenceCoordinate there must be a corresponding reference sequence.
 
 #### ReferenceSequence.identifier
 
 {:.dl-horizontal}
-definition
+Definition
 : The versioned accession that can be used to uniquely identify the sequence in a public database, as well as the information about which entity assigned the accession, and the time period over which the identifier is considered valid.
 
-multiplicity
+Control
 : 1..1
 
-requirements
+Type
+: Identifier
+
+Requirements
 : For ReferenceSequence, an identifier is valid unless the accession is withdrawn. If a new version of a sequence is created, it will be given a different versioned accession, and therefore a different identifier. In this case, the previous identifier is still valid: it can still be used to retrieve the given sequence, even if that sequence is no longer the most recent sequence associated with a given entity.
 
-terminology binding
-: One of a set of valid reference sequence acessions from a recognized authority
-
-#### ReferenceSequence.kind
+#### ReferenceSequence.referenceSequenceType
 
 {:.dl-horizontal}
-definition
+Definition
 : The type of reference sequence.
 
-multiplicity
+Control
 : 1..1
 
-terminology binding
-: Codes identifying kinds of reference sequences
+Binding
+: ReferenceSequenceType: [Example: See reference-sequence-type-codes](/allele/implementation/value_set_list/reference_sequence_type.html)  (Codes identifying kinds of reference sequences)
 
-#### ReferenceSequence.chr
+Type
+: code
+
+#### ReferenceSequence.chromosome
 
 {:.dl-horizontal}
-definition
+Definition
 : chromosome to which ReferenceSequence is bound
 
-multiplicity
+Control
 : 0..1
 
-terminology binding
+Binding
 : Codes identifying human chromosomes
 
-#### ReferenceSequence.genomicSequenceType
+Type
+: code
+
+#### ReferenceSequence.cdsStart
 
 {:.dl-horizontal}
-terminology binding
-: Codes identifying the types of genomic sequences
+Definition
+: offset of the start of sequence from the start of coding region
 
-#### ReferenceSequence.codingRegionOffset
+Control
+: 0..1
+
+Type
+: integer
+
+#### ReferenceSequence.cdsEnd
 
 {:.dl-horizontal}
-definition
-: offset of start of sequence from start of coding region
+Definition
+: offset of the start of sequence from the end of coding region
 
-multiplicity
-: 1..1
+Control
+: 0..1
+
+Type
+: integer
 
 #### ReferenceSequence.gene
 
 {:.dl-horizontal}
-definition
+Definition
 : gene, if sequence is reference for specific gene
 
-multiplicity
+Control
 : 0..1
 
-terminology binding
+Binding
 : Codes describing human genes
+
+Type
+: Resource(Gene)
+
+#### ReferenceSequence.referenceGenome
+
+{:.dl-horizontal}
+Definition
+: genome build assembly and version identified by a CodeableConcept
+
+Control
+: 0..1
+
+Binding
+: Codes describing public representations of the human genome
+
+Type
+: CodeableConcept
+
+#### ReferenceSequence.related
+
+{:.dl-horizontal}
+Definition
+: a related reference sequence (limited to a transcript for an amino acid and vice versa)
+
+Control
+: 0..1
+
+#### ReferernceSequence.related.relatedType
+
+{:.dl-horizontal}
+Definition
+: the relationship type between an amino acid and trascript or vice versa.
+
+Control
+: 0..1
+
+Binding
+: Codes describing the relationships between ReferenceSequences
+
+Type
+: Code
+
+#### ReferenceSequence.related.target
+
+{:.dl-horizontal}
+Definition
+: the reference sequence that is realted to the main ReferenceSequence as defined by the relatedType.
+
+Control
+: 0..1
+
+Type
+: Resource(ReferenceSequence)
