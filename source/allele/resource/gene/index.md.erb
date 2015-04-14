@@ -1,9 +1,8 @@
 ---
 title: Gene
 layout: resource
-alias: 
-description: A region (or regions) that includes all of the sequence elements necessary to encode a functional transcript. A gene may include regulatory regions, transcribed regions and/or other functional sequence regions.
-sequence_ontology: SO:0000704
+alias: A genomic region related to a collection of transcript ReferenceSequences, given a name by one or more naming agencies.
+description: sequence_ontology: SO:0000704
 related_page: /allele/conceptual/gene
 schema: "/main/resources/clingen-xsd/gene.xsd"
 
@@ -13,12 +12,25 @@ schema: "/main/resources/clingen-xsd/gene.xsd"
 Scope and Usage
 ---------------
 
+The sequence ontology defines a "gene as a region (or regions) that includes all of the sequence elements necessary to encode a functional transcript. A gene may include regulatory regions, transcribed regions and/or other functional sequence regions."
+
+The current definition of gene is similar, but explicity allows for non-functional genes.  Furthermore, while the concept of a gene may include elements such as regulatory regions, version 0.1 of the allele model only relates genes to reference sequences for transcripts and genes (such as LRG), and will therefore not contain data on regulatory elements.
+
+Included under this definition of gene are:
+
++ Protein coding genes
++ Pseudogenes
++ Non-Coding RNA sequences
++ Computationally Predicted Genes
+
+There is no guarantee that a gene is ever transcribed, such as some computationally predicted genes or pseudogenes.   Furthermore, many genes are untranslated.
+
 A gene is identified by an external authority, typically HGNC, although the data model is configured to recognize identifiers from multiple authorities.
 
 Context
 -------
 
-The Gene resource is described by the following attributes
+The Gene resource is described by the following attributes:
 
 * identifer: the set of identifiers from external authorities that identify the Gene.
 * symbol: the string symbol identifying the gene.
