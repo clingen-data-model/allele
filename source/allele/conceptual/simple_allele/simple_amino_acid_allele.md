@@ -19,8 +19,8 @@ When describing observations a concise and interoperable method is required to r
 {:.table}
 | Attribute Name | Attribute Type | Cardinality |
 |----------------|----------------|-------------|
-| [primaryAminoAcidChangeType](/allele/value_set_list/primary_amino_acid_change_type.html) | Code | 0..1 |
-| [ancillaryAminoAcidChangeType](/allele/value_set_list/ancillary_amino_acid_change_type.html) | Code | 0..* |
+| [primaryAminoAcidChangeType](/allele/implementation/value_set_list/primary_amino_acid_change_type.html) | Code | 0..1 |
+| [ancillaryAminoAcidChangeType](/allele/implementation/value_set_list/ancillary_amino_acid_change_type.html) | Code | 0..* |
 
 
 Exclusions and Limitations
