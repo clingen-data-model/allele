@@ -26,8 +26,8 @@ ___NEEDS TO BE REWRITTEN BASED ON 1-Based, 0-Based numbering discussion (And mov
 
 The Data Model Working Group considered three methods for the numbering of coordinates:
 
-  1. The Alignment Method: Based on the numbering used in VCFs.
-  2. The Variant Method: Based on the numbering used in HGVS expressions.
+  1. The Alignment Method: Based on the numbering used in [VCF](http://samtools.github.io/hts-specs/VCFv4.2.pdf).
+  2. The Variant Method: Based on the numbering used in [HGVS expressions](http://www.hgvs.org/mutnomen/disc.html).
   3. The Interval Method: Based on numbering intervals rather than bases.
 
 In the Alignment Method, the reference allele is defined as the subsequence that begins at the base numbered "start" and goes to the base numbered "end", both inclusive.  A single base will have equal start and end.   As in a VCF, insert or delete alleles will usually share the first base of the reference alleles, which is not actually part of the variable site, but is used to help locate the variable site.
