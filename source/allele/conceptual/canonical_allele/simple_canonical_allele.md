@@ -7,7 +7,7 @@ description: A stable identifier for a SimpleAllele, grouping together the diffe
 Scope and Usage
 ---------------
 
-See also: [SimpleAllele](../simple_allele/index.html), [CanonicalAllele](index.html)
+
 
 SimpleCanonicalAllele is a CanonicalAllele that is derived from the aggregation of multiple SimpleAllele instances, which each record a particular choice of a variant sequence at a particular contiguous region in a particular ReferenceSequence.
 
@@ -21,3 +21,10 @@ Exclusions and Limitations
 --------------------------
 
 Given, for example, two nearby SNPs, one technically possible representation would be to write a SimpleAllele that includes the entire reference stretch between them.   While this is not explicitly disallowed by the model, suggested that a more useful approach is to treat this situation with two SimpleAlleles (corresponding to the two SNPs) aggregated into a ComplexNucleotideCanonicalAllele
+
+See Also
+--------
+
+[SimpleAllele](../simple_allele/index.html), [CanonicalAllele](index.html)
+
+Related Resources: [CanonicalAllele](/allele/resource/canonical_allele/index.html)

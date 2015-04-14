@@ -7,16 +7,22 @@ description: A stable identifier for a simple  allele, grouping together the dif
 Scope and Usage
 ---------------
 
-See also: [SimpleCanonicalAllele](simple_canonical_allele.html), [SimpleAminoAcidAllele](simple_amino_acid_allele.html)
 
-SimpleAminoAcidCanonicalAlleles aggregate different SimpleAminoAcidAlleles that are different representations of the same amino acid variation.   SimpleAminoAcidAlleles may be aggregated when they are:  
-..* in different versions of the same AminoAcidReferenceSequence.  
-..* in different AminoAcidReferenceSequences from the same public database, as long as their associated TranscriptReferenceSequence maps to the same Gene
-..* in different AminoAcidReferenceSequences from different public databases, as long as their associated TranscriptReferenceSequence maps to the same gene.
+SimpleAminoAcidCanonicalAlleles aggregate different SimpleAminoAcidAlleles that are different representations of the same amino acid variation.  SimpleAminoAcidAlleles MAY be aggregated (this is
+left as an implementation detail to a canonicalizer) when they are:  
 
-(Note CB: Is this right?  We could make a more restricted aggregation by limiting to the first case.  It would not necessarily be terrible: the protein canonical alleles would still all be linked eventually via the associated nucleotide canonical allele.  But what is written above more closely paralleles what we do on the nucleotide side.  Or is it canonicalizers choice?)
+* in different versions of the same AminoAcidReferenceSequence.  
+* in different AminoAcidReferenceSequences from the same public database, as long as their associated TranscriptReferenceSequence maps to the same Gene
+* in different AminoAcidReferenceSequences from different public databases, as long as their associated TranscriptReferenceSequence maps to the same gene.
 
 Exclusions and Limitations
 --------------------------
 
 The amino acid aggregation described here depends upon having alignments of a gene''s associated amino acids, but this alignment is not currently represented in the model.
+
+See Also
+--------
+
+[SimpleCanonicalAllele](simple_canonical_allele.html), [SimpleAminoAcidAllele](simple_amino_acid_allele.html)
+
+Related Resources: [CanonicalAllele](/allele/resource/canonical_allele/index.html)

@@ -13,7 +13,7 @@ Scope and Usage
 
 ComplexCanonicalAllele is an abstract class; any instance of ComplexCanonicalAllele must be either a NucleotideComplexCanonicalAllele or a ComplexAminoAcidCanonicalAllele.
 
-A ComplexCanonicalAllele is an aggregation of two or more SimpleCanonicalAlleles, and provides a way to attach assertions or observations to the that collection.  The assertion that a particular person has a ComplexCanonicalAllele is equivalent to the assertion that they contain all of the SimpleCanonicalAlleles in cis (i.e. on the same copy of the chromosome).  
+A ComplexCanonicalAllele is an aggregation of two or more SimpleCanonicalAlleles, and provides a way to attach assertions or observations to the that collection.  The assertion that a particular person has a ComplexCanonicalAllele is equivalent to the assertion that they contain all of the SimpleCanonicalAlleles in *cis* (i.e. on the same copy of the chromosome).  
 
 ComplexCanonicalAllele is a suitable class for describing pharmacogenomic star alleles or other haplotypes.
 
@@ -22,8 +22,13 @@ Because the ComplexCanonicalAllele is defined as an aggregation of SimpleCanonic
 Exclusions and Limitations
 --------------------------
 
-ComplexCanonicalAllele is exclusivly used for alleles in cis.  It can not be used to represent, e.g. compound heterozygotes.
+ComplexCanonicalAllele is exclusivly used for alleles in *cis*.  It can not be used to represent, e.g. compound heterozygotes.
 
 Concrete aggregation must occur at either the nucleotide or protein level; there is no way to build a complex allele that involves one CanonicalNucleotideSimpleAllele and one SimpleAminoAcidCanonicalAllele.
 
 There is exactly one level of aggregation: SimpleAlleles are aggregated to ComplexAlleles, but ComplexAlleles cannot be further aggregated to new ComplexAlleles.  In this case, a new ComplexAllele must be created based on the union of all of the involved SimpleAlleles.
+
+See Also
+--------
+
+Related Resources: [CanonicalAllele](/allele/resource/canonical_allele/index.html)
