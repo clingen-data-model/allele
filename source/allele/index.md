@@ -60,5 +60,5 @@ In the course of creating the Allele Model, the Data Model Working Group has mad
 + [FHIR Integration](fhir.html)
 + [Coordinate Numbering](coordinates.html)
 + [Canonicalization](canonicalization.html)
-+ [Allele Naming] (allelenames.html)
++ [Allele Naming](allelenames.html)
 
