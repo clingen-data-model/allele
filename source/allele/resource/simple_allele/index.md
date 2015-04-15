@@ -87,11 +87,23 @@ Formal Definitions
 definition
 : The set of Identifiers used to name this SimpleAllele. May be as simple as a set of one single Identifier distinguishing the SimpleAllele in the implementing system, or may expansively include the name of all SimpleAlleles in all implementing systems.
 
+type
+: Identifier
+
+multiplicity
+: 0..*
+
 #### canonicalAllele
 
 {:.dl-horizontal}
 definition
-: The CanonicalAllele resource to which this SimpleAllele maps.
+: The CanonicalAllele resource to which this SimpleAllele maps. a
+
+type
+: CanonicalAllele
+
+multiplicity
+: 0..1
 
 #### simpleAlleleType
 
@@ -99,11 +111,23 @@ definition
 definition
 : One of the set of allowable [simple-allele-types](/allele/implementation/value_set_list/simple_allele_type.html) as defined in the data model.
 
+type
+: Code
+
+multiplicity
+: 0..1
+
 #### allele
 
 {:dl-horizontal}
 definition
-: The HGVS expression representing this SimpleAllele
+: The string of nucleotides in this allele at the location described by ReferenceCoordinate
+
+type
+: string
+
+multiplcity
+: 0..1
 
 #### primaryNucleotideChangeType
 
@@ -111,17 +135,35 @@ definition
 defintion
 : One of the set of allowable [primary-nucleotide-change-types](/allele/implementation/value_set_list/primary_nucleotide_change_type.html). Required (and allowed) only if the SimpleAllele describes an allele on a nucleotide reference sequence.
 
+type
+: Code
+
+multiplicity
+: 0..1
+
 #### ancillaryNucleotideChangeType
 
 {:dl-horizontal}
 definition
 : One of the set of allowable [ancillary-nucleotide-change-types](/allele/implementation/value_set_list/ancillary_nucleotide_change_type.html). Allowed only if the SimpleAllele describes an allele on a nucleotide reference sequence.
 
+type
+: Code
+
+multiplicity
+: 0..1
+
 #### primaryAminoAcidChangeType
 
 {:dl-horizontal}
 definition
 : One of the set of allowable [primary-amino-acid-change-types](/allele/implementation/value_set_list/primary_amino_acid_change_type.html). Required (and allowed) only if the SimpleAllele describes an allele on an amino acid reference sequence.
+
+type
+: Code
+
+multiplicity
+: 0..1
 
 
 #### ancillaryAminoAcidChangeType
@@ -130,7 +172,20 @@ definition
 defintion
 : One of the set of allowable [ancillary-amino-acid-change-types](/allele/implementation/value_set_list/ancillary_amino_acid_change_type.html). Allowed only if the SimpleAllele describes an allele on an amino acid reference sequence.
 
+type
+: Code
+
+multiplicity
+: 0..1
+
 ### ReferenceCoordinate
+
+{:dl-horizontal}
+definition
+: The genetic loci of the variant.
+
+multiplicity
+: 1
 
 #### identifier
 
@@ -138,11 +193,23 @@ defintion
 definition
 : The set of Identifiers used to name this ReferenceCoordinate. May be as simple as a set of one single Identifier distinguishing the ReferenceCoordinate in the implementing system, or may expansively include the name of all ReferenceCoordinates in all implementing systems.
 
+type
+: Identifier
+
+multiplicity
+: 1..*
+
 #### referenceSequence
 
 {:dl-horizontal}
 definition
 : The [ReferenceSequence](/allele/resource/reference_sequence) resource on which the ReferenceCoordinate (and, by extention, the SimpleAllele is mapped.
+
+type
+: ReferenceSequence
+
+multiplicity
+: 1
 
 #### start
 
@@ -150,11 +217,23 @@ definition
 definition
 : The starting position of the reference coordinate. Note that the data model defines a 0-based coordinate system as described above.
 
+type
+: integer
+
+multiplicity
+: 1
+
 #### end
 
 {:dl-horizontal}
 definition
 : The end position of the reference coordinate. Note that the data model defines a 0-based coordinate system as described above.
+
+type
+: integer
+
+multiplicity
+: 1
 
 #### refAllele
 
@@ -162,11 +241,23 @@ definition
 definition
 : The string of nucleotides or amino acids at this reference coordinate on the related reference genome.
 
+type
+: string
+
+multiplicity
+: 0..1
+
 #### primaryTranscriptRegionType
 
 {:dl-horizontal}
 definition
 : One of the set of allowable [primary-transcript-region-types](/allele/implementation/value_set_list/primary_transcript_region_type.html)
+
+type
+: Code
+
+multiplicity
+: 0..1
 
 #### ancillaryTranscriptRegionType
 
@@ -174,11 +265,23 @@ definition
 definition
 : One of the set of allowable [ancillary-transcript-region-types](/allele/implementation/value_set_list/ancillary_transcript_region_type.html)
 
+type
+: Code
+
+multiplicity
+: 0..1
+
 #### intronOffsetStart
 
 {:dl-horizontal}
 definition
 : The start of the ReferenceCoordinate relative to the transcript coordinate. Required when the coordinate is described as an offset relative to an exonic transcript (should only apply to ReferenceCoordinates of type interior\_intron described relative to a ReferenceSequence of type transcript\_reference\_sequence).
+
+type
+: integer
+
+multiplicity
+: 0..1
 
 #### intronOffsetEnd
 
@@ -186,13 +289,32 @@ definition
 definition
 : The end of the ReferenceCoordinate relative to the transcript coordinate. Requirements are the same as for intronOffsetStart.
 
+type
+: integer
+
+multiplicity
+: 0..1
+
 #### intronOffsetDirection
 
 {:dl-horizontal}
 definition
 : The direction of the ReferenceCoordinate relative to the transcript coordinate. Requirements are the same as for intronOffsetStart.
 
+type
+: Code
+
+multiplicity
+: 0..1
+
 ### AlleleName
+
+{:dl-horizontal}
+defintion
+: The name given to the allele by a naming organization (i.e. an HGVS expression)
+
+multiplicity
+: 0..*
 
 #### nameType
 
@@ -200,11 +322,23 @@ definition
 definition
 : One of the set of allowable [simple-allele-name-types](/allele/implementation/value_set_list/simple_allele_name_type.html)
 
+type
+: Code
+
+multiplicity
+: 1
+
 #### legacy
 
 {:dl-horizontal}
 definition
-: Flag set if the name is deprecated or no longer used in the relevant allele naming system.
+: Flag set if the name is deprecated or no longer used in the relevant allele naming system. Default is false.
+
+type
+: boolean
+
+multiplicity
+: 0..1
 
 #### preferred
 
@@ -212,7 +346,20 @@ definition
 definition
 : Flag set if the name is the preferred name for this allele in the implementing system.
 
+type
+:boolean
+
+multiplicity
+: 0..1
+
 ### Related
+
+{:dl-hoizontal}
+definition
+: Other, related simple alleles
+
+multiplicity
+: 0..*
 
 #### relatedType
 
@@ -220,10 +367,22 @@ definition
 definition
 : One of the allowable set of relationship types in [simple-allele-relationship-type](/allele/implementation/value_set_list/simple_allele_relationship_type.html)
 
+type
+: Code
+
+multiplicity
+: 1
+
 #### target
 
 {:dl-horizontal}
 definition
 : The SimpleAllele described in the relationship.
+
+type
+: SimpleAllele
+
+multiplicity
+: 1
 
 
