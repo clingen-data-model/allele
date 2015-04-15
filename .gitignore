@@ -19,11 +19,10 @@
 
 # Ignore Emacs tempfiles
 *~
-<<<<<<< Updated upstream
-bin
-=======
+
 /bin/
->>>>>>> Stashed changes
+
+# eclipse-related files
 .classpath
 .settings
 .project
