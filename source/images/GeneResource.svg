@@ -15,7 +15,7 @@
       ><path d="M0 0 L200 0 L200 28 L0 28 L0 0 Z"
       /></clipPath
     ></defs
-    ><g fill="white" fill-opacity="1" stroke-opacity="1" stroke="white"
+    ><g fill="none" fill-opacity="1" stroke-opacity="0" stroke="none"
     ><rect x="0" width="234" height="142" y="0" stroke="none"
     /></g
     ><g font-size="11" transform="translate(17,17)" fill-opacity="1" fill="rgb(122,207,245)" text-rendering="geometricPrecision" font-family="sans-serif" stroke="rgb(122,207,245)" font-weight="bold" stroke-opacity="1"
