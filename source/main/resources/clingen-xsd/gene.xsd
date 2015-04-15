@@ -16,9 +16,9 @@
 			<xs:extension base="f:Resource">
 				<xs:sequence>
 					<xs:element name="identifier" type="f:Identifier"
-						maxOccurs="unbounded" />
-					<xs:element name="symbol" type="f:string" minOccurs="0" />
-					<xs:element name="name" type="f:string" minOccurs="0" />
+						minOccurs="1" maxOccurs="unbounded" />
+					<xs:element name="symbol" type="f:string" minOccurs="1" />
+					<xs:element name="name" type="f:string" minOccurs="1" />
 					<xs:element name="aliasSymbol" type="f:string" 
 						minOccurs="0" maxOccurs="unbounded" />
 				</xs:sequence>

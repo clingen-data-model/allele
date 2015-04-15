@@ -9,33 +9,48 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "ClinGen Data Model" %></title>
     
-    <%= stylesheet_link_tag "bootstrap", "bootstrap-theme" %>
+    <%= stylesheet_link_tag "bootstrap", "bootstrap-theme", "clingen" %>
   </head>
   
   <body class="<%= page_classes %>">
     <div class="container">
       <div class="row">
-	<div class="col-md-3">
+	<div class="col-md-3 nav-list">
 	  <% data.models.names.each do |model| %>
-	  <h4><%= link_to "#{model}", "/#{model}" %></h4>
-	  <h5><%= link_to "Resource", "/#{model}/resource" %></h5>
-	  <ul class="list-unstyled">
-	    <li><%= link_with_local_index "Gene", "/#{model}/resource/gene" %></li>
-	    <li><%= link_with_local_index "ReferenceSequence", "/#{model}/resource/reference_sequence" %></li>
-	    <li><%= link_with_local_index "SimpleAllele", "/#{model}/resource/simple_allele" %></li>
-	    <li><%= link_with_local_index "CanonicalAllele", "/#{model}/resource/canonical_allele" %></li>
-	    <li><%= link_with_local_index "Provenance", "/#{model}/resource/provenance" %></li>
+	  <h4><%= link_to "ClinGen Data Model", "/" %></h4>
+	  <ul class="">
+	    <li><%= link_to "Allele Model v0.1", "/#{model}" %></li>
+	    <li>--- Discussion ---</li>
+	    <ul class="">
+		    <li><%= link_to "FHIR Integration", "/#{model}/fhir.html" %></li>
+		    <li><%= link_to "Coordinate Numbering", "/#{model}/coordinate_numbering.html" %></li>
+		    <li><%= link_to "Canonicalization", "/#{model}/canonicalization.html" %></li>
+		    <li><%= link_to "Allele Naming", "/#{model}/allele_naming.html" %></li>
+		</ul>
+		<li>--- Related Links ---</li>
+	    <ul class="">
+		    <li><%= link_to "GitHub Project", "http://github.com/tnavatar/clingen-data-model" %></li>
+		    <li><%= link_to "ClinGen", "http://clinicalgenome.org/" %></li>
+		</ul>
 	  </ul>
-	  <h5><%= link_to "Conceptual", "/#{model}/conceptual" %></h5>
-	  <ul class="list-unstyled">
+	  <h4><%= link_to "Conceptual Model", "/#{model}/conceptual" %></h4>
+	  <ul class="">
 	    <li><%= link_with_local_index "Gene", "/#{model}/conceptual/gene" %></li>
 	    <li><%= link_with_local_index "ReferenceSequence", "/#{model}/conceptual/reference_sequence" %></li>
 	    <li><%= link_with_local_index "SimpleAllele", "/#{model}/conceptual/simple_allele" %></li>
 	    <li><%= link_with_local_index "CanonicalAllele", "/#{model}/conceptual/canonical_allele" %></li>
 	    <li><%= link_with_local_index "Provenance", "/#{model}/conceptual/provenance" %></li>
 	  </ul>
-	  <h5><%= link_to "Implementation", "/#{model}/implementation" %></h5>
-	  <ul class="list-unstyled">
+	  <h4><%= link_to "Resources", "/#{model}/resource" %></h4>
+	  <ul class="">
+	    <li><%= link_with_local_index "Gene", "/#{model}/resource/gene" %></li>
+	    <li><%= link_with_local_index "ReferenceSequence", "/#{model}/resource/reference_sequence" %></li>
+	    <li><%= link_with_local_index "SimpleAllele", "/#{model}/resource/simple_allele" %></li>
+	    <li><%= link_with_local_index "CanonicalAllele", "/#{model}/resource/canonical_allele" %></li>
+	    <li><%= link_with_local_index "Provenance", "/#{model}/resource/provenance" %></li>
+	  </ul>
+	  <h4><%= link_to "Implementation", "/#{model}/implementation" %></h4>
+	  <ul class="">
 	    <li><%= link_with_local_index "FHIR Specification", "/#{model}/implementation/fhir_specification" %></li>
 	    <li><%= link_with_local_index "Value Set List", "/#{model}/implementation/value_set_list" %></li>
 	    <li><%= link_with_local_index "Integrated Examples", "/#{model}/implementation/integrated_examples" %></li>
@@ -44,16 +59,20 @@
 	  </ul>
 	  <% end %>
 	</div>
-	<div class="col-md-9">
+	<div class="col-md-9 <%= current_page.data.layout %>">
 	  <h1>
 	    <%= current_page.data.title %>
 	    <small>
 	      <%= link_to current_page.data.sequence_ontology, "http://www.sequenceontology.org/browser/current_svn/term/#{current_page.data.sequence_ontology}"  %>
 	    </small>
 	  </h1>
-          <% if current_page.data.related_page %>
+          <% if current_page.data.related_page_url %>
           <p>
-            related: <%= link_to current_page.data.title, current_page.data.related_page %>
+            <% if current_page.data.layout == 'resource' %>
+            Related Conceptual Entities: 
+            <% else %>Related Resources: 
+            <% end %>
+            <%= link_to current_page.data.related_page_title, current_page.data.related_page_url  %>
           </p>
           <% end %>
 	  <% if current_page.data.description %>
