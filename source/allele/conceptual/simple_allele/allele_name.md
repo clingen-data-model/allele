@@ -1,5 +1,6 @@
 ---
 title: AlleleName
+layout: conceptual
 description: A human readable, non-canonical name for a CanonicalAllele or SimpleAllele.
 
 ---

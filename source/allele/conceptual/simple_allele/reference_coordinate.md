@@ -1,5 +1,6 @@
 ---
 title: ReferenceCoordinate
+layout: conceptual
 description: ReferenceCoordinate defines a location with respect to a <a href="../reference_sequence/index.html">ReferenceSequence</a>.  
 
 ---

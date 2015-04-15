@@ -3,7 +3,8 @@ title: SimpleAllele
 layout: resource
 alias: simple allele, allele, variant, sequence variant, snv, amino acid variant, dna change, aa change
 description: A representation of one of the multiple variant sequences at a contiguous region in a particular <a href="/allele/resource/reference_sequence/index.html">ReferenceSequence</a>.
-related_page: /allele/conceptual/simple_allele
+related_page_title: SimpleAllele
+related_page_url: /allele/conceptual/simple_allele
 schema: /main/resources/clingen-xsd/simpleallele.xsd
 
 ---
@@ -76,153 +77,179 @@ Search Parameters
 | _id  | token | the integer identifier of the simple allele | |
 
 
-Formal Definitions
+Definitions & Bindings
 ------------------
 
+{:.h4-definition}
 ### SimpleAllele
 
+{:.h4-definition}
 #### identifier
 
-{:.dl-horizontal}
-definition
+{:.dl-horizontal .dl-definition}
+Definition
 : The set of Identifiers used to name this SimpleAllele. May be as simple as a set of one single Identifier distinguishing the SimpleAllele in the implementing system, or may expansively include the name of all SimpleAlleles in all implementing systems.
 
+{:.h4-definition}
 #### canonicalAllele
 
-{:.dl-horizontal}
-definition
+{:.dl-horizontal .dl-definition}
+Definition
 : The CanonicalAllele resource to which this SimpleAllele maps.
 
+{:.h4-definition}
 #### simpleAlleleType
 
-{:.dl-horizontal}
-definition
+{:.dl-horizontal .dl-definition}
+Definition
 : One of the set of allowable [simple-allele-types](/allele/implementation/value_set_list/simple_allele_type.html) as defined in the data model.
 
+{:.h4-definition}
 #### allele
 
-{:dl-horizontal}
-definition
+{.dl-horizontal .dl-definition}
+Definition
 : The HGVS expression representing this SimpleAllele
 
+{:.h4-definition}
 #### primaryNucleotideChangeType
 
-{:dl-horizontal}
-defintion
+{.dl-horizontal .dl-definition}
+Definition
 : One of the set of allowable [primary-nucleotide-change-types](/allele/implementation/value_set_list/primary_nucleotide_change_type.html). Required (and allowed) only if the SimpleAllele describes an allele on a nucleotide reference sequence.
 
+{:.h4-definition}
 #### ancillaryNucleotideChangeType
 
-{:dl-horizontal}
-definition
+{.dl-horizontal .dl-definition}
+Definition
 : One of the set of allowable [ancillary-nucleotide-change-types](/allele/implementation/value_set_list/ancillary_nucleotide_change_type.html). Allowed only if the SimpleAllele describes an allele on a nucleotide reference sequence.
 
+{:.h4-definition}
 #### primaryAminoAcidChangeType
 
-{:dl-horizontal}
-definition
+{.dl-horizontal .dl-definition}
+Definition
 : One of the set of allowable [primary-amino-acid-change-types](/allele/implementation/value_set_list/primary_amino_acid_change_type.html). Required (and allowed) only if the SimpleAllele describes an allele on an amino acid reference sequence.
 
-
+{:.h4-definition}
 #### ancillaryAminoAcidChangeType
 
-(:dl-horizontal}
+(.dl-horizontal .dl-definition}
 defintion
 : One of the set of allowable [ancillary-amino-acid-change-types](/allele/implementation/value_set_list/ancillary_amino_acid_change_type.html). Allowed only if the SimpleAllele describes an allele on an amino acid reference sequence.
 
+{:.h4-definition}
 ### ReferenceCoordinate
 
+{:.h4-definition}
 #### identifier
 
-{:dl-horizontal}
-definition
+{.dl-horizontal .dl-definition}
+Definition
 : The set of Identifiers used to name this ReferenceCoordinate. May be as simple as a set of one single Identifier distinguishing the ReferenceCoordinate in the implementing system, or may expansively include the name of all ReferenceCoordinates in all implementing systems.
 
+{:.h4-definition}
 #### referenceSequence
 
-{:dl-horizontal}
-definition
+{.dl-horizontal .dl-definition}
+Definition
 : The [ReferenceSequence](/allele/resource/reference_sequence) resource on which the ReferenceCoordinate (and, by extention, the SimpleAllele is mapped.
 
+{:.h4-definition}
 #### start
 
-{:dl-horizontal}
-definition
+{.dl-horizontal .dl-definition}
+Definition
 : The starting position of the reference coordinate. Note that the data model defines a 0-based coordinate system as described above.
 
+{:.h4-definition}
 #### end
 
-{:dl-horizontal}
+{.dl-horizontal .dl-definition}
 definition
 : The end position of the reference coordinate. Note that the data model defines a 0-based coordinate system as described above.
 
+{:.h4-definition}
 #### refAllele
 
-{:dl-horizontal}
+{.dl-horizontal .dl-definition}
 definition
 : The string of nucleotides or amino acids at this reference coordinate on the related reference genome.
 
+{:.h4-definition}
 #### primaryTranscriptRegionType
 
-{:dl-horizontal}
+{.dl-horizontal .dl-definition}
 definition
 : One of the set of allowable [primary-transcript-region-types](/allele/implementation/value_set_list/primary_transcript_region_type.html)
 
+{:.h4-definition}
 #### ancillaryTranscriptRegionType
 
-{:dl-horizontal}
+{.dl-horizontal .dl-definition}
 definition
 : One of the set of allowable [ancillary-transcript-region-types](/allele/implementation/value_set_list/ancillary_transcript_region_type.html)
 
+{:.h4-definition}
 #### intronOffsetStart
 
-{:dl-horizontal}
+{.dl-horizontal .dl-definition}
 definition
 : The start of the ReferenceCoordinate relative to the transcript coordinate. Required when the coordinate is described as an offset relative to an exonic transcript (should only apply to ReferenceCoordinates of type interior\_intron described relative to a ReferenceSequence of type transcript\_reference\_sequence).
 
+{:.h4-definition}
 #### intronOffsetEnd
 
-{:dl-horizontal}
+{.dl-horizontal .dl-definition}
 definition
 : The end of the ReferenceCoordinate relative to the transcript coordinate. Requirements are the same as for intronOffsetStart.
 
+{:.h4-definition}
 #### intronOffsetDirection
 
-{:dl-horizontal}
+{.dl-horizontal .dl-definition}
 definition
 : The direction of the ReferenceCoordinate relative to the transcript coordinate. Requirements are the same as for intronOffsetStart.
 
+{:.h4-definition}
 ### AlleleName
 
+{:.h4-definition}
 #### nameType
 
-{:dl-horizontal}
+{.dl-horizontal .dl-definition}
 definition
 : One of the set of allowable [simple-allele-name-types](/allele/implementation/value_set_list/simple_allele_name_type.html)
 
+{:.h4-definition}
 #### legacy
 
-{:dl-horizontal}
+{.dl-horizontal .dl-definition}
 definition
 : Flag set if the name is deprecated or no longer used in the relevant allele naming system.
 
+{:.h4-definition}
 #### preferred
 
-{:dl-horizontal}
+{.dl-horizontal .dl-definition}
 definition
 : Flag set if the name is the preferred name for this allele in the implementing system.
 
+{:.h4-definition}
 ### Related
 
+{:.h4-definition}
 #### relatedType
 
-{:dl-horizontal}
+{.dl-horizontal .dl-definition}
 definition
 : One of the allowable set of relationship types in [simple-allele-relationship-type](/allele/implementation/value_set_list/simple_allele_relationship_type.html)
 
+{:.h4-definition}
 #### target
 
-{:dl-horizontal}
+{.dl-horizontal .dl-definition}
 definition
 : The SimpleAllele described in the relationship.
 

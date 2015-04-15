@@ -1,5 +1,6 @@
 ---
 title: SimpleTranscriptAllele
+layout: conceptual
 description: A SimpleAlllele that uses a TranscriptReferenceSequence as its ReferenceSequence.
 ---
 

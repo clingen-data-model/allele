@@ -1,7 +1,9 @@
 ---
 title: ReferenceSequence
+layout: conceptual
 description: A versioned sequence of nucleotide bases or amino acids.
-related_page: /allele/resource/reference_sequence
+related_page_title: Reference Sequence
+related_page_url: /allele/resource/reference_sequence
 
 ---
 

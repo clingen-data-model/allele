@@ -1,5 +1,6 @@
 ---
 title: SimpleAminoAcidAllele
+layout: conceptual
 description: A SimpleAlllele that uses a AminoAcidReferenceSequence as its ReferenceSequence.
 
 ---

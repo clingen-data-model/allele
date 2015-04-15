@@ -1,5 +1,6 @@
 ---
 title: ComplexCanonicalAllele
+layout: conceptual
 description: A stable identifier for a complex allele, defined as a series of two or more SimpleCanonicalAlleles that occur in cis.
 
 ---

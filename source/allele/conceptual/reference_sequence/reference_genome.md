@@ -1,5 +1,6 @@
 ---
 title: ReferenceGenome
+layout: conceptual
 description: A collection of sequences (often chromosomes) taken as the standard for a given organism and genome assembly.
 sequence_ontology: "SO:0001505"
 

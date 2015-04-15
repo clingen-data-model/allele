@@ -1,5 +1,6 @@
 ---
 title: TranscriptReferenceSequence
+layout: conceptual
 description: A ReferenceSequence for the cDNA of a transcript.
 sequence_ontology: "SO:0000673"
 
