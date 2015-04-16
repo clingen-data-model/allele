@@ -20,7 +20,7 @@ context:
     type: boolean
     definition: Is the CanonicalAllele active, or is it invalid or superceded by a different CanonicalAllele.
     requirements: >
-      The `replacement` property should contain one or more items iff this is *true*
+      The `replacement` property MUST contain one or more items if this is *true*, otherwise `replacement` MUST be empty.
 
   - property: replacement
     control: 0..*
