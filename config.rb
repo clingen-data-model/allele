@@ -109,6 +109,10 @@ helpers do
     output + "</tbody></table>"
   end
 
+  def render_markdown(content)
+    Tilt['markdown'].new { content }.render
+  end
+
 end
 
 set :css_dir, 'stylesheets'
