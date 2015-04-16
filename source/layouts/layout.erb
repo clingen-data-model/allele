@@ -34,16 +34,16 @@
 		    <li><%= link_to "ClinGen", "http://clinicalgenome.org/" %></li>
 		</ul>
 	  </ul>
-	  <h4><%= link_to "Conceptual Model", "/#{model}/conceptual" %></h4>
-	  <ul class="">
+	  <h4 class="conceptual"><%= link_to "Conceptual Model", "/#{model}/conceptual" %></h4>
+	  <ul class="conceptual">
 	    <li><%= link_with_local_index "Gene", "/#{model}/conceptual/gene" %></li>
 	    <li><%= link_with_local_index "ReferenceSequence", "/#{model}/conceptual/reference_sequence" %></li>
 	    <li><%= link_with_local_index "SimpleAllele", "/#{model}/conceptual/simple_allele" %></li>
 	    <li><%= link_with_local_index "CanonicalAllele", "/#{model}/conceptual/canonical_allele" %></li>
 	    <li><%= link_with_local_index "Provenance", "/#{model}/conceptual/provenance" %></li>
 	  </ul>
-	  <h4><%= link_to "Resources", "/#{model}/resource" %></h4>
-	  <ul class="">
+	  <h4 class="resource"><%= link_to "Resources", "/#{model}/resource" %></h4>
+	  <ul class="resource">
 	    <li><%= link_with_local_index "Gene", "/#{model}/resource/gene" %></li>
 	    <li><%= link_with_local_index "ReferenceSequence", "/#{model}/resource/reference_sequence" %></li>
 	    <li><%= link_with_local_index "SimpleAllele", "/#{model}/resource/simple_allele" %></li>
