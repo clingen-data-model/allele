@@ -1,5 +1,6 @@
 ---
 title: GenomicReferenceCoordinate
+layout: conceptual
 description: GenomicReferenceCoordinate defines a location with respect to a <a href="../reference_sequence/genomic_reference_sequence.html">GenomicReferenceSequence</a>.  
 
 ---

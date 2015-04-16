@@ -1,5 +1,6 @@
 ---
 title: AminoAcidReferenceCoordinate
+layout: conceptual
 description: AminoAcidReferenceCoordinate defines a location with respect to an <a href="../reference_sequence/amino_acid_reference_sequence.html">AminoAcidReferenceSequence</a>.  
 
 ---

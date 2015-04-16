@@ -1,5 +1,6 @@
 ---
 title: ComplexAminoAcidCanonicalAllele
+layout: conceptual
 description: A stable identifier for a complex protein allele, based on an aggregation of SimpleAminoAcidCanonicalAlleles.
 
 ---

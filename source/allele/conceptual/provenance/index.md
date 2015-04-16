@@ -1,7 +1,9 @@
 ---
 title: Provenance
-description: TBD
-related_page: /allele/resource/provenance
+layout: conceptual
+description: Please see the links below for full description and details on the Provenance entity.
+related_page_title: Provenance
+related_page_url: /allele/resource/provenance
 
 ---
 
