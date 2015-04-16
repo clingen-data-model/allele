@@ -8,6 +8,60 @@ related_page_title: CanonicalAllele
 related_page_url: /allele/conceptual/canonical_allele
 schema: "/main/resources/clingen-xsd/canonicalallele.xsd"
 
+context:
+  - property: identifier
+    control: 1..1
+    type: Identifier
+    definition: >
+      The assigned identifier that uniquely describes this CanonicalAllele
+
+  - property: active
+    control: 1..1
+    type: boolean
+    definition: Is the CanonicalAllele active, or is it invalid or superceded by a different CanonicalAllele.
+    requirements: >
+      The `replacement` property MUST contain one or more items if this is *true*, otherwise `replacement` MUST be empty.
+
+  - property: replacement
+    control: 0..*
+    type: Replacement
+    definition: The CanonicalAllele to use instead in case it is found to describe the same allele as another CanonicalAllele
+    requirements:
+
+  - property: sequenceType
+    control: 1..1
+    type: code
+    binding: CanonicalAlleleType
+    definition:
+    requirements:
+
+  - property: complexity
+    control: 1..1
+    type: code
+    binding: CanonicalAlleleComplexity
+    definition: Is the CanonicalAllele represented by one SimpleAllele, or is it a composition of multiple CanonicalAlleles?
+    requirements: |
+      If this allele is simple, then it can contain one or more SimpleAlleles in the relatedSimpleAllele property.
+
+  - property: relatedSimpleAllele
+    control: 0..*
+    type: SimpleAllele
+    definition:
+    requirements:
+
+  - property: nested
+    control: 0..*
+    type: CanonicalAllele
+    definition: The set of SimpleCanonicalAlleles that compose this ComplexCanonicalAllele
+    requirements: |
+      This is closely related to the complexity and relatedSimpleAllele fields:
+
+      * if `complexity` is simple, then this list MUST be empty
+      * if `complexity` is complex, then this list MUST contain 2 or more CanonicalAlleles (each
+        with `complexity` simple) AND relatedSimpleAllele MUST be empty.
+
+      Note that this means that the cardinality of this property is actually 0,2..* (i.e. anything but one)
+
 ---
 
 Scope and Usage
@@ -15,17 +69,6 @@ Scope and Usage
 
 A CanonicalAllele is a reference to a sequence change, independent of any particular representation relative to a ReferenceSequence. Since alleles are represented as a change (or no change) relative to a ReferenceSequence, a CanonicalAllele is composed of potentially multiple such representations (SimpleAlleles) that correspond to the same CanonicalAllele. One SimpleAllele is selected as the preferred representation of a CanonicalAllele
 
-Context
--------
-
-The CanonicalAllele resource is described by the following attributes.
-
-* identifier: The assigned identifier that uniquely describes this CanonicalAllele
-* active: Is the CanonicalAllele active, or is it invalid or superceeded by a different CanonicalAllele
-* replacement: The CanonicalAllele to use instead in case it is found to describe the same allele as another CanonicalAllele
-* sequenceType: The type of sequence refered to by the CanonicalAllele (nucleotide, amino acid, etc)
-* complexityType: Is the CanonicalAllele represented by one SimpleAllele, or is it a composition of multiple CanonicalAlleles
-* RelatedSimpleAllele: The preferred SimpleAllele used to represent the CanonicalAllele.
 
 Resource Model
 ----------------
