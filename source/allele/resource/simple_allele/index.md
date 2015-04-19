@@ -39,7 +39,11 @@ Definitions & Bindings
 
 {:.dl-horizontal .dl-definition}
 Definition
-: TODO
+: Resource representing one of the multiple variant sequences at a contiguous region in a particular ReferenceSequence.
+
+Control
+: 1..1
+
 
 {:.h4-definition}
 #### SimpleAllele.identifier
@@ -51,7 +55,7 @@ Definition
 Type
 : Identifier
 
-Multiplicity
+Control
 : 0..*
 
 {:.h4-definition}
@@ -64,7 +68,7 @@ Definition
 Type
 : CanonicalAllele
 
-Multiplicity
+Control
 : 0..1
 
 {:.h4-definition}
@@ -72,12 +76,15 @@ Multiplicity
 
 {:.dl-horizontal .dl-definition}
 Definition
-: One of the set of allowable [simple-allele-types](/allele/implementation/value_set_list/simple_allele_type.html) as defined in the data model.
+: Type of simple allele, as defined by the type of transcript the allele is mapped on.
+
+Binding
+: SimpleAlleleType [simple-allele-types](/allele/implementation/value_set_list/simple_allele_type.html)
 
 Type
 : Code
 
-Multiplicity
+Control
 : 0..1
 
 {:.h4-definition}
@@ -85,68 +92,92 @@ Multiplicity
 
 {:.dl-horizontal .dl-definition}
 Definition
-: The nucleotide or amino acid sequence that is defined for this allele at the reference coordinates.  This is typically associated with the 'ALT' value in a VCF representation of a variant. 
+: The nucleotide or amino acid sequence that is defined for this allele at the reference coordinates.  This is typically associated with the 'ALT' value in a VCF representation of a variant.
+
+Control
+: 0..1
+
+Type
+: string
 
 {:.h4-definition}
 #### SimpleAllele.primaryNucleotideChangeType
 
 {:.dl-horizontal .dl-definition}
 Definition
-: One of the set of allowable [primary-nucleotide-change-types](/allele/implementation/value_set_list/primary_nucleotide_change_type.html). Required (and allowed) only if the SimpleAllele describes an allele on a nucleotide reference sequence.
+: Describes the change that occurs within a nucleotide simple allele.
+
+Control
+: 0..1
+
+Binding
+: PrimaryNucleotideChangeType [primary-nucleotide-change-types](/allele/implementation/value_set_list/primary_nucleotide_change_type.html)
 
 Type
 : Code
 
-Multiplicity
-: 0..1
+Requirements
+: Required (and allowed) only if the SimpleAllele maps to a nucleotide sequence.
 
 {:.h4-definition}
 #### SimpleAllele.ancillaryNucleotideChangeType
 
 {:.dl-horizontal .dl-definition}
 Definition
-: One of the set of allowable [ancillary-nucleotide-change-types](/allele/implementation/value_set_list/ancillary_nucleotide_change_type.html). Allowed only if the SimpleAllele describes an allele on a nucleotide reference sequence.
+: Additional descriptors that can be applied to describe the change effected by the allele.
+
+Control
+: 0..*
+
+Binding
+: AncillaryNucleotideChangeType [ancillary-nucleotide-change-types](/allele/implementation/value_set_list/ancillary_nucleotide_change_type.html)
 
 Type
 : Code
 
-Multiplicity
-: 0..1
+Requirements
+: Optional, permitted only if the SimpleAllele maps to a nucleotide sequence.
 
 {:.h4-definition}
 #### SimpleAllele.primaryAminoAcidChangeType
 
 {:.dl-horizontal .dl-definition}
 Definition
-: One of the set of allowable [primary-amino-acid-change-types](/allele/implementation/value_set_list/primary_amino_acid_change_type.html). Required (and allowed) only if the SimpleAllele describes an allele on an amino acid reference sequence.
+: Describes the change that occurs within an amino acid.
+
+Binding
+: PrimaryAminoAcidChangeType [primary-amino-acid-change-types](/allele/implementation/value_set_list/primary_amino_acid_change_type.html)
 
 Type
 : Code
 
-Multiplicity
+Control
 : 0..1
+
+Requirements
+: Required (and allowed) only if the SimpleAllele describes an allele on an amino acid reference sequence.
 
 {:.h4-definition}
 #### SimpleAllele.ancillaryAminoAcidChangeType
 
 {:.dl-horizontal .dl-definition}
-defintion
+Definition
 : One of the set of allowable [ancillary-amino-acid-change-types](/allele/implementation/value_set_list/ancillary_amino_acid_change_type.html). Allowed only if the SimpleAllele describes an allele on an amino acid reference sequence.
 
 Type
 : Code
 
-Multiplicity
+Control
 : 0..1
 
 {:.h4-definition}
 ### SimpleAllele.referenceCoordinate
 
 {:.dl-horizontal .dl-definition}
-definition
+Definition
 : The genetic loci of the variant.
 
-Multiplicity
+Control
 : 1
 
 {:.h4-definition}
@@ -159,7 +190,7 @@ Definition
 Type
 : Identifier
 
-Multiplicity
+Control
 : 1..*
 
 {:.h4-definition}
@@ -172,7 +203,7 @@ Definition
 Type
 : ReferenceSequence
 
-Multiplicity
+Control
 : 1
 
 {:.h4-definition}
@@ -185,7 +216,7 @@ Definition
 Type
 : integer
 
-Multiplicity
+Control
 : 1
 
 {:.h4-definition}
@@ -198,7 +229,7 @@ Definition
 Type
 : integer
 
-Multiplicity
+Control
 : 1
 
 {:.h4-definition}
@@ -211,59 +242,59 @@ Definition
 Type
 : string
 
-Multiplicity
+Control
 : 0..1
 
 {:.h4-definition}
 #### SimpleAllele.referenceCoordinate.primaryTranscriptRegionType
 
 {:.dl-horizontal .dl-definition}
-definition
+Definition
 : One of the set of allowable [primary-transcript-region-types](/allele/implementation/value_set_list/primary_transcript_region_type.html)
 
 Type
 : Code
 
-Multiplicity
+Control
 : 0..1
 
 {:.h4-definition}
 #### SimpleAllele.referenceCoordinate.ancillaryTranscriptRegionType
 
 {:.dl-horizontal .dl-definition}
-definition
+Definition
 : One of the set of allowable [ancillary-transcript-region-types](/allele/implementation/value_set_list/ancillary_transcript_region_type.html)
 
 Type
 : Code
 
-Multiplicity
+Control
 : 0..1
 
 {:.h4-definition}
 #### SimpleAllele.referenceCoordinate.intronOffsetStart
 
 {:.dl-horizontal .dl-definition}
-definition
+Definition
 : The start of the ReferenceCoordinate relative to the transcript coordinate. Required when the coordinate is described as an offset relative to an exonic transcript (should only apply to ReferenceCoordinates of type interior\_intron described relative to a ReferenceSequence of type transcript\_reference\_sequence).
 
 Type
 : integer
 
-Multiplicity
+Control
 : 0..1
 
 {:.h4-definition}
 #### SimpleAllele.referenceCoordinate.intronOffsetEnd
 
 {:.dl-horizontal .dl-definition}
-definition
+Definition
 : The end of the ReferenceCoordinate relative to the transcript coordinate. Requirements are the same as for intronOffsetStart.
 
 Type
 : integer
 
-Multiplicity
+Control
 : 0..1
 
 {:.h4-definition}
@@ -276,7 +307,7 @@ Definition
 Type
 : Code
 
-Multiplicity
+Control
 : 0..1
 
 {:.h4-definition}
@@ -286,7 +317,7 @@ Multiplicity
 defintion
 : The name given to the allele by a naming organization (i.e. an HGVS expression)
 
-Multiplicity
+Control
 : 0..*
 
 {:.h4-definition}
@@ -299,7 +330,7 @@ Definition
 Type
 : Code
 
-Multiplicity
+Control
 : 1
 
 {:.h4-definition}
@@ -312,7 +343,7 @@ Definition
 Type
 : boolean
 
-Multiplicity
+Control
 : 0..1
 
 {:.h4-definition}
@@ -325,7 +356,7 @@ Definition
 Type
 : boolean
 
-Multiplicity
+Control
 : 0..1
 
 {:.h4-definition}
@@ -335,7 +366,7 @@ Multiplicity
 definition
 : Other, related simple alleles, for example, the SimpleAllele that represents the amino acid change caused by a nucleotide simple allele, and vice-versa.
 
-Multiplicity
+Control
 : 0..*
 
 {:.h4-definition}
@@ -348,7 +379,7 @@ Definition
 Type
 : Code
 
-Multiplicity
+Control
 : 1
 
 {:.h4-definition}
@@ -361,6 +392,6 @@ Definition
 Type
 : SimpleAllele
 
-Multiplicity
+Control
 : 1
 
