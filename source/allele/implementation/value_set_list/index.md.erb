@@ -13,6 +13,6 @@ Namespace: http://clingen.org/dm/vs
 {:.table}
 |Name |Definition |Source |Id |Usage|
 |-----|-----------|-------|---|-----|
-<% sitemap.resources.select{|r| r.path =~ /^allele\/implementation\/value_set_list/ and not r.path =~ /index\.html/}.each do |r| %>
+<% sitemap.resources.select{|r| r.path =~ /^allele\/implementation\/value_set_list/ and not r.path =~ /index\.html/}.sort_by{|r| r.path}.each do |r| %>
 |<%= link_to r.data.title, r.url %>|<%= r.data.description %>|<%= r.data.source %>|<%= r.data.id %>|<%= r.data.usage %>|
 <% end %>

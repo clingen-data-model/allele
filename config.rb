@@ -56,7 +56,7 @@ helpers do
   end
 
   def brief_index(path)
-    output = sitemap.resources.select{|r| r.url.include?(path) and not r.path =~ /index\.html/}.reduce("<ul>\n") do |acc, r|
+    output = sitemap.resources.select{|r| r.url.include?(path) and not r.path =~ /index\.html/}.sort_by{ |r| r.path}.reduce("<ul>\n") do |acc, r|
       acc + "<li>#{link_to r.data.title, r.url}</li>\n"
     end
     return output + "</ul>\n"
@@ -76,7 +76,7 @@ helpers do
   end
 
   def examples_index
-    output = data.examples.reduce("<ul>\n") do |acc, e|
+    output = data.examples.sort_by{ |e| e['title'] }.reduce("<ul>\n") do |acc, e|
       acc + "<li>" + link_to(e['title'], example_path(e['id']))
     end
     return output + "</ul>"
