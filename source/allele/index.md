@@ -58,7 +58,7 @@ Discussion Items
 In the course of creating the Allele Model, the Data Model Working Group has made numerous choices, some of which are described in the following links:
 
 + [FHIR Integration](fhir.html)
-+ [Coordinate Numbering](coordinates.html)
++ [Coordinate Numbering](coordinate_numbering.html)
 + [Canonicalization](canonicalization.html)
-+ [Allele Naming](allelenames.html)
++ [Allele Naming](allele_naming.html)
 
