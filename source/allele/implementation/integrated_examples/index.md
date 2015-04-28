@@ -12,6 +12,6 @@ In practice, a clinician may review a genetic test report for Gaucher disease wh
 Example Scenarios
 ---
 
-* [Genome Reference Version Effect on Intronic Coordinate](/allele/implementation/integrated_examples/Example_1.html)
+* [Genome Reference Version Effect on Intronic Coordinate](clingen-data-model/source/allele/implementation/integrated_examples/example_1.md)
   
   In this scenario, we will demonstrate how an intronic position for a [CanonicalAllele](/allele/conceptual/canonical_allele/index.html) will change coordinates when moving from build 37 to 38.
