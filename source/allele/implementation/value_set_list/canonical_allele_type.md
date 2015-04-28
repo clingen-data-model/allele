@@ -26,7 +26,7 @@ Codes providing the type of a canonical allele
 
 This value set defines its own terms in the system http://clingen.org/model/allele/canonical-allele-type
 
-{:.table-bordered}
+{:.table .table-bordered}
 |Code|Display|Definition|
 |----|-------|----------|
 |nucleotide|Nucleotide|The type of the canonical allele is nucleotide. All associated simple/canonical alleles are genomic or transcript based.|
