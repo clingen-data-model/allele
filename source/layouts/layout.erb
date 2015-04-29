@@ -28,6 +28,12 @@
 		    <li><%= link_to "Canonicalization", "/#{model}/canonicalization.html" %></li>
 		    <li><%= link_to "Allele Naming", "/#{model}/allele_naming.html" %></li>
 		</ul>
+		<li>--- Implementation ---</li>
+	    <ul class="">
+	    	<li><%= link_with_local_index  "Integrated Examples", "/#{model}/implementation/integrated_examples" %></li>
+	    	<li><%= link_to                "Examples", "/#{model}/implementation/examples" %></li>
+	    	<li><%= link_to                "Value Set List", "/#{model}/implementation/value_set_list" %></li>
+		</ul>
 		<li>--- Related Links ---</li>
 	    <ul class="">
 		    <li><%= link_to "GitHub Project", "http://github.com/tnavatar/clingen-data-model" %></li>
@@ -49,14 +55,6 @@
 	    <li><%= link_with_local_index "SimpleAllele", "/#{model}/resource/simple_allele" %></li>
 	    <li><%= link_with_local_index "CanonicalAllele", "/#{model}/resource/canonical_allele" %></li>
 	    <li><%= link_with_local_index "Provenance", "/#{model}/resource/provenance" %></li>
-	  </ul>
-	  <h4><%= link_to "Implementation", "/#{model}/implementation" %></h4>
-	  <ul class="">
-	    <li><%= link_with_local_index "FHIR Specification", "/#{model}/implementation/fhir_specification" %></li>
-	    <li><%= link_with_local_index "Value Set List", "/#{model}/implementation/value_set_list" %></li>
-	    <li><%= link_with_local_index "Integrated Examples", "/#{model}/implementation/integrated_examples" %></li>
-	    <li><%= link_with_examples_index "Examples", "/#{model}/implementation/examples" %></li>
-	    <li><%= link_with_local_index "Schemas", "/#{model}/implementation/schemas" %></li>
 	  </ul>
 	  <% end %>
 	</div>

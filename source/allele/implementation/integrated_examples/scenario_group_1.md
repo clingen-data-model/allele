@@ -1,3 +1,7 @@
+---
+title: I. Basic Nucleotide & Amino Acid Alleles
+---
+
 Due to a high number of references sequences (mulitple genome builds, multiple transcripts, multiple protein sequences), even simple variants can be represented with regards to multiple reference sequences. The ClinGen Allele Data Model addresses this problem by tying all representations of a variant to a single identifier: Canonical Allele  
 
 ###BRCA1 missense variant example
@@ -22,5 +26,3 @@ NM_007297.3:c.1317T>A
 Protein Reference Simple Alleles:  
 NP_009225.1:p.Phe486Leu  
 LRG_292p1:p.Phe486Leu
-
-
