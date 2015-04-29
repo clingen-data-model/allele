@@ -1,7 +1,7 @@
 Due to a high number of references sequences (mulitple genome builds, multiple transcripts, multiple protein sequences), even simple variants can be represented with regards to multiple reference sequences. The ClinGen Allele Data Model addresses this problem by tying all representations of a variant to a single identifier: Canonical Allele  
 
-BRCA1 missense variant example
----
+###BRCA1 missense variant example
+
 Since BRCA1 is a heavily studied gene, there are numerous reference sequences used to decribe the position and effect of a variant. 
 For example, a simple substitution variant in BRCA1 may be expressed as: NM_007294.3(BRCA1):c.1458T>A. However, this expression represents only one simple allele expression. This Canonical Allele could be represented by any of the following simple alleles:
 
