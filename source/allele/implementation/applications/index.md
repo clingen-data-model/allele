@@ -27,6 +27,7 @@ The gain access to the preliminary Allele Models in the ClinGenDB development en
 ###Exploring the Allele Model in ClinGenDB
 The following is an informal set of internal instructions and links for members of the DMWG team to begin exploring the Allele Model that is under preliminary development in ClinGenDB. The information is provided here for convenience to those members and users that wish to have preliminary access.  It is our intention to update this documentation after the Allele Registry is released or after any significant development occur which may impact the instructions below.
 
+{: .small}
 >There are four resource document models: Gene, ReferenceSequence, SimpleAllele and CanonicalAllele uploaded into <genboree.org/genboreKB/>. Please note that the official Allele Registry is planned to be hosted on <clingenkb.org>, with similar structure, for 24x7 accessibility. With your login and passwd, you should be able to see <http://genboree.org/genboreeKB/genboree_kbs?project_id=allelemodels>. If not please let me know.
 >
 >The redmine project where all the four collections are hosted can be found [here](http://genboree.org/genboreeKB/genboree_kbs?project_id=allelemodels).
