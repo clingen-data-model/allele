@@ -8,6 +8,7 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
 import org.hl7.fhir.Boolean;
+import org.hl7.fhir.Id;
 import org.hl7.fhir.Identifier;
 import org.hl7.fhir.Resource;
 import org.hl7.fhir.ResourceReference;
@@ -46,6 +47,9 @@ import org.hl7.fhir.ResourceReference;
 public class CanonicalAllele extends Resource
 {
 
+	protected Id id;
+	protected String version;
+	protected Meta meta;
 	protected List<Identifier> identifier;
 	protected Boolean active;
 	@XmlElement (required = true)
