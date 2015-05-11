@@ -15,8 +15,11 @@
 		<xs:complexContent>
 			<xs:extension base="f:Resource">
 				<xs:sequence>
+					<xs:element name="version" type="f:string" minOccurs="0" />
 					<xs:element name="identifier" type="f:Identifier"
-						nillable="true" minOccurs="0" maxOccurs="unbounded" />
+						minOccurs="0" maxOccurs="unbounded" />
+					<xs:element name="relatedIdentifier" type="f:Identifier"
+						minOccurs="0" maxOccurs="unbounded" />
 					<xs:element name="active" type="f:boolean" minOccurs="0" />
 					<xs:element name="canonicalAlleleType" type="CanonicalAlleleType" />
 					<xs:element name="complexity" type="CanonicalAlleleComplexity" />
@@ -24,37 +27,36 @@
 						minOccurs="0" maxOccurs="unbounded" />
 					<xs:element name="relatedSimpleAllele" type="CanonicalAllele.RelatedSimpleAllele"
 						minOccurs="0" maxOccurs="unbounded" />
-					<xs:element name="nested" type="f:ResourceReference"
+					<xs:element name="nested" type="f:Reference"
 						minOccurs="0" maxOccurs="unbounded" />
-					<xs:element name="composite" type="f:ResourceReference"
+					<xs:element name="composite" type="f:Reference"
 						minOccurs="0" maxOccurs="1" />
 				</xs:sequence>
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
-	
+
 	<xs:complexType name="CanonicalAlleleType">
-    <xs:complexContent>
-      <xs:extension base="f:Element">
-        <xs:sequence />
-        <xs:attribute name="value" type="CanonicalAlleleType-list" />
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-	
+		<xs:complexContent>
+			<xs:extension base="f:Element">
+				<xs:sequence />
+				<xs:attribute name="value" type="CanonicalAlleleType-list" />
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
 	<xs:simpleType name="CanonicalAlleleType-list">
-    <xs:restriction base="xs:string">
-      <xs:enumeration value="nucleotide" />
-      <xs:enumeration value="amino-acid" />
-    </xs:restriction>
-  </xs:simpleType>
-	
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="nucleotide" />
+			<xs:enumeration value="amino-acid" />
+		</xs:restriction>
+	</xs:simpleType>
+
 	<xs:complexType name="CanonicalAlleleComplexity">
 		<xs:complexContent>
 			<xs:extension base="f:Element">
 				<xs:sequence />
-				<xs:attribute name="value"
-					type="CanonicalAlleleComplexity-list" />
+				<xs:attribute name="value" type="CanonicalAlleleComplexity-list" />
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
@@ -72,7 +74,7 @@
 				<xs:sequence>
 					<xs:element name="replacementType" type="CanonicalAlleleReplacementType" />
 					<xs:element name="split" type="f:boolean" minOccurs="0" />
-					<xs:element name="target" type="f:ResourceReference" />
+					<xs:element name="target" type="f:Reference" />
 				</xs:sequence>
 			</xs:extension>
 		</xs:complexContent>
@@ -99,7 +101,7 @@
 		<xs:complexContent>
 			<xs:extension base="f:BackboneElement">
 				<xs:sequence>
-					<xs:element name="simpleAllele" type="f:ResourceReference" />
+					<xs:element name="simpleAllele" type="f:Reference" />
 					<xs:element name="preferred" type="f:boolean" minOccurs="0" />
 				</xs:sequence>
 			</xs:extension>

@@ -1,14 +1,16 @@
 {
   "id": "RS218",
   "identifier": 
-  {
-    "f:system": "http://ftp.ebi.ac.uk/pub/databases/lrgex",
-    "f:value": "LRG_292"
-  },
+  [
+    {
+      "system": "http://ftp.ebi.ac.uk/pub/databases/lrgex",
+      "value": "LRG_292"
+    }
+  ],
 
   "referenceSequenceType": "gene",
   "gene": 
   {
-    "f:reference": "/Gene/G102"
+    "reference": "Gene/G102"
   }
 }

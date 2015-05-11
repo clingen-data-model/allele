@@ -4,8 +4,7 @@
   [
     {
       "use": "official",
-      "label": "ILK",
-      "system": "http://www.genenames.org/",
+      "system": "urn:oid:2.16.840.1.113883.6.281",
       "value": "HGNC:6040"
     },
 

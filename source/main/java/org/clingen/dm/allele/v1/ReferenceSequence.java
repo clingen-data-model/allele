@@ -10,8 +10,9 @@ import javax.xml.bind.annotation.XmlType;
 import org.hl7.fhir.CodeableConcept;
 import org.hl7.fhir.Identifier;
 import org.hl7.fhir.Integer;
+import org.hl7.fhir.Reference;
 import org.hl7.fhir.Resource;
-import org.hl7.fhir.ResourceReference;
+import org.hl7.fhir.String;
 
 /**
  * If the element is present, it must have either a @value, an @id, or extensions
@@ -25,12 +26,12 @@ import org.hl7.fhir.ResourceReference;
  *   &lt;complexContent>
  *     &lt;extension base="{http://hl7.org/fhir}Resource">
  *       &lt;sequence>
- *         &lt;element name="identifier" type="{http://hl7.org/fhir}Identifier"/>
+ *         &lt;element name="identifier" type="{http://hl7.org/fhir}Identifier" minOccurs="0" maxOccurs="unbounded"/>
  *         &lt;element name="referenceSequenceType" type="{http://org.clingen.dm.allele.v1}ReferenceSequenceType" minOccurs="0"/>
  *         &lt;element name="chromosome" type="{http://org.clingen.dm.allele.v1}ReferenceSequenceChromosome" minOccurs="0"/>
  *         &lt;element name="cdsStart" type="{http://hl7.org/fhir}int" minOccurs="0"/>
  *         &lt;element name="cdsEnd" type="{http://hl7.org/fhir}int" minOccurs="0"/>
- *         &lt;element name="gene" type="{http://hl7.org/fhir}ResourceReference" maxOccurs="1" minOccurs="0"/>
+ *         &lt;element name="gene" type="{http://hl7.org/fhir}Reference" maxOccurs="1" minOccurs="0"/>
  *         &lt;element name="referenceGenome" type="{http://hl7.org/fhir}CodeableConcept" maxOccurs="1" minOccurs="0"/>
  *         &lt;element name="related" type="{http://org.clingen.dm.allele.v1}ReferenceSequence.Related" maxOccurs="unbounded" minOccurs="0"/>
  *       &lt;/sequence>
@@ -42,47 +43,69 @@ import org.hl7.fhir.ResourceReference;
  * 
  */
 @XmlAccessorType (XmlAccessType.FIELD)
-@XmlType (name = "ReferenceSequence", propOrder = {"identifier", "referenceSequenceType", "chromosome", "cdsStart",
-													"cdsEnd", "gene", "referenceGenome", "related"})
+@XmlType (name = "ReferenceSequence", propOrder = {"identifier", "referenceSequenceType", "chromosome",
+													"cdsStart", "cdsEnd", "gene", "referenceGenome", "related"})
 public class ReferenceSequence extends Resource
 {
 
-	@XmlElement (required = true)
-	protected Identifier identifier;
+	protected List<Identifier> identifier;
 	@XmlElement (required = true)
 	protected ReferenceSequenceType referenceSequenceType;
 	protected ReferenceSequenceChromosome chromosome;
 	protected Integer cdsStart;
 	protected Integer cdsEnd;
-	protected ResourceReference gene;
+	protected Reference gene;
 	protected CodeableConcept referenceGenome;
 	protected List<ReferenceSequenceRelated> related;
+
+	/**
+	 * Gets the value of the version property.
+	 * 
+	 * @return
+	 *     possible object is
+	 *     {@link String }
+	 *     
+	 */
+	public String getVersion()
+	{
+		return version;
+	}
+
+	/**
+	 * Sets the value of the version property.
+	 * 
+	 * @param value
+	 *     allowed object is
+	 *     {@link String }
+	 *     
+	 */
+	public void setVersion(String value)
+	{
+		this.version = value;
+	}
 
 	/**
 	 * Gets the value of the identifier property.
 	 * 
 	 * <p>
+	 * This accessor method returns a reference to the live list,
+	 * not a snapshot. Therefore any modification you make to the
+	 * returned list will be present inside the JAXB object.
+	 * This is why there is not a <CODE>set</CODE> method for the identifier property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * <pre>
+	 *    getIdentifier().add(newItem);
+	 * </pre>
+	 * 
+	 * <p>
 	 * Objects of the following type(s) are allowed in the list
 	 * {@link Identifier }
-	 * 
-	 * 
 	 */
-	public Identifier getIdentifier()
+	public List<Identifier> getIdentifier()
 	{
-		return this.identifier;
-	}
-
-	/**
-	 * Sets the value of the identifier property.
-	 * 
-	 * @param value
-	 *     allowed object is
-	 *     {@link Identifier }
-	 *     
-	 */
-	public void setIdentifierl(Identifier value)
-	{
-		this.identifier = value;
+		return identifier;
 	}
 
 	/**
@@ -194,10 +217,10 @@ public class ReferenceSequence extends Resource
 	 * 
 	 * @return
 	 *     possible object is
-	 *     {@link ResourceReference }
+	 *     {@link Reference }
 	 *     
 	 */
-	public ResourceReference getGene()
+	public Reference getGene()
 	{
 		return gene;
 	}
@@ -207,10 +230,10 @@ public class ReferenceSequence extends Resource
 	 * 
 	 * @param value
 	 *     allowed object is
-	 *     {@link ResourceReference }
+	 *     {@link Reference }
 	 *     
 	 */
-	public void setGene(ResourceReference value)
+	public void setGene(Reference value)
 	{
 		this.gene = value;
 	}

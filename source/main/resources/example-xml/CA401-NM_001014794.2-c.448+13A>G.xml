@@ -1,37 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CanonicalAllele xmlns="http://clingen.org/dm/allele/v1"
 	xmlns:f="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://clingen.org/dm/allele/v1 ../clingen-xsd/canonicalallele.xsd "
-	id="CA401">
-	<identifier>
-		<f:system value="http://clingen.org/alleleregistry"></f:system>
-		<f:value value="CA401"></f:value>
-	</identifier>
+	xsi:schemaLocation="http://clingen.org/dm/allele/v1 ../clingen-xsd/canonicalallele.xsd ">
+	<f:id value="CA401"></f:id>
+	<version value="1"></version>
 	<active value="true"></active>
 	<canonicalAlleleType value="nucleotide"></canonicalAlleleType>
 	<complexity value="simple" />
 	<relatedSimpleAllele>
 		<simpleAllele>
-			<f:reference value="/SimpleAllele/SA302"></f:reference>
+			<f:reference value="SimpleAllele/SA302"></f:reference>
 			<f:display value="NM_001014794.2(ILK):c.448+13A&gt;G "></f:display>
 		</simpleAllele>
 		<preferred value="true"></preferred>
 	</relatedSimpleAllele>
 	<relatedSimpleAllele>
 		<simpleAllele>
-			<f:reference value="/SimpleAllele/SA301"></f:reference>
+			<f:reference value="SimpleAllele/SA301"></f:reference>
 			<f:display value="NM_001014794.2(ILK):c.448+14A&gt;G "></f:display>
 		</simpleAllele>
 	</relatedSimpleAllele>
 	<relatedSimpleAllele>
 		<simpleAllele>
-			<f:reference value="/SimpleAllele/SA303"></f:reference>
+			<f:reference value="SimpleAllele/SA303"></f:reference>
 			<f:display value="NC_000011.9:g.6630034A&gt;G (GRCh37)"></f:display>
 		</simpleAllele>
 	</relatedSimpleAllele>
 	<relatedSimpleAllele>
 		<simpleAllele>
-			<f:reference value="/SimpleAllele/SA304"></f:reference>
+			<f:reference value="SimpleAllele/SA304"></f:reference>
 			<f:display value="NC_000011.10:g.6608803A&gt;G (GRCh38)"></f:display>
 		</simpleAllele>
 	</relatedSimpleAllele>

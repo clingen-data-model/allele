@@ -1,10 +1,11 @@
 {
   "id": "CA403",
-  "identifier": 
+  "version": "1",
+  "relatedIdentifier": 
   [
     {
-      "system": "http://clingen.org/alleleregistry",
-      "value": "CA403"
+      "system": "http://www.ncbi.nlm.nih.gov/clinvar/variation",
+      "value": "37656"
     }
   ],
 
@@ -16,7 +17,7 @@
     {
       "simpleAllele": 
       {
-        "reference": "/SimpleAllele/SA312",
+        "reference": "SimpleAllele/SA312",
         "display": "NP_009225.1(BRCA1):p.Ile1766Ser"
       },
 
@@ -26,7 +27,7 @@
     {
       "simpleAllele": 
       {
-        "reference": "/SimpleAllele/SA319",
+        "reference": "SimpleAllele/SA319",
         "display": "LRG_292p1(BRCA1):p.Ile1766Ser "
       }
     }

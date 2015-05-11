@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SimpleAllele xmlns="http://clingen.org/dm/allele/v1"
 	xmlns:f="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://clingen.org/dm/allele/v1 ../clingen-xsd/simpleallele.xsd "
-	id="SA303">
-	<identifier>
-		<f:label value="NC_000011.9:g.6630034A&gt;G" />
-		<f:system value="http://clingen/alleleregistry" />
-		<f:value value="SA303" />
-	</identifier>
+	xsi:schemaLocation="http://clingen.org/dm/allele/v1 ../clingen-xsd/simpleallele.xsd ">
+	<f:id value="SA303"></f:id>
 	<canonicalAllele>
-		<f:reference value="/CanonicalAllele/CA401"></f:reference>
+		<f:reference value="CanonicalAllele/CA401"></f:reference>
 	</canonicalAllele>
 	<simpleAlleleType value="genomic"></simpleAlleleType>
 	<allele value="G"></allele>
@@ -19,9 +14,6 @@
 			<f:code value="SO:1000002"></f:code>
 			<f:display value="substitution"></f:display>
 			<f:primary value="true"></f:primary>
-			<f:valueSet>
-				<f:reference value="/ValueSet/PrimaryNucleotideChangeType"></f:reference>
-			</f:valueSet>
 		</f:coding>
 	</primaryNucleotideChangeType>
 	<alleleName>
@@ -30,7 +22,7 @@
 	</alleleName>
 	<referenceCoordinate>
 		<referenceSequence>
-			<f:reference value="/ReferenceSequence/RS202"></f:reference>
+			<f:reference value="ReferenceSequence/RS202"></f:reference>
 			<f:display value="NC_000011.9"></f:display>
 		</referenceSequence>
 		<start value="6630033"></start>

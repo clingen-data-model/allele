@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ReferenceSequence id="RS213"
-	xmlns="http://clingen.org/dm/allele/v1" xmlns:f="http://hl7.org/fhir"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<ReferenceSequence xmlns="http://clingen.org/dm/allele/v1"
+	xmlns:f="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://clingen.org/dm/allele/v1 ../clingen-xsd/referencesequence.xsd ">
+	<f:id value="RS213"></f:id>
 	<identifier>
 		<f:label
 			value="Homo sapiens breast cancer 1, early onset (BRCA1), transcript variant 1, mRNA" />
@@ -13,12 +13,13 @@
 	<cdsStart value="233"></cdsStart>
 	<cdsEnd value="5824"></cdsEnd>
 	<gene>
-		<f:reference value="/Gene/G102"></f:reference>
+		<f:reference value="Gene/G102"></f:reference>
+		<f:display value="BRCA1"></f:display>
 	</gene>
 	<related>
 		<type value="translates-to"></type>
 		<target>
-			<f:reference value="/ReferenceSequence/RS214"></f:reference>
+			<f:reference value="ReferenceSequence/RS214"></f:reference>
 			<f:display value="NP_009225.1 (BRCA1 Isoform 1)"></f:display>
 		</target>
 	</related>

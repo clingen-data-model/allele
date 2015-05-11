@@ -1,17 +1,18 @@
 {
   "id": "RS201",
   "identifier": 
-  {
-    "label": "Homo sapiens integrin-linked kinase (ILK), transcript variant 2, mRNA",
-    "system": "http://www.ncbi.nlm.nih.gov/nuccore",
-    "value": "NM_001014794.2"
-  },
+  [
+    {
+      "system": "http://www.ncbi.nlm.nih.gov/nuccore",
+      "value": "NM_001014794.2"
+    }
+  ],
 
   "referenceSequenceType": "transcript",
   "cdsStart": "162",
   "cdsEnd": "1520",
   "gene": 
   {
-    "reference": "/Gene/G101"
+    "reference": "Gene/G101"
   }
 }

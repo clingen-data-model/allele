@@ -1,15 +1,16 @@
 {
   "id": "RS212",
   "identifier": 
-  {
-    "label": "Homo sapiens breast cancer 1, early onset (BRCA1), RefSeqGene (LRG_292) on chromosome 17",
-    "system": "http://www.ncbi.nlm.nih.gov/nuccore",
-    "value": "NG_005905.2"
-  },
+  [
+    {
+      "system": "http://www.ncbi.nlm.nih.gov/nuccore",
+      "value": "NG_005905.2"
+    }
+  ],
 
   "referenceSequenceType": "gene",
   "gene": 
   {
-    "reference": "/Gene/G102"
+    "reference": "Gene/G102"
   }
 }
