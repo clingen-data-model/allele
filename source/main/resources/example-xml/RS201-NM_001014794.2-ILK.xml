@@ -3,6 +3,7 @@
 	xmlns="http://clingen.org/dm/allele/v1" xmlns:f="http://hl7.org/fhir"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://clingen.org/dm/allele/v1 ../clingen-xsd/referencesequence.xsd ">
+	<f:id value="RS201"></f:id>
 	<identifier>
 		<f:label
 			value="Homo sapiens integrin-linked kinase (ILK), transcript variant 2, mRNA" />
@@ -13,6 +14,7 @@
 	<cdsStart value="162"></cdsStart>
 	<cdsEnd value="1520"></cdsEnd>
 	<gene>
-		<f:reference value="/Gene/G101"></f:reference>
+		<f:reference value="Gene/G101"></f:reference>
+		<f:display value="ILK"></f:display>
 	</gene>
 </ReferenceSequence>

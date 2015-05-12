@@ -7,7 +7,8 @@
 	<xs:element name="Gene" type="Gene">
 		<xs:annotation>
 			<xs:documentation>The concept of a specific Gene. Should be
-				identified with an HGNC identifier.</xs:documentation>
+				identified with an HGNC identifier.
+			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 
@@ -16,10 +17,10 @@
 			<xs:extension base="f:Resource">
 				<xs:sequence>
 					<xs:element name="identifier" type="f:Identifier"
-						minOccurs="1" maxOccurs="unbounded" />
+						minOccurs="0" maxOccurs="unbounded" />
 					<xs:element name="symbol" type="f:string" minOccurs="1" />
 					<xs:element name="name" type="f:string" minOccurs="1" />
-					<xs:element name="aliasSymbol" type="f:string" 
+					<xs:element name="aliasSymbol" type="f:string"
 						minOccurs="0" maxOccurs="unbounded" />
 				</xs:sequence>
 			</xs:extension>

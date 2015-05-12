@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SimpleAllele xmlns="http://clingen.org/dm/allele/v1"
 	xmlns:f="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://clingen.org/dm/allele/v1 ../clingen-xsd/simpleallele.xsd "
-	id="SA302">
-	<identifier>
-		<f:system value="http://clingen/alleleregistry"></f:system>
-		<f:value value="SA302"></f:value>
-	</identifier>
+	xsi:schemaLocation="http://clingen.org/dm/allele/v1 ../clingen-xsd/simpleallele.xsd ">
+	<f:id value="SA302"></f:id>
 	<canonicalAllele>
-		<f:reference value="/CanonicalAllele/CA401"></f:reference>
+		<f:reference value="CanonicalAllele/CA401"></f:reference>
 	</canonicalAllele>
 	<simpleAlleleType value="transcript"></simpleAlleleType>
 	<allele value="G"></allele>
@@ -18,9 +14,6 @@
 			<f:code value="SO:1000002"></f:code>
 			<f:display value="substitution"></f:display>
 			<f:primary value="true"></f:primary>
-			<f:valueSet>
-				<f:reference value="/ValueSet/PrimaryNucleotideChangeType"></f:reference>
-			</f:valueSet>
 		</f:coding>
 	</primaryNucleotideChangeType>
 	<alleleName>
@@ -30,7 +23,7 @@
 	</alleleName>
 	<referenceCoordinate>
 		<referenceSequence>
-			<f:reference value="/ReferenceSequence/RS201"></f:reference>
+			<f:reference value="ReferenceSequence/RS201"></f:reference>
 			<f:display value="NM_001014794.2"></f:display>
 		</referenceSequence>
 		<start value="608"></start>
@@ -41,9 +34,6 @@
 				<f:system value="http://www.sequenceontology.org/"></f:system>
 				<f:code value="SO:0000188"></f:code>
 				<f:display value="intron"></f:display>
-				<f:valueSet>
-					<f:reference value="/ValueSet/PrimaryTranscriptRegionType" />
-				</f:valueSet>
 			</f:coding>
 		</primaryTranscriptRegionType>
 		<intronOffsetStart value="12"></intronOffsetStart>
@@ -51,7 +41,7 @@
 		<intronOffsetDirection value="+"></intronOffsetDirection>
 		<intronOffsetGenomicCoordinate>
 			<referenceSequence>
-				<f:reference value="/ReferenceSequence/RS203"></f:reference>
+				<f:reference value="ReferenceSequence/RS203"></f:reference>
 				<f:display value="NC_000011.10"></f:display>
 			</referenceSequence>
 			<start value="6608803"></start>

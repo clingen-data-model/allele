@@ -2,6 +2,7 @@
   "@context":"http://clingen.org/models/Gene.jsonld",
   "@id": "http://clingendb.clingen.org/Gene/G102",
   "@type": "clingen:Gene",
+  "id": "G102",
   "xref": 
   [
      "http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=HGNC:1100",

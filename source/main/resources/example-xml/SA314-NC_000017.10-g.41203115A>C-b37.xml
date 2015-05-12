@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SimpleAllele xmlns="http://clingen.org/dm/allele/v1"
 	xmlns:f="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://clingen.org/dm/allele/v1 ../clingen-xsd/simpleallele.xsd "
-	id="SA314">
+	xsi:schemaLocation="http://clingen.org/dm/allele/v1 ../clingen-xsd/simpleallele.xsd ">
+	<f:id value="SA314"></f:id>
 	<identifier>
 		<f:system value="http://www.ncbi.nlm.nih.gov/clinvar/variation" />
 		<f:value value="37656" />
 	</identifier>
 	<canonicalAllele>
-		<f:reference value="/CanonicalAllele/CA402"></f:reference>
+		<f:reference value="CanonicalAllele/CA402"></f:reference>
 	</canonicalAllele>
 	<simpleAlleleType value="genomic"></simpleAlleleType>
 	<allele value="C"></allele>
@@ -18,9 +18,6 @@
 			<f:code value="SO:1000002"></f:code>
 			<f:display value="substitution"></f:display>
 			<f:primary value="true"></f:primary>
-			<f:valueSet>
-				<f:reference value="../ValueSet/PrimaryNucleotideChangeType"></f:reference>
-			</f:valueSet>
 		</f:coding>
 	</primaryNucleotideChangeType>
 	<alleleName>
@@ -29,7 +26,7 @@
 	</alleleName>
 	<referenceCoordinate>
 		<referenceSequence>
-			<f:reference id="/ReferenceSequence/RS211"></f:reference>
+			<f:reference id="ReferenceSequence/RS211"></f:reference>
 			<f:display value="NC_000017.10"></f:display>
 		</referenceSequence>
 		<start value="41203114"></start>

@@ -2,18 +2,19 @@
   "@context":"http://clingen.org/models/Gene.jsonld",
   "@id": "http://clingendb.clingen.org/Gene/G102",
   "@type": "clingen:Gene",
+  "id": "G102", 
   "identifier": 
   [
     {
       "@type":"Identifier",
-      "use": "official",
-      "label": "BRCA1",
+      "use": "usual",
       "system": "http://www.genenames.org/",
       "value": "HGNC:1100"
     },
 
     {
       "@type":"Identifier",
+      "use": "secondary",
       "system": "http://www.ncbi.nlm.nih.gov/gene",
       "value": "672"
     }

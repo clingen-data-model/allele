@@ -6,8 +6,8 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
 import org.hl7.fhir.BackboneElement;
-import org.hl7.fhir.ResourceReference;
 import org.hl7.fhir.Boolean;
+import org.hl7.fhir.Reference;
 
 /**
  * Associations to the set of SimpleAlleles that are canonically equivalent.
@@ -22,7 +22,7 @@ import org.hl7.fhir.Boolean;
  *     &lt;extension base="{http://hl7.org/fhir}BackboneElement">
  *       &lt;sequence>
  *         &lt;element name="preferred" preferred="{http://hl7.org/fhir}boolean" minOccurs="0"/>
- *         &lt;element name="simpleAllele" preferred="{http://hl7.org/fhir}ResourceReference"/>
+ *         &lt;element name="simpleAllele" preferred="{http://hl7.org/fhir}Reference"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>
@@ -38,7 +38,7 @@ public class CanonicalAlleleRelatedSimpleAllele extends BackboneElement
 
 	protected Boolean preferred;
 	@XmlElement (required = true)
-	protected ResourceReference simpleAllele;
+	protected Reference simpleAllele;
 
 	/**
 	 * Gets the value of the preferred property.
@@ -71,10 +71,10 @@ public class CanonicalAlleleRelatedSimpleAllele extends BackboneElement
 	 * 
 	 * @return
 	 *     possible object is
-	 *     {@link ResourceReference }
+	 *     {@link Reference }
 	 *     
 	 */
-	public ResourceReference getSimpleAllele()
+	public Reference getSimpleAllele()
 	{
 		return simpleAllele;
 	}
@@ -84,10 +84,10 @@ public class CanonicalAlleleRelatedSimpleAllele extends BackboneElement
 	 * 
 	 * @param value
 	 *     allowed object is
-	 *     {@link ResourceReference }
+	 *     {@link Reference }
 	 *     
 	 */
-	public void setSimpleAllele(ResourceReference value)
+	public void setSimpleAllele(Reference value)
 	{
 		this.simpleAllele = value;
 	}

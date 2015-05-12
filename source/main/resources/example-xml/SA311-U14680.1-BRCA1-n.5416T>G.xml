@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SimpleAllele xmlns="http://clingen.org/dm/allele/v1"
 	xmlns:f="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://clingen.org/dm/allele/v1 ../clingen-xsd/simpleallele.xsd "
-	id="SA311">
-	<identifier>
-		<f:label value="U14680.1:n.5416T&gt;G"></f:label>
-		<f:system value="http://www.ncbi.nlm.nih.gov/clinvar/variation"></f:system>
-		<f:value value="37656"></f:value>
-	</identifier>
+	xsi:schemaLocation="http://clingen.org/dm/allele/v1 ../clingen-xsd/simpleallele.xsd ">
+	<f:id value="SA311"></f:id>
 	<canonicalAllele>
-		<f:reference value="/CanonicalAllele/CA402"></f:reference>
+		<f:reference value="CanonicalAllele/CA402"></f:reference>
 	</canonicalAllele>
 	<simpleAlleleType value="transcript"></simpleAlleleType>
 	<allele value="G"></allele>
@@ -19,9 +14,6 @@
 			<f:code value="SO:1000002" />
 			<f:display value="substitution" />
 			<f:primary value="true" />
-			<f:valueSet>
-				<f:reference value="/ValueSet/PrimaryNucleotideChangeType" />
-			</f:valueSet>
 		</f:coding>
 	</primaryNucleotideChangeType>
 	<alleleName>
@@ -34,7 +26,7 @@
 			<f:value value="80357463" />
 		</identifier>
 		<referenceSequence>
-			<f:reference value="/ReferenceSequence/RS215" />
+			<f:reference value="ReferenceSequence/RS215" />
 			<f:display value="U14680.1" />
 		</referenceSequence>
 		<start value="5415" />
@@ -45,9 +37,6 @@
 				<f:system value="http://www.sequenceontology.org/"></f:system>
 				<f:code value="SO:0000147"></f:code>
 				<f:display value="exon"></f:display>
-				<f:valueSet>
-					<f:reference value="/ValueSet/PrimaryTranscriptRegionType" />
-				</f:valueSet>
 			</f:coding>
 		</primaryTranscriptRegionType>
 	</referenceCoordinate>

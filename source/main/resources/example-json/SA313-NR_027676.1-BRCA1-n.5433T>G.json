@@ -1,17 +1,8 @@
 {
   "id": "SA313",
-  "identifier": 
-  [
-    {
-      "label": "NR_027676.1:n.5433T>G",
-      "system": "http://www.ncbi.nlm.nih.gov/clinvar/variation",
-      "value": "37656"
-    }
-  ],
-
   "canonicalAllele": 
   {
-    "reference": "/CanonicalAllele/CA402"
+    "reference": "CanonicalAllele/CA402"
   },
 
   "simpleAlleleType": "transcript",
@@ -24,11 +15,7 @@
         "system": "http://www.sequenceontology.org/",
         "code": "SO:1000002",
         "display": "substitution",
-        "primary": "true",
-        "valueSet": 
-        {
-          "reference": "/ValueSet/NucleotideChangeType"
-        }
+        "primary": "true"
       }
     ]
   },
@@ -53,7 +40,7 @@
 
     "referenceSequence": 
     {
-      "reference": "/ReferenceSequence/RS213",
+      "reference": "ReferenceSequence/RS213",
       "display": "NM_001014794.2"
     },
 
@@ -67,11 +54,7 @@
         {
           "system": "http://www.sequenceontology.org/",
           "code": "SO:0000147",
-          "display": "exon",
-          "valueSet": 
-          {
-            "reference": "/ValueSet/PrimaryTranscriptRegionType"
-          }
+          "display": "exon"
         }
       ]
     }

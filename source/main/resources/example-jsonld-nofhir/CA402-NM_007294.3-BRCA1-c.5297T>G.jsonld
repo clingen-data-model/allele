@@ -8,7 +8,17 @@
       "http://www.ncbi.nlm.nih.gov/clinvar/variation/37656"
     }
   ],
-
+  
+  "id" : "CA402",
+  "version": "1",
+  "relatedIdentifier":
+  [
+    {
+      "@type":"RelatedIdentifier", 
+      "system":"http://www.ncbi.nlm.nih.gov/clinvar/variation",
+      "value": "37656"
+    }
+  ],
   "active": "true",
   "canonicalAlleleType": "nucleotide",
   "complexity": "simple",

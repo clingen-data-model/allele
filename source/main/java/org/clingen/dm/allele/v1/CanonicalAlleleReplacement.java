@@ -7,7 +7,7 @@ import javax.xml.bind.annotation.XmlType;
 
 import org.hl7.fhir.BackboneElement;
 import org.hl7.fhir.Boolean;
-import org.hl7.fhir.ResourceReference;
+import org.hl7.fhir.Reference;
 
 /**
  * The replacement canonical alleles and the replacement type.
@@ -23,7 +23,7 @@ import org.hl7.fhir.ResourceReference;
  *       &lt;sequence>
  *         &lt;element name="replacementType" type="{http://org.clingen.dm.allele.v1}CanonicalAlleleReplacementType" minOccurs="0"/>
  *         &lt;element name="split" type="{http://hl7.org/fhir}boolean"/>
- *         &lt;element name="target" type="{http://org.clingen.dm.allele.v1}ResourceReference"/>
+ *         &lt;element name="target" type="{http://org.clingen.dm.allele.v1}Reference"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>
@@ -40,7 +40,7 @@ public class CanonicalAlleleReplacement extends BackboneElement
 	protected CanonicalAlleleReplacementType replacementType;
 	@XmlElement (required = true)
 	protected Boolean split;
-	protected ResourceReference target;
+	protected Reference target;
 
 	/**
 	 * Gets the value of the replacementType property.
@@ -99,10 +99,10 @@ public class CanonicalAlleleReplacement extends BackboneElement
 	 * 
 	 * @return
 	 *     possible object is
-	 *     {@link ResourceReference }
+	 *     {@link Reference }
 	 *     
 	 */
-	public ResourceReference getTarget()
+	public Reference getTarget()
 	{
 		return target;
 	}
@@ -112,10 +112,10 @@ public class CanonicalAlleleReplacement extends BackboneElement
 	 * 
 	 * @param value
 	 *     allowed object is
-	 *     {@link ResourceReference }
+	 *     {@link Reference }
 	 *     
 	 */
-	public void setTarget(ResourceReference value)
+	public void setTarget(Reference value)
 	{
 		this.target = value;
 	}

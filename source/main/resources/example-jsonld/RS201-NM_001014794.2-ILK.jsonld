@@ -1,12 +1,12 @@
 {
   "@context":"http://clingen.org/models/ReferenceSequence.jsonld",
   "@id": "http://clingendb.clingen.org/ReferenceSequence/RS201",
-  "@type": "ReferenceSequence"
+  "@type": "ReferenceSequence",
+  "id": "RS201",
   "identifier": 
   [
     {
       "@type":"Identifier",
-      "label": "Homo sapiens integrin-linked kinase (ILK), transcript variant 2, mRNA",
       "system": "http://www.ncbi.nlm.nih.gov/nuccore",
       "value": "NM_001014794.2"
     }

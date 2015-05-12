@@ -1,11 +1,12 @@
 {
   "id": "RS202",
   "identifier": 
-  {
-    "label": "Homo sapiens chromosome 11, GRCh37 Primary Assembly",
-    "system": "http://www.ncbi.nlm.nih.gov/nuccore",
-    "value": "NC_000011.9"
-  },
+  [
+    {
+      "system": "http://www.ncbi.nlm.nih.gov/nuccore",
+      "value": "NC_000011.9"
+    }
+  ],
 
   "referenceSequenceType": "chromsome",
   "chromosome": "11",

@@ -1,16 +1,9 @@
 {
   "id": "SA302",
-  "identifier": 
-  [
-    {
-      "system": "http://clingen/alleleregistry",
-      "value": "SA302"
-    }
-  ],
 
   "canonicalAllele": 
   {
-    "reference": "/CanonicalAllele/CA401"
+    "reference": "CanonicalAllele/CA401"
   },
 
   "simpleAlleleType": "transcript",
@@ -23,11 +16,7 @@
         "system": "http://www.sequenceontology.org/",
         "code": "SO:1000002",
         "display": "substitution",
-        "primary": "true",
-        "valueSet": 
-        {
-          "reference": "/ValueSet/PrimaryNucleotideChangeType"
-        }
+        "primary": "true"
       }
     ]
   },
@@ -59,11 +48,7 @@
         {
           "system": "http://www.sequenceontology.org/",
           "code": "SO:0000188",
-          "display": "intron",
-          "valueSet": 
-          {
-            "reference": "/ValueSet/PrimaryTranscriptRegionType"
-          }
+          "display": "intron"
         }
       ]
     },
@@ -75,7 +60,7 @@
     {
       "referenceSequence": 
       {
-        "reference": "/ReferenceSequence/RS203",
+        "reference": "ReferenceSequence/RS203",
         "display": "NC_000011.10"
       },
 

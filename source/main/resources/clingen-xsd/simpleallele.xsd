@@ -17,7 +17,7 @@
 				<xs:sequence>
 					<xs:element name="identifier" type="f:Identifier"
 						minOccurs="0" maxOccurs="unbounded" />
-					<xs:element name="canonicalAllele" type="f:ResourceReference"
+					<xs:element name="canonicalAllele" type="f:Reference"
 						minOccurs="0" />
 					<xs:element name="simpleAlleleType" type="SimpleAlleleType"
 						minOccurs="0" />
@@ -68,7 +68,7 @@
 				<xs:sequence>
 					<xs:element name="relatedType" type="SimpleAlleleRelationshipType"
 						minOccurs="0" />
-					<xs:element name="target" type="f:ResourceReference" />
+					<xs:element name="target" type="f:Reference" />
 				</xs:sequence>
 			</xs:extension>
 		</xs:complexContent>
@@ -113,7 +113,7 @@
 				<xs:sequence>
 					<xs:element name="identifier" type="f:Identifier"
 						minOccurs="0" maxOccurs="unbounded" />
-					<xs:element name="referenceSequence" type="f:ResourceReference" />
+					<xs:element name="referenceSequence" type="f:Reference" />
 					<xs:element name="start" type="f:integer" minOccurs="0" />
 					<xs:element name="end" type="f:integer" minOccurs="0" />
 					<xs:element name="refAllele" type="f:string" minOccurs="0" />
@@ -133,12 +133,13 @@
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
-  
+
 	<xs:complexType name="SimpleAlleleIntronOffsetDirection">
 		<xs:complexContent>
 			<xs:extension base="f:Element">
 				<xs:sequence />
-				<xs:attribute name="value" type="SimpleAlleleIntronOffsetDirection-list" />
+				<xs:attribute name="value"
+					type="SimpleAlleleIntronOffsetDirection-list" />
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
@@ -163,7 +164,7 @@
 			<xs:enumeration value="custom" />
 		</xs:restriction>
 	</xs:simpleType>
-  
+
 	<xs:simpleType name="SimpleAlleleIntronOffsetDirection-list">
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="+" />

@@ -7,6 +7,8 @@
     "http://clingen.org/alleleregistry/CA401"
   }],
 
+  "id" : "CA401",
+  "version": "1",
   "active": "true",
   "canonicalAlleleType": "nucleotide",
   "complexity": "simple",

@@ -1,16 +1,8 @@
 {
   "id": "SA317",
-  "identifier": 
-  [
-    {
-      "system": "http://www.ncbi.nlm.nih.gov/clinvar/variation",
-      "value": "37656"
-    }
-  ],
-
   "canonicalAllele": 
   {
-    "reference": "/CanonicalAllele/CA402"
+    "reference": "CanonicalAllele/CA402"
   },
 
   "simpleAlleleType": "genomic",
@@ -48,7 +40,7 @@
 
     "referenceSequence": 
     {
-      "reference": "/ReferenceSequence/RS218",
+      "reference": "ReferenceSequence/RS218",
       "display": "LRG_292"
     },
 

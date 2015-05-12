@@ -1,11 +1,12 @@
 {
   "id": "RS203",
   "identifier": 
-  {
-    "label": "Homo sapiens chromosome 11, GRCh38 Primary Assembly",
-    "system": "http://www.ncbi.nlm.nih.gov/nuccore",
-    "value": "NC_000011.10"
-  },
+  [
+    {
+      "system": "http://www.ncbi.nlm.nih.gov/nuccore",
+      "value": "NC_000011.10"
+    }
+  ],
 
   "referenceSequenceType": "chromsome",
   "chromosome": "11",

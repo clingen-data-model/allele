@@ -11,7 +11,7 @@ import org.hl7.fhir.BackboneElement;
 import org.hl7.fhir.CodeableConcept;
 import org.hl7.fhir.Identifier;
 import org.hl7.fhir.Integer;
-import org.hl7.fhir.ResourceReference;
+import org.hl7.fhir.Reference;
 import org.hl7.fhir.String;
 
 /**
@@ -27,7 +27,7 @@ import org.hl7.fhir.String;
  *     &lt;extension base="{http://hl7.org/fhir}BackboneElement">
  *       &lt;sequence>
  *         &lt;element name="identifier" type="{http://hl7.org/fhir}Identifier" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="referenceSequence" type="{http://hl7.org/fhir}ResourceReference"/>
+ *         &lt;element name="referenceSequence" type="{http://hl7.org/fhir}Reference"/>
  *         &lt;element name="start" type="{http://hl7.org/fhir}int"/>
  *         &lt;element name="end" type="{http://hl7.org/fhir}int"/>
  *         &lt;element name="refAllele" type="{http://hl7.org/fhir}string"/>
@@ -57,7 +57,7 @@ public class SimpleAlleleReferenceCoordinate extends BackboneElement
 
 	protected List<Identifier> identifier;
 	@XmlElement (required = true)
-	protected ResourceReference referenceSequence;
+	protected Reference referenceSequence;
 	protected Integer start;
 	protected Integer end;
 	protected String refAllele;
@@ -97,10 +97,10 @@ public class SimpleAlleleReferenceCoordinate extends BackboneElement
 	 * 
 	 * @return
 	 *     possible object is
-	 *     {@link ResourceReference }
+	 *     {@link Reference }
 	 *     
 	 */
-	public ResourceReference getReferenceSequence()
+	public Reference getReferenceSequence()
 	{
 		return referenceSequence;
 	}
@@ -110,10 +110,10 @@ public class SimpleAlleleReferenceCoordinate extends BackboneElement
 	 * 
 	 * @param referenceSequence
 	 *     allowed object is
-	 *     {@link ResourceReference }
+	 *     {@link Reference }
 	 *     
 	 */
-	public void setReferenceSequence(ResourceReference value)
+	public void setReferenceSequence(Reference value)
 	{
 		this.referenceSequence = value;
 	}

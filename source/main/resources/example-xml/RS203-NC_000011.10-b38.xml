@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ReferenceSequence id="RS203"
-	xmlns="http://clingen.org/dm/allele/v1" xmlns:f="http://hl7.org/fhir"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<ReferenceSequence xmlns="http://clingen.org/dm/allele/v1"
+	xmlns:f="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://clingen.org/dm/allele/v1 ../clingen-xsd/referencesequence.xsd ">
+	<f:id value="RS203"></f:id>
 	<identifier>
 		<f:label value="Homo sapiens chromosome 11, GRCh38 Primary Assembly" />
 		<f:system value="http://www.ncbi.nlm.nih.gov/nuccore" />
