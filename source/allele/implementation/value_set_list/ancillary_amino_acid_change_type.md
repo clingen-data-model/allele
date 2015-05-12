@@ -32,22 +32,16 @@ Examples:
 ###_The first case:_
 
 {:.table} 
-| Type | SO Name | Code[ID] | 
+| Type | Display Name | Code | 
 |----------------|----------------| 
-| `primaryAminoAcidChangeType` | `inframe_variant` | [SO:0001650](http://www.sequenceontology.org/browser/current_svn/term/SO:0001650) |
-| `ancillaryAminoAcidChangeType` | `inframe_deletion` | [SO:0001822](http://www.sequenceontology.org/browser/current_svn/term/SO:0001822) |
+| `primaryAminoAcidChangeType` | `synonymous_variant` | [SO:0001819](http://www.sequenceontology.org/browser/current_svn/term/SO:0001819) |
+| `ancillaryAminoAcidChangeType` | `stop_retained_variant` | [SO:0001567](http://www.sequenceontology.org/browser/current_svn/term/SO:0001567) |
 
 {:.table} 
-| Type | SO Name | Code[ID] | 
+| Type | Display Name | Code | 
 |----------------|----------------| 
-| `primaryAminoAcidChangeType` | `coding_sequence_variant` | [SO:0001580](http://www.sequenceontology.org/browser/current_svn/term/SO:0001580) |
-| `ancillaryAminoAcidChangeType` | `terminator_codon_variant` | [SO:0001590](http://www.sequenceontology.org/miso/current_svn/term/SO:0001590) |
-
-{:.table} 
-| Type | SO Name | Code[ID] | 
-|----------------|----------------| 
-| `primaryAminoAcidChangeType` | `intergenic_variant` | [SO:0001628](http://www.sequenceontology.org/browser/current_svn/term/SO:0001628) |
-| `ancillaryAminoAcidChangeType` | `downstream_gene_variant` | [SO:0001632](http://www.sequenceontology.org/miso/current_svn/term/SO:0001632) |
+| `primaryAminoAcidChangeType` | `missense_variant` | [SO:0001580](http://www.sequenceontology.org/browser/current_svn/term/SO:0001583) |
+| `ancillaryAminoAcidChangeType` | `non_conservative_missense_variant` | [SO:0001586](http://www.sequenceontology.org/browser/current_svn/term/SO:0001586) |
 
 
 This method offers two levels of annotated detail. The primaryAminoAcidChangeType term enables higher-level grouping, and the ancillaryAminoAcidChangeType offers additional specifics on the nature of the variant.
@@ -56,7 +50,7 @@ This method offers two levels of annotated detail. The primaryAminoAcidChangeTyp
 ###_The second case:_
 
 {:.table} 
-| Type | SO Name | Code[ID] | 
+| Type | Display Name | Code | 
 |----------------|----------------| 
 | `ancillaryAminoAcidChangeType` | `rare_amino_acid_variant` | [SO:0002008](http://www.sequenceontology.org/browser/current_svn/term/SO:0002008) |
 
@@ -64,7 +58,7 @@ This method offers two levels of annotated detail. The primaryAminoAcidChangeTyp
 ##_Annotation tools examples:_
 
 {:.table} 
-| Type | SO Name | Tool | Code[SO] | 
+| Type | Display Name | Tool | Code | 
 |------|----------|-----|----------|
 | `ancillaryAminoAcidChangeType` | `conserved_intergenic_variant` | [SnpEff](http://snpeff.sourceforge.net/) | [SO:0002017](http://www.sequenceontology.org/browser/current_svn/term/SO:0002017) |
 | `ancillaryAminoAcidChangeType` | `stop_retained_variant` | [VAT](http://www.yandell-lab.org/software/vaast.html) | [SO:0001567](http://www.sequenceontology.org/browser/current_svn/term/SO:0001567) |
