@@ -1,6 +1,10 @@
 ---
-title: Allele Model v0.1(beta)
+title: Allele Model
+model: allele
+layout: model
+
 ---
+
 
 Introduction
 ------------

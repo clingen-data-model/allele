@@ -48,26 +48,76 @@ end
 
 # Methods defined in the helpers block are available in templates
 helpers do
-  def local_index
-    output = sitemap.resources.select{|r| r.url.include?(current_page.url) and not r.path =~ /index\.html/}.reduce("<dl>\n") do |acc, r|
-      acc + "<dt>#{link_to r.data.title, r.url}</dt>\n<dd>#{r.data.description}</dd>\n"
+
+  # Root links in left navbar. Expand (accordion style)
+  # based on selected page
+  def link_with_local_index(text, path)
+    output = link_to(text, path)
+    if current_page.url.include?(path)
+      index = local_index(current_page.url)
+      %(<li class="active">#{output}</li>#{index})
+    else
+      "<li>#{output}</li>"
     end
-    return output + "</dl>\n"
+  end
+  
+  # Recurse up the document tree to build <li> for index
+  def local_index(path, nested_index = "")
+    puts "local_index(#{path}, #{nested_index})"
+    # Ensure path refers to local directory
+    current_path = path[/(.*\/).*$/, 1]
+
+    # Done when model root is reached
+    return nested_index if current_path =~ /^\/\w*\/$/
+
+    local_pages = sitemap.resources.
+                  select { |r| r.url.include?(current_path) }
+    index = local_pages.reduce("") do |acc, r|
+      link = link_to(r.data.title, r.url)
+      # if r.path == current_page.path && r.path.include?('index.html') 
+      #   # don't print current index
+      #   acc
+      if current_page.url == r.url # Active page
+        acc << %(<li class="active">#{link}</li>)
+      elsif current_page.url.include?(r.url) # Containing folder
+        acc << "<li>#{link}</li>" + nested_index
+      else
+        acc << "<li>#{link}</li>"
+      end
+    end
+    list = "<ul>#{index}</ul>"
+    puts "list: #{list}"
+    parent_folder = current_path[/(.*\/)\w*\//, 1]
+    local_index(parent_folder, list)
   end
 
+  def model_name
+    current_page.data.model ? current_page.data.model.capitalize : ""
+  end
+  
+  # def local_index
+  #   output = sitemap.resources.select{|r| r.url.include?(current_page.url) and not r.path =~ /index\.html/}.reduce("<dl>\n") do |acc, r|
+  #     acc + "<dt>#{link_to r.data.title, r.url}</dt>\n<dd>#{r.data.description}</dd>\n"
+  #   end
+  #   return output + "</dl>\n"
+  # end
+
   def brief_index(path)
-    output = sitemap.resources.select{|r| r.url.include?(path) and not r.path =~ /index\.html/}.sort_by{ |r| r.path}.reduce("<ul>\n") do |acc, r|
+    output = sitemap.resources.select{|r| r.url.include?(path) && path != r.url }.sort_by{ |r| r.path}.reduce("<ul>\n") do |acc, r|
+      puts '---'
+      puts path 
+      puts r.url
       acc + "<li>#{link_to r.data.title, r.url}</li>\n"
     end
     return output + "</ul>\n"
   end  
 
-  def link_with_local_index(text, path)
+  def link_with_local_index_old(text, path)
     output = link_to(text, path)
     if current_page.url.include?(path)
-      "<strong>#{output}</strong>#{brief_index(path)}"
+      %(<li class="active">#{output}</li>#{brief_index(path)})
     else
-      output
+      "<li>#{output}</li>"
     end
   end
   

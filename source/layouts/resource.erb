@@ -1,46 +1,4 @@
-<% wrap_layout :layout do %>
-   <% if current_page.data.context %>
-   <h2>Context</h2>
-   <script type="text/javascript">
-   function toggle_visibility(clazz) {
-      var hidername = clazz + '-hider'
-      var hider = document.getElementById(hidername);
-      if (hider) {
-         console.log('showing');
-         hider.parentNode.removeChild(hider);
-      } else {
-         console.log('hiding');
-         hider = document.createElement('style');
-         hider.id = hidername;
-         hider.innerHTML = "." + clazz + "{ display: none; }"
-         document.body.appendChild(hider);
-      }
-   }
-   toggle_visibility('context-requirement');
-   </script>
-   <button onclick="toggle_visibility('context-requirement');">Toggle requirements</button>
-   <table class="table">
-      <thead><tr>
-         <th>Property</th>
-         <th>Control</th>
-         <th>Type</th>
-         <th>Definition</th>
-      </tr></thead>
-      <% current_page.data.context.each do |attribute| %>
-      <tr>
-         <td><%= attribute.property %></td>
-         <td><%= attribute.control %></td>
-         <td><%= attribute.type %></td>
-         <td><%= attribute.definition %></td>
-      </tr>
-      <% if attribute.requirements %>
-      <tr class="context-requirement"><td></td><td colspan="3" class="context-requirement">
-         <%= render_markdown attribute.requirements %>
-      </td></tr>
-      <% end %>
-      <% end %>
-      </table>
-   <% end %>
+<% wrap_layout :model do %>
    <%= yield %>
    <h2>Schema</h2>
    <p>schema: <%= link_to "#{current_page.data.title}.xsd", current_page.data.schema %></p>

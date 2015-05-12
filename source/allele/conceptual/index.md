@@ -1,3 +1,11 @@
+---
+title: Conceptual
+layout: model
+model: allele
+
+---
+
+
 Overview
 ---------
 

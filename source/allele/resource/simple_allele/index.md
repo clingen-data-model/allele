@@ -1,6 +1,7 @@
 ---
 title: SimpleAllele
 layout: resource
+model: allele
 alias: simple allele, allele, variant, sequence variant, snv, amino acid variant, dna change, aa change
 description: A representation of one of the multiple variant sequences at a contiguous region in a particular <a href="/allele/resource/reference_sequence/index.html">ReferenceSequence</a>.
 related_page_title: SimpleAllele
