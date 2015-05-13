@@ -1,6 +1,7 @@
 ---
 title: IntronOffset 
 layout: conceptual
+model: allele
 description: IntronOffset is used in conjunction with a <a href="transcript_reference_coordinate.html">TranscriptReferenceCoordinate</a> to refer to an intronic location based on a <a href="transcript_reference_sequence.html">TranscriptReferenceSequence</a>.  
 
 ---

@@ -1,6 +1,7 @@
 ---
 title: Gene
 layout: conceptual
+model: allele
 description: A genomic region identified by a collection of alternately spliced TranscriptReferenceSequences, given a name by one or more naming agencies.
 related_page_title: Gene
 related_page_url: /allele/resource/gene

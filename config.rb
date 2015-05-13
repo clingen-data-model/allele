@@ -49,6 +49,20 @@ end
 # Methods defined in the helpers block are available in templates
 helpers do
 
+  # Generate a link to a specific resource with text based on title
+  def link_to_resource(resource)
+    link_to(resource.data.title, resource.url)
+  end
+
+  # Return the path one level above the current path
+  def parent_path(path)
+    path.chomp('/')[/(.*\/).*$/, 1]
+  end
+
+  def path_depth(path)
+    path.chomp('/').count('/')
+  end
+
   # Root links in left navbar. Expand (accordion style)
   # based on selected page
   def link_with_local_index(text, path)
@@ -60,36 +74,53 @@ helpers do
       "<li>#{output}</li>"
     end
   end
-  
-  # Recurse up the document tree to build <li> for index
-  def local_index(path, nested_index = "")
-    puts "local_index(#{path}, #{nested_index})"
-    # Ensure path refers to local directory
-    current_path = path[/(.*\/).*$/, 1]
 
-    # Done when model root is reached
-    return nested_index if current_path =~ /^\/\w*\/$/
+  def local_index(path)
 
-    local_pages = sitemap.resources.
-                  select { |r| r.url.include?(current_path) }
-    index = local_pages.reduce("") do |acc, r|
-      link = link_to(r.data.title, r.url)
-      # if r.path == current_page.path && r.path.include?('index.html') 
-      #   # don't print current index
-      #   acc
-      if current_page.url == r.url # Active page
-        acc << %(<li class="active">#{link}</li>)
-      elsif current_page.url.include?(r.url) # Containing folder
-        acc << "<li>#{link}</li>" + nested_index
+    index = list_children(path)
+    index = list_siblings(path, index) if path_depth(path) > 2
+    index = list_parents(path, index) if path_depth(path) > 3
+    index
+  end
+
+  def list_parents(path, nested_index = "")
+    puts "list_parents(#{path}, #{nested_index})"
+    parent_path = parent_path(path)
+    index = list_siblings(parent_path, nested_index)
+    index = list_parents(parent_path, index) if path_depth(parent_path) > 3
+    "<ul>#{index}</ul>"
+  end
+
+  def list_siblings(path, nested_index = "")
+    puts "list_siblings(#{path}, #{nested_index})"
+    sibling_path = parent_path(path)
+    depth = path_depth(path)
+    siblings = sitemap.resources.select do |r|
+      r.url.include?(sibling_path) && path_depth(r.url) == depth
+    end
+    list = siblings.reduce("") do |a, e|
+      if e.url == current_page.url
+        a << %(<li class="active">#{link_to_resource(e)}</li>#{nested_index})
       else
-        acc << "<li>#{link}</li>"
+        a << "<li>#{link_to_resource(e)}</li>"
       end
     end
-    list = "<ul>#{index}</ul>"
-    puts "list: #{list}"
-    parent_folder = current_path[/(.*\/)\w*\//, 1]
-    local_index(parent_folder, list)
+    "<ul>#{list}</ul>"
   end
+
+  # Generate nested list of current element's children
+  def list_children(parent_url)
+    depth = path_depth(parent_url)
+    children = sitemap.resources.select do |r|
+      r.url.include?(parent_url) && path_depth(r.url) == depth + 1 
+    end
+    list = children.reduce("") do |a, e|
+      a << "<li>#{link_to_resource(e)}</li>\n"
+    end
+    "<ul>#{list}</ul>"
+  end
+
+
 
   def model_name
     current_page.data.model ? current_page.data.model.capitalize : ""
@@ -104,9 +135,6 @@ helpers do
 
   def brief_index(path)
     output = sitemap.resources.select{|r| r.url.include?(path) && path != r.url }.sort_by{ |r| r.path}.reduce("<ul>\n") do |acc, r|
-      puts '---'
-      puts path 
-      puts r.url
       acc + "<li>#{link_to r.data.title, r.url}</li>\n"
     end
     return output + "</ul>\n"

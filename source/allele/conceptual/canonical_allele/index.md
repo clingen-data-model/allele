@@ -2,6 +2,7 @@
 title: CanonicalAllele
 description: A stable identifier for an allele, grouping together the different ways that the allele might be described across different versions of different ReferenceSequences.
 layout: conceptual
+model: allele
 related_page_title: CanonicalAllele
 related_page_url: /allele/resource/canonical_allele
 

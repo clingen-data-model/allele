@@ -1,6 +1,7 @@
 ---
 title: SimpleAllele
 layout: conceptual
+model: allele
 description: A representation of one of the multiple variant sequences at a contiguous region in a particular <a href="/allele/conceptual/reference_sequence/index.html">ReferenceSequence</a>.
 related_page_title: SimpleAllele
 related_page_url: /allele/resource/simple_allele

@@ -1,6 +1,7 @@
 ---
 title: TranscriptReferenceCoordinate 
 layout: conceptual
+model: allele
 description: TranscriptReferenceCoordinate defines a location with respect to a <a href="../reference_sequence/transcript_reference_sequence.html">TranscriptReferenceSequence</a>.  A TranscriptReferenceCoordinate can be defined for both exonic positions, which are part of the transcript, and intronic positions, which are not.
 
 ---

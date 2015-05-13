@@ -1,6 +1,7 @@
 ---
 title: ComplexNucleotideCanonicalAllele
 layout: conceptual
+model: allele
 description: A stable identifier for a complex nucleotide allele, based on an aggregation of SimpleNucleotideCanonicalAlleles.
 
 ---

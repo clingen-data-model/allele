@@ -1,6 +1,7 @@
 ---
 title: NucleotideReferenceCoordinate
 layout: conceptual
+model: allele
 description: NucleotideReferenceCoordinate defines a location with respect to a <a href="../reference_sequence/nucleotide_reference_sequence.html">NucleotideReferenceSequence</a>.
 
 ---

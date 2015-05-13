@@ -1,7 +1,9 @@
 ---
 title: SimpleGenomicAllele
 layout: conceptual
+model: allele
 description: A SimpleAllele that uses a <a href="genomic_reference_coordinate.html">GenomicReferenceCoordinate</a> as its <a href="reference_coordinate.html">ReferenceCoordinate</a>.
+
 ---
 
 Scope and Usage

@@ -1,7 +1,9 @@
 ---
 title: SimpleTranscriptAllele
 layout: conceptual
+model: allele
 description: A SimpleAlllele that uses a TranscriptReferenceSequence as its ReferenceSequence.
+
 ---
 
 Scope and Usage

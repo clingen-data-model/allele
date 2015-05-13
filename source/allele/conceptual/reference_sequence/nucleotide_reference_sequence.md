@@ -1,6 +1,7 @@
 ---
 title: NucleotideReferenceSequence
 layout: conceptual
+model: allele
 description: A <a href="/allele/conceptual/reference_sequence.html">ReferenceSequence</a>  constructed from nucleotides.
 
 ---

@@ -1,6 +1,7 @@
 ---
 title: SimpleAminoAcidCanonicalAllele
 layout: conceptual
+model: allele
 description: A stable identifier for a simple  allele, grouping together the different ways that the allele might be described across different versions of a particular AminoAcidReferenceSequence. 
 
 ---
