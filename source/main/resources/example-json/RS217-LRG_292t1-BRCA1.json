@@ -1,17 +1,19 @@
 {
   "id": "RS217",
   "identifier": 
-  {
-    "system": "http://ftp.ebi.ac.uk/pub/databases/lrgex",
-    "value": "LRG_292t1"
-  },
+  [
+    {
+      "system": "http://ftp.ebi.ac.uk/pub/databases/lrgex",
+      "value": "LRG_292t1"
+    }
+  ],
 
   "referenceSequenceType": "transcript",
   "cdsStart": "233",
   "cdsEnd": "5824",
   "gene": 
   {
-    "reference": "/Gene/G102"
+    "reference": "Gene/G102"
   },
 
   "related": 
@@ -19,7 +21,7 @@
     "relatedType": "translates-to",
     "target": 
     {
-      "reference": "/ReferenceSequence/RS216",
+      "reference": "ReferenceSequence/RS216",
       "display": "LRG_292p1"
     }
   }

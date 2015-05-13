@@ -40,7 +40,6 @@
             "@id":"fhir:primary",
             "@type":"xsd:boolean"
         },
-        "valueSet": "fhir:valueSet",
         
         "SimpleAllele":"clingen:SimpleAllele",
         "ReferenceCoordinate": "clingen:ReferenceCoordinate",

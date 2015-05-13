@@ -2,6 +2,7 @@
   "@context":"http://clingen.org/models/SimpleAllele.jsonld",
   "@id": "http://clingendb.clingen.org/SimpleAllele/SA302",
   "@type":"SimpleAllele",
+  "id": "SA302",
   "identifier": 
   [
     {
@@ -29,12 +30,7 @@
         "system": "http://www.sequenceontology.org/",
         "code": "SO:1000002",
         "display": "substitution",
-        "primary": "true",
-        "valueSet": 
-        {
-          "@type":"Reference",
-          "reference": "/ValueSet/PrimaryNucleotideChangeType"
-        }
+        "primary": "true"
       }
     ]
   },
@@ -70,11 +66,7 @@
           "@type":"Code",
           "system": "http://www.sequenceontology.org/",
           "code": "SO:0000188",
-          "display": "intron",
-          "valueSet": 
-          {
-            "reference": "../../ValueSet/PrimaryTranscriptRegionType"
-          }
+          "display": "intron"
         }
       ]
     },

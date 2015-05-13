@@ -1,11 +1,12 @@
 {
   "id": "RS211",
   "identifier": 
-  {
-    "label": "Homo sapiens chromosome 17, GRCh37 Primary Assembly",
-    "system": "http://www.ncbi.nlm.nih.gov/nuccore",
-    "value": "NC_000017.10"
-  },
+  [
+    {
+      "system": "http://www.ncbi.nlm.nih.gov/nuccore",
+      "value": "NC_000017.10"
+    }
+  ],
 
   "referenceSequenceType": "chromsome",
   "chromosome": "17",

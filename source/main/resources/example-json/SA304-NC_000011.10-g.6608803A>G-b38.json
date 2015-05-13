@@ -1,17 +1,8 @@
 {
   "id": "SA304",
-  "identifier": 
-  [
-    {
-      "label": "NC_000011.10:g.6608803A>G",
-      "system": "http://clingen/alleleregistry",
-      "value": "SA304"
-    }
-  ],
-
   "canonicalAllele": 
   {
-    "reference": "/CanonicalAllele/CA401"
+    "reference": "CanonicalAllele/CA401"
   },
 
   "simpleAlleleType": "genomic",
@@ -24,11 +15,7 @@
         "system": "http://www.sequenceontology.org/",
         "code": "SO:1000002",
         "display": "substitution",
-        "primary": "true",
-        "valueSet": 
-        {
-          "reference": "/ValueSet/PrimaryNucleotideChangeType"
-        }
+        "primary": "true"
       }
     ]
   },
@@ -45,7 +32,7 @@
   {
     "referenceSequence": 
     {
-      "reference": "/ReferenceSequence/RS203",
+      "reference": "ReferenceSequence/RS203",
       "display": "NC_000011.10"
     },
 

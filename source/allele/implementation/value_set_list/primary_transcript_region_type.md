@@ -9,8 +9,6 @@ usage: core
 Scope and Usage
 ---------------
 
-We have curated a list of primary Sequence Ontology terms to be used when annotating primaryTranscriptRegionType.  This list is specifically developed to describe transcript region types associated with SimpleAllele observations.  Use of this list allow grouping of transcript regions at a higher level, enriching the ability to preform logic and algorithm based operation across larger groups of region types.
-
 This value set can be used in conjunction with the [ancillary-transcript-region-type](ancillary_transcript_region_type.html), which provides additional detail to the primaryTranscriptRegionType.  
 
 primaryTranscriptRegionType:
@@ -19,14 +17,14 @@ primaryTranscriptRegionType:
 Annotations done using the primaryTranscriptRegionType attribute are restricted to one of the following terms provided.  Any term used outside this list would be considered invalid for this attribute.
 
 {:.table}
-| SO Name | Code[SO] | 
+| Code | Display Name |
 |--------|----------|
-| CDS | [SO:0000316](http://www.sequenceontology.org/browser/current_svn/term/SO:0000316) |
-| interior_intron | [SO:0000191](http://www.sequenceontology.org/browser/current_svn/term/SO:0000191)|
-| pseudogenic_exon | [SO:0000507](http://www.sequenceontology.org/browser/current_svn/term/SO:0000507) |
-| splice_site | [SO:0000162](http://www.sequenceontology.org/browser/current_svn/term/SO:0000162) |
-| five_prime_UTR | [SO:0000204](http://www.sequenceontology.org/browser/current_svn/term/SO:0000204) |
-| three_prime_UTR | [SO:0000205](http://www.sequenceontology.org/miso/current_svn/term/SO:0000205) |
+[SO:0000316](http://www.sequenceontology.org/browser/current_svn/term/SO:0000316) | CDS |
+[SO:0000191](http://www.sequenceontology.org/browser/current_svn/term/SO:0000191)| interior_intron |
+[SO:0000507](http://www.sequenceontology.org/browser/current_svn/term/SO:0000507) | pseudogenic_exon |
+[SO:0000162](http://www.sequenceontology.org/browser/current_svn/term/SO:0000162) | splice_site |
+[SO:0000204](http://www.sequenceontology.org/browser/current_svn/term/SO:0000204) | five_prime_UTR |
+[SO:0000205](http://www.sequenceontology.org/miso/current_svn/term/SO:0000205) | three_prime_UTR |
 
 This value set is used in the following places:
 
@@ -39,18 +37,18 @@ Examples:
 **primaryTranscriptRegionType:** (cardinality of 1..*)
 
 {:.table}
-| Type | SO Name | Code[SO] | 
+| Type | Display Name | Code | 
 |----------------|----------------|
 | `primaryTranscriptRegionType` | `CDS` | [SO:0000316](http://www.sequenceontology.org/browser/current_svn/term/SO:0000316) |
 
 {:.table}
-| Type | SO Name | Code[SO] | 
+| Type | Display Name | Code | 
 |----------------|----------------|
 | `primaryTranscriptRegionType` | `splice_site` | [SO:0000162](http://www.sequenceontology.org/browser/current_svn/term/SO:0000162) |
 
 
 {:.table}
-| Type | SO Name | Code[SO] | 
+| Type | Display Name | Code | 
 |----------------|----------------|
 | `primaryTranscriptRegionType` | `CDS` | [SO:0000316](http://www.sequenceontology.org/browser/current_svn/term/SO:0000316) |
 | `primaryTranscriptRegionType` | `interior_intron` | [SO:0000191](http://www.sequenceontology.org/browser/current_svn/term/SO:0000191) |

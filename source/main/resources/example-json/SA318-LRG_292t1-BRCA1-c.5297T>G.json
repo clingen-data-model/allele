@@ -1,16 +1,8 @@
 {
   "id": "SA318",
-  "identifier": 
-  [
-    {
-      "system": "http://www.ncbi.nlm.nih.gov/clinvar/variation",
-      "value": "37656"
-    }
-  ],
-
   "canonicalAllele": 
   {
-    "reference": "/CanonicalAllele/CA402"
+    "reference": "CanonicalAllele/CA402"
   },
 
   "simpleAlleleType": "transcript",
@@ -23,11 +15,7 @@
         "system": "http://www.sequenceontology.org/",
         "code": "SO:1000002",
         "display": "substitution",
-        "primary": "true",
-        "valueSet": 
-        {
-          "reference": "/ValueSet/PrimaryNucleotideChangeType"
-        }
+        "primary": "true"
       }
     ]
   },
@@ -53,7 +41,7 @@
 
     "referenceSequence": 
     {
-      "reference": "/ReferenceSequence/RS217",
+      "reference": "ReferenceSequence/RS217",
       "display": "LRG_292t1"
     },
 
@@ -67,11 +55,7 @@
         {
           "system": "http://www.sequenceontology.org/",
           "code": "SO:0000147",
-          "display": "exon",
-          "valueSet": 
-          {
-            "reference": "/ValueSet/PrimaryTranscriptRegionType"
-          }
+          "display": "exon"
         }
       ]
     }

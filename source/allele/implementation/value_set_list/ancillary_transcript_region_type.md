@@ -29,7 +29,7 @@ Examples:
 ###_The first case:_
 
 {:.table}
-| Type | SO Name | Code[SO] | 
+| Type | Display Name | Code | 
 |----------------|----------------|
 | `primaryTranscriptRegionType` | `CDS` | [SO:0000316](http://www.sequenceontology.org/browser/current_svn/term/SO:0000316) |
 | `ancillaryTranscriptRegionType` | `transcription_start_site` | [SO:0000315](http://www.sequenceontology.org/browser/current_svn/term/SO:0000315) |
@@ -38,13 +38,13 @@ Examples:
 _More examples:_
 
 {:.table}
-| Type | SO Name | Code[SO] | 
+| Type | Display Name | Code | 
 |----------------|----------------|
 | `primaryTranscriptRegionType` | `splice_site` | [SO:0000162](http://www.sequenceontology.org/browser/current_svn/term/SO:0000162) |
 | `ancillaryTranscriptRegionType` | `three_prime_cis_splice_site` | [SO:0000164](http://www.sequenceontology.org/browser/current_svn/term/SO:0000164) |
 
 {:.table}
-| Type | SO Name | Code[SO] | 
+| Type | Display Name | Code | 
 |----------------|----------------|
 | `primaryTranscriptRegionType` | `five_prime_UTR` | [SO:0000204](http://www.sequenceontology.org/browser/current_svn/term/SO:0000204) |
 | `ancillaryTranscriptRegionType` | `upstream_AUG_codon` | [SO:000063](http://www.sequenceontology.org/browser/current_svn/term/SO:0000630) |
@@ -55,12 +55,12 @@ These methods offers two levels of annotated detail.  The primaryTranscriptRegio
 ###_The second case:_
 
 {:.table}
-| Type | SO Name | Code[ID] | 
+| Type | Display Name | Code | 
 |----------------|----------------|
 | `ancillaryTranscriptRegionType` | `promoter` | [SO:0000167](http://www.sequenceontology.org/browser/current_svn/term/SO:0000167) |
 
 {:.table}
-| Type | SO Name | Code[ID] | 
+| Type | Display Name | Code | 
 |----------------|----------------|
 | `ancillaryTranscriptRegionType` | `cryptic_splice_site` | [SO:0001533](http://www.sequenceontology.org/browser/current_svn/term/SO:0001533) |
 

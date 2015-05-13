@@ -1,17 +1,8 @@
 {
   "id": "SA310",
-  "identifier": 
-  [
-    {
-      "label": "NM_007294.3(BRCA1):c.5297T>G (p.Ile1766Ser)",
-      "system": "http://www.ncbi.nlm.nih.gov/clinvar/variation",
-      "value": "37656"
-    }
-  ],
-
   "canonicalAllele": 
   {
-    "reference": "/CanonicalAllele/CA402"
+    "reference": "CanonicalAllele/CA402"
   },
 
   "simpleAlleleType": "transcript",
@@ -24,11 +15,7 @@
         "system": "http://www.sequenceontology.org/",
         "code": "SO:1000002",
         "display": "substitution",
-        "primary": "true",
-        "valueSet": 
-        {
-          "reference": "/ValueSet/PrimaryNucleotideChangeType"
-        }
+        "primary": "true"
       }
     ]
   },
@@ -59,7 +46,7 @@
 
     "referenceSequence": 
     {
-      "reference": "/ReferenceSequence/RS213",
+      "reference": "ReferenceSequence/RS213",
       "display": "NM_001014794.2"
     },
 
@@ -73,11 +60,7 @@
         {
           "system": "http://www.sequenceontology.org/",
           "code": "SO:0000147",
-          "display": "exon",
-          "valueSet": 
-          {
-            "reference": "/ValueSet/PrimaryTranscriptRegionType"
-          }
+          "display": "exon"
         }
       ]
     }
@@ -89,7 +72,7 @@
       "relatedType": "amino-acid-effect",
       "target": 
       {
-        "reference": "/SimpleAllele/SA312",
+        "reference": "SimpleAllele/SA312",
         "display": "NP_009225.1:p.Ile1766Ser"
       }
     }

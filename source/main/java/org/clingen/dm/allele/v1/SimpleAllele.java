@@ -9,8 +9,8 @@ import javax.xml.bind.annotation.XmlType;
 
 import org.hl7.fhir.CodeableConcept;
 import org.hl7.fhir.Identifier;
+import org.hl7.fhir.Reference;
 import org.hl7.fhir.Resource;
-import org.hl7.fhir.ResourceReference;
 import org.hl7.fhir.String;
 
 /**
@@ -26,7 +26,7 @@ import org.hl7.fhir.String;
  *     &lt;extension base="{http://hl7.org/fhir}Resource">
  *       &lt;sequence>
  *         &lt;element name="identifier" type="{http://hl7.org/fhir}Identifier" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="canonicalAllele" type="{http://hl7.org/fhir}ResourceReference" maxOccurs="1" minOccurs="0"/>
+ *         &lt;element name="canonicalAllele" type="{http://hl7.org/fhir}Reference" maxOccurs="1" minOccurs="0"/>
  *         &lt;element name="simpleAlleleType" type="{http://org.clingen.dm.allele.v1}SimpleAlleleType"/>
  *         &lt;element name="allele" type="{http://hl7.org/fhir}string" minOccurs="0"/>
  *         &lt;element name="primaryNucleotideChangeType" type="{http://hl7.org/fhir}CodeableConcept" minOccurs="0"/>
@@ -53,7 +53,7 @@ public class SimpleAllele extends Resource
 {
 
 	protected List<Identifier> identifier;
-	protected ResourceReference canonicalAllele;
+	protected Reference canonicalAllele;
 	@XmlElement (required = true)
 	protected SimpleAlleleType simpleAlleleType;
 	protected String allele;
@@ -94,10 +94,10 @@ public class SimpleAllele extends Resource
 	 * 
 	 * @return
 	 *     possible object is
-	 *     {@link ResourceReference }
+	 *     {@link Reference }
 	 *     
 	 */
-	public ResourceReference getCanonicalAllele()
+	public Reference getCanonicalAllele()
 	{
 		return canonicalAllele;
 	}
@@ -107,10 +107,10 @@ public class SimpleAllele extends Resource
 	 * 
 	 * @param value
 	 *     allowed object is
-	 *     {@link ResourceReference }
+	 *     {@link Reference }
 	 *     
 	 */
-	public void setCanonicalAllele(ResourceReference value)
+	public void setCanonicalAllele(Reference value)
 	{
 		this.canonicalAllele = value;
 	}

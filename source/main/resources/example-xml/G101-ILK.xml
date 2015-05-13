@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Gene xmlns="http://clingen.org/dm/allele/v1" xmlns:f="http://hl7.org/fhir"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://clingen.org/dm/allele/v1 ../clingen-xsd/gene.xsd "
-	id="G101">
+	xsi:schemaLocation="http://clingen.org/dm/allele/v1 ../clingen-xsd/gene.xsd ">
+	<f:id value="G101"></f:id>
 	<identifier>
-		<f:use value="official"></f:use>
-		<f:label value="ILK"></f:label>
-		<f:system value="http://www.genenames.org/"></f:system>
+		<f:use value="usual"></f:use>
+		<!-- this is the system OID for www.genenames.org (HUGO Gene Nomenclature) -->
+		<f:system value="urn:oid:2.16.840.1.113883.6.281"></f:system>
 		<f:value value="HGNC:6040"></f:value>
 	</identifier>
 	<identifier>
+		<f:use value="secondary"></f:use>
 		<f:system value="http://www.ncbi.nlm.nih.gov/gene"></f:system>
 		<f:value value="3611"></f:value>
 	</identifier>
 	<symbol value="ILK"></symbol>
 	<name value="integrin-linked kinase"></name>
 </Gene>
+
+

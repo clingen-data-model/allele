@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ReferenceSequence id="RS216"
-	xmlns="http://clingen.org/dm/allele/v1" xmlns:f="http://hl7.org/fhir"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<ReferenceSequence i xmlns="http://clingen.org/dm/allele/v1"
+	xmlns:f="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://clingen.org/dm/allele/v1 ../clingen-xsd/referencesequence.xsd ">
+	<f:id value="RS216"></f:id>
 	<identifier>
 		<f:system value="http://ftp.ebi.ac.uk/pub/databases/lrgex" />
 		<f:value value="LRG_292p1" />
@@ -11,7 +11,7 @@
 	<related>
 		<type value="translates-from"></type>
 		<target>
-			<f:reference value="/ReferenceSequence/RS217"></f:reference>
+			<f:reference value="ReferenceSequence/RS217"></f:reference>
 			<f:display value="LRG_292t1"></f:display>
 		</target>
 	</related>

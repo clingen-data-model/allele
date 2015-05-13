@@ -19,15 +19,15 @@
 		<xs:complexContent>
 			<xs:extension base="f:Resource">
 				<xs:sequence>
-					<xs:element name="identifier" type="f:Identifier" />
+					<xs:element name="identifier" type="f:Identifier"
+						minOccurs="0" maxOccurs="unbounded" />
 					<xs:element name="referenceSequenceType" type="ReferenceSequenceType"
 						minOccurs="0" />
 					<xs:element name="chromosome" type="ReferenceSequenceChromosome"
 						minOccurs="0" />
 					<xs:element name="cdsStart" type="f:integer" minOccurs="0" />
 					<xs:element name="cdsEnd" type="f:integer" minOccurs="0" />
-					<xs:element name="gene" type="f:ResourceReference"
-						minOccurs="0" />
+					<xs:element name="gene" type="f:Reference" minOccurs="0" />
 					<xs:element name="referenceGenome" type="f:CodeableConcept"
 						minOccurs="0" />
 					<xs:element name="related" type="ReferenceSequence.Related"
@@ -61,7 +61,7 @@
 				<xs:sequence>
 					<xs:element name="relatedType" type="ReferenceSequenceRelationshipType"
 						minOccurs="0" />
-					<xs:element name="target" type="f:ResourceReference" />
+					<xs:element name="target" type="f:Reference" />
 				</xs:sequence>
 			</xs:extension>
 		</xs:complexContent>

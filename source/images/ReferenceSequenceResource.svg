@@ -52,22 +52,20 @@
     ></g
     ><g font-size="11" transform="matrix(1,0,0,1,17,45)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" font-family="sans-serif" stroke="black" stroke-opacity="1"
     ><text x="2" xml:space="preserve" y="27" clip-path="url(#clipPath2)" stroke="none"
-      > version : string [0..1]</text
-      ><text x="2" xml:space="preserve" y="41" clip-path="url(#clipPath2)" stroke="none"
       > meta : Meta [0..1]</text
-      ><text x="2" xml:space="preserve" y="55" clip-path="url(#clipPath2)" stroke="none"
+      ><text x="2" xml:space="preserve" y="41" clip-path="url(#clipPath2)" stroke="none"
       > identifier : Identifier [0..*]</text
-      ><text x="2" xml:space="preserve" y="69" clip-path="url(#clipPath2)" stroke="none"
+      ><text x="2" xml:space="preserve" y="55" clip-path="url(#clipPath2)" stroke="none"
       >&lt;&lt;ReferenceSequenceType&gt;&gt;  referenceSequenceType : code [1]</text
-      ><text x="2" xml:space="preserve" y="83" clip-path="url(#clipPath2)" stroke="none"
+      ><text x="2" xml:space="preserve" y="69" clip-path="url(#clipPath2)" stroke="none"
       >&lt;&lt;ReferenceSequenceChromosome&gt;&gt;  chromosome : code [0..1]</text
-      ><text x="2" xml:space="preserve" y="97" clip-path="url(#clipPath2)" stroke="none"
+      ><text x="2" xml:space="preserve" y="83" clip-path="url(#clipPath2)" stroke="none"
       > cdsStart : int [0..1]</text
-      ><text x="2" xml:space="preserve" y="111" clip-path="url(#clipPath2)" stroke="none"
+      ><text x="2" xml:space="preserve" y="97" clip-path="url(#clipPath2)" stroke="none"
       > cdsEnd : int [0..1]</text
-      ><text x="2" xml:space="preserve" y="125" clip-path="url(#clipPath2)" stroke="none"
+      ><text x="2" xml:space="preserve" y="111" clip-path="url(#clipPath2)" stroke="none"
       > gene : Gene [0..1]</text
-      ><text x="2" xml:space="preserve" y="139" clip-path="url(#clipPath2)" stroke="none"
+      ><text x="2" xml:space="preserve" y="125" clip-path="url(#clipPath2)" stroke="none"
       > referenceGenome : CodeableConcept [0..1]</text
     ></g
     ><g font-size="11" transform="translate(17,17)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" font-family="sans-serif" stroke="black" stroke-opacity="1"
