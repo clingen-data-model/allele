@@ -1,6 +1,6 @@
 <% wrap_layout :layout do %>
    <% if current_page.data.context %>
-   <h2>Context</h2>
+   <h2>Definitions &amp; Bindings</h2>
    <script type="text/javascript">
    function toggle_visibility(clazz) {
       var hidername = clazz + '-hider'
@@ -19,27 +19,31 @@
    toggle_visibility('context-requirement');
    </script>
    <button onclick="toggle_visibility('context-requirement');">Toggle requirements</button>
-   <table class="table">
-      <thead><tr>
-         <th>Property</th>
-         <th>Control</th>
-         <th>Type</th>
-         <th>Definition</th>
-      </tr></thead>
-      <% current_page.data.context.each do |attribute| %>
-      <tr>
-         <td><%= attribute.property %></td>
-         <td><%= attribute.control %></td>
-         <td><%= attribute.type %></td>
-         <td><%= attribute.definition %></td>
-      </tr>
+
+   <% current_page.data.context.each do |attribute| %>
+   <h4 class="h4-definition" id="<%= current_page.data.title %>-definition">
+      <%= "#{current_page.data.title}.#{attribute.property}" %>
+   </h4>
+
+   <dl class="dl-horizontal dl-definition">
+      <dt>Definition</dt>
+      <dd><%= attribute.definition %></dd>
+      <dt>Control</dt>
+      <dd><%= attribute.control %></dd>
+      <% if attribute.binding %>
+      <dt>Binding</dt>
+      <dd><%= attribute.binding %></dd>
+      <% end %>
+      <dt>Type</dt>
+      <dd><%= attribute.type %></dd>
       <% if attribute.requirements %>
-      <tr class="context-requirement"><td></td><td colspan="3" class="context-requirement">
-         <%= render_markdown attribute.requirements %>
-      </td></tr>
+      <dt class="context-requirement">Requirements</dt>
+      <dd class="context-requirement"><%= render_markdown attribute.requirements %></dd>
       <% end %>
-      <% end %>
-      </table>
+   </dl>
+
+   <% end %>
+
    <% end %>
    <%= yield %>
    <h2>Schema</h2>
