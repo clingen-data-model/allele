@@ -1,4 +1,5 @@
 <% wrap_layout :layout do %>
+   <%= yield %>
    <% if current_page.data.context %>
    <h2>Definitions &amp; Bindings</h2>
    <script type="text/javascript">
@@ -45,7 +46,6 @@
    <% end %>
 
    <% end %>
-   <%= yield %>
    <h2>Schema</h2>
    <p>schema: <%= link_to "#{current_page.data.title}.xsd", current_page.data.schema %></p>
    <h2>Examples</h2>
