@@ -23,7 +23,7 @@ Currently constraint to be a child of [sequence_variant](http://www.sequenceonto
 Examples:
 ---------
 
-**ancillaryAminoAcidChangeType:** (carnality of 0..*)
+**ancillaryAminoAcidChangeType:** (cardinality of 0..*)
 
 * This attribute allows for a couple of possibilities.  
 1. First to allow additional detail in describing the location of the feature related to the variant.

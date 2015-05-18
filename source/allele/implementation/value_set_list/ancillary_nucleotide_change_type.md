@@ -21,7 +21,7 @@ Currently constraint to be a child of [sequence_alteration](http://www.sequenceo
 Examples:
 ---------
 
-**ancillaryNucleotideChangeType:** (carnality of 0..*)
+**ancillaryNucleotideChangeType:** (cardinality of 0..*)
 
 * This attribute allows for a couple of possibilities.  
 1. First to allow additional detail in describing the location of the feature related to the variant.
