@@ -21,22 +21,41 @@
    </script>
    <button onclick="toggle_visibility('context-requirement');">Toggle requirements</button>
 
-   <% current_page.data.context.each do |attribute| %>
    <h4 class="h4-definition" id="<%= current_page.data.title %>-definition">
+      <%= "#{current_page.data.title}" %>
+   </h4>
+
+   <dl class="dl-horizontal dl-definition">
+      <% if current_page.data.definition %>
+      <dt>Definition</dt>
+      <dd><%= render_markdown current_page.data.definition %></dd>
+      <% end %>
+      <dt>Control</dt>
+      <dd>1..1</dd><!-- Not sure why FHIR has Control of 1..1 for the top level resources, but mimic that here -->
+      <% if current_page.data.requirements %>
+      <dt class="context-requirement">Requirements</dt>
+      <dd class="context-requirement"><%= render_markdown current_page.data.requirements %></dd>
+      <% end %>
+   </dl>
+
+   <% current_page.data.context.each do |attribute| %>
+   <h4 class="h4-definition" id="<%= current_page.data.title %>-<%= attribute.property %>-definition">
       <%= "#{current_page.data.title}.#{attribute.property}" %>
    </h4>
 
    <dl class="dl-horizontal dl-definition">
       <dt>Definition</dt>
-      <dd><%= attribute.definition %></dd>
+      <dd><%= render_markdown attribute.definition %></dd>
       <dt>Control</dt>
       <dd><%= attribute.control %></dd>
       <% if attribute.binding %>
       <dt>Binding</dt>
-      <dd><%= attribute.binding %></dd>
+      <dd><%= render_markdown attribute.binding %></dd>
       <% end %>
+      <% if attribute.type %>
       <dt>Type</dt>
-      <dd><%= attribute.type %></dd>
+      <dd><%= render_markdown attribute.type %></dd>
+      <% end %>
       <% if attribute.requirements %>
       <dt class="context-requirement">Requirements</dt>
       <dd class="context-requirement"><%= render_markdown attribute.requirements %></dd>
