@@ -1,10 +1,12 @@
 {
   "id": "RS216",
   "identifier": 
-  {
-    "system": "http://ftp.ebi.ac.uk/pub/databases/lrgex",
-    "value": "LRG_292p1"
-  },
+  [
+    {
+      "system": "http://ftp.ebi.ac.uk/pub/databases/lrgex",
+      "value": "LRG_292p1"
+    }
+  ],
 
   "referenceSequenceType": "amino-acid",
   "related": 
@@ -12,7 +14,7 @@
     "relatedType": "translates-from",
     "target": 
     {
-      "reference": "/ReferenceSequence/RS217",
+      "reference": "ReferenceSequence/RS217",
       "display": "LRG_292t1"
     }
   }

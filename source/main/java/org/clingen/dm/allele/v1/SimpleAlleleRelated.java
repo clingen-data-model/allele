@@ -6,7 +6,7 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
 import org.hl7.fhir.BackboneElement;
-import org.hl7.fhir.ResourceReference;
+import org.hl7.fhir.Reference;
 
 /**
  * Associations to other SimpleAlleles.
@@ -21,7 +21,7 @@ import org.hl7.fhir.ResourceReference;
  *     &lt;extension base="{http://hl7.org/fhir}BackboneElement">
  *       &lt;sequence>
  *         &lt;element name="relatedType" type="{http://org.clingen.dm.allele.v1}SimpleAlleleRelationshipType" minOccurs="0"/>
- *         &lt;element name="target" type="{http://hl7.org/fhir}ResourceReference"/>
+ *         &lt;element name="target" type="{http://hl7.org/fhir}Reference"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>
@@ -37,7 +37,7 @@ public class SimpleAlleleRelated extends BackboneElement
 
 	protected SimpleAlleleRelationshipType relatedType;
 	@XmlElement (required = true)
-	protected ResourceReference target;
+	protected Reference target;
 
 	/**
 	 * Gets the value of the relatedType property.
@@ -70,10 +70,10 @@ public class SimpleAlleleRelated extends BackboneElement
 	 * 
 	 * @return
 	 *     possible object is
-	 *     {@link ResourceReference }
+	 *     {@link Reference }
 	 *     
 	 */
-	public ResourceReference getTarget()
+	public Reference getTarget()
 	{
 		return target;
 	}
@@ -83,10 +83,10 @@ public class SimpleAlleleRelated extends BackboneElement
 	 * 
 	 * @param value
 	 *     allowed object is
-	 *     {@link ResourceReference }
+	 *     {@link Reference }
 	 *     
 	 */
-	public void setTarget(ResourceReference value)
+	public void setTarget(Reference value)
 	{
 		this.target = value;
 	}

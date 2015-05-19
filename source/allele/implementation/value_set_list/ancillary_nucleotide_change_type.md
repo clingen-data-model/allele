@@ -21,7 +21,7 @@ Currently constraint to be a child of [sequence_alteration](http://www.sequenceo
 Examples:
 ---------
 
-**ancillaryNucleotideChangeType:** (carnality of 0..*)
+**ancillaryNucleotideChangeType:** (cardinality of 0..*)
 
 * This attribute allows for a couple of possibilities.  
 1. First to allow additional detail in describing the location of the feature related to the variant.
@@ -30,13 +30,14 @@ Examples:
 ###_The first case:_
 
 {:.table}
-| Type | SO Name | Code[ID] | 
+| Type | Display Name | Code | 
 |----------------|----------------|
 | `primaryNucleotideChangeType` | `deletion` | [SO:0000159](http://www.sequenceontology.org/browser/current_svn/term/SO:0000159) |
-| `ancillaryNucleotideChangeType` | `deficient_inversion` | [SO:1000171](http://www.sequenceontology.org/browser/current_svn/term/SO:1000171) |
+| `ancillaryNucleotideChangeType` | `inversion` | [SO:1000036](http://www.sequenceontology.org/browser/current_svn/term/SO:1000036) |
+
 
 {:.table}
-| Type | SO Name | Code[ID] | 
+| Type | Display Name | Code | 
 |----------------|----------------|
 | `primaryNucleotideChangeType` | `substitution` | [SO:1000002](http://www.sequenceontology.org/browser/current_svn/term/SO:1000002) |
 | `ancillaryNucleotideChangeType` | `MNV` | [SO:0002007](http://www.sequenceontology.org/browser/current_svn/term/SO:0002007) |
@@ -46,7 +47,7 @@ This method offers two levels of annotated detail. The primaryNucleotideChangeTy
 ###_The second case:_
 
 {:.table} 
-| Type | SO Name | Code[ID] | 
+| Type | Display Name | Code | 
 |----------------|----------------| 
 | `ancillaryNucleotideChangeType` | `deficient_intrachromosomal_transposition` | [SO:0000062](http://www.sequenceontology.org/browser/current_svn/term/SO:0000062) |
 

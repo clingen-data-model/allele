@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ReferenceSequence id="RS212"
+<ReferenceSequence
 	xmlns="http://clingen.org/dm/allele/v1" xmlns:f="http://hl7.org/fhir"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://clingen.org/dm/allele/v1 ../clingen-xsd/referencesequence.xsd ">
+	<f:id value="RS212"></f:id>
 	<identifier>
 		<f:label
 			value="Homo sapiens breast cancer 1, early onset (BRCA1), RefSeqGene (LRG_292) on chromosome 17" />
@@ -11,6 +12,7 @@
 	</identifier>
 	<referenceSequenceType value="gene"></referenceSequenceType>
 	<gene>
-		<f:reference value="/Gene/G102"></f:reference>
+		<f:reference value="Gene/G102"></f:reference>
+		<f:display value="BRCA1"></f:display>
 	</gene>
 </ReferenceSequence>

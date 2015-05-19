@@ -1,16 +1,9 @@
 {
   "id": "SA301",
-  "identifier": 
-  [
-    {
-      "system": "http://clingen/alleleregistry",
-      "value": "SA301"
-    }
-  ],
 
   "canonicalAllele": 
   {
-    "reference": "/CanonicalAllele/CA401"
+    "reference": "CanonicalAllele/CA401"
   },
 
   "simpleAlleleType": "transcript",
@@ -23,11 +16,7 @@
         "system": "http://www.sequenceontology.org/",
         "code": "SO:1000002",
         "display": "substitution",
-        "primary": "true",
-        "valueSet": 
-        {
-          "reference": "/ValueSet/PrimaryNucleotideChangeType"
-        }
+        "primary": "true"
       }
     ]
   },
@@ -45,7 +34,7 @@
   {
     "referenceSequence": 
     {
-      "reference": "/ReferenceSequence/RS201",
+      "reference": "ReferenceSequence/RS201",
       "display": "NM_001014794.2"
     },
 
@@ -59,11 +48,7 @@
         {
           "system": "http://www.sequenceontology.org/",
           "code": "SO:0000188",
-          "display": "intron",
-          "valueSet": 
-          {
-            "reference": "/ValueSet/PrimaryTranscriptRegionType"
-          }
+          "display": "intron"
         }
       ]
     }
@@ -71,12 +56,12 @@
 
   "intronOffsetStart": "13",
   "intronOffsetEnd": "14",
-  "intronOffsetDirection" : "+",
+  "intronOffsetDirection": "+",
   "intronOffsetGenomicCoordinate": 
   {
     "referenceSequence": 
     {
-      "reference": "/ReferenceSequence/RS202",
+      "reference": "ReferenceSequence/RS202",
       "display": "NC_000011.9"
     },
 

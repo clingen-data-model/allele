@@ -1,17 +1,8 @@
 {
   "id": "SA312",
-  "identifier": 
-  [
-    {
-      "label": "NP_009225.1:p.Ile1766Ser",
-      "system": "http://clingen.org/alleleregistry",
-      "value": "SA312"
-    }
-  ],
-
   "canonicalAllele": 
   {
-    "reference": "/CanonicalAllele/CA403"
+    "reference": "CanonicalAllele/CA403"
   },
 
   "simpleAlleleType": "amino-acid",
@@ -23,11 +14,7 @@
       {
         "system": "http://www.sequenceontology.org/",
         "code": "SO:0001583",
-        "display": "missense variant",
-        "valueSet": 
-        {
-          "reference": "/ValueSet/PrimaryAminoAcidChangeType"
-        }
+        "display": "missense variant"
       }
     ]
   },
@@ -57,7 +44,7 @@
 
     "referenceSequence": 
     {
-      "reference": "/ReferenceSequence/RS214",
+      "reference": "ReferenceSequence/RS214",
       "display": "NP_009225.1"
     },
 
@@ -72,7 +59,7 @@
       "relatedType": "transcript-allele-cause",
       "target": 
       {
-        "reference": "/SimpleAllele/SA310",
+        "reference": "SimpleAllele/SA310",
         "display": "NM_007294.3(BRCA1):c.5297T>G"
       }
     }

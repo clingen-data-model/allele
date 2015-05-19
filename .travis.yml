@@ -5,3 +5,34 @@ rvm:
 
 script: bundle exec middleman build
 
+after_success:
+  - test $TRAVIS_PULL_REQUEST == "false" -a $TRAVIS_BRANCH == "master" || exit 0 # only deploy when commit is to master branch
+  - ENCKEY='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 03JF9MlDRRv3aLhQPgkC0aUhcSUBE1zIT/kcnZ869QSUeyYsPtlDShS8FQuY+KEa 58hUzWnqxngPID7jNNfzu7i+WfE9WURgNXbfk6r/8J4n9fqQZAgtfuCLCtkriwsS ndeBzsCR/zfiYbObn6Xgmumh1+gTbUO6W3zOel282rTamFtiq3nY3jh/G7wrkYGw 4tomNEpHy/jXGtCShExidQhTi7KSCS1tj6AqwJtxxMElkM8snbHMKgWuWQ0tgcdw rT2upmj7/5GX6p9w1x2G9mpNZj8jI3MHIfqT2lbHCT5c7Uslo8DJQqUpWpFUvtHA 2ftWEa2yRjB2G0Pl7GdIm9kPKgyAm1/6OHxB5kV3g9QIYwAD95ibFcGZMnj3FiXv r5eMjLLG9vTXWSt9fk0tYimRfJyUoyhjJ9FsMvfu9XekWPWFZ6aS/GLH72wqvqaR IGPjTYFCDENtHQyHbmbNIrQyIH5d0qYvdYei3GSspxF3SK12vycX/53qO1pG2tPX sKG1pajfaPhVYaMU2N0tiodGHKF4abfQKb2I4SpD+cfLA0+mk4aUjLB88TVgNWo6 LEXzKWvATp/BKBHm3F3lbCKHWHWO8wcY0HMXr/eGRPHjNiOQfthlGSnndeMTqyld vxQHkoEZWfObOIZocEHEiVe2Gs6zM6/nhm1fotxq13f4yaF4u6/zIqtDtaFdXCgi'
+  - echo $ENCKEY | sed -e 's/\s/\n/g' | openssl aes-256-cbc -k "$PASSWORD" -d -a -out ~/.ssh/autopublish
+  - REVISION=`git rev-parse HEAD`
+  - git config --global user.email "autopublish@clingen.org"
+  - git config --global user.name "ClinGen documentation autopublisher"
+  - echo -e "Host github.com\n  IdentityFile ~/.ssh/autopublish" > ~/.ssh/config
+  - echo "github.com ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81eFzLQNnPHt4EVVUh7VfDESU84KezmD5QlWpXLmvU31/yMf+Se8xhHTvKSCZIFImWwoG6mbUoWf9nzpIoaSjB+weqqUUmpaaasXVal72J+UX2B+2RPW3RcT0eOzQgqlJL3RKrTJvdsjE3JEAvGq3lGHSZXy28G3skua2SmVi/w4yCE6gbODqnTWlg7+wC604ydGXA8VJiS5ap43JXiUFFAaQ==" > ~/.ssh/known_hosts
+  - cd build
+  - git init .
+  - git remote add publish git@github.com:clingen-data-model/clingen-data-model.github.io.git
+  - git fetch publish
+  - git reset publish/master
+  - git add -A .
+  - git commit -m "sync with source revision ${REVISION}"
+  - git push publish
+
+env:
+  global:
+    secure: "gBMbSoshQ5U96s9KbkIkFWtPsOXNKtgAH9qWJaHd4iNCcbA8zVBsjN3w7EJZRe1sW8UxIS45C7JF4Z52vqrqcTD84MEaJHDJ+HGWEYkA17w5xaUP22e9nPSp1zLldJ1ron1nZ1qju/KK7NAGtcNdX4FHgCX8tgpgsmWSLFrypfk="
+
+# explaining 'secure' and 'ENCKEY' above:
+# Make a ssh key pair:
+#   ssh-keygen -t rsa -b 4096 -C "autopublish@clingen.org" -f ./autopublish
+# Set up autopublish.pub as a deploy key
+# Generate 'ENCKEY' using:
+#   PW=`openssl rand -hex 32`
+#   ENCKEY=`cat ./autopublish | openssl aes-256-cbc -k "$PW" -a`
+# Generate 'secure' using:
+#   travis encrypt PASSWORD=$PW -r tnavatar/clingen-data-model

@@ -1,18 +1,19 @@
 {
   "id": "RS213",
   "identifier": 
-  {
-    "label": "Homo sapiens breast cancer 1, early onset (BRCA1), transcript variant 1, mRNA",
-    "system": "http://www.ncbi.nlm.nih.gov/nuccore",
-    "value": "NM_007294.3"
-  },
+  [
+    {
+      "system": "http://www.ncbi.nlm.nih.gov/nuccore",
+      "value": "NM_007294.3"
+    }
+  ],
 
   "referenceSequenceType": "transcript",
   "cdsStart": "233",
   "cdsEnd": "5824",
   "gene": 
   {
-    "reference": "/Gene/G102"
+    "reference": "Gene/G102"
   },
 
   "related": 
@@ -20,7 +21,7 @@
     "relatedType": "translates-to",
     "target": 
     {
-      "reference": "/ReferenceSequence/RS214",
+      "reference": "ReferenceSequence/RS214",
       "display": "NP_009225.1 (BRCA1 Isoform 1)"
     }
   }

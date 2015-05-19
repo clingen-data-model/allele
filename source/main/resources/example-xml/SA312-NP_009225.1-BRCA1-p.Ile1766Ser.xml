@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SimpleAllele xmlns="http://clingen.org/dm/allele/v1"
 	xmlns:f="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://clingen.org/dm/allele/v1 ../clingen-xsd/simpleallele.xsd "
-	id="SA312">
+	xsi:schemaLocation="http://clingen.org/dm/allele/v1 ../clingen-xsd/simpleallele.xsd ">
+	<f:id value="SA312"></f:id>
 	<identifier>
 		<f:label value="NP_009225.1:p.Ile1766Ser"></f:label>
 		<f:system value="http://clingen.org/alleleregistry"></f:system>
 		<f:value value="SA312"></f:value>
 	</identifier>
 	<canonicalAllele>
-		<f:reference value="/CanonicalAllele/CA403"></f:reference>
+		<f:reference value="CanonicalAllele/CA403"></f:reference>
 	</canonicalAllele>
 	<simpleAlleleType value="amino acid"></simpleAlleleType>
 	<allele value="Ser"></allele>
@@ -18,10 +18,6 @@
 			<f:system value="http://www.sequenceontology.org/"></f:system>
 			<f:code value="SO:0001583"></f:code>
 			<f:display value="missense variant"></f:display>
-			<f:valueSet>
-				<f:reference value="/ValueSet/PrimaryAminoAcidChangeType">
-				</f:reference>
-			</f:valueSet>
 		</f:coding>
 	</primaryAminoAcidChangeType>
 	<alleleName>
@@ -38,7 +34,7 @@
 			<f:value value="80357463"></f:value>
 		</identifier>
 		<referenceSequence>
-			<f:reference value="/ReferenceSequence/RS214"></f:reference>
+			<f:reference value="ReferenceSequence/RS214"></f:reference>
 			<f:display value="NP_009225.1"></f:display>
 		</referenceSequence>
 		<start value="1765"></start>
@@ -48,7 +44,7 @@
 	<related>
 		<relatedType value="cause"></relatedType>
 		<target>
-			<f:reference value="/SimpleAllele/SA310"></f:reference>
+			<f:reference value="SimpleAllele/SA310"></f:reference>
 			<f:display value="NM_007294.3(BRCA1):c.5297T&gt;G"></f:display>
 		</target>
 	</related>

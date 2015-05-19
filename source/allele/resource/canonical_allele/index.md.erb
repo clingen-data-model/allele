@@ -3,37 +3,64 @@ title: CanonicalAllele
 layout: resource
 alias: allele identity, measure set, normalized variant identity
 description: One of a set of coexisting sequence variants.
+definition: The canonical representation of a set of equivalent sequence variants.
 sequence_ontology: SO:0001023
 related_page_title: CanonicalAllele
 related_page_url: /allele/conceptual/canonical_allele
 schema: "/main/resources/clingen-xsd/canonicalallele.xsd"
 
 context:
+  - property: id
+    control: 1..1
+    type: Id
+    definition: The logical identifier assigned by the source storage system.
+    requirements: 
+          
+  - property: version
+    control: 0..1
+    type: string
+    definition: The publicly stable version of the CanonicalAllele instance represented by the source system. 
+    requirements: |
+      Version changes may occur due to changes in the set of relatedSimpleAllele's. 
+          
+  - property: meta
+    control: 0..1
+    type: Meta
+    definition: The metadata about a resource. This is content in the resource that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource. 
+    requirements: |
+      Version changes may occur due to changes in the set of relatedSimpleAllele's. 
+      
   - property: identifier
-    control: 1..1
+    control: 0..*
     type: Identifier
-    definition: >
-      The assigned identifier that uniquely describes this CanonicalAllele
+    definition: Business identifier(s) assigned by external authorities that represents the equivalent CanonicalAllele instance represented by the source system.
+    requirements: 
 
+  - property: relatedIdentifier
+    control: 0..*
+    type: Identifier
+    definition: Business identifier(s) assigned by external authorities that are not exactly representative of the CanonicalAllele instance, but provide a noteworthy alternative representation.
+    requirements: 
+    
   - property: active
-    control: 1..1
+    control: 0..1
     type: boolean
     definition: Is the CanonicalAllele active, or is it invalid or superceded by a different CanonicalAllele.
-    requirements: >
+    requirements: |
       The `replacement` property MUST contain one or more items if this is *true*, otherwise `replacement` MUST be empty.
 
   - property: replacement
     control: 0..*
     type: Replacement
     definition: The CanonicalAllele to use instead in case it is found to describe the same allele as another CanonicalAllele
-    requirements:
+    requirements: >
 
-  - property: sequenceType
+  - property: canonicalAlleleType
     control: 1..1
     type: code
     binding: CanonicalAlleleType
-    definition:
-    requirements:
+    definition: TODO
+    requirements: >
 
   - property: complexity
     control: 1..1
@@ -41,26 +68,80 @@ context:
     binding: CanonicalAlleleComplexity
     definition: Is the CanonicalAllele represented by one SimpleAllele, or is it a composition of multiple CanonicalAlleles?
     requirements: |
-      If this allele is simple, then it can contain one or more SimpleAlleles in the relatedSimpleAllele property.
-
-  - property: relatedSimpleAllele
-    control: 0..*
-    type: SimpleAllele
-    definition:
-    requirements:
+      If this allele is simple, then it can contain one or more SimpleAlleles in the relatedSimpleAllele property. This value is immutable.
 
   - property: nested
     control: 0..*
     type: CanonicalAllele
-    definition: The set of SimpleCanonicalAlleles that compose this ComplexCanonicalAllele
+    definition: The set of CanonicalAlleles that compose this ComplexCanonicalAllele. The children CanonicalAlleles of a complex CanonicalAllele instance.
     requirements: |
-      This is closely related to the complexity and relatedSimpleAllele fields:
+      This is closely related to the CanonicalAllele.complexity and CanonicalAllele.relatedSimpleAllele fields:
 
       * if `complexity` is simple, then this list MUST be empty
       * if `complexity` is complex, then this list MUST contain 2 or more CanonicalAlleles (each
         with `complexity` simple) AND relatedSimpleAllele MUST be empty.
 
-      Note that this means that the cardinality of this property is actually 0,2..* (i.e. anything but one)
+      Notes: - the cardinality of this property is actually 0,2..* (i.e. anything but one)
+             - currently, the idea of nesting complex CanonicalAlleles within other complex CanonicalAlleles is not supported. 
+      
+  - property: composite
+    control: 0..*
+    type: CanonicalAllele
+    definition: The composite, parent or complex CanonicalAllele instance(s) that this Canonical Allele is part of. 
+    requirements: |
+      * If this CanonicalAllele participates in one or more complex CanonicalAlleles then the `complexity` must be simple.
+      * It is not requirement to pass the association to the set of complex CanonicalAlleles unless it is useful to the receiving service.
+
+  - property: replacement
+    control: 0..*
+    type: 
+    binding: CanonicalAllele.Replacement
+    definition: The CanonicalAllele instance(s) that subsequently replaced this CanonicalAllele.  
+    requirements: |
+      If one or more `replacement` references exist then this CanonicalAllele should be `active` equal to false or inactive.
+      
+  - property: replacement.replacementType
+    control: 1..1
+    type: code
+    binding: CanonicalAlleleReplacementType
+    definition: Code for the type of replacement that occurs when CanonicalAlleles are merged or split after being published.  
+    requirements: 
+      
+  - property: replacement.split
+    control: 0..1
+    type: boolean
+    definition: A boolean indicating whether or not the `target` was replaced by more than one CanonicalAllele. 
+    requirements: |
+      It may be possible to conceptually split a pre-existing CanonicalAllele and replace it with more than one new CanonicalAllele, without actually creating all of the new replacements.  This indicator provides a definitive value to represent whether the `target` represented more than one CanonicalAllele to begin with. 
+      
+  - property: replacement.target
+    control: 1..1
+    type: CanonicalAllele
+    definition: A reference to either the CanonicalAllele that replaces or is replaced-by the primary CanonicalAllele with which it is associated. 
+    requirements: 
+      
+  - property: relatedSimpleAllele
+    control: 0..*
+    type: 
+    definition: The set of SimpleAllele's that are canonically equivalent.
+    requirements: >
+      If this set changes over time then the CanonicalAllele.version should be incremented to allow external references to maintain a stable representation of their original reference.
+
+  - property: relatedSimpleAllele.simpleAllele
+    control: 1..1
+    type: SimpleAllele
+    definition: A reference to a SimpleAllele that is part of the set of CanonicalAllele.relatedSimpleAlleles.
+    requirements: 
+
+  - property: relatedSimpleAllele.preferred
+    control: 0..1
+    type: boolean
+    definition: An indicator as to whether this CanonicalAllele.relatedSimpleAllele is the preferred representation for the CanonicalAllele.
+    requirements: |
+      * The current design provides this indicator as a basic means to producing a simplified human-readable representation of the CanonicalAllele by allowing the source system to determine which related SimpleAllele is preferred over all the others.
+      * One and only one of the relatedSimpleAlleles must be set as the prefered one.  If a new related SimpleAllele is added or an existing one updated as preferred it would automatically override the prior related SimpleAllele that was set as preferred.
+
+
 
 ---
 
@@ -82,15 +163,3 @@ Notes
 
 
 
-Search Parameters
------------------
-
-{:.table}
-| name | type | description | related attribute |
-|------|------|-------------|-------|
-| _id | token | the integer identifier for the CanonicalAllele |
-| HGVS Expression | string | An HGVS expression identifying an allele |
-
-
-Formal Definitions
-------------------

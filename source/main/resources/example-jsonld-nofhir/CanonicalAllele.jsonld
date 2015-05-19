@@ -1,6 +1,7 @@
  {
     "@context":
     {
+        "fhir":"http://hl7.org/fhir/resources/",
         "clingen":"http://clingen.org/model/allele/",
         "xsd":"http://www.w3.org/2001/XMLSchema#",
 
@@ -11,6 +12,17 @@
         {
             "@id":"clingen:simpleallele",
             "@type":"@id"
+        },
+        "version":
+        {
+            "@id":"clingen:version",
+            "@type":"xsd:string"
+        },
+        "relatedIdentifier":
+        {
+            "@id":"clingen:relatedIdentifier",
+            "@type":"fhir:Identifier",
+            "@container":"@set"
         },
         "active":
         {

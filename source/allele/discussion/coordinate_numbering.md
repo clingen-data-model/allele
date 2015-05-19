@@ -19,23 +19,3 @@ In the Interval Method, often called zero-based counting, positions denote the i
 The table below shows the differences in representation for reference coordinates in the methods described above.  Although Alt is not part of the coordinate, it is included here to illustrate the manner in which alleles would make use of the reference coordinates in different circumstances.
 
 [![Variant Numbering Diagram](/images/variant_numbering_examples.png){: .img-responsive}](/images/variant_numbering_examples.png)
-
-{:.table .table-condensed .small}
-|    |HGVS    |>>>>|Alignment|-Method|<<<<<<<<|>>>>|Variant|-Method|<<<<|>>>>|Interval|-Method|<<<<|
-|    |        | Start | End | Ref | Alt| Start | End | Ref|Alt|Start|End|Ref|Alt|
-|:---|--------|-------|-----|-----|-----|---|---|---|---|---|---|---|---|
-|1   |g.100A>T| 100 | 100 | A | T |100|100|A|T|99|100|A|T|
-|2 |g.101delT|100|101|AT|A|101|101|T|-|100|101|T|-|
-|3|g.103_104delTC|102|104|GTC|G|103|104|TC|-|102|103|TC|-|
-|4|g.107_108delTC|105|108|GTTC|GT|107|108|TC|-|106|108|TC|-|
-|5|g.109_110insT|109|109|A|AT|109|110|-|T|109|109|-|T|
-|6|g.111_112insTAA|111|111|G|GTAA|111|112|-|TAA|111|111|-|TAA|
-|7|g.114_115insATT|112|114|GTC|GTCATT|114|115|-|ATT|114|114|-|ATT|
-|8a|g.117_118delCA<br>or g.117_118[2]|116|118|TCA|T|117|118|CA|-|116|118|CA|-|
-|8b|g.119_120delCA<br>or g.119_120[2]|116|120|TCACA|TCA|119|120|CA|-|118|120|CA|-|
-|8c|g.121_122delCA<br>or g.120_121[2]*|116|122|TCACACA|TCACA|121|122|CA|-|120|122|CA|-|
-|9|g.123G=|123|123|G|G|123|123|G|G|122|123|G|G|
-|10a|g.124_125insC<br>or g.125dupC|124|124|A|AC|124|125|-|C|124|124|-|C|
-|10b|g.125_126insC<br>or g.126dupC|125|126|C|CC|125|126|-|C|125|125|-|C|
-|10c|g.126_127insC<br>or g.127dupC|126|126|C|CC|126|127|-|C|126|126|-|C|
-|10d|g.126[3]*<br>or g.125[3] or g.124[3]|126|126|C|CC|126|127|-|C|126|126|-|C|
