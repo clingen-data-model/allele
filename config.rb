@@ -76,7 +76,6 @@ helpers do
   end
 
   def local_index(path)
-
     index = list_children(path)
     index = list_siblings(path, index) if path_depth(path) > 2
     index = list_parents(path, index) if path_depth(path) > 3
@@ -84,22 +83,20 @@ helpers do
   end
 
   def list_parents(path, nested_index = "")
-    puts "list_parents(#{path}, #{nested_index})"
     parent_path = parent_path(path)
     index = list_siblings(parent_path, nested_index)
     index = list_parents(parent_path, index) if path_depth(parent_path) > 3
-    "<ul>#{index}</ul>"
+    index
   end
 
   def list_siblings(path, nested_index = "")
-    puts "list_siblings(#{path}, #{nested_index})"
     sibling_path = parent_path(path)
     depth = path_depth(path)
     siblings = sitemap.resources.select do |r|
       r.url.include?(sibling_path) && path_depth(r.url) == depth
     end
     list = siblings.reduce("") do |a, e|
-      if e.url == current_page.url
+      if current_page.url.include?(e.url)
         a << %(<li class="active">#{link_to_resource(e)}</li>#{nested_index})
       else
         a << "<li>#{link_to_resource(e)}</li>"
@@ -110,10 +107,12 @@ helpers do
 
   # Generate nested list of current element's children
   def list_children(parent_url)
+    puts "list_children(#{parent_url})"
     depth = path_depth(parent_url)
     children = sitemap.resources.select do |r|
       r.url.include?(parent_url) && path_depth(r.url) == depth + 1 
     end
+    return "" if children.size == 0
     list = children.reduce("") do |a, e|
       a << "<li>#{link_to_resource(e)}</li>\n"
     end
