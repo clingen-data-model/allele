@@ -98,8 +98,11 @@ helpers do
   end
 
   def local_index(path)
-    index = list_children(path)
-    index = list_siblings(path, index) if path_depth(path) > 2
+    index = ""
+    index = list_children(path) unless current_page.data.skip_children
+    unless current_page.data.skip_siblings 
+      index = list_siblings(path, index) if path_depth(path) > 2
+    end
     index = list_parents(path, index) if path_depth(path) > 3
     index
   end
