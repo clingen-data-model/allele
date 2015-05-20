@@ -63,6 +63,12 @@ helpers do
     path.chomp('/').count('/')
   end
 
+  def breadcrumb(page)
+    li = "<li>#{link_to(page.data.title, page)}</li>\n"
+    li = breadcrumb(page.parent) + li if page.parent
+    li
+  end
+
   # Root links in left navbar. Expand (accordion style)
   # based on selected page
   def link_with_local_index(text, path)
