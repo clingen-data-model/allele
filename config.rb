@@ -75,7 +75,8 @@ helpers do
     li
   end
   
-  def 
+  def discussion_link_with_local_index(text, path)
+  end 
   
   # Root links in left navbar. Expand (accordion style)
   # based on selected page
