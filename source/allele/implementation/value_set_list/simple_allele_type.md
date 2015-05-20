@@ -4,6 +4,8 @@ description: Codes providing the type of SimpleAllele
 source: Internal
 id: 2
 usage: core
+layout: model
+model: allele
 ---
 
 This is a value set defined by the ClinGen Data Modeling WG (Allele Domain)

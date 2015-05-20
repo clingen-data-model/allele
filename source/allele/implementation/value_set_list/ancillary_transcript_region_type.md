@@ -4,6 +4,9 @@ description: This value set includes only the transcript associated regions that
 source: Sequence Ontology
 id: 21
 usage: core
+layout: model
+model: allele
+
 ---
 
 Scope and Usage

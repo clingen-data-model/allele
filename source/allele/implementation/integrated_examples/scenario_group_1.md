@@ -1,5 +1,8 @@
 ---
 title: I. Basic Nucleotide & Amino Acid Alleles
+layout: model
+model: allele
+
 ---
 
 Due to a high number of references sequences (mulitple genome builds, multiple transcripts, multiple protein sequences), even simple variants can be represented with regards to multiple reference sequences. The ClinGen Allele Data Model addresses this problem by tying all representations of a variant to a single identifier: Canonical Allele  

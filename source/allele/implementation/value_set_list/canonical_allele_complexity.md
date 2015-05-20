@@ -4,6 +4,9 @@ description: Codes providing the multiplicity of simple to canonical allele rela
 source: Internal
 id: 8
 usage: core
+layout: model
+model: allele
+
 ---
 
 This is a value set defined by the ClinGen Data Modeling WG (Allele Domain).

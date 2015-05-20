@@ -1,5 +1,8 @@
 ---
 title: III. Deletion/Insertion/Duplication/Frameshift Alleles
+layout: model
+model: allele
+
 ---
 
 Discrepancies  in Indel Nomenclature

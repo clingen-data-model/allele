@@ -4,6 +4,9 @@ description: This value set includes only the types associated with simple nucle
 source: Sequence Ontology
 id: 23
 usage: core
+layout: model
+model: allele
+
 ---
 
 Scope and Usage

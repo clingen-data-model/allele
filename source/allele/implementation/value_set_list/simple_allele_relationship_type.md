@@ -4,6 +4,8 @@ description: The classification of relationships between two simple alleles.
 source: RO/Internal
 id: 3
 usage: core
+layout: model
+model: allele
 ---
 
 This value set uses codes provided by the Relationship Ontology (RO) which are further defined by the ClinGen Data Modeling WG (Allele Domain).  Definitions use by RO are still valid in relation to our model.

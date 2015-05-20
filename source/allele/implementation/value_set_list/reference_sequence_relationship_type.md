@@ -4,6 +4,8 @@ description: The relationship classification between an amino acid and transcrip
 source: Internal/RO
 id: 6
 usage: core
+layout: model
+model: allele
 ---
 
 This is a value set defined by the ClinGen Data Modeling WG (Allele Domain) using known RO terms.
