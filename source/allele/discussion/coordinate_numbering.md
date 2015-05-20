@@ -19,3 +19,31 @@ In the Interval Method, often called zero-based counting, positions denote the i
 The table below shows the differences in representation for reference coordinates in the methods described above.  Although Alt is not part of the coordinate, it is included here to illustrate the manner in which alleles would make use of the reference coordinates in different circumstances.
 
 [![Variant Numbering Diagram](/images/variant_numbering_examples.png){: .img-responsive}](/images/variant_numbering_examples.png)
+
+
+Intronic Coordinates
+--------------------
+
+Intronic regions are often designated with respect to a transcript; however introns are not actually part of the transcript sequence.  This means that extra coordinate information must be added to the basic method outlined above.   Further, it is often convenient to allow intronic coordinates to be counted from either end of the intron, so that the distance to the nearest exon/intron boundary is clear.  We specify intronic coordinates using three additional values: an intronic start, an intronic end, and a direction, which allows the start and end to be counted from either side of the intron.  The following tables illustrate this method:
+
+{:.table}
+| Sequence                                 |   | A |   | C |   | T |   | g |   | c |   | a |   | c |   | t |   | a |   | C |   | A |   |
+|------------------------------------------|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| Transcript Numbering                     | 0 |   | 1 |   | 2 |   | 3 |   |   |   |   |   |   |   |   |   |   |   | 3 |   | 4 |   | 5 |
+| Intronic Left (relative to the T)        |   |   |   |   |   |   | 0 |   | 1 |   | 2 |   | 3 |   | 4 |   | 5 |   | 6 |   |   |   |   |
+| Intronic Right (relative to the C)       |   |   |   |   |   |   | 6 |   | 5 |   | 4 |   | 3 |   | 2 |   | 1 |   | 0 |   |   |   |   |
+
+In this example, uppercase bases represent exonic sequence, and lowercase sequences represent intronic bases.  In the table, lowercase and uppercase are used to aid in understanding, but the actual transcript reference sequence would not include the intronic bases. The transcript numbering does not include the intronic bases; note that the entire intron is in the transcript interval numbered 3.  
+
+IntronOffset start, end and direction are understood to be attributes of a related IntronicCoordinate.  If both values are empty in the table, then no such related entity exists.
+
+{:.table}
+| Example Type   | start | end | ref   | offsetStart | offsetEnd |offsetDirection|
+|----------------|:-----:|:---:|:-----:|:-----------:|:---------:|:--------------:
+| Exonic         |  1    |  2  |  C    |             |           |
+| Intronic Left  |  3    |  3  |  c    |      1      |     2     |       +
+| Intronic Right |  3    |  3  |  t    |      1      |     2     |       -
+| Intronic Long  |  3    |  3  |  cac  |      1      |     4     |
+| Spanning       |  1    |  3  |  CTgc |             |     2     |       +
+
+

@@ -3,7 +3,7 @@ title: Provenance
 layout: resource
 model: allele
 alias: 
-description: TBD
+description: Provenance describes the context in which a resource was created.
 related_page_title: Provenance
 related_page_url: /allele/conceptual/provenance
 ---
@@ -12,12 +12,14 @@ related_page_url: /allele/conceptual/provenance
 Scope and Usage
 ---------------
 
-See [FHIR Provenance Resource](http://hl7-fhir.github.io/provenance.html).
+All resources in a system have a provenance; each resource was created via some activity by one or more agents, potentially using other resources as the input to that activity.  Provenance resources record that information.
 
-Context
--------
+In the context of the allele model, Provenance resources are attached to Simple Alleles and Canonical Alleles.   The Provenance of a Simple Allele describes how how that Simple Allele came to be loaded into the implementing system.  The Provenance of a Canonical Allele provides information on the canonicalization process that aggregated the associated Simple Alleles.
 
-TBD
+Note that a Provenance resource may have multiple targets, implying that multiple alleles may share a Provenance resource.  For instance, if a script loads alleles into a system, that single activity may create multiple simple alleles.  These alleles may then share a Provenance resource, or each may have its own Provenance, which contains the same information.    This choice is left to the discretion of the implementing system.
+
+The ClinGen Provenance model is a simplification of the FHIR provenance model, which is in turn based on the W3C Provenance model.  In the FHIR model, the Provenance resource fills the role of the Activity in W3C.  FHIR entities linked to the provenance via the entity attribute are, in the W3C parlance, the used entities. 
+See [FHIR Provenance Resource](http://hl7-fhir.github.io/provenance.html) and [W3C Provenance](http://www.w3.org/TR/prov-overview/).  
 
 Resource Model
 ----------------
@@ -25,10 +27,99 @@ Resource Model
 [![Provenance Resource Diagram](/images/ProvenanceResource.svg){: .img-responsive}](/images/ProvenanceResource.svg)
 
 	
-Notes
------
+Defintions & Bindings
+---------------------
+
+{:.h4-definition}
+### Provenance
+
+{:.dl-horizontal .dl-definition}
+Definition
+: Resource representing the origin of a Simple Allele or Canonical Allele
+
+Control
+: 1..1
+
+
+{:.h4-definition}
+#### Provenance.target
+
+{:.dl-horizontal .dl-definition}
+Definition
+: The set of resources that were created by the activities described in this Provenance resource.
+
+Type
+: CanonicalAllele or SimpleAllele
+
+Control
+: 1..*
+
+
+{:.h4-definition}
+#### Provenance.period
+
+{:.dl-horizontal .dl-definition}
+Definition
+: The time period over which the target resource was created.
+
+Type
+: FHIR Period
+
+Control
+: 1..1
+
+
+{:.h4-definition}
+#### Provenance.recorded
+
+{:.dl-horizontal .dl-definition}
+Definition
+: The instant time at which provenance was recorded.
+
+Type
+: dateTime
+
+Control
+: 1..1
+
+
+{:.h4-definition}
+#### Provenance.reason
+
+{:.dl-horizontal .dl-definition}
+Definition
+: The reason the activity was taking place.
+
+Type
+: CodeableConcept
+
+Control
+: 0..1
+
+
+{:.h4-definition}
+#### Provenance.entity
+
+{:.dl-horizontal .dl-definition}
+Definition
+: An entity that was used in the activity
+
+Control
+: 0..*
+
+
+{:.h4-definition}
+#### Provenance.entity.role
+
+{:.dl-horizontal .dl-definition}
+Definition
+: The role fulfilled by an entity in an activity
+
+Type
+: Code
+
+Control
+: 1
 
 
 
-Formal Definitions
-------------------

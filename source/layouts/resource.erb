@@ -1,5 +1,70 @@
 <% wrap_layout :model do %>
    <%= yield %>
+   <% if current_page.data.context %>
+   <h2>Definitions &amp; Bindings</h2>
+   <script type="text/javascript">
+   function toggle_visibility(clazz) {
+      var hidername = clazz + '-hider'
+      var hider = document.getElementById(hidername);
+      if (hider) {
+         console.log('showing');
+         hider.parentNode.removeChild(hider);
+      } else {
+         console.log('hiding');
+         hider = document.createElement('style');
+         hider.id = hidername;
+         hider.innerHTML = "." + clazz + "{ display: none; }"
+         document.body.appendChild(hider);
+      }
+   }
+   toggle_visibility('context-requirement');
+   </script>
+   <button onclick="toggle_visibility('context-requirement');">Toggle requirements</button>
+
+   <h4 class="h4-definition" id="<%= current_page.data.title %>-definition">
+      <%= "#{current_page.data.title}" %>
+   </h4>
+
+   <dl class="dl-horizontal dl-definition">
+      <% if current_page.data.definition %>
+      <dt>Definition</dt>
+      <dd><%= render_markdown current_page.data.definition %></dd>
+      <% end %>
+      <dt>Control</dt>
+      <dd>1..1</dd><!-- Not sure why FHIR has Control of 1..1 for the top level resources, but mimic that here -->
+      <% if current_page.data.requirements %>
+      <dt class="context-requirement">Requirements</dt>
+      <dd class="context-requirement"><%= render_markdown current_page.data.requirements %></dd>
+      <% end %>
+   </dl>
+
+   <% current_page.data.context.each do |attribute| %>
+   <h4 class="h4-definition" id="<%= current_page.data.title %>-<%= attribute.property %>-definition">
+      <%= "#{current_page.data.title}.#{attribute.property}" %>
+   </h4>
+
+   <dl class="dl-horizontal dl-definition">
+      <dt>Definition</dt>
+      <dd><%= render_markdown attribute.definition %></dd>
+      <dt>Control</dt>
+      <dd><%= attribute.control %></dd>
+      <% if attribute.binding %>
+      <dt>Binding</dt>
+      <dd><%= render_markdown attribute.binding %></dd>
+      <% end %>
+      <% if attribute.type %>
+      <dt>Type</dt>
+      <dd><%= render_markdown attribute.type %></dd>
+      <% end %>
+      <% if attribute.requirements %>
+      <dt class="context-requirement">Requirements</dt>
+      <dd class="context-requirement"><%= render_markdown attribute.requirements %></dd>
+      <% end %>
+   </dl>
+
+   <% end %>
+
+   <% end %>
    <h2>Schema</h2>
    <p>schema: <%= link_to "#{current_page.data.title}.xsd", current_page.data.schema %></p>
    <h2>Examples</h2>
