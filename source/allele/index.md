@@ -2,6 +2,7 @@
 title: Allele Model
 model: allele
 layout: model
+alias: allele/discussion/
 
 ---
 

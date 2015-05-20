@@ -1,4 +1,10 @@
 ###
+# Alias 
+###
+activate :alias
+
+
+###
 # Tilt
 ###
 
@@ -68,7 +74,9 @@ helpers do
     li = breadcrumb(page.parent) + li if page.parent
     li
   end
-
+  
+  def 
+  
   # Root links in left navbar. Expand (accordion style)
   # based on selected page
   def link_with_local_index(text, path)
@@ -113,7 +121,6 @@ helpers do
 
   # Generate nested list of current element's children
   def list_children(parent_url)
-    puts "list_children(#{parent_url})"
     depth = path_depth(parent_url)
     children = sitemap.resources.select do |r|
       r.url.include?(parent_url) && path_depth(r.url) == depth + 1 
@@ -125,19 +132,10 @@ helpers do
     "<ul>#{list}</ul>"
   end
 
-
-
   def model_name
     current_page.data.model ? current_page.data.model.capitalize : ""
   end
   
-  # def local_index
-  #   output = sitemap.resources.select{|r| r.url.include?(current_page.url) and not r.path =~ /index\.html/}.reduce("<dl>\n") do |acc, r|
-  #     acc + "<dt>#{link_to r.data.title, r.url}</dt>\n<dd>#{r.data.description}</dd>\n"
-  #   end
-  #   return output + "</dl>\n"
-  # end
-
   def brief_index(path)
     output = sitemap.resources.select{|r| r.url.include?(path) && path != r.url }.sort_by{ |r| r.path}.reduce("<ul>\n") do |acc, r|
       acc + "<li>#{link_to r.data.title, r.url}</li>\n"
@@ -145,15 +143,6 @@ helpers do
     return output + "</ul>\n"
   end  
 
-  def link_with_local_index_old(text, path)
-    output = link_to(text, path)
-    if current_page.url.include?(path)
-      %(<li class="active">#{output}</li>#{brief_index(path)})
-    else
-      "<li>#{output}</li>"
-    end
-  end
-  
   def example_path(example_id)
     "/allele/implementation/examples/#{example_id}.html"
   end
