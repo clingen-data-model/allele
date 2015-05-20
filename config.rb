@@ -76,6 +76,13 @@ helpers do
   end
   
   def discussion_link_with_local_index(text, path)
+    # Count index of model page as a discussion page
+    if path_depth(current_page.url) == 1
+      index = local_index("#{current_page.url}discussion/")
+      %(<li class="active">#{link_to(text, path)}</li>#{index})
+    else
+      link_with_local_index(text,path)
+    end
   end 
   
   # Root links in left navbar. Expand (accordion style)
