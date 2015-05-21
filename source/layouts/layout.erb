@@ -43,8 +43,7 @@
               <ul class="dropdown-menu" role="menu">
                 <% data.models.names.each do |model| %>
                 <li class="<%= model %>" >
-                  <span class="glyphicon <%= data[model].icon %>"></span>
-                  <%= link_to model.capitalize, "/#{model}" %>
+                  <%= link_to %(<span class="glyphicon #{data[model].icon}"></span>#{model.capitalize}), "/#{model}" %>
                 </li>
                 <% end %>
                 <li class="divider"></li>
