@@ -10,7 +10,11 @@ https://github.com/clingen-data-model/clingen-data-model.github.io
 
 Publishing is currently a manual process, but is not overly complicated:
 
-0) Clone the remote repository to the build directory
-1) Build the site (bundle exec middleman build)
-2) CD to the build directory (cd build)
-3) Stage new pages and push the repository to the remote site.
+1. Clone the remote repository to the build directory
+
+   `git clone https://github.com/tnavatar/clingen-data-model.git; cd clingen-data-model`
+2. Build the site (requires [Ruby](http://ruby-lang.org) and [Bundler](http://bundler.io))
+
+   `bundle exec middleman build`
+3. Change to the build directory (cd build)
+4. Stage new pages and push the repository to the remote site.
