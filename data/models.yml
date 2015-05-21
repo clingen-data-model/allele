@@ -1,2 +1,5 @@
 names:
   - allele
+
+allele:
+  icon: glyphicon-leaf

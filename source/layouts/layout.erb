@@ -32,10 +32,20 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-left">
             <li><a href="#">About</a></li>
-            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" >Models :: <%= model_name %> <span class="caret"></span></a>
+            <li>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" >
+                Models :: 
+                <% if current_page.data.model %>
+                <span class="glyphicon <%= data[current_page.data.model].icon %>"></span><%= model_name %> 
+                <% end %> 
+                <span class="caret"></span>
+              </a>
               <ul class="dropdown-menu" role="menu">
                 <% data.models.names.each do |model| %>
-                <li><%= link_to model.capitalize, "/#{model}" %></li>
+                <li class="<%= model %>" >
+                  <span class="glyphicon <%= data[model].icon %>"></span>
+                  <%= link_to model.capitalize, "/#{model}" %>
+                </li>
                 <% end %>
                 <li class="divider"></li>
                 <li><a href="#">Overview</a></li>
