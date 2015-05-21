@@ -41,8 +41,18 @@
 .bg-none {
   background:none !important;
 }
+.bg-lgrey {
+  background-color: #f5f5f5;
+}
 
 
+/*
+ * Breadcrumb
+ */
+.bg-lgrey .breadcrumb a {
+  color: #ccc;
+  font-weight: normal;
+}
 
 /*
  * Headings
@@ -95,7 +105,6 @@ h4, .h4 {
  * Hide default border to remove 1px line.
  */
   .navbar {
-   
     z-index: 1000;
  }
  .navbar .container-fluid {
@@ -107,12 +116,20 @@ h4, .h4 {
  .navbar-inverse .navbar-header {
     background-color: #005bc1 !important;
  }
- .navbar-inverse {
-    background-color: #0066cc !important;
-    border-color: #0066cc !important;
+.navbar-inverse {
+  background:none;
+    background-color: #005bc1 !important;
+    border-color: #005bc1 !important;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
 }
 .navbar-inverse .navbar-nav > li > a {
     color: #93b1e7;
+}
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+    
+  background:none;
+  background-color: #005bc1;
+    color: #fff;
 }
 .navbar {
     border-radius: 0px;
@@ -138,12 +155,50 @@ h4, .h4 {
   border:none !important;
   box-shadow: 0 0px 7px rgba(0, 0, 0, 0.3);
 }
+.nav-sidebar > li > a {
+  color: #005bc1;
+  border-bottom: #fff solid 1px;
+  background: none !important;
+}
+
+.nav-sidebar > .active > a, .nav-sidebar > .active > a:hover, .nav-sidebar > .active > a:focus {
+  color: #fff;
+  border-top: #569fe7 solid 1px;
+  border-bottom: none;
+  background-color: #005bc1 !important;
+}
 .nav-sidebar-title {
   padding:18px 20px 10px;
   font-weight:bold;
   font-size:14px;
   background-color:#005bc1;
   min-height:76px;
+}
+ul.nav-sidebar > ul {
+  padding: 5px 5px 10px 20px;
+  border-bottom: #fff solid 1px;
+  list-style: none;
+  font-size: 90%;
+  background-image:       linear-gradient(to bottom, #fff 0%, #f5f5f5  100%); */
+}
+ul.nav-sidebar > ul ul {
+  padding: 0px 5px 10px 10px;
+  border-bottom: #fff solid 1px;
+  list-style: none;
+  font-size: 95%;
+  background-image:       linear-gradient(to bottom, #fff 0%, #f5f5f5  100%); */
+}
+ul.nav-sidebar ul > li:before {
+  content: "\00BB";
+  margin-right: 6px;
+  padding: 10px 0 5px 0;
+}
+ul.nav-sidebar ul > li {
+  padding: 3px 0 3px 0;
+  
+    white-space: nowrap;
+    overflow:hidden !important;
+    text-overflow: ellipsis;
 }
 @media (min-width: 768px) {
   .sidebar {
