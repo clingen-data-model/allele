@@ -26,6 +26,6 @@ The process by which the Data Model Working Group is approaching this set of goa
    * Use the conceptual model to define a resource model that can be used as the basis for a messaging serialization
    * Create documentation and examples explaining the use of the conceptual and resource models.
 
-This site documents the models created by the Data Model Working Group.  Following the links for each model listed below will lead to the documentation for that model.
+This site documents the models created by the Data Model Working Group.  Following the links for each model listed below will lead to the documentation for that model. Note that the model is in pre-release status, caution is advised when building software based on the model (see [release management](/release_management.html))
 
 [Allele Model](allele/): Models the concepts of allele, reference and sequence.

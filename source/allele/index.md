@@ -12,6 +12,11 @@ Introduction
 
 The purpose of the Allele Data Model is to provide a referenceable entity that represents the choice of particular allele at a site of genetic variation.  This entity should be resilient to updates in reference sequences, while containing sufficient information to uniquely specify the allele.
 
+Status
+------
+
+The Allele model is in pre-release status. While the overall structure of the model is stable, variables and codes are likely to change as a first implementation is built (the [Allele Registry](/allele/implementation/applications/)). Use caution when building software based on this model (see [release management](/release_management.html)).
+
 Scope and Usage
 ---------------
 
