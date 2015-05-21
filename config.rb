@@ -69,8 +69,21 @@ helpers do
     path.chomp('/').count('/')
   end
 
+  def model_link(model)
+    %(<li class="#{model}"> <a href="/#{model}"><span class="glyphicon #{data[model].icon}"></span>#{model.capitalize}</a></li>)
+end
+
+  def local_link(text, path)
+    if path == current_page.url
+      %(<li class="active">#{link_to text, path}</li>)
+    else
+      "<li>#{link_to text, path}</li>"
+    end
+  end
+
   def breadcrumb(page)
-    li = "<li>#{link_to(page.data.title, page)}</li>\n"
+    li = ""
+    li = "<li>#{link_to(page.data.title, page)}</li>\n" if page.data.title
     li = breadcrumb(page.parent) + li if page.parent
     li
   end
@@ -80,8 +93,10 @@ helpers do
     if path_depth(current_page.url) == 1
       index = local_index("#{current_page.url}discussion/")
       %(<li class="active">#{link_to(text, path)}</li>#{index})
-    else
+    elsif current_page.url.include?('/discussion/')
       link_with_local_index(text,path)
+    else
+      "<li>#{link_to(text, path)}</li>#{index}"
     end
   end 
   

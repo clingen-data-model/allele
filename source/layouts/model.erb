@@ -4,7 +4,7 @@
     <div class="col-sm-4 col-md-3 sidebar">
       <ul class="nav nav-sidebar">
         <li class='nav-sidebar-title'><img src="/images/clingen-doc-logo.png" width="438" height="108" alt="ClinGen Documentation" class="img-responsive"/></li>
-        <%= discussion_link_with_local_index "Discussion", "/#{current_page.data.model}/discussion" %>
+        <%= discussion_link_with_local_index "Discussion", "/#{current_page.data.model}" %>
         <%= link_with_local_index "Implementation", "/#{current_page.data.model}/implementation" %>
         <%= link_with_local_index "Resource", "/#{current_page.data.model}/resource" %>
         <%= link_with_local_index "Conceptual", "/#{current_page.data.model}/conceptual" %>

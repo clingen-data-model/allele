@@ -1,7 +1,6 @@
 ---
 title: FHIR
-layout: model
-model: allele
+layout: home
 
 ---
 
