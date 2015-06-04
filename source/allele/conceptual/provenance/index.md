@@ -1,6 +1,7 @@
 ---
 title: Provenance
 layout: conceptual
+model: allele
 description: Please see the links below for full description and details on the Provenance entity.
 related_page_title: Provenance
 related_page_url: /allele/resource/provenance

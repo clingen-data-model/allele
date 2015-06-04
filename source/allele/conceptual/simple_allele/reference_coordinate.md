@@ -1,6 +1,7 @@
 ---
 title: ReferenceCoordinate
 layout: conceptual
+model: allele
 description: ReferenceCoordinate defines a location with respect to a <a href="../reference_sequence/index.html">ReferenceSequence</a>.  
 
 ---

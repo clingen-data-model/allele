@@ -1,11 +1,21 @@
 ---
-title: Allele Model v0.1(beta)
+title: Allele Model
+model: allele
+layout: model
+alias: allele/discussion/
+
 ---
+
 
 Introduction
 ------------
 
 The purpose of the Allele Data Model is to provide a referenceable entity that represents the choice of particular allele at a site of genetic variation.  This entity should be resilient to updates in reference sequences, while containing sufficient information to uniquely specify the allele.
+
+Status
+------
+
+The Allele model is in pre-release status. While the overall structure of the model is stable, variables and codes are likely to change as a first implementation is built (the [Allele Registry](/allele/implementation/applications/)). Use caution when building software based on this model (see [release management](/release_management.html)).
 
 Scope and Usage
 ---------------
@@ -51,14 +61,4 @@ However, the allele model does not specify the algorithm used to perform this ca
 
 The resource model given is one possible physical implementation derived from the conceptual model.  While other models, such as a relational model may also be derived, they are not provided within the allele model v0.1(beta).
 
-
-Discussion Items
-----------------
-
-In the course of creating the Allele Model, the Data Model Working Group has made numerous choices, some of which are described in the following links:
-
-+ [FHIR Integration](fhir.html)
-+ [Coordinate Numbering](coordinate_numbering.html)
-+ [Canonicalization](canonicalization.html)
-+ [Allele Naming](allele_naming.html)
 

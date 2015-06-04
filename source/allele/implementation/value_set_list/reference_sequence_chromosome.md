@@ -4,6 +4,9 @@ description: Reference sequence notation
 source: NCBI
 id: 9
 usage: core
+layout: model
+model: allele
+
 ---
 
 

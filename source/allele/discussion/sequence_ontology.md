@@ -1,6 +1,9 @@
 ---
 title: Sequence Ontology
 description: The Sequence Ontology is a set of terms and relationships used to describe the features and attributes of biological sequence.
+layout: model
+model: allele
+
 ---
 
 The [Sequence Ontology](http://www.sequenceontology.org/index.html) (SO) is an ontology used to describe biological sequences through the use of standardized vocabulary and internodal relationships.  In addition to the power of controlled terms, SO offers grouping at multiple levels, enriching the ability to preform logic and algorithm based operations across large groups of features, types, and effects.  Furthermore, adding SO as a core requirement will allow us to avoid the semantics of natural language, and the imperfection of free-text description.

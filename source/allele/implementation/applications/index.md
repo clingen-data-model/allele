@@ -1,5 +1,8 @@
 ---
-title: Allele Registry 
+title: Allele Registry
+layout: model
+model: allele
+
 ---
 
 ###The Implementators

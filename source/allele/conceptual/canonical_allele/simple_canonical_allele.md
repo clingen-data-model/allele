@@ -1,6 +1,7 @@
 ---
 title: SimpleCanonicalAllele
 layout: conceptual
+model: allele
 description: A stable identifier for a SimpleAllele, grouping together the different ways that the allele might be described across different versions of different ReferenceSequences.
 
 ---

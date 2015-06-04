@@ -1,6 +1,7 @@
 ---
 title: TranscriptReferenceSequence
 layout: conceptual
+model: allele
 description: A ReferenceSequence for the cDNA of a transcript.
 sequence_ontology: "SO:0000673"
 

@@ -1,6 +1,7 @@
 ---
 title: SimpleNucleotideAllele
 layout: conceptual
+model: allele
 description: A SimpleAlllele that uses a SimpleNucleotideAllele as its ReferenceSequence.
 ---
 

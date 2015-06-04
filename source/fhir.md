@@ -1,5 +1,7 @@
 ---
 title: FHIR
+layout: home
+
 ---
 
 [Fast Healthcare Interoperability Resources](http://wiki.hl7.org/index.php?title=FHIR) is an HL7 resource model representing clinical concepts.   FHIR models core concepts, providing a system of resources that cover common situations.  Further, FHIR allows for extensions via profiles to cover more specialized situations.

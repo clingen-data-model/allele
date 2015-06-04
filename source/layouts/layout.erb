@@ -1,89 +1,80 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    
-    <!-- Always force latest IE rendering engine or request Chrome Frame -->
-    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-    
-    <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "ClinGen Data Model" %></title>
-    
-    <%= stylesheet_link_tag "bootstrap", "bootstrap-theme", "clingen" %>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="#######">
+
+    <title>
+      <%= current_page.data.title || "ClinGen Documentation" %>
+    </title>
+
+    <%= stylesheet_link_tag "bootstrap", "bootstrap-theme", "brand2" %>
+
   </head>
-  
-  <body class="<%= page_classes %>">
-    <div class="container">
-      <div class="row">
-	<div class="col-md-3 nav-list">
-	  <% data.models.names.each do |model| %>
-	  <h4><%= link_to "ClinGen Data Model", "/" %></h4>
-	  <ul class="">
-	    <li><%= link_to "Allele Model v0.1", "/#{model}" %></li>
-	    <li>--- Discussion ---</li>
-	    <ul class="">
-	        <li><%= link_to "Release Management", "/#{model}/discussion/release_management.html" %></li>
-		    <li><%= link_to "FHIR Integration", "/#{model}/discussion/fhir.html" %></li>
-		    <li><%= link_to "Coordinate Numbering", "/#{model}/discussion/coordinate_numbering.html" %></li>
-		    <li><%= link_to "Canonicalization", "/#{model}/discussion/canonicalization.html" %></li>
-		    <li><%= link_to "Allele Naming", "/#{model}/discussion/allele_naming.html" %></li>
-		    <li><%= link_to "Sequence Ontology", "/#{model}/discussion/sequence_ontology.html" %></li>
-		</ul>
-		<li>--- Implementation ---</li>
-	    <ul class="">
-	    	<li><%= link_to "Allele Registry", "/#{model}/implementation/applications" %></li>
-	    	<li><%= link_with_local_index  "Integrated Examples", "/#{model}/implementation/integrated_examples" %></li>
-	    	<li><%= link_to                "Examples", "/#{model}/implementation/examples" %></li>
-	    	<li><%= link_to                "Value Set List", "/#{model}/implementation/value_set_list" %></li>
-		</ul>
-		<li>--- Related Links ---</li>
-	    <ul class="">
-		    <li><%= link_to "GitHub Project", "http://github.com/tnavatar/clingen-data-model" %></li>
-		    <li><%= link_to "ClinGen", "http://clinicalgenome.org/" %></li>
-		</ul>
-	  </ul>
-	  <h4 class="conceptual"><%= link_to "Conceptual Model", "/#{model}/conceptual" %></h4>
-	  <ul class="conceptual">
-	    <li><%= link_with_local_index "Gene", "/#{model}/conceptual/gene" %></li>
-	    <li><%= link_with_local_index "ReferenceSequence", "/#{model}/conceptual/reference_sequence" %></li>
-	    <li><%= link_with_local_index "SimpleAllele", "/#{model}/conceptual/simple_allele" %></li>
-	    <li><%= link_with_local_index "CanonicalAllele", "/#{model}/conceptual/canonical_allele" %></li>
-	    <li><%= link_with_local_index "Provenance", "/#{model}/conceptual/provenance" %></li>
-	  </ul>
-	  <h4 class="resource"><%= link_to "Resources", "/#{model}/resource" %></h4>
-	  <ul class="resource">
-	    <li><%= link_with_local_index "Gene", "/#{model}/resource/gene" %></li>
-	    <li><%= link_with_local_index "ReferenceSequence", "/#{model}/resource/reference_sequence" %></li>
-	    <li><%= link_with_local_index "SimpleAllele", "/#{model}/resource/simple_allele" %></li>
-	    <li><%= link_with_local_index "CanonicalAllele", "/#{model}/resource/canonical_allele" %></li>
-	    <li><%= link_with_local_index "Provenance", "/#{model}/resource/provenance" %></li>
-	  </ul>
-	  <% end %>
-	</div>
-	<div class="col-md-9 <%= current_page.data.layout %>">
-	  <h1>
-	    <%= current_page.data.title %>
-	    <small>
-	      <%= link_to current_page.data.sequence_ontology, "http://www.sequenceontology.org/browser/current_svn/term/#{current_page.data.sequence_ontology}"  %>
-	    </small>
-	  </h1>
-          <% if current_page.data.related_page_url %>
-          <p>
-            <% if current_page.data.layout == 'resource' %>
-            Related Conceptual Entities: 
-            <% else %>Related Resources: 
-            <% end %>
-            <%= link_to current_page.data.related_page_title, current_page.data.related_page_url  %>
-          </p>
-          <% end %>
-	  <% if current_page.data.description %>
-	  <p class="lead">
-	    <%= current_page.data.description %>
-	  </p>
-	  <% end %>
-	  <%= yield %>
-	</div>
+
+  <body class="documentation"> 
+
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header col-sm-4 col-md-3">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand " href="#">ClinGen Documentation</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-left">
+            <li><a href="/">About</a></li>
+            <li>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" >
+                Models 
+                <% if current_page.data.model %>
+                ::
+                <span class="glyphicon <%= data[current_page.data.model].icon %>"></span><%= model_name %> 
+                <% end %> 
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <% data.models.names.each do |model| %>
+                <li class="<%= model %>" >
+                  <%= model_link(model) %>
+                </li>
+                <% end %>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" >Release v0.1 <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Release v0.1 (pre-release)</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <div class='container-fluid bg-lblue padding-left-none padding-right-none'>
+      <div class='col-sm-offset-4 col-md-offset-3'>
+        <ol class="breadcrumb bg-none margin-none">
+          <%= breadcrumb(current_page) %>
+        </ol>
       </div>
     </div>
-  </body>
+
+    <%= yield %>
+
+    <!-- Bootstrap core JavaScript
+         ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <%= javascript_include_tag 'jquery', 'bootstrap' %>
+
+</body>
 </html>

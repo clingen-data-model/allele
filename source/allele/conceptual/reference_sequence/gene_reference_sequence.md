@@ -1,6 +1,7 @@
 ---
 title: GeneReferenceSequence
 layout: conceptual
+model: allele
 description: A <a href="genomic_reference_sequence.html">GenomicReferenceSequence</a> describing the sequence of a chromosomal segment containing a gene, such as those created by LRG or RefSeqGene.
 
 ---

@@ -1,6 +1,7 @@
 ---
 title: AminoAcidReferenceSequence
 layout: conceptual
+model: allele
 description: A ReferenceSequence representing the sequence of amino acids making up a polypeptide.
 sequence_ontology: "SO:0000104"
 

@@ -4,6 +4,8 @@ description: Codes providing the type of a reference sequence
 source: Sequence Ontology
 id: 5
 usage: core
+layout: model
+model: allele
 ---
 
 This value set uses codes provided by the Sequence Ontology (SO).

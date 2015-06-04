@@ -1,5 +1,8 @@
 ---
 title: II. Coordinate Numbering Disparities
+layout: model
+model: allele
+
 ---
 
 1. ILK Intron Offset Effected by Reference Genome Version Update

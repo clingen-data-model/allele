@@ -1,6 +1,7 @@
 ---
 title: SimpleNucleotideCanonicalAllele
 layout: conceptual
+model: allele
 description: A stable identifier for a simple nucleotide allele, grouping together the different ways that the allele might be described across different versions of different GenomeReferences and TranscriptReferenceSequences.
 
 ---

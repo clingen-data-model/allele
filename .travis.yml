@@ -21,7 +21,7 @@ after_success:
   - git reset publish/master
   - git add -A .
   - git commit -m "sync with source revision ${REVISION}"
-  - git push publish
+  - git push -f publish master
 
 env:
   global:

@@ -4,5 +4,8 @@ description: TBD
 source: Internal
 id: 7
 usage: core
+layout: model
+model: allele
+
 ---
 

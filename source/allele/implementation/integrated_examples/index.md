@@ -1,5 +1,8 @@
 ---
 title: Integrated Examples
+layout: model
+model: allele
+
 ---
 
 Introduction

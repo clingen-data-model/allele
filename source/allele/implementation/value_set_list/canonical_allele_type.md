@@ -4,6 +4,9 @@ description: Codes providing the type of CanonicalAllele
 source: Internal
 id: 1
 usage: core
+layout: model
+model: allele
+
 ---
 
 This value set is defined by the ClinGen Data Modeling WG (Allele Domain).

@@ -1,0 +1,25 @@
+<% wrap_layout :layout do %>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-4 col-md-3 sidebar">
+      <ul class="nav nav-sidebar">
+        <li class='nav-sidebar-title'><img src="/images/clingen-doc-logo.png" width="438" height="108" alt="ClinGen Documentation" class="img-responsive"/></li>
+        <li><%= local_link "Overview", "/" %></li>
+        <li><%= local_link "FHIR", "/fhir.html" %></li>
+        <li><%= local_link "Release Management", "/release_management.html" %></li>
+        <li><%= link_to "GitHub Project", "https://github.com/tnavatar/clingen-data-model" %></li>
+        <% data.models.names.each do |m| %>
+        <%= model_link(m) %>
+        <% end %> 
+
+      </ul>
+    </div>
+    <div class="col-sm-8 col-sm-offset-4 col-md-9 col-md-offset-3 main">
+      <article>
+        <h1><%= current_page.data.title %></h1>
+        <%= yield %>
+      </article>
+    </div>
+  </div>
+</div>
+<% end %> 
