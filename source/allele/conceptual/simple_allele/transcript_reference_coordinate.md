@@ -18,31 +18,6 @@ TranscriptReferenceCoordinate uses a similar system to refer to intronic positio
 
 If an allele occurs in an intron, the allele does not occur in the transcript, but in a genomic sequence; the relation to this sequence is managed by intronOffset.  Note that the transcript may be mapped to multiple genomic sequences.  Rather than allow a multiplicity of intronOffsets for a single SimpleTranscriptAllele, we allow only one.  Each mapping is represented by the creation of a new SimpleTranscriptAllele with that mapping via a single intronOffset.  These SimpleTranscriptAlleles are then aggregated at the CanonicalSimpleAllele level.
 
-Examples
---------
-
-The following table illustrates how exonic and intronic coordinates are represented based on the following sequence:
-
-{:.table}
-| Sequence                                 |   | A |   | C |   | T |   | g |   | c |   | a |   | c |   | t |   | a |   | C |   | A |   |
-|------------------------------------------|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| Transcript Numbering                     | 1 |   | 2 |   | 3 |   |   |   |   |   |   |   |   |   |   |   |   |   | 4 |   | 5 |   | 6 |
-| Intronic Left (relative to 3,3)          |   |   |   |   |   |   | 1 |   | 2 |   | 3 |   | 4 |   | 5 |   | 6 |   |   |   |   |   |   |
-| Intronic Right (relative to 4,4)         |   |   |   |   |   |   |-7 |   |-6 |   |-5 |   |-4 |   |-3 |   |-2 |   |-1 |   |   |   |   |
-
-In this example, uppercase bases represent exonic sequence, and lowercase sequences represent intronic bases.  In the table, lowercase and uppercase are used to aid in understanding, but the actual transcript reference sequence would not include the intronic bases. The transcript numbering does not include the intronic bases. Start and End are defined using the interval method discussed in [ReferenceCoordinate](reference_coordinate.html).
-
-IntronOffset start, end and direction are understood to be attributes of a related IntronicCoordinate.  If both values are empty in the table, then no such related entity exists.
-
-{:.table}
-| Example Type   | start | end | ref   | offsetStart | offsetEnd |offsetDirection|
-|----------------|:-----:|:---:|:-----:|:-----------:|:---------:|
-| Exonic         |  2    |  3  |  C    |             |           |
-| Intronic Left  |  3    |  3  |  c    |      2      |     3     |
-| Intronic Right |  4    |  4  |  t    |     -2      |    -3     |
-| Intronic Long  |  3    |  3  |  cac  |      2      |     5     |
-| Spanning       |  2    |  3  |  CTgc |             |     3     |
-
 Exclusions and Limitations
 --------------------------
 
