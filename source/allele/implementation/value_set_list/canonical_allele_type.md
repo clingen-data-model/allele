@@ -19,7 +19,7 @@ __Summary__
 | Definition: | Codes providing the type of a canonical allele |
 
 <br/>
-Formal value Set definition : [XML](/allele/main/resources/value-sets/canonical-allele-type.xml) or [JSON](/allele/main/resources/value-sets/canonical-allele-type.json).
+Formal value Set definition : [XML](/source/main/resources/value-sets/canonical-allele-type.xml) or [JSON](/source/main/resources/value-sets/canonical-allele-type.json).
 
 This value set contains 2 concepts
 
