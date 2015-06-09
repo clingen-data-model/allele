@@ -31,12 +31,8 @@ This value set defines its own terms in the system http://clingen.org/model/alle
 {:.table .table-bordered .table-condensed}
 |Code|Display|Definition|
 |----|-------|----------|
-| simple-nucleotide | `simple-nucleotide`|The type of the canonical allele is nucleotide. All associated simple/canonical alleles are genomic or transcript based.|
-| simple-amino-acid | `simple-amino-acid`|The type of the canonical allele is amino-acid. All associated simple/canonical alleles are amino acid based.|
-| simple-combined | `simple-combined` | The type of canonical allele is a combined set of both nucleotide and amino-acid alleles. |
-| complex-nucleotide | `complex-nucleotide`|The type of the canonical allele is nucleotide. All associated complex/canonical alleles are genomic or transcript based.|
-| complex-amino-acid | `complex-amino-acid`|The type of the canonical allele is amino-acid. All associated complex/canonical alleles are amino acid based.|
-| complex-combined | `complex-combined` | The type of canonical allele is a combined set of both nucleotide and amino-acid alleles. |
+|nucleotide|`nucleotide`|The type of the canonical allele is nucleotide. All associated simple alleles are genomic or transcript based.|
+|amino-acid|`amino_acid`|The type of the canonical allele is amino acid. All associated simple alleles are amino acid based.|
 
 
 <br/>
