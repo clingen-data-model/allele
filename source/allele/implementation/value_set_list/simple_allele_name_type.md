@@ -28,6 +28,6 @@ Common, standardized or historical name give to a simple allele.
 
 {:.table .table-bordered .table-condensed}
 | Code | Display |Definition|
-| primary | `primary` | This would be considered the `alleleName` which is preferred. |
-| ancillary | `ancillary` | This would denote an `alleleName` which is not preferred, but hold some commonly know context or is historical. |
+| perferred | `perferred` | This would be considered the `alleleName` which is preferred. |
+| legacy | `legacy` | This would denote an `alleleName` which is not preferred, but hold some commonly know context or is historical. |
 
