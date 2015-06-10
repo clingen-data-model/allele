@@ -16,9 +16,17 @@ ReferenceSequences are not completely stable; over time, new sequences are disco
 
 The problem of multiple representations of the same entity is compounded by the fact that none of these representations may be chosen as stable: any one of the reference sequences may be updated in the future, tying any preferred representation to an obsolete reference sequence.
 
+Transcripts are not necessarily uniquely mapped to a reference genome. A canonicalizer should specify what source of transcript mappings are used (for example, NCBI, UCSC, or [UTA](https://bitbucket.org/biocommons/uta)).
+
 ### Different "spellings" of the same allele
 
-Multiple representations of an allele are often produced when tandem repeats occur in the genome. For instance, if a region with three contiguous T bases is replaced with only 2 T bases, differing tools have several ways to represent the change (for instance, the removal of each of the three bases independently could all be reported, and would often be seen as different alleles, though they are indistinguishable, and should be aggregated together.
+Multiple representations of an allele are often produced when tandem repeats occur in the genome. For instance, if a region with three contiguous T bases is replaced with only 2 T bases, differing tools have several ways to represent the change (for instance, the removal of each of the three bases independently could all be reported, and would often be seen as different alleles, though they are indistinguishable, and should be aggregated together).
+
+Current approaches to this problem include the normalization code in [SMaSH](https://github.com/amplab/smash) and [vt](https://github.com/atks/vt) (the latter further described [here](http://genome.sph.umich.edu/wiki/Variant_Normalization)).
+
+It is important to note that the convention in many genome seqencing/VCF tools is to "left-align" variants, e.g. shift them to the lowest possible genomic coordinate. The recommendations of HGVS for transcript/protein coordinates, on the other hand is to represent variants to the most 3' or carboxy-proximal position relative to the *transcript* or predicted amino acid sequence.
+
+It is expected that a canonicalizer would recognize any of a set of equivalent alleles
 
 ## The process of canonicalization
 
