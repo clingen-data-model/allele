@@ -111,7 +111,7 @@ bundle cg:assertion-provenace-1
     activity(cg:Assert/Assert1, 2015-05-01T13:00:100,
              2015-04-28T14:00:100, [prov:type="cg:asserting"] )
     wasGeneratedBy(cg:Assertion/Assertion1, cg:Assert/Assert1)
-    used(cg:Assert/Assert1, cg:Assertion/Assertion1)
+    used(cg:Assert/Assert1, cg:Assessments/A1)
     used(cg:Assert/Assert1, cg:Guideline/G1)
     wasAssociatedWith(cg:Assert/Assert1, cg:SoftwareAgent/Asserter1)
     actedOnBehalfOf(cg:SoftwareAgent/Asserter1, cg:Groups/PhenoGroup1, 
