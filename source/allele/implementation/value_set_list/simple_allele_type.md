@@ -32,7 +32,8 @@ This value set defines its own terms in the system http://clingen.org/model/alle
 {:.table .table-bordered .table-condensed}
 |Code|Display|Definition|
 |----|-------|----------|
-|nucleotide|`nucleotide`|The type of the simple allele is nucleotide. All associated simple alleles are genomic or transcript based.|
-|amino-acid|`amino_acid`|The type of the simple allele is amino acid. All associated simple alleles are amino acid based.|
+|[SO:0000991](http://www.sequenceontology.org/browser/current_svn/term/SO:0000991)|`genomic`|The type of the simple allele is nucleotide. All associated simple alleles are genomic or transcript based.|
+|[SO:0000673](http://www.sequenceontology.org/browser/current_svn/term/SO:0000673)|`transcript`|An RNA synthesized on a DNA or RNA template by an RNA polymerase.|
+|[SO:0001237](http://www.sequenceontology.org/browser/current_svn/term/SO:0001237)|`amino_acid`|A sequence feature that corresponds to a single amino acid residue in a polypeptide.|
 
 <br/>

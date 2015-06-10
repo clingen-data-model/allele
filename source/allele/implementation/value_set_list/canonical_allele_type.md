@@ -19,7 +19,7 @@ __Summary__
 | Definition: | Codes providing the type of a canonical allele |
 
 <br/>
-Formal value Set definition : [XML](/allele/main/resources/value-sets/canonical-allele-type.xml) or [JSON](/allele/main/resources/value-sets/canonical-allele-type.json).
+Formal value Set definition : [XML](/source/main/resources/value-sets/canonical-allele-type.xml) or [JSON](/source/main/resources/value-sets/canonical-allele-type.json).
 
 This value set contains 2 concepts
 
@@ -29,15 +29,10 @@ Codes providing the type of a canonical allele
 This value set defines its own terms in the system http://clingen.org/model/allele/canonical-allele-type
 
 {:.table .table-bordered .table-condensed}
-|Code|Display|Definition|
-|----|-------|----------|
-| simple-nucleotide | `simple-nucleotide`|The type of the canonical allele is nucleotide. All associated simple/canonical alleles are genomic or transcript based.|
-| simple-amino-acid | `simple-amino-acid`|The type of the canonical allele is amino-acid. All associated simple/canonical alleles are amino acid based.|
-| simple-combined | `simple-combined` | The type of canonical allele is a combined set of both nucleotide and amino-acid alleles. |
-| complex-nucleotide | `complex-nucleotide`|The type of the canonical allele is nucleotide. All associated complex/canonical alleles are genomic or transcript based.|
-| complex-amino-acid | `complex-amino-acid`|The type of the canonical allele is amino-acid. All associated complex/canonical alleles are amino acid based.|
-| complex-combined | `complex-combined` | The type of canonical allele is a combined set of both nucleotide and amino-acid alleles. |
-
+Code| Display |Definition
+----|---------|
+nucleotide|nucleotide|The type of the canonical allele is nucleotide. All associated simple/canonical alleles are genomic or transcript based.
+amino-acid|amino-acid|The type of the canonical allele is amino-acid. All associated simple/canonical alleles are amino acid based.
 
 <br/>
 This value set is used in the following places:

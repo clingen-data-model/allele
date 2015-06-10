@@ -42,4 +42,4 @@ This value set defines its own terms in the system http://clingen.org/model/alle
 <br/>
 This value set is used in the following places:
 
-* [CanonicalAllele.canonicalAlleleType](/allele/resource/canonical_allele/index.html) Required
+* [ReferenceSequence.referenceSequenceType](/allele/resource/reference_sequence/index.html) Required
