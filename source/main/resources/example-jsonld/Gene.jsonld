@@ -1,8 +1,8 @@
 {
     "@context":
     {
-        "fhir":"http://hl7.org/fhir/resources/"
-        "clingen":"http://clingen.org/model/allele/"
+        "fhir":"http://hl7.org/fhir/resources/",
+        "clingen":"http://clingen.org/model/allele/",
 
         "name":"http://schema.org/name",
 
@@ -12,7 +12,7 @@
         {
             "@id":"fhir:identifier",
             "@container":"@set"
-        }
+        },
         "use":"fhir:use",
         "label":"fhir:label",
         "system":
@@ -20,7 +20,7 @@
             "@id":"fhir:system",
             "@type":"@id"
         },
-        "value":"fhir:value"
+        "value":"fhir:value",
 
         "Gene":"clingen:Gene",
         "symbol":"clingen:symbol",
