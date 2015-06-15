@@ -28,13 +28,13 @@
         {
             "@id":"fhir:coding",
             "@collection":"@set"
-        }
+        },
         "code":"fhir:code",
         "reference":
         {
             "@id":"fhir:reference",
             "@type":"@id"
-        }
+        },
 
 
         "ReferenceSequence":"clingen:ReferenceSequence",
@@ -54,13 +54,13 @@
         },
         "cdsStart":
         {
-            @id:"clingen:cdsStart",
-            @type:"xsd:integer"
+            "@id":"clingen:cdsStart",
+            "@type":"xsd:integer"
         },
         "cdsEnd":
         {
-            @id:"clingen:cdsEnd",
-            @type:"xsd:integer"
+            "@id":"clingen:cdsEnd",
+            "@type":"xsd:integer"
         }
     }
 }
