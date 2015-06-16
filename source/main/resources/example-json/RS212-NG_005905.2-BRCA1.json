@@ -1,6 +1,6 @@
 {
   "id": "RS212",
-  "identifier": 
+  "identifier":
   [
     {
       "system": "http://www.ncbi.nlm.nih.gov/nuccore",
@@ -9,7 +9,7 @@
   ],
 
   "referenceSequenceType": "gene",
-  "gene": 
+  "gene":
   {
     "reference": "Gene/G102"
   }

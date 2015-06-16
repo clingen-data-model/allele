@@ -1,16 +1,16 @@
 {
   "id": "SA302",
 
-  "canonicalAllele": 
+  "canonicalAllele":
   {
     "reference": "CanonicalAllele/CA401"
   },
 
   "simpleAlleleType": "transcript",
   "allele": "G",
-  "primaryNucleotideChangeType": 
+  "primaryNucleotideChangeType":
   {
-    "coding": 
+    "coding":
     [
       {
         "system": "http://www.sequenceontology.org/",
@@ -21,7 +21,7 @@
     ]
   },
 
-  "alleleName": 
+  "alleleName":
   [
     {
       "nameType": "hgvs-cdna",
@@ -30,9 +30,9 @@
     }
   ],
 
-  "referenceCoordinate": 
+  "referenceCoordinate":
   {
-    "referenceSequence": 
+    "referenceSequence":
     {
       "reference": "/ReferenceSequence/RS201",
       "display": "NM_001014794.2"
@@ -41,9 +41,9 @@
     "start": "608",
     "end": "608",
     "refAllele": "A",
-    "primaryTranscriptRegionType": 
+    "primaryTranscriptRegionType":
     {
-      "coding": 
+      "coding":
       [
         {
           "system": "http://www.sequenceontology.org/",
@@ -56,9 +56,9 @@
     "intronOffsetStart": "12",
     "intronOffsetEnd": "13",
     "intronOffsetDirection" : "+",
-    "intronOffsetGenomicCoordinate": 
+    "intronOffsetGenomicCoordinate":
     {
-      "referenceSequence": 
+      "referenceSequence":
       {
         "reference": "ReferenceSequence/RS203",
         "display": "NC_000011.10"

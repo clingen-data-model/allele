@@ -1,17 +1,17 @@
 {
-  "@context":"http://clingen.org/models/ReferenceSequence.jsonld",
+  "@context": "http://clingen.org/models/ReferenceSequence.jsonld",
   "@id": "http://clingendb.clingen.org/ReferenceSequence/RS203",
-  "@type":"ReferenceSequence",
-  "xref": 
+  "@type": "ReferenceSequence",
+  "xref":
   [
     "http://www.ncbi.nlm.nih.gov/nuccore/NC_000011.10"
   ],
 
   "referenceSequenceType": "chromosome",
   "chromosome": "11",
-  "referenceGenome": 
+  "referenceGenome":
   {
-    "@type":"ReferenceGenome",
+    "@type": "ReferenceGenome",
     "@id": "http://www.ncbi.nlm.nih.gov/assembly/88331",
     "name": "GRCh38"
   }

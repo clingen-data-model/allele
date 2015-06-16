@@ -1,6 +1,6 @@
 {
   "id": "RS213",
-  "identifier": 
+  "identifier":
   [
     {
       "system": "http://www.ncbi.nlm.nih.gov/nuccore",
@@ -11,15 +11,15 @@
   "referenceSequenceType": "transcript",
   "cdsStart": "233",
   "cdsEnd": "5824",
-  "gene": 
+  "gene":
   {
     "reference": "Gene/G102"
   },
 
-  "related": 
+  "related":
   {
     "relatedType": "translates-to",
-    "target": 
+    "target":
     {
       "reference": "ReferenceSequence/RS214",
       "display": "NP_009225.1 (BRCA1 Isoform 1)"

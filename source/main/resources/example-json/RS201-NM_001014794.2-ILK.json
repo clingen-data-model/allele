@@ -1,6 +1,6 @@
 {
   "id": "RS201",
-  "identifier": 
+  "identifier":
   [
     {
       "system": "http://www.ncbi.nlm.nih.gov/nuccore",
@@ -11,7 +11,7 @@
   "referenceSequenceType": "transcript",
   "cdsStart": "162",
   "cdsEnd": "1520",
-  "gene": 
+  "gene":
   {
     "reference": "Gene/G101"
   }

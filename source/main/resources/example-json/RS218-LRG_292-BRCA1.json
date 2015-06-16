@@ -1,6 +1,6 @@
 {
   "id": "RS218",
-  "identifier": 
+  "identifier":
   [
     {
       "system": "http://ftp.ebi.ac.uk/pub/databases/lrgex",
@@ -9,7 +9,7 @@
   ],
 
   "referenceSequenceType": "gene",
-  "gene": 
+  "gene":
   {
     "reference": "Gene/G102"
   }

@@ -1,67 +1,65 @@
 {
-  "@context":"http://clingen.org/models/CanonicalAllele.jsonld",
+  "@context": "http://clingen.org/models/CanonicalAllele.jsonld",
   "@id": "http://clingendb.clingen.org/CanonicalAllele/CA402",
-  "@type":"CanonicalAllele",
-  "xref": 
+  "@type": "CanonicalAllele",
+  "xref":
   [
-    {
-      "http://www.ncbi.nlm.nih.gov/clinvar/variation/37656"
-    }
+    "http://www.ncbi.nlm.nih.gov/clinvar/variation/37656"
   ],
-  
+
   "id" : "CA402",
   "version": "1",
   "relatedIdentifier":
   [
     {
-      "@type":"RelatedIdentifier", 
-      "system":"http://www.ncbi.nlm.nih.gov/clinvar/variation",
+      "@type": "RelatedIdentifier",
+      "system": "http://www.ncbi.nlm.nih.gov/clinvar/variation",
       "value": "37656"
     }
   ],
   "active": "true",
   "canonicalAlleleType": "nucleotide",
   "complexity": "simple",
-  "relatedSimpleAllele": 
+  "relatedSimpleAllele":
   [
     {
-      "@type":"RelatedSimpleAllele", 
-      "simpleAllele":"../../SimpleAllele/SA310",
+      "@type": "RelatedSimpleAllele",
+      "simpleAllele": "../../SimpleAllele/SA310",
       "display": "NM_007294.3:c.5297T>G",
       "preferred": "true"
     },
     {
-      "@type":"RelatedSimpleAllele", 
+      "@type": "RelatedSimpleAllele",
       "simpleAllele": "../../SimpleAllele/SA311",
-      "display": "U14681.1(BRCA1):n.5416T>G "
+      "display": "U14681.1(BRCA1):n.5416T>G"
     },
     {
-      "@type":"RelatedSimpleAllele",
+      "@type": "RelatedSimpleAllele",
       "simpleAllele": "../../SimpleAllele/SA313",
       "display": "NR_027676.1:n.5433T>G"
     },
     {
-      "@type":"RelatedSimpleAllele",
+      "@type": "RelatedSimpleAllele",
       "simpleAllele": "../../SimpleAllele/SA314",
       "display": "NC_000017.10:g.41203115A>C (GRCh37)"
     },
     {
-      "@type":"RelatedSimpleAllele", 
+      "@type": "RelatedSimpleAllele",
       "simpleAllele": "../../SimpleAllele/SA315",
       "display": "NC_000017.11:g.43051098A>C (GRCh38)"
     },
     {
-      "@type":"RelatedSimpleAllele", 
+      "@type": "RelatedSimpleAllele",
       "simpleAllele": "../../SimpleAllele/SA316",
       "display": "NG_005905.2:g.166886T>G"
     },
     {
-      "@type":"RelatedSimpleAllele", 
+      "@type": "RelatedSimpleAllele",
       "simpleAllele": "../../SimpleAllele/SA317",
       "display": "LRG_292:g.166886T>G"
     },
     {
-      "@type":"RelatedSimpleAllele",
+      "@type": "RelatedSimpleAllele",
       "simpleAllele": "../../SimpleAllele/SA318",
       "display": "LRG_292t1:c.5297T>G"
     }

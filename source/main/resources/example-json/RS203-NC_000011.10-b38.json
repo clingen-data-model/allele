@@ -1,6 +1,6 @@
 {
   "id": "RS203",
-  "identifier": 
+  "identifier":
   [
     {
       "system": "http://www.ncbi.nlm.nih.gov/nuccore",
@@ -10,9 +10,9 @@
 
   "referenceSequenceType": "chromsome",
   "chromosome": "11",
-  "referenceGenome": 
+  "referenceGenome":
   {
-    "coding": 
+    "coding":
     [
       {
         "system": "http://www.ncbi.nlm.nih.gov/assembly/",
