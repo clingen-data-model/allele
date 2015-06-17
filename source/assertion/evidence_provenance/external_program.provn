@@ -46,22 +46,22 @@ document
 prefix cg <http://clingen.org/>
 
 bundle cg:prov-software-resultID1
-    entity(cg:InformationType/ResultID1, [ prov:type="cg:resultinfotype" ]
-    entity(cg:InformationType/KnownID1, [ prov:type="cg:knowninfotype1" ]
-    entity(cg:InformationType/KnownID2, [ prov:type="cg:knowninfotype2" ]
+    entity(cg:InformationType/ResultID1, [ prov:type="cg:resultinfotype" ])
+    entity(cg:InformationType/KnownID1, [ prov:type="cg:knowninfotype1" ])
+    entity(cg:InformationType/KnownID2, [ prov:type="cg:knowninfotype2" ])
     agent(cg:Software/SoftwareID1, [prov:type="prov:SoftwareAgent"] )
     agent(cg:Person/RunnerID1, [prov:type="prov:Person"] )
     agent(cg:Person/LoaderID1, [prov:type="prov:Person"] )
     activity(cg:Calculation/CalculationID1, 2015-04-28T13:00:10, 
              2015-04-28T14:00:10, 
              [prov:type="cg:calculation", cg:arguments="-arg1 -arg2"] )
-    wasGeneratedBy(cg:InformationType/ResultID1, cg:Calculation/CalculationID1)
-    used(cg:Calculation/CalculationID1, cg:InformationType/KnownID1)
-    used(cg:Calculation/CalculationID1, cg:InformationType/KnownID2)
-    wasAssociatedWith(cg:Calculation/CalculationID1, cg:Software/SoftwareID1)
-    wasAssociatedWith(cg:Calculation/CalculationID1, cg:Person/RunnerID1, 
+    wasGeneratedBy(cg:InformationType/ResultID1, cg:Calculation/CalculationID1, -)
+    used(cg:Calculation/CalculationID1, cg:InformationType/KnownID1, -)
+    used(cg:Calculation/CalculationID1, cg:InformationType/KnownID2, -)
+    wasAssociatedWith(cg:Calculation/CalculationID1, cg:Software/SoftwareID1, -)
+    wasAssociatedWith(cg:Calculation/CalculationID1, cg:Person/RunnerID1, -, 
                      [ prov:type="software user"])
-    wasAssociatedWith(cg:Calculation/CalculationID1, cg:Person/LoaderID1, 
+    wasAssociatedWith(cg:Calculation/CalculationID1, cg:Person/LoaderID1, -,
                       [prov:type="data loader"])
 endBundle
 endDocument

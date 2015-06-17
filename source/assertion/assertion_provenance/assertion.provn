@@ -102,17 +102,17 @@ bundle cg:assertion-provenace-1
 
     activity(cg:Assess/Assess1, 2015-04-28T13:00:10, 
              2015-04-28T14:00:10, [prov:type="cg:assessment"] )
-    wasGeneratedBy(cg:Assessments/A1, cg:Assess/Assess1)
-    used(cg:Assess/Assess1, cg:InformationType/ID1)
-    used(cg:Assess/Assess1, cg:InformationType/ID2)
-    used(cg:Assess/Assess1, cg:Rule/Rule1)
-    wasAssociatedWith(cg:Assess/Assess1, cg:Person/Assessor1)
+    wasGeneratedBy(cg:Assessments/A1, cg:Assess/Assess1, -)
+    used(cg:Assess/Assess1, cg:InformationType/ID1, -)
+    used(cg:Assess/Assess1, cg:InformationType/ID2, -)
+    used(cg:Assess/Assess1, cg:Rule/Rule1, -)
+    wasAssociatedWith(cg:Assess/Assess1, cg:Person/Assessor1, -)
 
     activity(cg:Assert/Assert1, 2015-05-01T13:00:00, 2015-04-28T14:00:00, [prov:type="cg:asserting"] )
-    wasGeneratedBy(cg:Assertion/Assertion1, cg:Assert/Assert1)
-    used(cg:Assert/Assert1, cg:Assessments/A1)
-    used(cg:Assert/Assert1, cg:Guideline/G1)
-    wasAssociatedWith(cg:Assert/Assert1, cg:SoftwareAgent/Asserter1)
+    wasGeneratedBy(cg:Assertion/Assertion1, cg:Assert/Assert1, -)
+    used(cg:Assert/Assert1, cg:Assessments/A1, -)
+    used(cg:Assert/Assert1, cg:Guideline/G1, -)
+    wasAssociatedWith(cg:Assert/Assert1, cg:SoftwareAgent/Asserter1, -)
     actedOnBehalfOf(cg:SoftwareAgent/Asserter1, cg:Groups/PhenoGroup1, 
             cg:Assert/Assert1)
 endBundle
