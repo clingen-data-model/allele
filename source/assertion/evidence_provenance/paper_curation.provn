@@ -47,6 +47,6 @@ bundle cg:prov-curation-ID1
              2015-04-28T14:00:10, [prov:type="cg:curation"] )
     wasGeneratedBy(cg:InformationType/ID1, cg:Curation/CurationID1, -)
     used(cg:Curation/CurationID1, cg:Article/PMID1, -)
-    wasAssociatedWith(cg:Curation/CurationID1, cg:Curator/CuratorID1, -)
+    wasAssociatedWith(cg:Curation/CurationID1, cg:Person/CuratorID1, -)
 endBundle
 endDocument

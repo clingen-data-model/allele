@@ -52,6 +52,7 @@ bundle cg:prov-software-resultID1
              2015-04-28T14:00:10, [prov:type="cg:query"] )
     wasGeneratedBy(cg:InformationType/ResultID1, cg:ExternalQuery/EQ1, -)
     used(cg:ExternalQuery/EQ1, cg:InformationType/KnownID1, -)
+    used(cg:ExternalQuery/EQ1, cg:ExternalDataSource/ED1, -)
     wasAssociatedWith(cg:ExternalQuery/EQ1, cg:Person/SearcherID1, -, [prov:type="querier"])
     wasAssociatedWith(cg:ExternalQuery/EQ1, cg:Person/LoaderID1, -, [prov:type="data loader"])
 endBundle
