@@ -48,11 +48,11 @@ bundle cg:prov-software-resultID1
     entity(cg:ExternalDataSource/ED1, [ prov:type="cg:externalsource" ]
     agent(cg:Person/SearcherID1, [prov:type="prov:Person"] )
     agent(cg:Person/LoaderID1, [prov:type="prov:Person"] )
-    activity(cg:ExternalQuery/EQ1, 2015-04-28T13:00:100, 
-             2015-04-28T14:00:100, [prov:type="cg:query"] )
+    activity(cg:ExternalQuery/EQ1, 2015-04-28T13:00:10, 
+             2015-04-28T14:00:10, [prov:type="cg:query"] )
     wasGeneratedBy(cg:InformationType/ResultID1, cg:ExternalQuery/EQ1)
     used(cg:ExternalQuery/EQ1, cg:InformationType/KnownID1)
     wasAssociatedWith(cg:ExternalQuery/EQ1, cg:Person/SearcherID1, [ prov:type="querier"])
     wasAssociatedWith(cg:ExternalQuery/EQ1, cg:Person/LoaderID1, [prov:type="data loader"])
 endBundle
-
+endDocument
