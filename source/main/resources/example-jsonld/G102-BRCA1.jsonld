@@ -1,19 +1,19 @@
 {
-  "@context":"http://clingen.org/models/Gene.jsonld",
+  "@context": "http://clingen.org/models/Gene.jsonld",
   "@id": "http://clingendb.clingen.org/Gene/G102",
   "@type": "clingen:Gene",
-  "id": "G102", 
-  "identifier": 
+  "id": "G102",
+  "identifier":
   [
     {
-      "@type":"Identifier",
+      "@type": "Identifier",
       "use": "usual",
       "system": "http://www.genenames.org/",
       "value": "HGNC:1100"
     },
 
     {
-      "@type":"Identifier",
+      "@type": "Identifier",
       "use": "secondary",
       "system": "http://www.ncbi.nlm.nih.gov/gene",
       "value": "672"
@@ -22,7 +22,7 @@
 
   "symbol": "BRCA1",
   "name": "breast cancer 1, early onset",
-  "aliasSymbol": 
+  "aliasSymbol":
   [
     "IRIS",
     "PSCP",

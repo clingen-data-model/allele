@@ -1,7 +1,7 @@
 {
-    "@context":"http://clingen.org/models/Gene.jsonld"
-    "@id":"http://clingendb.clingen.org/Gene/G101",
-    "@type":"Gene",
+    "@context": "http://clingen.org/models/Gene.jsonld",
+    "@id": "http://clingendb.clingen.org/Gene/G101",
+    "@type": "Gene",
     "id": "G101",
     "symbol": "ILK",
     "name": "integrin-linked kinase",

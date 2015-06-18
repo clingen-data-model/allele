@@ -1,7 +1,7 @@
 {
   "id": "CA402",
   "version": "1",
-  "relatedIdentifier": 
+  "relatedIdentifier":
   [
     {
       "system": "http://www.ncbi.nlm.nih.gov/clinvar/variation",
@@ -12,10 +12,10 @@
   "active": "true",
   "canonicalAlleleType": "nucleotide",
   "complexity": "simple",
-  "relatedSimpleAllele": 
+  "relatedSimpleAllele":
   [
     {
-      "simpleAllele": 
+      "simpleAllele":
       {
         "reference": "SimpleAllele/SA310",
         "display": "NM_007294.3:c.5297T>G"
@@ -25,15 +25,15 @@
     },
 
     {
-      "simpleAllele": 
+      "simpleAllele":
       {
         "reference": "SimpleAllele/SA311",
-        "display": "U14681.1(BRCA1):n.5416T>G "
+        "display": "U14681.1(BRCA1):n.5416T>G"
       }
     },
 
     {
-      "simpleAllele": 
+      "simpleAllele":
       {
         "reference": "SimpleAllele/SA313",
         "display": "NR_027676.1:n.5433T>G"
@@ -41,7 +41,7 @@
     },
 
     {
-      "simpleAllele": 
+      "simpleAllele":
       {
         "reference": "SimpleAllele/SA314",
         "display": "NC_000017.10:g.41203115A>C (GRCh37)"
@@ -49,7 +49,7 @@
     },
 
     {
-      "simpleAllele": 
+      "simpleAllele":
       {
         "reference": "SimpleAllele/SA315",
         "display": "NC_000017.11:g.43051098A>C (GRCh38)"
@@ -57,7 +57,7 @@
     },
 
     {
-      "simpleAllele": 
+      "simpleAllele":
       {
         "reference": "SimpleAllele/SA316",
         "display": "NG_005905.2:g.166886T>G"
@@ -65,7 +65,7 @@
     },
 
     {
-      "simpleAllele": 
+      "simpleAllele":
       {
         "reference": "SimpleAllele/SA317",
         "display": "LRG_292:g.166886T>G"
@@ -73,7 +73,7 @@
     },
 
     {
-      "simpleAllele": 
+      "simpleAllele":
       {
         "reference": "SimpleAllele/SA318",
         "display": "LRG_292t1:c.5297T>G"

@@ -1,12 +1,12 @@
 {
-  "@context":"http://clingen.org/models/ReferenceSequence.jsonld",
+  "@context": "http://clingen.org/models/ReferenceSequence.jsonld",
   "@id": "http://clingendb.clingen.org/ReferenceSequence/RS202",
-  "@type:":"ReferenceSequence",
-  "id":"RS202",
-  "identifier": 
-  [ 
+  "@type:": "ReferenceSequence",
+  "id": "RS202",
+  "identifier":
+  [
     {
-      "@type":"Identifier",
+      "@type": "Identifier",
       "system": "http://www.ncbi.nlm.nih.gov/nuccore",
       "value": "NC_000011.9"
     }
@@ -14,13 +14,13 @@
 
   "referenceSequenceType": "chromosome",
   "chromosome": "11",
-  "referenceGenome": 
+  "referenceGenome":
   {
-    "@type":"ReferenceGenome",
-    "coding": 
+    "@type": "ReferenceGenome",
+    "coding":
     [
       {
-        "@type":"Code"
+        "@type": "Code",
         "system": "http://www.ncbi.nlm.nih.gov/assembly/",
         "code": "2758"
       }

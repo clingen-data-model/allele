@@ -1,51 +1,51 @@
 {
-  "@context":"http://clingen.org/models/CanonicalAllele.jsonld",
+  "@context": "http://clingen.org/models/CanonicalAllele.jsonld",
   "@id": "http://clingendb.clingen.org/CanonicalAllele/CA401",
-  "@type":"CanonicalAllele",
+  "@type": "CanonicalAllele",
   "id": "CA401",
   "version": "1",
   "active": "true",
   "canonicalAlleleType": "nucleotide",
   "complexity": "simple",
-  "relatedSimpleAllele": 
+  "relatedSimpleAllele":
   [
     {
-      "@type":"RelatedSimpleAllele",
-      "simpleAllele": 
+      "@type": "RelatedSimpleAllele",
+      "simpleAllele":
       {
-        "@type":"Reference",
+        "@type": "Reference",
         "reference": "../../SimpleAllele/SA302",
-        "display": "NM_001014794.2(ILK):c.448+13A>G "
+        "display": "NM_001014794.2(ILK):c.448+13A>G"
       },
 
       "preferred": "true"
     },
 
     {
-      "@type":"RelatedSimpleAllele",
-      "simpleAllele": 
+      "@type": "RelatedSimpleAllele",
+      "simpleAllele":
       {
-        "@type":"Reference",
+        "@type": "Reference",
         "reference": "../../SimpleAllele/SA301",
-        "display": "NM_001014794.2(ILK):c.448+14A>G "
+        "display": "NM_001014794.2(ILK):c.448+14A>G"
       }
     },
 
     {
-      "@type":"RelatedSimpleAllele",
-      "simpleAllele": 
+      "@type": "RelatedSimpleAllele",
+      "simpleAllele":
       {
-        "@type":"Reference",
+        "@type": "Reference",
         "reference": "../../SimpleAllele/SA303",
         "display": "NC_000011.9:g.6630034A>G (GRCh37)"
       }
     },
 
     {
-      "@type":"RelatedSimpleAllele",
-      "simpleAllele": 
+      "@type": "RelatedSimpleAllele",
+      "simpleAllele":
       {
-        "@type":"Reference",
+        "@type": "Reference",
         "reference": "../../SimpleAllele/SA304",
         "display": "NC_000011.10:g.6608803A>G (GRCh38)"
       }

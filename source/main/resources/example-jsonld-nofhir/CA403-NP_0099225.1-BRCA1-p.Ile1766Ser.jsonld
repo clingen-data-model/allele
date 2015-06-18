@@ -1,28 +1,26 @@
 {
-  "@context":"http://clingen.org/models/CanonicalAllele.jsonld",
+  "@context": "http://clingen.org/models/CanonicalAllele.jsonld",
   "@id": "http://clingendb.clingen.org/CanonicalAllele/CA403",
-  "xref": 
+  "xref":
   [
-    {
-      "http://clingen.org/alleleregistry/CA403"
-    }
+    "http://clingen.org/alleleregistry/CA403"
   ],
 
   "active": "true",
   "canonicalAlleleType": "amino acid",
   "complexity": "simple",
-  "relatedSimpleAllele": 
+  "relatedSimpleAllele":
   [
     {
-      "@type":"RelatedSimpleAllele",
-      "simpleAllele":"../..//SimpleAllele/SA312",
+      "@type": "RelatedSimpleAllele",
+      "simpleAllele": "../..//SimpleAllele/SA312",
       "display": "NP_009225.1(BRCA1):p.Ile1766Ser",
       "preferred": "true"
     },
     {
-      "@type":"RelatedSimpleAllele",
+      "@type": "RelatedSimpleAllele",
       "simpleAllele": "../../SimpleAllele/SA319",
-      "display": "LRG_292p1(BRCA1):p.Ile1766Ser "
+      "display": "LRG_292p1(BRCA1):p.Ile1766Ser"
     }
   ]
 }

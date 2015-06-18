@@ -1,12 +1,12 @@
 {
-  "@context":"http://clingen.org/models/ReferenceSequence.jsonld",
+  "@context": "http://clingen.org/models/ReferenceSequence.jsonld",
   "@id": "http://clingendb.clingen.org/ReferenceSequence/RS201",
   "@type": "ReferenceSequence",
   "id": "RS201",
-  "identifier": 
+  "identifier":
   [
     {
-      "@type":"Identifier",
+      "@type": "Identifier",
       "system": "http://www.ncbi.nlm.nih.gov/nuccore",
       "value": "NM_001014794.2"
     }
@@ -15,10 +15,9 @@
   "referenceSequenceType": "transcript",
   "cdsStart": "162",
   "cdsEnd": "1520",
-  "gene": 
+  "gene":
   {
-      "@type":"Reference",
-      "reference":"../../Gene/G101"
+      "@type": "Reference",
+      "reference": "../../Gene/G101"
   }
-        
 }

@@ -1,9 +1,9 @@
 {
-  "@context":"http://clingen.org/models/SimpleAllele.jsonld",
+  "@context": "http://clingen.org/models/SimpleAllele.jsonld",
   "@id": "http://clingendb.clingen.org/SimpleAllele/SA302",
-  "@type":"SimpleAllele",
+  "@type": "SimpleAllele",
   "id": "SA302",
-  "identifier": 
+  "identifier":
   [
     {
       "@type": "Identifier",
@@ -12,21 +12,21 @@
     }
   ],
 
-  "canonicalAllele": 
+  "canonicalAllele":
   {
-    "@type":"Reference",
-    "reference":"../../CanonicalAllele/CA401"
+    "@type": "Reference",
+    "reference": "../../CanonicalAllele/CA401"
   },
 
   "simpleAlleleType": "transcript",
   "allele": "G",
-  "primaryNucleotideChangeType": 
+  "primaryNucleotideChangeType":
   {
-    "@type":"PrimaryNucleotideChangeType",
-    "coding": 
+    "@type": "PrimaryNucleotideChangeType",
+    "coding":
     [
       {
-        "@type":"Code",
+        "@type": "Code",
         "system": "http://www.sequenceontology.org/",
         "code": "SO:1000002",
         "display": "substitution",
@@ -35,35 +35,35 @@
     ]
   },
 
-  "alleleName": 
+  "alleleName":
   [
     {
-      "@type":"AlleleName",
+      "@type": "AlleleName",
       "nametype": "hgvs-cdna",
       "name": "NM_001014794.2:c.448+13A>G",
       "preferred": "true"
     }
   ],
 
-  "referenceCoordinate": 
+  "referenceCoordinate":
   {
-    "@type":"ReferenceCoordinate",
-    "referenceSequence": 
+    "@type": "ReferenceCoordinate",
+    "referenceSequence":
     {
-        "@type":"Reference",
-        "reference":"../../ReferenceSequence/RS201",
-        "display":"NM_001014794.2"
-    }
+      "@type": "Reference",
+      "reference": "../../ReferenceSequence/RS201",
+      "display": "NM_001014794.2"
+    },
     "start": "608",
     "end": "608",
     "refAllele": "A",
-    "primaryTranscriptRegionType": 
+    "primaryTranscriptRegionType":
     {
-      "@type":"PrimaryTranscriptRegionType",
-      "coding": 
+      "@type": "PrimaryTranscriptRegionType",
+      "coding":
       [
         {
-          "@type":"Code",
+          "@type": "Code",
           "system": "http://www.sequenceontology.org/",
           "code": "SO:0000188",
           "display": "intron"
@@ -74,15 +74,15 @@
     "intronOffsetStart": "12",
     "intronOffsetEnd": "13",
     "intronOffsetDirection": "+",
-    "intronOffsetGenomicCoordinate": 
+    "intronOffsetGenomicCoordinate":
     {
-      "@type":"IntronOffsetGenomicCoordinate",
-      "referenceSequence": 
+      "@type": "IntronOffsetGenomicCoordinate",
+      "referenceSequence":
       {
-        "@type":"Reference",
-        "reference":"../../ReferenceSequence/RS203",
-        "display":"NC_000011.10"
-      }
+        "@type": "Reference",
+        "reference": "../../ReferenceSequence/RS203",
+        "display": "NC_000011.10"
+      },
       "start": "6608802",
       "end": "6608803",
       "refAllele": "A"

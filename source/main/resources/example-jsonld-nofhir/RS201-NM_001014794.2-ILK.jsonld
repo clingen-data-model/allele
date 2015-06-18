@@ -1,16 +1,14 @@
 {
-  "@context":"http://clingen.org/models/ReferenceSequence.jsonld",
+  "@context": "http://clingen.org/models/ReferenceSequence.jsonld",
   "@id": "http://clingendb.clingen.org/ReferenceSequence/RS201",
-  "@type": "ReferenceSequence"
-  "xref": 
+  "@type": "ReferenceSequence",
+  "xref":
   [
-      "http://www.ncbi.nlm.nih.gov/nuccore/NM_001014794.2"
+    "http://www.ncbi.nlm.nih.gov/nuccore/NM_001014794.2"
   ],
 
   "referenceSequenceType": "transcript",
   "cdsStart": "162",
   "cdsEnd": "1520",
   "gene": "../../Gene/G101"
-  }
-        
 }

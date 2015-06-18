@@ -1,6 +1,6 @@
 {
   "id": "G102",
-  "identifier": 
+  "identifier":
   [
     {
       "use": "official",
@@ -16,7 +16,7 @@
 
   "symbol": "BRCA1",
   "name": "breast cancer 1, early onset",
-  "aliasSymbol": 
+  "aliasSymbol":
   [
     "IRIS",
     "PSCP",
