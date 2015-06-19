@@ -54,7 +54,7 @@ Person/Assessor1: A particular person combining evidence and using a rule
                  it is entirely possible for this to be a Software Agent 
                  in some cases (such as applying frequency cutoffs).
 
-SoftwareAgent/Asserter1: A particular software agent (such as the
+SoftwareAgent/Assertor1: A particular software agent (such as the
                         path. calcualtor)  combining assessments under
                         a guideline to create an assertion. Note that this 
                         may be a Person instead.
@@ -113,7 +113,7 @@ bundle cg:assertion-provenace-1
     used(cg:Assert/Assert1, cg:Assessments/A1, -)
     used(cg:Assert/Assert1, cg:Guideline/G1, -)
     wasAssociatedWith(cg:Assert/Assert1, cg:SoftwareAgent/Assertor1, -)
-    actedOnBehalfOf(cg:SoftwareAgent/Asserter1, cg:Groups/PhenoGroup1, 
+    actedOnBehalfOf(cg:SoftwareAgent/Assertor1, cg:Groups/PhenoGroup1, 
             cg:Assert/Assert1)
 endBundle
 endDocument
