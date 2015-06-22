@@ -17,7 +17,7 @@
 		</f:coding>
 	</primaryNucleotideChangeType>
 	<alleleName>
-		<typeName value="hgvs-cdna"></typeName>
+		<nameType value="hgvs-cdna"></nameType>
 		<name value="NM_001014794.2:c.448+14A&gt;G"></name>
 		<preferred value="true"></preferred>
 	</alleleName>

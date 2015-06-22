@@ -4,7 +4,6 @@
 	xsi:schemaLocation="http://clingen.org/dm/allele/v1 ../clingen-xsd/simpleallele.xsd ">
 	<f:id value="SA319"></f:id>
 	<identifier>
-		<f:label value="LRG_292p1:p.Ile1766Ser"></f:label>
 		<f:system value="http://clingen.org/alleleregistry"></f:system>
 		<f:value value="SA319"></f:value>
 	</identifier>
@@ -42,7 +41,7 @@
 		<refAllele value="Ile"></refAllele>
 	</referenceCoordinate>
 	<related>
-		<relatedType value="cause"></relatedType>
+		<relatedType value="transcript-allele-cause"></relatedType>
 		<target>
 			<f:reference value="SimpleAllele/SA318"></f:reference>
 			<f:display value="LRG_292t1(BRCA1):c.5297T&gt;G"></f:display>

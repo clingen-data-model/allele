@@ -14,11 +14,15 @@ import org.hl7.fhir.Resource;
 import org.hl7.fhir.String;
 
 /**
- * If the element is present, it must have either a @value, an @id, or extensions
+ * If the element is present, it must have either a @value, an @id, or
+ * extensions
  * 
- * <p>Java class for CanonicalAllele complex type.
+ * <p>
+ * Java class for CanonicalAllele complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="CanonicalAllele">

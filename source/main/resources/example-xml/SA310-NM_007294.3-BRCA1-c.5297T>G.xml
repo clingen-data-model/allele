@@ -46,7 +46,7 @@
 		</primaryTranscriptRegionType>
 	</referenceCoordinate>
 	<related>
-		<relatedType value="effect"></relatedType>
+		<relatedType value="amino-acid-effect"></relatedType>
 		<target>
 			<f:reference value="SimpleAllele/SA312"></f:reference>
 			<f:display value="NP_009225.1:p.Ile1766Ser"></f:display>

@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Gene xmlns="http://clingen.org/dm/allele/v1" xmlns:f="http://hl7.org/fhir"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://clingen.org/dm/allele/v1 ../clingen-xsd/gene.xsd "
-	id="G102">
+	xsi:schemaLocation="http://clingen.org/dm/allele/v1 ../clingen-xsd/gene.xsd ">
+	<f:id value="G102"></f:id>
 	<identifier>
 		<f:use value="official"></f:use>
-		<f:label value="BRCA1"></f:label>
 		<f:system value="http://www.genenames.org/"></f:system>
 		<f:value value="HGNC:1100"></f:value>
 	</identifier>
@@ -15,13 +14,13 @@
 	</identifier>
 	<symbol value="BRCA1"></symbol>
 	<name value="breast cancer 1, early onset"></name>
-	<alias value="IRIS"></alias>
-	<alias value="PSCP"></alias>
-	<alias value="BRCAI"></alias>
-	<alias value="BRCC1"></alias>
-	<alias value="FANCS"></alias>
-	<alias value="PNCA4"></alias>
-	<alias value="RNF53"></alias>
-	<alias value="BROVCA1"></alias>
-	<alias value="PPP1R53"></alias>
+	<aliasSymbol value="IRIS"></aliasSymbol>
+	<aliasSymbol value="PSCP"></aliasSymbol>
+	<aliasSymbol value="BRCAI"></aliasSymbol>
+	<aliasSymbol value="BRCC1"></aliasSymbol>
+	<aliasSymbol value="FANCS"></aliasSymbol>
+	<aliasSymbol value="PNCA4"></aliasSymbol>
+	<aliasSymbol value="RNF53"></aliasSymbol>
+	<aliasSymbol value="BROVCA1"></aliasSymbol>
+	<aliasSymbol value="PPP1R53"></aliasSymbol>
 </Gene>

@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ReferenceSequence id="RS201"
+<ReferenceSequence
 	xmlns="http://clingen.org/dm/allele/v1" xmlns:f="http://hl7.org/fhir"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://clingen.org/dm/allele/v1 ../clingen-xsd/referencesequence.xsd ">
 	<f:id value="RS201"></f:id>
 	<identifier>
-		<f:label
-			value="Homo sapiens integrin-linked kinase (ILK), transcript variant 2, mRNA" />
 		<f:system value="http://www.ncbi.nlm.nih.gov/nuccore" />
 		<f:value value="NM_001014794.2" />
 	</identifier>

@@ -4,8 +4,6 @@
 	xsi:schemaLocation="http://clingen.org/dm/allele/v1 ../clingen-xsd/referencesequence.xsd ">
 	<f:id value="RS213"></f:id>
 	<identifier>
-		<f:label
-			value="Homo sapiens breast cancer 1, early onset (BRCA1), transcript variant 1, mRNA" />
 		<f:system value="http://www.ncbi.nlm.nih.gov/nuccore" />
 		<f:value value="NM_007294.3" />
 	</identifier>
@@ -17,7 +15,7 @@
 		<f:display value="BRCA1"></f:display>
 	</gene>
 	<related>
-		<type value="translates-to"></type>
+		<relatedType value="translates-to"></relatedType>
 		<target>
 			<f:reference value="ReferenceSequence/RS214"></f:reference>
 			<f:display value="NP_009225.1 (BRCA1 Isoform 1)"></f:display>

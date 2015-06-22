@@ -15,7 +15,7 @@
 		<f:display value="BRCA1"></f:display>
 	</gene>
 	<related>
-		<type value="translates-to"></type>
+		<relatedType value="translates-to"></relatedType>
 		<target>
 			<f:reference value="ReferenceSequence/RS216"></f:reference>
 			<f:display value="LRG_292p1"></f:display>

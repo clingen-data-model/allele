@@ -4,14 +4,12 @@
 	xsi:schemaLocation="http://clingen.org/dm/allele/v1 ../clingen-xsd/referencesequence.xsd ">
 	<f:id value="RS214"></f:id>
 	<identifier>
-		<f:label
-			value="breast cancer type 1 susceptibility protein isoform 1 [Homo sapiens]" />
 		<f:system value="http://www.ncbi.nlm.nih.gov/protein" />
 		<f:value value="NP_009225.1" />
 	</identifier>
-	<referenceSequenceType value="amino acid"></referenceSequenceType>
+	<referenceSequenceType value="amino-acid"></referenceSequenceType>
 	<related>
-		<type value="translates-from"></type>
+		<relatedType value="translates-from"></relatedType>
 		<target>
 			<f:reference value="ReferenceSequence/RS213"></f:reference>
 			<f:display value="NM_007294.3 (BRCA1 transcript variant 1)"></f:display>

@@ -5,8 +5,6 @@
 	xsi:schemaLocation="http://clingen.org/dm/allele/v1 ../clingen-xsd/referencesequence.xsd ">
 	<f:id value="RS212"></f:id>
 	<identifier>
-		<f:label
-			value="Homo sapiens breast cancer 1, early onset (BRCA1), RefSeqGene (LRG_292) on chromosome 17" />
 		<f:system value="http://www.ncbi.nlm.nih.gov/nuccore" />
 		<f:value value="NG_005905.2" />
 	</identifier>

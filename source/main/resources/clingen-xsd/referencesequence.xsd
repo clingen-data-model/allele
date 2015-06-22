@@ -79,7 +79,7 @@
 
 	<xs:simpleType name="ReferenceSequenceType-list">
 		<xs:restriction base="xs:string">
-			<xs:enumeration value="chromsome" />
+			<xs:enumeration value="chromosome" />
 			<xs:enumeration value="gene" />
 			<xs:enumeration value="transcript" />
 			<xs:enumeration value="amino-acid" />

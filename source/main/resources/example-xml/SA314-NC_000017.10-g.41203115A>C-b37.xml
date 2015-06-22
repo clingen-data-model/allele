@@ -26,7 +26,7 @@
 	</alleleName>
 	<referenceCoordinate>
 		<referenceSequence>
-			<f:reference id="ReferenceSequence/RS211"></f:reference>
+			<f:reference value="ReferenceSequence/RS211"></f:reference>
 			<f:display value="NC_000017.10"></f:display>
 		</referenceSequence>
 		<start value="41203114"></start>
