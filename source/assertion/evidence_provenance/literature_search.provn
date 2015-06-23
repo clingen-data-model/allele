@@ -1,0 +1,62 @@
+/*
+Situation: A curator performs a literature search, creating PMID references in the database
+
+Assumptions:
+The following items are assumed to have ClinGen IDs already.  These are grouped into the Prov groupings of Entity/Actor/Activity.  Each entry is in the form
+ClinGenID: what it is
+
+Entities: 
+SearchTerm/TermID1: A search term used in a literature search.
+SearchTerm/TermID2: Another search term used in a literature search.
+Article/PMID1: An entry tracking the existence of a paper.  
+Article/PMID2: Another PMID
+LiteratureDatabase/LitDBID1: A database of scientific literature
+LiteratureSearchResults/LiteratureSearchResultID1: a prov:collection of Articles
+
+Actors:
+Person/CuratorID1: A particular person getting the information out of the 
+                    paper and entering it into the database.  If these are not 
+                    the same (and if that distinction is important) then we 
+                    need a more complex use case.
+
+Activities:
+LiteratureSearch/LiteratureSearchID1: The act of performing the search of a literature
+                    database search, using specific terms, and recording the ids
+                    of matched results. This activity transpired between 13:00 and
+                    14:00 on Apr 28, 2015.
+
+-----
+
+Note: this case does not cover the provenance of the entry of the paper.
+
+Note: this case does not cover the entry of the data via the curation interface
+      as a separate activity. 
+
+Note: Do we want to include role?
+
+Note: Do we want to include plan/delegation if search was performed using established criteria?
+
+Note: Do we want to return a prov:collection of search terms?
+*/
+
+document
+
+prefix cg <http://clingen.org/>
+
+bundle cg:prov-litsearch-ID1
+    entity(cg:SearchTerm/TermID1, [ prov:type="cg:searchterm" ] )
+    entity(cg:SearchTerm/TermID2, [ prov:type="cg:searchterm" ] )
+    entity(cg:Article/PMID1, [ prov:type="prov:Publication" ] )
+    entity(cg:Article/PMID2, [ prov:type="prov:Publication" ] )
+    entity(cg:LiteratureSearchResult/LiteratureSearchResultID1, [ prov:type="prov:collection" ])
+    agent(cg:Person/CuratorID1, [prov:type="prov:Person"] )
+    activity(cg:LiteratureSearch/LiteratureSearchID1, 2015-04-28T13:00:10, 
+             2015-04-28T14:00:10, [prov:type="cg:literaturesearch"] )
+    wasGeneratedBy(cg:LiteratureSearchResult/LiteratureSearchResultID1, cg:LiteratureSearch/LiteratureSearchID1, -)
+    hadMember(cg:LiteratureSearchResult/LiteratureSearchResultID1, cg:Article/PMID1)
+    hadMember(cg:LiteratureSearchResult/LiteratureSearchResultID1, cg:Article/PMID2)
+    used(cg:LiteratureSearch/LiteratureSearchID1, cg:SearchTerm/TermID1, -)
+    used(cg:LiteratureSearch/LiteratureSearchID1, cg:SearchTerm/TermID2, -)
+    wasAssociatedWith(cg:LiteratureSearch/LiteratureSearchID1, cg:Person/CuratorID1, -)
+endBundle
+endDocument
