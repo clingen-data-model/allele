@@ -35,6 +35,5 @@ Display | Definition
 `hgvs-protein-3`|HGVS codon type
 `hgvs-rna`| HGVS RNA type
 `hgvs-ncrna`|HGVS non-coding RNA type
-`hgvs-ivs`|HGVS intron type
-`hgvs-custom`|HGVS custom type
-
+`ivs`|[Intervening](https://www.biostars.org/p/8782/) sequence type
+`custom`|Custom or "other" type
