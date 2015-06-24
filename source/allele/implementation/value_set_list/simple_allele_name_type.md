@@ -27,7 +27,14 @@ The value set contains 2 concepts
 Common, standardized or historical name give to a simple allele.
 
 {:.table .table-bordered .table-condensed}
-| Code | Display |Definition|
-| perferred | `perferred` | This would be considered the `alleleName` which is preferred. |
-| legacy | `legacy` | This would denote an `alleleName` which is not preferred, but hold some commonly know context or is historical. |
+Display | Definition
+`hgvs-genomic`| HGVS genomic type
+`hgvs-mito`| HGVS mitochondrial type
+`hgvs-cdna`| HGVS complementary DNA type
+`hgvs-protein-1`|HGVS amino acid type
+`hgvs-protein-3`|HGVS codon type
+`hgvs-rna`| HGVS RNA type
+`hgvs-ncrna`|HGVS non-coding RNA type
+`hgvs-ivs`|HGVS intron type
+`hgvs-custom`|HGVS custom type
 

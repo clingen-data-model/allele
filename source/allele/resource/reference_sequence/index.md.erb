@@ -13,9 +13,9 @@ related_page_url: /allele/conceptual/reference_sequence
 
 context:
   - property: identifier
-    control: 1..1
+    control: 0..*
     type: Identifier
-    definition: The versioned accession that can be used to uniquely identify the sequence in a public database. All users of reference sequences SHALL be sure of the identity of the reference sequence.
+    definition: The versioned accession that can be used to uniquely identify the sequence in a public database. All users of reference sequences SHALL be sure of the identity of the reference sequence.  Often only one identifier will be used, but if more then one reference accession is used it's required to map the same sequence.
     requirements: |
       For `ReferenceSequence`, an identifier is valid unless the accession is withdrawn. If a new version 
       of a sequence is created, it will be given a different versioned accession, and therefore a different 
