@@ -1,0 +1,15 @@
+{
+    "@context":
+    {
+        "fhir":"http://hl7.org/fhir/resources/",
+        "clingen":"http://clingen.org/model/allele/",
+        "xsd":"http://www.w3.org/2001/XMLSchema#",
+
+        "target":"@set",
+        "period":"fhir:Period",
+        "recorded":"xsd:dateTime",
+        "reason":"fhir:CodeableConcept",
+        "entity":"@set",
+        "role":"fhir:Code"
+    }
+}
