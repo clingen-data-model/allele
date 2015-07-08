@@ -247,3 +247,11 @@ data.examples.each do |e|
        locals: e,
        ignore: true)
 end
+
+Dir['source/**/*.provn'].each do |p|
+  basename = File.basename(p, '.provn')
+  proxy("/assertion/examples/#{basename}.html",
+		"/assertion/examples/template.html",
+		locals: { 'pathname' => p, 'basename' => basename },
+		ignore: true)
+end

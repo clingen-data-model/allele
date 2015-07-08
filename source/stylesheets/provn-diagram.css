@@ -1,0 +1,54 @@
+.prov-svg-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    vertical-align: middle;
+}
+
+.prov-svg-container .node circle {
+    stroke: #888;
+    fill: none;
+}
+
+.prov-svg-container .node ellipse {
+    stroke: #888;
+    fill: #fffc87;
+}
+
+.prov-svg-container .node rect {
+    stroke: #00f;
+    fill: #9fb1fc;
+}
+
+.prov-svg-container .node polygon {
+    stroke: #000;
+    fill: #fed37f;
+}
+
+.prov-svg-container .edgePath path {
+    stroke: #333;
+}
+
+.prov-svg-container .label {
+	color: #000;
+}
+
+.provtable th {
+	text-align: center;
+	font-size: 100%;
+}
+
+.provtable td {
+	font-weight: normal;
+	padding: 0.5em;
+}
+
+.prov-svg {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
