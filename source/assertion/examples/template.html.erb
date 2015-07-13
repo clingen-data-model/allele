@@ -3,12 +3,13 @@ layout: model
 
 ---
 <h1><%= locals['basename'] %></h1>
-<pre><code id="provn">
-<%= File.open(locals['pathname']) {|f| escape_html(f.read)} %>
-</code></pre>
 
 <div id="provn-errors" class="alert alert-danger" role="alert" style="display:none"></div>
 <div id="diagram" class="prov-svg-container"></div>
+
+<pre><code id="provn">
+<%= File.open(locals['pathname']) {|f| escape_html(f.read)} %>
+</code></pre>
 
 <script src="/javascripts/provn-nodes-links.js" charset="utf-8"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js" charset="utf-8"></script>

@@ -14,12 +14,10 @@ provn_dagre = function(provnparser, provn) {
   var g = new dagreD3.graphlib.Graph().setGraph({});
   this.g = g;
 
-  var width = 1000,
-      height = 1000;
-
+  var width = 1000;
   var svg = d3.select('#diagram').append('svg')
       .attr("preserveAspectRatio", "xMinYMin meet")
-      .attr("viewBox", "0 0 800 800")
+      .attr("viewBox", "0 0 " + width + " " + width)
       .attr('class', 'prov-svg')
 
   var inner = svg.append('g');
@@ -83,12 +81,16 @@ provn_dagre = function(provnparser, provn) {
     render(inner, g);
 
     // Center the graph
-    var initialScale = 1;
+    var initialScale = parseInt(svg.style("width")) / g.graph().width;
     zoom
       .translate([(parseInt(svg.style("width")) - g.graph().width * initialScale) / 2, 20])
       .scale(initialScale)
       .event(svg);
-    svg.attr('height', g.graph().height * initialScale + 40);
+
+    var height = g.graph().height * initialScale + 40;
+    svg.attr("viewBox", "0 0 " + width + " " + height);
+    d3.select('#diagram').style('padding-bottom', Math.round(100*height/width) + '%');
+    // svg.attr('height', height+40);
 
   }
 
