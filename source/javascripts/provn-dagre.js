@@ -50,6 +50,14 @@ provn_dagre = function(provnparser, provn) {
       });
 
       nodeslinks.links.forEach(function (link) {
+          if (!nd[link.source_node]) {
+              console.log("Reference to non-existant node: " + link.source_node);
+              return;
+          }
+          if (!nd[link.target_node]) {
+              console.log("Reference to non-existant node: " + link.target_node);
+              return;
+          }
           g.setEdge(link.source_node, link.target_node, { label: link.label });
       });
 
