@@ -6,6 +6,8 @@ provn_dagre = function(provnparser, provn) {
       return d.innerHTML;
   }
 
+  var errors = [];
+
   show_attributes = true;
   this.provnparser = provnparser;
 
@@ -33,6 +35,9 @@ provn_dagre = function(provnparser, provn) {
   svg.call(zoom);
 
   this.init_diagram = function(provn) {
+      errors = [];
+      var errorDiv = document.getElementById('provn-errors');
+      if (errorDiv) errorDiv.style.display = 'none';
       g.setGraph({});
       var nodeslinks = this.provnparser.parse(document.getElementById('provn').childNodes[0].textContent);
       var nd = nodeslinks.nodes;
@@ -45,22 +50,32 @@ provn_dagre = function(provnparser, provn) {
               node.label = '<table class="provtable"><thead><tr><th colspan="2">' + encode_entities(node.label) + '</th></tr></thead>\n' +
                   node.attributes.map(function (av) {
                       return "<tr><td>" + encode_entities(av.attribute) + "</td><td>" + encode_entities(av.value) + "</td></tr>";
-                  }) + "</table>\n";
+                  }).join('\n') + "</table>\n";
           }
       });
 
       nodeslinks.links.forEach(function (link) {
           if (!nd[link.source_node]) {
-              console.log("Reference to non-existant node: " + link.source_node);
+              errors.push("Reference to non-existant node: " + link.source_node);
               return;
           }
           if (!nd[link.target_node]) {
-              console.log("Reference to non-existant node: " + link.target_node);
+              errors.push("Reference to non-existant node: " + link.target_node);
               return;
           }
           g.setEdge(link.source_node, link.target_node, { label: link.label });
       });
 
+      if (errors.length) {
+          if (errorDiv) {
+              errorDiv.style.display = 'block';
+              errorDiv.innerHTML = '<ul>\n' + errors.map(function (e) {
+                  return '  <li>' + encode_entities(e) + '</li>'
+              }).join('\n') + '\n</ul>';
+          } else {
+              errors.forEach(function (e) { console.log(e); });
+          }
+      }
   }
 
   this.update_diagram = function() {
