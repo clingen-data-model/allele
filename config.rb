@@ -70,7 +70,7 @@ helpers do
   end
 
   def model_link(model)
-    %(<li class="#{model}"> <a href="/#{model}"><span class="glyphicon #{data[model].icon}"></span>#{model.capitalize}</a></li>)
+    %(<li class="#{model}"> <a href="/#{model}"><span class="glyphicon #{data.models[model].icon}"></span>#{model.capitalize}</a></li>)
 end
 
   def local_link(text, path)

@@ -49,12 +49,12 @@
                 Models 
                 <% if current_page.data.model %>
                 ::
-                <span class="glyphicon <%= data[current_page.data.model].icon %>"></span><%= model_name %> 
+                <span class="glyphicon <%= data.models[current_page.data.model].icon %>"></span><%= model_name %> 
                 <% end %> 
                 <span class="caret"></span>
               </a>
               <ul class="dropdown-menu" role="menu">
-                <% data.models.names.each do |model| %>
+                <% data.models.each do |model, config| %>
                 <li class="<%= model %>" >
                   <%= model_link(model) %>
                 </li>
