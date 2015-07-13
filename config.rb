@@ -134,7 +134,7 @@ end
     depth = path_depth(path)
     siblings = sitemap.resources.select do |r|
       r.url.include?(sibling_path) && path_depth(r.url) == depth
-    end
+    end.sort_by { |r| r.path }
     list = siblings.reduce("") do |a, e|
       if current_page.url.include?(e.url)
         a << %(<li class="active">#{link_to_resource(e)}</li>#{nested_index})
@@ -150,7 +150,7 @@ end
     depth = path_depth(parent_url)
     children = sitemap.resources.select do |r|
       r.url.include?(parent_url) && path_depth(r.url) == depth + 1 
-    end
+    end.sort_by { |r| r.path }
     return "" if children.size == 0
     list = children.reduce("") do |a, e|
       a << "<li>#{link_to_resource(e)}</li>\n"
@@ -247,4 +247,3 @@ data.examples.each do |e|
        locals: e,
        ignore: true)
 end
-
