@@ -18,28 +18,28 @@ InformationType/Result1:
         Returned updated ClinGen DM Document (Error discovered).
 
 InformationType/Result2:
-        Human judication take place to correct edge case results (Final DM Document created).
+        Person judication take place to correct edge case results (Final DM Document created).
 
 
 Actors/Agents:
 Software/SoftwareID1: 
         Codebase to validate some aspect of the data in question.
 
-Human/runnerID1:
+Person/runnerID1:
         Person running software.
 
-Human/judicatorID1:
+Person/judicatorID1:
         Person doing judication.
 
-Human/LoaderID1:
+Person/LoaderID1:
         Person uploading or storing corrected information.
 
 
 Activities:
-Validation/ValidationID1:
+Validate/ValidateID1:
         Softwares runs (timestamp), errors discovered and DM Document created.
 
-Judication/JudicationID1:
+Judicate/JudicateID1:
         Results are flagged and required human review. Updated Document created.
 
 Update/UpdateID1:
@@ -61,25 +61,25 @@ bundle cg:prov-software-resultID2
     agent(cg:Person/JudicatorID1, [prov:type="prov:Person"] )
     agent(cg:Person/LoaderID1, [prov:type="prov:Person"] )
 
-    activity(cg:Validation/ValidationID1, 2015-06-21T10:45:00, 
+    activity(cg:Validate/ValidateID1, 2015-06-21T10:45:00, 
         2015-06-21T11:15:00, [prov:type="cg:validate"] )
-    activity(cg:Judicate/JudicationID1, 2015-06-21T11:15:00, 
+    activity(cg:Judicate/JudicateID1, 2015-06-21T11:15:00, 
         2015-06-21T12:15:10, [prov:type="cg:judicate"] )
     activity(cg:Update/UpdateID1, 2015-06-21T12:15:00, 
         2015-06-21T12:48:10, [prov:type="cg:update"] )
 
     wasGeneratedBy(cg:InformationType/ResultID1, cg:Validate/ValidateID1, 2015-06-22T12:48:10)
-    wasGeneratedBy(cg:InformationType/ResultID2, cg:Judication/JudicationID1, 2015-06-23T12:48:10)
+    wasGeneratedBy(cg:InformationType/ResultID2, cg:Judicate/JudicateID1, 2015-06-23T12:48:10)
     wasGeneratedBy(cg:InformationType/ResultID2, cg:Update/UpdateID1, 2015-06-24T12:48:10)
 
-    used(cg:Validation/ValidationID1, InformationType/Known1, -)
-    used(cg:Judication/JudicationID1, InformationType/Result1, -)
-    used(cg:Update/UpdateID1, InformationType/Result2, -)
+    used(cg:Validate/ValidateID1, cg:InformationType/KnownID1, -)
+    used(cg:Judicate/JudicateID1, cg:InformationType/ResultID1, -)
+    used(cg:Update/UpdateID1, cg:InformationType/ResultID2, -)
 
-    wasAssociatedWith(Validation/ValidationID1, Software/SoftwareID1, -, [prov:type="SoftwareAgent"])
-    wasAssociatedWith(Validation/ValidationID1, Human/runnerID1, -, [prov:type="Person"])
-    wasAssociatedWith(Judication/JudicationID1, Human/judicatorID1, -, [prov:type="Person"])
-    wasAssociatedWith(Update/UpdateID1, Human/LoaderID1, -, [prov:type="Person"])
+    wasAssociatedWith(cg:Validate/ValidateID1, cg:Software/SoftwareID1, -, [prov:type="SoftwareAgent"])
+    wasAssociatedWith(cg:Validate/ValidateID1, cg:Person/RunnerID1, -, [prov:type="Person"])
+    wasAssociatedWith(cg:Judicate/JudicateID1, cg:Person/JudicatorID1, -, [prov:type="Person"])
+    wasAssociatedWith(cg:Update/UpdateID1, cg:Person/LoaderID1, -, [prov:type="Person"])
 endBundle
 endDocument
 
