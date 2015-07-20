@@ -1,5 +1,11 @@
 ---
 layout: home
+append_css:
+  - 'provn-diagram'
+append_js:
+  - 'provn-nodes-links'
+  - 'dagre-d3.min'
+  - 'provn-dagre'
 
 ---
 <h1><%= locals['basename'] %></h1>
@@ -11,11 +17,4 @@ layout: home
 <%= File.open(locals['pathname']) {|f| escape_html(f.read)} %>
 </code></pre>
 
-<script src="/javascripts/provn-nodes-links.js" charset="utf-8"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js" charset="utf-8"></script>
-<script src="/javascripts/dagre-d3.min.js" charset="utf-8"></script>
-<script src="/javascripts/provn-dagre.js" charser="utf-8"></script>
-
-<script>
-var provn_dagre = new provn_dagre(provnparser, document.getElementById('provn').innerHTML);
-</script>

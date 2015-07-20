@@ -45,9 +45,9 @@ provn_dagre = function(provnparser, provn) {
           g.setNode(k, node);
           if (show_attributes && node.label && node.attributes) {
               node.labelType = 'html';
-              node.label = '<table class="provtable"><thead><tr><th colspan="2">' + encode_entities(node.label) + '</th></tr></thead>\n' +
+              node.label = '<table class="provtable"><thead><tr><th colspan="2">' + encode_entities(node.label).replace(/^cg:/, '') + '</th></tr></thead>\n' +
                   node.attributes.map(function (av) {
-                      return "<tr><td>" + encode_entities(av.attribute) + "</td><td>" + encode_entities(av.value) + "</td></tr>";
+                      return "<tr><td>" + encode_entities(av.attribute).replace(/^prov:/, '') + "</td><td>" + encode_entities(av.value).replace(/^prov:/, '') + "</td></tr>";
                   }).join('\n') + "</table>\n";
           }
       });
@@ -100,3 +100,5 @@ provn_dagre = function(provnparser, provn) {
   }
 
 }
+
+var provn_dagre = new provn_dagre(provnparser, document.getElementById('provn').innerHTML);

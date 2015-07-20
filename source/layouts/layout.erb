@@ -12,7 +12,10 @@
       <%= current_page.data.title || "ClinGen Documentation" %>
     </title>
 
-    <%= stylesheet_link_tag "bootstrap", "bootstrap-theme", "brand2", "provn-diagram" %>
+    <%= stylesheet_link_tag "bootstrap", "bootstrap-theme", "brand2" %>
+    <% (current_page.data.append_css || []).each do |cssfile| %>
+      <%= stylesheet_link_tag cssfile %>
+    <% end %>
 
     <% if build? %>
     <script>
@@ -28,7 +31,7 @@
 
   </head>
 
-  <body class="documentation"> 
+  <body class="documentation">
 
     <nav class="navbar navbar-inverse">
       <div class="container-fluid">
@@ -46,11 +49,11 @@
             <li><a href="/">About</a></li>
             <li>
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" >
-                Models 
+                Models
                 <% if current_page.data.model %>
                 ::
-                <span class="glyphicon <%= data.models[current_page.data.model].icon %>"></span><%= model_name %> 
-                <% end %> 
+                <span class="glyphicon <%= data.models[current_page.data.model].icon %>"></span><%= model_name %>
+                <% end %>
                 <span class="caret"></span>
               </a>
               <ul class="dropdown-menu" role="menu">
@@ -72,7 +75,7 @@
         </div>
       </div>
     </nav>
-    
+
     <div class='container-fluid bg-lblue padding-left-none padding-right-none'>
       <div class='col-sm-offset-4 col-md-offset-3'>
         <ol class="breadcrumb bg-none margin-none">
@@ -87,6 +90,9 @@
          ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <%= javascript_include_tag 'jquery', 'bootstrap' %>
+    <% (current_page.data.append_js || []).each do |jsfile| %>
+      <%= javascript_include_tag jsfile %>
+    <% end %>
 
   </body>
 </html>
