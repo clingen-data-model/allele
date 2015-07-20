@@ -47,6 +47,7 @@ bundle cg:prov-software-resultID2
              2015-06-21T11:15:00, [prov:type="cg:update"] )
     wasGeneratedBy(cg:InformationType/ResultID1, cg:Update/UpdateID1, -)
     used(cg:Update/UpdateID1, cg:InformationType/KnownID1, -)
+    used(cg:Update/UpdateID1, cg:ExternalDataSource/ED1, -)
     wasAssociatedWith(cg:Update/UpdateID1, cg:Software/SoftwareID1, -)
 endBundle
 endDocument

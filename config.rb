@@ -70,7 +70,7 @@ helpers do
   end
 
   def model_link(model)
-    %(<li class="#{model}"> <a href="/#{model}"><span class="glyphicon #{data[model].icon}"></span>#{model.capitalize}</a></li>)
+    %(<li class="#{model}"> <a href="/#{model}"><span class="glyphicon #{data.models[model].icon}"></span>#{model.capitalize}</a></li>)
 end
 
   def local_link(text, path)
@@ -134,7 +134,7 @@ end
     depth = path_depth(path)
     siblings = sitemap.resources.select do |r|
       r.url.include?(sibling_path) && path_depth(r.url) == depth
-    end
+    end.sort_by { |r| r.path }
     list = siblings.reduce("") do |a, e|
       if current_page.url.include?(e.url)
         a << %(<li class="active">#{link_to_resource(e)}</li>#{nested_index})
@@ -150,7 +150,7 @@ end
     depth = path_depth(parent_url)
     children = sitemap.resources.select do |r|
       r.url.include?(parent_url) && path_depth(r.url) == depth + 1 
-    end
+    end.sort_by { |r| r.path }
     return "" if children.size == 0
     list = children.reduce("") do |a, e|
       a << "<li>#{link_to_resource(e)}</li>\n"
@@ -248,3 +248,10 @@ data.examples.each do |e|
        ignore: true)
 end
 
+Dir['source/**/*.provn'].each do |p|
+  basename = File.basename(p, '.provn')
+  proxy("/assertion/examples/#{basename}.html",
+		"/assertion/examples/template.html",
+		locals: { 'pathname' => p, 'basename' => basename },
+		ignore: true)
+end

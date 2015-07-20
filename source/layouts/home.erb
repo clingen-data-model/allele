@@ -8,7 +8,7 @@
         <li><%= local_link "FHIR", "/fhir.html" %></li>
         <li><%= local_link "Release Management", "/release_management.html" %></li>
         <li><%= link_to "GitHub Project", "https://github.com/tnavatar/clingen-data-model" %></li>
-        <% data.models.names.each do |m| %>
+        <% data.models.each do |m, config| %>
         <%= model_link(m) %>
         <% end %> 
 
