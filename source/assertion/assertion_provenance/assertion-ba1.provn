@@ -1,0 +1,119 @@
+/*
+Provenance for an assertion in which we want to capture all of the data and ruleapplication.
+ 
+This could be any kind of assertion, as long as it is created according to 
+a set of rules that are applied to some stored data.  The application of rules
+to data creates assessments, which are grouped together to create the 
+assertion.
+
+We will probably also want to have status, reviewed, and all that kind of thing
+to help the process folks, but it can come later.  It will probably be 
+derived-from type provenance.
+
+Entities: 
+AlleleFrequency/ID1: 
+ConditionPrevalance/ID2: These are pieces of information that are being used
+                     along with a rule to create an assessment.
+                     These entities will have their own provenance which 
+                     is not being included in this bundle for clarity,
+                     but could be included.  See the evidence provenance 
+                     examples for how that might look.
+
+Rule/BA1: This is a rule that is being applied to some information.  An
+          example would be one of the ACMG Pathogenicity rules, such as 
+          "Having a population frequency greater than X is good evidence
+          that the variant is benign."
+
+Assessment/A1: This is the output of applying a rule to a set of information.
+               Though we have not completely modeled everything yet, be
+               aware that this will be a little tricky.  An assessment may
+               be incomplete, meaning that we don't have all the data to 
+               evalute the rule completely.  Or we may have enough, and 
+               we know that the precedent of the rule is true.  In that case,
+               the antecedent of the rule may point in either direction (e.g.
+               benign or pathogenic, depending on the rule and on the 
+               evidence.).  Finally, the precedent may be false (the allele
+               frequency is not greater than X).  This may or may not be
+               evidence for anything, again depending on the rule and the data.
+               The assessment may also contain information about why
+               a particular conclusion about the data was reached (such 
+               information should be part of the assessment itself, not part
+               of the provenance).
+
+Guidelines/G1: The algorithm by which assessments are combined to produce
+               an assessment.  Suppose that somebody produces an assertion
+               mostly according to a guideline, but changes a few things by
+               hand.  Is that a new guideline?  Or are there two assertions
+               with a derived from and a second activity of hand tuning?
+
+Assertion/Assertion1: The final assertion.
+
+Actors:
+Person/Assessor1: A particular person combining evidence and using a rule
+                 to make an assessment of part of the data.   Note that
+                 it is entirely possible for this to be a Software Agent 
+                 in some cases (such as applying frequency cutoffs).
+
+SoftwareAgent/Assertor1: A particular software agent (such as the
+                        path. calcualtor)  combining assessments under
+                        a guideline to create an assertion. Note that this 
+                        may be a Person instead.
+
+Groups/PhenoGroup1: A particular group that is associated with creating the
+                    assertion.
+
+Activities:
+Assess/Assess1: The act of assessing this data. This activity transpired
+                      between 13:00 and 14:00 on Apr 28, 2015.
+
+Assert/Assert1: The act of going from Assessments to Assertions. This
+                       happened between 13:00 and 14:00 on May 1, 2015.
+
+-----
+
+Note: This assumes that we have models for rules, evidence, assertions, and 
+assessments, which still need to be created.
+
+Note: This bundle does not create provenance for the information entities, 
+though they would have provenance in the system (and it could be included here,
+but is not to enhance readability). 
+
+Note: Should Rule/R1 and/or Guidleline/G1 have prov:type="Prov:Plan" ?  
+Or should there be another entity that is the overall plan?  If so, then
+the plan goes into the wasAssociatedWith lines.
+
+*/
+
+document
+
+prefix cg <http://clingen.org/>
+
+bundle cg:assertion-provenace-1
+    entity(cg:AlleleFrequency/ID1, [ prov:type="cg:allele-frequency", prov:value="0.06", cg:allele="CA1", cg:population="ExAC-European" ] )
+    entity(cg:ConditionPrevalance/ID2, [ prov:type="cg:prevalance", prov:value="0.000001" ] )
+    entity(cg:Rule/BA1, [ prov:type="cg:pathogenicityrule" ] )
+    entity(cg:Assessments/A1, [ prov:type="cg:frequencyassessment" ] )
+    entity(cg:Guideline/G1, [prov:type="cg:pathogenicityguideline", prov:value="ACMG Variant Interpretation 2015"] )
+    entity(cg:Assertion/Assertion1, [ prov:type="cg:pathogenicityassertion", value="benign" ] )
+
+    agent(cg:Person/Assessor1, [prov:type="prov:Person", foaf:name="Gregor Mendel"] )
+    agent(cg:SoftwareAgent/Assertor1, [prov:type="prov:SoftwareAgent", prov:value="ClinGen Interpret-o-matic"] )
+    agent(cg:Groups/PhenoGroup1, [prov:type="prov:Organization"])
+
+    activity(cg:Assess/Assess1, 2015-04-28T13:00:10, 
+             2015-04-28T14:00:10, [prov:type="cg:assessment"] )
+    wasGeneratedBy(cg:Assessments/A1, cg:Assess/Assess1, -)
+    used(cg:Assess/Assess1, cg:AlleleFrequency/ID1, -)
+    used(cg:Assess/Assess1, cg:ConditionPrevalance/ID2, -)
+    used(cg:Assess/Assess1, cg:Rule/BA1, -)
+    wasAssociatedWith(cg:Assess/Assess1, cg:Person/Assessor1, -)
+
+    activity(cg:Assert/Assert1, 2015-05-01T13:00:00, 2015-04-28T14:00:00, [prov:type="cg:asserting"] )
+    wasGeneratedBy(cg:Assertion/Assertion1, cg:Assert/Assert1, -)
+    used(cg:Assert/Assert1, cg:Assessments/A1, -)
+    used(cg:Assert/Assert1, cg:Guideline/G1, -)
+    wasAssociatedWith(cg:Assert/Assert1, cg:SoftwareAgent/Assertor1, -)
+    actedOnBehalfOf(cg:SoftwareAgent/Assertor1, cg:Groups/PhenoGroup1, 
+            cg:Assert/Assert1)
+endBundle
+endDocument
