@@ -27,8 +27,7 @@ Annotations done using the primaryAminoAcidChangeType attribute are restricted t
 [SO:0001578](http://www.sequenceontology.org/browser/current_svn/term/SO:0001578) | stop_lost |
 [SO:0002012](http://www.sequenceontology.org/browser/current_svn/term/SO:0002012) | start_lost |
 [SO:0001583](http://www.sequenceontology.org/browser/current_svn/term/SO:0001583) | missense_variant |
-[SO:0001910](http://www.sequenceontology.org/browser/current_svn/term/SO:0001910) | frameshift_truncation |
-[SO:0001909](http://www.sequenceontology.org/browser/current_svn/term/SO:0001909) | frameshift_elongation |
+[SO:0001589](http://www.sequenceontology.org/miso/current_svn/term/SO:0001589)    | frameshift_variant |
 [SO:0001823](http://www.sequenceontology.org/browser/current_svn/term/SO:0001823) | conservative_inframe_insertion |
 [SO:0001824](http://www.sequenceontology.org/browser/current_svn/term/SO:0001824) | disruptive_inframe_insertion |
 [SO:0001825](http://www.sequenceontology.org/browser/current_svn/term/SO:0001825) | conservative_inframe_deletion |

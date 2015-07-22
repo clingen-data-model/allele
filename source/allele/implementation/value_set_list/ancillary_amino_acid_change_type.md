@@ -37,8 +37,8 @@ Examples:
 {:.table} 
 | Type | Display Name | Code | 
 |----------------|----------------| 
-| `primaryAminoAcidChangeType` | `synonymous_variant` | [SO:0001819](http://www.sequenceontology.org/browser/current_svn/term/SO:0001819) |
-| `ancillaryAminoAcidChangeType` | `stop_retained_variant` | [SO:0001567](http://www.sequenceontology.org/browser/current_svn/term/SO:0001567) |
+| `primaryAminoAcidChangeType` | `frameshift_variant` | [SO:0001589](http://www.sequenceontology.org/miso/current_svn/term/SO:0001589)|
+| `ancillaryAminoAcidChangeType` | `frameshift_elongation` | [SO:0001909](http://www.sequenceontology.org/browser/current_svn/term/SO:0001909) |
 
 {:.table} 
 | Type | Display Name | Code | 
