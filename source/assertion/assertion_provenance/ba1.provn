@@ -3,35 +3,33 @@ document
 prefix cg <http://clinicalgenome.org/>
 
 bundle cg:assertion-provenance-ba1
-  activity(cg:ClinicalLabVariantAssessment1)
+  entity(cg:Criterion/ACMG2015-BA1, [prov:type="cg:Criterion"])
+  entity(cg:CriteriaSet/ACMG2015, [prov:type="cg:CriteriaSet"])
+  entity(cg:GlobalAlleleFrequencyEvidence/CA123, [prov:type="cg:GlobalAlleleFrequencyEvidence"])
+  entity(cg:VariantAssertion/CA123, [prov:type="cg:VariantAsserton"])
+  entity(cg:Assessment/A321, [prov:type="cg:Assessment"])
+  entity(cg:CanonicalAllele/CA123, [prov:type="cg:CanonicalAllele"])
 
-  entity(cg:Criterion/ACMG2015-BA1)
-  entity(cg:CriteriaSet/ACMG2015)
-  entity(cg:GlobalAlleleFrequencyEvidence/CA123)
-  entity(cg:VariantAssertion/CA123)
-  entity(cg:Assessment/A321)
-  entity(cg:CanonicalAllele/CA123)
+  activity(cg:ClinicalLabVariantAssessment/1, 2015-04-28T13:00:10, 2015-04-28T14:00:10, [prov:type="cg:ClinicalLabVariantAssessment"])
 
-  agent(cg:SoftwareAgent/Alamut-v2.1)
-  agent(cg:Person/DanielleAzzariti)
+  agent(cg:Person/DanielleAzzariti, [prov:type="cg:IndividualCurator"])
 
   wasDerivedFrom(cg:VariantAssertion/CA123, cg:Assessment/A321)
   wasDerivedFrom(cg:Assessment/A321, cg:GlobalAlleleFrequencyEvidence/CA123)
   wasDerivedFrom(cg:Assessment/A321, cg:Criterion/ACMG2015-BA1)
   wasDerivedFrom(cg:Criterion/ACMG2015-BA1, cg:CriteriaSet/ACMG2015)
 
-  used(cg:ClinicalLabVariantAssessment/1, cg:CriteriaSet/ACMG2015)
-  used(cg:ClinicalLabVariantAssessment/1, cg:Criterion/ACMG2015-BA1)
-  used(cg:ClinicalLabVariantAssessment/1, cg:GlobalAlleleFrequencyEvidence/CA123)
-  used(cg:ClinicalLabVariantAssessment/1, cg:Assessment/A321)
+  used(cg:ClinicalLabVariantAssessment/1, cg:CriteriaSet/ACMG2015, -)
+  used(cg:ClinicalLabVariantAssessment/1, cg:Criterion/ACMG2015-BA1, -)
+  used(cg:ClinicalLabVariantAssessment/1, cg:GlobalAlleleFrequencyEvidence/CA123, -)
+  used(cg:ClinicalLabVariantAssessment/1, cg:Assessment/A321, -)
 
-  wasAttributedTo(cg:Person/DanielleAzzariti, cg:Assessment/A321)
-  wasAttributedTo(cg:Person/DanielleAzzariti, cg:VariantAssertion/CA123)
+  wasAttributedTo(cg:Person/DanielleAzzariti, cg:Assessment/A321, -)
+  wasAttributedTo(cg:Person/DanielleAzzariti, cg:VariantAssertion/CA123, -)
   
-  wasGeneratedBy(cg:Assessment/A321, cg:ClinicalLabVariantAssessment/1)
-  wasGeneratedBy(cg:VariantAssertion/CA123, cg:ClinicalLabVariantAssessment/1)
-
-  wasAssociatedWith(cg:ClinicalLabVariantAssessment/1, cg:Person/DanielleAzzariti)
+  wasGeneratedBy(cg:Assessment/A321, cg:ClinicalLabVariantAssessment/1, -)
+  wasGeneratedBy(cg:VariantAssertion/CA123, cg:ClinicalLabVariantAssessment/1, -)
+  wasAssociatedWith(cg:ClinicalLabVariantAssessment/1, cg:Person/DanielleAzzariti, -)
 
 endBundle
 endDocument
