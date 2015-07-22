@@ -32,12 +32,35 @@ provn_dagre = function(provnparser, provn) {
       });
   svg.call(zoom);
 
+  var show_errors = function(errors) {
+      var errorDiv = document.getElementById('provn-errors');
+      if (errorDiv) {
+          errorDiv.style.display = 'block';
+          errorDiv.innerHTML = '<ul>\n' + errors.map(function (e) {
+              return '  <li>' + encode_entities(e) + '</li>'
+          }).join('\n') + '\n</ul>';
+      } else {
+          errors.forEach(function (e) { console.log(e); });
+      }
+  }
+
   this.init_diagram = function(provn) {
       errors = [];
       var errorDiv = document.getElementById('provn-errors');
       if (errorDiv) errorDiv.style.display = 'none';
       g.setGraph({});
-      var nodeslinks = this.provnparser.parse(document.getElementById('provn').childNodes[0].textContent);
+      try {
+          var nodeslinks = this.provnparser.parse(document.getElementById('provn').childNodes[0].textContent);
+      } catch (err) {
+          console.log(err);
+          var message = err.message;
+          if (err.location) {
+              message = message + '\n(at line ' + err.location.start.line + ', column ' + err.location.start.column + ')';
+          }
+          show_errors([message]);
+          return;
+      }
+
       var nd = nodeslinks.nodes;
 
       var nodes = Object.keys(nd).map(function (k) {
@@ -65,20 +88,15 @@ provn_dagre = function(provnparser, provn) {
       });
 
       if (errors.length) {
-          if (errorDiv) {
-              errorDiv.style.display = 'block';
-              errorDiv.innerHTML = '<ul>\n' + errors.map(function (e) {
-                  return '  <li>' + encode_entities(e) + '</li>'
-              }).join('\n') + '\n</ul>';
-          } else {
-              errors.forEach(function (e) { console.log(e); });
-          }
+          show_errors(errors);
       }
   }
 
   this.update_diagram = function() {
 
     render(inner, g);
+
+    if (g.nodes().length == 0) return;
 
     // Center the graph
     var initialScale = parseInt(svg.style("width")) / g.graph().width;

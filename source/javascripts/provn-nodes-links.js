@@ -117,13 +117,21 @@ provnparser = (function() {
           { type: "literal", value: "actedOnBehalfOf", description: "\"actedOnBehalfOf\"" },
           function(expressionType, optionalIdentifier, agent, actedOnBehalfOf, _) { return _; },
           function(expressionType, optionalIdentifier, agent, actedOnBehalfOf, inContextOfActivity, attributeValuePairs) {
-                  return make_multi_link(agent, expressionType, { responsibleParty: actedOnBehalfOf, inContextOfActivity: inContextOfActivity }, attributeValuePairs);
+                  if (inContextOfActivity) {
+                      return make_multi_link(agent, expressionType, { responsibleParty: actedOnBehalfOf, inContextOfActivity: inContextOfActivity }, attributeValuePairs);
+                  } else {
+                      make_link(expressionType, entity, actedOnBehalfOf);
+                  }
               },
           "wasDerivedFrom",
           { type: "literal", value: "wasDerivedFrom", description: "\"wasDerivedFrom\"" },
           function(expressionType, optionalIdentifier, entity, wasDerivedFrom, activity, generation, usage) { return { activity: activity, generation: generation, usage: usage }; },
           function(expressionType, optionalIdentifier, entity, wasDerivedFrom, optionals, attributeValuePairs) {
-                  return make_multi_link(entity, expressionType, {activity: optionals.activity, generation: optionals.generation, usage: optionals.usage}, attributeValuePairs);
+                  if (optionals) {
+                      return make_multi_link(entity, expressionType, {activity: optionals.activity, generation: optionals.generation, usage: optionals.usage}, attributeValuePairs);
+                  } else {
+                      return make_link(expressionType, entity, wasDerivedFrom);
+                  }
               },
           "{",
           { type: "literal", value: "{", description: "\"{\"" },
