@@ -24,8 +24,8 @@ bundle cg:assertion-provenance-ba1
   used(cg:ClinicalLabVariantAssessment/1, cg:GlobalAlleleFrequencyEvidence/CA123, -)
   used(cg:ClinicalLabVariantAssessment/1, cg:Assessment/A321, -)
 
-  wasAttributedTo(cg:Person/DanielleAzzariti, cg:Assessment/A321, -)
-  wasAttributedTo(cg:Person/DanielleAzzariti, cg:VariantAssertion/CA123, -)
+  wasAttributedTo(cg:Person/DanielleAzzariti, cg:Assessment/A321)
+  wasAttributedTo(cg:Person/DanielleAzzariti, cg:VariantAssertion/CA123) 
   
   wasGeneratedBy(cg:Assessment/A321, cg:ClinicalLabVariantAssessment/1, -)
   wasGeneratedBy(cg:VariantAssertion/CA123, cg:ClinicalLabVariantAssessment/1, -)
