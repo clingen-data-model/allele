@@ -8,7 +8,7 @@ model: allele
 
 The [Sequence Ontology](http://www.sequenceontology.org/index.html) (SO) is an ontology used to describe biological sequences through the use of standardized vocabulary and internodal relationships.  In addition to the power of controlled terms, SO offers grouping at multiple levels, enriching the ability to preform logic and algorithm based operations across large groups of features, types, and effects.  Furthermore, adding SO as a core requirement will allow us to avoid the semantics of natural language, and the imperfection of free-text description.
 
-###The Data Models use of SO.
+###The Data Model's use of SO.
 
 For the ClinGen Data Model (DM) we have attempted to use SO terms whenever possible to describe many aspect of our model including: sequences, features, alterations, amino acids, and amino acid changes.
 
