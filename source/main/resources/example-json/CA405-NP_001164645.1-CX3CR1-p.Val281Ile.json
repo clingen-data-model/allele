@@ -1,0 +1,19 @@
+{
+  "id": "CA405",
+  "version": "1",
+  "active": "true",
+  "canonicalAlleleType": "amino-acid",
+  "complexity": "simple",
+  "relatedSimpleAllele":
+  [
+    {
+      "simpleAllele":
+      {
+        "reference": "SimpleAllele/SA324",
+        "display": "NP_001164645.1:p.Val281Ile"
+      },
+
+      "preferred": "true"
+    }
+  ]
+}

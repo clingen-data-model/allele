@@ -1,12 +1,12 @@
 {
-  "id": "SA314",
+  "id": "SA322",
   "canonicalAllele":
   {
-    "reference": "CanonicalAllele/CA402"
+    "reference": "CanonicalAllele/CA404"
   },
 
   "simpleAlleleType": "genomic",
-  "allele": "C",
+  "allele": "A",
   "primaryNucleotideChangeType":
   {
     "coding":
@@ -24,7 +24,7 @@
   [
     {
       "nameType": "hgvs-genomic",
-      "name": "NC_000017.10:g.41203115A>C"
+      "name": "NG_005905.2:g.20971G>A"
     }
   ],
 
@@ -32,12 +32,12 @@
   {
     "referenceSequence":
     {
-      "reference": "ReferenceSequence/RS211",
-      "display": "NC_000017.10"
+      "reference": "ReferenceSequence/RS222",
+      "display": "NG_016362.1"
     },
 
-    "start": "41203114",
-    "end": "41203115",
-    "refAllele": "A"
+    "start": "20970",
+    "end": "20971",
+    "refAllele": "G"
   }
 }

@@ -1,0 +1,28 @@
+{
+  "id": "RS224",
+  "identifier":
+  [
+    {
+      "system": "http://www.ncbi.nlm.nih.gov/nuccore",
+      "value": "NM_001337.3"
+    }
+  ],
+
+  "referenceSequenceType": "transcript",
+  "cdsStart": "93",
+  "cdsEnd": "1160",
+  "gene":
+  {
+    "reference": "Gene/G103"
+  },
+
+  "related":
+  {
+    "relatedType": "translates-to",
+    "target":
+    {
+      "reference": "ReferenceSequence/RS226",
+      "display": "NP_001328.1 (CX3C chemokine receptor 1 isoform b)"
+    }
+  }
+}

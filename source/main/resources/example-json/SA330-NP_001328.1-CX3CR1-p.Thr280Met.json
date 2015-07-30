@@ -1,12 +1,12 @@
 {
-  "id": "SA312",
+  "id": "SA330",
   "canonicalAllele":
   {
-    "reference": "CanonicalAllele/CA403"
+    "reference": "CanonicalAllele/CA407"
   },
 
   "simpleAlleleType": "amino-acid",
-  "allele": "Ser",
+  "allele": "Met",
   "primaryAminoAcidChangeType":
   {
     "coding":
@@ -23,12 +23,11 @@
   [
     {
       "nameType": "hgvs-protein-3",
-      "name": "p.Ile1766Ser"
+      "name": "p.Thr280Met"
     },
-
     {
-      "nameType": "hgvs-protein-1",
-      "name": "I1766S"
+      "nameType": "custom",
+      "name": "T280M"
     }
   ],
 
@@ -38,19 +37,19 @@
     [
       {
         "system": "http://www.ncbi.nlm.nih.gov/snp",
-        "value": "80357463"
+        "value": "3732378"
       }
     ],
 
     "referenceSequence":
     {
-      "reference": "ReferenceSequence/RS214",
-      "display": "NP_009225.1"
+      "reference": "ReferenceSequence/RS226",
+      "display": "NP_001328.1"
     },
 
-    "start": "1765",
-    "end": "1766",
-    "refAllele": "Ile"
+    "start": "279",
+    "end": "280",
+    "refAllele": "Thr"
   },
 
   "related":
@@ -59,8 +58,8 @@
       "relatedType": "transcript-allele-cause",
       "target":
       {
-        "reference": "SimpleAllele/SA310",
-        "display": "NM_007294.3(BRCA1):c.5297T>G"
+        "reference": "SimpleAllele/SA328",
+        "display": "NM_001337.3(CX3CR1):c.839C>T"
       }
     }
   ]

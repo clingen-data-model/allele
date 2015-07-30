@@ -1,0 +1,25 @@
+{
+  "id": "RS221",
+  "identifier":
+  [
+    {
+      "system": "http://www.ncbi.nlm.nih.gov/nuccore",
+      "value": "NC_000003.11"
+    }
+  ],
+
+  "referenceSequenceType": "chromsome",
+  "chromosome": "3",
+  "referenceGenome":
+  {
+    "coding":
+    [
+      {
+        "system": "http://www.ncbi.nlm.nih.gov/assembly/",
+        "code": "2758"
+      }
+    ],
+
+    "text": "GRCh37"
+  }
+}

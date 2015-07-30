@@ -1,12 +1,12 @@
 {
-  "id": "SA310",
+  "id": "SA328",
   "canonicalAllele":
   {
-    "reference": "CanonicalAllele/CA402"
+    "reference": "CanonicalAllele/CA406"
   },
 
   "simpleAlleleType": "transcript",
-  "allele": "G",
+  "allele": "T",
   "primaryNucleotideChangeType":
   {
     "coding":
@@ -24,13 +24,8 @@
   [
     {
       "nameType": "hgvs-cdna",
-      "name": "NM_007294.3(BRCA1):c.5297T>G",
+      "name": "NM_001337.3(CX3CR1):c.839C>T",
       "preferred": "true"
-    },
-
-    {
-      "type": "custom",
-      "name": "5416T>G"
     }
   ],
 
@@ -40,19 +35,19 @@
     [
       {
         "system": "http://www.ncbi.nlm.nih.gov/snp",
-        "value": "80357463"
+        "value": "3732378"
       }
     ],
 
     "referenceSequence":
     {
-      "reference": "ReferenceSequence/RS213",
-      "display": "NM_001014794.2"
+      "reference": "ReferenceSequence/RS224",
+      "display": "NM_001337.3"
     },
 
-    "start": "5528",
-    "end": "5529",
-    "refAllele": "T",
+    "start": "930",
+    "end": "931",
+    "refAllele": "C",
     "primaryTranscriptRegionType":
     {
       "coding":
@@ -72,8 +67,8 @@
       "relatedType": "amino-acid-effect",
       "target":
       {
-        "reference": "SimpleAllele/SA312",
-        "display": "NP_009225.1:p.Ile1766Ser"
+        "reference": "SimpleAllele/SA331",
+        "display": "NP_001328.1:p.Thr280Met"
       }
     }
   ]

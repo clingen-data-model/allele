@@ -1,0 +1,27 @@
+{
+  "id": "CA407",
+  "version": "1",
+  "active": "true",
+  "canonicalAlleleType": "amino-acid",
+  "complexity": "simple",
+  "relatedSimpleAllele":
+  [
+    {
+      "simpleAllele":
+      {
+        "reference": "SimpleAllele/SA331",
+        "display": "NP_001164645.1(CX3CR1):p.Thr312Met"
+      },
+
+      "preferred": "true"
+    },
+    
+    {
+      "simpleAllele":
+      {
+        "reference": "SimpleAllele/SA330",
+        "display": "NP_001328.1:p.Thr280Met"
+      }
+    }
+  ]
+}

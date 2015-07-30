@@ -1,0 +1,16 @@
+{
+  "id": "RS222",
+  "identifier":
+  [
+    {
+      "system": "http://www.ncbi.nlm.nih.gov/nuccore",
+      "value": "NG_016362.1"
+    }
+  ],
+
+  "referenceSequenceType": "gene",
+  "gene":
+  {
+    "reference": "Gene/G103"
+  }
+}

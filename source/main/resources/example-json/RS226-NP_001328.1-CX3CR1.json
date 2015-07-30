@@ -1,0 +1,21 @@
+{
+  "id": "RS226",
+  "identifier":
+  [
+    {
+      "system": "http://www.ncbi.nlm.nih.gov/protein",
+      "value": "NP_001328.1"
+    }
+  ],
+
+  "referenceSequenceType": "amino-acid",
+  "related":
+  {
+    "relatedType": "translates-from",
+    "target":
+    {
+      "reference": "ReferenceSequence/RS224",
+      "display": "NM_001337.3 (Homo sapiens chemokine (C-X3-C motif) receptor 1 (CX3CR1), transcript variant 4, mRNA)"
+    }
+  }
+}

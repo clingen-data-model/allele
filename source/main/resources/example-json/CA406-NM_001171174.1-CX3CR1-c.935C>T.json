@@ -1,0 +1,51 @@
+{
+  "id": "CA406",
+  "version": "1",
+  "active": "true",
+  "canonicalAlleleType": "nucleotide",
+  "complexity": "simple",
+  "relatedSimpleAllele":
+  [
+    {
+      "simpleAllele":
+      {
+        "reference": "SimpleAllele/SA329",
+        "display": "NM_001171174.1(CX3CR1):c.935C>T"
+      },
+
+      "preferred": "true"
+    },
+
+    {
+      "simpleAllele":
+      {
+        "reference": "SimpleAllele/SA325",
+        "display": "NC_000003.12:g.39265671G>A (GRCh38)"
+      }
+    },
+
+    {
+      "simpleAllele":
+      {
+        "reference": "SimpleAllele/SA326",
+        "display": "NC_000003.11:g.39307162G>A (GRCh37)"
+      }
+    },
+
+    {
+      "simpleAllele":
+      {
+        "reference": "SimpleAllele/SA327",
+        "display": "NG_016362.1:g.21065C>T"
+      }
+    },
+
+    {
+      "simpleAllele":
+      {
+        "reference": "SimpleAllele/SA328",
+        "display": "NM_001337.3:c.839C>T"
+      }
+    }
+  ]
+}

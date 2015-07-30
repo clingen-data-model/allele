@@ -1,0 +1,30 @@
+{
+
+	"_comments": "...
+		1. No simpleAllele link is required (need to change model).
+		2. No place to add one or more display names (preferred or otherwise)
+		3. Not sure if ordering of nested elements is needed.
+		4. Need to remove reverse 'composite' association from model diagram/doc.
+		5. We may want to separate CanonicalAllele (Simple v Complex) in the Resource model
+		6. Should the nested alleles be SimpleAlleles that point to specific transcript allleles?
+		7. Do we need to keep an association between AA and Nucleotide Complex canonical Alleles that are derivations?
+	",
+
+	"id": "CA408",
+	"version": "1",
+	"active": "true",
+	"canonicalAlleleType": "nucleotide",
+	"complexity": "complex",
+	"nested": 
+	[
+		{
+			"reference": "CanonicalALlele/CA404",
+			"display": "NM_001171174.1(CX3CR1):c.841G>A"
+		},
+
+		{
+			"reference": "CanonicalALlele/CA406",
+			"display": "NM_001171174.1(CX3CR1):c.935C>T"
+		}
+	]
+}

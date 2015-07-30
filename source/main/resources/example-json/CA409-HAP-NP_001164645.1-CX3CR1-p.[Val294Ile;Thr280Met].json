@@ -1,0 +1,22 @@
+{
+
+	"_comments": "see CA408 comments related to this example",
+
+	"id": "CA409",
+	"version": "1",
+	"active": "true",
+	"canonicalAlleleType": "amino-acid",
+	"complexity": "complex",
+	"nested": 
+	[
+		{
+			"reference": "CanonicalALlele/CA405",
+			"display": "NP_001164645.1(CX3CR1):p.Val281Ile"
+		},
+
+		{
+			"reference": "CanonicalALlele/CA407",
+			"display": "NP_001164645.1(CX3CR1)p.Thr312Met"
+		}
+	]
+}

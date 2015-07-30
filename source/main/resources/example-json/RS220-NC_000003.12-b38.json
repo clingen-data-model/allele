@@ -1,0 +1,25 @@
+{
+  "id": "RS220",
+  "identifier":
+  [
+    {
+      "system": "http://www.ncbi.nlm.nih.gov/nuccore",
+      "value": "NC_000003.12"
+    }
+  ],
+
+  "referenceSequenceType": "chromsome",
+  "chromosome": "3",
+  "referenceGenome":
+  {
+    "coding":
+    [
+      {
+        "system": "http://www.ncbi.nlm.nih.gov/assembly/",
+        "code": "88331"
+      }
+    ],
+
+    "text": "GRCh38"
+  }
+}

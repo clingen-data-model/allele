@@ -1,0 +1,25 @@
+{
+  "id": "G103",
+  "identifier":
+  [
+    {
+      "use": "official",
+      "system": "urn:oid:2.16.840.1.113883.6.281",
+      "value": "HGNC:2558"
+    },
+
+    {
+      "system": "http://www.ncbi.nlm.nih.gov/gene",
+      "value": "1524"
+    }
+  ],
+
+  "symbol": "CX3CR1",
+  "name": "chemokine (C-X3-C motif) receptor 1",
+  "aliasSymbol":
+  [
+    "CCRL1",
+    "CMKDR1",
+    "V28"
+  ]
+}
