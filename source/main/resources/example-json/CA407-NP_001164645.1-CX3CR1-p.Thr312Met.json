@@ -14,14 +14,6 @@
       },
 
       "preferred": "true"
-    },
-    
-    {
-      "simpleAllele":
-      {
-        "reference": "SimpleAllele/SA330",
-        "display": "NP_001328.1:p.Thr280Met"
-      }
     }
   ]
 }
