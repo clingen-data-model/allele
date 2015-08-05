@@ -1,0 +1,19 @@
+{
+  "id": "CA410",
+  "version": "1",
+  "active": "true",
+  "canonicalAlleleType": "amino-acid",
+  "complexity": "simple",
+  "relatedSimpleAllele":
+  [
+    {
+      "simpleAllele":
+      {
+        "reference": "SimpleAllele/SA330",
+        "display": "NP_001328.1:p.Thr280Met"
+      },
+
+      "preferred": "true"
+    }
+  ]
+}
