@@ -22,7 +22,7 @@ import org.hl7.fhir.Reference;
  *     &lt;extension base="{http://hl7.org/fhir}BackboneElement">
  *       &lt;sequence>
  *         &lt;element name="preferred" preferred="{http://hl7.org/fhir}boolean" minOccurs="0"/>
- *         &lt;element name="simpleAllele" preferred="{http://hl7.org/fhir}Reference"/>
+ *         &lt;element name="alleleInstance" preferred="{http://hl7.org/fhir}Reference"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>
@@ -32,13 +32,13 @@ import org.hl7.fhir.Reference;
  * 
  */
 @XmlAccessorType (XmlAccessType.FIELD)
-@XmlType (name = "CanonicalAllele.RelatedSimpleAllele", propOrder = {"preferred", "simpleAllele"})
+@XmlType (name = "CanonicalAllele.RelatedSimpleAllele", propOrder = {"preferred", "alleleInstance"})
 public class CanonicalAlleleRelatedSimpleAllele extends BackboneElement
 {
 
 	protected Boolean preferred;
 	@XmlElement (required = true)
-	protected Reference simpleAllele;
+	protected Reference alleleInstance;
 
 	/**
 	 * Gets the value of the preferred property.
@@ -67,29 +67,29 @@ public class CanonicalAlleleRelatedSimpleAllele extends BackboneElement
 	}
 
 	/**
-	 * Gets the value of the simpleAllele property.
+	 * Gets the value of the alleleInstance property.
 	 * 
 	 * @return
 	 *     possible object is
 	 *     {@link Reference }
 	 *     
 	 */
-	public Reference getSimpleAllele()
+	public Reference getAlleleInstance()
 	{
-		return simpleAllele;
+		return alleleInstance;
 	}
 
 	/**
-	 * Sets the value of the simpleAllele property.
+	 * Sets the value of the alleleInstance property.
 	 * 
 	 * @param value
 	 *     allowed object is
 	 *     {@link Reference }
 	 *     
 	 */
-	public void setSimpleAllele(Reference value)
+	public void setAlleleInstance(Reference value)
 	{
-		this.simpleAllele = value;
+		this.alleleInstance = value;
 	}
 
 }

@@ -4,14 +4,14 @@
 
 	<xs:import namespace="http://hl7.org/fhir" schemaLocation="../fhir-xsd/fhir-base.xsd" />
 
-	<xs:element name="SimpleAllele" type="SimpleAllele">
+	<xs:element name="AlleleInstance" type="AlleleInstance">
 		<xs:annotation>
 			<xs:documentation>Any allele based on a reference coordinate.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 
-	<xs:complexType name="SimpleAllele">
+	<xs:complexType name="AlleleInstance">
 		<xs:complexContent>
 			<xs:extension base="f:Resource">
 				<xs:sequence>
@@ -19,7 +19,7 @@
 						minOccurs="0" maxOccurs="unbounded" />
 					<xs:element name="canonicalAllele" type="f:Reference"
 						minOccurs="0" />
-					<xs:element name="simpleAlleleType" type="SimpleAlleleType"
+					<xs:element name="alleleInstanceType" type="AlleleInstanceType"
 						minOccurs="0" />
 					<xs:element name="allele" type="f:string" minOccurs="0" />
 					<xs:element name="primaryNucleotideChangeType" type="f:CodeableConcept"
@@ -30,11 +30,11 @@
 						minOccurs="0" />
 					<xs:element name="ancillaryAminoAcidChangeType" type="f:CodeableConcept"
 						minOccurs="0" maxOccurs="unbounded" />
-					<xs:element name="alleleName" type="SimpleAllele.AlleleName"
+					<xs:element name="alleleName" type="AlleleInstance.AlleleName"
 						minOccurs="0" maxOccurs="unbounded" />
-					<xs:element name="referenceCoordinate" type="SimpleAllele.ReferenceCoordinate"
+					<xs:element name="referenceCoordinate" type="AlleleInstance.ReferenceCoordinate"
 						minOccurs="0" />
-					<xs:element name="related" type="SimpleAllele.Related"
+					<xs:element name="related" type="AlleleInstance.Related"
 						minOccurs="0" maxOccurs="unbounded">
 						<xs:annotation>
 							<xs:documentation>Related alleles.</xs:documentation>
@@ -45,16 +45,16 @@
 		</xs:complexContent>
 	</xs:complexType>
 
-	<xs:complexType name="SimpleAlleleType">
+	<xs:complexType name="AlleleInstanceType">
 		<xs:complexContent>
 			<xs:extension base="f:Element">
 				<xs:sequence />
-				<xs:attribute name="value" type="SimpleAlleleType-list" />
+				<xs:attribute name="value" type="AlleleInstanceType-list" />
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
 
-	<xs:simpleType name="SimpleAlleleType-list">
+	<xs:simpleType name="AlleleInstanceType-list">
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="genomic" />
 			<xs:enumeration value="transcript" />
@@ -62,11 +62,11 @@
 		</xs:restriction>
 	</xs:simpleType>
 
-	<xs:complexType name="SimpleAllele.Related">
+	<xs:complexType name="AlleleInstance.Related">
 		<xs:complexContent>
 			<xs:extension base="f:BackboneElement">
 				<xs:sequence>
-					<xs:element name="relatedType" type="SimpleAlleleRelationshipType"
+					<xs:element name="relatedType" type="AlleleInstanceRelationshipType"
 						minOccurs="0" />
 					<xs:element name="target" type="f:Reference" />
 				</xs:sequence>
@@ -74,20 +74,20 @@
 		</xs:complexContent>
 	</xs:complexType>
 
-	<xs:complexType name="SimpleAlleleRelationshipType">
+	<xs:complexType name="AlleleInstanceRelationshipType">
 		<xs:complexContent>
 			<xs:extension base="f:Element">
 				<xs:sequence />
-				<xs:attribute name="value" type="SimpleAlleleRelationshipType-list" />
+				<xs:attribute name="value" type="AlleleInstanceRelationshipType-list" />
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
 
-	<xs:complexType name="SimpleAllele.AlleleName">
+	<xs:complexType name="AlleleInstance.AlleleName">
 		<xs:complexContent>
 			<xs:extension base="f:BackboneElement">
 				<xs:sequence>
-					<xs:element name="nameType" type="SimpleAlleleNameType"
+					<xs:element name="nameType" type="AlleleInstanceNameType"
 						minOccurs="0" />
 					<xs:element name="name" type="f:string" />
 					<xs:element name="legacy" type="f:boolean" minOccurs="0" />
@@ -98,16 +98,16 @@
 		</xs:complexContent>
 	</xs:complexType>
 
-	<xs:complexType name="SimpleAlleleNameType">
+	<xs:complexType name="AlleleInstanceNameType">
 		<xs:complexContent>
 			<xs:extension base="f:Element">
 				<xs:sequence />
-				<xs:attribute name="value" type="SimpleAlleleNameType-list" />
+				<xs:attribute name="value" type="AlleleInstanceNameType-list" />
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
 
-	<xs:complexType name="SimpleAllele.ReferenceCoordinate">
+	<xs:complexType name="AlleleInstance.ReferenceCoordinate">
 		<xs:complexContent>
 			<xs:extension base="f:BackboneElement">
 				<xs:sequence>
@@ -125,33 +125,33 @@
 						minOccurs="0" />
 					<xs:element name="intronOffsetEnd" type="f:integer"
 						minOccurs="0" />
-					<xs:element name="intronOffsetDirection" type="SimpleAlleleIntronOffsetDirection"
+					<xs:element name="intronOffsetDirection" type="AlleleInstanceIntronOffsetDirection"
 						minOccurs="0" />
-					<xs:element name="intronOffsetGenomicCoordinate" type="SimpleAllele.ReferenceCoordinate"
+					<xs:element name="intronOffsetGenomicCoordinate" type="AlleleInstance.ReferenceCoordinate"
 						minOccurs="0" />
 				</xs:sequence>
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
 
-	<xs:complexType name="SimpleAlleleIntronOffsetDirection">
+	<xs:complexType name="AlleleInstanceIntronOffsetDirection">
 		<xs:complexContent>
 			<xs:extension base="f:Element">
 				<xs:sequence />
 				<xs:attribute name="value"
-					type="SimpleAlleleIntronOffsetDirection-list" />
+					type="AlleleInstanceIntronOffsetDirection-list" />
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
 
-	<xs:simpleType name="SimpleAlleleRelationshipType-list">
+	<xs:simpleType name="AlleleInstanceRelationshipType-list">
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="amino-acid-effect" />
 			<xs:enumeration value="transcript-allele-cause" />
 		</xs:restriction>
 	</xs:simpleType>
 
-	<xs:simpleType name="SimpleAlleleNameType-list">
+	<xs:simpleType name="AlleleInstanceNameType-list">
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="hgvs-genomic" />
 			<xs:enumeration value="hgvs-mito" />
@@ -165,7 +165,7 @@
 		</xs:restriction>
 	</xs:simpleType>
 
-	<xs:simpleType name="SimpleAlleleIntronOffsetDirection-list">
+	<xs:simpleType name="AlleleInstanceIntronOffsetDirection-list">
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="+" />
 			<xs:enumeration value="-" />

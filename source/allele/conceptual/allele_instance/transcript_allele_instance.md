@@ -9,7 +9,7 @@ description: A SimpleAlllele that uses a TranscriptReferenceSequence as its Refe
 Scope and Usage
 ---------------
 
-see also: [SimpleAllele](simple_allele.html)
+see also: [AlleleInstance](allele_instance.html)
 
 SimpleTranscriptAllele represents an allele at a variant location on a single version of a transcript.  For each different transcript or version, a new SimpleTranscriptAllele would be created, and these would be aggregated at the SimpleCanonicalAllele level, along with any SimpleGenomicAlleles.
 

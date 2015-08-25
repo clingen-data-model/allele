@@ -10,15 +10,15 @@ import org.hl7.fhir.Element;
 /**
  * If the element is present, it must have either a @value, an @id, or extensions
  * 
- * <p>Java class for SimpleAlleleNameType complex type.
+ * <p>Java class for AlleleInstanceNameType complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="SimpleAlleleNameType">
+ * &lt;complexType name="AlleleInstanceNameType">
  *   &lt;complexContent>
  *     &lt;extension base="{http://hl7.org/fhir}Element">
- *       &lt;attribute name="value" type="{http://org.clingen.dm.allele.v1}SimpleAlleleNameType-list" />
+ *       &lt;attribute name="value" type="{http://org.clingen.dm.allele.v1}AlleleInstanceNameType-list" />
  *     &lt;/extension>
  *   &lt;/complexContent>
  * &lt;/complexType>
@@ -27,22 +27,22 @@ import org.hl7.fhir.Element;
  * 
  */
 @XmlAccessorType (XmlAccessType.FIELD)
-@XmlType (name = "SimpleAlleleNameType")
-public class SimpleAlleleNameType extends Element
+@XmlType (name = "AlleleInstanceNameType")
+public class AlleleInstanceNameType extends Element
 {
 
 	@XmlAttribute (name = "value")
-	protected SimpleAlleleNameTypeList value;
+	protected AlleleInstanceNameTypeList value;
 
 	/**
 	 * Gets the value of the value property.
 	 * 
 	 * @return
 	 *     possible object is
-	 *     {@link SimpleAlleleNameTypeList }
+	 *     {@link AlleleInstanceNameTypeList }
 	 *     
 	 */
-	public SimpleAlleleNameTypeList getValue()
+	public AlleleInstanceNameTypeList getValue()
 	{
 		return value;
 	}
@@ -52,10 +52,10 @@ public class SimpleAlleleNameType extends Element
 	 * 
 	 * @param value
 	 *     allowed object is
-	 *     {@link SimpleAlleleNameTypeList }
+	 *     {@link AlleleInstanceNameTypeList }
 	 *     
 	 */
-	public void setValue(SimpleAlleleNameTypeList value)
+	public void setValue(AlleleInstanceNameTypeList value)
 	{
 		this.value = value;
 	}

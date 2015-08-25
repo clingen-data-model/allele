@@ -9,7 +9,7 @@
   resource: CanonicalAllele
 - id: CA402
   title: CA402-NM_007294.3-BRCA1-c.5297T>G
-  description: Substitution nucleotide change with all genomic/transcript SimpleAlleles.
+  description: Substitution nucleotide change with all genomic/transcript AlleleInstances.
   xml: "/main/resources/example-xml/CA402-NM_007294.3-BRCA1-c.5297T>G.xml"
   schema: "/main/resources/clingen-xsd/canonicalallele.xsd"
   json: "/main/resources/example-json/CA402-NM_007294.3-BRCA1-c.5297T>G.json"
@@ -17,7 +17,7 @@
   resource: CanonicalAllele
 - id: CA403
   title: CA403-NP_0099225.1-BRCA1-p.Ile1766Ser
-  description: Missense amino acid change with equivalent amino acid SimpleAlleles.
+  description: Missense amino acid change with equivalent amino acid AlleleInstances.
   xml: "/main/resources/example-xml/CA403-NP_0099225.1-BRCA1-p.Ile1766Ser.xml"
   schema: "/main/resources/clingen-xsd/canonicalallele.xsd"
   json: "/main/resources/example-json/CA403-NP_0099225.1-BRCA1-p.Ile1766Ser.json"
@@ -133,96 +133,96 @@
   schema: /main/resources/clingen-xsd/simpleallele.xsd
   json: "/main/resources/example-json/SA301-NM_001014794.2-ILK-c.448+14A>G-b37.json"
   jsonld: "/main/resources/example-jsonld-nofhir/SA301.jsonld"
-  resource: SimpleAllele
+  resource: AlleleInstance
 - id: SA302
   title: SA302-NM_001014794.2-ILK-c.448+13A>G-b38
   description: ''
   xml: "/main/resources/example-xml/SA302-NM_001014794.2-ILK-c.448+13A>G-b38.xml"
-  schema: /main/resources/clingen-xsd/simpleallele.xsd
+  schema: /main/resources/clingen-xsd/alleleinstance.xsd
   json: "/main/resources/example-json/SA302-NM_001014794.2-ILK-c.448+13A>G-b38.json"
   jsonld: "/main/resources/example-jsonld-nofhir/SA302-NM_001014794.2-ILK-c.448+13A>G-b38.jsonld"
-  resource: SimpleAllele
+  resource: AlleleInstance
 - id: SA303
   title: SA303-NC_000011.9-g.6630034A>G-b37
   description: ''
   xml: "/main/resources/example-xml/SA303-NC_000011.9-g.6630034A>G-b37.xml"
-  schema: /main/resources/clingen-xsd/simpleallele.xsd
+  schema: /main/resources/clingen-xsd/alleleinstance.xsd
   json: "/main/resources/example-json/SA303-NC_000011.9-g.6630034A>G-b37.json"
-  resource: SimpleAllele
+  resource: AlleleInstance
 - id: SA304
   title: SA304-NC_000011.10-g.6608803A>G-b38
   description: ''
   xml: "/main/resources/example-xml/SA304-NC_000011.10-g.6608803A>G-b38.xml"
-  schema: /main/resources/clingen-xsd/simpleallele.xsd
+  schema: /main/resources/clingen-xsd/alleleinstance.xsd
   json: "/main/resources/example-json/SA304-NC_000011.10-g.6608803A>G-b38.json"
-  resource: SimpleAllele
+  resource: AlleleInstance
 - id: SA310
   title: SA310-NM_007294.3-BRCA1-c.5297T>G
   description: BRCA1 substitution on primary transcript
   xml: "/main/resources/example-xml/SA310-NM_007294.3-BRCA1-c.5297T>G.xml"
-  schema: /main/resources/clingen-xsd/simpleallele.xsd
+  schema: /main/resources/clingen-xsd/alleleinstance.xsd
   json: "/main/resources/example-json/SA310-NM_007294.3-BRCA1-c.5297T>G.json"
-  resource: SimpleAllele
+  resource: AlleleInstance
 - id: SA311
   title: SA311-U14680.1-BRCA1-n.5416T>G
   description: BRCA1 substitution on genomic gene sequence
   xml: "/main/resources/example-xml/SA311-U14680.1-BRCA1-n.5416T>G.xml"
-  schema: /main/resources/clingen-xsd/simpleallele.xsd
+  schema: /main/resources/clingen-xsd/alleleinstance.xsd
   json: "/main/resources/example-json/SA311-U14680.1-BRCA1-n.5416T>G.json"
-  resource: SimpleAllele
+  resource: AlleleInstance
 - id: SA312
   title: SA312-NP_009225.1-BRCA1-p.Ile1766Ser
   description: BRCA1 missense amino acid variant Ile1766Ser
   xml: "/main/resources/example-xml/SA312-NP_009225.1-BRCA1-p.Ile1766Ser.xml"
-  schema: /main/resources/clingen-xsd/simpleallele.xsd
+  schema: /main/resources/clingen-xsd/alleleinstance.xsd
   json: "/main/resources/example-json/SA312-NP_009225.1-BRCA1-p.Ile1766Ser.json"
-  resource: SimpleAllele
+  resource: AlleleInstance
 - id: SA313
   title: SA313-NR_027676.1-BRCA1-n.5433T>G
   description: ''
   xml: "/main/resources/example-xml/SA313-NR_027676.1-BRCA1-n.5433T>G.xml"
-  schema: /main/resources/clingen-xsd/simpleallele.xsd
+  schema: /main/resources/clingen-xsd/alleleinstance.xsd
   json: "/main/resources/example-json/SA313-NR_027676.1-BRCA1-n.5433T>G.json"
-  resource: SimpleAllele
+  resource: AlleleInstance
 - id: SA314
   title: SA314-NC_000017.10-g.41203115A>C-b37
   description: ''
   xml: "/main/resources/example-xml/SA314-NC_000017.10-g.41203115A>C-b37.xml"
-  schema: /main/resources/clingen-xsd/simpleallele.xsd
+  schema: /main/resources/clingen-xsd/alleleinstance.xsd
   json: "/main/resources/example-json/SA314-NC_000017.10-g.41203115A>C-b37.json"
-  resource: SimpleAllele
+  resource: AlleleInstance
 - id: SA315
   title: SA315-NC_000017.11-g.43051098A>C-b38
   description: ''
   xml: "/main/resources/example-xml/SA315-NC_000017.11-g.43051098A>C-b38.xml"
-  schema: /main/resources/clingen-xsd/simpleallele.xsd
+  schema: /main/resources/clingen-xsd/alleleinstance.xsd
   json: "/main/resources/example-json/SA315-NC_000017.11-g.43051098A>C-b38.json"
-  resource: SimpleAllele
+  resource: AlleleInstance
 - id: SA316
   title: SA316-NG_005905.2-BRCA1-g.166886T>G
   description: ''
   xml: "/main/resources/example-xml/SA316-NG_005905.2-BRCA1-g.166886T>G.xml"
-  schema: /main/resources/clingen-xsd/simpleallele.xsd
+  schema: /main/resources/clingen-xsd/alleleinstance.xsd
   json: "/main/resources/example-json/SA316-NG_005905.2-BRCA1-g.166886T>G.json"
-  resource: SimpleAllele
+  resource: AlleleInstance
 - id: SA317
   title: SA317-LRG_292-BRCA1-g.166886T>G
   description: ''
   xml: "/main/resources/example-xml/SA317-LRG_292-BRCA1-g.166886T>G.xml"
-  schema: /main/resources/clingen-xsd/simpleallele.xsd
+  schema: /main/resources/clingen-xsd/alleleinstance.xsd
   json: "/main/resources/example-json/SA317-LRG_292-BRCA1-g.166886T>G.json"
-  resource: SimpleAllele
+  resource: AlleleInstance
 - id: SA318
   title: SA318-LRG_292t1-BRCA1-c.5297T>G
   description: ''
   xml: "/main/resources/example-xml/SA318-LRG_292t1-BRCA1-c.5297T>G.xml"
-  schema: /main/resources/clingen-xsd/simpleallele.xsd
+  schema: /main/resources/clingen-xsd/alleleinstance.xsd
   json: "/main/resources/example-json/SA318-LRG_292t1-BRCA1-c.5297T>G.json"
-  resource: SimpleAllele
+  resource: AlleleInstance
 - id: SA319
   title: SA319-LRG_292p1-BRCA1-p.Ile1766Ser
   description: ''
   xml: "/main/resources/example-xml/SA319-LRG_292p1-BRCA1-p.Ile1766Ser.xml"
-  schema: /main/resources/clingen-xsd/simpleallele.xsd
+  schema: /main/resources/clingen-xsd/alleleinstance.xsd
   json: "/main/resources/example-json/SA319-LRG_292p1-BRCA1-p.Ile1766Ser.json"
-  resource: SimpleAllele
+  resource: AlleleInstance

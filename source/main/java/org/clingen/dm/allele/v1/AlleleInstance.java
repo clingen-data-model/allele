@@ -16,26 +16,26 @@ import org.hl7.fhir.String;
 /**
  * If the element is present, it must have either a @value, an @id, or extensions
  * 
- * <p>Java class for SimpleAllele complex type.
+ * <p>Java class for AlleleInstance complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="SimpleAllele">
+ * &lt;complexType name="AlleleInstance">
  *   &lt;complexContent>
  *     &lt;extension base="{http://hl7.org/fhir}Resource">
  *       &lt;sequence>
  *         &lt;element name="identifier" type="{http://hl7.org/fhir}Identifier" maxOccurs="unbounded" minOccurs="0"/>
  *         &lt;element name="canonicalAllele" type="{http://hl7.org/fhir}Reference" maxOccurs="1" minOccurs="0"/>
- *         &lt;element name="simpleAlleleType" type="{http://org.clingen.dm.allele.v1}SimpleAlleleType"/>
+ *         &lt;element name="alleleInstanceType" type="{http://org.clingen.dm.allele.v1}AlleleInstanceType"/>
  *         &lt;element name="allele" type="{http://hl7.org/fhir}string" minOccurs="0"/>
  *         &lt;element name="primaryNucleotideChangeType" type="{http://hl7.org/fhir}CodeableConcept" minOccurs="0"/>
  *         &lt;element name="ancillaryNucleotideChangeType" type="{http://hl7.org/fhir}CodeableConcept" maxOccurs="unbounded" minOccurs="0"/>
  *         &lt;element name="primaryAminoAcidChangeType" type="{http://hl7.org/fhir}CodeableConcept" minOccurs="0"/>
  *         &lt;element name="ancillaryAminoAcidChangeType" type="{http://hl7.org/fhir}CodeableConcept" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="alleleName" type="{http://org.clingen.dm.allele.v1}SimpleAllele.AlleleName" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="referenceCoordinate" type="{http://org.clingen.dm.allele.v1}SimpleAllele.ReferenceCoordinate" maxOccurs="1" minOccurs="0"/>
- *         &lt;element name="related" type="{http://org.clingen.dm.allele.v1}SimpleAllele.Related" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element name="alleleName" type="{http://org.clingen.dm.allele.v1}AlleleInstance.AlleleName" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element name="referenceCoordinate" type="{http://org.clingen.dm.allele.v1}AlleleInstance.ReferenceCoordinate" maxOccurs="1" minOccurs="0"/>
+ *         &lt;element name="related" type="{http://org.clingen.dm.allele.v1}AlleleInstance.Related" maxOccurs="unbounded" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>
@@ -45,25 +45,25 @@ import org.hl7.fhir.String;
  * 
  */
 @XmlAccessorType (XmlAccessType.FIELD)
-@XmlType (name = "SimpleAllele", propOrder = {"identifier", "canonicalAllele", "simpleAlleleType", "allele",
+@XmlType (name = "AlleleInstance", propOrder = {"identifier", "canonicalAllele", "alleleInstanceType", "allele",
 												"primaryNucleotideChangeType", "ancillaryNucleotideChangeType",
 												"primaryAminoAcidChangeType", "ancillaryAminoAcidChangeType",
 												"alleleName", "referenceCoordinate", "related"})
-public class SimpleAllele extends Resource
+public class AlleleInstance extends Resource
 {
 
 	protected List<Identifier> identifier;
 	protected Reference canonicalAllele;
 	@XmlElement (required = true)
-	protected SimpleAlleleType simpleAlleleType;
+	protected AlleleInstanceType alleleInstanceType;
 	protected String allele;
 	protected CodeableConcept primaryNucleotideChangeType;
 	protected List<CodeableConcept> ancillaryNucleotideChangeType;
 	protected CodeableConcept primaryAminoAcidChangeType;
 	protected List<CodeableConcept> ancillaryAminoAcidChangeType;
-	protected List<SimpleAlleleName> alleleName;
-	protected SimpleAlleleReferenceCoordinate referenceCoordinate;
-	protected List<SimpleAlleleRelated> related;
+	protected List<AlleleInstanceName> alleleName;
+	protected AlleleInstanceReferenceCoordinate referenceCoordinate;
+	protected List<AlleleInstanceRelated> related;
 
 	/**
 	 * Gets the value of the identifier property.
@@ -116,29 +116,29 @@ public class SimpleAllele extends Resource
 	}
 
 	/**
-	 * Gets the value of the simpleAlleleType property.
+	 * Gets the value of the alleleInstanceType property.
 	 * 
 	 * @return
 	 *     possible object is
-	 *     {@link SimpleAlleleType }
+	 *     {@link AlleleInstanceType }
 	 *     
 	 */
-	public SimpleAlleleType getSimpleAlleleType()
+	public AlleleInstanceType getAlleleInstanceType()
 	{
-		return simpleAlleleType;
+		return alleleInstanceType;
 	}
 
 	/**
-	 * Sets the value of the simpleAlleleType property.
+	 * Sets the value of the alleleInstanceType property.
 	 * 
 	 * @param value
 	 *     allowed object is
-	 *     {@link SimpleAlleleType }
+	 *     {@link AlleleInstanceType }
 	 *     
 	 */
-	public void setSimpleAlleleType(SimpleAlleleType value)
+	public void setAlleleInstanceType(AlleleInstanceType value)
 	{
-		this.simpleAlleleType = value;
+		this.alleleInstanceType = value;
 	}
 
 	/**
@@ -288,9 +288,9 @@ public class SimpleAllele extends Resource
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list
-	 * {@link SimpleAlleleName }
+	 * {@link AlleleInstanceName }
 	 */
-	public List<SimpleAlleleName> getAlleleName()
+	public List<AlleleInstanceName> getAlleleName()
 	{
 		return alleleName;
 	}
@@ -313,9 +313,9 @@ public class SimpleAllele extends Resource
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list
-	 * {@link SimpleAlleleRelated }
+	 * {@link AlleleInstanceRelated }
 	 */
-	public List<SimpleAlleleRelated> getRelated()
+	public List<AlleleInstanceRelated> getRelated()
 	{
 		return related;
 	}

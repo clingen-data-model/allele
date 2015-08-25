@@ -1,6 +1,6 @@
 ---
-title: simple-allele-name-type
-description: Codes informing the type of SimpleAllele used.
+title: allele-instance-name-type
+description: Codes informing the type of AlleleInstance used.
 source: Internal
 id: 4
 usage: core
@@ -13,18 +13,18 @@ This is a value set defined by the ClinGen Data Modeling WG (Allele Domain).
 __Summary__
 
 {:.table-condensed}
-| Code System URL:| http://clingen.org/model/allele/simple-allele-name-type |
-| Value Set URL:| http://clingen.org/model/allele/vs/simple-allele-name-type |
-| Definition: | Names used for simple-allele-name-type |
+| Code System URL:| http://clingen.org/model/allele/allele-instance-name-type |
+| Value Set URL:| http://clingen.org/model/allele/vs/allele-instance-name-type |
+| Definition: | Names used for allele-instance-name-type |
 
 
 Formal value Set definition: [XML]() or [JSON]().
 
 The value set contains 2 concepts
 
-##SimpleAlleleNameType
+##AlleleInstanceNameType
 
-Common, standardized or historical name give to a simple allele.
+Common, standardized or historical name give to a allele instance.
 
 {:.table .table-bordered .table-condensed}
 Display | Definition

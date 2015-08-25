@@ -17,12 +17,12 @@ import org.hl7.fhir.String;
 /**
  * The Reference coordinate for a SimpleAlle. This is the locus relative to a single ReferenceSequence (genomic|transcript|amino acid).
  * 
- * <p>Java class for SimpleAllele.ReferenceCoordinate complex type.
+ * <p>Java class for AlleleInstance.ReferenceCoordinate complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="SimpleAllele.ReferenceCoordinate">
+ * &lt;complexType name="AlleleInstance.ReferenceCoordinate">
  *   &lt;complexContent>
  *     &lt;extension base="{http://hl7.org/fhir}BackboneElement">
  *       &lt;sequence>
@@ -35,8 +35,8 @@ import org.hl7.fhir.String;
  *         &lt;element name="ancillaryTranscriptRegionType" type="{http://hl7.org/fhir}CodeableConcept" minOccurs="0" maxOccurs="unbounded"/>
  *         &lt;element name="intronOffsetStart" type="{http://hl7.org/fhir}int"/>
  *         &lt;element name="intronOffsetEnd" type="{http://hl7.org/fhir}int"/>
- *         &lt;element name="intronOffsetDirection" type="{http://org.clingen.dm.allele.v1}SimpleAlleleIntronOffsetDirection"/>
- *         &lt;element name="intronOffsetGenomicCoordinate" type="{http://org.clingen.dm.allele.v1}SimpleAllele.ReferenceCoordinate"/>
+ *         &lt;element name="intronOffsetDirection" type="{http://org.clingen.dm.allele.v1}AlleleInstanceIntronOffsetDirection"/>
+ *         &lt;element name="intronOffsetGenomicCoordinate" type="{http://org.clingen.dm.allele.v1}AlleleInstance.ReferenceCoordinate"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>
@@ -46,13 +46,13 @@ import org.hl7.fhir.String;
  * 
  */
 @XmlAccessorType (XmlAccessType.FIELD)
-@XmlType (name = "SimpleAllele.ReferenceCoordinate", propOrder = {"identifier", "referenceSequence", "start", "end",
+@XmlType (name = "AlleleInstance.ReferenceCoordinate", propOrder = {"identifier", "referenceSequence", "start", "end",
 																	"refAllele", "primaryTranscriptRegionType",
 																	"ancillaryTranscriptRegionType",
 																	"intronOffsetStart", "intronOffsetEnd",
 																	"intronOffsetDirection",
 																	"intronOffsetGenomicCoordinate"})
-public class SimpleAlleleReferenceCoordinate extends BackboneElement
+public class AlleleInstanceReferenceCoordinate extends BackboneElement
 {
 
 	protected List<Identifier> identifier;
@@ -65,8 +65,8 @@ public class SimpleAlleleReferenceCoordinate extends BackboneElement
 	protected List<CodeableConcept> ancillaryTranscriptRegionType;
 	protected Integer intronOffsetStart;
 	protected Integer intronOffsetEnd;
-	protected SimpleAlleleIntronOffsetDirection intronOffsetDirection;
-	protected SimpleAlleleReferenceCoordinate intronOffsetGenomicCoordinate;
+	protected AlleleInstanceIntronOffsetDirection intronOffsetDirection;
+	protected AlleleInstanceReferenceCoordinate intronOffsetGenomicCoordinate;
 
 	/**
 	 * Gets the value of the identifier property.
@@ -303,10 +303,10 @@ public class SimpleAlleleReferenceCoordinate extends BackboneElement
 	 * 
 	 * @return
 	 *     possible object is
-	 *     {@link SimpleAlleleIntronOffsetDirection }
+	 *     {@link AlleleInstanceIntronOffsetDirection }
 	 *     
 	 */
-	public SimpleAlleleIntronOffsetDirection getIntronOffsetDirection()
+	public AlleleInstanceIntronOffsetDirection getIntronOffsetDirection()
 	{
 		return intronOffsetDirection;
 	}
@@ -316,10 +316,10 @@ public class SimpleAlleleReferenceCoordinate extends BackboneElement
 	 * 
 	 * @param value
 	 *     allowed object is
-	 *     {@link SimpleAlleleIntronOffsetDirection }
+	 *     {@link AlleleInstanceIntronOffsetDirection }
 	 *     
 	 */
-	public void setIntronOffsetDirection(SimpleAlleleIntronOffsetDirection value)
+	public void setIntronOffsetDirection(AlleleInstanceIntronOffsetDirection value)
 	{
 		this.intronOffsetDirection = value;
 	}
@@ -329,10 +329,10 @@ public class SimpleAlleleReferenceCoordinate extends BackboneElement
 	 * 
 	 * @return
 	 *     possible object is
-	 *     {@link SimpleAlleleReferenceCoordinate }
+	 *     {@link AlleleInstanceReferenceCoordinate }
 	 *     
 	 */
-	public SimpleAlleleReferenceCoordinate getIntronOffsetGenomicCoordinate()
+	public AlleleInstanceReferenceCoordinate getIntronOffsetGenomicCoordinate()
 	{
 		return intronOffsetGenomicCoordinate;
 	}
@@ -342,10 +342,10 @@ public class SimpleAlleleReferenceCoordinate extends BackboneElement
 	 * 
 	 * @param value
 	 *     allowed object is
-	 *     {@link SimpleAlleleReferenceCoordinate }
+	 *     {@link AlleleInstanceReferenceCoordinate }
 	 *     
 	 */
-	public void setIntronOffsetGenomicCoordinate(SimpleAlleleReferenceCoordinate value)
+	public void setIntronOffsetGenomicCoordinate(AlleleInstanceReferenceCoordinate value)
 	{
 		this.intronOffsetGenomicCoordinate = value;
 	}

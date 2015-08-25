@@ -5,12 +5,12 @@ import javax.xml.bind.annotation.XmlEnumValue;
 import javax.xml.bind.annotation.XmlType;
 
 /**
- * <p>Java class for SimpleAlleleRelationshipType-list.
+ * <p>Java class for AlleleInstanceRelationshipType-list.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="SimpleAlleleRelationshipType-list">
+ * &lt;simpleType name="AlleleInstanceRelationshipType-list">
  *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
  *     &lt;enumeration value="amino-acid-effect"/>
  *     &lt;enumeration value="transcript-allele-cause"/>
@@ -19,27 +19,27 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  */
-@XmlType (name = "SimpleAlleleRelationshipType-list")
+@XmlType (name = "AlleleInstanceRelationshipType-list")
 @XmlEnum
-public enum SimpleAlleleRelationshipTypeList
+public enum AlleleInstanceRelationshipTypeList
 {
 
 	/**
-	 * The target SimpleAllele is the effect of this SimpleAllele (e.g. the target amino-acid allele is the effect of a given transcript allele).
+	 * The target AlleleInstance is the effect of this AlleleInstance (e.g. the target amino-acid allele is the effect of a given transcript allele).
 	 * 
 	 */
 	@XmlEnumValue ("amino-acid-effect")
 	AMINO_ACID_EFFECT("amino acid effect"),
 
 	/**
-	 * The target SimpleAllele is the cause of this SimpleAllele (e.g. the transcript allele is the cause of a given amino-acid allele).
+	 * The target AlleleInstance is the cause of this AlleleInstance (e.g. the transcript allele is the cause of a given amino-acid allele).
 	 * 
 	 */
 	@XmlEnumValue ("transcript-allele-cause")
 	TRANSCRIPT_ALLELE_CAUSE("transcript allele cause");
 	private final java.lang.String value;
 
-	SimpleAlleleRelationshipTypeList(java.lang.String v)
+	AlleleInstanceRelationshipTypeList(java.lang.String v)
 	{
 		value = v;
 	}
@@ -49,9 +49,9 @@ public enum SimpleAlleleRelationshipTypeList
 		return value;
 	}
 
-	public static SimpleAlleleRelationshipTypeList fromValue(java.lang.String v)
+	public static AlleleInstanceRelationshipTypeList fromValue(java.lang.String v)
 	{
-		for (SimpleAlleleRelationshipTypeList c : SimpleAlleleRelationshipTypeList.values())
+		for (AlleleInstanceRelationshipTypeList c : AlleleInstanceRelationshipTypeList.values())
 		{
 			if (c.value.equals(v))
 			{

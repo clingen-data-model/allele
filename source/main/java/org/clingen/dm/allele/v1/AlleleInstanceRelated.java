@@ -9,18 +9,18 @@ import org.hl7.fhir.BackboneElement;
 import org.hl7.fhir.Reference;
 
 /**
- * Associations to other SimpleAlleles.
+ * Associations to other AlleleInstances.
  * 
- * <p>Java class for SimpleAllele.Related complex type.
+ * <p>Java class for AlleleInstance.Related complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="SimpleAllele.Related">
+ * &lt;complexType name="AlleleInstance.Related">
  *   &lt;complexContent>
  *     &lt;extension base="{http://hl7.org/fhir}BackboneElement">
  *       &lt;sequence>
- *         &lt;element name="relatedType" type="{http://org.clingen.dm.allele.v1}SimpleAlleleRelationshipType" minOccurs="0"/>
+ *         &lt;element name="relatedType" type="{http://org.clingen.dm.allele.v1}AlleleInstanceRelationshipType" minOccurs="0"/>
  *         &lt;element name="target" type="{http://hl7.org/fhir}Reference"/>
  *       &lt;/sequence>
  *     &lt;/extension>
@@ -31,11 +31,11 @@ import org.hl7.fhir.Reference;
  * 
  */
 @XmlAccessorType (XmlAccessType.FIELD)
-@XmlType (name = "SimpleAllele.Related", propOrder = {"relatedType", "target"})
-public class SimpleAlleleRelated extends BackboneElement
+@XmlType (name = "AlleleInstance.Related", propOrder = {"relatedType", "target"})
+public class AlleleInstanceRelated extends BackboneElement
 {
 
-	protected SimpleAlleleRelationshipType relatedType;
+	protected AlleleInstanceRelationshipType relatedType;
 	@XmlElement (required = true)
 	protected Reference target;
 
@@ -44,10 +44,10 @@ public class SimpleAlleleRelated extends BackboneElement
 	 * 
 	 * @return
 	 *     possible object is
-	 *     {@link SimpleAlleleRelationshipType }
+	 *     {@link AlleleInstanceRelationshipType }
 	 *     
 	 */
-	public SimpleAlleleRelationshipType getRelatedType()
+	public AlleleInstanceRelationshipType getRelatedType()
 	{
 		return relatedType;
 	}
@@ -57,10 +57,10 @@ public class SimpleAlleleRelated extends BackboneElement
 	 * 
 	 * @param value
 	 *     allowed object is
-	 *     {@link SimpleAlleleRelationshipType }
+	 *     {@link AlleleInstanceRelationshipType }
 	 *     
 	 */
-	public void setRelatedType(SimpleAlleleRelationshipType value)
+	public void setRelatedType(AlleleInstanceRelationshipType value)
 	{
 		this.relatedType = value;
 	}

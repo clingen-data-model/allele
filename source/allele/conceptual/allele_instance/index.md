@@ -4,7 +4,7 @@ layout: conceptual
 model: allele
 description: A representation of one of the multiple variant sequences at a contiguous region in a particular <a href="/allele/conceptual/reference_sequence/index.html">ReferenceSequence</a>.
 related_page_title: SimpleAllele
-related_page_url: /allele/resource/simple_allele
+related_page_url: /allele/resource/allele_instance
 
 ---
 
@@ -39,6 +39,6 @@ SimpleAllele is not capable of representing the uncertainty of starting or endin
 Conceptual Model
 ----------------
 
-[![SimpleAllele Conceptual Diagram](/images/SimpleAlleleConceptual.svg){: .img-responsive}](/images/SimpleAlleleConceptual.svg)
+[![AlleleInstance Conceptual Diagram](/images/AlleleInstanceConceptual.svg){: .img-responsive}](/images/AlleleInstanceConceptual.svg)
 
-Resource Model: [SimpleAllele](/allele/resource/simple_allele/index.html#resource-model)
+Resource Model: [AlleleInstance](/allele/resource/allele_instance/index.html#resource-model)

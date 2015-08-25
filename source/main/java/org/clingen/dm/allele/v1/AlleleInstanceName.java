@@ -10,18 +10,18 @@ import org.hl7.fhir.Boolean;
 import org.hl7.fhir.String;
 
 /**
- * The name or names of the simpleAllele it is associated to.
+ * The name or names of the alleleInstance it is associated to.
  * 
- * <p>Java class for SimpleAllele.AlleleName complex type.
+ * <p>Java class for AlleleInstance.AlleleName complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="SimpleAllele.AlleleName">
+ * &lt;complexType name="AlleleInstance.AlleleName">
  *   &lt;complexContent>
  *     &lt;extension base="{http://hl7.org/fhir}BackboneElement">
  *       &lt;sequence>
- *         &lt;element name="nameType" type="{http://org.clingen.dm.allele.v1}SimpleAlleleNameType" minOccurs="0"/>
+ *         &lt;element name="nameType" type="{http://org.clingen.dm.allele.v1}AlleleInstanceNameType" minOccurs="0"/>
  *         &lt;element name="name" type="{http://hl7.org/fhir}string"/>
  *         &lt;element name="legacy" type="{http://hl7.org/fhir}boolean"/>
  *         &lt;element name="preferred" type="{http://hl7.org/fhir}boolean"/>
@@ -34,11 +34,11 @@ import org.hl7.fhir.String;
  * 
  */
 @XmlAccessorType (XmlAccessType.FIELD)
-@XmlType (name = "SimpleAllele.AlleleName", propOrder = {"nameType", "name", "legacy", "preferred"})
-public class SimpleAlleleName extends BackboneElement
+@XmlType (name = "AlleleInstance.AlleleName", propOrder = {"nameType", "name", "legacy", "preferred"})
+public class AlleleInstanceName extends BackboneElement
 {
 
-	protected SimpleAlleleNameType nameType;
+	protected AlleleInstanceNameType nameType;
 	@XmlElement (required = true)
 	protected String name;
 	protected Boolean legacy;
@@ -49,10 +49,10 @@ public class SimpleAlleleName extends BackboneElement
 	 * 
 	 * @return
 	 *     possible object is
-	 *     {@link SimpleAlleleNameType }
+	 *     {@link AlleleInstanceNameType }
 	 *     
 	 */
-	public SimpleAlleleNameType getNameType()
+	public AlleleInstanceNameType getNameType()
 	{
 		return nameType;
 	}
@@ -62,10 +62,10 @@ public class SimpleAlleleName extends BackboneElement
 	 * 
 	 * @param value
 	 *     allowed object is
-	 *     {@link SimpleAlleleNameType }
+	 *     {@link AlleleInstanceNameType }
 	 *     
 	 */
-	public void setNameType(SimpleAlleleNameType value)
+	public void setNameType(AlleleInstanceNameType value)
 	{
 		this.nameType = value;
 	}

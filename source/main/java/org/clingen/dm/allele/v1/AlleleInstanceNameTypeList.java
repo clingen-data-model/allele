@@ -5,12 +5,12 @@ import javax.xml.bind.annotation.XmlEnumValue;
 import javax.xml.bind.annotation.XmlType;
 
 /**
- * <p>Java class for SimpleAlleleNameType-list.
+ * <p>Java class for AlleleInstanceNameType-list.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="SimpleAlleleNameType-list">
+ * &lt;simpleType name="AlleleInstanceNameType-list">
  *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
  *     &lt;enumeration value="hgvs-genomic"/>
  *     &lt;enumeration value="hgvs-mito"/>
@@ -26,76 +26,76 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  */
-@XmlType (name = "SimpleAlleleNameType-list")
+@XmlType (name = "AlleleInstanceNameType-list")
 @XmlEnum
-public enum SimpleAlleleNameTypeList
+public enum AlleleInstanceNameTypeList
 {
 
 	/**
-	 * The name format for the SimpleAllele is HGVS genomic.
+	 * The name format for the AlleleInstance is HGVS genomic.
 	 * 
 	 */
 	@XmlEnumValue ("hgvs-genomic")
 	HGVS_GENOMIC("hgvs-genomic"),
 
 	/**
-	 * The name format for the SimpleAllele is HGVS mito.
+	 * The name format for the AlleleInstance is HGVS mito.
 	 * 
 	 */
 	@XmlEnumValue ("hgvs-mito")
 	HGVS_MITO("hgvs-mito"),
 
 	/**
-	 * The name format for the SimpleAllele is HGVS cDNA.
+	 * The name format for the AlleleInstance is HGVS cDNA.
 	 * 
 	 */
 	@XmlEnumValue ("hgvs-cdna")
 	HGVS_CDNA("hgvs-cdna"),
 
 	/**
-	 * The name format for the SimpleAllele is HGVS single letter protein.
+	 * The name format for the AlleleInstance is HGVS single letter protein.
 	 * 
 	 */
 	@XmlEnumValue ("hgvs-protein-1")
 	HGVS_PROTEIN_1("hgvs-protein-1"),
 
 	/**
-	 * The name format for the SimpleAllele is HGVS 3 letter protein.
+	 * The name format for the AlleleInstance is HGVS 3 letter protein.
 	 * 
 	 */
 	@XmlEnumValue ("hgvs-protein-3")
 	HGVS_PROTEIN_3("hgvs-protein-3"),
 
 	/**
-	 * The name format for the SimpleAllele is HGVS RNA.
+	 * The name format for the AlleleInstance is HGVS RNA.
 	 * 
 	 */
 	@XmlEnumValue ("hgvs-rna")
 	HGVS_RNA("hgvs-rna"),
 
 	/**
-	 * The name format for the SimpleAllele is HGVS ncRNA.
+	 * The name format for the AlleleInstance is HGVS ncRNA.
 	 * 
 	 */
 	@XmlEnumValue ("hgvs-ncrna")
 	HGVS_NCRNA("hgvs-ncrna"),
 
 	/**
-	 * The name format for the SimpleAllele is HGVS intervening-sequence IVS.
+	 * The name format for the AlleleInstance is HGVS intervening-sequence IVS.
 	 * 
 	 */
 	@XmlEnumValue ("ivs")
 	IVS("ivs"),
 
 	/**
-	 * The name format for the SimpleAllele is custom.
+	 * The name format for the AlleleInstance is custom.
 	 * 
 	 */
 	@XmlEnumValue ("custom")
 	CUSTOM("custom");
 	private final java.lang.String value;
 
-	SimpleAlleleNameTypeList(java.lang.String v)
+	AlleleInstanceNameTypeList(java.lang.String v)
 	{
 		value = v;
 	}
@@ -105,9 +105,9 @@ public enum SimpleAlleleNameTypeList
 		return value;
 	}
 
-	public static SimpleAlleleNameTypeList fromValue(java.lang.String v)
+	public static AlleleInstanceNameTypeList fromValue(java.lang.String v)
 	{
-		for (SimpleAlleleNameTypeList c : SimpleAlleleNameTypeList.values())
+		for (AlleleInstanceNameTypeList c : AlleleInstanceNameTypeList.values())
 		{
 			if (c.value.equals(v))
 			{

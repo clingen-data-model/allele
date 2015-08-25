@@ -10,15 +10,15 @@ import org.hl7.fhir.Element;
 /**
  * If the element is present, it must have either a @value, an @id, or extensions
  * 
- * <p>Java class for SimpleAlleleIntronOffsetDirection complex type.
+ * <p>Java class for AlleleInstanceIntronOffsetDirection complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="SimpleAlleleIntronOffsetDirection">
+ * &lt;complexType name="AlleleInstanceIntronOffsetDirection">
  *   &lt;complexContent>
  *     &lt;extension base="{http://hl7.org/fhir}Element">
- *       &lt;attribute name="value" type="{http://org.clingen.dm.allele.v1}SimpleAlleleIntronOffsetDirection-list" />
+ *       &lt;attribute name="value" type="{http://org.clingen.dm.allele.v1}AlleleInstanceIntronOffsetDirection-list" />
  *     &lt;/extension>
  *   &lt;/complexContent>
  * &lt;/complexType>
@@ -27,22 +27,22 @@ import org.hl7.fhir.Element;
  * 
  */
 @XmlAccessorType (XmlAccessType.FIELD)
-@XmlType (name = "SimpleAlleleIntronOffsetDirection")
-public class SimpleAlleleIntronOffsetDirection extends Element
+@XmlType (name = "AlleleInstanceIntronOffsetDirection")
+public class AlleleInstanceIntronOffsetDirection extends Element
 {
 
 	@XmlAttribute (name = "value")
-	protected SimpleAlleleIntronOffsetDirectionList value;
+	protected AlleleInstanceIntronOffsetDirectionList value;
 
 	/**
 	 * Gets the value of the value property.
 	 * 
 	 * @return
 	 *     possible object is
-	 *     {@link SimpleAlleleIntronOffsetDirectionList }
+	 *     {@link AlleleInstanceIntronOffsetDirectionList }
 	 *     
 	 */
-	public SimpleAlleleIntronOffsetDirectionList getValue()
+	public AlleleInstanceIntronOffsetDirectionList getValue()
 	{
 		return value;
 	}
@@ -52,10 +52,10 @@ public class SimpleAlleleIntronOffsetDirection extends Element
 	 * 
 	 * @param value
 	 *     allowed object is
-	 *     {@link SimpleAlleleIntronOffsetDirectionList }
+	 *     {@link AlleleInstanceIntronOffsetDirectionList }
 	 *     
 	 */
-	public void setValue(SimpleAlleleIntronOffsetDirectionList value)
+	public void setValue(AlleleInstanceIntronOffsetDirectionList value)
 	{
 		this.value = value;
 	}

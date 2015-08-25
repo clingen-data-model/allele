@@ -25,7 +25,7 @@
 					<xs:element name="complexity" type="CanonicalAlleleComplexity" />
 					<xs:element name="replacement" type="CanonicalAllele.Replacement"
 						minOccurs="0" maxOccurs="unbounded" />
-					<xs:element name="relatedSimpleAllele" type="CanonicalAllele.RelatedSimpleAllele"
+					<xs:element name="relatedAlleleInstance" type="CanonicalAllele.RelatedAlleleInstance"
 						minOccurs="0" maxOccurs="unbounded" />
 					<xs:element name="nested" type="f:Reference"
 						minOccurs="0" maxOccurs="unbounded" />
@@ -95,11 +95,11 @@
 		</xs:restriction>
 	</xs:simpleType>
 
-	<xs:complexType name="CanonicalAllele.RelatedSimpleAllele">
+	<xs:complexType name="CanonicalAllele.RelatedAlleleInstance">
 		<xs:complexContent>
 			<xs:extension base="f:BackboneElement">
 				<xs:sequence>
-					<xs:element name="simpleAllele" type="f:Reference" />
+					<xs:element name="alleleInstance" type="f:Reference" />
 					<xs:element name="preferred" type="f:boolean" minOccurs="0" />
 				</xs:sequence>
 			</xs:extension>

@@ -15,7 +15,7 @@ Scope and Usage
 
 A contiguous genetic change between individuals may be described as a difference in alleles at a given location.  That location, here called an ReferenceCoordinate, is described in relation to a particular [ReferenceSequence](index.html), which provides the coordinate frame for determining position.
 
-A [SimpleAllele](simple_allele.html) is defined with respect to an ReferenceCoordinate by further specifying the allele that occurs at this coordinate, where the allele may be the same as or different than the allele that occurs in the reference sequence.
+A [AlleleInstance](allele_instance.html) is defined with respect to an ReferenceCoordinate by further specifying the allele that occurs at this coordinate, where the allele may be the same as or different than the allele that occurs in the reference sequence.
 
 There exist numerous schemes for the coding of coordinates (see below for choices).  For version 1 of the allele model, coordinates are defined using a zero-based interval scheme.   The interval scheme numbers the intervals between elements of the sequence, with the first base occurring after the interval numbered 0.  In this scheme, the sequence elements bounded the start and end intervals constitute the coordinate.  The end position is therefore always computable as start + length of the reference allele. See [this discussion](../../discussion/coordinate_numbering.html) for further details on coordinate numbering.
 

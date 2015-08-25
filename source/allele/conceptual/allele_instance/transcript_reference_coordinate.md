@@ -9,7 +9,7 @@ description: TranscriptReferenceCoordinate defines a location with respect to a 
 Scope and Usage
 ---------------
 
-[ReferenceCoordinate](reference_coordinate.html) representts a particular continguous location at which different alleles may be defined with [SimpleAllele](simple_allele.html).  TranscriptReferenceCoordinate is a [ReferenceCoordinate](reference_coordinate.html) where the underlying reference sequence is a [TranscriptReferenceSequence](../reference_sequence/transcript_reference_sequence.html).
+[ReferenceCoordinate](reference_coordinate.html) represents a particular continguous location at which different alleles may be defined with [AlleleInstance](allele_instance.html).  TranscriptReferenceCoordinate is a [ReferenceCoordinate](reference_coordinate.html) where the underlying reference sequence is a [TranscriptReferenceSequence](../reference_sequence/transcript_reference_sequence.html).
 
 TranscriptReferenceCoordinates may refer to either exonic or intronic locations. Because exonic locations are in the [TranscriptReferenceSequence](../reference_sequence/transcript_reference_sequence.html), the coordinate may be defined as described in [ReferenceCoordinate](reference_coordinate.html).
 

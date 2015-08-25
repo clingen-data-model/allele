@@ -1,21 +1,17 @@
 ---
-title: SimpleNucleotideAllele
+title: SimpleAminoAcidAllele
 layout: conceptual
 model: allele
-description: A SimpleAlllele that uses a SimpleNucleotideAllele as its ReferenceSequence.
----
+description: A SimpleAlllele that uses a AminoAcidReferenceSequence as its ReferenceSequence.
 
+---
 
 Scope and Usage
 ---------------
 
-See also [SimpleAllele](simple_allele.html)
+See also: [AlleleInstance](allele_instance.html)
 
-A variant allele representation at a specific nucleotide.  This can represent an observation at a single SimpleGenomicAllele or a single SimpleTranscriptAllele.
-
-SimpleNucleotideAllele is an abstract class, so any SimpleNucleotideAllele must be either a SimpleGenomicAllele or a SimpleTranscriptAllele.
-
-The point of this class is to facilitate aggregation between SimpleGenomicAllele and SimpleTranscriptAllele at the CanonicalVariant level.
+SimpleAminoAcidAllele represents an allele at a variant location on a single version of a chromosome.  For each different chromosome version, a new SimpleAminoAcidAllele would be created, and these would be aggregated at the CanonicalSimpleAllele level, along with any TranscriptSimpleAlleles.
 
 Attributes
 --------------------
@@ -25,8 +21,9 @@ When describing observations a concise and interoperable method is required to r
 {:.table}
 | Attribute Name | Attribute Type | Cardinality |
 |----------------|----------------|-------------|
-| [primaryNucleotideChangeType](/allele/value_set_list/primary_nucleotide_change_type.html) | Code | 0..1 |
-| [ancillaryNucleotideChangeType](/allele/value_set_list/ancillary_nucleotide_change_type.html) | Code | 0..* |
+| [primaryAminoAcidChangeType](/allele/implementation/value_set_list/primary_amino_acid_change_type.html) | Code | 0..1 |
+| [ancillaryAminoAcidChangeType](/allele/implementation/value_set_list/ancillary_amino_acid_change_type.html) | Code | 0..* |
+
 
 Exclusions and Limitations
 --------------------------
