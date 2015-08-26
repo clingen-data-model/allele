@@ -139,8 +139,8 @@ context:
     type: boolean
     definition: An indicator as to whether this CanonicalAllele.relatedAlleleInstance is the preferred representation for the CanonicalAllele.
     requirements: |
-      * The current design provides this indicator as a basic means to producing a simplified human-readable representation of the CanonicalAllele by allowing the source system to determine which related SimpleAllele is preferred over all the others.
-      * One and only one of the relatedAlleleInstances must be set as the prefered one.  If a new related AlleleInstance is added or an existing one updated as preferred it would automatically override the prior related SimpleAllele that was set as preferred.
+      * The current design provides this indicator as a basic means to producing a simplified human-readable representation of the CanonicalAllele by allowing the source system to determine which related AlleleInstance is preferred over all the others.
+      * One and only one of the relatedAlleleInstances must be set as the preferred one.  If a new related AlleleInstance is added or an existing one updated as preferred it would automatically override the prior related AlleleInstance that was set as preferred.
 
 
 
@@ -149,7 +149,7 @@ context:
 Scope and Usage
 ---------------
 
-A CanonicalAllele is a reference to a sequence change, independent of any particular representation relative to a ReferenceSequence. Since alleles are represented as a change (or no change) relative to a ReferenceSequence, a CanonicalAllele is composed of potentially multiple such representations (SimpleAlleles) that correspond to the same CanonicalAllele. One SimpleAllele is selected as the preferred representation of a CanonicalAllele
+A CanonicalAllele is a reference to a sequence change, independent of any particular representation relative to a ReferenceSequence. Since alleles are represented as a change (or no change) relative to a ReferenceSequence, a CanonicalAllele is composed of potentially multiple such representations (AlleleInstances) that correspond to the same CanonicalAllele. One AlleleInstance is selected as the preferred representation of a CanonicalAllele
 
 
 Resource Model
