@@ -9,17 +9,17 @@
   "active": "true",
   "canonicalAlleleType": "amino acid",
   "complexity": "simple",
-  "relatedSimpleAllele":
+  "relatedAlleleInstance":
   [
     {
-      "@type": "RelatedSimpleAllele",
-      "simpleAllele": "../..//SimpleAllele/SA312",
+      "@type": "RelatedAlleleInstance",
+      "alleleInstance": "../..//AlleleInstance/AI312",
       "display": "NP_009225.1(BRCA1):p.Ile1766Ser",
       "preferred": "true"
     },
     {
-      "@type": "RelatedSimpleAllele",
-      "simpleAllele": "../../SimpleAllele/SA319",
+      "@type": "RelatedAlleleInstance",
+      "alleleInstance": "../../AlleleInstance/AI319",
       "display": "LRG_292p1(BRCA1):p.Ile1766Ser"
     }
   ]

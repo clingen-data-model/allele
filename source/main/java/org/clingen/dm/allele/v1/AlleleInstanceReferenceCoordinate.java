@@ -15,7 +15,7 @@ import org.hl7.fhir.Reference;
 import org.hl7.fhir.String;
 
 /**
- * The Reference coordinate for a SimpleAlle. This is the locus relative to a single ReferenceSequence (genomic|transcript|amino acid).
+ * The Reference coordinate for a AlleleInstance. This is the locus relative to a single ReferenceSequence (genomic|transcript|amino acid).
  * 
  * <p>Java class for AlleleInstance.ReferenceCoordinate complex type.
  * 

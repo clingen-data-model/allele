@@ -4,12 +4,12 @@
   "active": "true",
   "canonicalAlleleType": "amino-acid",
   "complexity": "simple",
-  "relatedSimpleAllele":
+  "relatedAlleleInstance":
   [
     {
-      "simpleAllele":
+      "alleleInstance":
       {
-        "reference": "SimpleAllele/SA324",
+        "reference": "AlleleInstance/SA324",
         "display": "NP_001164645.1:p.Val281Ile"
       },
 

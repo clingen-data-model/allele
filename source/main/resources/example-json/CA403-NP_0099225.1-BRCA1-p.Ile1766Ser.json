@@ -12,12 +12,12 @@
   "active": "true",
   "canonicalAlleleType": "amino-acid",
   "complexity": "simple",
-  "relatedSimpleAllele":
+  "relatedAlleleInstance":
   [
     {
-      "simpleAllele":
+      "alleleInstance":
       {
-        "reference": "SimpleAllele/SA312",
+        "reference": "AlleleInstance/AI312",
         "display": "NP_009225.1(BRCA1):p.Ile1766Ser"
       },
 
@@ -25,9 +25,9 @@
     },
 
     {
-      "simpleAllele":
+      "alleleInstance":
       {
-        "reference": "SimpleAllele/SA319",
+        "reference": "AlleleInstance/AI319",
         "display": "LRG_292p1(BRCA1):p.Ile1766Ser"
       }
     }

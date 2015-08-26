@@ -1,8 +1,8 @@
 ---
-title: SimpleTranscriptAllele
+title: TranscriptAlleleInstance
 layout: conceptual
 model: allele
-description: A SimpleAlllele that uses a TranscriptReferenceSequence as its ReferenceSequence.
+description: An AlleleInstance that uses a TranscriptReferenceSequence as its ReferenceSequence.
 
 ---
 
@@ -11,9 +11,9 @@ Scope and Usage
 
 see also: [AlleleInstance](allele_instance.html)
 
-SimpleTranscriptAllele represents an allele at a variant location on a single version of a transcript.  For each different transcript or version, a new SimpleTranscriptAllele would be created, and these would be aggregated at the SimpleCanonicalAllele level, along with any SimpleGenomicAlleles.
+TranscriptAlleleInstance represents an allele at a variant location on a single version of a transcript.  For each different transcript or version, a new TranscriptAlleleInstance would be created, and these would be aggregated at the SimpleCanonicalAllele level, along with any GenomicAlleleInstances.
 
-While SimpleTranscriptAllele is defined with respect to a TranscriptReferenceSequence, the allele does not necessarily lie within the TranscriptReferenceSequence itself.  For instance, intronic variants can be defined with respect to a transcript sequence, even though they are not part of the sequence.   It would also be appropriate to represent a variant upstream or downstream of a transcript using a SimpleTranscriptAllele in this fashion.
+While TranscriptAlleleInstance is defined with respect to a TranscriptReferenceSequence, the allele does not necessarily lie within the TranscriptReferenceSequence itself.  For instance, intronic variants can be defined with respect to a transcript sequence, even though they are not part of the sequence.   It would also be appropriate to represent a variant upstream or downstream of a transcript using a TranscriptAlleleInstance in this fashion.
 
 
 Attributes
@@ -33,6 +33,6 @@ regionType: A controlled vocabulary term used to describe a single effected tran
 Exclusions and Limitations
 --------------------------
 
-SimpleTranscriptAlleles are identified with SimpleGenomicAlleles via an alignment of a transcript to a chromosome.  The details of this alignment are not modeled.  See further comments in SimpleCanonicalAllele for difficulties that may therefore arise.
+TranscriptAlleleInstances are identified with GenomicAlleleInstances via an alignment of a transcript to a chromosome.  The details of this alignment are not modeled.  See further comments in SimpleCanonicalAllele for difficulties that may therefore arise.
 
-For SimpleTranscriptAlleles that are not part of the TranscriptReferenceSequence, such as intronic alleles, the alignment is actually an implicit part of the allele definition, as the coordinates of the allele may vary with details of the alignment.  It is therefore strongly suggested that a consistent set of alignments be used in any implementation of this model.
+For TranscriptAlleleInstances that are not part of the TranscriptReferenceSequence, such as intronic alleles, the alignment is actually an implicit part of the allele definition, as the coordinates of the allele may vary with details of the alignment.  It is therefore strongly suggested that a consistent set of alignments be used in any implementation of this model.

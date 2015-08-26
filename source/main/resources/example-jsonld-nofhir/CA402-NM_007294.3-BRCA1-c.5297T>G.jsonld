@@ -20,47 +20,47 @@
   "active": "true",
   "canonicalAlleleType": "nucleotide",
   "complexity": "simple",
-  "relatedSimpleAllele":
+  "relatedAlleleInstance":
   [
     {
-      "@type": "RelatedSimpleAllele",
-      "simpleAllele": "../../SimpleAllele/SA310",
+      "@type": "RelatedAlleleInstance",
+      "alleleInstance": "../../AlleleInstance/AI310",
       "display": "NM_007294.3:c.5297T>G",
       "preferred": "true"
     },
     {
-      "@type": "RelatedSimpleAllele",
-      "simpleAllele": "../../SimpleAllele/SA311",
+      "@type": "RelatedAlleleInstance",
+      "alleleInstance": "../../AlleleInstance/AI311",
       "display": "U14681.1(BRCA1):n.5416T>G"
     },
     {
-      "@type": "RelatedSimpleAllele",
-      "simpleAllele": "../../SimpleAllele/SA313",
+      "@type": "RelatedAlleleInstance",
+      "alleleInstance": "../../AlleleInstance/AI313",
       "display": "NR_027676.1:n.5433T>G"
     },
     {
-      "@type": "RelatedSimpleAllele",
-      "simpleAllele": "../../SimpleAllele/SA314",
+      "@type": "RelatedAlleleInstance",
+      "alleleInstance": "../../AlleleInstance/AI314",
       "display": "NC_000017.10:g.41203115A>C (GRCh37)"
     },
     {
-      "@type": "RelatedSimpleAllele",
-      "simpleAllele": "../../SimpleAllele/SA315",
+      "@type": "RelatedAlleleInstance",
+      "alleleInstance": "../../AlleleInstance/AI315",
       "display": "NC_000017.11:g.43051098A>C (GRCh38)"
     },
     {
-      "@type": "RelatedSimpleAllele",
-      "simpleAllele": "../../SimpleAllele/SA316",
+      "@type": "RelatedAlleleInstance",
+      "alleleInstance": "../../AlleleInstance/AI316",
       "display": "NG_005905.2:g.166886T>G"
     },
     {
-      "@type": "RelatedSimpleAllele",
-      "simpleAllele": "../../SimpleAllele/SA317",
+      "@type": "RelatedAlleleInstance",
+      "alleleInstance": "../../AlleleInstance/AI317",
       "display": "LRG_292:g.166886T>G"
     },
     {
-      "@type": "RelatedSimpleAllele",
-      "simpleAllele": "../../SimpleAllele/SA318",
+      "@type": "RelatedAlleleInstance",
+      "alleleInstance": "../../AlleleInstance/AI318",
       "display": "LRG_292t1:c.5297T>G"
     }
   ]

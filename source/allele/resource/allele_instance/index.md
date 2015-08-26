@@ -1,33 +1,33 @@
 ---
-title: SimpleAllele
+title: AlleleInstance
 layout: resource
 model: allele
-related_terms: simple allele, allele, variant, sequence variant, snv, amino acid variant, dna change, aa change
+related_terms: allele instance, allele, variant, sequence variant, snv, amino acid variant, dna change, aa change
 description: A representation of one of the multiple variant sequences at a contiguous region in a particular <a href="/allele/resource/reference_sequence/index.html">ReferenceSequence</a>.
-related_page_title: SimpleAllele
-related_page_url: /allele/conceptual/simple_allele
-schema: /main/resources/clingen-xsd/simpleallele.xsd
+related_page_title: AlleleInstance
+related_page_url: /allele/conceptual/allele_instance
+schema: /main/resources/clingen-xsd/alleleinstance.xsd
 
 ---
 
 Scope and Usage
 ---------------
 
-Genetic variation is often represented with respect to an explicit reference sequence.  At a locus where variation exists in the population, there exist both the allele that occurs in the reference as well as one or more alternate alleles.  Each one of these alleles (including the reference) is represented by a distinct instance of SimpleAllele.
+Genetic variation is often represented with respect to an explicit reference sequence.  At a locus where variation exists in the population, there exist both the allele that occurs in the reference as well as one or more alternate alleles.  Each one of these alleles (including the reference) is represented by a distinct instance of AlleleInstance.
 
-SimpleAllele as here defined is similar to the SO term [sequence_variant](http://www.sequenceontology.org/browser/current_svn/term/SO:0001060), but where that definition describes a difference with respect to a sequence, SimpleAllele explicitly allows the reference allele to be represented. Note that the reference allele is not guaranteed to be the minor allele in any population.
+AlleleInstance as here defined is similar to the SO term [sequence_variant](http://www.sequenceontology.org/browser/current_svn/term/SO:0001060), but where that definition describes a difference with respect to a sequence, AlleleInstance explicitly allows the reference allele to be represented. Note that the reference allele is not guaranteed to be the minor allele in any population.
 
-A SimpleAllele should either represent a contiguous section of the ReferenceSequence, or the replacement of such a section with a new contiguous section (including an empty section forr a deletion).  While it would be possible to represent two widely spaced SNPs as a SimpleAllele that reproduces the ReferenceSequence between them, this is not the intended use; such cases should be handled through the use of a ComplexAllele.
+A AlleleInstance should either represent a contiguous section of the ReferenceSequence, or the replacement of such a section with a new contiguous section (including an empty section forr a deletion).  While it would be possible to represent two widely spaced SNPs as a AlleleInstance that reproduces the ReferenceSequence between them, this is not the intended use; such cases should be handled through the use of a ComplexAllele.
 
-This definition of SimpleAllele allows for large deletions or insertions; it is left as an implementation decision whether there is a size limit above which the implementing system will no longer use this representation.
+This definition of AlleleInstance allows for large deletions or insertions; it is left as an implementation decision whether there is a size limit above which the implementing system will no longer use this representation.
 
-Each SimpleAllele is the representation of an allele within a single sequence.  For example, if a variant occurs within the coding region of a transcript, three different SimpleAlleles will be used to represent the same variant: one representing the allele in the context of the ReferenceSequence for the genome, a second representing the allele in the context of the ReferenceSequence for the transcript, and a third in the context of the ReferenceSequence for the amino acid chain.
+Each AlleleInstance is the representation of an allele within a single sequence.  For example, if a variant occurs within the coding region of a transcript, three different AlleleInstances will be used to represent the same variant: one representing the allele in the context of the ReferenceSequence for the genome, a second representing the allele in the context of the ReferenceSequence for the transcript, and a third in the context of the ReferenceSequence for the amino acid chain.
 
 
 Resource Model
 ----------------
 
-[![SimpleAllele Resource Diagram](/images/SimpleAlleleResource.svg){: .img-responsive}](/images/SimpleAlleleResource.svg)
+[![AlleleInstance Resource Diagram](/images/AlleleInstanceResource.svg){: .img-responsive}](/images/AlleleInstanceResource.svg)
 
 Related Resources: [ReferenceSequence](/allele/resource/reference_sequence/index.html), [CanonicalAllele](/allele/resource/canonical_allele/index.html)
 
@@ -36,7 +36,7 @@ Definitions & Bindings
 ------------------
 
 {:.h4-definition}
-### SimpleAllele
+### AlleleInstance
 
 {:.dl-horizontal .dl-definition}
 Definition
@@ -47,11 +47,11 @@ Control
 
 
 {:.h4-definition}
-#### SimpleAllele.identifier
+#### AlleleInstance.identifier
 
 {:.dl-horizontal .dl-definition}
 Definition
-: The set of Identifiers used to name this SimpleAllele. May be as simple as a set of one single Identifier distinguishing the SimpleAllele in the implementing system, or may expansively include the name of all SimpleAlleles in all implementing systems.
+: The set of Identifiers used to name this AlleleInstance. May be as simple as a set of one single Identifier distinguishing the AlleleInstance in the implementing system, or may expansively include the name of all AlleleInstances in all implementing systems.
 
 Type
 : Identifier
@@ -60,11 +60,11 @@ Control
 : 0..*
 
 {:.h4-definition}
-#### SimpleAllele.canonicalAllele
+#### AlleleInstance.canonicalAllele
 
 {:.dl-horizontal .dl-definition}
 Definition
-: The CanonicalAllele resource to which this SimpleAllele maps.
+: The CanonicalAllele resource to which this AlleleInstance maps.
 
 Type
 : CanonicalAllele
@@ -73,14 +73,14 @@ Control
 : 0..1
 
 {:.h4-definition}
-#### SimpleAllele.simpleAlleleType
+#### AlleleInstance.alleleInstanceType
 
 {:.dl-horizontal .dl-definition}
 Definition
-: Type of simple allele, as defined by the type of transcript the allele is mapped on.
+: Type of allele instance, as defined by the type of transcript the allele is mapped on.
 
 Binding
-: SimpleAlleleType [simple-allele-types](/allele/implementation/value_set_list/simple_allele_type.html)
+: AlleleInstanceType [allele-instance-types](/allele/implementation/value_set_list/allele_instance_type.html)
 
 Type
 : Code
@@ -89,7 +89,7 @@ Control
 : 0..1
 
 {:.h4-definition}
-#### SimpleAllele.allele
+#### AlleleInstance.allele
 
 {:.dl-horizontal .dl-definition}
 Definition
@@ -102,11 +102,11 @@ Type
 : string
 
 {:.h4-definition}
-#### SimpleAllele.primaryNucleotideChangeType
+#### AlleleInstance.primaryNucleotideChangeType
 
 {:.dl-horizontal .dl-definition}
 Definition
-: Describes the change that occurs within a nucleotide simple allele.
+: Describes the change that occurs within a nucleotide allele instance.
 
 Control
 : 0..1
@@ -118,10 +118,10 @@ Type
 : Code
 
 Requirements
-: Required (and allowed) only if the SimpleAllele maps to a nucleotide sequence.
+: Required (and allowed) only if the AlleleInstance maps to a nucleotide sequence.
 
 {:.h4-definition}
-#### SimpleAllele.ancillaryNucleotideChangeType
+#### AlleleInstance.ancillaryNucleotideChangeType
 
 {:.dl-horizontal .dl-definition}
 Definition
@@ -137,10 +137,10 @@ Type
 : Code
 
 Requirements
-: Optional, permitted only if the SimpleAllele maps to a nucleotide sequence.
+: Optional, permitted only if the AlleleInstance maps to a nucleotide sequence.
 
 {:.h4-definition}
-#### SimpleAllele.primaryAminoAcidChangeType
+#### AlleleInstance.primaryAminoAcidChangeType
 
 {:.dl-horizontal .dl-definition}
 Definition
@@ -156,14 +156,14 @@ Control
 : 0..1
 
 Requirements
-: Required (and allowed) only if the SimpleAllele describes an allele on an amino acid reference sequence.
+: Required (and allowed) only if the AlleleInstance describes an allele on an amino acid reference sequence.
 
 {:.h4-definition}
-#### SimpleAllele.ancillaryAminoAcidChangeType
+#### AlleleInstance.ancillaryAminoAcidChangeType
 
 {:.dl-horizontal .dl-definition}
 Definition
-: One of the set of allowable [ancillary-amino-acid-change-types](/allele/implementation/value_set_list/ancillary_amino_acid_change_type.html). Allowed only if the SimpleAllele describes an allele on an amino acid reference sequence.
+: One of the set of allowable [ancillary-amino-acid-change-types](/allele/implementation/value_set_list/ancillary_amino_acid_change_type.html). Allowed only if the AlleleInstance describes an allele on an amino acid reference sequence.
 
 Type
 : Code
@@ -172,7 +172,7 @@ Control
 : 0..1
 
 {:.h4-definition}
-### SimpleAllele.referenceCoordinate
+### AlleleInstance.referenceCoordinate
 
 {:.dl-horizontal .dl-definition}
 Definition
@@ -182,7 +182,7 @@ Control
 : 1
 
 {:.h4-definition}
-#### SimpleAllele.referenceCoordinate.identifier
+#### AlleleInstance.referenceCoordinate.identifier
 
 {:.dl-horizontal .dl-definition}
 Definition
@@ -195,11 +195,11 @@ Control
 : 1..*
 
 {:.h4-definition}
-#### SimpleAllele.referenceCoordinate.referenceSequence
+#### AlleleInstance.referenceCoordinate.referenceSequence
 
 {:.dl-horizontal .dl-definition}
 Definition
-: The [ReferenceSequence](/allele/resource/reference_sequence) resource on which the ReferenceCoordinate (and, by extention, the SimpleAllele is mapped.
+: The [ReferenceSequence](/allele/resource/reference_sequence) resource on which the ReferenceCoordinate (and, by extention, the AlleleInstance is mapped.
 
 Type
 : ReferenceSequence
@@ -208,7 +208,7 @@ Control
 : 1
 
 {:.h4-definition}
-#### SimpleAllele.referenceCoordinate.start
+#### AlleleInstance.referenceCoordinate.start
 
 {:.dl-horizontal .dl-definition}
 Definition
@@ -221,7 +221,7 @@ Control
 : 1
 
 {:.h4-definition}
-#### SimpleAllele.referenceCoordinate.end
+#### AlleleInstance.referenceCoordinate.end
 
 {:.dl-horizontal .dl-definition}
 Definition
@@ -234,7 +234,7 @@ Control
 : 1
 
 {:.h4-definition}
-#### SimpleAllele.referenceCoordinate.refAllele
+#### AlleleInstance.referenceCoordinate.refAllele
 
 {:.dl-horizontal .dl-definition}
 Definition
@@ -247,7 +247,7 @@ Control
 : 0..1
 
 {:.h4-definition}
-#### SimpleAllele.referenceCoordinate.primaryTranscriptRegionType
+#### AlleleInstance.referenceCoordinate.primaryTranscriptRegionType
 
 {:.dl-horizontal .dl-definition}
 Definition
@@ -260,7 +260,7 @@ Control
 : 0..1
 
 {:.h4-definition}
-#### SimpleAllele.referenceCoordinate.ancillaryTranscriptRegionType
+#### AlleleInstance.referenceCoordinate.ancillaryTranscriptRegionType
 
 {:.dl-horizontal .dl-definition}
 Definition
@@ -273,7 +273,7 @@ Control
 : 0..1
 
 {:.h4-definition}
-#### SimpleAllele.referenceCoordinate.intronOffsetStart
+#### AlleleInstance.referenceCoordinate.intronOffsetStart
 
 {:.dl-horizontal .dl-definition}
 Definition
@@ -286,7 +286,7 @@ Control
 : 0..1
 
 {:.h4-definition}
-#### SimpleAllele.referenceCoordinate.intronOffsetEnd
+#### AlleleInstance.referenceCoordinate.intronOffsetEnd
 
 {:.dl-horizontal .dl-definition}
 Definition
@@ -299,7 +299,7 @@ Control
 : 0..1
 
 {:.h4-definition}
-#### SimpleAllele.referenceCoordinate.intronOffsetDirection
+#### AlleleInstance.referenceCoordinate.intronOffsetDirection
 
 {:.dl-horizontal .dl-definition}
 Definition
@@ -312,7 +312,7 @@ Control
 : 0..1
 
 {:.h4-definition}
-### SimpleAllele.alleleName
+### AlleleInstance.alleleName
 
 {:.dl-horizontal .dl-definition}
 defintion
@@ -322,11 +322,11 @@ Control
 : 0..*
 
 {:.h4-definition}
-#### SimpleAllele.alleleName.nameType
+#### AlleleInstance.alleleName.nameType
 
 {:.dl-horizontal .dl-definition}
 Definition
-: One of the set of allowable [simple-allele-name-types](/allele/implementation/value_set_list/simple_allele_name_type.html)
+: One of the set of allowable [allele-instance-name-types](/allele/implementation/value_set_list/allele_instance_name_type.html)
 
 Type
 : Code
@@ -335,7 +335,7 @@ Control
 : 1
 
 {:.h4-definition}
-#### SimpleAllele.alleleName.legacy
+#### AlleleInstance.alleleName.legacy
 
 {:.dl-horizontal .dl-definition}
 Definition
@@ -348,7 +348,7 @@ Control
 : 0..1
 
 {:.h4-definition}
-#### SimpleAllele.alleleName.preferred
+#### AlleleInstance.alleleName.preferred
 
 {:.dl-horizontal .dl-definition}
 Definition
@@ -361,21 +361,21 @@ Control
 : 0..1
 
 {:.h4-definition}
-### SimpleAllele.related
+### AlleleInstance.related
 
 {:.dl-horizontal .dl-definition}
 definition
-: Other, related simple alleles, for example, the SimpleAllele that represents the amino acid change caused by a nucleotide simple allele, and vice-versa.
+: Other, related allele instances, for example, the AlleleInstance that represents the amino acid change caused by a nucleotide allele instance, and vice-versa.
 
 Control
 : 0..*
 
 {:.h4-definition}
-#### SimpleAllele.related.relatedType
+#### AlleleInstance.related.relatedType
 
 {:.dl-horizontal .dl-definition}
 Definition
-: One of the allowable set of relationship types in [simple-allele-relationship-type](/allele/implementation/value_set_list/simple_allele_relationship_type.html)
+: One of the allowable set of relationship types in [allele-instance-relationship-type](/allele/implementation/value_set_list/allele_instance_relationship_type.html)
 
 Type
 : Code
@@ -384,14 +384,14 @@ Control
 : 1
 
 {:.h4-definition}
-#### SimpleAllele.related.target
+#### AlleleInstance.related.target
 
 {:.dl-horizontal .dl-definition}
 Definition
-: The SimpleAllele described in the relationship.
+: The AlleleInstance described in the relationship.
 
 Type
-: SimpleAllele
+: AlleleInstance
 
 Control
 : 1

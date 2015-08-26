@@ -4,12 +4,12 @@
   "active": "true",
   "canonicalAlleleType": "nucleotide",
   "complexity": "simple",
-  "relatedSimpleAllele":
+  "relatedAlleleInstance":
   [
     {
-      "simpleAllele":
+      "alleleInstance":
       {
-        "reference": "SimpleAllele/SA302",
+        "reference": "AlleleInstance/AI302",
         "display": "NM_001014794.2(ILK):c.448+13A>G"
       },
 
@@ -17,25 +17,25 @@
     },
 
     {
-      "simpleAllele":
+      "alleleInstance":
       {
-        "reference": "SimpleAllele/SA301",
+        "reference": "AlleleInstance/AI301",
         "display": "NM_001014794.2(ILK):c.448+14A>G"
       }
     },
 
     {
-      "simpleAllele":
+      "alleleInstance":
       {
-        "reference": "SimpleAllele/SA303",
+        "reference": "AlleleInstance/AI303",
         "display": "NC_000011.9:g.6630034A>G (GRCh37)"
       }
     },
 
     {
-      "simpleAllele":
+      "alleleInstance":
       {
-        "reference": "SimpleAllele/SA304",
+        "reference": "AlleleInstance/AI304",
         "display": "NC_000011.10:g.6608803A>G (GRCh38)"
       }
     }

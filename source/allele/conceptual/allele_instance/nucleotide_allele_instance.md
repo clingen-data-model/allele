@@ -1,8 +1,8 @@
 ---
-title: SimpleNucleotideAllele
+title: NucleotideAlleleInstance
 layout: conceptual
 model: allele
-description: A SimpleAlllele that uses a SimpleNucleotideAllele as its ReferenceSequence.
+description: An AlleleInstance that uses a NucleotideAlleleInstance as its ReferenceSequence.
 ---
 
 
@@ -11,11 +11,11 @@ Scope and Usage
 
 See also [AlleleInstance](allele_instance.html)
 
-A variant allele representation at a specific nucleotide.  This can represent an observation at a single SimpleGenomicAllele or a single SimpleTranscriptAllele.
+A variant allele representation at a specific nucleotide.  This can represent an observation at a single GenomicAlleleInstance or a single TranscriptAlleleInstance.
 
-SimpleNucleotideAllele is an abstract class, so any SimpleNucleotideAllele must be either a SimpleGenomicAllele or a SimpleTranscriptAllele.
+NucleotideAlleleInstance is an abstract class, so any NucleotideAlleleInstance must be either a GenomicAlleleInstance or a TranscriptAlleleInstance.
 
-The point of this class is to facilitate aggregation between SimpleGenomicAllele and SimpleTranscriptAllele at the CanonicalVariant level.
+The point of this class is to facilitate aggregation between GenomicAlleleInstance and TranscriptAlleleInstance at the CanonicalVariant level.
 
 Attributes
 --------------------
@@ -31,6 +31,6 @@ When describing observations a concise and interoperable method is required to r
 Exclusions and Limitations
 --------------------------
 
-Version 0.1 of the Data Model does not offer a direct relationship between records or annotations described at the SimpleNucleotideAllele level to SimpleAminoAcidAllele, however given correct reference, sequence and transcript information this can be computationally derived.
+Version 0.1 of the Data Model does not offer a direct relationship between records or annotations described at the NucleotideAlleleInstance level to AminoAcidAlleleInstance, however given correct reference, sequence and transcript information this can be computationally derived.
 
 

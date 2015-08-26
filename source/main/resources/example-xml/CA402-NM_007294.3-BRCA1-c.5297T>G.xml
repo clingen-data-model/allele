@@ -11,53 +11,53 @@
 	<active value="true"></active>
 	<canonicalAlleleType value="nucleotide"></canonicalAlleleType>
 	<complexity value="simple" />
-	<relatedSimpleAllele>
-		<simpleAllele>
-			<f:reference value="SimpleAllele/SA310"></f:reference>
+	<relatedAlleleInstance>
+		<alleleInstance>
+			<f:reference value="AlleleInstance/SA310"></f:reference>
 			<f:display value="NM_007294.3:c.5297T&gt;G"></f:display>
-		</simpleAllele>
+		</alleleInstance>
 		<preferred value="true"></preferred>
-	</relatedSimpleAllele>
-	<relatedSimpleAllele>
-		<simpleAllele>
-			<f:reference value="SimpleAllele/SA311"></f:reference>
+	</relatedAlleleInstance>
+	<relatedAlleleInstance>
+		<alleleInstance>
+			<f:reference value="AlleleInstance/SA311"></f:reference>
 			<f:display value="U14681.1(BRCA1):n.5416T&gt;G "></f:display>
-		</simpleAllele>
-	</relatedSimpleAllele>
-	<relatedSimpleAllele>
-		<simpleAllele>
-			<f:reference value="SimpleAllele/SA313"></f:reference>
+		</alleleInstance>
+	</relatedAlleleInstance>
+	<relatedAlleleInstance>
+		<alleleInstance>
+			<f:reference value="AlleleInstance/SA313"></f:reference>
 			<f:display value="NR_027676.1:n.5433T&gt;G"></f:display>
-		</simpleAllele>
-	</relatedSimpleAllele>
-	<relatedSimpleAllele>
-		<simpleAllele>
-			<f:reference value="SimpleAllele/SA314"></f:reference>
+		</alleleInstance>
+	</relatedAlleleInstance>
+	<relatedAlleleInstance>
+		<alleleInstance>
+			<f:reference value="AlleleInstance/SA314"></f:reference>
 			<f:display value="NC_000017.10:g.41203115A&gt;C (GRCh37)"></f:display>
-		</simpleAllele>
-	</relatedSimpleAllele>
-	<relatedSimpleAllele>
-		<simpleAllele>
-			<f:reference value="SimpleAllele/SA315"></f:reference>
+		</alleleInstance>
+	</relatedAlleleInstance>
+	<relatedAlleleInstance>
+		<alleleInstance>
+			<f:reference value="AlleleInstance/SA315"></f:reference>
 			<f:display value="NC_000017.11:g.43051098A&gt;C (GRCh38)"></f:display>
-		</simpleAllele>
-	</relatedSimpleAllele>
-	<relatedSimpleAllele>
-		<simpleAllele>
-			<f:reference value="SimpleAllele/SA316"></f:reference>
+		</alleleInstance>
+	</relatedAlleleInstance>
+	<relatedAlleleInstance>
+		<alleleInstance>
+			<f:reference value="AlleleInstance/SA316"></f:reference>
 			<f:display value="NG_005905.2:g.166886T&gt;G"></f:display>
-		</simpleAllele>
-	</relatedSimpleAllele>
-	<relatedSimpleAllele>
-		<simpleAllele>
-			<f:reference value="SimpleAllele/SA317"></f:reference>
+		</alleleInstance>
+	</relatedAlleleInstance>
+	<relatedAlleleInstance>
+		<alleleInstance>
+			<f:reference value="AlleleInstance/SA317"></f:reference>
 			<f:display value="LRG_292:g.166886T&gt;G"></f:display>
-		</simpleAllele>
-	</relatedSimpleAllele>
-	<relatedSimpleAllele>
-		<simpleAllele>
-			<f:reference value="SimpleAllele/SA318"></f:reference>
+		</alleleInstance>
+	</relatedAlleleInstance>
+	<relatedAlleleInstance>
+		<alleleInstance>
+			<f:reference value="AlleleInstance/SA318"></f:reference>
 			<f:display value="LRG_292t1:c.5297T&gt;G"></f:display>
-		</simpleAllele>
-	</relatedSimpleAllele>
+		</alleleInstance>
+	</relatedAlleleInstance>
 </CanonicalAllele>

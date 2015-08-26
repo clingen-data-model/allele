@@ -10,14 +10,14 @@ import org.hl7.fhir.Boolean;
 import org.hl7.fhir.Reference;
 
 /**
- * Associations to the set of SimpleAlleles that are canonically equivalent.
+ * Associations to the set of AlleleInstances that are canonically equivalent.
  * 
- * <p>Java class for CanonicalAllele.RelatedSimpleAllele complex preferred.
+ * <p>Java class for CanonicalAllele.RelatedAlleleInstance complex preferred.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="CanonicalAllele.RelatedSimpleAlleled">
+ * &lt;complexType name="CanonicalAllele.RelatedAlleleInstance">
  *   &lt;complexContent>
  *     &lt;extension base="{http://hl7.org/fhir}BackboneElement">
  *       &lt;sequence>
@@ -32,8 +32,8 @@ import org.hl7.fhir.Reference;
  * 
  */
 @XmlAccessorType (XmlAccessType.FIELD)
-@XmlType (name = "CanonicalAllele.RelatedSimpleAllele", propOrder = {"preferred", "alleleInstance"})
-public class CanonicalAlleleRelatedSimpleAllele extends BackboneElement
+@XmlType (name = "CanonicalAllele.RelatedAlleleInstance", propOrder = {"preferred", "alleleInstance"})
+public class CanonicalAlleleRelatedAlleleInstance extends BackboneElement
 {
 
 	protected Boolean preferred;

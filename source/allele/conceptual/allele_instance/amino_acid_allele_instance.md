@@ -1,8 +1,8 @@
 ---
-title: SimpleAminoAcidAllele
+title: AminoAcidAlleleInstance
 layout: conceptual
 model: allele
-description: A SimpleAlllele that uses a AminoAcidReferenceSequence as its ReferenceSequence.
+description: An AlleleInstance that uses a AminoAcidReferenceSequence as its ReferenceSequence.
 
 ---
 
@@ -11,7 +11,7 @@ Scope and Usage
 
 See also: [AlleleInstance](allele_instance.html)
 
-SimpleAminoAcidAllele represents an allele at a variant location on a single version of a chromosome.  For each different chromosome version, a new SimpleAminoAcidAllele would be created, and these would be aggregated at the CanonicalSimpleAllele level, along with any TranscriptSimpleAlleles.
+AminoAcidAlleleInstance represents an allele at a variant location on a single version of a chromosome.  For each different chromosome version, a new AminoAcidAlleleInstance would be created, and these would be aggregated at the SimpleCanonicalAllele level, along with any TranscriptAlleleInstances.
 
 Attributes
 --------------------
@@ -28,6 +28,6 @@ When describing observations a concise and interoperable method is required to r
 Exclusions and Limitations
 --------------------------
 
-Version 0.1 of the Data Model does not offer a direct relationship between records or annotations described at the SimpleNucleotideAllele level to SimpleAminoAcidAllele, however given correct reference, sequence and transcript information this can be computationally derived.
+Version 0.1 of the Data Model does not offer a direct relationship between records or annotations described at the NucleotideAlleleInstance level to AminoAcidAlleleInstance, however given correct reference, sequence and transcript information this can be computationally derived.
 
 

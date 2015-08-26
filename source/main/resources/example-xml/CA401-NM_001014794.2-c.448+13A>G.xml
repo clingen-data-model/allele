@@ -7,29 +7,29 @@
 	<active value="true"></active>
 	<canonicalAlleleType value="nucleotide"></canonicalAlleleType>
 	<complexity value="simple" />
-	<relatedSimpleAllele>
-		<simpleAllele>
-			<f:reference value="SimpleAllele/SA302"></f:reference>
+	<relatedAlleleInstance>
+		<alleleInstance>
+			<f:reference value="AlleleInstance/AI302"></f:reference>
 			<f:display value="NM_001014794.2(ILK):c.448+13A&gt;G "></f:display>
-		</simpleAllele>
+		</alleleInstance>
 		<preferred value="true"></preferred>
-	</relatedSimpleAllele>
-	<relatedSimpleAllele>
-		<simpleAllele>
-			<f:reference value="SimpleAllele/SA301"></f:reference>
+	</relatedAlleleInstance>
+	<relatedAlleleInstance>
+		<alleleInstance>
+			<f:reference value="AlleleInstance/AI301"></f:reference>
 			<f:display value="NM_001014794.2(ILK):c.448+14A&gt;G "></f:display>
-		</simpleAllele>
-	</relatedSimpleAllele>
-	<relatedSimpleAllele>
-		<simpleAllele>
-			<f:reference value="SimpleAllele/SA303"></f:reference>
+		</alleleInstance>
+	</relatedAlleleInstance>
+	<relatedAlleleInstance>
+		<alleleInstance>
+			<f:reference value="AlleleInstance/AI303"></f:reference>
 			<f:display value="NC_000011.9:g.6630034A&gt;G (GRCh37)"></f:display>
-		</simpleAllele>
-	</relatedSimpleAllele>
-	<relatedSimpleAllele>
-		<simpleAllele>
-			<f:reference value="SimpleAllele/SA304"></f:reference>
+		</alleleInstance>
+	</relatedAlleleInstance>
+	<relatedAlleleInstance>
+		<alleleInstance>
+			<f:reference value="AlleleInstance/AI304"></f:reference>
 			<f:display value="NC_000011.10:g.6608803A&gt;G (GRCh38)"></f:display>
-		</simpleAllele>
-	</relatedSimpleAllele>
+		</alleleInstance>
+	</relatedAlleleInstance>
 </CanonicalAllele>

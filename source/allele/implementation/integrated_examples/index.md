@@ -8,11 +8,11 @@ model: allele
 Introduction
 ---
 
-When creating a central repository for genomic variants, it is critical to ensure that any representation of the same allele be recognized as such. An allele may be represented multiple ways for a variety of reasons such as use of historical versus standardized nomenclature or use of different reference sequences.  The ClinGen Allele Data Model v0.1 addresses this by tying all representation of an allele, referred to as [simple alleles](/allele/resource/simple_allele/index.html), to a single identifier, referred to as the [CanonicalAllele](/allele/resource/canonical_allele/index.html).
+When creating a central repository for genomic variants, it is critical to ensure that any representation of the same allele be recognized as such. An allele may be represented multiple ways for a variety of reasons such as use of historical versus standardized nomenclature or use of different reference sequences.  The ClinGen Allele Data Model v0.1 addresses this by tying all representation of an allele, referred to as [allele instances](/allele/resource/allele_instance/index.html), to a single identifier, referred to as the [CanonicalAllele](/allele/resource/canonical_allele/index.html).
 
 In practice, a clinician may review a genetic test report for Gaucher disease which describes a variant in the GBA gene, c.1226A>G (N409S), using the standardized description in Human Genome Variation Society (HGVS) nomenclature. Historically, and throughout the literature however, this allele was referred to as N370S.  If the clinician makes this connection, he or she will use N409S and N370S interchangeably as they search literature or variant databases for information on this variant. However, making this connection between representations of the same allele is often not straightforward.  Therefore, a consistent method for doing so is needed.  For this reason, the ClinGen Allele Data Model v0.1 instituted the [CanonicalAllele](/allele/resource/canonical_allele/index.html) to serve as the connection between different representations of the same allele.  
 
-The CanonicalAllele is especially important in the course of variant curation. When evidence is gathered on an allele, it will be collected from multiple sources - literature, laboratory data, variant databases, patient test reports etc. It is imperative to extract data on any simple allele to ensure that all data on a single allele is aggregated appropriately under a CanonicalAllele.
+The CanonicalAllele is especially important in the course of variant curation. When evidence is gathered on an allele, it will be collected from multiple sources - literature, laboratory data, variant databases, patient test reports etc. It is imperative to extract data on any allele instance to ensure that all data on a single allele is aggregated appropriately under a CanonicalAllele.
 
  The following examples outline scenarios which highlight the value of a CanonicalAllele.
 
@@ -21,7 +21,7 @@ Example Scenarios
 
 I. [Basic Nucleotide & Amino Acid Alleles](scenario_group_1.html)
 
-  Several examples of baseline use cases that demonstrate the fundamental approaches to representing both simple nucleotide and simple amino acid alleles. In addition, these examples highlight the many names and representations for a single "canonical" allele and how alternate reference coordinates along with their underlying reference sequences can create a very different set of representations.
+  Several examples of baseline use cases that demonstrate the fundamental approaches to representing both nucleotide and amino acid allele instances. In addition, these examples highlight the many names and representations for a single "canonical" allele and how alternate reference coordinates along with their underlying reference sequences can create a very different set of representations.
 
 II. [Coordinate Numbering Disparities](scenario_group_2.html)
   
@@ -34,4 +34,4 @@ III. [Frameshift Alleles](scenario_group_3.html)
 
 IV. [Complex Alleles](scenario_group_4.html)
 
-  These complex allele scenarios demonstrate the basic design behind the idea of organizing multiple simple alleles on the same copy of a chromosome as a single canonical allele concept. The most prevelant scenario whereby this concept is used is in the area of pharmacogenetics, specifically, the start allele representation.  Several examples of star alleles are provided for examination. 
+  These complex allele scenarios demonstrate the basic design behind the idea of organizing multiple allele instances on the same copy of a chromosome as a single canonical allele concept. The most prevelant scenario whereby this concept is used is in the area of pharmacogenetics, specifically, the start allele representation.  Several examples of star alleles are provided for examination. 

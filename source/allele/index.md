@@ -34,7 +34,7 @@ In the allele model, different representations of the same allele, such as the s
 
 One feature of canonicalization that differs from common usage is that alleles on amino acid sequences are canonicalized separately from alleles on nucleic acid sequences.  Alleles that are aggregated into the same CanonicalAllele are assumed to be identical.  However, because of degeneracy, multiple nucleic acid alleles, which would not be canonically the same, may give rise to the same amino acid allele.  Therefore, we separate amino acid alleles from nucleic acid alleles for the purposes of canonicalization.
 
-In addition to simple (contiguous) alleles, the allele model can be used to represent sets of simple alleles that all occur in cis with one another.  These complex alleles can be used to represent haplotypes such as pharmacogenomic star alleles.
+In addition to (contiguous) allele instances , the allele model can be used to represent sets of allele instances that all occur in cis with one another.  These complex alleles can be used to represent haplotypes such as pharmacogenomic star alleles.
 
 Conceptual and Resource Models
 ------------------------------
@@ -54,8 +54,8 @@ Allele Model v0.1(beta) does not model structural variants such as large duplica
 
 The Allele Model v0.1(beta) is dependent on the existence of one or more canonicalization methods that 
 
-  1. Aggregate simple alleles and 
-  2. Can recognize that a new simple allele should be aggregated into a known canonical allele.
+  1. Aggregate allele instances and 
+  2. Can recognize that a new allele instance should be aggregated into a known canonical allele.
 
 However, the allele model does not specify the algorithm used to perform this canonicalization.
 

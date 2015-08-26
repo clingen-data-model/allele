@@ -12,12 +12,12 @@
   "active": "true",
   "canonicalAlleleType": "nucleotide",
   "complexity": "simple",
-  "relatedSimpleAllele":
+  "relatedAlleleInstance":
   [
     {
-      "simpleAllele":
+      "alleleInstance":
       {
-        "reference": "SimpleAllele/SA310",
+        "reference": "AlleleInstance/AI310",
         "display": "NM_007294.3:c.5297T>G"
       },
 
@@ -25,57 +25,57 @@
     },
 
     {
-      "simpleAllele":
+      "alleleInstance":
       {
-        "reference": "SimpleAllele/SA311",
+        "reference": "AlleleInstance/AI311",
         "display": "U14681.1(BRCA1):n.5416T>G"
       }
     },
 
     {
-      "simpleAllele":
+      "alleleInstance":
       {
-        "reference": "SimpleAllele/SA313",
+        "reference": "AlleleInstance/AI313",
         "display": "NR_027676.1:n.5433T>G"
       }
     },
 
     {
-      "simpleAllele":
+      "alleleInstance":
       {
-        "reference": "SimpleAllele/SA314",
+        "reference": "AlleleInstance/AI314",
         "display": "NC_000017.10:g.41203115A>C (GRCh37)"
       }
     },
 
     {
-      "simpleAllele":
+      "alleleInstance":
       {
-        "reference": "SimpleAllele/SA315",
+        "reference": "AlleleInstance/AI315",
         "display": "NC_000017.11:g.43051098A>C (GRCh38)"
       }
     },
 
     {
-      "simpleAllele":
+      "alleleInstance":
       {
-        "reference": "SimpleAllele/SA316",
+        "reference": "AlleleInstance/AI316",
         "display": "NG_005905.2:g.166886T>G"
       }
     },
 
     {
-      "simpleAllele":
+      "alleleInstance":
       {
-        "reference": "SimpleAllele/SA317",
+        "reference": "AlleleInstance/AI317",
         "display": "LRG_292:g.166886T>G"
       }
     },
 
     {
-      "simpleAllele":
+      "alleleInstance":
       {
-        "reference": "SimpleAllele/SA318",
+        "reference": "AlleleInstance/AI318",
         "display": "LRG_292t1:c.5297T>G"
       }
     }

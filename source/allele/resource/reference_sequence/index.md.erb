@@ -5,7 +5,7 @@ model: allele
 related_terms: reference sequence, refseq, sequence, accession
 description: A versioned sequence of nucleotide bases or amino acids.
 definition: Stable, reliable, public consensus sequence of a portion of the genome against which alleles are aligned and described.
-requirements: For every SimpleAllele.ReferenceCoordinate there must be a corresponding reference sequence.
+requirements: For every AlleleInstance.ReferenceCoordinate there must be a corresponding reference sequence.
 sequence_ontology: SO:0001411
 schema: /main/resources/clingen-xsd/referencesequence.xsd
 related_page_title: ReferenceSequence
@@ -90,8 +90,8 @@ context:
 Scope and Usage
 ---------------
 
-All alleles are described relative to a ReferenceSequence by way of the SimpleAllele.ReferenceCoordinate 
-[see SimpleAllele](../simple_allele/index.html). Both the SimpleAllele position (or coordinate) and sequence 
+All alleles are described relative to a ReferenceSequence by way of the AlleleInstance.ReferenceCoordinate 
+[see AlleleInstance](../allele_instance/index.html). Both the AlleleInstance position (or coordinate) and sequence 
 at that postion are relative to the ReferenceSequence.
 
 The current version of the model was based on four specific types of conceptual reference sequences; 
@@ -102,7 +102,7 @@ Resource Model
 
 [![ReferenceSequence Resource Diagram](/images/ReferenceSequenceResource.svg){: .img-responsive}](/images/ReferenceSequenceResource.svg)
 
-Related Resources: [SimpleAllele](/allele/resource/simple_allele) & [Gene](/allele/resource/gene)
+Related Resources: [AlleleInstance](/allele/resource/allele_instance) & [Gene](/allele/resource/gene)
 
 
 Notes

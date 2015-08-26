@@ -17,7 +17,7 @@ ReferenceSequence is the abstract representation of all reference sequences.  Ac
 [AminoAcidReferenceSequence](amino_acid_reference_sequence.html). As shown in the diagram there are two other abstract subtypes, [NucleotideReferenceSequence](nucleotide_reference_sequence.html) and [GenomicReferenceSequence](genomic_reference_sequence.html) which represent reference sequences composed of any nucleotide sequences versus only genomic nucleotide sequences, respectively. These ReferenceSequence subtypes distinguish the nucleotide [TranscriptReferenceSequence](transcript_reference_sequence.html) from both the more specialized genomic nucleotide [ChromosomeReferenceSequence](chromosome_reference_sequence.html) and [GeneReferenceSequence](gene_reference_sequence.html).
 
 
-The main usage of ReferenceSequence is as a base against which variation can be described by way of a [ReferenceCoordinate](.../simple_allele/reference_coordinate.html).
+The main usage of ReferenceSequence is as a base against which variation can be described by way of a [ReferenceCoordinate](.../allele_instance/reference_coordinate.html).
 
 Exclusions and Limitations
 --------------------------
