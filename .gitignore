@@ -9,6 +9,7 @@
 
 # Ignore the build directory
 /build
+/stage
 
 # Ignore cache
 /.sass-cache
@@ -20,7 +21,9 @@
 # Ignore Emacs tempfiles
 *~
 
+# Ignore build 
 /bin/
+
 
 # eclipse-related files
 .classpath
