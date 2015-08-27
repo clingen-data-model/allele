@@ -24,6 +24,6 @@ end
 # Finish by building current docs
 main_repo.checkout
 `bundle exec middleman build`
-FileUtils.mv('build', "stage/#{development}")
+FileUtils.mv('build', "stage/development")
 
 
