@@ -18,7 +18,7 @@ versions.each do |v|
   main_repo.checkout(v)
   # TODO check for and handle build errros
   `bundle exec middleman build`
-  FileUitls.mv('build', "stage/#{v}")
+  FileUtils.mv('build', "stage/#{v}")
 end
 
 # Finish by building current docs
