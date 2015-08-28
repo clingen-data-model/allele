@@ -18,7 +18,9 @@ gem "tzinfo-data", platforms: [:mswin, :mingw]
 # Gems for rendering different formats of files
 gem "kramdown" # markdown
 gem "nokogiri" # xml
-gem "yajl-ruby" # json
+
+# Including Git gem for handling publication of site
+gem "git"
 
 # publish to github pages -- removing for now, not useful for organization pages
 # gem 'middleman-gh-pages'
