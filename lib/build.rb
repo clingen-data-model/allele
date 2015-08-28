@@ -4,11 +4,29 @@ require 'git'
 require 'yaml'
 require 'fileutils'
 
+DOC_REPO_URI = ""
+
 
 # load the list of versions and delete the item
 # corresponding to the master branch
 versions = YAML.load_file('data/versions.yml')
 versions.delete('development')
+
+# TODO test remote operation
+
+# Assume that /source is a clone of the clingen-data-model.github.io
+# repository. If it does not exist, clone that repo into /source
+# Otherwise pull the latest commit
+documentation_repo = nil
+if File.exists('source')
+  documentation_repo = Git.open('source')
+  documentation_repo.pull
+else
+  documentation_repo = Git.clone(DOC_REPO_URI, source)
+end
+# Clean out documentation builds 
+FileUtils.rm_rf(Dir.glob("stage/*"))
+FileUtils.rm_rf('build')
 
 main_repo = Git.open(Dir.pwd)
 
@@ -25,5 +43,13 @@ end
 main_repo.checkout
 `bundle exec middleman build`
 FileUtils.mv('build', "stage/development")
+
+# Check in and push current build
+documentation_repo.add('stage')
+documentation_repo.commit(Time.now)
+documentation_repo.push
+
+
+
 
 
