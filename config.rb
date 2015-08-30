@@ -91,7 +91,7 @@ end
   def discussion_link_with_local_index(text, path)
     # Count index of model page as a discussion page
     if path_depth(current_page.url) == 1
-      index = local_index("#{current_page.url}discussion/")
+      index = discussion_index
       %(<li class="active">#{link_to(text, path)}</li>#{index})
     elsif current_page.url.include?('/discussion/')
       link_with_local_index(text,path)
@@ -100,6 +100,17 @@ end
     end
   end 
   
+  # This is a special case needed because of bugs in the link_to method
+  # when using relative links (also because were playing games with the
+  # links from the discusison page
+  def discussion_index
+    puts "#{current_page.url}discussion/"
+    resource = sitemap.            find_resource_by_path("#{current_page.url}discussion/index.html")
+    return "" if resource.children.size == 0
+    index = resource.children.reduce("") { |a, e| a << "<li>#{link_to e.data.title, e.path}</li>" }
+    "<ul>#{index}</ul>"
+  end
+
   # Root links in left navbar. Expand (accordion style)
   # based on selected page
   def link_with_local_index(text, path)
