@@ -11,7 +11,7 @@ DOC_REPO_URI =
 # load the list of versions and delete the item
 # corresponding to the master branch
 versions = YAML.load_file('data/versions.yml')
-versions.delete('development')
+
 
 # TODO test remote operation
 
@@ -26,8 +26,11 @@ else
   documentation_repo = Git.clone(DOC_REPO_URI, 'stage')
 end
 # Clean out documentation builds, (keep redirect at root index)
-FileUtils.rm_rf(Dir.glob("stage/*") - ['index.html'])
+versions.each { |v| FileUtils.rm_rf("stage/#{v}") }
 FileUtils.rm_rf('build')
+
+# Remove the special case 'development' version
+versions.delete('development')
 
 main_repo = Git.open(Dir.pwd)
 
