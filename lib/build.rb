@@ -4,7 +4,8 @@ require 'git'
 require 'yaml'
 require 'fileutils'
 
-DOC_REPO_URI = ""
+DOC_REPO_URI =
+  "git@github.com:clingen-data-model/clingen-data-model.github.io.git"
 
 
 # load the list of versions and delete the item
@@ -24,8 +25,8 @@ if File.exists('source')
 else
   documentation_repo = Git.clone(DOC_REPO_URI, source)
 end
-# Clean out documentation builds 
-FileUtils.rm_rf(Dir.glob("stage/*"))
+# Clean out documentation builds, (keep redirect at root index)
+FileUtils.rm_rf(Dir.glob("stage/*") - ['index.html'])
 FileUtils.rm_rf('build')
 
 main_repo = Git.open(Dir.pwd)
