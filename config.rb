@@ -231,7 +231,7 @@ configure :build do
   # activate :asset_hash
 
   # Use relative URLs
-  # activate :relative_assets
+  activate :relative_assets
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
@@ -239,7 +239,7 @@ end
 
 
 ### Additonal custom configuration
-# set :relative_links, true
+set :relative_links, true
 
 data.examples.each do |e|
   proxy("/allele/implementation/examples/#{e['id']}.html",
