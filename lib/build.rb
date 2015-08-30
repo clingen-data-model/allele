@@ -19,11 +19,11 @@ versions.delete('development')
 # repository. If it does not exist, clone that repo into /source
 # Otherwise pull the latest commit
 documentation_repo = nil
-if File.exists?('source')
-  documentation_repo = Git.open('source')
+if File.exists?('stage')
+  documentation_repo = Git.open('stage')
   documentation_repo.pull
 else
-  documentation_repo = Git.clone(DOC_REPO_URI, source)
+  documentation_repo = Git.clone(DOC_REPO_URI, 'stage')
 end
 # Clean out documentation builds, (keep redirect at root index)
 FileUtils.rm_rf(Dir.glob("stage/*") - ['index.html'])
