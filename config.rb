@@ -71,7 +71,7 @@ helpers do
 
   def model_link(model)
     # %(<li class="#{model}"><a href="/#{model}"><span class="glyphicon #{data.models[model].icon}"></span>#{model.capitalize}</a></li>)
-    link = link_to("/#{model}") do
+    link = link_to("#{model}") do
       %(<span class="glyphicon #{data.models[model].icon}"></span>#{model.capitalize})
     end
     %(<li class="#{model}">#{link}</li>)
