@@ -19,7 +19,7 @@ versions.delete('development')
 # repository. If it does not exist, clone that repo into /source
 # Otherwise pull the latest commit
 documentation_repo = nil
-if File.exists('source')
+if File.exists?('source')
   documentation_repo = Git.open('source')
   documentation_repo.pull
 else
