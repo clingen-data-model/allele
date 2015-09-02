@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/clingen-data-model/clingen-data-model.png?label=ready&title=Ready)](https://waffle.io/clingen-data-model/clingen-data-model)
 # clingen-data-model
 Documentation for data model of ClinGen
 
