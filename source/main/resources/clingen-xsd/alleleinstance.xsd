@@ -136,7 +136,7 @@
 					<xs:element name="index" type="f:integer" />
 					<xs:element name="externalOffsetLength" type="f:integer"
 						minOccurs="0" />
-					<xs:element name="externalOffsetDirection" type="AlleleInstanceIntronOffsetDirection"
+					<xs:element name="externalOffsetDirection" type="AlleleInstanceExternalOffsetDirection"
 						minOccurs="0" />
 					<xs:element name="externalGenomicReferenceSequence"
 						type="f:Reference" minOccurs="0" />
