@@ -1,6 +1,6 @@
 {
   "id": "AI319",
-  "identifier":
+  "identifier": 
   [
     {
       "label": "LRG_292p1:p.Ile1766Ser",
@@ -9,16 +9,16 @@
     }
   ],
 
-  "canonicalAllele":
+  "canonicalAllele": 
   {
     "reference": "/CanonicalAllele/CA403"
   },
 
   "alleleInstanceType": "amino-acid",
   "allele": "Ser",
-  "primaryAminoAcidChangeType":
+  "primaryAminoAcidChangeType": 
   {
-    "coding":
+    "coding": 
     [
       {
         "system": "http://www.sequenceontology.org/",
@@ -28,7 +28,7 @@
     ]
   },
 
-  "alleleName":
+  "alleleName": 
   [
     {
       "nameType": "hgvs-protein-3",
@@ -41,9 +41,9 @@
     }
   ],
 
-  "referenceCoordinate":
+  "referenceCoordinate": 
   {
-    "identifier":
+    "identifier": 
     [
       {
         "system": "http://www.ncbi.nlm.nih.gov/snp",
@@ -51,22 +51,30 @@
       }
     ],
 
-    "referenceSequence":
+    "referenceSequence": 
     {
       "reference": "/ReferenceSequence/RS216",
       "display": "LRG_292p1"
     },
 
-    "start": "1765",
-    "end": "1766",
+    "start": 
+    {
+      "index": "1765"
+    },
+
+    "end": 
+    {
+      "index": "1766"
+    },
+
     "refAllele": "Ile"
   },
 
-  "related":
+  "related": 
   [
     {
       "relatedType": "transcript-allele-cause",
-      "target":
+      "target": 
       {
         "reference": "/AlleleInstance/AI318",
         "display": "LRG_292t1(BRCA1):c.5297T>G"

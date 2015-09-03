@@ -34,8 +34,12 @@
 			<f:reference value="ReferenceSequence/RS217"></f:reference>
 			<f:display value="LRG_292t1"></f:display>
 		</referenceSequence>
-		<start value="5296"></start>
-		<end value="5297"></end>
+    <start>
+      <index value="5296"></index>
+    </start>
+    <end>
+      <index value="5297"></index>
+    </end>
 		<refAllele value="T"></refAllele>
 		<primaryTranscriptRegionType>
 			<f:coding>

@@ -1,15 +1,15 @@
 {
   "id": "SA328",
-  "canonicalAllele":
+  "canonicalAllele": 
   {
     "reference": "CanonicalAllele/CA406"
   },
 
   "alleleInstanceType": "transcript",
   "allele": "T",
-  "primaryNucleotideChangeType":
+  "primaryNucleotideChangeType": 
   {
-    "coding":
+    "coding": 
     [
       {
         "system": "http://www.sequenceontology.org/",
@@ -20,7 +20,7 @@
     ]
   },
 
-  "alleleName":
+  "alleleName": 
   [
     {
       "nameType": "hgvs-cdna",
@@ -29,9 +29,9 @@
     }
   ],
 
-  "referenceCoordinate":
+  "referenceCoordinate": 
   {
-    "identifier":
+    "identifier": 
     [
       {
         "system": "http://www.ncbi.nlm.nih.gov/snp",
@@ -39,18 +39,26 @@
       }
     ],
 
-    "referenceSequence":
+    "referenceSequence": 
     {
       "reference": "ReferenceSequence/RS224",
       "display": "NM_001337.3"
     },
 
-    "start": "930",
-    "end": "931",
-    "refAllele": "C",
-    "primaryTranscriptRegionType":
+    "start": 
     {
-      "coding":
+      "index": "930"
+    },
+
+    "end": 
+    {
+      "index": "931"
+    },
+
+    "refAllele": "C",
+    "primaryTranscriptRegionType": 
+    {
+      "coding": 
       [
         {
           "system": "http://www.sequenceontology.org/",
@@ -61,11 +69,11 @@
     }
   },
 
-  "related":
+  "related": 
   [
     {
       "relatedType": "amino-acid-effect",
-      "target":
+      "target": 
       {
         "reference": "AlleleInstance/AI331",
         "display": "NP_001328.1:p.Thr280Met"

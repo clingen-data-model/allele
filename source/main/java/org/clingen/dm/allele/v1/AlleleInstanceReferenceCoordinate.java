@@ -10,7 +10,6 @@ import javax.xml.bind.annotation.XmlType;
 import org.hl7.fhir.BackboneElement;
 import org.hl7.fhir.CodeableConcept;
 import org.hl7.fhir.Identifier;
-import org.hl7.fhir.Integer;
 import org.hl7.fhir.Reference;
 import org.hl7.fhir.String;
 
@@ -28,15 +27,11 @@ import org.hl7.fhir.String;
  *       &lt;sequence>
  *         &lt;element name="identifier" type="{http://hl7.org/fhir}Identifier" maxOccurs="unbounded" minOccurs="0"/>
  *         &lt;element name="referenceSequence" type="{http://hl7.org/fhir}Reference"/>
- *         &lt;element name="start" type="{http://hl7.org/fhir}int"/>
- *         &lt;element name="end" type="{http://hl7.org/fhir}int"/>
+ *         &lt;element name="start" type="{http://org.clingen.dm.allele.v1}AlleleInstance.ReferenceCoordinate.Position" />
+ *         &lt;element name="end" type="{http://org.clingen.dm.allele.v1}AlleleInstance.ReferenceCoordinate.Position" />
  *         &lt;element name="refAllele" type="{http://hl7.org/fhir}string"/>
  *         &lt;element name="primaryTranscriptRegionType" type="{http://hl7.org/fhir}CodeableConcept" minOccurs="0"/>
  *         &lt;element name="ancillaryTranscriptRegionType" type="{http://hl7.org/fhir}CodeableConcept" minOccurs="0" maxOccurs="unbounded"/>
- *         &lt;element name="intronOffsetStart" type="{http://hl7.org/fhir}int"/>
- *         &lt;element name="intronOffsetEnd" type="{http://hl7.org/fhir}int"/>
- *         &lt;element name="intronOffsetDirection" type="{http://org.clingen.dm.allele.v1}AlleleInstanceIntronOffsetDirection"/>
- *         &lt;element name="intronOffsetGenomicCoordinate" type="{http://org.clingen.dm.allele.v1}AlleleInstance.ReferenceCoordinate"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>
@@ -48,25 +43,18 @@ import org.hl7.fhir.String;
 @XmlAccessorType (XmlAccessType.FIELD)
 @XmlType (name = "AlleleInstance.ReferenceCoordinate", propOrder = {"identifier", "referenceSequence", "start", "end",
 																	"refAllele", "primaryTranscriptRegionType",
-																	"ancillaryTranscriptRegionType",
-																	"intronOffsetStart", "intronOffsetEnd",
-																	"intronOffsetDirection",
-																	"intronOffsetGenomicCoordinate"})
+																	"ancillaryTranscriptRegionType"})
 public class AlleleInstanceReferenceCoordinate extends BackboneElement
 {
 
 	protected List<Identifier> identifier;
 	@XmlElement (required = true)
 	protected Reference referenceSequence;
-	protected Integer start;
-	protected Integer end;
+	protected AlleleInstanceReferenceCoordinatePosition start;
+	protected AlleleInstanceReferenceCoordinatePosition end;
 	protected String refAllele;
 	protected CodeableConcept primaryTranscriptRegionType;
 	protected List<CodeableConcept> ancillaryTranscriptRegionType;
-	protected Integer intronOffsetStart;
-	protected Integer intronOffsetEnd;
-	protected AlleleInstanceIntronOffsetDirection intronOffsetDirection;
-	protected AlleleInstanceReferenceCoordinate intronOffsetGenomicCoordinate;
 
 	/**
 	 * Gets the value of the identifier property.
@@ -123,10 +111,10 @@ public class AlleleInstanceReferenceCoordinate extends BackboneElement
 	 * 
 	 * @return
 	 *     possible object is
-	 *     {@link Integer }
+	 *     {@link AlleleInstanceReferenceCoordinatePosition }
 	 *     
 	 */
-	public Integer getStart()
+	public AlleleInstanceReferenceCoordinatePosition getStart()
 	{
 		return start;
 	}
@@ -136,10 +124,10 @@ public class AlleleInstanceReferenceCoordinate extends BackboneElement
 	 * 
 	 * @param value
 	 *     allowed object is
-	 *     {@link Integer }
+	 *     {@link AlleleInstanceReferenceCoordinatePosition }
 	 *     
 	 */
-	public void setStart(Integer value)
+	public void setStart(AlleleInstanceReferenceCoordinatePosition value)
 	{
 		this.start = value;
 	}
@@ -149,10 +137,10 @@ public class AlleleInstanceReferenceCoordinate extends BackboneElement
 	 * 
 	 * @return
 	 *     possible object is
-	 *     {@link Integer }
+	 *     {@link AlleleInstanceReferenceCoordinatePosition }
 	 *     
 	 */
-	public Integer getEnd()
+	public AlleleInstanceReferenceCoordinatePosition getEnd()
 	{
 		return end;
 	}
@@ -162,10 +150,10 @@ public class AlleleInstanceReferenceCoordinate extends BackboneElement
 	 * 
 	 * @param value
 	 *     allowed object is
-	 *     {@link Integer }
+	 *     {@link AlleleInstanceReferenceCoordinatePosition }
 	 *     
 	 */
-	public void setEnd(Integer value)
+	public void setEnd(AlleleInstanceReferenceCoordinatePosition value)
 	{
 		this.end = value;
 	}
@@ -244,110 +232,6 @@ public class AlleleInstanceReferenceCoordinate extends BackboneElement
 	public List<CodeableConcept> getAncillaryTranscriptRegionType()
 	{
 		return ancillaryTranscriptRegionType;
-	}
-
-	/**
-	 * Gets the value of the intronOffsetStart property.
-	 * 
-	 * @return
-	 *     possible object is
-	 *     {@link Integer }
-	 *     
-	 */
-	public Integer getIntronOffsetStart()
-	{
-		return intronOffsetStart;
-	}
-
-	/**
-	 * Sets the value of the intronOffsetStart property.
-	 * 
-	 * @param value
-	 *     allowed object is
-	 *     {@link Integer }
-	 *     
-	 */
-	public void setIntronOffsetStart(Integer value)
-	{
-		this.intronOffsetStart = value;
-	}
-
-	/**
-	 * Gets the value of the intronOffsetEnd property.
-	 * 
-	 * @return
-	 *     possible object is
-	 *     {@link Integer }
-	 *     
-	 */
-	public Integer getIntronOffsetEnd()
-	{
-		return intronOffsetEnd;
-	}
-
-	/**
-	 * Sets the value of the intronOffsetEnd property.
-	 * 
-	 * @param value
-	 *     allowed object is
-	 *     {@link Integer }
-	 *     
-	 */
-	public void setIntronOffsetEnd(Integer value)
-	{
-		this.intronOffsetEnd = value;
-	}
-
-	/**
-	 * Gets the value of the intronOffsetDirection property.
-	 * 
-	 * @return
-	 *     possible object is
-	 *     {@link AlleleInstanceIntronOffsetDirection }
-	 *     
-	 */
-	public AlleleInstanceIntronOffsetDirection getIntronOffsetDirection()
-	{
-		return intronOffsetDirection;
-	}
-
-	/**
-	 * Sets the value of the intronOffsetDirection property.
-	 * 
-	 * @param value
-	 *     allowed object is
-	 *     {@link AlleleInstanceIntronOffsetDirection }
-	 *     
-	 */
-	public void setIntronOffsetDirection(AlleleInstanceIntronOffsetDirection value)
-	{
-		this.intronOffsetDirection = value;
-	}
-
-	/**
-	 * Gets the value of the intronOffsetGenomicCoordinate property.
-	 * 
-	 * @return
-	 *     possible object is
-	 *     {@link AlleleInstanceReferenceCoordinate }
-	 *     
-	 */
-	public AlleleInstanceReferenceCoordinate getIntronOffsetGenomicCoordinate()
-	{
-		return intronOffsetGenomicCoordinate;
-	}
-
-	/**
-	 * Sets the value of the intronOffsetGenomicCoordinate property.
-	 * 
-	 * @param value
-	 *     allowed object is
-	 *     {@link AlleleInstanceReferenceCoordinate }
-	 *     
-	 */
-	public void setIntronOffsetGenomicCoordinate(AlleleInstanceReferenceCoordinate value)
-	{
-		this.intronOffsetGenomicCoordinate = value;
 	}
 
 }

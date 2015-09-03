@@ -26,8 +26,26 @@
 			<f:reference value="ReferenceSequence/RS201"></f:reference>
 			<f:display value="NM_001014794.2"></f:display>
 		</referenceSequence>
-		<start value="608"></start>
-		<end value="608"></end>
+		<start>
+			<index value="608"></index>
+			<externalOffsetLength value="12"></externalOffsetLength>
+			<externalOffsetDirection value="+"></externalOffsetDirection>
+			<externalGenomicReferenceSequence>
+				<f:reference value="ReferenceSequence/RS203"></f:reference>
+				<f:display value="NC_000011.10"></f:display>
+			</externalGenomicReferenceSequence>
+			<externalGenomicPositionIndex value="6608803"></externalGenomicPositionIndex>
+		</start>
+		<end>
+			<index value="608"></index>
+			<externalOffsetLength value="13"></externalOffsetLength>
+			<externalOffsetDirection value="+"></externalOffsetDirection>
+			<externalGenomicReferenceSequence>
+				<f:reference value="ReferenceSequence/RS203"></f:reference>
+				<f:display value="NC_000011.10"></f:display>
+			</externalGenomicReferenceSequence>
+			<externalGenomicPositionIndex value="6608804"></externalGenomicPositionIndex>
+		</end>
 		<refAllele value="A"></refAllele>
 		<primaryTranscriptRegionType>
 			<f:coding>
@@ -36,18 +54,6 @@
 				<f:display value="intron"></f:display>
 			</f:coding>
 		</primaryTranscriptRegionType>
-		<intronOffsetStart value="12"></intronOffsetStart>
-		<intronOffsetEnd value="13"></intronOffsetEnd>
-		<intronOffsetDirection value="+"></intronOffsetDirection>
-		<intronOffsetGenomicCoordinate>
-			<referenceSequence>
-				<f:reference value="ReferenceSequence/RS203"></f:reference>
-				<f:display value="NC_000011.10"></f:display>
-			</referenceSequence>
-			<start value="6608803"></start>
-			<end value="6608804"></end>
-			<refAllele value="A"></refAllele>
-		</intronOffsetGenomicCoordinate>
 	</referenceCoordinate>
 
 </AlleleInstance>

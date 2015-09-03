@@ -1,16 +1,15 @@
 {
   "id": "AI301",
-
-  "canonicalAllele":
+  "canonicalAllele": 
   {
     "reference": "CanonicalAllele/CA401"
   },
 
   "alleleInstanceType": "transcript",
   "allele": "G",
-  "primaryNucleotideChangeType":
+  "primaryNucleotideChangeType": 
   {
-    "coding":
+    "coding": 
     [
       {
         "system": "http://www.sequenceontology.org/",
@@ -21,7 +20,7 @@
     ]
   },
 
-  "alleleName":
+  "alleleName": 
   [
     {
       "nameType": "hgvs-cdna",
@@ -30,20 +29,46 @@
     }
   ],
 
-  "referenceCoordinate":
+  "referenceCoordinate": 
   {
-    "referenceSequence":
+    "referenceSequence": 
     {
       "reference": "ReferenceSequence/RS201",
       "display": "NM_001014794.2"
     },
 
-    "start": "608",
-    "end": "608",
-    "refAllele": "A",
-    "primaryTranscriptRegionType":
+    "start": 
     {
-      "coding":
+      "index": "608",
+      "externalOffsetLength": "13",
+      "externalOffsetDirection": "+",
+      "externalGenomicReferenceSequence": 
+      {
+        "reference": "ReferenceSequence/RS202",
+        "display": "NC_000011.9"
+      },
+
+      "externalGenomicPositionIndex": "6630033"
+    },
+
+    "end": 
+    {
+      "index": "608",
+      "intronOffsetEnd": "14",
+      "intronOffsetDirection": "+",
+      "externalGenomicReferenceSequence": 
+      {
+        "reference": "ReferenceSequence/RS202",
+        "display": "NC_000011.9"
+      },
+
+      "externalGenomicPositionIndex": "6630034"
+    },
+
+    "refAllele": "A",
+    "primaryTranscriptRegionType": 
+    {
+      "coding": 
       [
         {
           "system": "http://www.sequenceontology.org/",
@@ -52,21 +77,5 @@
         }
       ]
     }
-  },
-
-  "intronOffsetStart": "13",
-  "intronOffsetEnd": "14",
-  "intronOffsetDirection": "+",
-  "intronOffsetGenomicCoordinate":
-  {
-    "referenceSequence":
-    {
-      "reference": "ReferenceSequence/RS202",
-      "display": "NC_000011.9"
-    },
-
-    "start": "6630033",
-    "end": "6630034",
-    "refAllele": "A"
   }
 }

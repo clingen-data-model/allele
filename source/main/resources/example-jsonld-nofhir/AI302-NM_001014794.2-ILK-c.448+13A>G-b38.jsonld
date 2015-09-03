@@ -33,26 +33,36 @@
   {
     "@type": "ReferenceCoordinate",
     "referenceSequence": "../../ReferenceSequence/RS201",
-    "start": "608",
-    "end": "608",
+    "start": {
+      "@type": "Position",
+      "index" : "608",
+      "externalOffsetLength":"12",
+      "externalOffsetDirection":"+",
+      "externalGenomicReferenceSequence": {
+        "@type": "Reference",
+        "reference": "../../ReferenceSequence/RS203",
+        "display": "NC_000011.10"
+      },
+      "externalGenomicPositionIndex": "6608802"
+    },
+    "end": {
+      "@type": "Position",
+      "index" : "608",
+      "externalOffsetLength":"13",
+      "externalOffsetDirection":"+",
+      "externalGenomicReferenceSequence": {
+        "@type": "Reference",
+        "reference": "../../ReferenceSequence/RS203",
+        "display": "NC_000011.10"
+      },
+      "externalGenomicPositionIndex": "6608803"
+    },
     "refAllele": "A",
     "primaryTranscriptRegionType":
     {
       "@type": "PrimaryTranscriptRegionType",
       "@id": "http://www.sequenceontology.org/SO:0000188",
       "display": "intron",
-    },
-
-    "intronOffsetStart": "12",
-    "intronOffsetEnd": "13",
-    "intronOffsetDirection": "+",
-    "intronOffsetGenomicCoordinate":
-    {
-      "@type": "IntronOffsetGenomicCoordinate",
-      "referenceSequence": "../../ReferenceSequence/RS203",
-      "start": "6608802",
-      "end": "6608803",
-      "refAllele": "A"
     }
   }
 }

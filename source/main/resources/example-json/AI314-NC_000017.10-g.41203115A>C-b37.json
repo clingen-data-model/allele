@@ -1,15 +1,15 @@
 {
   "id": "AI314",
-  "canonicalAllele":
+  "canonicalAllele": 
   {
     "reference": "CanonicalAllele/CA402"
   },
 
   "alleleInstanceType": "genomic",
   "allele": "C",
-  "primaryNucleotideChangeType":
+  "primaryNucleotideChangeType": 
   {
-    "coding":
+    "coding": 
     [
       {
         "system": "http://www.sequenceontology.org/",
@@ -20,7 +20,7 @@
     ]
   },
 
-  "alleleName":
+  "alleleName": 
   [
     {
       "nameType": "hgvs-genomic",
@@ -28,16 +28,24 @@
     }
   ],
 
-  "referenceCoordinate":
+  "referenceCoordinate": 
   {
-    "referenceSequence":
+    "referenceSequence": 
     {
       "reference": "ReferenceSequence/RS211",
       "display": "NC_000017.10"
     },
 
-    "start": "41203114",
-    "end": "41203115",
+    "start": 
+    {
+      "index": "41203114"
+    },
+
+    "end": 
+    {
+      "index": "41203115"
+    },
+
     "refAllele": "A"
   }
 }

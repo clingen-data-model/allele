@@ -1,15 +1,15 @@
 {
   "id": "SA327",
-  "canonicalAllele":
+  "canonicalAllele": 
   {
     "reference": "CanonicalAllele/CA406"
   },
 
   "alleleInstanceType": "genomic",
   "allele": "T",
-  "primaryNucleotideChangeType":
+  "primaryNucleotideChangeType": 
   {
-    "coding":
+    "coding": 
     [
       {
         "system": "http://www.sequenceontology.org/",
@@ -20,7 +20,7 @@
     ]
   },
 
-  "alleleName":
+  "alleleName": 
   [
     {
       "nameType": "hgvs-genomic",
@@ -28,16 +28,24 @@
     }
   ],
 
-  "referenceCoordinate":
+  "referenceCoordinate": 
   {
-    "referenceSequence":
+    "referenceSequence": 
     {
       "reference": "ReferenceSequence/RS222",
       "display": "NG_016362.1"
     },
 
-    "start": "21064",
-    "end": "21065",
+    "start": 
+    {
+      "index": "21064"
+    },
+
+    "end": 
+    {
+      "index": "21065"
+    },
+
     "refAllele": "C"
   }
 }

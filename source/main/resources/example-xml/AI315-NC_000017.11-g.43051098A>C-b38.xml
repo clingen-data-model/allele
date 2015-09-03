@@ -29,8 +29,12 @@
 			<f:reference value="ReferenceSequence/RS210"></f:reference>
 			<f:display value="NC_000017.11"></f:display>
 		</referenceSequence>
-		<start value="43051097"></start>
-		<end value="43051098"></end>
+		<start>
+			<index value="43051097"></index>
+		</start>
+		<end>
+			<index value="43051098"></index>
+		</end>
 		<refAllele value="A"></refAllele>
 	</referenceCoordinate>
 

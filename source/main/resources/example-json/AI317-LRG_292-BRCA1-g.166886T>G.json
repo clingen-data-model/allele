@@ -1,15 +1,15 @@
 {
   "id": "AI317",
-  "canonicalAllele":
+  "canonicalAllele": 
   {
     "reference": "CanonicalAllele/CA402"
   },
 
   "alleleInstanceType": "genomic",
   "allele": "G",
-  "primaryNucleotideChangeType":
+  "primaryNucleotideChangeType": 
   {
-    "coding":
+    "coding": 
     [
       {
         "system": "http://www.sequenceontology.org/",
@@ -20,7 +20,7 @@
     ]
   },
 
-  "alleleName":
+  "alleleName": 
   [
     {
       "nameType": "hgvs-genomic",
@@ -28,9 +28,9 @@
     }
   ],
 
-  "referenceCoordinate":
+  "referenceCoordinate": 
   {
-    "identifier":
+    "identifier": 
     [
       {
         "system": "http://www.ncbi.nlm.nih.gov/snp",
@@ -38,14 +38,22 @@
       }
     ],
 
-    "referenceSequence":
+    "referenceSequence": 
     {
       "reference": "ReferenceSequence/RS218",
       "display": "LRG_292"
     },
 
-    "start": "166885",
-    "end": "166886",
+    "start": 
+    {
+      "index": "166885"
+    },
+
+    "end": 
+    {
+      "index": "166886"
+    },
+
     "refAllele": "Ile"
   }
 }

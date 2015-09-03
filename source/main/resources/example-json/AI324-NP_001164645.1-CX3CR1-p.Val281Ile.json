@@ -1,15 +1,15 @@
 {
   "id": "SA324",
-  "canonicalAllele":
+  "canonicalAllele": 
   {
     "reference": "CanonicalAllele/CA405"
   },
 
   "alleleInstanceType": "amino-acid",
   "allele": "Ile",
-  "primaryAminoAcidChangeType":
+  "primaryAminoAcidChangeType": 
   {
-    "coding":
+    "coding": 
     [
       {
         "system": "http://www.sequenceontology.org/",
@@ -19,25 +19,27 @@
     ]
   },
 
-  "alleleName":
+  "alleleName": 
   [
     {
       "nameType": "hgvs-protein-3",
       "name": "p.Val281Ile"
     },
+
     {
       "nameType": "custom",
       "name": "V281I"
     },
+
     {
       "nameType": "custom",
       "name": "V249I"
     }
   ],
 
-  "referenceCoordinate":
+  "referenceCoordinate": 
   {
-    "identifier":
+    "identifier": 
     [
       {
         "system": "http://www.ncbi.nlm.nih.gov/snp",
@@ -45,22 +47,30 @@
       }
     ],
 
-    "referenceSequence":
+    "referenceSequence": 
     {
       "reference": "ReferenceSequence/RS225",
       "display": "NP_001164645.1"
     },
 
-    "start": "280",
-    "end": "281",
+    "start": 
+    {
+      "index": "280"
+    },
+
+    "end": 
+    {
+      "index": "281"
+    },
+
     "refAllele": "Val"
   },
 
-  "related":
+  "related": 
   [
     {
       "relatedType": "transcript-allele-cause",
-      "target":
+      "target": 
       {
         "reference": "AlleleInstance/AI323",
         "display": "NM_001171174.1(CX3CR1):c.841G>A"

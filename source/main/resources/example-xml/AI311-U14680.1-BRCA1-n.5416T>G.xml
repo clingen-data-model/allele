@@ -29,8 +29,12 @@
 			<f:reference value="ReferenceSequence/RS215" />
 			<f:display value="U14680.1" />
 		</referenceSequence>
-		<start value="5415" />
-		<end value="5416" />
+		<start>
+			<index value="5415"></index>
+		</start>
+		<end>
+			<index value="5416"></index>
+		</end>
 		<refAllele value="T" />
 		<primaryTranscriptRegionType>
 			<f:coding>

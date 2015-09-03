@@ -32,7 +32,7 @@ A validator MUST ensure that this type safety is preserved
 Exclusions and Limitations
 --------------------------
 
-The current Allele model does not specifically model the provenance of how canonicalization occured, so if canonicalizers change over time (say due to the mapping issue below) or if multiple canonicalizers are available, this model does not provide a way for implementors to track this information.
+The current Allele model does not specifically model the provenance of how canonicalization occured, so if canonicalizers change over time (say due to the mapping issue below) or if multiple canonicalizers are available, this model does not provide a way for implementers to track this information.
 
 Implicit in the idea that a TranscriptAlleles and GenomicAlleles can be aggregated under a `CanonicalAllele` is the idea that the alignment from TranscriptReferenceSequence to a GenomicReferenceSequence is known, and stable.   No information about these alignments is included in the model, however.   This potentially allows the following situation:  Based on one set of alignments, GenomeAllele A is aggregated with ReferenceAllele B.  Suppose that with a different set of alignments, ReferenceAlleleB is now aggregated with GenomeAllele C.  This may lead to the incorrect aggregation of GenomeAlleles A and C.  It is the responsibility of the canonicalization service to guard against this.
 
