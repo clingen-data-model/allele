@@ -13,8 +13,8 @@ InformationType/Known1: A pieces of information (it could be more or less)
                         that are already part of the system and are being
                         used as query parameters.  These may be data like
                         allele frequencies, or they may be elements from the
-                        allele model, such as a reference sequence or allele
-                        instance.
+                        allele model, such as a reference sequence or simple
+                        allele.
 InformationType/Result1: The result of searching the external database. 
 ExternalDataSource/ED1: The external data source that is being queried 
                         (e.g. ExAC, ClinVar)

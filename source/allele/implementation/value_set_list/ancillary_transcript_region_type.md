@@ -1,6 +1,6 @@
 ---
 title: ancillary-transcript-region-type
-description: This value set includes only the transcript associated regions that is associated with a transcript allele instance reference coordinate.
+description: This value set includes only the transcript associated regions that is associated with a transcript simple allele reference coordinate.
 source: Sequence Ontology
 id: 21
 usage: core
@@ -26,7 +26,7 @@ Examples:
 
 * This attribute allows for a couple of possibilities.  
 1. First to allow additional detail in describing the location of the feature related to the variant.
-2. Second, it allows the uses of terms that may better describe the feature of interest, not offered in the primary list.
+2. Second, it allows the uses of terms that may better describe the feature of intrest, not offered in the primary list.
 
 
 ###_The first case:_

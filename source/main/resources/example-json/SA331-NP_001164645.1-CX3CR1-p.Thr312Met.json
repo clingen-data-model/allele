@@ -1,0 +1,66 @@
+{
+  "id": "SA331",
+  "canonicalAllele":
+  {
+    "reference": "CanonicalAllele/CA407"
+  },
+
+  "simpleAlleleType": "amino-acid",
+  "allele": "Met",
+  "primaryAminoAcidChangeType":
+  {
+    "coding":
+    [
+      {
+        "system": "http://www.sequenceontology.org/",
+        "code": "SO:0001583",
+        "display": "missense variant"
+      }
+    ]
+  },
+
+  "alleleName":
+  [
+    {
+      "nameType": "hgvs-protein-3",
+      "name": "p.Thr312Met"
+    },
+    {
+      "nameType": "custom",
+      "name": "T312M"
+    }
+  ],
+
+  "referenceCoordinate":
+  {
+    "identifier":
+    [
+      {
+        "system": "http://www.ncbi.nlm.nih.gov/snp",
+        "value": "3732378"
+      }
+    ],
+
+    "referenceSequence":
+    {
+      "reference": "ReferenceSequence/RS225",
+      "display": "NP_001164645.1"
+    },
+
+    "start": "311",
+    "end": "312",
+    "refAllele": "Thr"
+  },
+
+  "related":
+  [
+    {
+      "relatedType": "transcript-allele-cause",
+      "target":
+      {
+        "reference": "SimpleAllele/SA329",
+        "display": "NM_001171174.1(CX3CR1):c.935C>T"
+      }
+    }
+  ]
+}

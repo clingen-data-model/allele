@@ -12,7 +12,7 @@ Assumptions:
 
 Entities: 
 InformationType/Known1:
-        Large collection of Stored variants (e.g. AlleleInstances - ClinGen).
+        Large collection of Stored variants (e.g. SimpleAlleles - ClinGen).
 
 InformationType/Result1:
         Returned updated ClinGen DM Document (Error discovered).

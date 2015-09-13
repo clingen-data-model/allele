@@ -26,6 +26,6 @@ This value set contains 2 concepts.
 {:.table .table-bordered .table-condensed}
 |Code|Display|Definition|
 |----|-------|----------|
-| simple | `simple`| A canonical allele which relates to one and only one uniquely known AlleleInstance.|
-| complex | `complex` | A canonical allele which relates to more then one uniquely known AlleleInstances. |
+| simple | `simple`| A canonical allele which relates to one and only one uniquely known SimpleAllele.|
+| complex | `complex` | A canonical allele which relates to more then one uniquely known SimpleAllles. |
 

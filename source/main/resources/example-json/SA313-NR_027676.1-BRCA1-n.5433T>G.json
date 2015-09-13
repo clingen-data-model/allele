@@ -1,0 +1,62 @@
+{
+  "id": "SA313",
+  "canonicalAllele":
+  {
+    "reference": "CanonicalAllele/CA402"
+  },
+
+  "simpleAlleleType": "transcript",
+  "allele": "G",
+  "primaryNucleotideChangeType":
+  {
+    "coding":
+    [
+      {
+        "system": "http://www.sequenceontology.org/",
+        "code": "SO:1000002",
+        "display": "substitution",
+        "primary": "true"
+      }
+    ]
+  },
+
+  "alleleName":
+  [
+    {
+      "nameType": "hgvs-ncrna",
+      "name": "NR_027676.1(BRCA1):n.5433T>G"
+    }
+  ],
+
+  "referenceCoordinate":
+  {
+    "identifier":
+    [
+      {
+        "system": "http://www.ncbi.nlm.nih.gov/snp",
+        "value": "80357463"
+      }
+    ],
+
+    "referenceSequence":
+    {
+      "reference": "ReferenceSequence/RS213",
+      "display": "NM_001014794.2"
+    },
+
+    "start": "5432",
+    "end": "5433",
+    "refAllele": "T",
+    "primaryTranscriptRegionType":
+    {
+      "coding":
+      [
+        {
+          "system": "http://www.sequenceontology.org/",
+          "code": "SO:0000147",
+          "display": "exon"
+        }
+      ]
+    }
+  }
+}

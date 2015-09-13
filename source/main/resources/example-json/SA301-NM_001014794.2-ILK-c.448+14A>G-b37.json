@@ -1,0 +1,72 @@
+{
+  "id": "SA301",
+
+  "canonicalAllele":
+  {
+    "reference": "CanonicalAllele/CA401"
+  },
+
+  "simpleAlleleType": "transcript",
+  "allele": "G",
+  "primaryNucleotideChangeType":
+  {
+    "coding":
+    [
+      {
+        "system": "http://www.sequenceontology.org/",
+        "code": "SO:1000002",
+        "display": "substitution",
+        "primary": "true"
+      }
+    ]
+  },
+
+  "alleleName":
+  [
+    {
+      "nameType": "hgvs-cdna",
+      "name": "NM_001014794.2:c.448+14A>G",
+      "preferred": "true"
+    }
+  ],
+
+  "referenceCoordinate":
+  {
+    "referenceSequence":
+    {
+      "reference": "ReferenceSequence/RS201",
+      "display": "NM_001014794.2"
+    },
+
+    "start": "608",
+    "end": "608",
+    "refAllele": "A",
+    "primaryTranscriptRegionType":
+    {
+      "coding":
+      [
+        {
+          "system": "http://www.sequenceontology.org/",
+          "code": "SO:0000188",
+          "display": "intron"
+        }
+      ]
+    }
+  },
+
+  "intronOffsetStart": "13",
+  "intronOffsetEnd": "14",
+  "intronOffsetDirection": "+",
+  "intronOffsetGenomicCoordinate":
+  {
+    "referenceSequence":
+    {
+      "reference": "ReferenceSequence/RS202",
+      "display": "NC_000011.9"
+    },
+
+    "start": "6630033",
+    "end": "6630034",
+    "refAllele": "A"
+  }
+}

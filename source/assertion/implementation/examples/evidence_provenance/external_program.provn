@@ -15,8 +15,8 @@ InformationType/Known2: Two pieces of information (it could be more or less)
                         that are already part of the system and are being
                         input into the program.  These may be data like
                         allele frequencies, or they may be elements from the
-                        allele model, such as a reference sequence or allele
-                        instance.
+                        allele model, such as a reference sequence or simple
+                        allele.
 InformationType/Result1: The result of running the program, which is being
                          entered back into the database.
 

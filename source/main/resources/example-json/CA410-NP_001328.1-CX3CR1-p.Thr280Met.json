@@ -4,12 +4,12 @@
   "active": "true",
   "canonicalAlleleType": "amino-acid",
   "complexity": "simple",
-  "relatedAlleleInstance":
+  "relatedSimpleAllele":
   [
     {
-      "alleleInstance":
+      "simpleAllele":
       {
-        "reference": "AlleleInstance/SA330",
+        "reference": "SimpleAllele/SA330",
         "display": "NP_001328.1:p.Thr280Met"
       },
 

@@ -1,0 +1,66 @@
+{
+  "id": "SA330",
+  "canonicalAllele":
+  {
+    "reference": "CanonicalAllele/CA410"
+  },
+
+  "simpleAlleleType": "amino-acid",
+  "allele": "Met",
+  "primaryAminoAcidChangeType":
+  {
+    "coding":
+    [
+      {
+        "system": "http://www.sequenceontology.org/",
+        "code": "SO:0001583",
+        "display": "missense variant"
+      }
+    ]
+  },
+
+  "alleleName":
+  [
+    {
+      "nameType": "hgvs-protein-3",
+      "name": "p.Thr280Met"
+    },
+    {
+      "nameType": "custom",
+      "name": "T280M"
+    }
+  ],
+
+  "referenceCoordinate":
+  {
+    "identifier":
+    [
+      {
+        "system": "http://www.ncbi.nlm.nih.gov/snp",
+        "value": "3732378"
+      }
+    ],
+
+    "referenceSequence":
+    {
+      "reference": "ReferenceSequence/RS226",
+      "display": "NP_001328.1"
+    },
+
+    "start": "279",
+    "end": "280",
+    "refAllele": "Thr"
+  },
+
+  "related":
+  [
+    {
+      "relatedType": "transcript-allele-cause",
+      "target":
+      {
+        "reference": "SimpleAllele/SA328",
+        "display": "NM_001337.3(CX3CR1):c.839C>T"
+      }
+    }
+  ]
+}

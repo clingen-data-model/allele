@@ -1,0 +1,58 @@
+{
+  "@context": "http://clingen.org/models/SimpleAllele.jsonld",
+  "@id": "http://clingendb.clingen.org/SimpleAllele/SA301",
+  "@type": "SimpleAllele",
+  "xref":
+  [
+    "http://clingen/alleleregistry/SA301"
+  ],
+
+
+  "canonicalAllele": "../../CanonicalAllele/CA401",
+
+  "simpleAlleleType": "transcript",
+  "allele": "G",
+  "primaryNucleotideChangeType":
+  {
+    "@type": "PrimaryNucleotideChangeType",
+    "@id": "http://www.sequenceontology.org/SO:1000002",
+    "display": "substitution",
+    "primary": "true"
+  },
+  "alleleName":
+  [
+    {
+      "@type": "AlleleName",
+      "nameType": "hgvs-cdna",
+      "name": "NM_001014794.2:c.448+14A>G",
+      "preferred": "true"
+    }
+  ],
+
+  "referenceCoordinate":
+  {
+    "@type": "ReferenceCoordinate",
+    "referenceSequence": "../../ReferenceSequence/RS201",
+    "start": "608",
+    "end": "608",
+    "refAllele": "A",
+    "primaryTranscriptRegionType":
+    {
+        "@type": "PrimaryTranscriptRegionType",
+        "@id": "http://www.sequenceontology.org/SO:0000188",
+        "display": "intron"
+    },
+
+    "intronOffsetStart": "13",
+    "intronOffsetEnd": "14",
+    "intronOffsetDirection": "+",
+    "intronOffsetGenomicCoordinate":
+    {
+        "@type": "IntronOffsetGenomicCoordinate",
+        "referenceSequence": "../../ReferenceSequence/RS202",
+        "start": "6630033",
+        "end": "6630034",
+        "refAllele": "A"
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "id": "SA310",
+  "canonicalAllele":
+  {
+    "reference": "CanonicalAllele/CA402"
+  },
+
+  "simpleAlleleType": "transcript",
+  "allele": "G",
+  "primaryNucleotideChangeType":
+  {
+    "coding":
+    [
+      {
+        "system": "http://www.sequenceontology.org/",
+        "code": "SO:1000002",
+        "display": "substitution",
+        "primary": "true"
+      }
+    ]
+  },
+
+  "alleleName":
+  [
+    {
+      "nameType": "hgvs-cdna",
+      "name": "NM_007294.3(BRCA1):c.5297T>G",
+      "preferred": "true"
+    },
+
+    {
+      "type": "custom",
+      "name": "5416T>G"
+    }
+  ],
+
+  "referenceCoordinate":
+  {
+    "identifier":
+    [
+      {
+        "system": "http://www.ncbi.nlm.nih.gov/snp",
+        "value": "80357463"
+      }
+    ],
+
+    "referenceSequence":
+    {
+      "reference": "ReferenceSequence/RS213",
+      "display": "NM_001014794.2"
+    },
+
+    "start": "5528",
+    "end": "5529",
+    "refAllele": "T",
+    "primaryTranscriptRegionType":
+    {
+      "coding":
+      [
+        {
+          "system": "http://www.sequenceontology.org/",
+          "code": "SO:0000147",
+          "display": "exon"
+        }
+      ]
+    }
+  },
+
+  "related":
+  [
+    {
+      "relatedType": "amino-acid-effect",
+      "target":
+      {
+        "reference": "SimpleAllele/SA312",
+        "display": "NP_009225.1:p.Ile1766Ser"
+      }
+    }
+  ]
+}

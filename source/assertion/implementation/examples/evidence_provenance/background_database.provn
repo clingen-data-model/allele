@@ -14,7 +14,7 @@ Assumptions:
 
 Entities: 
 
-InformationType/Known1: AlleleInstance information stored in local 
+InformationType/Known1: SimpleAllele information stored in local 
                         data reposatory (MySQL, etc)
 
 ExternalDataSource/ED1: The external data source that is being queried 

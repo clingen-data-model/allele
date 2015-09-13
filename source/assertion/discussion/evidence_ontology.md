@@ -27,9 +27,9 @@ Application to evidence types used in variant curation
 
 These evidence types are based off of the categories specified in the 2015 ACMG variant curation criteria.
 
-### Sidenote: use of canonical/allele instance as evidence
+### Sidenote: use of canonical/simple variant as evidence
 
-Many evidence types are going to be based on annotation made on a variant. Is it correct to use the reference to either the allele instance, or a canonical variant with associated allele instance, that has the appropriate type? (Null variant: 
+Many evidence types are going to be based on annotation made on a variant. Is it correct to use the reference to either the simple variant, or a canonical variant with associated simple variant, that has the appropriate type? (Null variant: 
 
 ### Terms that do not already exist
 

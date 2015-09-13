@@ -1,0 +1,43 @@
+{
+  "id": "SA315",
+  "canonicalAllele":
+  {
+    "reference": "CanonicalAllele/CA402"
+  },
+
+  "simpleAlleleType": "genomic",
+  "allele": "C",
+  "primaryNucleotideChangeType":
+  {
+    "coding":
+    [
+      {
+        "system": "http://www.sequenceontology.org/",
+        "code": "SO:1000002",
+        "display": "substitution",
+        "primary": "true"
+      }
+    ]
+  },
+
+  "alleleName":
+  [
+    {
+      "nameType": "hgvs-genomic",
+      "name": "NC_000017.11:g.43051098A>C"
+    }
+  ],
+
+  "referenceCoordinate":
+  {
+    "referenceSequence":
+    {
+      "reference": "ReferenceSequence/RS210",
+      "display": "NC_000017.11"
+    },
+
+    "start": "43051097",
+    "end": "43051098",
+    "refAllele": "A"
+  }
+}

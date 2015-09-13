@@ -6,11 +6,11 @@
         "xsd":"http://www.w3.org/2001/XMLSchema#",
 
         "CanonicalAllele":"clingen:CanonicalAllele",
-        "RelatedAlleleInstance":"clingen:RelatedAlleleInstance",
+        "RelatedSimpleAllele":"clingen:RelatedSimpleAllele",
 
-        "alleleInstance":
+        "simpleAllele":
         {
-            "@id":"clingen:alleleInstance",
+            "@id":"clingen:simpleallele",
             "@type":"@id"
         },
         "version":
@@ -37,11 +37,11 @@
         "complexity":
         {
             "@id":"clingen:complexity",
-            "@type":"clingen:AlleleInstanceComplexity"
+            "@type":"clingen:SimpleAlleleComplexity"
         },
-        "relatedAlleleInstance":
+        "relatedSimpleAllele":
         {
-            "@id":"clingen:relatedAlleleInstance",
+            "@id":"clingen:relatedsimpleallele",
             "@container":"@set"
         },
         "preferred":

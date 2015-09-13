@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SimpleAllele xmlns="http://clingen.org/dm/allele/v1"
+	xmlns:f="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://clingen.org/dm/allele/v1 ../clingen-xsd/simpleallele.xsd ">
+	<f:id value="SA302"></f:id>
+	<canonicalAllele>
+		<f:reference value="CanonicalAllele/CA401"></f:reference>
+	</canonicalAllele>
+	<simpleAlleleType value="transcript"></simpleAlleleType>
+	<allele value="G"></allele>
+	<primaryNucleotideChangeType>
+		<f:coding>
+			<f:system value="http://www.sequenceontology.org/"></f:system>
+			<f:code value="SO:1000002"></f:code>
+			<f:display value="substitution"></f:display>
+			<f:primary value="true"></f:primary>
+		</f:coding>
+	</primaryNucleotideChangeType>
+	<alleleName>
+		<nameType value="hgvs-cdna"></nameType>
+		<name value="NM_001014794.2:c.448+13A&gt;G"></name>
+		<preferred value="true"></preferred>
+	</alleleName>
+	<referenceCoordinate>
+		<referenceSequence>
+			<f:reference value="ReferenceSequence/RS201"></f:reference>
+			<f:display value="NM_001014794.2"></f:display>
+		</referenceSequence>
+		<start value="608"></start>
+		<end value="608"></end>
+		<refAllele value="A"></refAllele>
+		<primaryTranscriptRegionType>
+			<f:coding>
+				<f:system value="http://www.sequenceontology.org/"></f:system>
+				<f:code value="SO:0000188"></f:code>
+				<f:display value="intron"></f:display>
+			</f:coding>
+		</primaryTranscriptRegionType>
+		<intronOffsetStart value="12"></intronOffsetStart>
+		<intronOffsetEnd value="13"></intronOffsetEnd>
+		<intronOffsetDirection value="+"></intronOffsetDirection>
+		<intronOffsetGenomicCoordinate>
+			<referenceSequence>
+				<f:reference value="ReferenceSequence/RS203"></f:reference>
+				<f:display value="NC_000011.10"></f:display>
+			</referenceSequence>
+			<start value="6608803"></start>
+			<end value="6608804"></end>
+			<refAllele value="A"></refAllele>
+		</intronOffsetGenomicCoordinate>
+	</referenceCoordinate>
+
+</SimpleAllele>

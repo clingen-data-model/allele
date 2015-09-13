@@ -7,14 +7,14 @@
   "active": "true",
   "canonicalAlleleType": "nucleotide",
   "complexity": "simple",
-  "relatedAlleleInstance":
+  "relatedSimpleAllele":
   [
     {
-      "@type": "RelatedAlleleInstance",
-      "alleleInstance":
+      "@type": "RelatedSimpleAllele",
+      "simpleAllele":
       {
         "@type": "Reference",
-        "reference": "../../AlleleInstance/AI302",
+        "reference": "../../SimpleAllele/SA302",
         "display": "NM_001014794.2(ILK):c.448+13A>G"
       },
 
@@ -22,31 +22,31 @@
     },
 
     {
-      "@type": "RelatedAlleleInstance",
-      "alleleInstance":
+      "@type": "RelatedSimpleAllele",
+      "simpleAllele":
       {
         "@type": "Reference",
-        "reference": "../../AlleleInstance/AI301",
+        "reference": "../../SimpleAllele/SA301",
         "display": "NM_001014794.2(ILK):c.448+14A>G"
       }
     },
 
     {
-      "@type": "RelatedAlleleInstance",
-      "alleleInstance":
+      "@type": "RelatedSimpleAllele",
+      "simpleAllele":
       {
         "@type": "Reference",
-        "reference": "../../AlleleInstance/AI303",
+        "reference": "../../SimpleAllele/SA303",
         "display": "NC_000011.9:g.6630034A>G (GRCh37)"
       }
     },
 
     {
-      "@type": "RelatedAlleleInstance",
-      "alleleInstance":
+      "@type": "RelatedSimpleAllele",
+      "simpleAllele":
       {
         "@type": "Reference",
-        "reference": "../../AlleleInstance/AI304",
+        "reference": "../../SimpleAllele/SA304",
         "display": "NC_000011.10:g.6608803A>G (GRCh38)"
       }
     }

@@ -1,0 +1,43 @@
+{
+  "id": "SA316",
+  "canonicalAllele":
+  {
+    "reference": "CanonicalAllele/CA402"
+  },
+
+  "simpleAlleleType": "genomic",
+  "allele": "G",
+  "primaryNucleotideChangeType":
+  {
+    "coding":
+    [
+      {
+        "system": "http://www.sequenceontology.org/",
+        "code": "SO:1000002",
+        "display": "substitution",
+        "primary": "true"
+      }
+    ]
+  },
+
+  "alleleName":
+  [
+    {
+      "nameType": "hgvs-genomic",
+      "name": "NG_005905.2:g.166886T>G"
+    }
+  ],
+
+  "referenceCoordinate":
+  {
+    "referenceSequence":
+    {
+      "reference": "ReferenceSequence/RS212",
+      "display": "NG_005905.2"
+    },
+
+    "start": "166885",
+    "end": "166886",
+    "refAllele": "T"
+  }
+}

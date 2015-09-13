@@ -1,6 +1,6 @@
 ---
 title: primary-transcript-region-type
-description: This value set includes only the transcript associated regions that is associated with a transcript allele instance reference coordinate. 
+description: This value set includes only the transcript associated regions that is associated with a transcript simple allele reference coordinate. 
 source: Sequence Ontology
 id: 20
 usage: core
@@ -31,8 +31,8 @@ Annotations done using the primaryTranscriptRegionType attribute are restricted 
 
 This value set is used in the following places:
 
-* [AlleleInstance.ReferenceCoordinate.primaryTranscriptRegionType (Resource)](/allele/resource/allele_instance)
-* [TranscriptReferenceCoordinate.primaryTranscriptRegionType (Conceptual)](/allele/conceptual/allele_instance/transcript_reference_coordinate.html)
+* [SimpleAllele.ReferenceCoordinate.primaryTranscriptRegionType (Resource)](/allele/resource/simple_allele)
+* [TranscriptReferenceCoordinate.primaryTranscriptRegionType (Conceptual)](/allele/conceptual/simple_allele/transcript_reference_coordinate.html)
 
 Examples:
 ---------
