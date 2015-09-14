@@ -1,15 +1,15 @@
 {
   "id": "AI311",
-  "canonicalAllele":
+  "canonicalAllele": 
   {
     "reference": "CanonicalAllele/CA402"
   },
 
   "alleleInstanceType": "transcript",
   "allele": "G",
-  "primaryNucleotideChangeType":
+  "primaryNucleotideChangeType": 
   {
-    "coding":
+    "coding": 
     [
       {
         "system": "http://www.sequenceontology.org/",
@@ -20,7 +20,7 @@
     ]
   },
 
-  "alleleName":
+  "alleleName": 
   [
     {
       "nameType": "hgvs-rna",
@@ -28,9 +28,9 @@
     }
   ],
 
-  "referenceCoordinate":
+  "referenceCoordinate": 
   {
-    "identifier":
+    "identifier": 
     [
       {
         "system": "http://www.ncbi.nlm.nih.gov/snp",
@@ -38,18 +38,26 @@
       }
     ],
 
-    "referenceSequence":
+    "referenceSequence": 
     {
       "reference": "ReferenceSequence/RS215",
       "display": "U14680.1"
     },
 
-    "start": "5415",
-    "end": "5416",
-    "refAllele": "T",
-    "primaryTranscriptRegionType":
+    "start": 
     {
-      "coding":
+      "index": "5415"
+    },
+
+    "end": 
+    {
+      "index": "5416"
+    },
+
+    "refAllele": "T",
+    "primaryTranscriptRegionType": 
+    {
+      "coding": 
       [
         {
           "system": "http://www.sequenceontology.org/",

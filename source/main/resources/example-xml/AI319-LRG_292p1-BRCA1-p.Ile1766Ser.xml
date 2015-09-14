@@ -36,8 +36,12 @@
 			<f:reference value="ReferenceSequence/RS216"></f:reference>
 			<f:display value="LRG_292p1"></f:display>
 		</referenceSequence>
-		<start value="1765"></start>
-		<end value="1766"></end>
+		<start>
+			<index value="1765"></index>
+		</start>
+		<end>
+			<index value="1766"></index>
+		</end>s
 		<refAllele value="Ile"></refAllele>
 	</referenceCoordinate>
 	<related>

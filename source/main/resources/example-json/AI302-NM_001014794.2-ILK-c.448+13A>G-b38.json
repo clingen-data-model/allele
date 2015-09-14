@@ -1,16 +1,15 @@
 {
   "id": "AI302",
-
-  "canonicalAllele":
+  "canonicalAllele": 
   {
     "reference": "CanonicalAllele/CA401"
   },
 
   "alleleInstanceType": "transcript",
   "allele": "G",
-  "primaryNucleotideChangeType":
+  "primaryNucleotideChangeType": 
   {
-    "coding":
+    "coding": 
     [
       {
         "system": "http://www.sequenceontology.org/",
@@ -21,7 +20,7 @@
     ]
   },
 
-  "alleleName":
+  "alleleName": 
   [
     {
       "nameType": "hgvs-cdna",
@@ -30,20 +29,46 @@
     }
   ],
 
-  "referenceCoordinate":
+  "referenceCoordinate": 
   {
-    "referenceSequence":
+    "referenceSequence": 
     {
       "reference": "/ReferenceSequence/RS201",
       "display": "NM_001014794.2"
     },
 
-    "start": "608",
-    "end": "608",
-    "refAllele": "A",
-    "primaryTranscriptRegionType":
+    "start": 
     {
-      "coding":
+      "index": "608",
+      "externalOffsetLength": "12",
+      "externalOffsetDirection": "+",
+      "externalGenomicReferenceSequence": 
+      {
+        "reference": "ReferenceSequence/RS203",
+        "display": "NC_000011.10"
+      },
+
+      "externalGenomicPositionIndex": "6608802"
+    },
+
+    "end": 
+    {
+      "index": "608",
+      "intronOffsetEnd": "13",
+      "intronOffsetDirection": "+",
+      "externalGenomicReferenceSequence": 
+      {
+        "reference": "ReferenceSequence/RS203",
+        "display": "NC_000011.10"
+      },
+
+      "externalGenomicPositionIndex": "6608803"
+    },
+
+    "refAllele": "A",
+    "primaryTranscriptRegionType": 
+    {
+      "coding": 
       [
         {
           "system": "http://www.sequenceontology.org/",
@@ -51,22 +76,6 @@
           "display": "intron"
         }
       ]
-    },
-
-    "intronOffsetStart": "12",
-    "intronOffsetEnd": "13",
-    "intronOffsetDirection" : "+",
-    "intronOffsetGenomicCoordinate":
-    {
-      "referenceSequence":
-      {
-        "reference": "ReferenceSequence/RS203",
-        "display": "NC_000011.10"
-      },
-
-      "start": "6608802",
-      "end": "6608803",
-      "refAllele": "A"
     }
   }
 }

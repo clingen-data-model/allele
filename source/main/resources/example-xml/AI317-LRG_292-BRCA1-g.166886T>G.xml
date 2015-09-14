@@ -33,8 +33,12 @@
 			<f:reference value="ReferenceSequence/RS218"></f:reference>
 			<f:display value="LRG_292"></f:display>
 		</referenceSequence>
-		<start value="166885" />
-		<end value="166886" />
+    <start>
+      <index value="166885"></index>
+    </start>
+    <end>
+      <index value="166886"></index>
+    </end>
 		<refAllele value="Ile"></refAllele>
 	</referenceCoordinate>
 

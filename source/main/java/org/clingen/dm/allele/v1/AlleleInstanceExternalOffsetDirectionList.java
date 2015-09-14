@@ -5,12 +5,12 @@ import javax.xml.bind.annotation.XmlEnumValue;
 import javax.xml.bind.annotation.XmlType;
 
 /**
- * <p>Java class for AlleleInstanceIntronOffsetDirection-list.
+ * <p>Java class for AlleleInstanceExternalOffsetDirection-list.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="AlleleInstanceIntronOffsetDirection-list">
+ * &lt;simpleType name="AlleleInstanceExternalOffsetDirection-list">
  *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
  *     &lt;enumeration value="+"/>
  *     &lt;enumeration value="-"/>
@@ -19,9 +19,9 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  */
-@XmlType (name = "AlleleInstanceIntronOffsetDirection-list")
+@XmlType (name = "AlleleInstanceExternalOffsetDirection-list")
 @XmlEnum
-public enum AlleleInstanceIntronOffsetDirectionList
+public enum AlleleInstanceExternalOffsetDirectionList
 {
 
 	/**
@@ -40,7 +40,7 @@ public enum AlleleInstanceIntronOffsetDirectionList
 
 	private final java.lang.String value;
 
-	AlleleInstanceIntronOffsetDirectionList(java.lang.String v)
+	AlleleInstanceExternalOffsetDirectionList(java.lang.String v)
 	{
 		value = v;
 	}
@@ -50,9 +50,9 @@ public enum AlleleInstanceIntronOffsetDirectionList
 		return value;
 	}
 
-	public static AlleleInstanceIntronOffsetDirectionList fromValue(java.lang.String v)
+	public static AlleleInstanceExternalOffsetDirectionList fromValue(java.lang.String v)
 	{
-		for (AlleleInstanceIntronOffsetDirectionList c : AlleleInstanceIntronOffsetDirectionList.values())
+		for (AlleleInstanceExternalOffsetDirectionList c : AlleleInstanceExternalOffsetDirectionList.values())
 		{
 			if (c.value.equals(v))
 			{

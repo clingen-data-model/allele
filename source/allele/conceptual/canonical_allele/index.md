@@ -25,14 +25,14 @@ If the two systems share a canonicalizer, then the id of the `CanonicalAllele` M
 
 Specific Allele representations will be grouped together under a `CanonicalAllele` if they represent identical entities.  In particular, Alleles based on DNA (genomic and transcript) can be grouped together under a `CanonicalAllele`, and Alleles based on amino acids may be grouped together under a different `CanonicalAllele`, but DNA and Amino Acid alleles may not be grouped together under a `CanonicalAllele`.  Consider a missense change to a protein that can be induced by two different genomic variations.  If a `CanonicalAllele` included both DNA and Protein Alleles, then the two different genomic variations would be considered identical through their identity with the same protein allele.  For this reason, `CanonicalAllele` does not aggregate protein with DNA Alleles.
 
-`CanoncialAllele` is an abstract class; no instances of `CanonicalAllele` itself may be created.  Subclasses of `CanonicalAllele` are either Simple or Complex.  `AlleleInstance`s are alleles that can be described by denoting a single contiguous region of a `ReferenceSequence`, and a sequence that will occur in place of that region.  Note that the replacement sequence may be the same as the original sequence.  A `ComplexAllele` is a set of `AlleleInstance`s that all occur on the same copy of the chromosome, i.e. a Haplotype.
+`CanoncialAllele` is an abstract class; no instances of `CanonicalAllele` itself may be created.  Subclasses of `CanonicalAllele` are either Simple or Complex.  `AlleleInstances` are alleles that can be described by denoting a single contiguous region of a `ReferenceSequence`, and a sequence that will occur in place of that region.  Note that the replacement sequence may be the same as the original sequence.  A `ComplexAllele` is a set of `AlleleInstance`s that all occur on the same copy of the chromosome, i.e. a Haplotype.
 
 A validator MUST ensure that this type safety is preserved
 
 Exclusions and Limitations
 --------------------------
 
-The current Allele model does not specifically model the provenance of how canonicalization occured, so if canonicalizers change over time (say due to the mapping issue below) or if multiple canonicalizers are available, this model does not provide a way for implementors to track this information.
+The current Allele model does not specifically model the provenance of how canonicalization occured, so if canonicalizers change over time (say due to the mapping issue below) or if multiple canonicalizers are available, this model does not provide a way for implementers to track this information.
 
 Implicit in the idea that a TranscriptAlleles and GenomicAlleles can be aggregated under a `CanonicalAllele` is the idea that the alignment from TranscriptReferenceSequence to a GenomicReferenceSequence is known, and stable.   No information about these alignments is included in the model, however.   This potentially allows the following situation:  Based on one set of alignments, GenomeAllele A is aggregated with ReferenceAllele B.  Suppose that with a different set of alignments, ReferenceAlleleB is now aggregated with GenomeAllele C.  This may lead to the incorrect aggregation of GenomeAlleles A and C.  It is the responsibility of the canonicalization service to guard against this.
 

@@ -1,15 +1,15 @@
 {
   "id": "AI310",
-  "canonicalAllele":
+  "canonicalAllele": 
   {
     "reference": "CanonicalAllele/CA402"
   },
 
   "alleleInstanceType": "transcript",
   "allele": "G",
-  "primaryNucleotideChangeType":
+  "primaryNucleotideChangeType": 
   {
-    "coding":
+    "coding": 
     [
       {
         "system": "http://www.sequenceontology.org/",
@@ -20,7 +20,7 @@
     ]
   },
 
-  "alleleName":
+  "alleleName": 
   [
     {
       "nameType": "hgvs-cdna",
@@ -34,9 +34,9 @@
     }
   ],
 
-  "referenceCoordinate":
+  "referenceCoordinate": 
   {
-    "identifier":
+    "identifier": 
     [
       {
         "system": "http://www.ncbi.nlm.nih.gov/snp",
@@ -44,18 +44,26 @@
       }
     ],
 
-    "referenceSequence":
+    "referenceSequence": 
     {
       "reference": "ReferenceSequence/RS213",
       "display": "NM_001014794.2"
     },
 
-    "start": "5528",
-    "end": "5529",
-    "refAllele": "T",
-    "primaryTranscriptRegionType":
+    "start": 
     {
-      "coding":
+      "index": "5528"
+    },
+
+    "end": 
+    {
+      "index": "5529"
+    },
+
+    "refAllele": "T",
+    "primaryTranscriptRegionType": 
+    {
+      "coding": 
       [
         {
           "system": "http://www.sequenceontology.org/",
@@ -66,11 +74,11 @@
     }
   },
 
-  "related":
+  "related": 
   [
     {
       "relatedType": "amino-acid-effect",
-      "target":
+      "target": 
       {
         "reference": "AlleleInstance/AI312",
         "display": "NP_009225.1:p.Ile1766Ser"

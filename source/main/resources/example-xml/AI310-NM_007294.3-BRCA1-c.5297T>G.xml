@@ -34,8 +34,12 @@
 			<f:reference value="ReferenceSequence/RS213"></f:reference>
 			<f:display value="NM_001014794.2"></f:display>
 		</referenceSequence>
-		<start value="5529"></start>
-		<end value="5530"></end>
+		<start>
+			<index value="5529"></index>
+		</start>
+		<end>
+			<index value="5530"></index>
+		</end>
 		<refAllele value="T"></refAllele>
 		<primaryTranscriptRegionType>
 			<f:coding>

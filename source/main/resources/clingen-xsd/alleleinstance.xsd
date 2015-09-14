@@ -78,7 +78,8 @@
 		<xs:complexContent>
 			<xs:extension base="f:Element">
 				<xs:sequence />
-				<xs:attribute name="value" type="AlleleInstanceRelationshipType-list" />
+				<xs:attribute name="value"
+					type="AlleleInstanceRelationshipType-list" />
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
@@ -114,32 +115,44 @@
 					<xs:element name="identifier" type="f:Identifier"
 						minOccurs="0" maxOccurs="unbounded" />
 					<xs:element name="referenceSequence" type="f:Reference" />
-					<xs:element name="start" type="f:integer" minOccurs="0" />
-					<xs:element name="end" type="f:integer" minOccurs="0" />
+					<xs:element name="start"
+						type="AlleleInstance.ReferenceCoordinate.Position" />
+					<xs:element name="end"
+						type="AlleleInstance.ReferenceCoordinate.Position" />
 					<xs:element name="refAllele" type="f:string" minOccurs="0" />
 					<xs:element name="primaryTranscriptRegionType" type="f:CodeableConcept"
 						minOccurs="0" />
 					<xs:element name="ancillaryTranscriptRegionType" type="f:CodeableConcept"
 						minOccurs="0" maxOccurs="unbounded" />
-					<xs:element name="intronOffsetStart" type="f:integer"
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:complexType name="AlleleInstance.ReferenceCoordinate.Position">
+		<xs:complexContent>
+			<xs:extension base="f:BackboneElement">
+				<xs:sequence>
+					<xs:element name="index" type="f:integer" />
+					<xs:element name="externalOffsetLength" type="f:integer"
 						minOccurs="0" />
-					<xs:element name="intronOffsetEnd" type="f:integer"
+					<xs:element name="externalOffsetDirection" type="AlleleInstanceExternalOffsetDirection"
 						minOccurs="0" />
-					<xs:element name="intronOffsetDirection" type="AlleleInstanceIntronOffsetDirection"
-						minOccurs="0" />
-					<xs:element name="intronOffsetGenomicCoordinate" type="AlleleInstance.ReferenceCoordinate"
+					<xs:element name="externalGenomicReferenceSequence"
+						type="f:Reference" minOccurs="0" />
+					<xs:element name="externalGenomicPositionIndex" type="f:integer"
 						minOccurs="0" />
 				</xs:sequence>
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
 
-	<xs:complexType name="AlleleInstanceIntronOffsetDirection">
+	<xs:complexType name="AlleleInstanceExternalOffsetDirection">
 		<xs:complexContent>
 			<xs:extension base="f:Element">
 				<xs:sequence />
 				<xs:attribute name="value"
-					type="AlleleInstanceIntronOffsetDirection-list" />
+					type="AlleleInstanceExternalOffsetDirection-list" />
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
@@ -165,7 +178,7 @@
 		</xs:restriction>
 	</xs:simpleType>
 
-	<xs:simpleType name="AlleleInstanceIntronOffsetDirection-list">
+	<xs:simpleType name="AlleleInstanceExternalOffsetDirection-list">
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="+" />
 			<xs:enumeration value="-" />

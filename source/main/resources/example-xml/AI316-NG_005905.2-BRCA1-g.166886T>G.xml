@@ -29,8 +29,12 @@
 			<f:reference value="ReferenceSequence/RS212"></f:reference>
 			<f:display value="NG_005905.2"></f:display>
 		</referenceSequence>
-		<start value="166885"></start>
-		<end value="166886"></end>
+		<start>
+			<index value="166885"></index>
+		</start>
+		<end>
+			<index value="166886"></index>
+		</end>
 		<refAllele value="T"></refAllele>
 	</referenceCoordinate>
 
