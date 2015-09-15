@@ -24,22 +24,22 @@
       ><path d="M0 0 L390 0 L390 29.1667 L0 29.1667 L0 0 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath7"
-      ><path d="M-10.4 -10.4 L266.6 -10.4 L266.6 70.6 L-10.4 70.6 L-10.4 -10.4 Z"
+      ><path d="M-10.4 -10.4 L278.6 -10.4 L278.6 70.6 L-10.4 70.6 L-10.4 -10.4 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath8"
-      ><path d="M-8.6667 -8.6667 L222.1667 -8.6667 L222.1667 58.8333 L-8.6667 58.8333 L-8.6667 -8.6667 Z"
+      ><path d="M-8.6667 -8.6667 L232.1667 -8.6667 L232.1667 58.8333 L-8.6667 58.8333 L-8.6667 -8.6667 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath9"
-      ><path d="M-0 -0 L-0 44 L257 44 L257 -0 Z"
+      ><path d="M-0 -0 L-0 44 L269 44 L269 -0 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath10"
-      ><path d="M-0 -0 L-0 36.6667 L214.1667 36.6667 L214.1667 -0 Z"
+      ><path d="M-0 -0 L-0 36.6667 L224.1667 36.6667 L224.1667 -0 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath11"
-      ><path d="M-0 -0 L257 -0 L257 17 L-0 17 L-0 -0 Z"
+      ><path d="M-0 -0 L269 -0 L269 17 L-0 17 L-0 -0 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath12"
-      ><path d="M-0 -0 L214.1667 -0 L214.1667 14.1667 L-0 14.1667 L-0 -0 Z"
+      ><path d="M-0 -0 L224.1667 -0 L224.1667 14.1667 L-0 14.1667 L-0 -0 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath13"
       ><path d="M-10.4 -10.4 L477.6 -10.4 L477.6 89.6 L-10.4 89.6 L-10.4 -10.4 Z"
@@ -96,7 +96,7 @@
       ><path d="M-2 -2 L242 -2 L242 444 L-2 444 L-2 -2 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath31"
-      ><path d="M-2 -2 L242 -2 L242 325 L-2 325 L-2 -2 Z"
+      ><path d="M-2 -2 L102 -2 L102 185 L-2 185 L-2 -2 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath32"
       ><path d="M-2 -2 L351 -2 L351 345 L-2 345 L-2 -2 Z"
@@ -138,24 +138,24 @@
       ><text x="151" xml:space="preserve" y="25" font-weight="bold" clip-path="url(#clipPath6)" stroke="none"
       >CanonicalAllele</text
     ></g
-    ><g font-size="11" transform="translate(231.4,283.4) scale(1.2,1.2)" fill-opacity="1" fill="rgb(122,207,245)" text-rendering="geometricPrecision" font-family="sans-serif" stroke="rgb(122,207,245)" font-weight="bold" stroke-opacity="1"
-    ><rect x="0" width="214" height="50" y="0" clip-path="url(#clipPath8)" stroke="none"
+    ><g font-size="11" transform="translate(219.4,283.4) scale(1.2,1.2)" fill-opacity="1" fill="rgb(122,207,245)" text-rendering="geometricPrecision" font-family="sans-serif" stroke="rgb(122,207,245)" font-weight="bold" stroke-opacity="1"
+    ><rect x="0" width="224" height="50" y="0" clip-path="url(#clipPath8)" stroke="none"
     /></g
-    ><g font-size="11" stroke-linecap="butt" transform="translate(231.4,283.4) scale(1.2,1.2)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" font-family="sans-serif" stroke-linejoin="round" stroke="black" font-weight="bold" stroke-opacity="1" stroke-miterlimit="0"
-    ><rect fill="none" x="0" width="214" height="50" y="0" clip-path="url(#clipPath8)"
-      /><line y2="14.1667" fill="none" x1="0" clip-path="url(#clipPath8)" x2="214" y1="14.1667"
+    ><g font-size="11" stroke-linecap="butt" transform="translate(219.4,283.4) scale(1.2,1.2)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" font-family="sans-serif" stroke-linejoin="round" stroke="black" font-weight="bold" stroke-opacity="1" stroke-miterlimit="0"
+    ><rect fill="none" x="0" width="224" height="50" y="0" clip-path="url(#clipPath8)"
+      /><line y2="14.1667" fill="none" x1="0" clip-path="url(#clipPath8)" x2="224" y1="14.1667"
     /></g
-    ><g font-size="11" transform="matrix(1.2,0,0,1.2,231.4,300.4)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" font-family="sans-serif" stroke="black" stroke-opacity="1"
+    ><g font-size="11" transform="matrix(1.2,0,0,1.2,219.4,300.4)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" font-family="sans-serif" stroke="black" stroke-opacity="1"
     ><text x="2" xml:space="preserve" y="13" clip-path="url(#clipPath10)" stroke="none"
-      > alleleInstance : AlleleInstance [1]</text
+      > contextualAllele : ContextualAllele [1]</text
     ></g
-    ><g font-size="11" transform="matrix(1.2,0,0,1.2,231.4,300.4)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" font-family="sans-serif" stroke="black" stroke-opacity="1"
+    ><g font-size="11" transform="matrix(1.2,0,0,1.2,219.4,300.4)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" font-family="sans-serif" stroke="black" stroke-opacity="1"
     ><text x="2" xml:space="preserve" y="27" clip-path="url(#clipPath10)" stroke="none"
       > preferred : boolean [0..1]</text
     ></g
-    ><g font-size="11" transform="translate(231.4,283.4) scale(1.2,1.2)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" font-family="sans-serif" stroke="black" font-weight="bold" stroke-opacity="1"
-    ><text x="46" xml:space="preserve" y="11" clip-path="url(#clipPath12)" stroke="none"
-      >RelatedAlleleInstance</text
+    ><g font-size="11" transform="translate(219.4,283.4) scale(1.2,1.2)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" font-family="sans-serif" stroke="black" font-weight="bold" stroke-opacity="1"
+    ><text x="43" xml:space="preserve" y="11" clip-path="url(#clipPath12)" stroke="none"
+      >RelatedContextualAllele</text
     ></g
     ><g font-size="11" transform="translate(20.4,402.4) scale(1.2,1.2)" fill-opacity="1" fill="rgb(122,207,245)" text-rendering="geometricPrecision" font-family="sans-serif" stroke="rgb(122,207,245)" font-weight="bold" stroke-opacity="1"
     ><rect x="0" width="390" height="66" y="0" clip-path="url(#clipPath14)" stroke="none"
@@ -178,7 +178,7 @@
     ><text x="158" xml:space="preserve" y="11" clip-path="url(#clipPath18)" stroke="none"
       >Replacement</text
     ></g
-    ><g font-size="11" transform="translate(252.4,259.4) scale(1.2,1.2)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" font-family="sans-serif" stroke="black" stroke-opacity="1"
+    ><g font-size="11" transform="translate(240.4,260.4) scale(1.2,1.2)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" font-family="sans-serif" stroke="black" stroke-opacity="1"
     ><text x="11" xml:space="preserve" y="11" clip-path="url(#clipPath21)" stroke="none"
       >1..*</text
     ></g
@@ -207,12 +207,12 @@
     ><text x="11" xml:space="preserve" y="11" clip-path="url(#clipPath23)" stroke="none"
       >0..*</text
     ></g
-    ><g font-size="11" stroke-linecap="butt" transform="translate(132,80)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" font-family="sans-serif" stroke-linejoin="round" stroke="black" stroke-width="1.2" stroke-opacity="1" stroke-miterlimit="14.4"
-    ><line y2="203" fill="none" x1="120" clip-path="url(#clipPath31)" x2="120" y1="148"
-      /><polygon points=" 120 120 112 134 120 148 127 134" clip-path="url(#clipPath31)" stroke="none"
-      /><polygon fill="none" points=" 120 120 112 134 120 148 127 134" clip-path="url(#clipPath31)"
+    ><g font-size="11" stroke-linecap="butt" transform="translate(190,150)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" font-family="sans-serif" stroke-linejoin="round" stroke="black" stroke-width="1.2" stroke-opacity="1" stroke-miterlimit="14.4"
+    ><line y2="133" fill="none" x1="50" clip-path="url(#clipPath31)" x2="50" y1="78"
+      /><polygon points=" 50 50 42 64 50 78 57 64" clip-path="url(#clipPath31)" stroke="none"
+      /><polygon fill="none" points=" 50 50 42 64 50 78 57 64" clip-path="url(#clipPath31)"
     /></g
-    ><g font-size="11" transform="translate(252.4,259.4) scale(1.2,1.2)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" font-family="sans-serif" stroke="black" stroke-opacity="1"
+    ><g font-size="11" transform="translate(240.4,260.4) scale(1.2,1.2)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" font-family="sans-serif" stroke="black" stroke-opacity="1"
     ><text x="11" xml:space="preserve" y="11" clip-path="url(#clipPath21)" stroke="none"
       >1..*</text
     ></g
