@@ -4,14 +4,14 @@
 
 	<xs:import namespace="http://hl7.org/fhir" schemaLocation="../fhir-xsd/fhir-base.xsd" />
 
-	<xs:element name="AlleleInstance" type="AlleleInstance">
+	<xs:element name="ContextualAllele" type="ContextualAllele">
 		<xs:annotation>
 			<xs:documentation>Any allele based on a reference coordinate.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 
-	<xs:complexType name="AlleleInstance">
+	<xs:complexType name="ContextualAllele">
 		<xs:complexContent>
 			<xs:extension base="f:Resource">
 				<xs:sequence>
@@ -19,7 +19,7 @@
 						minOccurs="0" maxOccurs="unbounded" />
 					<xs:element name="canonicalAllele" type="f:Reference"
 						minOccurs="0" />
-					<xs:element name="alleleInstanceType" type="AlleleInstanceType"
+					<xs:element name="contextualAlleleType" type="ContextualAlleleType"
 						minOccurs="0" />
 					<xs:element name="allele" type="f:string" minOccurs="0" />
 					<xs:element name="primaryNucleotideChangeType" type="f:CodeableConcept"
@@ -30,11 +30,11 @@
 						minOccurs="0" />
 					<xs:element name="ancillaryAminoAcidChangeType" type="f:CodeableConcept"
 						minOccurs="0" maxOccurs="unbounded" />
-					<xs:element name="alleleName" type="AlleleInstance.AlleleName"
+					<xs:element name="alleleName" type="ContextualAllele.AlleleName"
 						minOccurs="0" maxOccurs="unbounded" />
-					<xs:element name="referenceCoordinate" type="AlleleInstance.ReferenceCoordinate"
+					<xs:element name="referenceCoordinate" type="ContextualAllele.ReferenceCoordinate"
 						minOccurs="0" />
-					<xs:element name="related" type="AlleleInstance.Related"
+					<xs:element name="related" type="ContextualAllele.Related"
 						minOccurs="0" maxOccurs="unbounded">
 						<xs:annotation>
 							<xs:documentation>Related alleles.</xs:documentation>
@@ -45,16 +45,16 @@
 		</xs:complexContent>
 	</xs:complexType>
 
-	<xs:complexType name="AlleleInstanceType">
+	<xs:complexType name="ContextualAlleleType">
 		<xs:complexContent>
 			<xs:extension base="f:Element">
 				<xs:sequence />
-				<xs:attribute name="value" type="AlleleInstanceType-list" />
+				<xs:attribute name="value" type="ContextualAlleleType-list" />
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
 
-	<xs:simpleType name="AlleleInstanceType-list">
+	<xs:simpleType name="ContextualAlleleType-list">
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="genomic" />
 			<xs:enumeration value="transcript" />
@@ -62,11 +62,11 @@
 		</xs:restriction>
 	</xs:simpleType>
 
-	<xs:complexType name="AlleleInstance.Related">
+	<xs:complexType name="ContextualAllele.Related">
 		<xs:complexContent>
 			<xs:extension base="f:BackboneElement">
 				<xs:sequence>
-					<xs:element name="relatedType" type="AlleleInstanceRelationshipType"
+					<xs:element name="relatedType" type="ContextualAlleleRelationshipType"
 						minOccurs="0" />
 					<xs:element name="target" type="f:Reference" />
 				</xs:sequence>
@@ -74,21 +74,21 @@
 		</xs:complexContent>
 	</xs:complexType>
 
-	<xs:complexType name="AlleleInstanceRelationshipType">
+	<xs:complexType name="ContextualAlleleRelationshipType">
 		<xs:complexContent>
 			<xs:extension base="f:Element">
 				<xs:sequence />
 				<xs:attribute name="value"
-					type="AlleleInstanceRelationshipType-list" />
+					type="ContextualAlleleRelationshipType-list" />
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
 
-	<xs:complexType name="AlleleInstance.AlleleName">
+	<xs:complexType name="ContextualAllele.AlleleName">
 		<xs:complexContent>
 			<xs:extension base="f:BackboneElement">
 				<xs:sequence>
-					<xs:element name="nameType" type="AlleleInstanceNameType"
+					<xs:element name="nameType" type="ContextualAlleleNameType"
 						minOccurs="0" />
 					<xs:element name="name" type="f:string" />
 					<xs:element name="legacy" type="f:boolean" minOccurs="0" />
@@ -99,16 +99,16 @@
 		</xs:complexContent>
 	</xs:complexType>
 
-	<xs:complexType name="AlleleInstanceNameType">
+	<xs:complexType name="ContextualAlleleNameType">
 		<xs:complexContent>
 			<xs:extension base="f:Element">
 				<xs:sequence />
-				<xs:attribute name="value" type="AlleleInstanceNameType-list" />
+				<xs:attribute name="value" type="ContextualAlleleNameType-list" />
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
 
-	<xs:complexType name="AlleleInstance.ReferenceCoordinate">
+	<xs:complexType name="ContextualAllele.ReferenceCoordinate">
 		<xs:complexContent>
 			<xs:extension base="f:BackboneElement">
 				<xs:sequence>
@@ -116,9 +116,9 @@
 						minOccurs="0" maxOccurs="unbounded" />
 					<xs:element name="referenceSequence" type="f:Reference" />
 					<xs:element name="start"
-						type="AlleleInstance.ReferenceCoordinate.Position" />
+						type="ContextualAllele.ReferenceCoordinate.Position" />
 					<xs:element name="end"
-						type="AlleleInstance.ReferenceCoordinate.Position" />
+						type="ContextualAllele.ReferenceCoordinate.Position" />
 					<xs:element name="refAllele" type="f:string" minOccurs="0" />
 					<xs:element name="primaryTranscriptRegionType" type="f:CodeableConcept"
 						minOccurs="0" />
@@ -129,14 +129,14 @@
 		</xs:complexContent>
 	</xs:complexType>
 
-	<xs:complexType name="AlleleInstance.ReferenceCoordinate.Position">
+	<xs:complexType name="ContextualAllele.ReferenceCoordinate.Position">
 		<xs:complexContent>
 			<xs:extension base="f:BackboneElement">
 				<xs:sequence>
 					<xs:element name="index" type="f:integer" />
 					<xs:element name="externalOffsetLength" type="f:integer"
 						minOccurs="0" />
-					<xs:element name="externalOffsetDirection" type="AlleleInstanceExternalOffsetDirection"
+					<xs:element name="externalOffsetDirection" type="ContextualAlleleExternalOffsetDirection"
 						minOccurs="0" />
 					<xs:element name="externalGenomicReferenceSequence"
 						type="f:Reference" minOccurs="0" />
@@ -147,24 +147,24 @@
 		</xs:complexContent>
 	</xs:complexType>
 
-	<xs:complexType name="AlleleInstanceExternalOffsetDirection">
+	<xs:complexType name="ContextualAlleleExternalOffsetDirection">
 		<xs:complexContent>
 			<xs:extension base="f:Element">
 				<xs:sequence />
 				<xs:attribute name="value"
-					type="AlleleInstanceExternalOffsetDirection-list" />
+					type="ContextualAlleleExternalOffsetDirection-list" />
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
 
-	<xs:simpleType name="AlleleInstanceRelationshipType-list">
+	<xs:simpleType name="ContextualAlleleRelationshipType-list">
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="amino-acid-effect" />
 			<xs:enumeration value="transcript-allele-cause" />
 		</xs:restriction>
 	</xs:simpleType>
 
-	<xs:simpleType name="AlleleInstanceNameType-list">
+	<xs:simpleType name="ContextualAlleleNameType-list">
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="hgvs-genomic" />
 			<xs:enumeration value="hgvs-mito" />
@@ -178,7 +178,7 @@
 		</xs:restriction>
 	</xs:simpleType>
 
-	<xs:simpleType name="AlleleInstanceExternalOffsetDirection-list">
+	<xs:simpleType name="ContextualAlleleExternalOffsetDirection-list">
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="+" />
 			<xs:enumeration value="-" />
