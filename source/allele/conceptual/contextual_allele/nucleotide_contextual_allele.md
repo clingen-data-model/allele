@@ -11,7 +11,7 @@ Scope and Usage
 
 See also [ContextualAllele](contextual_allele.html)
 
-A variant allele representation on a specific nucleotide sequence.  This can represent an observation at a single GenomicAlleleInstance or a single TranscriptAlleleInstance.
+A variant allele representation on a specific nucleotide sequence.  This can represent an observation at a single GenomicContextualAllele or a single TranscriptContextualAllele.
 
 NucleotideContextualAllele is an abstract class, so any NucleotideContextualAllele must be either a GenomicContextualAllele or a TranscriptContextualAllele.
 
