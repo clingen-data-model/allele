@@ -1,21 +1,21 @@
 ---
-title: NucleotideAlleleInstance
+title: NucleotideContextualAllele
 layout: conceptual
 model: allele
-description: An AlleleInstance that uses a NucleotideAlleleInstance as its ReferenceSequence.
+description: A ContextualAllele that uses a NucleotideReferenceSequence as its ReferenceSequence.
 ---
 
 
 Scope and Usage
 ---------------
 
-See also [AlleleInstance](allele_instance.html)
+See also [ContextualAllele](contextual_allele.html)
 
-A variant allele representation at a specific nucleotide.  This can represent an observation at a single GenomicAlleleInstance or a single TranscriptAlleleInstance.
+A variant allele representation on a specific nucleotide sequence.  This can represent an observation at a single GenomicAlleleInstance or a single TranscriptAlleleInstance.
 
-NucleotideAlleleInstance is an abstract class, so any NucleotideAlleleInstance must be either a GenomicAlleleInstance or a TranscriptAlleleInstance.
+NucleotideContextualAllele is an abstract class, so any NucleotideContextualAllele must be either a GenomicContextualAllele or a TranscriptContextualAllele.
 
-The point of this class is to facilitate aggregation between GenomicAlleleInstance and TranscriptAlleleInstance at the CanonicalVariant level.
+The purpose of this class is to facilitate aggregation between GenomicContextualAllele and TranscriptContextualAllele at the CanonicalAllele level.
 
 Attributes
 --------------------
@@ -31,6 +31,6 @@ When describing observations a concise and interoperable method is required to r
 Exclusions and Limitations
 --------------------------
 
-Version 0.1 of the Data Model does not offer a direct relationship between records or annotations described at the NucleotideAlleleInstance level to AminoAcidAlleleInstance, however given correct reference, sequence and transcript information this can be computationally derived.
+Version 0.1 of the Data Model does not offer a direct relationship between records or annotations described at the NucleotideContextualAllele level to AminoAcidContextualAllele, however given correct reference, sequence and transcript information this can be computationally derived.
 
 
