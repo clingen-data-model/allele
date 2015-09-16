@@ -9,7 +9,7 @@ description: TranscriptReferenceCoordinate defines a location with respect to a 
 Scope and Usage
 ---------------
 
-[ReferenceCoordinate](reference_coordinate.html) represents a particular continguous location at which different alleles may be defined with [AlleleInstance](allele_instance.html).  TranscriptReferenceCoordinate is a [ReferenceCoordinate](reference_coordinate.html) where the underlying reference sequence is a [TranscriptReferenceSequence](../reference_sequence/transcript_reference_sequence.html).
+[ReferenceCoordinate](reference_coordinate.html) represents a particular continguous location at which different alleles may be defined with [ContextualAllele](contextual_allele.html).  TranscriptReferenceCoordinate is a [ReferenceCoordinate](reference_coordinate.html) where the underlying reference sequence is a [TranscriptReferenceSequence](../reference_sequence/transcript_reference_sequence.html).
 
 TranscriptReferenceCoordinates may refer to either exonic or intronic locations. Because exonic locations are in the [TranscriptReferenceSequence](../reference_sequence/transcript_reference_sequence.html), the coordinate may be defined as described in [ReferenceCoordinate](reference_coordinate.html).
 
@@ -17,7 +17,7 @@ However, intronic locations are not part of the [TranscriptReferenceSequence](..
 
 TranscriptReferenceCoordinate uses a similar system to refer to intronic positions.  Each TranscriptReferenceCoordinate may have one references to an [intronOffset](intron_offset.html) entity.  The intronOffset entity contains two integer attributes, which are the intronic offsets that are added to the start and end coordinates of the TranscriptReferenceCoordinate.   In addition, the IntronicCoordinate contains a reference to the particular [GenomicReferenceSequence](genomic_reference_sequence.html) where the transcript was mapped.
 
-If an allele occurs in an intron, the allele does not occur in the transcript, but in a genomic sequence; the relation to this sequence is managed by intronOffset.  Note that the transcript may be mapped to multiple genomic sequences.  Rather than allow a multiplicity of intronOffsets for a single TranscriptAlleleInstance, we allow only one.  Each mapping is represented by the creation of a new TranscriptAlleleInstance with that mapping via a single intronOffset.  These TranscriptAlleleInstances are then aggregated at the SimpleCanonicalAllele level.
+If an allele occurs in an intron, the allele does not occur in the transcript, but in a genomic sequence; the relation to this sequence is managed by intronOffset.  Note that the transcript may be mapped to multiple genomic sequences.  Rather than allow a multiplicity of intronOffsets for a single TranscriptContextualAllele, we allow only one.  Each mapping is represented by the creation of a new TranscriptContextualAllele with that mapping via a single intronOffset.  These TranscriptContextualAlleles are then aggregated at the SimpleCanonicalAllele level.
 
 Exclusions and Limitations
 --------------------------

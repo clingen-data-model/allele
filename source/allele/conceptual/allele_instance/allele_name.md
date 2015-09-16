@@ -2,7 +2,7 @@
 title: AlleleName
 layout: conceptual
 model: allele
-description: A human readable, non-canonical name for a CanonicalAllele or AlleleInstance.
+description: A human readable, non-canonical name for a CanonicalAllele or ContextualAllele.
 
 ---
 
