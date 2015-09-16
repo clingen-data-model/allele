@@ -1,6 +1,6 @@
 ---
-title: allele-instance-name-type
-description: Codes informing the type of AlleleInstance used.
+title: contextual-allele-name-type
+description: Codes informing the type of ContextualAllele used.
 source: Internal
 id: 4
 usage: core
@@ -13,18 +13,18 @@ This is a value set defined by the ClinGen Data Modeling WG (Allele Domain).
 __Summary__
 
 {:.table-condensed}
-| Code System URL:| http://clingen.org/model/allele/allele-instance-name-type |
-| Value Set URL:| http://clingen.org/model/allele/vs/allele-instance-name-type |
-| Definition: | Names used for allele-instance-name-type |
+| Code System URL:| http://clingen.org/model/allele/contextual-allele-name-type |
+| Value Set URL:| http://clingen.org/model/allele/vs/contextual-allele-name-type |
+| Definition: | Names used for contextual-allele-name-type |
 
 
 Formal value Set definition: [XML]() or [JSON]().
 
 The value set contains 2 concepts
 
-##AlleleInstanceNameType
+##ContextualAlleleNameType
 
-Common, standardized or historical name give to a allele instance.
+Common, standardized or historical name give to a contextual allele.
 
 {:.table .table-bordered .table-condensed}
 Display | Definition
