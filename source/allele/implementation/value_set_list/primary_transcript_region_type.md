@@ -32,7 +32,7 @@ Annotations done using the primaryTranscriptRegionType attribute are restricted 
 This value set is used in the following places:
 
 * [ContextualAllele.ReferenceCoordinate.primaryTranscriptRegionType (Resource)](/allele/resource/contextual_allele)
-* [TranscriptReferenceCoordinate.primaryTranscriptRegionType (Conceptual)](/allele/conceptual/allele_instance/transcript_reference_coordinate.html)
+* [TranscriptReferenceCoordinate.primaryTranscriptRegionType (Conceptual)](/allele/conceptual/contextual_allele/transcript_reference_coordinate.html)
 
 Examples:
 ---------
