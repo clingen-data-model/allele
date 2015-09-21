@@ -10,8 +10,10 @@ The Data Model working group is releasing the data model in stages, with some as
 
 It is recommended that you use this model as a guide if you are implementing projects that require structured allelic data within the context of the ClinGen project, as this will be the standard for projects across the consortium. Understand, however, that there will likely be a requirement to change aspects of your code to conform with the model as it evolves.
 
-[Development Version](http://datamodel.clinicalgenome.org/development)
+[Development](http://datamodel.clinicalgenome.org/development)
 -------------------
+
+This is the current working version of the DMWG. As this is a work in progress, errors and inconsistencies are likely to exist.
 
 #### Allele Model
 
