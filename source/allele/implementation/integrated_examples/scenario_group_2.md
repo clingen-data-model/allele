@@ -16,7 +16,7 @@ Often the reference allele is modified between genome builds, however occasional
 | GRCh37  	| 5  	| Chr11:6630029-6630033  	| c.448+9_c.448+13  	|
 | GRCh38  	| 4  	| Chr11:6608799-6608802  	| c.448+9_c.448+12  	|
 
-To describe the Canonical Allele of four C nucleotide repeats, the following allele instance expressions are valid:  
+To describe the Canonical Allele of four C nucleotide repeats, the following contextual allele expressions are valid:  
 
 Genomic Reference Contextual Alleles:    
   NC_000011.9:g.6630033delC (GRCh37)   
@@ -27,11 +27,11 @@ NM_004517.2:c.448+13delC
 NM_004517.2:c.448+12_c.488+13CA (?????) (no change)   
 (note that since mRNA references sequences do not include intronic nucleotides, this Canonical Allele can be represented as a deletion or no change on the same versioned transcript)
 
-The differences in repeat length will also affect the coordinates for surrounding alleles. For example, an A allele is the reference allele immediately downstream of the C repeats. However, depending on which genome build is used, any variant at this A allele will have different coordinate representations in a single mRNA transcript. For exmaple, if the A reference allele immediatedly downstream of the C repeats is substituted with a T (A>T), the following mRNA transcript allele instances are valid:  
+The differences in repeat length will also affect the coordinates for surrounding alleles. For example, an A allele is the reference allele immediately downstream of the C repeats. However, depending on which genome build is used, any variant at this A allele will have different coordinate representations in a single mRNA transcript. For exmaple, if the A reference allele immediatedly downstream of the C repeats is substituted with a T (A>T), the following mRNA transcript contextrual alleles  are valid:  
 NM_004517.2:c.448+14A>T (with respect to GRCh37)   
 NM_004517.2:c.448+13A>T (with respect to GRCh38)  
 
-While the allele positions within the mRNA reference changes, both allele instances are describing the same Canonical Allele.
+While the allele positions within the mRNA reference changes, both contextual alleles are describing the same Canonical Allele.
 
     
     (More explanation of the issue here)
@@ -56,7 +56,7 @@ Versions of genome builds may vary in which allele is called the reference allel
 | Chr10:112572458; GRCh37   	| G   	|
 | Chr10:110812700; GRCh38   	| C   	|
 
-Build GRCh37 references a minor allele (G) thus this position has been updated in GRCh38 to reference the major allele (C). The following allele instance expresssions all accurately describe the C allele at this position:
+Build GRCh37 references a minor allele (G) thus this position has been updated in GRCh38 to reference the major allele (C). The following contextual allele expresssions all accurately describe the C allele at this position:
 
 Genomic Reference Contextual Alleles:  
   NG_021177.1:g.173304G>C  

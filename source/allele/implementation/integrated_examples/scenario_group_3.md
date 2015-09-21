@@ -7,7 +7,7 @@ model: allele
 
 Discrepancies  in Indel Nomenclature
 ---
-Due to different nomenclature guidelines (left versus right justification), a deletion or insertion Canonical Allele may have multiple allele instance expressions on a single reference sequence.
+Due to different nomenclature guidelines (left versus right justification), a deletion or insertion Canonical Allele may have multiple contextual allele expressions on a single reference sequence.
 For example, the deltaF508 variant in CFTR is the most common CF-causing variant. This variant results in an inframe deletion of a phenylalanine (Phe/F) at position p.508. 
 
 | Reference   	| Coorindates   	| Deleted Nucleotides   	|
