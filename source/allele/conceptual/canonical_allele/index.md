@@ -11,7 +11,7 @@ related_page_url: /allele/resource/canonical_allele
 Scope and Usage
 ---------------
 
-Variation at a genetic locus can be described using a set of alleles that may occur, located at a particular position on a reference sequence (see e.g. AlleleInstance).  However, there may be multiple equivalent representations of a given allele. For instance, an allele may be described in the context of different versions of a reference sequence, or because the string-based representation of an allele is not unique due to sequence redundancy. A `CanonicalAllele` is a unique identifier, within a system, that can be associated with equivalent alleles.
+Variation at a genetic locus can be described using a set of alleles that may occur, located at a particular position on a reference sequence (see e.g. ContextualAllele).  However, there may be multiple equivalent representations of a given allele. For instance, an allele may be described in the context of different versions of a reference sequence, or because the string-based representation of an allele is not unique due to sequence redundancy. A `CanonicalAllele` is a unique identifier, within a system, that can be associated with equivalent alleles.
 
 A `CanonicalAllele` represents an aggregation of the many representations of the Allele entity into a single object with a stable identifier.  One example of such a stable identifier would be a dbSNP ID, plus a choice of an allele at that locus.  Another would be an integer key created by an implementor.
 
@@ -25,7 +25,7 @@ If the two systems share a canonicalizer, then the id of the `CanonicalAllele` M
 
 Specific Allele representations will be grouped together under a `CanonicalAllele` if they represent identical entities.  In particular, Alleles based on DNA (genomic and transcript) can be grouped together under a `CanonicalAllele`, and Alleles based on amino acids may be grouped together under a different `CanonicalAllele`, but DNA and Amino Acid alleles may not be grouped together under a `CanonicalAllele`.  Consider a missense change to a protein that can be induced by two different genomic variations.  If a `CanonicalAllele` included both DNA and Protein Alleles, then the two different genomic variations would be considered identical through their identity with the same protein allele.  For this reason, `CanonicalAllele` does not aggregate protein with DNA Alleles.
 
-`CanoncialAllele` is an abstract class; no instances of `CanonicalAllele` itself may be created.  Subclasses of `CanonicalAllele` are either Simple or Complex.  `AlleleInstances` are alleles that can be described by denoting a single contiguous region of a `ReferenceSequence`, and a sequence that will occur in place of that region.  Note that the replacement sequence may be the same as the original sequence.  A `ComplexAllele` is a set of `AlleleInstance`s that all occur on the same copy of the chromosome, i.e. a Haplotype.
+`CanoncialAllele` is an abstract class; no instances of `CanonicalAllele` itself may be created.  Subclasses of `CanonicalAllele` are either Simple or Complex.  ContextualAlleles are alleles that can be described by denoting a single contiguous region of a `ReferenceSequence`, and a sequence that will occur in place of that region.  Note that the replacement sequence may be the same as the original sequence.  A `ComplexAllele` is a set of `ContextualAllele`s that all occur on the same copy of the chromosome, i.e. a Haplotype.
 
 A validator MUST ensure that this type safety is preserved
 
@@ -41,7 +41,7 @@ Conceptual Model
 
 [![CanonicalAllele Conceptual Diagram](/images/CanonicalAlleleConceptual.svg){: .img-responsive}](/images/`CanonicalAllele`Conceptual.svg)
 
-Related Resources: [CanonicalAllele](/allele/resource/canonical_allele/index.html), [AlleleInstance](/allele/resource/allele_instance/index.html), [Provenance](/allele/resource/provenance/index.html)
+Related Resources: [CanonicalAllele](/allele/resource/canonical_allele/index.html), [ContextualAllele](/allele/resource/contextual_allele/index.html), [Provenance](/allele/resource/provenance/index.html)
 
 Attributes
 ----------

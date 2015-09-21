@@ -13,7 +13,7 @@ Scope and Usage
 
 All resources in a system have a provenance; each resource was created via some activity by one or more agents, potentially using other resources as the input to that activity.  Provenance resources record that information.
 
-In the context of the allele model, Provenance resources are attached to Allele Instances and Canonical Alleles.   The Provenance of a Allele Instance describes how how that Allele Instance came to be loaded into the implementing system.  The Provenance of a Canonical Allele provides information on the canonicalization process that aggregated the associated Allele Instances.
+In the context of the allele model, Provenance resources are attached to Contextual and Canonical Alleles.   The Provenance of a Contextual Allele describes how how that Contextual Allele came to be loaded into the implementing system.  The Provenance of a Canonical Allele provides information on the canonicalization process that aggregated the associated Contextual Alleles.
 
 Note that a Provenance resource may have multiple targets, implying that multiple alleles may share a Provenance resource.  For instance, if a script loads alleles into a system, that single activity may create multiple allele instances.  These alleles may then share a Provenance resource, or each may have its own Provenance, which contains the same information.    This choice is left to the discretion of the implementing system.
 
@@ -34,7 +34,7 @@ Defintions & Bindings
 
 {:.dl-horizontal .dl-definition}
 Definition
-: Resource representing the origin of a Allele Instance or Canonical Allele
+: Resource representing the origin of a Contextual Allele or Canonical Allele
 
 Control
 : 1..1
@@ -48,7 +48,7 @@ Definition
 : The set of resources that were created by the activities described in this Provenance resource.
 
 Type
-: CanonicalAllele or AlleleInstance
+: CanonicalAllele or ContextualAllele
 
 Control
 : 1..*
