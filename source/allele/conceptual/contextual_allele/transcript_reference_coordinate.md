@@ -15,9 +15,9 @@ TranscriptReferenceCoordinates may refer to either exonic or intronic locations.
 
 However, intronic locations are not part of the [TranscriptReferenceSequence](../reference_sequence/transcript_reference_sequence.html), and cannot be simply described using a start and end.  In HGVS, intronic variants are described in a transcript by using two integers.  The first is a location in the transcript, which is supposed to be the first or last base in an exon.  The second number is a coordinate into the intron from that location.  This assumes an alignment of this transcript to a particular [GenomicReferenceSequence](genomic_reference_sequence.html).  There may be multiple such alignments to multiple [GenomicReferenceSequences](genomic_reference_sequence.html), though this is not modeled in HGVS expressions.
 
-TranscriptReferenceCoordinate uses a similar system to refer to intronic positions.  Each TranscriptReferenceCoordinate may have one references to an [intronOffset](intron_offset.html) entity.  The intronOffset entity contains two integer attributes, which are the intronic offsets that are added to the start and end coordinates of the TranscriptReferenceCoordinate.   In addition, the IntronicCoordinate contains a reference to the particular [GenomicReferenceSequence](genomic_reference_sequence.html) where the transcript was mapped.
+TranscriptReferenceCoordinate uses a similar system to refer to intronic positions.  Each TranscriptReferenceCoordinate, like any ReferenceCoordinate, has two Position elements, one for each end of the coordinate.  Each of these Positions may be either an InternalPosition (for an exonic Position) or an ExternalPosition (for an intronicPosition).  An ExternalPosition entity contains two integer attributes, which are the position in the transcript of the intron/exon boundary (called the index), and the distance into the intron (the offsetDirection).   In addition, the ExternalPosition contains a reference to a [GenomicReferenceSequence](genomic_reference_sequence.html) where the transcript was mapped.
 
-If an allele occurs in an intron, the allele does not occur in the transcript, but in a genomic sequence; the relation to this sequence is managed by intronOffset.  Note that the transcript may be mapped to multiple genomic sequences.  Rather than allow a multiplicity of intronOffsets for a single TranscriptContextualAllele, we allow only one.  Each mapping is represented by the creation of a new TranscriptContextualAllele with that mapping via a single intronOffset.  These TranscriptContextualAlleles are then aggregated at the SimpleCanonicalAllele level.
+If an allele occurs in an intron, the allele does not occur in the transcript, but in a genomic sequence; the relation to this sequence is managed by ExternalPosition.  Note that the transcript may be mapped to multiple genomic sequences.  Rather than allow a multiplicity of intronOffsets for a single TranscriptContextualAllele, we allow only one.  Each mapping is represented by the creation of a new TranscriptContextualAllele with that mapping via a single intronOffset.  These TranscriptContextualAlleles are then aggregated at the SimpleCanonicalAllele level.
 
 Exclusions and Limitations
 --------------------------
@@ -38,9 +38,4 @@ When describing observations a concise and interoperable method is required to r
 Related Entities 
 ----------------
 
-{:.table}
-| Relationship Name | Entity Type | Cardinality |
-|-------------------|-------------|-------------|
-| intronOffset | [IntronOffset](intron_offset.html) | 0..* |
-
-intronOffset: These entities are used to represent coordinates that occur in intronic sequences.   See above for details.  Fully exonic coordinates will not have any intronOffset relationships.  An intron offset will have at least one, and may have more than one, representing mappings of the transcript to different [GenomicReferenceSequences](../reference_sequence/genomic_reference_sequence.html).
+The TranscriptReferenceCoordinate inherits both the start and end entities from ReferenceCoordinate(reference_coordinate.html).  However, unlike other ReferenceCoordinates, the start and end of a TranscriptReferenceCoordinate can be either an InternalPosition or an ExternalPosition.
