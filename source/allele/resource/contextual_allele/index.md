@@ -176,7 +176,7 @@ Control
 
 {:.dl-horizontal .dl-definition}
 Definition
-: The genetic loci of the variant.
+: The genetic loci of the allele.
 
 Control
 : 1
@@ -203,32 +203,6 @@ Definition
 
 Type
 : ReferenceSequence
-
-Control
-: 1
-
-{:.h4-definition}
-#### ContextualAllele.referenceCoordinate.start
-
-{:.dl-horizontal .dl-definition}
-Definition
-: The starting position of the reference coordinate. NOTE: The data model defines a [0-based coordinate numbering system](/allele/coordinate_numbering.html) as described above.
-
-Type
-: integer
-
-Control
-: 1
-
-{:.h4-definition}
-#### ContextualAllele.referenceCoordinate.end
-
-{:.dl-horizontal .dl-definition}
-Definition
-: The end position of the reference coordinate. Note that the data model defines a 0-based coordinate system as described above.
-
-Type
-: integer
 
 Control
 : 1
@@ -273,11 +247,62 @@ Control
 : 0..1
 
 {:.h4-definition}
-#### ContextualAllele.referenceCoordinate.intronOffsetStart
+#### ContextualAllele.referenceCoordinate.start
 
 {:.dl-horizontal .dl-definition}
 Definition
-: The start of the ReferenceCoordinate relative to the transcript coordinate. Required when the coordinate is described as an offset relative to an exonic transcript (should only apply to ReferenceCoordinates of type interior\_intron described relative to a ReferenceSequence of type transcript\_reference\_sequence).
+: The starting position of the reference coordinate. NOTE: The data model defines a [0-based coordinate numbering system](/allele/coordinate_numbering.html) as described above.
+
+Type
+: Position
+
+Control
+: 1
+
+{:.h4-definition}
+#### ContextualAllele.referenceCoordinate.end
+
+{:.dl-horizontal .dl-definition}
+Definition
+: The end position of the reference coordinate. Note that the data model defines a 0-based coordinate system as described above.
+
+Type
+: Position
+
+Control
+: 1
+
+
+
+{:.h4-definition}
+#### Position
+
+{:.dl-horizontal .dl-definition}
+Definition
+: Information needed to locate one end of a ReferenceCoordinate. 
+
+Control
+: 1..1
+
+{:.h4-definition}
+#### Position.index
+
+{:.dl-horizontal .dl-definition}
+Definition
+: A zero-based position within the ReferenceCoordinate
+
+Type
+: integer
+
+Control
+: 1..1
+
+{:.h4-definition}
+#### Position.externalOffsetLength
+
+{:.dl-horizontal .dl-definition}
+Definition
+: The zero-based position of an intronic location as counted from the index attribute.
 
 Type
 : integer
@@ -285,31 +310,47 @@ Type
 Control
 : 0..1
 
+
 {:.h4-definition}
-#### ContextualAllele.referenceCoordinate.intronOffsetEnd
+#### Position.externalOffsetDirection
 
 {:.dl-horizontal .dl-definition}
 Definition
-: The end of the ReferenceCoordinate relative to the transcript coordinate. Requirements are the same as for intronOffsetStart.
-
-Type
-: integer
-
-Control
-: 0..1
-
-{:.h4-definition}
-#### ContextualAllele.referenceCoordinate.intronOffsetDirection
-
-{:.dl-horizontal .dl-definition}
-Definition
-: The direction of the ReferenceCoordinate relative to the transcript coordinate. Requirements are the same as for intronOffsetStart.
+: The direction of the ReferenceCoordinate relative to the transcript coordinate. 
 
 Type
 : Code
 
 Control
 : 0..1
+
+{:.h4-definition}
+#### Position.externalGenomicReferenceSequence
+
+{:.dl-horizontal .dl-definition}
+Definition
+: For an intronic position in a ReferenceCoordinate defined on a transcript, the externalGenomicReferenceSequence is a genomic sequence to which the transcript is mapped.
+
+Type
+: GenomicReferenceSequence
+
+Control
+: 0..1
+
+{:.h4-definition}
+#### Position.externalGenomicPositionIndex
+
+{:.dl-horizontal .dl-definition}
+Definition
+: For an intronic position in a ReferenceCoordinate defined on a transcript, the corresponding position on the defined externalGenomicReferenceSequence.
+
+Type
+: integer
+
+Control
+: 0..1
+
+
 
 {:.h4-definition}
 ### ContextualAllele.alleleName
