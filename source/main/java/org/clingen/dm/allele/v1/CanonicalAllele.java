@@ -36,7 +36,7 @@ import org.hl7.fhir.String;
  *         &lt;element name="canonicalAlleleType" type="{http://org.clingen.dm.allele.v1}CanonicalAlleleType" minOccurs="1" maxOccurs="1"/>
  *         &lt;element name="complexity" type="{http://org.clingen.dm.allele.v1}CanonicalAlleleComplexity" minOccurs="1" maxOccurs="1"/>
  *         &lt;element name="replacement" type="{http://org.clingen.dm.allele.v1}CanonicalAllele.Replacement" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="relatedAlleleInstance" type="{http://org.clingen.dm.allele.v1}CanonicalAllele.RelatedAlleleInstance" maxOccurs="unbounded" minOccurs="1"/>
+ *         &lt;element name="relatedContextualAllele" type="{http://org.clingen.dm.allele.v1}CanonicalAllele.RelatedContextualAllele" maxOccurs="unbounded" minOccurs="1"/>
  *         &lt;element name="nested" type="{http://hl7.org/fhir}Reference" maxOccurs="unbounded" minOccurs="0"/>
  *         &lt;element name="composite" type="{http://hl7.org/fhir}Reference" maxOccurs="unbounded" minOccurs="0"/>
  *       &lt;/sequence>
@@ -50,7 +50,7 @@ import org.hl7.fhir.String;
 @XmlAccessorType (XmlAccessType.FIELD)
 @XmlType (name = "CanonicalAllele", propOrder = {"version", "identifier", "relatedIdentifier", "active",
 													"canonicalAlleleType", "complexity", "replacement",
-													"relatedAlleleInstance", "nested", "composite"})
+													"relatedContextualAllele", "nested", "composite"})
 public class CanonicalAllele extends Resource
 {
 
@@ -62,7 +62,7 @@ public class CanonicalAllele extends Resource
 	protected CanonicalAlleleType canonicalAlleleType;
 	protected CanonicalAlleleComplexity complexity;
 	protected List<CanonicalAlleleReplacement> replacement;
-	protected List<CanonicalAlleleRelatedAlleleInstance> relatedAlleleInstance;
+	protected List<CanonicalAlleleRelatedContextualAllele> relatedContextualAllele;
 	protected List<Reference> nested;
 	protected List<Reference> composite;
 
@@ -244,7 +244,7 @@ public class CanonicalAllele extends Resource
 	}
 
 	/**
-	 * Gets the value of the relatedAlleleInstance property.
+	 * Gets the value of the relatedContextualAllele property.
 	 * 
 	 * <p>
 	 * This accessor method returns a reference to the live list,
@@ -255,17 +255,17 @@ public class CanonicalAllele extends Resource
 	 * <p>
 	 * For example, to add a new item, do as follows:
 	 * <pre>
-	 *    getRelatedAlleleInstance().add(newItem);
+	 *    getRelatedContextualAllele().add(newItem);
 	 * </pre>
 	 * s
 	 * 
 	 * <p>
 	 * Objects of the following type(s) are allowed in the list
-	 * {@link CanonicalAlleleRelatedAlleleInstance }
+	 * {@link CanonicalAlleleRelatedContextualAllele }
 	 */
-	public List<CanonicalAlleleRelatedAlleleInstance> getRelatedAlleleInstance()
+	public List<CanonicalAlleleRelatedContextualAllele> getRelatedContextualAllele()
 	{
-		return relatedAlleleInstance;
+		return relatedContextualAllele;
 	}
 
 	/**
