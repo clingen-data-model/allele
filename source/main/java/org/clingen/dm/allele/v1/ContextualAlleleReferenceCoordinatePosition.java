@@ -108,7 +108,7 @@ public class ContextualAlleleReferenceCoordinatePosition extends BackboneElement
 	 *     {@link ContextualAlleleExternalOffsetDirection }
 	 *     
 	 */
-	public ContextualAlleleExternalOffsetDirection getIntronOffsetDirection()
+	public ContextualAlleleExternalOffsetDirection getExternalOffsetDirection()
 	{
 		return externalOffsetDirection;
 	}
@@ -121,7 +121,7 @@ public class ContextualAlleleReferenceCoordinatePosition extends BackboneElement
 	 *     {@link ContextualAlleleExternalOffsetDirection }
 	 *     
 	 */
-	public void setIntronOffsetDirection(ContextualAlleleExternalOffsetDirection value)
+	public void setExternalOffsetDirection(ContextualAlleleExternalOffsetDirection value)
 	{
 		this.externalOffsetDirection = value;
 	}
@@ -160,7 +160,7 @@ public class ContextualAlleleReferenceCoordinatePosition extends BackboneElement
 	 *     {@link Integer }
 	 *     
 	 */
-	public Integer getExternalGenomicPositionIndext()
+	public Integer getExternalGenomicPositionIndex()
 	{
 		return externalGenomicPositionIndex;
 	}
