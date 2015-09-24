@@ -37,7 +37,7 @@ Intronic regions are often designated with respect to a transcript; however intr
 
 In this example, uppercase bases represent exonic sequence, and lowercase sequences represent intronic bases.  In the table, lowercase and uppercase are used to aid in understanding, but the actual transcript reference sequence would not include the intronic bases. The transcript numbering does not include the intronic bases; note that the entire intron is in the transcript interval numbered 3.  
 
-IntronOffset start, end and direction are understood to be attributes of a related IntronicCoordinate.  If both values are empty in the table, then no such related entity exists.
+offsetstart, end and direction are understood to be attributes of a related Position.  If both values are empty in the table, then no such related entity exists.
 
 {:.table}
 | Example Type   | start | end | ref   | offsetStart | offsetEnd |offsetDirection|

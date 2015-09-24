@@ -54,8 +54,8 @@
     "end": 
     {
       "index": "608",
-      "intronOffsetEnd": "13",
-      "intronOffsetDirection": "+",
+      "externalOffsetEnd": "13",
+      "externalOffsetDirection": "+",
       "externalGenomicReferenceSequence": 
       {
         "reference": "ReferenceSequence/RS203",
