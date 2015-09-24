@@ -5,7 +5,7 @@
     "reference": "CanonicalAllele/CA402"
   },
 
-  "alleleInstanceType": "transcript",
+  "contextualAlleleType": "transcript",
   "allele": "G",
   "primaryNucleotideChangeType": 
   {
@@ -80,7 +80,7 @@
       "relatedType": "amino-acid-effect",
       "target": 
       {
-        "reference": "AlleleInstance/AI312",
+        "reference": "ContextualAllele/AI312",
         "display": "NP_009225.1:p.Ile1766Ser"
       }
     }

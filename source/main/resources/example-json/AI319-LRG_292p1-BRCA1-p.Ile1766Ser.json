@@ -14,7 +14,7 @@
     "reference": "/CanonicalAllele/CA403"
   },
 
-  "alleleInstanceType": "amino-acid",
+  "contextualAlleleType": "amino-acid",
   "allele": "Ser",
   "primaryAminoAcidChangeType": 
   {
@@ -76,7 +76,7 @@
       "relatedType": "transcript-allele-cause",
       "target": 
       {
-        "reference": "/AlleleInstance/AI318",
+        "reference": "/ContextualAllele/AI318",
         "display": "LRG_292t1(BRCA1):c.5297T>G"
       }
     }

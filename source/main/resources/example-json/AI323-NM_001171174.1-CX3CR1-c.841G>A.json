@@ -5,7 +5,7 @@
     "reference": "CanonicalAllele/CA404"
   },
 
-  "alleleInstanceType": "transcript",
+  "contextualAlleleType": "transcript",
   "allele": "A",
   "primaryNucleotideChangeType": 
   {
@@ -75,7 +75,7 @@
       "relatedType": "amino-acid-effect",
       "target": 
       {
-        "reference": "AlleleInstance/AI324",
+        "reference": "ContextualAllele/AI324",
         "display": "NP_001164645.1:p.Val281Ile"
       }
     }

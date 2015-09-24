@@ -4,12 +4,12 @@
   "active": "true",
   "canonicalAlleleType": "amino-acid",
   "complexity": "simple",
-  "relatedAlleleInstance":
+  "relatedContextualAllele":
   [
     {
-      "alleleInstance":
+      "contextualAllele":
       {
-        "reference": "AlleleInstance/SA324",
+        "reference": "ContextualAllele/SA324",
         "display": "NP_001164645.1:p.Val281Ile"
       },
 

@@ -5,7 +5,7 @@
     "reference": "CanonicalAllele/CA406"
   },
 
-  "alleleInstanceType": "genomic",
+  "contextualAlleleType": "genomic",
   "allele": "T",
   "primaryNucleotideChangeType": 
   {

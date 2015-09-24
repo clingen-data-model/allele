@@ -5,7 +5,7 @@
     "reference": "CanonicalAllele/CA404"
   },
 
-  "alleleInstanceType": "genomic",
+  "contextualAlleleType": "genomic",
   "allele": "A",
   "primaryNucleotideChangeType": 
   {

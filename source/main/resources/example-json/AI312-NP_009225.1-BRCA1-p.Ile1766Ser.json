@@ -5,7 +5,7 @@
     "reference": "CanonicalAllele/CA403"
   },
 
-  "alleleInstanceType": "amino-acid",
+  "contextualAlleleType": "amino-acid",
   "allele": "Ser",
   "primaryAminoAcidChangeType": 
   {
@@ -67,7 +67,7 @@
       "relatedType": "transcript-allele-cause",
       "target": 
       {
-        "reference": "AlleleInstance/AI310",
+        "reference": "ContextualAllele/AI310",
         "display": "NM_007294.3(BRCA1):c.5297T>G"
       }
     }

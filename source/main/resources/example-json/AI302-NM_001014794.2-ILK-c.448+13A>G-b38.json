@@ -5,7 +5,7 @@
     "reference": "CanonicalAllele/CA401"
   },
 
-  "alleleInstanceType": "transcript",
+  "contextualAlleleType": "transcript",
   "allele": "G",
   "primaryNucleotideChangeType": 
   {

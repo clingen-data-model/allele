@@ -4,12 +4,12 @@
   "active": "true",
   "canonicalAlleleType": "nucleotide",
   "complexity": "simple",
-  "relatedAlleleInstance":
+  "relatedContextualAllele":
   [
     {
-      "alleleInstance":
+      "contextualAllele":
       {
-        "reference": "AlleleInstance/SA329",
+        "reference": "ContextualAllele/SA329",
         "display": "NM_001171174.1(CX3CR1):c.935C>T"
       },
 
@@ -17,33 +17,33 @@
     },
 
     {
-      "alleleInstance":
+      "contextualAllele":
       {
-        "reference": "AlleleInstance/SA325",
+        "reference": "ContextualAllele/SA325",
         "display": "NC_000003.12:g.39265671G>A (GRCh38)"
       }
     },
 
     {
-      "alleleInstance":
+      "contextualAllele":
       {
-        "reference": "AlleleInstance/SA326",
+        "reference": "ContextualAllele/SA326",
         "display": "NC_000003.11:g.39307162G>A (GRCh37)"
       }
     },
 
     {
-      "alleleInstance":
+      "contextualAllele":
       {
-        "reference": "AlleleInstance/SA327",
+        "reference": "ContextualAllele/SA327",
         "display": "NG_016362.1:g.21065C>T"
       }
     },
 
     {
-      "alleleInstance":
+      "contextualAllele":
       {
-        "reference": "AlleleInstance/SA328",
+        "reference": "ContextualAllele/SA328",
         "display": "NM_001337.3:c.839C>T"
       }
     }

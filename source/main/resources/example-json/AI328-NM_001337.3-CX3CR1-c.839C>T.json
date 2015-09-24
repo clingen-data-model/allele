@@ -5,7 +5,7 @@
     "reference": "CanonicalAllele/CA406"
   },
 
-  "alleleInstanceType": "transcript",
+  "contextualAlleleType": "transcript",
   "allele": "T",
   "primaryNucleotideChangeType": 
   {
@@ -75,7 +75,7 @@
       "relatedType": "amino-acid-effect",
       "target": 
       {
-        "reference": "AlleleInstance/AI331",
+        "reference": "ContextualAllele/AI331",
         "display": "NP_001328.1:p.Thr280Met"
       }
     }

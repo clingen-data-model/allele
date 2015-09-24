@@ -4,12 +4,12 @@
   "active": "true",
   "canonicalAlleleType": "amino-acid",
   "complexity": "simple",
-  "relatedAlleleInstance":
+  "relatedContextualAllele":
   [
     {
-      "alleleInstance":
+      "contextualAllele":
       {
-        "reference": "AlleleInstance/SA331",
+        "reference": "ContextualAllele/SA331",
         "display": "NP_001164645.1(CX3CR1):p.Thr312Met"
       },
 

@@ -5,7 +5,7 @@
     "reference": "CanonicalAllele/CA407"
   },
 
-  "alleleInstanceType": "amino-acid",
+  "contextualAlleleType": "amino-acid",
   "allele": "Met",
   "primaryAminoAcidChangeType": 
   {
@@ -67,7 +67,7 @@
       "relatedType": "transcript-allele-cause",
       "target": 
       {
-        "reference": "AlleleInstance/AI329",
+        "reference": "ContextualAllele/AI329",
         "display": "NM_001171174.1(CX3CR1):c.935C>T"
       }
     }

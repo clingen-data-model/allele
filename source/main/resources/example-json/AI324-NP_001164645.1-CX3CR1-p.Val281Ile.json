@@ -5,7 +5,7 @@
     "reference": "CanonicalAllele/CA405"
   },
 
-  "alleleInstanceType": "amino-acid",
+  "contextualAlleleType": "amino-acid",
   "allele": "Ile",
   "primaryAminoAcidChangeType": 
   {
@@ -72,7 +72,7 @@
       "relatedType": "transcript-allele-cause",
       "target": 
       {
-        "reference": "AlleleInstance/AI323",
+        "reference": "ContextualAllele/AI323",
         "display": "NM_001171174.1(CX3CR1):c.841G>A"
       }
     }
