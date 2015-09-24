@@ -14,21 +14,21 @@ import org.hl7.fhir.Reference;
 import org.hl7.fhir.String;
 
 /**
- * The Reference coordinate for a AlleleInstance. This is the locus relative to a single ReferenceSequence (genomic|transcript|amino acid).
+ * The Reference coordinate for a ContextualAllele. This is the locus relative to a single ReferenceSequence (genomic|transcript|amino acid).
  * 
- * <p>Java class for AlleleInstance.ReferenceCoordinate complex type.
+ * <p>Java class for ContextualAllele.ReferenceCoordinate complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="AlleleInstance.ReferenceCoordinate">
+ * &lt;complexType name="ContextualAllele.ReferenceCoordinate">
  *   &lt;complexContent>
  *     &lt;extension base="{http://hl7.org/fhir}BackboneElement">
  *       &lt;sequence>
  *         &lt;element name="identifier" type="{http://hl7.org/fhir}Identifier" maxOccurs="unbounded" minOccurs="0"/>
  *         &lt;element name="referenceSequence" type="{http://hl7.org/fhir}Reference"/>
- *         &lt;element name="start" type="{http://org.clingen.dm.allele.v1}AlleleInstance.ReferenceCoordinate.Position" />
- *         &lt;element name="end" type="{http://org.clingen.dm.allele.v1}AlleleInstance.ReferenceCoordinate.Position" />
+ *         &lt;element name="start" type="{http://org.clingen.dm.allele.v1}ContextualAllele.ReferenceCoordinate.Position" />
+ *         &lt;element name="end" type="{http://org.clingen.dm.allele.v1}ContextualAllele.ReferenceCoordinate.Position" />
  *         &lt;element name="refAllele" type="{http://hl7.org/fhir}string"/>
  *         &lt;element name="primaryTranscriptRegionType" type="{http://hl7.org/fhir}CodeableConcept" minOccurs="0"/>
  *         &lt;element name="ancillaryTranscriptRegionType" type="{http://hl7.org/fhir}CodeableConcept" minOccurs="0" maxOccurs="unbounded"/>
@@ -41,17 +41,17 @@ import org.hl7.fhir.String;
  * 
  */
 @XmlAccessorType (XmlAccessType.FIELD)
-@XmlType (name = "AlleleInstance.ReferenceCoordinate", propOrder = {"identifier", "referenceSequence", "start", "end",
+@XmlType (name = "ContextualAllele.ReferenceCoordinate", propOrder = {"identifier", "referenceSequence", "start", "end",
 																	"refAllele", "primaryTranscriptRegionType",
 																	"ancillaryTranscriptRegionType"})
-public class AlleleInstanceReferenceCoordinate extends BackboneElement
+public class ContextualAlleleReferenceCoordinate extends BackboneElement
 {
 
 	protected List<Identifier> identifier;
 	@XmlElement (required = true)
 	protected Reference referenceSequence;
-	protected AlleleInstanceReferenceCoordinatePosition start;
-	protected AlleleInstanceReferenceCoordinatePosition end;
+	protected ContextualAlleleReferenceCoordinatePosition start;
+	protected ContextualAlleleReferenceCoordinatePosition end;
 	protected String refAllele;
 	protected CodeableConcept primaryTranscriptRegionType;
 	protected List<CodeableConcept> ancillaryTranscriptRegionType;
@@ -111,10 +111,10 @@ public class AlleleInstanceReferenceCoordinate extends BackboneElement
 	 * 
 	 * @return
 	 *     possible object is
-	 *     {@link AlleleInstanceReferenceCoordinatePosition }
+	 *     {@link ContextualAlleleReferenceCoordinatePosition }
 	 *     
 	 */
-	public AlleleInstanceReferenceCoordinatePosition getStart()
+	public ContextualAlleleReferenceCoordinatePosition getStart()
 	{
 		return start;
 	}
@@ -124,10 +124,10 @@ public class AlleleInstanceReferenceCoordinate extends BackboneElement
 	 * 
 	 * @param value
 	 *     allowed object is
-	 *     {@link AlleleInstanceReferenceCoordinatePosition }
+	 *     {@link ContextualAlleleReferenceCoordinatePosition }
 	 *     
 	 */
-	public void setStart(AlleleInstanceReferenceCoordinatePosition value)
+	public void setStart(ContextualAlleleReferenceCoordinatePosition value)
 	{
 		this.start = value;
 	}
@@ -137,10 +137,10 @@ public class AlleleInstanceReferenceCoordinate extends BackboneElement
 	 * 
 	 * @return
 	 *     possible object is
-	 *     {@link AlleleInstanceReferenceCoordinatePosition }
+	 *     {@link ContextualAlleleReferenceCoordinatePosition }
 	 *     
 	 */
-	public AlleleInstanceReferenceCoordinatePosition getEnd()
+	public ContextualAlleleReferenceCoordinatePosition getEnd()
 	{
 		return end;
 	}
@@ -150,10 +150,10 @@ public class AlleleInstanceReferenceCoordinate extends BackboneElement
 	 * 
 	 * @param value
 	 *     allowed object is
-	 *     {@link AlleleInstanceReferenceCoordinatePosition }
+	 *     {@link ContextualAlleleReferenceCoordinatePosition }
 	 *     
 	 */
-	public void setEnd(AlleleInstanceReferenceCoordinatePosition value)
+	public void setEnd(ContextualAlleleReferenceCoordinatePosition value)
 	{
 		this.end = value;
 	}

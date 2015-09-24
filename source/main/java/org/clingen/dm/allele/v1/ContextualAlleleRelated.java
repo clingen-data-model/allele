@@ -9,18 +9,18 @@ import org.hl7.fhir.BackboneElement;
 import org.hl7.fhir.Reference;
 
 /**
- * Associations to other AlleleInstances.
+ * Associations to other ContextualAlleles.
  * 
- * <p>Java class for AlleleInstance.Related complex type.
+ * <p>Java class for ContextualAllele.Related complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="AlleleInstance.Related">
+ * &lt;complexType name="ContextualAllele.Related">
  *   &lt;complexContent>
  *     &lt;extension base="{http://hl7.org/fhir}BackboneElement">
  *       &lt;sequence>
- *         &lt;element name="relatedType" type="{http://org.clingen.dm.allele.v1}AlleleInstanceRelationshipType" minOccurs="0"/>
+ *         &lt;element name="relatedType" type="{http://org.clingen.dm.allele.v1}ContextualAlleleRelationshipType" minOccurs="0"/>
  *         &lt;element name="target" type="{http://hl7.org/fhir}Reference"/>
  *       &lt;/sequence>
  *     &lt;/extension>
@@ -31,11 +31,11 @@ import org.hl7.fhir.Reference;
  * 
  */
 @XmlAccessorType (XmlAccessType.FIELD)
-@XmlType (name = "AlleleInstance.Related", propOrder = {"relatedType", "target"})
-public class AlleleInstanceRelated extends BackboneElement
+@XmlType (name = "ContextualAllele.Related", propOrder = {"relatedType", "target"})
+public class ContextualAlleleRelated extends BackboneElement
 {
 
-	protected AlleleInstanceRelationshipType relatedType;
+	protected ContextualAlleleRelationshipType relatedType;
 	@XmlElement (required = true)
 	protected Reference target;
 
@@ -44,10 +44,10 @@ public class AlleleInstanceRelated extends BackboneElement
 	 * 
 	 * @return
 	 *     possible object is
-	 *     {@link AlleleInstanceRelationshipType }
+	 *     {@link ContextualAlleleRelationshipType }
 	 *     
 	 */
-	public AlleleInstanceRelationshipType getRelatedType()
+	public ContextualAlleleRelationshipType getRelatedType()
 	{
 		return relatedType;
 	}
@@ -57,10 +57,10 @@ public class AlleleInstanceRelated extends BackboneElement
 	 * 
 	 * @param value
 	 *     allowed object is
-	 *     {@link AlleleInstanceRelationshipType }
+	 *     {@link ContextualAlleleRelationshipType }
 	 *     
 	 */
-	public void setRelatedType(AlleleInstanceRelationshipType value)
+	public void setRelatedType(ContextualAlleleRelationshipType value)
 	{
 		this.relatedType = value;
 	}

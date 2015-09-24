@@ -5,12 +5,12 @@ import javax.xml.bind.annotation.XmlEnumValue;
 import javax.xml.bind.annotation.XmlType;
 
 /**
- * <p>Java class for AlleleInstanceExternalOffsetDirection-list.
+ * <p>Java class for ContextualAlleleExternalOffsetDirection-list.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="AlleleInstanceExternalOffsetDirection-list">
+ * &lt;simpleType name="ContextualAlleleExternalOffsetDirection-list">
  *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
  *     &lt;enumeration value="+"/>
  *     &lt;enumeration value="-"/>
@@ -19,20 +19,20 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  */
-@XmlType (name = "AlleleInstanceExternalOffsetDirection-list")
+@XmlType (name = "ContextualAlleleExternalOffsetDirection-list")
 @XmlEnum
-public enum AlleleInstanceExternalOffsetDirectionList
+public enum ContextualAlleleExternalOffsetDirectionList
 {
 
 	/**
-	 * The offset direction for the AlleleInstance is in the positive or plus direction.
+	 * The offset direction for the ContextualAllele is in the positive or plus direction.
 	 * 
 	 */
 	@XmlEnumValue ("+")
 	PLUS("+"),
 
 	/**
-	 * The offset direction for the AlleleInstance is in the negative or minus direction.
+	 * The offset direction for the ContextualAllele is in the negative or minus direction.
 	 * 
 	 */
 	@XmlEnumValue ("-")
@@ -40,7 +40,7 @@ public enum AlleleInstanceExternalOffsetDirectionList
 
 	private final java.lang.String value;
 
-	AlleleInstanceExternalOffsetDirectionList(java.lang.String v)
+	ContextualAlleleExternalOffsetDirectionList(java.lang.String v)
 	{
 		value = v;
 	}
@@ -50,9 +50,9 @@ public enum AlleleInstanceExternalOffsetDirectionList
 		return value;
 	}
 
-	public static AlleleInstanceExternalOffsetDirectionList fromValue(java.lang.String v)
+	public static ContextualAlleleExternalOffsetDirectionList fromValue(java.lang.String v)
 	{
-		for (AlleleInstanceExternalOffsetDirectionList c : AlleleInstanceExternalOffsetDirectionList.values())
+		for (ContextualAlleleExternalOffsetDirectionList c : ContextualAlleleExternalOffsetDirectionList.values())
 		{
 			if (c.value.equals(v))
 			{

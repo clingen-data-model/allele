@@ -5,12 +5,12 @@ import javax.xml.bind.annotation.XmlEnumValue;
 import javax.xml.bind.annotation.XmlType;
 
 /**
- * <p>Java class for AlleleInstanceTypeList-list.
+ * <p>Java class for ContextualAlleleTypeList-list.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="AlleleInstanceTypeList-list">
+ * &lt;simpleType name="ContextualAlleleTypeList-list">
  *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
  *     &lt;enumeration value="genomic"/>
  *     &lt;enumeration value="transcript"/>
@@ -20,9 +20,9 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  */
-@XmlType (name = "AlleleInstanceTypeList-list")
+@XmlType (name = "ContextualAlleleTypeList-list")
 @XmlEnum
-public enum AlleleInstanceTypeList
+public enum ContextualAlleleTypeList
 {
 
 	/**
@@ -47,7 +47,7 @@ public enum AlleleInstanceTypeList
 	AMINO_ACID("amino acid");
 	private final java.lang.String value;
 
-	AlleleInstanceTypeList(java.lang.String v)
+	ContextualAlleleTypeList(java.lang.String v)
 	{
 		value = v;
 	}
@@ -57,9 +57,9 @@ public enum AlleleInstanceTypeList
 		return value;
 	}
 
-	public static AlleleInstanceTypeList fromValue(java.lang.String v)
+	public static ContextualAlleleTypeList fromValue(java.lang.String v)
 	{
-		for (AlleleInstanceTypeList c : AlleleInstanceTypeList.values())
+		for (ContextualAlleleTypeList c : ContextualAlleleTypeList.values())
 		{
 			if (c.value.equals(v))
 			{

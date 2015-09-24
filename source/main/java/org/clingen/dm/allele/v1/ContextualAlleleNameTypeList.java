@@ -5,12 +5,12 @@ import javax.xml.bind.annotation.XmlEnumValue;
 import javax.xml.bind.annotation.XmlType;
 
 /**
- * <p>Java class for AlleleInstanceNameType-list.
+ * <p>Java class for ContextualAlleleNameType-list.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="AlleleInstanceNameType-list">
+ * &lt;simpleType name="ContextualAlleleNameType-list">
  *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
  *     &lt;enumeration value="hgvs-genomic"/>
  *     &lt;enumeration value="hgvs-mito"/>
@@ -26,76 +26,76 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  */
-@XmlType (name = "AlleleInstanceNameType-list")
+@XmlType (name = "ContextualAlleleNameType-list")
 @XmlEnum
-public enum AlleleInstanceNameTypeList
+public enum ContextualAlleleNameTypeList
 {
 
 	/**
-	 * The name format for the AlleleInstance is HGVS genomic.
+	 * The name format for the ContextualAllele is HGVS genomic.
 	 * 
 	 */
 	@XmlEnumValue ("hgvs-genomic")
 	HGVS_GENOMIC("hgvs-genomic"),
 
 	/**
-	 * The name format for the AlleleInstance is HGVS mito.
+	 * The name format for the ContextualAllele is HGVS mito.
 	 * 
 	 */
 	@XmlEnumValue ("hgvs-mito")
 	HGVS_MITO("hgvs-mito"),
 
 	/**
-	 * The name format for the AlleleInstance is HGVS cDNA.
+	 * The name format for the ContextualAllele is HGVS cDNA.
 	 * 
 	 */
 	@XmlEnumValue ("hgvs-cdna")
 	HGVS_CDNA("hgvs-cdna"),
 
 	/**
-	 * The name format for the AlleleInstance is HGVS single letter protein.
+	 * The name format for the ContextualAllele is HGVS single letter protein.
 	 * 
 	 */
 	@XmlEnumValue ("hgvs-protein-1")
 	HGVS_PROTEIN_1("hgvs-protein-1"),
 
 	/**
-	 * The name format for the AlleleInstance is HGVS 3 letter protein.
+	 * The name format for the ContextualAllele is HGVS 3 letter protein.
 	 * 
 	 */
 	@XmlEnumValue ("hgvs-protein-3")
 	HGVS_PROTEIN_3("hgvs-protein-3"),
 
 	/**
-	 * The name format for the AlleleInstance is HGVS RNA.
+	 * The name format for the ContextualAllele is HGVS RNA.
 	 * 
 	 */
 	@XmlEnumValue ("hgvs-rna")
 	HGVS_RNA("hgvs-rna"),
 
 	/**
-	 * The name format for the AlleleInstance is HGVS ncRNA.
+	 * The name format for the ContextualAllele is HGVS ncRNA.
 	 * 
 	 */
 	@XmlEnumValue ("hgvs-ncrna")
 	HGVS_NCRNA("hgvs-ncrna"),
 
 	/**
-	 * The name format for the AlleleInstance is HGVS intervening-sequence IVS.
+	 * The name format for the ContextualAllele is HGVS intervening-sequence IVS.
 	 * 
 	 */
 	@XmlEnumValue ("ivs")
 	IVS("ivs"),
 
 	/**
-	 * The name format for the AlleleInstance is custom.
+	 * The name format for the ContextualAllele is custom.
 	 * 
 	 */
 	@XmlEnumValue ("custom")
 	CUSTOM("custom");
 	private final java.lang.String value;
 
-	AlleleInstanceNameTypeList(java.lang.String v)
+	ContextualAlleleNameTypeList(java.lang.String v)
 	{
 		value = v;
 	}
@@ -105,9 +105,9 @@ public enum AlleleInstanceNameTypeList
 		return value;
 	}
 
-	public static AlleleInstanceNameTypeList fromValue(java.lang.String v)
+	public static ContextualAlleleNameTypeList fromValue(java.lang.String v)
 	{
-		for (AlleleInstanceNameTypeList c : AlleleInstanceNameTypeList.values())
+		for (ContextualAlleleNameTypeList c : ContextualAlleleNameTypeList.values())
 		{
 			if (c.value.equals(v))
 			{

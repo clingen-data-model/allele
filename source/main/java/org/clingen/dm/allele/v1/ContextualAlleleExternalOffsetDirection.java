@@ -10,15 +10,15 @@ import org.hl7.fhir.Element;
 /**
  * If the element is present, it must have either a @value, an @id, or extensions
  * 
- * <p>Java class for AlleleInstanceRelationshipType complex type.
+ * <p>Java class for ContextualAlleleExternalOffsetDirection complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="AlleleInstanceRelationshipType">
+ * &lt;complexType name="ContextualAlleleExternalOffsetDirection">
  *   &lt;complexContent>
  *     &lt;extension base="{http://hl7.org/fhir}Element">
- *       &lt;attribute name="value" type="{http://org.clingen.dm.allele.v1}AlleleInstanceRelationshipType-list" />
+ *       &lt;attribute name="value" type="{http://org.clingen.dm.allele.v1}ContextualAlleleExternalOffsetDirection-list" />
  *     &lt;/extension>
  *   &lt;/complexContent>
  * &lt;/complexType>
@@ -27,22 +27,22 @@ import org.hl7.fhir.Element;
  * 
  */
 @XmlAccessorType (XmlAccessType.FIELD)
-@XmlType (name = "AlleleInstanceRelationshipType")
-public class AlleleInstanceRelationshipType extends Element
+@XmlType (name = "ContextualAlleleExternalOffsetDirection")
+public class ContextualAlleleExternalOffsetDirection extends Element
 {
 
 	@XmlAttribute (name = "value")
-	protected AlleleInstanceRelationshipTypeList value;
+	protected ContextualAlleleExternalOffsetDirectionList value;
 
 	/**
 	 * Gets the value of the value property.
 	 * 
 	 * @return
 	 *     possible object is
-	 *     {@link AlleleInstanceRelationshipTypeList }
+	 *     {@link ContextualAlleleExternalOffsetDirectionList }
 	 *     
 	 */
-	public AlleleInstanceRelationshipTypeList getValue()
+	public ContextualAlleleExternalOffsetDirectionList getValue()
 	{
 		return value;
 	}
@@ -52,10 +52,10 @@ public class AlleleInstanceRelationshipType extends Element
 	 * 
 	 * @param value
 	 *     allowed object is
-	 *     {@link AlleleInstanceRelationshipTypeList }
+	 *     {@link ContextualAlleleExternalOffsetDirectionList }
 	 *     
 	 */
-	public void setValue(AlleleInstanceRelationshipTypeList value)
+	public void setValue(ContextualAlleleExternalOffsetDirectionList value)
 	{
 		this.value = value;
 	}

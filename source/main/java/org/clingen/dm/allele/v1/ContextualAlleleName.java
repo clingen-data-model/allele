@@ -10,18 +10,18 @@ import org.hl7.fhir.Boolean;
 import org.hl7.fhir.String;
 
 /**
- * The name or names of the alleleInstance it is associated to.
+ * The name or names of the contextualAllele it is associated with.
  * 
- * <p>Java class for AlleleInstance.AlleleName complex type.
+ * <p>Java class for ContextualAllele.AlleleName complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="AlleleInstance.AlleleName">
+ * &lt;complexType name="ContextualAllele.AlleleName">
  *   &lt;complexContent>
  *     &lt;extension base="{http://hl7.org/fhir}BackboneElement">
  *       &lt;sequence>
- *         &lt;element name="nameType" type="{http://org.clingen.dm.allele.v1}AlleleInstanceNameType" minOccurs="0"/>
+ *         &lt;element name="nameType" type="{http://org.clingen.dm.allele.v1}ContextualAlleleNameType" minOccurs="0"/>
  *         &lt;element name="name" type="{http://hl7.org/fhir}string"/>
  *         &lt;element name="legacy" type="{http://hl7.org/fhir}boolean"/>
  *         &lt;element name="preferred" type="{http://hl7.org/fhir}boolean"/>
@@ -34,11 +34,11 @@ import org.hl7.fhir.String;
  * 
  */
 @XmlAccessorType (XmlAccessType.FIELD)
-@XmlType (name = "AlleleInstance.AlleleName", propOrder = {"nameType", "name", "legacy", "preferred"})
-public class AlleleInstanceName extends BackboneElement
+@XmlType (name = "ContextualAllele.AlleleName", propOrder = {"nameType", "name", "legacy", "preferred"})
+public class ContextualAlleleName extends BackboneElement
 {
 
-	protected AlleleInstanceNameType nameType;
+	protected ContextualAlleleNameType nameType;
 	@XmlElement (required = true)
 	protected String name;
 	protected Boolean legacy;
@@ -49,10 +49,10 @@ public class AlleleInstanceName extends BackboneElement
 	 * 
 	 * @return
 	 *     possible object is
-	 *     {@link AlleleInstanceNameType }
+	 *     {@link ContextualAlleleNameType }
 	 *     
 	 */
-	public AlleleInstanceNameType getNameType()
+	public ContextualAlleleNameType getNameType()
 	{
 		return nameType;
 	}
@@ -62,10 +62,10 @@ public class AlleleInstanceName extends BackboneElement
 	 * 
 	 * @param value
 	 *     allowed object is
-	 *     {@link AlleleInstanceNameType }
+	 *     {@link ContextualAlleleNameType }
 	 *     
 	 */
-	public void setNameType(AlleleInstanceNameType value)
+	public void setNameType(ContextualAlleleNameType value)
 	{
 		this.nameType = value;
 	}

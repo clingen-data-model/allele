@@ -5,12 +5,12 @@ import javax.xml.bind.annotation.XmlEnumValue;
 import javax.xml.bind.annotation.XmlType;
 
 /**
- * <p>Java class for AlleleInstanceRelationshipType-list.
+ * <p>Java class for ContextualAlleleRelationshipType-list.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="AlleleInstanceRelationshipType-list">
+ * &lt;simpleType name="ContextualAlleleRelationshipType-list">
  *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
  *     &lt;enumeration value="amino-acid-effect"/>
  *     &lt;enumeration value="transcript-allele-cause"/>
@@ -19,27 +19,27 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  */
-@XmlType (name = "AlleleInstanceRelationshipType-list")
+@XmlType (name = "ContextualAlleleRelationshipType-list")
 @XmlEnum
-public enum AlleleInstanceRelationshipTypeList
+public enum ContextualAlleleRelationshipTypeList
 {
 
 	/**
-	 * The target AlleleInstance is the effect of this AlleleInstance (e.g. the target amino-acid allele is the effect of a given transcript allele).
+	 * The target ContextualAllele is the effect of this ContextualAllele (e.g. the target amino-acid allele is the effect of a given transcript allele).
 	 * 
 	 */
 	@XmlEnumValue ("amino-acid-effect")
 	AMINO_ACID_EFFECT("amino acid effect"),
 
 	/**
-	 * The target AlleleInstance is the cause of this AlleleInstance (e.g. the transcript allele is the cause of a given amino-acid allele).
+	 * The target ContextualAllele is the cause of this ContextualAllele (e.g. the transcript allele is the cause of a given amino-acid allele).
 	 * 
 	 */
 	@XmlEnumValue ("transcript-allele-cause")
 	TRANSCRIPT_ALLELE_CAUSE("transcript allele cause");
 	private final java.lang.String value;
 
-	AlleleInstanceRelationshipTypeList(java.lang.String v)
+	ContextualAlleleRelationshipTypeList(java.lang.String v)
 	{
 		value = v;
 	}
@@ -49,9 +49,9 @@ public enum AlleleInstanceRelationshipTypeList
 		return value;
 	}
 
-	public static AlleleInstanceRelationshipTypeList fromValue(java.lang.String v)
+	public static ContextualAlleleRelationshipTypeList fromValue(java.lang.String v)
 	{
-		for (AlleleInstanceRelationshipTypeList c : AlleleInstanceRelationshipTypeList.values())
+		for (ContextualAlleleRelationshipTypeList c : ContextualAlleleRelationshipTypeList.values())
 		{
 			if (c.value.equals(v))
 			{

@@ -10,20 +10,20 @@ import org.hl7.fhir.Integer;
 import org.hl7.fhir.Reference;
 
 /**
- * The Reference coordinate for a AlleleInstance. This is the locus relative to a single ReferenceSequence (genomic|transcript|amino acid).
+ * The Reference coordinate for a ContextualAllele. This is the locus relative to a single ReferenceSequence (genomic|transcript|amino acid).
  * 
- * <p>Java class for AlleleInstance.ReferenceCoordinate complex type.
+ * <p>Java class for ContextualAllele.ReferenceCoordinate complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="AlleleInstance.ReferenceCoordinate.Position">
+ * &lt;complexType name="ContextualAllele.ReferenceCoordinate.Position">
  *   &lt;complexContent>
  *     &lt;extension base="{http://hl7.org/fhir}BackboneElement">
  *       &lt;sequence>
  *         &lt;element name="index" type="{http://hl7.org/fhir}int"/>
  *         &lt;element name="externalOffsetLength" type="{http://hl7.org/fhir}int" maxOccurs="1" minOccurs="0"/>
- *         &lt;element name="externalOffsetDirection" type="{http://org.clingen.dm.allele.v1}AlleleInstanceExternalOffsetDirection" maxOccurs="1" minOccurs="0"/>
+ *         &lt;element name="externalOffsetDirection" type="{http://org.clingen.dm.allele.v1}ContextualAlleleExternalOffsetDirection" maxOccurs="1" minOccurs="0"/>
  *         &lt;element name="externalGenomicReferenceSequence" type="{http://hl7.org/fhir}Reference" maxOccurs="1" minOccurs="0"/>
  *         &lt;element name="externalGenomicPositionIndex" type="{http://hl7.org/fhir}int" maxOccurs="1" minOccurs="0"/>
  *       &lt;/sequence>
@@ -35,17 +35,17 @@ import org.hl7.fhir.Reference;
  * 
  */
 @XmlAccessorType (XmlAccessType.FIELD)
-@XmlType (name = "AlleleInstance.ReferenceCoordinate.Position", propOrder = {"index",
+@XmlType (name = "ContextualAllele.ReferenceCoordinate.Position", propOrder = {"index",
 																	"externalOffsetLength",
 																	"externalOffsetDirection",
 																	"externalGenomicReferenceSequence",
 																	"externalGenomicPositionIndex"})
-public class AlleleInstanceReferenceCoordinatePosition extends BackboneElement
+public class ContextualAlleleReferenceCoordinatePosition extends BackboneElement
 {
 	@XmlElement (required = true)
 	protected Integer index;
 	protected Integer externalOffsetLength;
-	protected AlleleInstanceExternalOffsetDirection externalOffsetDirection;
+	protected ContextualAlleleExternalOffsetDirection externalOffsetDirection;
 	protected Reference externalGenomicReferenceSequence;
 	protected Integer externalGenomicPositionIndex;
 
@@ -105,10 +105,10 @@ public class AlleleInstanceReferenceCoordinatePosition extends BackboneElement
 	 * 
 	 * @return
 	 *     possible object is
-	 *     {@link AlleleInstanceExternalOffsetDirection }
+	 *     {@link ContextualAlleleExternalOffsetDirection }
 	 *     
 	 */
-	public AlleleInstanceExternalOffsetDirection getIntronOffsetDirection()
+	public ContextualAlleleExternalOffsetDirection getIntronOffsetDirection()
 	{
 		return externalOffsetDirection;
 	}
@@ -118,10 +118,10 @@ public class AlleleInstanceReferenceCoordinatePosition extends BackboneElement
 	 * 
 	 * @param value
 	 *     allowed object is
-	 *     {@link AlleleInstanceExternalOffsetDirection }
+	 *     {@link ContextualAlleleExternalOffsetDirection }
 	 *     
 	 */
-	public void setIntronOffsetDirection(AlleleInstanceExternalOffsetDirection value)
+	public void setIntronOffsetDirection(ContextualAlleleExternalOffsetDirection value)
 	{
 		this.externalOffsetDirection = value;
 	}
