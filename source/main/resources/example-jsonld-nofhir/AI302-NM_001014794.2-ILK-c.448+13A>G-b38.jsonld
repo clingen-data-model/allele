@@ -1,7 +1,7 @@
 {
-  "@context": "http://clingen.org/models/AlleleInstance.jsonld",
-  "@id": "http://clingendb.clingen.org/AlleleInstance/AI302",
-  "@type": "AlleleInstance",
+  "@context": "http://clingen.org/models/ContextualAllele.jsonld",
+  "@id": "http://clingendb.clingen.org/ContextualAllele/AI302",
+  "@type": "ContextualAllele",
   "xref":
   [
     "http://clingen/alleleregistry/AI302"
@@ -9,7 +9,7 @@
 
   "canonicalAllele": "../../CanonicalAllele/CA401",
 
-  "alleleInstanceType": "transcript",
+  "contextualAlleleType": "transcript",
   "allele": "G",
   "primaryNucleotideChangeType":
   {

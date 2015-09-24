@@ -20,47 +20,47 @@
   "active": "true",
   "canonicalAlleleType": "nucleotide",
   "complexity": "simple",
-  "relatedAlleleInstance":
+  "relatedContextualAllele":
   [
     {
-      "@type": "RelatedAlleleInstance",
-      "alleleInstance": "../../AlleleInstance/AI310",
+      "@type": "RelatedContextualAllele",
+      "contextualAllele": "../../ContextualAllele/AI310",
       "display": "NM_007294.3:c.5297T>G",
       "preferred": "true"
     },
     {
-      "@type": "RelatedAlleleInstance",
-      "alleleInstance": "../../AlleleInstance/AI311",
+      "@type": "RelatedContextualAllele",
+      "contextualAllele": "../../ContextualAllele/AI311",
       "display": "U14681.1(BRCA1):n.5416T>G"
     },
     {
-      "@type": "RelatedAlleleInstance",
-      "alleleInstance": "../../AlleleInstance/AI313",
+      "@type": "RelatedContextualAllele",
+      "contextualAllele": "../../ContextualAllele/AI313",
       "display": "NR_027676.1:n.5433T>G"
     },
     {
-      "@type": "RelatedAlleleInstance",
-      "alleleInstance": "../../AlleleInstance/AI314",
+      "@type": "RelatedContextualAllele",
+      "contextualAllele": "../../ContextualAllele/AI314",
       "display": "NC_000017.10:g.41203115A>C (GRCh37)"
     },
     {
-      "@type": "RelatedAlleleInstance",
-      "alleleInstance": "../../AlleleInstance/AI315",
+      "@type": "RelatedContextualAllele",
+      "contextualAllele": "../../ContextualAllele/AI315",
       "display": "NC_000017.11:g.43051098A>C (GRCh38)"
     },
     {
-      "@type": "RelatedAlleleInstance",
-      "alleleInstance": "../../AlleleInstance/AI316",
+      "@type": "RelatedContextualAllele",
+      "contextualAllele": "../../ContextualAllele/AI316",
       "display": "NG_005905.2:g.166886T>G"
     },
     {
-      "@type": "RelatedAlleleInstance",
-      "alleleInstance": "../../AlleleInstance/AI317",
+      "@type": "RelatedContextualAllele",
+      "contextualAllele": "../../ContextualAllele/AI317",
       "display": "LRG_292:g.166886T>G"
     },
     {
-      "@type": "RelatedAlleleInstance",
-      "alleleInstance": "../../AlleleInstance/AI318",
+      "@type": "RelatedContextualAllele",
+      "contextualAllele": "../../ContextualAllele/AI318",
       "display": "LRG_292t1:c.5297T>G"
     }
   ]
