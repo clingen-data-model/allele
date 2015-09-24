@@ -1,7 +1,7 @@
 {
-  "@context": "http://clingen.org/models/AlleleInstance.jsonld",
-  "@id": "http://clingendb.clingen.org/AlleleInstance/AI301",
-  "@type": "AlleleInstance",
+  "@context": "http://clingen.org/models/ContextualAllele.jsonld",
+  "@id": "http://clingendb.clingen.org/ContextualAllele/AI301",
+  "@type": "ContextualAllele",
   "id": "AI301",
   "identifier":
   [
@@ -19,7 +19,7 @@
     "reference": "../../CanonicalAllele/CA401"
   },
 
-  "alleleInstanceType": "transcript",
+  "contextualAlleleType": "transcript",
   "allele": "G",
   "primaryNucleotideChangeType":
   {

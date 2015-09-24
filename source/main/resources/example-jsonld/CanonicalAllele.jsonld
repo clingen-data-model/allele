@@ -28,9 +28,9 @@
         "display":"fhir:display",
 
         "CanonicalAllele":"clingen:CanonicalAllele",
-        "RelatedAlleleInstance":"clingen:RelatedAlleleInstance",
+        "RelatedContextualAllele":"clingen:RelatedContextualAllele",
 
-        "alleleInstance":"clingen:alleleInstance",
+        "contextualAllele":"clingen:contextualAllele",
 
         "active":
         {
@@ -47,9 +47,9 @@
             "@id":"clingen:complexity",
             "@type":"clingen:CanonicalAlleleComplexity"
         },
-        "relatedAlleleInstance":
+        "relatedContextualAllele":
         {
-            "@id":"clingen:relatedAlleleInstance",
+            "@id":"clingen:relatedContextualAllele",
             "@container":"@set"
         },
         "preferred":

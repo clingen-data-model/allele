@@ -42,9 +42,9 @@
         },
         "valueSet":"fhir:valueSet",
 
-        "AlleleInstance":"clingen:AlleleInstance",
+        "ContextualAllele":"clingen:ContextualAllele",
         "ReferenceCoordinate":"clingen:ReferenceCoordinate",
-        "IntronOffsetGenomicCoordinate":"clingen:IntronOffsetGenomicCoordinate",
+        "Position":"clingen:ReferenceCoordinatePosition",
         "AlleleName":"clingen:AlleleName",
         "PrimaryNucleotideChangeType":"clingen:PrimaryNucleotideChangeType",
         "PrimaryTranscriptRegionType":"clingen:PrimaryTranscriptRegionType",
@@ -52,16 +52,15 @@
         "allele":"clingen:allele",
         "referenceCoordinate":"clingen:referencecoordinate",
         "refAllele":"clingen:refAllele",
-        "intronOffsetGenomicCoordinate":"clingen:intronoffsetgenomiccoordinate",
         "canonicalAllele":"clingen:canonicalallele",
         "primaryNucleotideChangeType":"clingen:primarynucleotidechangetype",
         "primaryTranscriptRegionType":"clingen:primarytranscriptregiontype",
         "referenceSequence":"clingen:referencesequence",
 
-        "alleleInstanceType":
+        "contextualAlleleType":
         {
-            "@id":"clingen:alleleInstanceType",
-            "@type":"clingen:AlleleInstanceType"
+            "@id":"clingen:contextualAlleleType",
+            "@type":"clingen:ContextualAlleleType"
         },
         "primaryAminoAcidChangeType":
         {
@@ -77,13 +76,18 @@
         "start":
         {
             "@id":"clingen:start",
-            "@type":"xsd:integer"
+            "@type":"clingen:Position"
         },
         "end":
         {
             "@id":"clingen:end",
-            "@type":"xsd:integer"
+            "@type":"clingen:Position"
         },
+        "index":
+        {
+            "@id":"clingen:positionindex",
+            "@type":"xsd:integer"
+        }
         "primaryTranscriptRegionType":
         {
             "@id":"clingen:primarytranscriptregiontype",
@@ -95,21 +99,25 @@
             "@type":"clingen:AncillaryTranscriptRegionType",
             "@container":"@set"
         },
-        "intronOffsetStart":
+        "externalOffsetLength":
         {
-            "@id":"clingen:intronoffsetstart",
+            "@id":"clingen:externaloffsetlength",
             "@type":"xsd:integer"
         },
-        "intronOffsetEnd":
+        "externalOffsetDirection":
         {
-            "@id":"clingen:intronoffsetend",
+            "@id":"clingen:externaloffsetdirection",
+            "@type":"clingen:ContextualAlleleExternalOffsetDirection"
+        },
+        "externalGenomicReferenceSequence":
+        {
+            "@id":"clingen:externalgenomicreferencesequnce",
+            "@type":"clingen:ReferenceSequence"
+        },
+        "externalGenomicPositionIndex":
+        {
+            "@id":"clingen:externalgenomicpositionindex",
             "@type":"xsd:integer"
-        },
-        "intronOffsetDirection":
-        {
-            "@id":"clingen:intronoffsetdirection",
-            "@type":"clingen:AlleleInstanceIntronOffsetDirection"
-        },
         "related":
         {
             "@id":"clingen:relatedallele",
@@ -123,7 +131,7 @@
         "nameType":
         {
             "@id":"clingen:allelenametype",
-            "@type":"clingen:AlleleInstanceNameType"
+            "@type":"clingen:ContextualAlleleNameType"
         },
         "legacy":
         {
