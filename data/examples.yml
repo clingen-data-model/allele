@@ -10,7 +10,7 @@
   page: canonical_allele
 - id: CA402
   title: CA402-NM_007294.3-BRCA1-c.5297T>G
-  description: Substitution nucleotide change with all genomic/transcript AlleleInstances.
+  description: Substitution nucleotide change with all genomic/transcript ContextualAlleles.
   xml: "/main/resources/example-xml/CA402-NM_007294.3-BRCA1-c.5297T>G.xml"
   schema: "/main/resources/clingen-xsd/canonicalallele.xsd"
   json: "/main/resources/example-json/CA402-NM_007294.3-BRCA1-c.5297T>G.json"
@@ -19,7 +19,7 @@
   page: canonical_allele
 - id: CA403
   title: CA403-NP_0099225.1-BRCA1-p.Ile1766Ser
-  description: Missense amino acid change with equivalent amino acid AlleleInstances.
+  description: Missense amino acid change with equivalent amino acid ContextualAlleles.
   xml: "/main/resources/example-xml/CA403-NP_0099225.1-BRCA1-p.Ile1766Ser.xml"
   schema: "/main/resources/clingen-xsd/canonicalallele.xsd"
   json: "/main/resources/example-json/CA403-NP_0099225.1-BRCA1-p.Ile1766Ser.json"
@@ -150,7 +150,7 @@
   schema: /main/resources/clingen-xsd/alleleinstancesimpleallele.xsd
   json: "/main/resources/example-json/AI301-NM_001014794.2-ILK-c.448+14A>G-b37.json"
   jsonld: "/main/resources/example-jsonld-nofhir/AI301.jsonld"
-  resource: AlleleInstance
+  resource: ContextualAllele
   page: allele_instance
 - id: AI302
   title: AI302-NM_001014794.2-ILK-c.448+13A>G-b38
@@ -159,7 +159,7 @@
   schema: /main/resources/clingen-xsd/alleleinstance.xsd
   json: "/main/resources/example-json/AI302-NM_001014794.2-ILK-c.448+13A>G-b38.json"
   jsonld: "/main/resources/example-jsonld-nofhir/AI302-NM_001014794.2-ILK-c.448+13A>G-b38.jsonld"
-  resource: AlleleInstance
+  resource: ContextualAllele
   page: allele_instance
 - id: AI303
   title: AI303-NC_000011.9-g.6630034A>G-b37
@@ -167,7 +167,7 @@
   xml: "/main/resources/example-xml/AI303-NC_000011.9-g.6630034A>G-b37.xml"
   schema: /main/resources/clingen-xsd/alleleinstance.xsd
   json: "/main/resources/example-json/AI303-NC_000011.9-g.6630034A>G-b37.json"
-  resource: AlleleInstance
+  resource: ContextualAllele
   page: allele_instance
 - id: AI304
   title: AI304-NC_000011.10-g.6608803A>G-b38
@@ -175,7 +175,7 @@
   xml: "/main/resources/example-xml/AI304-NC_000011.10-g.6608803A>G-b38.xml"
   schema: /main/resources/clingen-xsd/alleleinstance.xsd
   json: "/main/resources/example-json/AI304-NC_000011.10-g.6608803A>G-b38.json"
-  resource: AlleleInstance
+  resource: ContextualAllele
   page: allele_instance
 - id: AI310
   title: AI310-NM_007294.3-BRCA1-c.5297T>G
@@ -183,7 +183,7 @@
   xml: "/main/resources/example-xml/AI310-NM_007294.3-BRCA1-c.5297T>G.xml"
   schema: /main/resources/clingen-xsd/alleleinstance.xsd
   json: "/main/resources/example-json/AI310-NM_007294.3-BRCA1-c.5297T>G.json"
-  resource: AlleleInstance
+  resource: ContextualAllele
   page: allele_instance
 - id: AI311
   title: AI311-U14680.1-BRCA1-n.5416T>G
@@ -191,7 +191,7 @@
   xml: "/main/resources/example-xml/AI311-U14680.1-BRCA1-n.5416T>G.xml"
   schema: /main/resources/clingen-xsd/alleleinstance.xsd
   json: "/main/resources/example-json/AI311-U14680.1-BRCA1-n.5416T>G.json"
-  resource: AlleleInstance
+  resource: ContextualAllele
   page: allele_instance
 - id: AI312
   title: AI312-NP_009225.1-BRCA1-p.Ile1766Ser
@@ -199,7 +199,7 @@
   xml: "/main/resources/example-xml/AI312-NP_009225.1-BRCA1-p.Ile1766Ser.xml"
   schema: /main/resources/clingen-xsd/alleleinstance.xsd
   json: "/main/resources/example-json/AI312-NP_009225.1-BRCA1-p.Ile1766Ser.json"
-  resource: AlleleInstance
+  resource: ContextualAllele
   page: allele_instance
 - id: AI313
   title: AI313-NR_027676.1-BRCA1-n.5433T>G
@@ -207,7 +207,7 @@
   xml: "/main/resources/example-xml/AI313-NR_027676.1-BRCA1-n.5433T>G.xml"
   schema: /main/resources/clingen-xsd/alleleinstance.xsd
   json: "/main/resources/example-json/AI313-NR_027676.1-BRCA1-n.5433T>G.json"
-  resource: AlleleInstance
+  resource: ContextualAllele
   page: allele_instance
 - id: AI314
   title: AI314-NC_000017.10-g.41203115A>C-b37
@@ -215,7 +215,7 @@
   xml: "/main/resources/example-xml/AI314-NC_000017.10-g.41203115A>C-b37.xml"
   schema: /main/resources/clingen-xsd/alleleinstance.xsd
   json: "/main/resources/example-json/AI314-NC_000017.10-g.41203115A>C-b37.json"
-  resource: AlleleInstance
+  resource: ContextualAllele
   page: allele_instance
 - id: AI315
   title: AI315-NC_000017.11-g.43051098A>C-b38
@@ -223,7 +223,7 @@
   xml: "/main/resources/example-xml/AI315-NC_000017.11-g.43051098A>C-b38.xml"
   schema: /main/resources/clingen-xsd/alleleinstance.xsd
   json: "/main/resources/example-json/AI315-NC_000017.11-g.43051098A>C-b38.json"
-  resource: AlleleInstance
+  resource: ContextualAllele
   page: allele_instance
 - id: AI316
   title: AI316-NG_005905.2-BRCA1-g.166886T>G
@@ -231,7 +231,7 @@
   xml: "/main/resources/example-xml/AI316-NG_005905.2-BRCA1-g.166886T>G.xml"
   schema: /main/resources/clingen-xsd/alleleinstance.xsd
   json: "/main/resources/example-json/AI316-NG_005905.2-BRCA1-g.166886T>G.json"
-  resource: AlleleInstance
+  resource: ContextualAllele
   page: allele_instance
 - id: AI317
   title: AI317-LRG_292-BRCA1-g.166886T>G
@@ -239,7 +239,7 @@
   xml: "/main/resources/example-xml/AI317-LRG_292-BRCA1-g.166886T>G.xml"
   schema: /main/resources/clingen-xsd/alleleinstance.xsd
   json: "/main/resources/example-json/AI317-LRG_292-BRCA1-g.166886T>G.json"
-  resource: AlleleInstance
+  resource: ContextualAllele
   page: allele_instance
 - id: AI318
   title: AI318-LRG_292t1-BRCA1-c.5297T>G
@@ -247,7 +247,7 @@
   xml: "/main/resources/example-xml/AI318-LRG_292t1-BRCA1-c.5297T>G.xml"
   schema: /main/resources/clingen-xsd/alleleinstance.xsd
   json: "/main/resources/example-json/AI318-LRG_292t1-BRCA1-c.5297T>G.json"
-  resource: AlleleInstance
+  resource: ContextualAllele
   page: allele_instance
 - id: AI319
   title: AI319-LRG_292p1-BRCA1-p.Ile1766Ser
@@ -255,5 +255,5 @@
   xml: "/main/resources/example-xml/AI319-LRG_292p1-BRCA1-p.Ile1766Ser.xml"
   schema: /main/resources/clingen-xsd/alleleinstance.xsd
   json: "/main/resources/example-json/AI319-LRG_292p1-BRCA1-p.Ile1766Ser.json"
-  resource: AlleleInstance
+  resource: ContextualAllele
   page: allele_instance
