@@ -10,19 +10,19 @@ import org.hl7.fhir.Boolean;
 import org.hl7.fhir.Reference;
 
 /**
- * Associations to the set of AlleleInstances that are canonically equivalent.
+ * Associations to the set of ContextualAllele that are canonically equivalent.
  * 
- * <p>Java class for CanonicalAllele.RelatedAlleleInstance complex preferred.
+ * <p>Java class for CanonicalAllele.RelatedContextualAllele complex preferred.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="CanonicalAllele.RelatedAlleleInstance">
+ * &lt;complexType name="CanonicalAllele.RelatedContextualAllele">
  *   &lt;complexContent>
  *     &lt;extension base="{http://hl7.org/fhir}BackboneElement">
  *       &lt;sequence>
  *         &lt;element name="preferred" preferred="{http://hl7.org/fhir}boolean" minOccurs="0"/>
- *         &lt;element name="alleleInstance" preferred="{http://hl7.org/fhir}Reference"/>
+ *         &lt;element name="contextualAllele" preferred="{http://hl7.org/fhir}Reference"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>
@@ -32,13 +32,13 @@ import org.hl7.fhir.Reference;
  * 
  */
 @XmlAccessorType (XmlAccessType.FIELD)
-@XmlType (name = "CanonicalAllele.RelatedAlleleInstance", propOrder = {"preferred", "alleleInstance"})
-public class CanonicalAlleleRelatedAlleleInstance extends BackboneElement
+@XmlType (name = "CanonicalAllele.RelatedContextualAllele", propOrder = {"preferred", "contextualAllele"})
+public class CanonicalAlleleRelatedContextualAllele extends BackboneElement
 {
 
 	protected Boolean preferred;
 	@XmlElement (required = true)
-	protected Reference alleleInstance;
+	protected Reference contextualAllele;
 
 	/**
 	 * Gets the value of the preferred property.
@@ -67,29 +67,29 @@ public class CanonicalAlleleRelatedAlleleInstance extends BackboneElement
 	}
 
 	/**
-	 * Gets the value of the alleleInstance property.
+	 * Gets the value of the contextualAllele property.
 	 * 
 	 * @return
 	 *     possible object is
 	 *     {@link Reference }
 	 *     
 	 */
-	public Reference getAlleleInstance()
+	public Reference getContextualAllele()
 	{
-		return alleleInstance;
+		return contextualAllele;
 	}
 
 	/**
-	 * Sets the value of the alleleInstance property.
+	 * Sets the value of the contextualAllele property.
 	 * 
 	 * @param value
 	 *     allowed object is
 	 *     {@link Reference }
 	 *     
 	 */
-	public void setAlleleInstance(Reference value)
+	public void setContextualAllele(Reference value)
 	{
-		this.alleleInstance = value;
+		this.contextualAllele = value;
 	}
 
 }

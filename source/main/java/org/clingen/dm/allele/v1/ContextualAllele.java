@@ -27,7 +27,7 @@ import org.hl7.fhir.String;
  *       &lt;sequence>
  *         &lt;element name="identifier" type="{http://hl7.org/fhir}Identifier" maxOccurs="unbounded" minOccurs="0"/>
  *         &lt;element name="canonicalAllele" type="{http://hl7.org/fhir}Reference" maxOccurs="1" minOccurs="0"/>
- *         &lt;element name="alleleInstanceType" type="{http://org.clingen.dm.allele.v1}ContextualAlleleType"/>
+ *         &lt;element name="contextualAlleleType" type="{http://org.clingen.dm.allele.v1}ContextualAlleleType"/>
  *         &lt;element name="allele" type="{http://hl7.org/fhir}string" minOccurs="0"/>
  *         &lt;element name="primaryNucleotideChangeType" type="{http://hl7.org/fhir}CodeableConcept" minOccurs="0"/>
  *         &lt;element name="ancillaryNucleotideChangeType" type="{http://hl7.org/fhir}CodeableConcept" maxOccurs="unbounded" minOccurs="0"/>
@@ -45,7 +45,7 @@ import org.hl7.fhir.String;
  * 
  */
 @XmlAccessorType (XmlAccessType.FIELD)
-@XmlType (name = "ContextualAllele", propOrder = {"identifier", "canonicalAllele", "alleleInstanceType", "allele",
+@XmlType (name = "ContextualAllele", propOrder = {"identifier", "canonicalAllele", "contextualAlleleType", "allele",
 												"primaryNucleotideChangeType", "ancillaryNucleotideChangeType",
 												"primaryAminoAcidChangeType", "ancillaryAminoAcidChangeType",
 												"alleleName", "referenceCoordinate", "related"})
@@ -116,7 +116,7 @@ public class ContextualAllele extends Resource
 	}
 
 	/**
-	 * Gets the value of the alleleInstanceType property.
+	 * Gets the value of the contextualAlleleType property.
 	 * 
 	 * @return
 	 *     possible object is
@@ -129,7 +129,7 @@ public class ContextualAllele extends Resource
 	}
 
 	/**
-	 * Sets the value of the alleleInstanceType property.
+	 * Sets the value of the contextualAlleleType property.
 	 * 
 	 * @param value
 	 *     allowed object is
