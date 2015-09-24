@@ -7,29 +7,29 @@
 	<active value="true"></active>
 	<canonicalAlleleType value="nucleotide"></canonicalAlleleType>
 	<complexity value="simple" />
-	<relatedAlleleInstance>
-		<alleleInstance>
-			<f:reference value="AlleleInstance/AI302"></f:reference>
+	<relatedContextualAllele>
+		<contextualAllele>
+			<f:reference value="ContextualAllele/AI302"></f:reference>
 			<f:display value="NM_001014794.2(ILK):c.448+13A&gt;G "></f:display>
-		</alleleInstance>
+		</contextualAllele>
 		<preferred value="true"></preferred>
-	</relatedAlleleInstance>
-	<relatedAlleleInstance>
-		<alleleInstance>
-			<f:reference value="AlleleInstance/AI301"></f:reference>
+	</relatedContextualAllele>
+	<relatedContextualAllele>
+		<contextualAllele>
+			<f:reference value="ContextualAllele/AI301"></f:reference>
 			<f:display value="NM_001014794.2(ILK):c.448+14A&gt;G "></f:display>
-		</alleleInstance>
-	</relatedAlleleInstance>
-	<relatedAlleleInstance>
-		<alleleInstance>
-			<f:reference value="AlleleInstance/AI303"></f:reference>
+		</contextualAllele>
+	</relatedContextualAllele>
+	<relatedContextualAllele>
+		<contextualAllele>
+			<f:reference value="ContextualAllele/AI303"></f:reference>
 			<f:display value="NC_000011.9:g.6630034A&gt;G (GRCh37)"></f:display>
-		</alleleInstance>
-	</relatedAlleleInstance>
-	<relatedAlleleInstance>
-		<alleleInstance>
-			<f:reference value="AlleleInstance/AI304"></f:reference>
+		</contextualAllele>
+	</relatedContextualAllele>
+	<relatedContextualAllele>
+		<contextualAllele>
+			<f:reference value="ContextualAllele/AI304"></f:reference>
 			<f:display value="NC_000011.10:g.6608803A&gt;G (GRCh38)"></f:display>
-		</alleleInstance>
-	</relatedAlleleInstance>
+		</contextualAllele>
+	</relatedContextualAllele>
 </CanonicalAllele>

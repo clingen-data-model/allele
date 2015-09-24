@@ -11,17 +11,17 @@
 	<active value="true"></active>
 	<canonicalAlleleType value="amino-acid"></canonicalAlleleType>
 	<complexity value="simple" />
-	<relatedAlleleInstance>
-		<alleleInstance>
-			<f:reference value="AlleleInstance/AI312"></f:reference>
+	<relatedContextualAllele>
+		<contextualAllele>
+			<f:reference value="ContextualAllele/AI312"></f:reference>
 			<f:display value="NP_009225.1(BRCA1):p.Ile1766Ser"></f:display>
-		</alleleInstance>
+		</contextualAllele>
 		<preferred value="true"></preferred>
-	</relatedAlleleInstance>
-	<relatedAlleleInstance>
-		<alleleInstance>
-			<f:reference value="AlleleInstance/AI319"></f:reference>
+	</relatedContextualAllele>
+	<relatedContextualAllele>
+		<contextualAllele>
+			<f:reference value="ContextualAllele/AI319"></f:reference>
 			<f:display value="LRG_292p1(BRCA1):p.Ile1766Ser "></f:display>
-		</alleleInstance>
-	</relatedAlleleInstance>
+		</contextualAllele>
+	</relatedContextualAllele>
 </CanonicalAllele>

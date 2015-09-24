@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<AlleleInstance xmlns="http://clingen.org/dm/allele/v1"
+<ContextualAllele xmlns="http://clingen.org/dm/allele/v1"
 	xmlns:f="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://clingen.org/dm/allele/v1 ../clingen-xsd/alleleinstance.xsd ">
 	<f:id value="AI310"></f:id>
 	<canonicalAllele>
 		<f:reference value="CanonicalAllele/CA402"></f:reference>
 	</canonicalAllele>
-	<alleleInstanceType value="transcript"></alleleInstanceType>
+	<contextualAlleleType value="transcript"></contextualAlleleType>
 	<allele value="G"></allele>
 	<primaryNucleotideChangeType>
 		<f:coding>
@@ -52,8 +52,8 @@
 	<related>
 		<relatedType value="amino-acid-effect"></relatedType>
 		<target>
-			<f:reference value="AlleleInstance/AI312"></f:reference>
+			<f:reference value="ContextualAllele/AI312"></f:reference>
 			<f:display value="NP_009225.1:p.Ile1766Ser"></f:display>
 		</target>
 	</related>
-</AlleleInstance>
+</ContextualAllele>

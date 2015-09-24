@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<AlleleInstance xmlns="http://clingen.org/dm/allele/v1"
+<ContextualAllele xmlns="http://clingen.org/dm/allele/v1"
 	xmlns:f="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://clingen.org/dm/allele/v1 ../clingen-xsd/alleleinstance.xsd ">
 	<f:id value="AI315"></f:id>
@@ -10,7 +10,7 @@
 	<canonicalAllele>
 		<f:reference value="CanonicalAllele/CA402"></f:reference>
 	</canonicalAllele>
-	<alleleInstanceType value="genomic"></alleleInstanceType>
+	<contextualAlleleType value="genomic"></contextualAlleleType>
 	<allele value="C"></allele>
 	<primaryNucleotideChangeType>
 		<f:coding>
@@ -38,4 +38,4 @@
 		<refAllele value="A"></refAllele>
 	</referenceCoordinate>
 
-</AlleleInstance>
+</ContextualAllele>

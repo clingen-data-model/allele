@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<AlleleInstance xmlns="http://clingen.org/dm/allele/v1"
+<ContextualAllele xmlns="http://clingen.org/dm/allele/v1"
 	xmlns:f="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://clingen.org/dm/allele/v1 ../clingen-xsd/alleleinstance.xsd ">
 	<f:id value="AI319"></f:id>
@@ -10,7 +10,7 @@
 	<canonicalAllele>
 		<f:reference value="CanonicalAllele/CA403"></f:reference>
 	</canonicalAllele>
-	<alleleInstanceType value="amino acid"></alleleInstanceType>
+	<contextualAlleleType value="amino acid"></contextualAlleleType>
 	<allele value="Ser"></allele>
 	<primaryAminoAcidChangeType>
 		<f:coding>
@@ -47,9 +47,9 @@
 	<related>
 		<relatedType value="transcript-allele-cause"></relatedType>
 		<target>
-			<f:reference value="AlleleInstance/AI318"></f:reference>
+			<f:reference value="ContextualAllele/AI318"></f:reference>
 			<f:display value="LRG_292t1(BRCA1):c.5297T&gt;G"></f:display>
 		</target>
 	</related>
 
-</AlleleInstance>
+</ContextualAllele>
