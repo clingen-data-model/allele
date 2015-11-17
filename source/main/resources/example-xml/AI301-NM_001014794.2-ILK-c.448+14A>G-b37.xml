@@ -50,8 +50,8 @@
 		<primaryTranscriptRegionType>
 			<f:coding>
 				<f:system value="http://www.sequenceontology.org/"></f:system>
-				<f:code value="SO:0000188"></f:code>
-				<f:display value="intron"></f:display>
+				<f:code value="SO:0000191"></f:code>
+				<f:display value="interior_intron"></f:display>
 			</f:coding>
 		</primaryTranscriptRegionType>		
 	</referenceCoordinate>

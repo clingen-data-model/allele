@@ -62,8 +62,8 @@
     "primaryTranscriptRegionType":
     {
         "@type": "PrimaryTranscriptRegionType",
-        "@id": "http://www.sequenceontology.org/SO:0000188",
-        "display": "intron"
+        "@id": "http://www.sequenceontology.org/SO:0000191",
+        "display": "interior_intron"
     }
   }
 }

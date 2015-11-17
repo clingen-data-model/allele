@@ -89,8 +89,8 @@
         {
           "@type": "Code",
           "system": "http://www.sequenceontology.org/",
-          "code": "SO:0000188",
-          "display": "intron"
+          "code": "SO:0000191",
+          "display": "interior_intron"
         }
       ]
     }
