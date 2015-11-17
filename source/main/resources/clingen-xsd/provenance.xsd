@@ -1,0 +1,82 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://clingen.org/dm/allele/v1"
+	targetNamespace="http://clingen.org/dm/allele/v1" xmlns:f="http://hl7.org/fhir"
+	elementFormDefault="qualified" version="0.0.1">
+
+	<xs:import namespace="http://hl7.org/fhir" schemaLocation="../fhir-xsd/fhir-base.xsd" />
+
+	<xs:element name="Provenance" type="Provenance">
+		<xs:annotation>
+			<xs:documentation>Provenance describes the history of an entity.
+			</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+
+	<xs:complexType name="Provenance">
+		<xs:complexContent>
+			<xs:extension base="f:Resource">
+				<xs:sequence>
+					<xs:element name="target" type="f:ResourceReference"
+						minOccurs="1" />
+                    <xs:element name="period" type="f:Period"
+						minOccurs="1" maxOccurs="1" />
+					<xs:element name="recorded" type="dateTime"
+						minOccurs="1" maxOccurs="1" />
+				    <xs:element name="reason" type="f:CodeableConcept"
+						minOccurs="1" maxOccurs="1" />
+					<xs:element name="entity" type="Provenance.Entity"
+						minOccurs="0" maxOccurs="unbounded" >
+						<xs:annotation>
+							<xs:documentation>Entities used in the activity.</xs:documentation>
+						</xs:annotation>
+                    </xs:element>
+					<xs:element name="agent" type="Provenance.Agent"
+						minOccurs="0" maxOccurs="unbounded" />
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:complexType name="Provenance.Entity">
+		<xs:complexContent>
+			<xs:extension base="f:Element">
+				<xs:sequence>
+				    <xs:element name="role" type="Role" minOccurs="1" maxOccurs="1" />
+                </xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+    <xs:complexType name="Role">
+		<xs:complexContent>
+			<xs:extension base="f:Element">
+				<xs:sequence />
+				<xs:attribute name="value" type="Role-list" />
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+
+	<xs:simpleType name="Role-list">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="revised" />
+			<xs:enumeration value="loaded" />
+			<xs:enumeration value="aggregated" />
+			<xs:enumeration value="disaggregated" />
+			<xs:enumeration value="used" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:complexType name="Provenance.Agent">
+		<xs:complexContent>
+			<xs:extension base="f:Element">
+				<xs:sequence>
+				    <xs:element name="role" type="Role" minOccurs="1" maxOccurs="1" />
+                </xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+
+
+</xs:schema>
+

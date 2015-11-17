@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContextualAllele xmlns="http://clingen.org/dm/allele/v1"
 	xmlns:f="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://clingen.org/dm/allele/v1 ../clingen-xsd/alleleinstance.xsd ">
+	xsi:schemaLocation="http://clingen.org/dm/allele/v1 ../clingen-xsd/contextualallele.xsd ">
 	<f:id value="AI317"></f:id>
 	<identifier>
 		<f:system value="http://www.ncbi.nlm.nih.gov/clinvar/variation"></f:system>
