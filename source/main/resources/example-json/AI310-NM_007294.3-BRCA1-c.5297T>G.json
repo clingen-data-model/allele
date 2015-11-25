@@ -67,8 +67,8 @@
       [
         {
           "system": "http://www.sequenceontology.org/",
-          "code": "SO:0000147",
-          "display": "exon"
+          "code": "SO:0000316",
+          "display": "CDS"
         }
       ]
     }
