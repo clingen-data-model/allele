@@ -11,13 +11,18 @@ ACMG Variant Pathogenicity Guidelines
 
 * [PM2]
 * [PM3]
+* [PP1]
+* [BS1]
+* [BS2]
+* [BS4]
+* [BP2]
 
 Scope and Usage
 ---------------
 
 Hereditary conditions are passed through generations with different modes of inheritance.  Examples include autosomal dominant or recessive, and various forms of sex-linked inheritance.
 
-The DiseaseInheritance element makes an unambiguous statement about the inheritance mode of a condition.    This is only possible if the condition has an unambiguous mode of inheritance, either because it is monogenic, or if the inheritance mode is part of the definition of the condition.  If, however, the condition has multiple inheritance modes, it is possible to specify a gene or allele that narrows down the condition to a single mode of inheritance.
+The ConditionInheritance element makes an unambiguous statement about the inheritance mode of a condition.    This is only possible if the condition has an unambiguous mode of inheritance, either because it is monogenic, or if the inheritance mode is part of the definition of the condition.  If, however, the condition has multiple inheritance modes, it is possible to specify a gene or allele that narrows down the condition to a single mode of inheritance.
 
  
 Attributes
@@ -49,10 +54,12 @@ Mode of Inhertiance: HPO.AutosomalDominant
 4. Spinocerebellar ataxia comes in many types and can be due to multiple genes.  One gene, SPTBN2 can produce both autosomal dominant and autosomal recessive forms, depending on the particular allele.  These have two different OMIM numbers, 600224 and 615386.  The two OMIM numbers map to orphanet numbers, which can b grouped together under "Spinocerebellar ataxia with oculomotor anomaly" (ORPHA98693).  Two ConditionInheritance elements could exist:
 
 Condition: Spinocerebellar ataxia with oculomotor anomaly (ORPHA98693). 
+Gene: SPTBN2
 Allele: SPTBN2:C627X
 Mode of Inheritance: HPO.AutosomalDominant
 
 Condition: Spinocerebellar ataxia with oculomotor anomaly (ORPHA98693). 
+Gene: SPTBN2
 Allele: SPTBN2:R480W
 Mode of Inheritance: HPO.AutosomalRecessive
 
