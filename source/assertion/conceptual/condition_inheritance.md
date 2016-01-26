@@ -38,6 +38,7 @@ Examples
 1. Huntington disease is autosomal dominant.  In OMIM, Huntington disease is a monogenic disease associated with the gene HTT. Because it is part of the definition of the condition, the gene is no specified here.
 
 Condition: Huntington Disease (OMIM 143100)
+Gene: HTT ?
 Mode of Inhertiance: HPO.AutosomalDominance
 
 2. Megalencephaly is an orphanet term (ORPHA2477), which maps to two OMIM numbers with different modes of inheritance.   This element expresses the statement that Megalencephaly is autosomal recessive when it is associated with the gene TBC1D7.

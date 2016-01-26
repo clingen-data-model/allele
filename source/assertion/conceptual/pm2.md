@@ -18,7 +18,7 @@ Data Elements
 Rule Statement
 --------------
 
-PM2: Absent from conrols (or at extremely low frequency if recessie) in Exome Sequencing Project, 1000 Genomes Project or Exome Aggregation Consortium.
+PM2: Absent from controls (or at extremely low frequency if recessive) in Exome Sequencing Project, 1000 Genomes Project or Exome Aggregation Consortium.
 
 Scope and Usage
 ---------------
@@ -33,6 +33,7 @@ Examples
 RuleApplication
  Criterion: ACMG2015-PM2
  Evidence: PopFreq1
+ Satisfied: True
 /RuleApplication
 
 PopFreq
@@ -47,6 +48,7 @@ PopFreq
 RuleApplication
  Criterion: ACMG2015-PM2
  Evidence: PopFreq1
+ Satisfied: False
 /RuleApplication
 
 PopFreq
@@ -61,6 +63,7 @@ PopFreq
 RuleApplication
  Criterion: ACMG2015-PM2
  Evidence: PopFreq2, DI1
+ Satisfied: False
 /RuleApplication
 
 PopFreq
