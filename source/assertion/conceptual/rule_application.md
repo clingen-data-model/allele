@@ -19,10 +19,10 @@ Attributes
 
 Really, this would look like the prov bundles that we came up with for BA1, this is just another way to represent that. Obviously we have to decide what is the most clear represtentaiton and make everything fit that.
 
-Criterion: Criteria (e.g. ACMG2015-PM2)
-Satisfied: boolean
-Evidence: *Entity
-(other stuff about who did the application & when)
+	Criterion: Criteria (e.g. ACMG2015-PM2)
+	Satisfied: boolean
+	Evidence: *Entity
+	(other stuff about who did the application & when)
 
 Examples
 ----------------

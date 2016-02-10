@@ -26,26 +26,26 @@ Penetrance should be defined at an allele level.  However, insufficient statisti
  
 Attributes
 ----------
-Condition: 
-Allele: Canonical Allele
-Gene: 
-Penetrance: (Complete,Incomplete,Age-Dependent)
+	Condition: 
+	Allele: Canonical Allele
+	Gene: 
+	Penetrance: (Complete,Incomplete,Age-Dependent)
 
 Examples
 ----------------
 
 1. Variant alleles in BRCA1 are associated with hereditary breast cancer, but are incompletely penetrant.
 
-Condition: Hereditary Breast and ovarian cancer syndrome (Orpha145)
-Gene: BRCA1
-Penetrance: Incomplete
+		Condition: Hereditary Breast and ovarian cancer syndrome (Orpha145)
+		Gene: BRCA1
+		Penetrance: Incomplete
 
 2. Heritable retinoblastoma is caused by changes to the RB1 gene.  Many (but not all) loss of function alleles show complete penetrance, while some in-frame or missense alleles can have incomplete penetrance.
 
-Condition: Hereditary Retinoblastoma (ORPHA35707)
-Allele:...
-Penetrance: Complete
-
-Condition: Hereditary Retinoblastoma (ORPHA35707)
-Allele:...
-Penetrance: Incomplete
+		Condition: Hereditary Retinoblastoma (ORPHA35707)
+		Allele:...
+		Penetrance: Complete
+		
+		Condition: Hereditary Retinoblastoma (ORPHA35707)
+		Allele:...
+		Penetrance: Incomplete
