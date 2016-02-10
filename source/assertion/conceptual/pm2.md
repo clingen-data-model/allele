@@ -9,16 +9,17 @@ strength: Moderate
 
 ---
 
+Rule Statement
+--------------
+
+PM2: Absent from controls (or at extremely low frequency if recessive) in Exome Sequencing Project, 1000 Genomes Project or Exome Aggregation Consortium.
+
 Data Elements
 -------------
 
 * [Population Frequency]
 * [Condition Inheritance]
 
-Rule Statement
---------------
-
-PM2: Absent from controls (or at extremely low frequency if recessive) in Exome Sequencing Project, 1000 Genomes Project or Exome Aggregation Consortium.
 
 Scope and Usage
 ---------------
@@ -30,52 +31,52 @@ Examples
 
 1. Allele is absent from 1000 genomes, providing moderate evidence of pathogenicity.  The inheritance (and even the condition) need not be specified.
 
-RuleApplication
- Criterion: ACMG2015-PM2
- Evidence: PopFreq1
- Satisfied: True
-/RuleApplication
+		RuleApplication
+			Criterion: ACMG2015-PM2
+			Evidence: PopFreq1
+			Satisfied: True
+		/RuleApplication
 
-PopFreq
- ID: PopFreq1
- Allele: 
- Pop:
- Frequency: 0.0
-/PopFreq
+		PopFreq
+ 			ID: PopFreq1
+			Allele: 
+ 			Pop:
+ 			Frequency: 0.0
+		/PopFreq
 
 2. Allele is not absent from 1000 genomes, and has a frequency that is high enough that the mode of inheritance is irrelevant - this node does not give moderate evidence of pathogenicity.
 
-RuleApplication
- Criterion: ACMG2015-PM2
- Evidence: PopFreq1
- Satisfied: False
-/RuleApplication
+		RuleApplication
+			Criterion: ACMG2015-PM2
+			Evidence: PopFreq1
+			Satisfied: False
+		/RuleApplication
 
-PopFreq
- ID: PopFreq1
- Allele: 
- Pop:
- Frequency: 0.3
-/PopFreq
+		PopFreq
+			ID: PopFreq1
+			Allele: 
+		 	Pop:
+			Frequency: 0.3
+		/PopFreq
 
 3. Allele is not absent from 1000 genomes, but the frequency is very low.  This provides moderate evidence of pathogenicity for a condition that has a recessive mode of inheritance.
 
-RuleApplication
- Criterion: ACMG2015-PM2
- Evidence: PopFreq2, DI1
- Satisfied: False
-/RuleApplication
-
-PopFreq
- ID: PopFreq2
- Allele: 
- Pop:
- Frequency: 0.0001
-/PopFreq
-
-DiseaseInheritance
-  ID: DI1
-  Condition: Cond1
-  ModeOfInheritance: HPO.Recessive
-/DiseaseInheritance
+		RuleApplication
+			Criterion: ACMG2015-PM2
+			Evidence: PopFreq2, DI1
+			Satisfied: False
+		/RuleApplication
+		
+		PopFreq
+			ID: PopFreq2
+			Allele: 
+			Pop:
+			Frequency: 0.0001
+		/PopFreq
+		
+		DiseaseInheritance
+			ID: DI1
+			Condition: Cond1
+			ModeOfInheritance: HPO.Recessive
+		/DiseaseInheritance
 
