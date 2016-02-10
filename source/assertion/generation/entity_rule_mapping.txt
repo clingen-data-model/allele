@@ -1,38 +1,37 @@
 Entity	AGMG rules
-DiseaseInheritance	PM2
-DiseaseInheritance	PM3
-DiseaseInheritance	PP1
-DiseaseInheritance	BS1
-DiseaseInheritance	BS2
-DiseaseInheritance	BS4
-DiseaseInheritance	BP2
-DiseasePrevalence	PS4
-DiseasePrevalence	PM2
-DiseasePrevalence	BS1
-DiseasePenetrance	PS4
-DiseasePenetrance	PM2
-DiseasePenetrance	BS1
-Other genes are associated with condition	PP4
+Condition Inheritance	PM2
+Condition Inheritance	PM3
+Condition Inheritance	PP1
+Condition Inheritance	BS1
+Condition Inheritance	BS2
+Condition Inheritance	BS4
+Condition Inheritance	BP2
+Condition Inheritance	PS4
+Condition Inheritance	PM2
+Condition Inheritance	BS1
+Condition Penetrance	PS4
+Condition Penetrance	PM2
+Condition Penetrance	BS1
 Mechanism of Disease	PVS1
 Mechanism of Disease	PM4
 Mechanism of Disease	PP2
 Mechanism of Disease	BP1
-MolecularEffect	PVS1
-MolecularEffect	PS1
-MolecularEffect	PM4 
-MolecularEffect	PM5 
-MolecularEffect	PP2
-MolecularEffect	BP1 
-MolecularEffect	BP7 
-MolecularEffect	BP3
+Molecular Effect	PVS1
+Molecular Effect	PS1
+Molecular Effect	PM4 
+Molecular Effect	PM5 
+Molecular Effect	PP2
+Molecular Effect	BP1 
+Molecular Effect	BP7 
+Molecular Effect	BP3
 Benign Missense Variation Rate	PP2
-In silico prediction	BP4
-In silico prediction	PP3
-RegionAnnotation	PM1
-RegionAnnotation	BP3
-RegionAnnotation	PM4
-In vitro/ in vivo functional data	PS3
-In vitro/ in vivo functional data	BS3
+In Silico Prediction	BP4
+In Silico Prediction	PP3
+Region Annotation	PM1
+Region Annotation	BP3
+Region Annotation	PM4
+Functional Data	PS3
+Functional Data	BS3
 Population Allele Frequency	BA1
 Population Allele Frequency	BS1
 Population Allele Frequency	BS2
@@ -44,6 +43,7 @@ Individual.FamlialAllele	PP1
 Individual.FamlialAllele	BS4
 Individual.PhasedAlleles	PM3
 Individual.PhasedAlleles	BP2
-Case/Control (and associated)	PS4
+Case Control (and associated)	PS4
 Segregation	PP1
 Segregation	BS4
+Other genes are associated with condition	PP4
