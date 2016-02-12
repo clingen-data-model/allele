@@ -1,4 +1,4 @@
-Entity	AGMG rules
+Entity	ACMG rule
 Condition Inheritance	PM2
 Condition Inheritance	PM3
 Condition Inheritance	PP1
@@ -6,9 +6,9 @@ Condition Inheritance	BS1
 Condition Inheritance	BS2
 Condition Inheritance	BS4
 Condition Inheritance	BP2
-Condition Inheritance	PS4
-Condition Inheritance	PM2
-Condition Inheritance	BS1
+Condition Prevalence	PS4
+Condition Prevalence	PM2
+Condition Prevalence	BS1
 Condition Penetrance	PS4
 Condition Penetrance	PM2
 Condition Penetrance	BS1
@@ -37,13 +37,13 @@ Population Allele Frequency	BS1
 Population Allele Frequency	BS2
 Population Allele Frequency	PM2
 Individual	BS2
-Individual.FamlialAllele	PS2
-Individual.FamlialAllele	PM6
-Individual.FamlialAllele	PP1
-Individual.FamlialAllele	BS4
-Individual.PhasedAlleles	PM3
-Individual.PhasedAlleles	BP2
-Case Control (and associated)	PS4
+Familial Allele	PS2
+Familial Allele	PM6
+Familial Allele	PP1
+Familial Allele	BS4
+Phased Alleles	PM3
+Phased Alleles	BP2
+Case Control	PS4
 Segregation	PP1
 Segregation	BS4
 Other genes are associated with condition	PP4

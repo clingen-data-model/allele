@@ -35,7 +35,7 @@ Functional Data	Allele	Optional	 Canonical Allele
 Functional Data	Condition	Optional	Condition
 Functional Data	functionalDataType	Required	ControlledTerm()
 Functional Data	functionalDataResult	Required	Free
-Population Allele Frequency 	allele	Required	CanonicalAllele
+Population Allele Frequency	allele	Required	CanonicalAllele
 Population Allele Frequency	population	Required	Population
 Population Allele Frequency	allelefrequency	Required	float
 Population Allele Frequency	alleleCount	Optional	int
@@ -52,7 +52,7 @@ Individual	hasNoFamilyHistory	0..N	Condition
 Individual	familialAllele	0..N	Familal Allele
 Individual	phase	0..N	phasedAllele
 Familial Allele	Allele	Required	CanonicalAllele
-Familial Allele	parent	Required	ControlledTerm(confirmed paternal, unconfirmed paternal, confirmed maternal, unconfirmed maternal)"
+Familial Allele	parent	Required	ControlledTerm(confirmed paternal, unconfirmed paternal, confirmed maternal, unconfirmed maternal)
 Familial Allele	tested	Required	boolean
 Familial Allele	count	Optional	int(0,1,2)
 Phased Alleles	alleles	2	CanonicalAllele
@@ -73,7 +73,7 @@ Segregation	Allele	Required	CanonicalAllele
 Segregation	fullSegregationData	Optional	FullSegregationData
 Segregation	informativeSegregations	Optional	int
 Segregation	confirmingSegregations	Optional	int
-FullSegregationData	hasIndividual	2..N	SegregationFamilyMember
+Full Segregation Data	hasIndividual	2..N	SegregationFamilyMember
 Segregation Family Member	individual_id	Required	int
 Segregation Family Member	paternal_id	Required	int
 Segregation Family Member	maternal_id	Required	int
@@ -81,3 +81,4 @@ Segregation Family Member	sex	Required	ControlledTerm(M,F)
 Segregation Family Member	hasCondition	Optional	boolean
 Segregation Family Member	alleleCount
 Other genes are associated with condition
+Molecular Effect
