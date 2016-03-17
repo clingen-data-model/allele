@@ -83,8 +83,6 @@ end
         current_page.url.include?('/discussion/'))
       index = discussion_index
       %(<li class="active">#{link_to(text, resource)}</li>#{index})
-    # elsif current_page.url.include?('/discussion/')
-    #   link_with_local_index(text,path)
     else
       "<li>#{link_to(text, resource)}</li>#{index}"
     end
@@ -94,7 +92,9 @@ end
   # when using relative links (also because were playing games with the
   # links from the discusison page
   def discussion_index
-    resource = sitemap.            find_resource_by_path("/#{current_page.data.model}/discussion/index.html")
+    puts "/#{current_page.data.model}/discussion/index.html"
+    resource = sitemap.find_resource_by_path("/#{current_page.data.model}/discussion/index.html")
+    puts "---#{resource}---"
     return "" if resource.children.size == 0
     resource.children.each { |e| "<li>#{link_to e.data.title, e.url}</li>" }
     index = resource.children.reduce("") { |a, e| a + "<li>#{link_to e.data.title, e.url}</li>" }
@@ -104,6 +104,7 @@ end
   # Root links in left navbar. Expand (accordion style)
   # based on selected page
   def link_with_local_index(text, path)
+    puts "link_with_local_index(#{text}, #{path})"
     resource = sitemap.find_resource_by_path(path)
     output = link_to(text, resource)
     if current_page.url.include?(resource.url)
@@ -216,9 +217,7 @@ end
 end
 
 set :css_dir, 'stylesheets'
-
 set :js_dir, 'javascripts'
-
 set :images_dir, 'images'
 
 # Build-specific configuration
