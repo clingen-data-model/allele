@@ -104,7 +104,6 @@ end
   # Root links in left navbar. Expand (accordion style)
   # based on selected page
   def link_with_local_index(text, path)
-    puts "link_with_local_index(#{text}, #{path})"
     resource = sitemap.find_resource_by_path(path)
     output = link_to(text, resource)
     if current_page.url.include?(resource.url)
