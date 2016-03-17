@@ -2,7 +2,6 @@
 title: primary-amino-acid-change-type
 description: This value set includes only the types associated with amino acid allele instances.
 source: Sequence Ontology
-id: 24
 usage: core
 layout: model
 model: allele

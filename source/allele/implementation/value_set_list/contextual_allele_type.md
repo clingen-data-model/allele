@@ -2,7 +2,6 @@
 title: contextual-allele-type
 description: Codes providing the type of ContextualAllele
 source: Internal
-id: 2
 usage: core
 layout: model
 model: allele

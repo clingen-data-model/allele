@@ -2,7 +2,6 @@
 title: contextual-allele-name-type
 description: Codes informing the type of ContextualAllele used.
 source: Internal
-id: 4
 usage: core
 layout: model
 model: allele

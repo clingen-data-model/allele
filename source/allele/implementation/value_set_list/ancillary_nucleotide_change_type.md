@@ -2,7 +2,6 @@
 title: ancillary-nucleotide-change-type
 description: This value set includes only the types associated with nucleotide allele instances.
 source: Sequence Ontology
-id: 23
 usage: core
 layout: model
 model: allele

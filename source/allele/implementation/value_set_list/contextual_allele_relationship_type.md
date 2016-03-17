@@ -2,7 +2,6 @@
 title: contextual-allele-relationship-type
 description: The classification of relationships between two contextual alleles.
 source: RO/Internal
-id: 3
 usage: core
 layout: model
 model: allele

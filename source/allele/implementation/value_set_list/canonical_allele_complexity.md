@@ -2,7 +2,6 @@
 title: canonical-allele-complexity
 description: Codes providing the multiplicity of simple to canonical allele relationships.
 source: Internal
-id: 8
 usage: core
 layout: model
 model: allele

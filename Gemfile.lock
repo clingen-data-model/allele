@@ -23,7 +23,11 @@ GEM
       sass (>= 3.2, < 3.5)
     concurrent-ruby (1.0.1)
     contracts (0.13.0)
+    em-websocket (0.5.1)
+      eventmachine (>= 0.12.9)
+      http_parser.rb (~> 0.6.0)
     erubis (2.7.0)
+    eventmachine (1.2.0.1)
     execjs (2.6.0)
     fast_blank (1.0.0)
     fastimage (1.8.1)
@@ -35,6 +39,7 @@ GEM
     hamster (3.0.0)
       concurrent-ruby (~> 1.0)
     hashie (3.4.3)
+    http_parser.rb (0.6.0)
     i18n (0.7.0)
     json (1.8.3)
     kramdown (1.10.0)
@@ -72,6 +77,10 @@ GEM
       sass (>= 3.4)
       tilt (~> 1.4.1)
       uglifier (~> 2.6)
+    middleman-livereload (3.4.6)
+      em-websocket (~> 0.5.1)
+      middleman-core (>= 3.3)
+      rack-livereload (~> 0.3.15)
     mime-types (3.0)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0221)
@@ -87,6 +96,8 @@ GEM
       activesupport (>= 3.1)
     parallel (1.6.2)
     rack (1.6.4)
+    rack-livereload (0.3.16)
+      rack
     rack-test (0.6.3)
       rack (>= 1.0)
     rb-fsevent (0.9.7)
@@ -111,7 +122,9 @@ DEPENDENCIES
   git
   kramdown
   middleman
-  nokogiri
+  middleman-livereload
+  tzinfo-data
+  wdm (~> 0.1.0)
 
 BUNDLED WITH
    1.11.2

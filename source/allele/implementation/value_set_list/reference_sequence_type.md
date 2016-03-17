@@ -2,7 +2,6 @@
 title: reference-sequence-type
 description: Codes providing the type of a reference sequence
 source: Sequence Ontology
-id: 5
 usage: core
 layout: model
 model: allele

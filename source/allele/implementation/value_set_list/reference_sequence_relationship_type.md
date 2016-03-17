@@ -2,7 +2,6 @@
 title: reference-sequence-relationship-type
 description: The relationship classification between an amino acid and transcript references.
 source: Internal/RO
-id: 6
 usage: core
 layout: model
 model: allele

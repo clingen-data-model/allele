@@ -2,7 +2,6 @@
 title: canonical-allele-type
 description: Codes providing the type of CanonicalAllele
 source: Internal
-id: 1
 usage: core
 layout: model
 model: allele
