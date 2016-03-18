@@ -1,5 +1,7 @@
 <% wrap_layout :model do %>
   <%= yield %>
+  <h2>Attributes</h2>
+  <%= current_page.data.iri %>
   <h2>Schema</h2>
   <p>schema: <%= link_to "#{current_page.data.title}.xsd", current_page.data.schema %></p>
   <h2>Examples</h2>
