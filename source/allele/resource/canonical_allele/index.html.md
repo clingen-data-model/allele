@@ -1,7 +1,7 @@
 ---
 title: CanonicalAllele
 iri: "/allele/resource/canonical_allele"
-data_file: "resource/canonical_allele"
+data_file: "resource_canonical_allele"
 layout: resource
 model: allele
 related_terms: allele identity, measure set, normalized variant identity

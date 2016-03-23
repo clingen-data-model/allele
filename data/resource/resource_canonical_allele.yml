@@ -3,8 +3,8 @@
 iri: "/allele/resource/canonical_allele"
 title: "CanonicalAllele"
 attributes:
-  - title: context
-    iri: "/allele/resource/canonical_allele/#context"
+  - title: id
+    iri: "/allele/resource/canonical_allele/#id"
     min: 1
     max: 1
     type: "https://www.hl7.org/fhir/datatypes.html#id"
@@ -68,21 +68,17 @@ attributes:
 #   - property: version
 #     control: 0..1
 #     type: string
-#     definition: The publicly stable version of the CanonicalAllele instance represented by the source system. 
-#     requirements: |
-#       Version changes may occur due to changes in the set of relatedContextualAlleles. 
+
           
 #   - property: meta
 #     control: 0..1
 #     type: Meta
-#     definition: The metadata about a resource. This is content in the resource that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource. 
-#     requirements: |
-#       Version changes may occur due to changes in the set of relatedContextualAlleles. 
+
       
 #   - property: identifier
 #     control: 0..*
 #     type: Identifier
-#     definition: Business identifier(s) assigned by external authorities that represents the equivalent CanonicalAllele instance represented by the source system.
+
 #     requirements: 
 
 #   - property: relatedIdentifier
