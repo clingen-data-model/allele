@@ -38,15 +38,17 @@ FunctionalData	BS3
 PopulationAlleleFrequency	BA1
 PopulationAlleleFrequency	BS1
 PopulationAlleleFrequency	PM2
-Individual	BS2
-Individual	PS2
-Individual	PM6
-Individual	BP5	The case with the alternative explaination and the current allele.
-Individual	PP4	Include some information about the symptoms?
-Individual.FamilialAllele	PS2
-Individual.FamilialAllele	PM6
-Individual.PhasedAlleles	PM3	One of the alleles is the one being interpreted and the other is the one in the pathogenicinterpretation element.
-Individual.PhasedAlleles	BP2
+IndividualAlleles	BS2
+IndividualAlleles	BP5
+IndividualAlleles	BP2
+IndividualAlleles	PM3	One of the alleles is the one being interpreted and the other is the one in the pathogenicinterpretation element.
+FamilyHistory	PP4	Individual w/ family history for a condition, then OtherGenes saying condition is gene speciric?
+FamilyHistory	PS2
+FamilyHistory	PM6
+DeNovoAllele	PS2	?fold denovoallele into individualalleles?
+DeNovoAllele	PM6	?fold denovoallele into individualalleles?
+IndividualConditions	BS2	(Using isHealthyControl)
+IndividualConditions	BP5
 CaseControl	PS4
 Segregation	PP1
 Segregation	BS4

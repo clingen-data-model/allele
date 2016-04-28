@@ -41,22 +41,20 @@ PopulationAlleleFrequency	allelefrequency	Required	float
 PopulationAlleleFrequency	alleleCount	Optional	int
 PopulationAlleleFrequency	totalCount	Optional	int
 PopulationAlleleFrequency	homozygoteCount	Optional	int
-Individual	ID	Required	ID
-Individual	caseFor	0..N	Condition
-Individual	controlFor	0.N	Condition
-Individual	healthyControl	Optional	boolean
-Individual	hasAllele	0..N	CanonicalAllele
-Individual	doesNotHaveAllele	0..N	CanonicalAllele
-Individual	hasFamilyHistory	0..N	Condition
-Individual	hasNoFamilyHistory	0..N	Condition
-Individual	familialAllele	0..N	FamilialAllele
-Individual	phase	0..N	PhasedAlleles
-Individual.FamilialAllele	Allele	Required	CanonicalAllele
-Individual.FamilialAllele	parent	Required	ControlledTerm(confirmed paternal, unconfirmed paternal, confirmed maternal, unconfirmed maternal)
-Individual.FamilialAllele	tested	Required	boolean
-Individual.FamilialAllele	count	Optional	int(0,1,2)
-Individual.PhasedAlleles	alleles	2	CanonicalAllele
-Individual.PhasedAlleles	phase	Required	ControlledTerm(cis,trans)
+DeNovoAllele	allele	Required CanonicalAllele
+DeNovoAllele	paternityConfirmed	Required	boolean
+DeNovoAllele	maternityConfirmed	Required	boolean
+DeNovoAllele	individual	Required	Individual
+FamilyHistory	individual Required	Individual	
+FamilyHistory	hasFamilyHistory	0..N	Condition
+FamilyHistory	hasNoFamilyHistory	0..N	Condition
+IndividualAlleles	individual	Required	Individual
+IndividualAlleles	allele	1..N	CanonicalAllele
+IndividualAlleles	phase	1..N	int(0 unphased, cis have same #, trans have negative)
+IndividualConditions	individual	Required	Individual
+IndividualConditions	hasCondition	0..N	Condition
+IndividualConditions	doesNotHaveCondition	0..N	Condition
+IndividualConditions	isHealthyControl	optional	boolean
 CohortAlleleFrequency	cohort	Required	Cohort
 CohortAlleleFrequency	allele	Required	CanonicalAllele
 CohortAlleleFrequency	allelefrequency	Required	float
