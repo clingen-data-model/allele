@@ -1,84 +1,87 @@
 Entity	Attribute	Required/Optional	DataType
-Condition Inheritance	Condition	Required	Condition
-Condition Inheritance	Gene	Optional	Gene 
-Condition Inheritance	CanonicalAllele	Optional CanonicalAllele
-Condition Inheritance	inheritanceMode	Required	HPO(+) Term	
-Condition Prevalence	Condition	Required	Condition
-Condition Prevalence	Gene	Optional Gene
-Condition Prevalence	CanonicalAllele	Optional	CanonicalAllele
-Condition Prevalence	Population	Required	Population
-Condition Prevalence	lowerBound	Required	float
-Condition Prevalence	upperBound	Required	float
-Condition Penetrance	Condition	Required	Condition
-Condition Penetrance	Gene	Optional	Gene
-Condition Penetrance	CanonicalAllele	Optional	CanonicalAllele
-Condition Penetrance	penetrance	Required	ControlledTerm (Complete,Incomplete,Age-Dependent)
-Mechanism of Disease	Condition	Required	Condition
-Mechanism of Disease	Gene	Required	Gene
-Mechanism of Disease	mechanism	Required	ControlledTerm (LOF,missense)
-Mechanism of Disease	mechanismImportance	Required	ControlledTerm(Unique,Primary,Common?,Observed,NonCausal)
-Benign Missense Variation Rate	Gene	Required	Gene
-Benign Missense Variation Rate	rate	Required	ControlledTerm(low, high)
-Benign Missense Variation Rate	Condition	Optional?	Condition
-In Silico Prediction	Allele	Required	TranscriptContextualAllele
-In Silico Prediction	predictionType	Required	ControlledTerm(function, splicing)
-In Silico Prediction	prediction	Required	??
-Region Annotation	sequence	Required	Sequence
-Region Annotation	start	Required	int
-Region Annotation	stop	Required	int
-Region Annotation	repeat	Optional	boolean
-Region Annotation	functionalDomain	Optional	boolean
-Region Annotation	mutationalHotspot	Optional	boolean
-Functional Data	Gene	Optional	Gene
-Functional Data	Transcript	Optional	Transcript
-Functional Data	Allele	Optional	 Canonical Allele
-Functional Data	Condition	Optional	Condition
-Functional Data	functionalDataType	Required	ControlledTerm()
-Functional Data	functionalDataResult	Required	Free
-Population Allele Frequency	allele	Required	CanonicalAllele
-Population Allele Frequency	population	Required	Population
-Population Allele Frequency	allelefrequency	Required	float
-Population Allele Frequency	alleleCount	Optional	int
-Population Allele Frequency	totalCount	Optional	int
-Population Allele Frequency	homozygoteCount	Optional	int
-Individual	ID	Required	ID
-Individual	caseFor	0..N	Condition
-Individual	controlFor	0.N	Condition
-Individual	healthyControl	Optional	boolean
-Individual	hasAllele	0..N	CanonicalAllele
-Individual	doesNotHaveAllele	0..N	CanonicalAllele
-Individual	hasFamilyHistory	0..N	Condition
-Individual	hasNoFamilyHistory	0..N	Condition
-Individual	familialAllele	0..N	Familal Allele
-Individual	phase	0..N	phasedAllele
-Familial Allele	Allele	Required	CanonicalAllele
-Familial Allele	parent	Required	ControlledTerm(confirmed paternal, unconfirmed paternal, confirmed maternal, unconfirmed maternal)
-Familial Allele	tested	Required	boolean
-Familial Allele	count	Optional	int(0,1,2)
-Phased Alleles	alleles	2	CanonicalAllele
-Phased Alleles	phase	Required	ControlledTerm(cis,trans)
-Cohort Allele Frequency	cohort	Required	Cohort
-Cohort Allele Frequency	allele	Required	CanonicalAllele
-Cohort Allele Frequency	allelefrequency	Required	float
-Cohort Allele Frequency	alleleCount	Optional	int
-Cohort Allele Frequency	totalCount	Optional	int
-Cohort Allele Frequency	homozygoteCount	Optional	int
+ConditionInheritance	Condition	Required	Condition
+ConditionInheritance	Gene	Optional	Gene 
+ConditionInheritance	CanonicalAllele	Optional CanonicalAllele
+ConditionInheritance	inheritanceMode	Required	HPO(+) Term	
+ConditionPrevalence	Condition	Required	Condition
+ConditionPrevalence	Gene	Optional Gene
+ConditionPrevalence	CanonicalAllele	Optional	CanonicalAllele
+ConditionPrevalence	Population	Required	Population
+ConditionPrevalence	lowerBound	Required	float
+ConditionPrevalence	upperBound	Required	float
+ConditionPenetrance	Condition	Required	Condition
+ConditionPenetrance	Gene	Optional	Gene
+ConditionPenetrance	CanonicalAllele	Optional	CanonicalAllele
+ConditionPenetrance	penetrance	Required	ControlledTerm (Complete,Incomplete,Age-Dependent)
+MechanismOfDisease	Condition	Required	Condition
+MechanismOfDisease	Gene	Required	Gene
+MechanismOfDisease	mechanism	Required	ControlledTerm (LOF,missense)
+MechanismOfDisease	mechanismImportance	Required	ControlledTerm(Unique,Primary,Common?,Observed,NonCausal)
+BenignMissenseVariationRate	Gene	Required	Gene
+BenignMissenseVariationRate	rate	Required	ControlledTerm(low, high)
+BenignMissenseVariationRate	Condition	Optional?	Condition
+InSilicoPrediction	Allele	Required	TranscriptContextualAllele
+InSilicoPrediction	predictionType	Required	ControlledTerm(function, splicing)
+InSilicoPrediction	prediction	Required	??
+RegionAnnotation	sequence	Required	Sequence
+RegionAnnotation	start	Required	int
+RegionAnnotation	stop	Required	int
+RegionAnnotation	repeat	Optional	boolean
+RegionAnnotation	functionalDomain	Optional	boolean
+RegionAnnotation	mutationalHotspot	Optional	boolean
+FunctionalData	Gene	Optional	Gene
+FunctionalData	Transcript	Optional	Transcript
+FunctionalData	Allele	Optional	 Canonical Allele
+FunctionalData	Condition	Optional	Condition
+FunctionalData	functionalDataType	Required	ControlledTerm()
+FunctionalData	functionalDataResult	Required	Free
+PopulationAlleleFrequency	allele	Required	CanonicalAllele
+PopulationAlleleFrequency	population	Required	Population
+PopulationAlleleFrequency	allelefrequency	Required	float
+PopulationAlleleFrequency	alleleCount	Optional	int
+PopulationAlleleFrequency	totalCount	Optional	int
+PopulationAlleleFrequency	homozygoteCount	Optional	int
+DeNovoAllele	allele	Required CanonicalAllele
+DeNovoAllele	paternityConfirmed	Required	boolean
+DeNovoAllele	maternityConfirmed	Required	boolean
+DeNovoAllele	individual	Required	Individual
+FamilyHistory	individual Required	Individual	
+FamilyHistory	hasFamilyHistory	0..N	Condition
+FamilyHistory	hasNoFamilyHistory	0..N	Condition
+IndividualAlleles	individual	Required	Individual
+IndividualAlleles	allele	1..N	CanonicalAllele
+IndividualAlleles	phase	1..N	int(0 unphased, cis have same #, trans have negative)
+IndividualConditions	individual	Required	Individual
+IndividualConditions	hasCondition	0..N	Condition
+IndividualConditions	doesNotHaveCondition	0..N	Condition
+IndividualConditions	isHealthyControl	optional	boolean
+CohortAlleleFrequency	cohort	Required	Cohort
+CohortAlleleFrequency	allele	Required	CanonicalAllele
+CohortAlleleFrequency	allelefrequency	Required	float
+CohortAlleleFrequency	alleleCount	Optional	int
+CohortAlleleFrequency	totalCount	Optional	int
+CohortAlleleFrequency	homozygoteCount	Optional	int
 Cohort	ID	Required	ID
 Cohort	ascertainment	Required	Text
-Case Control	Condition	Required	Condition
-Case Control	caseCohort	Required	Cohort
-Case Control	controlCohort	Optional	Cohort
+CaseControl	Condition	Required	Condition
+CaseControl	caseCohort	Required	Cohort
+CaseControl	controlCohort	Optional	Cohort
 Segregation	Condition	Required	Condition
 Segregation	Allele	Required	CanonicalAllele
 Segregation	fullSegregationData	Optional	FullSegregationData
 Segregation	informativeSegregations	Optional	int
 Segregation	confirmingSegregations	Optional	int
-Full Segregation Data	hasIndividual	2..N	SegregationFamilyMember
-Segregation Family Member	individual_id	Required	int
-Segregation Family Member	paternal_id	Required	int
-Segregation Family Member	maternal_id	Required	int
-Segregation Family Member	sex	Required	ControlledTerm(M,F)
-Segregation Family Member	hasCondition	Optional	boolean
-Segregation Family Member	alleleCount
-Other genes are associated with condition
-Molecular Effect
+FullSegregationData	hasIndividual	2..N	SegregationFamilyMember
+SegregationFamilyMember	individual_id	Required	int
+SegregationFamilyMember	paternal_id	Required	int
+SegregationFamilyMember	maternal_id	Required	int
+SegregationFamilyMember	sex	Required	ControlledTerm(M,F)
+SegregationFamilyMember	hasCondition	Optional	boolean
+SegregationFamilyMember	alleleCount
+OtherGenesAreAssociatedWithCondition	condition
+MolecularEffect	Allele	Required	CanonicalAllele
+PathogenicityInterpretation	Allele	Required	CanonicalAllele
+PathogenicityInterpretation	Condition	Required	Condition
+PathogenicityInterpretation	Pathogenicity	Required	ControlledTerm
+Conservation	Allele	Required	CanonicalAllele
+Conservation	conservation	Required	ControlledTerm
