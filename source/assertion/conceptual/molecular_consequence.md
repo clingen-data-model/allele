@@ -27,6 +27,7 @@ Attributes
     TranscriptContextualAllele
     consequence: MolecularConsequenceType
     lossOfFunction: (yes, no, maybe?)
+    explanation: string
 
 Examples
 --------
