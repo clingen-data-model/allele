@@ -24,3 +24,7 @@ gem "git"
 
 # publish to github pages -- removing for now, not useful for organization pages
 # gem 'middleman-gh-pages'
+
+# Get documentation on data model
+
+gem "google-api-client"
