@@ -262,19 +262,10 @@ end
 set :relative_links, true
 
 data.examples.each do |e|
-  proxy("/allele/implementation/examples/#{e['id']}.html",
-       "/allele/implementation/examples/template.html",
+  proxy("/implementation/examples/#{e['id']}.html",
+       "/implementation/examples/template.html",
        locals: e,
        ignore: true)
 end
 
-Dir['source/assertion/**/*.provn'].each do |p|
-  basename = File.basename(p, '.provn')
-  proxy("/assertion/implementation/examples/#{basename}.html",
-	"/assertion/implementation/examples/template.html",
-	locals: { pathname: p,
-                  basename: basename,
-                  title: basename
-                },
-	ignore: true)
-end
+
