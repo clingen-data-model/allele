@@ -72,7 +72,7 @@ helpers do
   def model_link(model)
     # %(<li class="#{model}"><a href="/#{model}"><span class="glyphicon #{data.models[model].icon}"></span>#{model.capitalize}</a></li>)
     resource = sitemap.find_resource_by_path("#{model}/index.html")
-    link = link_to(resource) do
+    link = link_to("/#{model}") do
       %(<span class="glyphicon #{data.models[model].icon}"></span>#{model.capitalize})
     end
     %(<li class="#{model}">#{link}</li>)
