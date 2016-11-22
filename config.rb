@@ -122,6 +122,7 @@ end
   # Root links in left navbar. Expand (accordion style)
   # based on selected page
   def link_with_local_index(text, path)
+    # puts "link_with_local_index"
     resource = sitemap.find_resource_by_path(path)
     output = link_to(text, resource)
     if current_page.url.include?(resource.url)
@@ -135,10 +136,11 @@ end
   def local_index(path)
     index = ""
     index = list_children(path) unless current_page.data.skip_children
+    puts "local_index(#{path})"
     unless current_page.data.skip_siblings 
-      index = list_siblings(path, index) if path_depth(path) > 2
+      index = list_siblings(path, index) if path_depth(path) > 1
     end
-    index = list_parents(path, index) if path_depth(path) > 3
+    index = list_parents(path, index) if path_depth(path) > 2
     index
   end
 
@@ -150,6 +152,7 @@ end
   end
 
   def list_siblings(path, nested_index = "")
+    puts "list siblings #{path}, #{nested_index}"
     sibling_path = parent_path(path)
     depth = path_depth(path)
     siblings = sitemap.resources.select do |r|
