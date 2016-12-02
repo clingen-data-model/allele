@@ -1,7 +1,7 @@
 ###
 # Alias 
 ###
-activate :alias
+# activate :alias
 
 
 ###
