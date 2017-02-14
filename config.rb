@@ -112,10 +112,11 @@ end
   # when using relative links (also because were playing games with the
   # links from the discusison page
   def discussion_index
-    resource = sitemap.            find_resource_by_path("/#{current_page.data.model}/discussion/index.html")
+    resource = sitemap.find_resource_by_path("/#{current_page.data.model}/discussion/index.html")
     return "" if resource.children.size == 0
-    resource.children.each { |e| "<li>#{link_to e.data.title, e.url}</li>" }
-    index = resource.children.reduce("") { |a, e| a + "<li>#{link_to e.data.title, e.url}</li>" }
+    children = resource.children.sort { |a, b| a.path <=> b.path }
+    children.each { |e| "<li>#{link_to e.data.title, e.url}</li>" }
+    index = children.reduce("") { |a, e| a + "<li>#{link_to e.data.title, e.url}</li>" }
     "<ul>#{index}</ul>"
   end
 
