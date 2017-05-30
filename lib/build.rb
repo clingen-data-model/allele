@@ -49,9 +49,9 @@ main_repo.checkout
 FileUtils.mv('build', "stage/development")
 
 # Check in and push current build
-documentation_repo.add
-documentation_repo.commit(Time.now)
-documentation_repo.push
+#documentation_repo.add
+#documentation_repo.commit(Time.now)
+#documentation_repo.push
 
 
 
