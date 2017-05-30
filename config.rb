@@ -1,5 +1,5 @@
 ###
-# Alias 
+# Alias
 ###
 # activate :alias
 
@@ -39,6 +39,14 @@
 #  :which_fake_page => "Rendering a fake page with a local variable" }
 
 
+data.examples.each do |e|
+  proxy("/implementation/examples/#{e['id']}.html",
+       "/implementation/examples/template.html",
+       locals: e,
+       ignore: true)
+end
+
+set :relative_links, true
 
 ###
 # Helpers
@@ -92,7 +100,7 @@ end
     li = breadcrumb(page.parent) + li if page.parent
     li
   end
-  
+
   def discussion_link_with_local_index(text)
     model = current_page.data.model
     resource = sitemap.find_resource_by_path("#{model}/discussion/index.html")
@@ -106,8 +114,8 @@ end
     else
       "<li>#{link_to(text, resource)}</li>#{index}"
     end
-  end 
-  
+  end
+
   # This is a special case needed because of bugs in the link_to method
   # when using relative links (also because were playing games with the
   # links from the discusison page
@@ -136,7 +144,7 @@ end
   def local_index(path)
     index = ""
     index = list_children(path) unless current_page.data.skip_children
-    unless current_page.data.skip_siblings 
+    unless current_page.data.skip_siblings
       index = list_siblings(path, index) if path_depth(path) > 1
     end
     index = list_parents(path, index) if path_depth(path) > 2
@@ -170,7 +178,7 @@ end
   def list_children(parent_url)
     depth = path_depth(parent_url)
     children = sitemap.resources.select do |r|
-      r.url.include?(parent_url) && path_depth(r.url) == depth + 1 
+      r.url.include?(parent_url) && path_depth(r.url) == depth + 1
     end.sort_by { |r| r.path }
     return "" if children.size == 0
     list = children.reduce("") do |a, e|
@@ -182,16 +190,16 @@ end
   def model_name
     current_page.data.model ? current_page.data.model.capitalize : ""
   end
-  
+
   def brief_index(path)
     output = sitemap.resources.select{|r| r.url.include?(path) && path != r.url }.sort_by{ |r| r.path}.reduce("<ul>\n") do |acc, r|
       acc + "<li>#{link_to r.data.title, r.url}</li>\n"
     end
     return output + "</ul>\n"
-  end  
+  end
 
   def example_path(example_id)
-    "/allele/implementation/examples/#{example_id}.html"
+    "/implementation/examples/#{example_id}.html"
   end
 
   def examples_index
@@ -200,7 +208,7 @@ end
     end
     return output + "</ul>"
   end
-                                                                                           
+
   def link_with_examples_index(text, path)
     output = link_to(text, path)
     if current_page.url.include?(path)
@@ -218,9 +226,9 @@ end
     output = examples.reduce(header) do |acc, example|
       acc << '<tr>'
       acc << "<td>#{example['id']}</td>"
-      acc << "<td>#{link_to example['title'], example_path(example['id']) }</td>"
+      acc << "<td>#{link_to example['title'], example_path(example['id'])}</td>"
       if example['jsonld']
-        acc << "<td>#{link_to 'json-ld', example['jsonld']}</td>" 
+        acc << "<td>#{link_to 'json-ld', example['jsonld']}</td>"
       end
       acc << "<td>#{link_to 'xml', example['xml']}</td>"
       acc << "<td>#{link_to 'json', example['json']}</td>"
@@ -260,13 +268,3 @@ end
 
 
 ### Additonal custom configuration
-set :relative_links, true
-
-data.examples.each do |e|
-  proxy("/implementation/examples/#{e['id']}.html",
-       "/implementation/examples/template.html",
-       locals: e,
-       ignore: true)
-end
-
-
