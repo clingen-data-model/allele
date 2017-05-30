@@ -228,10 +228,10 @@ end
       acc << "<td>#{example['id']}</td>"
       acc << "<td>#{link_to example['title'], example_path(example['id'])}</td>"
       if example['jsonld']
-        acc << "<td>#{link_to 'json-ld', example['jsonld']}</td>"
+        acc << "<td>#{link_to 'json-ld', example['jsonld'], relative: true}</td>"
       end
-      acc << "<td>#{link_to 'xml', example['xml']}</td>"
-      acc << "<td>#{link_to 'json', example['json']}</td>"
+      acc << "<td>#{link_to 'xml', example['xml'], relative: true}</td>"
+      acc << "<td>#{link_to 'json', example['json'], relative: true}</td>"
     end
     output + "</tbody></table>"
   end
