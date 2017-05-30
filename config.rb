@@ -34,10 +34,11 @@
 #   page "/admin/*"
 # end
 
+require 'uri' # to encode strings
+
 # Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
 # proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {
 #  :which_fake_page => "Rendering a fake page with a local variable" }
-
 
 data.examples.each do |e|
   proxy("/implementation/examples/#{e['id']}.html",
@@ -228,10 +229,10 @@ end
       acc << "<td>#{example['id']}</td>"
       acc << "<td>#{link_to example['title'], example_path(example['id'])}</td>"
       if example['jsonld']
-        acc << "<td>#{link_to 'json-ld', example['jsonld'], relative: true}</td>"
+        acc << "<td>#{link_to 'json-ld', URI.encode(example['jsonld'])}</td>"
       end
-      acc << "<td>#{link_to 'xml', example['xml'], relative: true}</td>"
-      acc << "<td>#{link_to 'json', example['json'], relative: true}</td>"
+      acc << "<td>#{link_to 'xml', URI.encode(example['xml'])}</td>"
+      acc << "<td>#{link_to 'json', URI.encode(example['json'])}</td>"
     end
     output + "</tbody></table>"
   end
