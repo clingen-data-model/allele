@@ -4,7 +4,7 @@ layout: conceptual
 model: allele
 description: A genomic region identified by a collection of alternately spliced TranscriptReferenceSequences, given a name by one or more naming agencies.
 related_page_title: Gene
-related_page_url: /allele/resource/gene
+related_page_url: /resource/gene
 
 ---
 
@@ -32,7 +32,7 @@ Conceptual Model
 
 [![Gene Conceptual Diagram](/images/GeneConceptual.svg){: .img-responsive}](/images/GeneConceptual.svg)
 
-Resource Model: [Gene](/allele/resource/gene/index.html#resource-model)
+Resource Model: [Gene](/resource/gene/index.html#resource-model)
 
 Attributes
 ----------

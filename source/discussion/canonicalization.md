@@ -6,7 +6,7 @@ model: allele
  
 ---
 
-A specific allele may have multiple representations, both because of the variety of reference sequences to which the allele can be mapped and because not all alleles can be uniquely mapped to a given sequence. The [CanonicalAllele](/allele/conceptual/canonical_allele) concept is meant to provide a representation that can aggregate these representations for the purpose of recognizing common entities on which assertions can be made.
+A specific allele may have multiple representations, both because of the variety of reference sequences to which the allele can be mapped and because not all alleles can be uniquely mapped to a given sequence. The [CanonicalAllele](/conceptual/canonical_allele) concept is meant to provide a representation that can aggregate these representations for the purpose of recognizing common entities on which assertions can be made.
 
 ## Types of alleles that that can be mapped to one CanonicalAllele
 

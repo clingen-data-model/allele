@@ -2,7 +2,7 @@
 title: SimpleAminoAcidCanonicalAllele
 layout: conceptual
 model: allele
-description: A stable identifier for a allele instance, grouping together the different ways that the allele might be described across different versions of a particular AminoAcidReferenceSequence. 
+description: A stable identifier for a allele instance, grouping together the different ways that the allele might be described across different versions of a particular AminoAcidReferenceSequence.
 
 ---
 
@@ -27,4 +27,4 @@ See Also
 
 [SimpleCanonicalAllele](simple_canonical_allele.html), [SimpleAminoAcidAllele](simple_amino_acid_allele.html)
 
-Related Resources: [CanonicalAllele](/allele/resource/canonical_allele/index.html)
+Related Resources: [CanonicalAllele](/resource/canonical_allele/index.html)

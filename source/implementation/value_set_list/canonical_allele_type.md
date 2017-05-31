@@ -37,4 +37,4 @@ amino-acid|amino-acid|The type of the canonical allele is amino-acid. All associ
 <br/>
 This value set is used in the following places:
 
-* [CanonicalAllele.canonicalAlleleType](/allele/resource/canonical_allele/index.html) Required
+* [CanonicalAllele.canonicalAlleleType](/resource/canonical_allele/index.html) Required

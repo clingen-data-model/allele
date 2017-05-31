@@ -21,13 +21,11 @@ When describing observations a concise and interoperable method is required to r
 {:.table}
 | Attribute Name | Attribute Type | Cardinality |
 |----------------|----------------|-------------|
-| [primaryAminoAcidChangeType](/allele/implementation/value_set_list/primary_amino_acid_change_type.html) | Code | 0..1 |
-| [ancillaryAminoAcidChangeType](/allele/implementation/value_set_list/ancillary_amino_acid_change_type.html) | Code | 0..* |
+| [primaryAminoAcidChangeType](/implementation/value_set_list/primary_amino_acid_change_type.html) | Code | 0..1 |
+| [ancillaryAminoAcidChangeType](/implementation/value_set_list/ancillary_amino_acid_change_type.html) | Code | 0..* |
 
 
 Exclusions and Limitations
 --------------------------
 
 Version 0.1 of the Data Model does not offer a direct relationship between records or annotations described at the NucleotideContextualAllele level to AminoAcidContextualAllele, however given correct reference, sequence and transcript information this can be computationally derived.
-
-

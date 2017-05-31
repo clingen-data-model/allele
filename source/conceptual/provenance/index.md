@@ -4,7 +4,7 @@ layout: conceptual
 model: allele
 description: Please see the links below for full description and details on the Provenance entity.
 related_page_title: Provenance
-related_page_url: /allele/resource/provenance
+related_page_url: /resource/provenance
 
 ---
 
@@ -18,4 +18,4 @@ Conceptual Model
 
 [![Provenance Conceptual Diagram](/images/ProvenanceConceptual.svg){: .img-responsive}](/images/ProvenanceConceptual.svg)
 
-Related Resources: [Provenance](/allele/resource/provenance/index.html)
+Related Resources: [Provenance](/resource/provenance/index.html)

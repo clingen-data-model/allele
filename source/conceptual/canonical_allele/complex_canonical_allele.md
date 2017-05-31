@@ -33,4 +33,4 @@ There is exactly one level of aggregation: SimpleCanonicalAlleles are aggregated
 See Also
 --------
 
-Related Resources: [CanonicalAllele](/allele/resource/canonical_allele/index.html)
+Related Resources: [CanonicalAllele](/resource/canonical_allele/index.html)

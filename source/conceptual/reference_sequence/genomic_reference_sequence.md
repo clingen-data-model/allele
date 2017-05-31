@@ -2,7 +2,7 @@
 title: GenomicReferenceSequence
 layout: conceptual
 model: allele
-description: A <a href="/allele/conceptual/reference_sequence.html">ReferenceSequence</a> describing full or partial chromosomal DNA.
+description: A <a href="/conceptual/reference_sequence.html">ReferenceSequence</a> describing full or partial chromosomal DNA.
 
 ---
 

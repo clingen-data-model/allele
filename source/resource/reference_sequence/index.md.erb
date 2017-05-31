@@ -9,7 +9,7 @@ requirements: For every ContextualAllele.ReferenceCoordinate there must be a cor
 sequence_ontology: SO:0001411
 schema: /main/resources/clingen-xsd/referencesequence.xsd
 related_page_title: ReferenceSequence
-related_page_url: /allele/conceptual/reference_sequence
+related_page_url: /conceptual/reference_sequence
 
 context:
   - property: identifier
@@ -28,7 +28,7 @@ context:
     type: code
     definition: The type of reference sequence.
     binding: |
-      ReferenceSequenceType: [reference-sequence-type](/allele/implementation/value_set_list/reference_sequence_type.html)
+      ReferenceSequenceType: [reference-sequence-type](/implementation/value_set_list/reference_sequence_type.html)
       (Codes identifying kinds of reference sequences)
     requirements: Currently, the supported types are transcript, gene, chromosome and amino_acid (see Binding).
 
@@ -37,7 +37,7 @@ context:
     type: code
     definition: The chromosome to which the reference sequence is naturally bound.
     binding: |
-      ReferenceSequenceChromosome: [reference-sequence-chromosome](/allele/implementation/value_set_list/reference_sequence_chromosome.html) (Codes identifying human chromosomes.)
+      ReferenceSequenceChromosome: [reference-sequence-chromosome](/implementation/value_set_list/reference_sequence_chromosome.html) (Codes identifying human chromosomes.)
     requirements: This should be provided when the sequence represents a 'chromosome'.
 
   - property: cdsStart
@@ -79,7 +79,7 @@ context:
     type: code
     definition: The type or relationship between an amino acid and transcript or vice versa.
     binding: |
-      ReferenceSequenceRelationshipType: [reference-sequence-relationship-type](/allele/implementation/value_set_list/reference_sequence_relationship_type.html) (Codes describing the relationships between ReferenceSequences)
+      ReferenceSequenceRelationshipType: [reference-sequence-relationship-type](/implementation/value_set_list/reference_sequence_relationship_type.html) (Codes describing the relationships between ReferenceSequences)
 
   - property: related.target
     control: 0..1
@@ -102,7 +102,7 @@ Resource Model
 
 [![ReferenceSequence Resource Diagram](/images/ReferenceSequenceResource.svg){: .img-responsive}](/images/ReferenceSequenceResource.svg)
 
-Related Resources: [ContextualAllele](/allele/resource/contextual_allele) & [Gene](/allele/resource/gene)
+Related Resources: [ContextualAllele](/resource/contextual_allele) & [Gene](/resource/gene)
 
 
 Notes
@@ -110,5 +110,5 @@ Notes
 
 * This version of the ReferenceSequence resource only considers the related reference sequence associations 
 between amino acid and transcript reference sequences. This has constrained the scope of codes in the 
-[value set](/allele/implementation/value_set_list/reference_sequence_relationship_type.html) for the 
+[value set](/implementation/value_set_list/reference_sequence_relationship_type.html) for the 
 ReferenceSequence.related.relatedType attribute. 

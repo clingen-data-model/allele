@@ -19,4 +19,4 @@ See Also
 
 [ComplexCanonicalAllele](complex_canonical_allele.html), [SimpleNucleotideCanonicalAllele](simple_nucleotide_canonical_allele.html)
 
-Related Resources: [CanonicalAllele](/allele/resource/canonical_allele/index.html)
+Related Resources: [CanonicalAllele](/resource/canonical_allele/index.html)

@@ -19,7 +19,7 @@ __Summary__
 | Definition: | Codes providing the type of a reference sequence |
 
 <br/>
-Formal value Set definition : [XML](/allele/main/resources/value-sets/canonical-allele-type.xml) or [JSON](/allele/main/resources/value-sets/canonical-allele-type.json).
+Formal value Set definition : [XML](/main/resources/value-sets/canonical-allele-type.xml) or [JSON](/main/resources/value-sets/canonical-allele-type.json).
 
 This value set defines its own codes:
 
@@ -42,4 +42,4 @@ This value set defines its own terms in the system http://clingen.org/model/alle
 <br/>
 This value set is used in the following places:
 
-* [ReferenceSequence.referenceSequenceType](/allele/resource/reference_sequence/index.html) Required
+* [ReferenceSequence.referenceSequenceType](/resource/reference_sequence/index.html) Required

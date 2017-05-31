@@ -29,4 +29,4 @@ See Also
 
 [ContextualAllele](../contextual_allele/index.html), [CanonicalAllele](index.html)
 
-Related Resources: [CanonicalAllele](/allele/resource/canonical_allele/index.html)
+Related Resources: [CanonicalAllele](/resource/canonical_allele/index.html)

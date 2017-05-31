@@ -1,5 +1,5 @@
 ---
-title: TranscriptReferenceCoordinate 
+title: TranscriptReferenceCoordinate
 layout: conceptual
 model: allele
 description: TranscriptReferenceCoordinate defines a location with respect to a <a href="../reference_sequence/transcript_reference_sequence.html">TranscriptReferenceSequence</a>.  A TranscriptReferenceCoordinate can be defined for both exonic positions, which are part of the transcript, and intronic positions, which are not.
@@ -32,10 +32,10 @@ When describing observations a concise and interoperable method is required to r
 {:.table}
 | Attribute Name | Attribute Type | Cardinality |
 |----------------|----------------|-------------|
-| [primaryTranscriptRegionType](/allele/value_set_list/primary_transcript_region_type.html) | Code | 0..1 |
-| [ancillaryTranscriptRegionType](/allele/value_set_list/ancillary_transcript_region_type.html) | Code | 0..* |
+| [primaryTranscriptRegionType](/value_set_list/primary_transcript_region_type.html) | Code | 0..1 |
+| [ancillaryTranscriptRegionType](/value_set_list/ancillary_transcript_region_type.html) | Code | 0..* |
 
-Related Entities 
+Related Entities
 ----------------
 
 The TranscriptReferenceCoordinate inherits both the start and end entities from ReferenceCoordinate(reference_coordinate.html).  However, unlike other ReferenceCoordinates, the start and end of a TranscriptReferenceCoordinate can be either an InternalPosition or an ExternalPosition.

@@ -4,7 +4,7 @@ description: A stable identifier for an allele, grouping together the different 
 layout: conceptual
 model: allele
 related_page_title: CanonicalAllele
-related_page_url: /allele/resource/canonical_allele
+related_page_url: /resource/canonical_allele
 
 ---
 
@@ -17,11 +17,11 @@ A `CanonicalAllele` represents an aggregation of the many representations of the
 
 Providing a stable identifier allows `CanonicalAllele` to be the referenceable version of genetic variation.    The `CanonicalAllele` is the entity about which statements are made by other entities such as population frequency information, assertions, observations, and so on.
 
-The need for canonicalization, and the methods that can potentially be used to aggregate alleles under a `CanonicalAllele` are elaborated in the [Canonicalization discussion page](/allele/discussion/canonicalization.html)
+The need for canonicalization, and the methods that can potentially be used to aggregate alleles under a `CanonicalAllele` are elaborated in the [Canonicalization discussion page](/discussion/canonicalization.html)
 
 If the two systems share a canonicalizer, then the id of the `CanonicalAllele` MUST be the same in each system, and can be used as a reference to the allele across multiple systems.
 
-## Subclass hierarchy and type safety 
+## Subclass hierarchy and type safety
 
 Specific Allele representations will be grouped together under a `CanonicalAllele` if they represent identical entities.  In particular, Alleles based on DNA (genomic and transcript) can be grouped together under a `CanonicalAllele`, and Alleles based on amino acids may be grouped together under a different `CanonicalAllele`, but DNA and Amino Acid alleles may not be grouped together under a `CanonicalAllele`.  Consider a missense change to a protein that can be induced by two different genomic variations.  If a `CanonicalAllele` included both DNA and Protein Alleles, then the two different genomic variations would be considered identical through their identity with the same protein allele.  For this reason, `CanonicalAllele` does not aggregate protein with DNA Alleles.
 
@@ -41,7 +41,7 @@ Conceptual Model
 
 [![CanonicalAllele Conceptual Diagram](/images/CanonicalAlleleConceptual.svg){: .img-responsive}](/images/`CanonicalAllele`Conceptual.svg)
 
-Related Resources: [CanonicalAllele](/allele/resource/canonical_allele/index.html), [ContextualAllele](/allele/resource/contextual_allele/index.html), [Provenance](/allele/resource/provenance/index.html)
+Related Resources: [CanonicalAllele](/resource/canonical_allele/index.html), [ContextualAllele](/resource/contextual_allele/index.html), [Provenance](/resource/provenance/index.html)
 
 Attributes
 ----------

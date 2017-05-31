@@ -18,7 +18,7 @@ __Summary__
 | Definition: | Codes providing the type of a contextual allele |
 
 <br/>
-Formal value Set definition : [XML](/allele/main/resources/value-sets/contextual-allele-type.xml) or [JSON](/allele/main/resources/value-sets/contextual-allele-type.json).
+Formal value Set definition : [XML](/main/resources/value-sets/contextual-allele-type.xml) or [JSON](/main/resources/value-sets/contextual-allele-type.json).
 
 This value set defines its own codes:
 

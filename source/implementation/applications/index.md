@@ -14,7 +14,7 @@ The Allele Registry is being developed initially to support the needs of the Seq
 [![ClinGenDB-Curation Interface](/images/clingendb_curation_interface.png){: .img-responsive}](/images/clingendb_curation_interface.png)
 
 ###What is the ClinGenDB Infrastructure?
-The allele registry is planned for implementation within the ClinGenDB using the [Genboree](http://genboree.org/site/) infrastructure.  The Baylor development team is working with the DMWG Allele model to establish the document models needed to support the five resources; [CanonicalAllele](/allele/resource/canonical_allele/index.html), [ContextualAllele](/allele/resource/contextual_allele/index.html), [ReferenceSequence](/allele/resource/reference_sequence/index.html), [Gene](/allele/resource/gene/index.html), and [Provenance](/allele/resource/provenance/index.html).
+The allele registry is planned for implementation within the ClinGenDB using the [Genboree](http://genboree.org/site/) infrastructure.  The Baylor development team is working with the DMWG Allele model to establish the document models needed to support the five resources; [CanonicalAllele](/resource/canonical_allele/index.html), [ContextualAllele](/resource/contextual_allele/index.html), [ReferenceSequence](/resource/reference_sequence/index.html), [Gene](/resource/gene/index.html), and [Provenance](/resource/provenance/index.html).
 
 ClinGenDB may be considered a specialized version of the Genboree infrastructure. Specialized infrastructure has been developed on top of Genboree to create ClinGenDB.  The Baylor team has documentation on the [ClinGenDB Infrastructure](https://ncbiconfluence.ncbi.nlm.nih.gov/display/CLIN/ClinGenDB+Infrastructure) available in the internal ClinGen Confluence Site.  If you are interested in further details, please contact <clingen@clinicalgenome.org>. For a general technical details on the Genboree infrastructure please refer to the Genboree [site](http://genboree.org/site/). 
 
@@ -46,7 +46,7 @@ The following is an informal set of internal instructions and links for members 
 >
 >The documents can be searched in the search bar in the right side (look [here](http://genboree.org/genboreeKB/projects/genboreekb-introduction/wiki/Finding_a_Document) for a hint). For additional information on document operations via the user interface please refer to the [Genboree Wiki](http://genboree.org/genboreeKB/projects/genboreekb-introduction/wiki). 
 >
->Initially, the following subset of [Allele Model Examples](/allele/implementation/examples/index.html) have been created in these collections
+>Initially, the following subset of [Allele Model Examples](/implementation/examples/index.html) have been created in these collections
 >
 >{:.table .table-bordered .table-condensed}
 >| Collection | Example Documents | 

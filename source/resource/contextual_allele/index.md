@@ -3,9 +3,9 @@ title: ContextualAllele
 layout: resource
 model: allele
 related_terms: contextual allele, allele, variant, sequence variant, snv, amino acid variant, dna change, aa change
-description: A representation of one of the multiple variant sequences at a contiguous region in a particular <a href="/allele/resource/reference_sequence/index.html">ReferenceSequence</a>.
+description: A representation of one of the multiple variant sequences at a contiguous region in a particular <a href="/resource/reference_sequence/index.html">ReferenceSequence</a>.
 related_page_title: ContextualAllele
-related_page_url: /allele/conceptual/contextual_allele
+related_page_url: /conceptual/contextual_allele
 schema: /main/resources/clingen-xsd/contextualallele.xsd
 
 ---
@@ -29,7 +29,7 @@ Resource Model
 
 [![ContextualAllele Resource Diagram](/images/ContextualAlleleResource.svg){: .img-responsive}](/images/ContextualAlleleResource.svg)
 
-Related Resources: [ReferenceSequence](/allele/resource/reference_sequence/index.html), [CanonicalAllele](/allele/resource/canonical_allele/index.html)
+Related Resources: [ReferenceSequence](/resource/reference_sequence/index.html), [CanonicalAllele](/resource/canonical_allele/index.html)
 
 
 Definitions & Bindings
@@ -80,7 +80,7 @@ Definition
 : Type of contextual allele, as defined by the type of transcript the allele is mapped on.
 
 Binding
-: ContextualAlleleType [contextual-allele-types](/allele/implementation/value_set_list/contextual_allele_type.html)
+: ContextualAlleleType [contextual-allele-types](/implementation/value_set_list/contextual_allele_type.html)
 
 Type
 : Code
@@ -112,7 +112,7 @@ Control
 : 0..1
 
 Binding
-: PrimaryNucleotideChangeType [primary-nucleotide-change-types](/allele/implementation/value_set_list/primary_nucleotide_change_type.html)
+: PrimaryNucleotideChangeType [primary-nucleotide-change-types](/implementation/value_set_list/primary_nucleotide_change_type.html)
 
 Type
 : Code
@@ -131,7 +131,7 @@ Control
 : 0..*
 
 Binding
-: AncillaryNucleotideChangeType [ancillary-nucleotide-change-types](/allele/implementation/value_set_list/ancillary_nucleotide_change_type.html)
+: AncillaryNucleotideChangeType [ancillary-nucleotide-change-types](/implementation/value_set_list/ancillary_nucleotide_change_type.html)
 
 Type
 : Code
@@ -147,7 +147,7 @@ Definition
 : Describes the change that occurs within an amino acid.
 
 Binding
-: PrimaryAminoAcidChangeType [primary-amino-acid-change-types](/allele/implementation/value_set_list/primary_amino_acid_change_type.html)
+: PrimaryAminoAcidChangeType [primary-amino-acid-change-types](/implementation/value_set_list/primary_amino_acid_change_type.html)
 
 Type
 : Code
@@ -163,7 +163,7 @@ Requirements
 
 {:.dl-horizontal .dl-definition}
 Definition
-: One of the set of allowable [ancillary-amino-acid-change-types](/allele/implementation/value_set_list/ancillary_amino_acid_change_type.html). Allowed only if the ContextualAllele describes an allele on an amino acid reference sequence.
+: One of the set of allowable [ancillary-amino-acid-change-types](/implementation/value_set_list/ancillary_amino_acid_change_type.html). Allowed only if the ContextualAllele describes an allele on an amino acid reference sequence.
 
 Type
 : Code
@@ -199,7 +199,7 @@ Control
 
 {:.dl-horizontal .dl-definition}
 Definition
-: The [ReferenceSequence](/allele/resource/reference_sequence) resource on which the ReferenceCoordinate (and, by extention, the ContextualAllele is mapped.
+: The [ReferenceSequence](/resource/reference_sequence) resource on which the ReferenceCoordinate (and, by extention, the ContextualAllele is mapped.
 
 Type
 : ReferenceSequence
@@ -225,7 +225,7 @@ Control
 
 {:.dl-horizontal .dl-definition}
 Definition
-: One of the set of allowable [primary-transcript-region-types](/allele/implementation/value_set_list/primary_transcript_region_type.html)
+: One of the set of allowable [primary-transcript-region-types](/implementation/value_set_list/primary_transcript_region_type.html)
 
 Type
 : Code
@@ -238,7 +238,7 @@ Control
 
 {:.dl-horizontal .dl-definition}
 Definition
-: One of the set of allowable [ancillary-transcript-region-types](/allele/implementation/value_set_list/ancillary_transcript_region_type.html)
+: One of the set of allowable [ancillary-transcript-region-types](/implementation/value_set_list/ancillary_transcript_region_type.html)
 
 Type
 : Code
@@ -251,7 +251,7 @@ Control
 
 {:.dl-horizontal .dl-definition}
 Definition
-: The starting position of the reference coordinate. NOTE: The data model defines a [0-based coordinate numbering system](/allele/coordinate_numbering.html) as described above.
+: The starting position of the reference coordinate. NOTE: The data model defines a [0-based coordinate numbering system](/coordinate_numbering.html) as described above.
 
 Type
 : Position
@@ -367,7 +367,7 @@ Control
 
 {:.dl-horizontal .dl-definition}
 Definition
-: One of the set of allowable [contextual-allele-name-types](/allele/implementation/value_set_list/contextual_allele_name_type.html)
+: One of the set of allowable [contextual-allele-name-types](/implementation/value_set_list/contextual_allele_name_type.html)
 
 Type
 : Code
@@ -416,7 +416,7 @@ Control
 
 {:.dl-horizontal .dl-definition}
 Definition
-: One of the allowable set of relationship types in [contextual-allele-relationship-type](/allele/implementation/value_set_list/contextual_allele_relationship_type.html)
+: One of the allowable set of relationship types in [contextual-allele-relationship-type](/implementation/value_set_list/contextual_allele_relationship_type.html)
 
 Type
 : Code

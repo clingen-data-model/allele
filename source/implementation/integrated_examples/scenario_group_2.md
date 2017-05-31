@@ -7,7 +7,7 @@ model: allele
 
 1. ILK Intron Offset Effected by Reference Genome Version Update
     
-    In this scenario, we will demonstrate how an intronic position for a [CanonicalAllele](/allele/conceptual/canonical_allele/index.html) will change coordinates when moving from build 37 to 38.
+    In this scenario, we will demonstrate how an intronic position for a [CanonicalAllele](/conceptual/canonical_allele/index.html) will change coordinates when moving from build 37 to 38.
 
 Often the reference allele is modified between genome builds, however occasionally a reference allele from one build is absent from another which impacts the corresponding coordinates used to describe an allele at a specific position. 
 

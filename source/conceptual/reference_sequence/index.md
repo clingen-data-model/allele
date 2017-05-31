@@ -4,7 +4,7 @@ layout: conceptual
 model: allele
 description: A versioned sequence of nucleotide bases or amino acids.
 related_page_title: Reference Sequence
-related_page_url: /allele/resource/reference_sequence
+related_page_url: /resource/reference_sequence
 
 ---
 
@@ -31,7 +31,7 @@ Conceptual Model
 
 [![ReferenceSequence Conceptual Diagram](/images/ReferenceSequenceConceptual.svg){: .img-responsive}](/images/ReferenceSequenceConceptual.svg)
 
-Resource Model: [ReferenceSequence](/allele/resource/reference_sequence/index.html#resource-model)
+Resource Model: [ReferenceSequence](/resource/reference_sequence/index.html#resource-model)
 
 Attributes
 ----------

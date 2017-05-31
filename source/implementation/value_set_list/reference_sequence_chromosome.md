@@ -20,7 +20,7 @@ reference-sequence-chromosome
 | Definition: | Codes providing the reference-sequence-chromosome |
 
 <br/>
-Formal value Set definition : [XML](/allele/main/resources/value-sets/canonical-allele-type.xml) or [JSON](/allele/main/resources/value-sets/canonical-allele-type.json).
+Formal value Set definition : [XML](/main/resources/value-sets/canonical-allele-type.xml) or [JSON](/main/resources/value-sets/canonical-allele-type.json).
 
 
 ##ReferenceSequenceChromosome

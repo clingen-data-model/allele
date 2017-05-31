@@ -19,7 +19,7 @@ __Summary__
 | Definition: | Codes providing the complexity of a canonical allele |
 
 <br/>
-Formal value Set definition : [XML](/allele/main/resources/value-sets/canonical-allele-complexity.xml) or [JSON](/allele/main/resources/value-sets/canonical-allele-complexity.json).
+Formal value Set definition : [XML](/main/resources/value-sets/canonical-allele-complexity.xml) or [JSON](/main/resources/value-sets/canonical-allele-complexity.json).
 
 This value set contains 2 concepts.
 

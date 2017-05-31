@@ -18,4 +18,4 @@ See Also
 
 [ComplexCanonicalAllele](complex_canonical_allele.html), [SimpleAminoAcidCanonicalAllele](simple_amino_acid_canonical_allele.html)
 
-Related Resources: [CanonicalAllele](/allele/resource/canonical_allele/index.html)
+Related Resources: [CanonicalAllele](/resource/canonical_allele/index.html)
