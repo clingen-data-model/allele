@@ -17,7 +17,7 @@ Resources that provide core Allele record keeping - focused on the registration 
 |Name|Aliases|Description|
 |----|-------|-----------|
 <% sitemap.resources.select{|r| r.path =~ /^resource\/.+\/index.html/}.sort_by{|r| r.path}.each do |r| %>
-|<%=link_to r.data.title, r.url %>|<%= r.data.related_terms %>|<%= r.data.description %>|
+|<%=link_to r.data.title, r.url + 'index.html', relative: true %>|<%= r.data.related_terms %>|<%= r.data.description %>|
 <% end %>
 
 
