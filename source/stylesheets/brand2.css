@@ -1,12 +1,4 @@
 /* CSS Document */
-
-
-
-
-
-
-
-
 /*
  * Base structure
  */
@@ -168,11 +160,12 @@ h4, .h4 {
   background-color: #005bc1 !important;
 }
 .nav-sidebar-title {
-  padding:18px 20px 10px;
+  padding: 10px 10px 10px 20px;
   font-weight:bold;
-  font-size:14px;
+  font-size:16px;
   background-color:#005bc1;
-  min-height:76px;
+  border-bottom: #005bc1 solid 1px;
+  min-height:75px:
 }
 ul.nav-sidebar > ul {
   padding: 5px 5px 10px 20px;
