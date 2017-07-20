@@ -247,7 +247,7 @@ end
 activate :asset_host
     
 set :asset_host do |asset|
-      '//http://datamodel.clinicalgenome.org/clingen-static-resources/'.to_s
+      '//datamodel.clinicalgenome.org/clingen-static-resources/'.to_s
 end
 
 set :css_dir, 'stylesheets'
