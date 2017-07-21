@@ -3,9 +3,9 @@
   <div class="row">
     <div class="col-sm-4 col-md-3 sidebar">
       <div class='nav nav-sidebar nav-sidebar-title'>
-      	<% link_to "https://clinicalgenome.org" do %>
-      		<%= image_tag 'clingen-doc-logo.png', width: "90%", height: "90%", alt: "ClinGen Documentation", class: "img-responsive" %>
-     	<% end %>
+      	<a href="https://clinicalgenome.org">      		
+			<img width="90%" height="90%" alt="ClinGen Documentation" class="img-responsive" src="http://datamodel.clinicalgenome.org/clingen-static-resources/images/clingen-doc-logo.png" />
+		</a> 
   	  </div>
       <ul class="nav nav-sidebar">
         <%= link_with_local_index "Discussion", "/discussion/index.html" %>
