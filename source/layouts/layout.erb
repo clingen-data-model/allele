@@ -8,21 +8,21 @@
     <meta name="author" content="">
     <link rel="icon" href="#######">
 
+    <!--Page Title -->
     <title>
       <%= current_page.data.title || "ClinGen Data Model" %>
     </title>
-
-    <%= stylesheet_link_tag "bootstrap", "bootstrap-theme", "brand2" %>
-    <% (current_page.data.append_css || []).each do |cssfile| %>
-      <%= stylesheet_link_tag cssfile %>
-    <% end %>
+	
+    <link href="http://datamodel.clinicalgenome.org/clingen-static-resources/stylesheets/bootstrap-50fb3239.css" rel="stylesheet" />
+    <link href="http://datamodel.clinicalgenome.org/clingen-static-resources/stylesheets/bootstrap-theme-87f7e926.css" rel="stylesheet" />
+    <link href="http://datamodel.clinicalgenome.org/clingen-static-resources/stylesheets/brand2-6e1fc9b7.css" rel="stylesheet" />
+    
     <% if build? %>
     <script>
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
       ga('create', 'UA-49947422-3', 'auto');
       ga('send', 'pageview');
     </script>
@@ -30,7 +30,6 @@
 	</head>
 
   <body class="documentation">
-
     <nav class="navbar navbar-inverse">
       <div class="container-fluid">
         <div class="navbar-header col-sm-4 col-md-3">
@@ -90,12 +89,10 @@
     <%= yield %>
 
     <!-- Bootstrap core JavaScript
-         ================================================== -->
+    ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <%= javascript_include_tag 'jquery', 'bootstrap' %>
-    <% (current_page.data.append_js || []).each do |jsfile| %>
-      <%= javascript_include_tag jsfile %>
-    <% end %>
+    <script src="http://datamodel.clinicalgenome.org/clingen-static-resources/javascripts/jquery-f2c2ae36.js">
+    </script><script src="http://datamodel.clinicalgenome.org/clingen-static-resources/javascripts/bootstrap-ae519d42.js"></script>
 
   </body>
 </html>
