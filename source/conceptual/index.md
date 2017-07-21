@@ -1,11 +1,3 @@
----
-title: Conceptual
-layout: model
-model: allele
-
----
-
-
 Overview
 ---------
 
@@ -22,4 +14,4 @@ The conceptual model independently models different subtypes of reference sequen
 Complex alleles are defined only at the canonical level, because they are defined as sets of simple canonical alleles that occur together.
 
 
-[![Conceptual model diagram](/images/AlleleConceptual.svg){: .img-responsive}](/images/AlleleConceptual.svg)
+[![Conceptual model diagram](http://datamodel.clinicalgenome.org/clingen-static-resources/images/AlleleConceptual.svg){: .img-responsive}](http://datamodel.clinicalgenome.org/clingen-static-resources/images/AlleleConceptual.svg)
