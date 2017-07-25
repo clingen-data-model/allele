@@ -39,6 +39,6 @@ ContextualAllele is not capable of representing the uncertainty of starting or e
 Conceptual Model
 ----------------
 
-[![ContextualAllele Conceptual Diagram](/images/ContextualAlleleConceptual.svg){: .img-responsive}](/images/ContextualAlleleConceptual.svg)
+[![ContextualAllele Conceptual Diagram](http://datamodel.clinicalgenome.org/clingen-static-resources/images/ContextualAlleleConceptual.svg){: .img-responsive}](http://datamodel.clinicalgenome.org/clingen-static-resources/images/ContextualAlleleConceptual.svg)
 
 Resource Model: [ContextualAllele](/resource/contextual_allele/index.html#resource-model)

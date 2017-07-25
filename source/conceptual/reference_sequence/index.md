@@ -29,7 +29,7 @@ The ReferenceSequence model does not include support for custom, private or non-
 Conceptual Model
 ----------------
 
-[![ReferenceSequence Conceptual Diagram](/images/ReferenceSequenceConceptual.svg){: .img-responsive}](/images/ReferenceSequenceConceptual.svg)
+[![ReferenceSequence Conceptual Diagram](http://datamodel.clinicalgenome.org/clingen-static-resources/images/ReferenceSequenceConceptual.svg){: .img-responsive}](http://datamodel.clinicalgenome.org/clingen-static-resources/images/ReferenceSequenceConceptual.svg)
 
 Resource Model: [ReferenceSequence](/resource/reference_sequence/index.html#resource-model)
 
