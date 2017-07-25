@@ -20,7 +20,7 @@ In the Interval Method, often called zero-based counting, positions denote the i
 
 The table below shows the differences in representation for reference coordinates in the methods described above.  Although Alt is not part of the coordinate, it is included here to illustrate the manner in which alleles would make use of the reference coordinates in different circumstances.
 
-[![Variant Numbering Diagram](/images/variant_numbering_examples.png){: .img-responsive}](/images/variant_numbering_examples.png)
+[![Variant Numbering Diagram](http://datamodel.clinicalgenome.org/clingen-static-resources/images/variant_numbering_examples.png){: .img-responsive}](http://datamodel.clinicalgenome.org/clingen-static-resources/images/variant_numbering_examples.png)
 
 
 Intronic Coordinates
