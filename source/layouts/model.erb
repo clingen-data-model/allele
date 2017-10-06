@@ -1,26 +1,22 @@
 <% wrap_layout :layout  do %>
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-sm-4 col-md-3 sidebar">
-      <div class='nav nav-sidebar nav-sidebar-title'>
-      	<a href="https://clinicalgenome.org">      		
-			<img width="90%" height="90%" alt="ClinGen Documentation" class="img-responsive" src="http://datamodel.clinicalgenome.org/clingen-static-resources/images/clingen-doc-logo.png" />
-		</a> 
-  	  </div>
-      <ul class="nav nav-sidebar">
-        <%= link_with_local_index "Discussion", "/discussion/index.html" %>
-        <%= link_with_local_index "Implementation", "/implementation/index.html" %>
-        <%= link_with_local_index "Resource", "/resource/index.html" %>
-        <%= link_with_local_index "Conceptual", "/conceptual/index.html" %>
-      </ul>
-    </div>
-    <div class="col-sm-8 col-sm-offset-4 col-md-9 col-md-offset-3 main">
+    <div class="col-sm-8 col-xs-12 col-md-9 col-lg-10">
       <article>
         <h1><%= current_page.data.title %></h1>
         <hr class='col-sm-12' />
         <%= yield %>
       </article>
     </div>
-  </div>
-</div>
+    <div class="col-sm-4 col-md-3 col-lg-2">
+      <div class="list-group sidenav">
+        <ul class="list-unstyled">
+          <li class="list-group-item">
+            <h5><%= link_to "Allele Overview", "/index.html", :relative => true %></h5>
+          </li>
+          <%= link_with_local_index "Discussion", "/discussion/index.html" %>
+          <%= link_with_local_index "Implementation", "/implementation/index.html" %>
+          <%= link_with_local_index "Resource", "/resource/index.html" %>
+          <%= link_with_local_index "Conceptual", "/conceptual/index.html" %>
+        </ul>
+      </div>
+    </div>
 <% end %>
