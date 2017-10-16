@@ -136,9 +136,9 @@ end
     output = link_to(text, resource)
     if current_page.url.include?(resource.url)
       index = local_index(current_page.url)
-      %(<li class="active">#{output}</li>#{index})
+      %(<li class="list-group-item"><h5>#{output}</h5>#{index}</li>)
     else
-      "<li>#{output}</li>"
+      "<li class='list-group-item'><h5>#{output}</h5></li>"
     end
   end
 
@@ -172,7 +172,7 @@ end
         a << "<li>#{link_to_resource(e)}</li>"
       end
     end
-    "<ul>#{list}</ul>"
+    "<ul class='list-unstyled'>#{list}</ul>"
   end
 
   # Generate nested list of current element's children
@@ -185,7 +185,7 @@ end
     list = children.reduce("") do |a, e|
       a << "<li>#{link_to_resource(e)}</li>\n"
     end
-    "<ul>#{list}</ul>"
+    "<ul class='list-unstyled'>#{list}</ul>"
   end
 
   def model_name
@@ -247,7 +247,8 @@ end
 activate :asset_host
       
 set :asset_host do |asset|
-  'http://datamodel.clinicalgenome.org/clingen-static-resources/'.to_s
+  #'http://datamodel.clinicalgenome.org/clingen-static-resources/'.to_s
+  '/'.to_s
 end
 
 set :css_dir, 'stylesheets'

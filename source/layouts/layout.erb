@@ -8,85 +8,116 @@
     <meta name="author" content="">
     <link rel="icon" href="#######">
 
-    <!--Page Title -->
     <title>
       <%= current_page.data.title || "ClinGen Data Model" %>
     </title>
-	
-    <link href="http://datamodel.clinicalgenome.org/clingen-static-resources/stylesheets/bootstrap.css" rel="stylesheet" />
-    <link href="http://datamodel.clinicalgenome.org/clingen-static-resources/stylesheets/bootstrap-theme.css" rel="stylesheet" />
-    <link href="http://datamodel.clinicalgenome.org/clingen-static-resources/stylesheets/brand2.css" rel="stylesheet" />
-    
-    <% if build? %>
-    <script>
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-49947422-3', 'auto');
-      ga('send', 'pageview');
-    </script>
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs/dt-1.10.13/fh-3.1.2/datatables.min.css"/>
+
+    <%= stylesheet_link_tag "bootstrap", "bootstrap-theme", "brand2", "jquery.jsonview" %>
+    <% (current_page.data.append_css || []).each do |cssfile| %>
+      <%= stylesheet_link_tag cssfile %>
     <% end %>
-	</head>
+
+    <% if build? %>
+      <script>
+       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-49947422-3', 'auto');
+       ga('send', 'pageview');
+      </script>
+    <% end %>
+
+  </head>
 
   <body class="documentation">
-    <nav class="navbar navbar-inverse">
-      <div class="container-fluid">
-        <div class="navbar-header col-sm-4 col-md-3">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand " href="#">ClinGen Documentation</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-left">
-            <li>
-              <%= link_to 'Home', '/' %>
-              <!-- <a href="/">About</a> -->
-            </li>
-            <li>
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" >
-                Models
-                <% if current_page.data.model %>
-                ::
-                <span class="glyphicon <%= data.models[current_page.data.model].icon %>"></span><%= model_name %>
-                <% end %>
-                <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu" role="menu">
-                <% data.models.each do |model, config| %>
-                <li class="<%= model %>" >
-                  <%= model_link(model) %>
+    
+      <div class="container-fluid hero-background">
+      <div class="container">
+        <div class="row">
+          <nav class="navbar navbar-default">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <% link_to "/", class:"navbar-brand" do %>
+                <%= image_tag 'clingen-doc-logo.png', width: "240px", alt: "ClinGen Data Model WG Documentation", class: "img-responsive" %>
+              <% end %>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav navbar-right">
+                <li>
+                  <%= link_to '<i class="glyphicon glyphicon-home"></i> Home'.html_safe, '/'%>
                 </li>
+                <% data.models.each do |model, config| %>
+                    <li class="<%= model %>" >
+                      <%= model_link(model) %>
+                    </li>
                 <% end %>
+                <li>
+                    <%= link_to '<i class="glyphicon glyphicon-new-window"></i> About ClinGen'.html_safe, 'http://www.clinicalgenome.org', target:"_blank" %>
+                </li>
               </ul>
-            </li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" ><%= data.current_release %> release<span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <% data.versions.each do |v| %>
-                <li><%= link_to v, "/#{v}#{current_page.url}" %></li>
-                <% end %> 
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+            </div>
+        </nav>
+          </div>
 
-    <div class='container-fluid bg-lblue padding-left-none padding-right-none'>
-      <div class='col-sm-offset-4 col-md-offset-3'>
-        <ol class="breadcrumb bg-none margin-none">
-          <%= breadcrumb(current_page) %>
-        </ol>
+    <% if "allele".eql? current_page.data.model %>
+      <%- title = current_page.data.title %>
+      <%- description = current_page.data.description %>
+    <% else %>
+      <%- entity = data.flattened.Type[current_page.data.id] %>
+      <%- title = data.flattened.Type[current_page.data.id].name %>
+      <%- description = data.flattened.Type[current_page.data.id].description %>
+      <%- type_iri = data.flattened.Type[current_page.data.id].iri%>
+    <% end %>
+
+    <div class="row">
+          <div class="col-sm-12">
+              <h1 class="header"><%= title %></h1>
+              <ol class="breadcrumb bg-none margin-none">
+                <%= breadcrumb(current_page) %>
+              </ol>
+              <% if description != nil %>
+                <blockquote><p><%= description %></p>
+              <% end %>
+              <% if type_iri != nil %>
+                <STRONG>
+                  <div><%= type_iri %></div>
+                  <% if "interpretation".eql? current_page.data.model %>
+                  <% parentid = data.flattened.Type[current_page.data.id].parentType %>
+                  <% if parentid == nil %>
+                  <% else %>
+                      <i>Descended from <%= data.flattened.Type[parentid].name %></i>
+                  <% end %>
+                  <% end %>
+                </STRONG>
+              <% end %>
+              <% if description != nil %>
+                </blockquote>
+              <% end %>
+          </div>
+        </div>
       </div>
     </div>
-
-    <%= yield %>
+    <div class="container">
+      <div class="row">
+        <%= yield %>
+      </div>
+    </div>
+    <div id="footer" class="container  background-trans padding-top-xl">
+      <div class="row">
+        <hr />
+        <div class="col-md-col-sm-12 text-center"> 
+          © 2017 <a href="/" title="ClinGen" class="">ClinGen</a> - All rights reserved
+        </div>
+    </div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
