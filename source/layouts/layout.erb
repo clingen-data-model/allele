@@ -68,7 +68,7 @@
         </nav>
           </div>
 
-    <% if current_page.data.id.nil? %>
+    <% if "allele".eql? current_page.data.model %>
       <%- title = current_page.data.title %>
       <%- description = current_page.data.description %>
     <% else %>
@@ -90,7 +90,7 @@
               <% if type_iri != nil %>
                 <STRONG>
                   <div><%= type_iri %></div>
-                  <% if !current_page.data.id.nil? %>
+                  <% if "interpretation".eql? current_page.data.model %>
                   <% parentid = data.flattened.Type[current_page.data.id].parentType %>
                   <% if parentid == nil %>
                   <% else %>
