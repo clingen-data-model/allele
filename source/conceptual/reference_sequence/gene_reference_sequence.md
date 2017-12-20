@@ -25,7 +25,7 @@ Related Entities
 {:.table}
 | Relation Name     | Entity Type                              | Cardinality |
 |-------------------|------------------------------------------|-------------|
-| sequenceOf | [Gene](gene.html) | 1        |
+| sequenceOf | [Gene](../gene) | 1        |
 
 
-sequenceOf: The GeneReferenceSequence must be the sequence of exactly one [Gene](gene.html)
+sequenceOf: The GeneReferenceSequence must be the sequence of exactly one [Gene](../gene)

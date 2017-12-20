@@ -14,5 +14,5 @@ The individual characters of a NucleotideReferenceSequence are the four DNA nucl
 Attributes
 ----------
 
-No attributes beyond those inherited from [ReferenceSequence](reference_sequence.html)
+No attributes beyond those inherited from [ReferenceSequence](index.html)
 
