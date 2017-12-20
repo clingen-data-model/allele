@@ -266,7 +266,8 @@ configure :build do
   # activate :minify_javascript
 
   # Enable cache buster
-  activate :asset_hash
+  activate :asset_hash, ignore: /fonts/
+  # FIXME- would eventually be nice to get rid of 'ignore' above-- but needs new middleman version
 
   # Use relative URLs
   activate :relative_assets
