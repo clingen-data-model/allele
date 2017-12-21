@@ -9,7 +9,7 @@ description: AminoAcidReferenceCoordinate defines a location with respect to an 
 Scope and Usage
 ---------------
 
-[ReferenceCoordinate](reference_coordinate.html) represents a particular contiguous location at which different alleles may be defined with [ContextualAllele](contextual_allele.html).  AminoAcidReferenceCoordinate is a [ReferenceCoordinate](reference_coordinate.html) where the underlying reference sequence is an [AminoAcidReferenceSequence](../reference_sequence/amino_acid_reference_sequence.html)
+[ReferenceCoordinate](reference_coordinate.html) represents a particular contiguous location at which different alleles may be defined with [ContextualAllele](index.html).  AminoAcidReferenceCoordinate is a [ReferenceCoordinate](reference_coordinate.html) where the underlying reference sequence is an [AminoAcidReferenceSequence](../reference_sequence/amino_acid_reference_sequence.html)
 
 Attributes 
 ----------

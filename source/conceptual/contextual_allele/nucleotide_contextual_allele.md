@@ -9,7 +9,7 @@ description: A ContextualAllele that uses a NucleotideReferenceSequence as its R
 Scope and Usage
 ---------------
 
-See also [ContextualAllele](contextual_allele.html)
+See also [ContextualAllele](index.html)
 
 A variant allele representation on a specific nucleotide sequence.  This can represent an observation at a single GenomicContextualAllele or a single TranscriptContextualAllele.
 

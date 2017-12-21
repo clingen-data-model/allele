@@ -9,7 +9,7 @@ description: A ContextualAllele that uses a TranscriptReferenceSequence as its R
 Scope and Usage
 ---------------
 
-see also: [ContextualAllele](contextual_allele.html)
+see also: [ContextualAllele](index.html)
 
 TranscriptContextualAllele represents an allele at a variant location on a single version of a transcript.  For each different transcript or version, a new TranscriptContextualAllele would be created, and these would be aggregated at the SimpleCanonicalAllele level, along with any GenomicContextualAlleles.
 

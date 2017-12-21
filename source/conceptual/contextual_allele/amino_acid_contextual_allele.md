@@ -9,7 +9,7 @@ description: A ContextualAllele that uses a AminoAcidReferenceSequence as its Re
 Scope and Usage
 ---------------
 
-See also: [ContextualAllele](contextual_allele.html)
+See also: [ContextualAllele](index.html)
 
 AminoAcidContextualAllele represents an allele at a variant location on a single version of an amino acid sequence.  For each different sequence version, a new AminoAcidContextualAllele would be created, and these would be aggregated at the SimpleCanonicalAllele level.
 
