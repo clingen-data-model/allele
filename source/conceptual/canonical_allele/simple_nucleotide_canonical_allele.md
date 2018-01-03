@@ -19,6 +19,6 @@ Aggregation of TranscriptContextualAlleles with GenomicContextualAlleles require
 See Also
 --------
 
-[SimpleCanonicalAllele](simple_canonical_allele.html), [NucleotideContextualAllele](nucleotide_contextual_allele.html)
+[SimpleCanonicalAllele](simple_canonical_allele.html), [NucleotideContextualAllele](/conceptual/contextual_allele/nucleotide_contextual_allele.html)
 
 Related Resources: [CanonicalAllele](/resource/canonical_allele/index.html)

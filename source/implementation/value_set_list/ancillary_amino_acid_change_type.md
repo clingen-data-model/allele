@@ -13,7 +13,7 @@ model: allele
 Scope and Usage
 ---------------
 
-ancillaryAminoAcidChangeType allows for the use of additional amino acid types which can be used to clarify and add depth to the [primary-amino-acid-change-type](primary-amino-acid-change-type.html).  Additionally, this type allows a single annotation using a term not included in the primary list.
+ancillaryAminoAcidChangeType allows for the use of additional amino acid types which can be used to clarify and add depth to the [primary-amino-acid-change-type](/implementation/value_set_list/primary_amino_acid_change_type.html).  Additionally, this type allows a single annotation using a term not included in the primary list.
 
 Additionally ancillaryAminoAcidChangeType can be used to annotate types experimentally discovered or derived with annotation tools such as [VAT](http://www.yandell-lab.org/software/vaast.html), [SnpEff](http://snpeff.sourceforge.net/) or [ANNOVAR](http://www.openbioinformatics.org/annovar/).
 

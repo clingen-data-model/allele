@@ -2,7 +2,7 @@
 title: ExternalPosition 
 layout: conceptual
 model: allele
-description: ExternalPosition defines one end of a <a href="../reference_coordinate.html">ReferenceCoordinate</a> as a location that is external to the corresponding <a href="../reference_sequence.html">ReferenceSequence</a>.  ExternalPosition is used to define coordinates for intronic alleles with respect to a transcript.
+description: ExternalPosition defines one end of a <a href="reference_coordinate.html">ReferenceCoordinate</a> as a location that is external to the corresponding <a href="/conceptual/reference_sequence/index.html">ReferenceSequence</a>.  ExternalPosition is used to define coordinates for intronic alleles with respect to a transcript.
 
 ---
 
@@ -39,7 +39,7 @@ Related Entities
 {:.table}
 | Relationship Name | Entity Type | Cardinality |
 |-------------------|-------------|-------------|
-|   genomicReferenceSequence    |     [GenomicReferenceSequence](genomic_reference_sequence.html)        |       1     |
+|   genomicReferenceSequence    |     [GenomicReferenceSequence](/conceptual/reference_sequence/genomic_reference_sequence.html)        |       1     |
 
 genomicReferenceSequence: A GenomicReferenceSequence to which this transcript has been mapped.
 

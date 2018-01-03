@@ -18,9 +18,10 @@ Included under this definition of gene are:
 + Non-Coding RNA sequences
 + Computationally Predicted Genes
 
+<br/>
 There is no guarantee that a gene is ever transcribed, such as some computationally predicted genes or pseudogenes.   Furthermore, many genes are untranslated.
 
-The assignment of names, and the association of [TranscriptReferenceSequences](../reference_sequence/transcript_reference_sequence.html) must be performed by a recognized public group such as NCBI or HGNC.  Note that different agencies may be responsible for names and for associations with sequences.
+The assignment of names, and the association of [TranscriptReferenceSequences](/conceptual/reference_sequence/transcript_reference_sequence.html) must be performed by a recognized public group such as NCBI or HGNC.  Note that different agencies may be responsible for names and for associations with sequences.
 
 Exclusions and Limitations
 --------------------------
@@ -59,8 +60,8 @@ Related Entities
 {:.table}
 | Relation Name | Entity Type | Cardinality |
 |---------------|-------------|-------------|
-| hasTranscript | [TranscriptReferenceSequence](../reference_sequence/transcript_reference_sequence.html) | 1..* |
-| hasGeneSequence | [GeneReferenceSequence](../reference_sequence/gene_reference_sequence.html) | 0..* |
+| hasTranscript | [TranscriptReferenceSequence](/conceptual/reference_sequence/transcript_reference_sequence.html) | 1..* |
+| hasGeneSequence | [GeneReferenceSequence](/conceptual/reference_sequence/gene_reference_sequence.html) | 0..* |
 
 hasTranscript:   Each gene must have at least one transcript; it may have more than one because of alternate splicing or different transcripts being created by differing groups such as NCBI and Ensembl.
 

@@ -18,12 +18,12 @@ In the context of the allele model, Provenance resources are attached to Context
 Note that a Provenance resource may have multiple targets, implying that multiple alleles may share a Provenance resource.  For instance, if a script loads alleles into a system, that single activity may create multiple allele instances.  These alleles may then share a Provenance resource, or each may have its own Provenance, which contains the same information.    This choice is left to the discretion of the implementing system.
 
 The ClinGen Provenance model is a simplification of the FHIR provenance model, which is in turn based on the W3C Provenance model.  In the FHIR model, the Provenance resource fills the role of the Activity in W3C.  FHIR entities linked to the provenance via the entity attribute are, in the W3C parlance, the used entities. 
-See [FHIR Provenance Resource](http://hl7-fhir.github.io/provenance.html) and [W3C Provenance](http://www.w3.org/TR/prov-overview/).  
+See [FHIR Provenance Resource](http://build.fhir.org/provenance.html){:target="fhir"} and [W3C Provenance](http://www.w3.org/TR/prov-overview/){:target="other"}.  
 
 Resource Model
 ----------------
 
-[![Provenance Resource Diagram](http://datamodel.clinicalgenome.org/clingen-static-resources/images/ProvenanceResource.svg){: .img-responsive}](http://datamodel.clinicalgenome.org/clingen-static-resources/images/ProvenanceResource.svg)
+[![Provenance Resource Diagram](/images/ProvenanceResource.svg){: .img-responsive}](/images/ProvenanceResource.svg)
 
 	
 Defintions & Bindings

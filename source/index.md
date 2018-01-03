@@ -28,6 +28,7 @@ Once an allele is defined and given a stable identifier, statements may be made 
   * The frequency of allele A in population P is 0.2
   * Allele A is likely pathogenic for condition C
 
+<br/>
 The purpose of the Allele Model is not to make any of these statements, but to provide the entity about which any of these statements could be made.  Modeling the statements about alleles will be the subject of future work, specifically models involving individuals, populations, and assertions.
 
 In the allele model, different representations of the same allele, such as the same change on different versions of a reference, or on different transcripts, are aggregated together into a CanonicalVariant.  The allele model does not define the rules that are used to perform this canonicalization, but does model metadata about canonicalization.

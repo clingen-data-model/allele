@@ -9,7 +9,7 @@ description: A <a href="genomic_reference_sequence.html">GenomicReferenceSequenc
 Scope and Usage
 ---------------
 
-One approach to normalization and canonicalization of alleles is to define a standard consensus sequence that will be fixed over time, and which includes all elements related to a particular gene, including exons, introns, and regulatory elements.    Alleles may the be defined on this fixed sequence, and mapped from it to multiple versions of the [ChromosomeReferenceSequence](chromosome_reference_sequence.html) and [TranscriptReferenceSequence](transcript_reference_sequence.html).
+One approach to normalization and canonicalization of alleles is to define a standard consensus sequence that will be fixed over time, and which includes all elements related to a particular gene, including exons, introns, and regulatory elements. Alleles may the be defined on this fixed sequence, and mapped from it to multiple versions of the [ChromosomeReferenceSequence](chromosome_reference_sequence.html) and [TranscriptReferenceSequence](transcript_reference_sequence.html).
 
 The GeneReferenceSequence manages the accessions that are provided by groups such as LRG or RefSeqGene for this purpose.
  
@@ -25,7 +25,7 @@ Related Entities
 {:.table}
 | Relation Name     | Entity Type                              | Cardinality |
 |-------------------|------------------------------------------|-------------|
-| sequenceOf | [Gene](../gene) | 1        |
+| sequenceOf | [Gene](/conceptual/gene/index.html) | 1        |
 
 
-sequenceOf: The GeneReferenceSequence must be the sequence of exactly one [Gene](../gene)
+sequenceOf: The GeneReferenceSequence must be the sequence of exactly one [Gene](/conceptual/gene/index.html)

@@ -2,7 +2,7 @@
 title: ContextualAllele
 layout: conceptual
 model: allele
-description: A representation of one of the multiple variant sequences at a contiguous region in a particular <a href="./reference_sequence/index.html">ReferenceSequence</a>.
+description: A representation of one of the multiple variant sequences at a contiguous region in a particular <a href="/conceptual/reference_sequence/index.html">ReferenceSequence</a>.
 related_page_title: ContextualAllele
 related_page_url: /resource/contextual_allele
 

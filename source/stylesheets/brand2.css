@@ -191,7 +191,7 @@ article ul {
     list-style: none;
     line-height: normal !important;
 }
-article li:before { 
+article ul li:before { 
     content: "";
     border-color: transparent #ccc;
     border-style: solid;

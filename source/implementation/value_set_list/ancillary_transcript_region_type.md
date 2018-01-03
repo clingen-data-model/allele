@@ -12,7 +12,7 @@ model: allele
 Scope and Usage
 ---------------
 
-ancillaryTranscriptRegionType allows for the use of additional region types which can be used to clarify and add depth to the [primary-transcript-region-type](primary-transcript-region-type.html).  Additionally, this type allows a single annotation using a term not included in the primary list.
+ancillaryTranscriptRegionType allows for the use of additional region types which can be used to clarify and add depth to the [primary-transcript-region-type](/implementation/value_set_list/primary_transcript_region_type.html).  Additionally, this type allows a single annotation using a term not included in the primary list.
 
 ancillaryTranscriptRegionType:
 ------------------------

@@ -2,7 +2,7 @@
 title: InternalPosition
 layout: conceptual
 model: allele
-description: InternalPosition defines one end of a <a href="../reference_coordinate.html">ReferenceCoordinate</a> as a location that is internal to the corresponding <a href="../reference_sequence.html">ReferenceSequence</a>.  
+description: InternalPosition defines one end of a <a href="reference_coordinate.html">ReferenceCoordinate</a> as a location that is internal to the corresponding <a href="/conceptual/reference_sequence/index.html">ReferenceSequence</a>.  
 
 ---
 

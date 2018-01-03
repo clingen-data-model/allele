@@ -27,6 +27,6 @@ Given, for example, two nearby SNPs, one technically possible representation wou
 See Also
 --------
 
-[ContextualAllele](../contextual_allele/index.html), [CanonicalAllele](index.html)
+[ContextualAllele](/conceptual/contextual_allele/index.html), [CanonicalAllele](index.html)
 
 Related Resources: [CanonicalAllele](/resource/canonical_allele/index.html)
