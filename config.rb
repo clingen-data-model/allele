@@ -247,7 +247,7 @@ end
 #activate :asset_host
       
 #set :asset_host do |asset|
-  #'http://datamodel.clinicalgenome.org/clingen-static-resources/'.to_s
+  #'http://dataexchange.clinicalgenome.org/clingen-static-resources/'.to_s
   #'/'.to_s
 #end
 

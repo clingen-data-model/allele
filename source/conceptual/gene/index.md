@@ -31,7 +31,7 @@ The Identifiers in Gene are used to track the symbols granted by agencies such a
 Conceptual Model
 ----------------
 
-[![Gene Conceptual Diagram](http://datamodel.clinicalgenome.org/clingen-static-resources/images/GeneConceptual.svg){: .img-responsive}](http://datamodel.clinicalgenome.org/clingen-static-resources/images/GeneConceptual.svg)
+[![Gene Conceptual Diagram](http://dataexchange.clinicalgenome.org/clingen-static-resources/images/GeneConceptual.svg){: .img-responsive}](http://dataexchange.clinicalgenome.org/clingen-static-resources/images/GeneConceptual.svg)
 
 Resource Model: [Gene](/resource/gene/index.html#resource-model)
 

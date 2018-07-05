@@ -39,7 +39,7 @@ Implicit in the idea that a TranscriptAlleles and GenomicAlleles can be aggregat
 Conceptual Model
 ----------------
 
-[![CanonicalAllele Conceptual Diagram](http://datamodel.clinicalgenome.org/clingen-static-resources/images/CanonicalAlleleConceptual.svg){: .img-responsive}](http://datamodel.clinicalgenome.org/clingen-static-resources/images/`CanonicalAllele`Conceptual.svg)
+[![CanonicalAllele Conceptual Diagram](http://dataexchange.clinicalgenome.org/clingen-static-resources/images/CanonicalAlleleConceptual.svg){: .img-responsive}](http://dataexchange.clinicalgenome.org/clingen-static-resources/images/`CanonicalAllele`Conceptual.svg)
 
 Related Resources: [CanonicalAllele](/resource/canonical_allele/index.html), [ContextualAllele](/resource/contextual_allele/index.html), [Provenance](/resource/provenance/index.html)
 

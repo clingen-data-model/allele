@@ -16,6 +16,6 @@ see [FHIR Provenance Resource](http://hl7-fhir.github.io/provenance.html) for de
 Conceptual Model
 ----------------
 
-[![Provenance Conceptual Diagram](http://datamodel.clinicalgenome.org/clingen-static-resources/images/ProvenanceConceptual.svg){: .img-responsive}](http://datamodel.clinicalgenome.org/clingen-static-resources/images/ProvenanceConceptual.svg)
+[![Provenance Conceptual Diagram](http://dataexchange.clinicalgenome.org/clingen-static-resources/images/ProvenanceConceptual.svg){: .img-responsive}](http://dataexchange.clinicalgenome.org/clingen-static-resources/images/ProvenanceConceptual.svg)
 
 Related Resources: [Provenance](/resource/provenance/index.html)
